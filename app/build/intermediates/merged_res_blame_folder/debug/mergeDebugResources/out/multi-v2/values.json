@@ -1,0 +1,45 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.sinanjam.balkesskor.app-mergeDebugResources-2:/values/values.xml",
+            "map": [
+                {
+                    "source": "/home/sinanjam/Downloads/balkes-skor/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "342"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "104",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "430"
+                    }
+                },
+                {
+                    "source": "/home/sinanjam/Downloads/balkes-skor/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "48",
+                        "endOffsets": "60"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

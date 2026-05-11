@@ -1,40 +1,28 @@
-# Balkes Skor v0.2 Raporu
+# Balkes Skor v0.5 Raporu
 
-## İstenen maddeler
+## Yapılanlar
 
-1. TFF tarama verileri tasnif edilip uygulama formatındaki `data/` yapısına dönüştürüldü.
-2. Görünüm karanlık, şık ve pratik olacak şekilde yeniden düzenlendi.
+1. Veriler uygulama formatındaki `data/` yapısında tutuldu; yeni TFF taraması aynı şemaya eklendiğinde uygulama güncellemesi gerektirmeden GitHub üzerinden okunur.
+2. Görünüm karanlık tema, kırmızı-beyaz vurgu, sade kartlar ve pratik alt/üst navigasyonla düzenlendi.
 3. Tema değiştirme kaldırıldı; sadece karanlık tema var.
-4. Uygulama içinde kullanıcıyı ilgilendirmeyen kaynak/cache/debug yazıları kaldırıldı.
+4. Kullanıcıyı ilgilendirmeyen debug/cache/kaynak ayrıntıları uygulama ekranlarından kaldırıldı.
 5. İnternet yoksa uygulama çalışmaz; splash sonrası `Uygulama için internete bağlanın` ekranı gösterilir.
 6. Yükleniyor temalı splash screen eklendi.
-7. Ana sayfa, maçlar, maç detayı, puan durumu ve oyuncular ekranları sadeleştirildi.
+7. Ana sayfa, maçlar, maç detayı, puan durumu, yıllar, oyuncular ve hakkında ekranları düzenlendi.
 8. Geri tuşu önceki ekrana döner; ana ekranda çıkış onayı sorulur.
 9. Splash sırasında GitHub latest release kontrolü yapılır; güncel değilse GitHub latest release sayfasına yönlendirir.
-10. `BUILD_PUSH_RELEASE.fish` yerelde build alır, kodu pushlar ve APK'yı latest release tarafına yükler.
+10. Sol üstteki uygulama logosunda görünen siyah köşe/arka plan problemi giderildi.
+11. Yıllara göre kıyas ekranı sağa kaydırdıkça eski sezonlara gidecek şekilde ayarlandı.
+12. Oyuncu kartları tıklanabilir hale getirildi; maç, ilk 11, yedek, gol, kart ve sezon sayısı gösterilir.
+13. Hakkında ekranı eklendi.
+14. `BUILD_PUSH_RELEASE.fish` yerelde build alır, kodu pushlar ve APK'yı latest release tarafına yükler.
 
-## Veri tasnifi
+## Hakkında metni
 
-- Büyük tarama: `balkes-tff-veri.zip`
-- Gezilen TFF sayfası: 9000
-- Bulunan maç detay sayfası: 117
-- Uygulamaya alınan profesyonel maç detayı: 104
-- Önceki temiz 2025-2026 verisiyle toplam uygulama maçı: 136
-- Oyuncu indeksi: 190 oyuncu
-- Rakip indeksi: 70 rakip
+- Sadece TFF sitelerinden çekebildiğimiz veriler baz alınmıştır.
+- Kaynak Kodları: https://github.com/Sinanjam/balkes-skor.git
+- Web sitesi: https://sinanjam.github.io/balkes-skor-web/
 
-## Sezonlar
+## Güvenlik / veri notu
 
-- 2025-2026: 33 maç
-- 2024-2025: 32 maç
-- 2023-2024: 28 maç
-- 2022-2023: 37 maç
-- 2009-2010: 1 maç
-- 1994-1995: 1 maç
-- 1992-1993: 1 maç
-- 1991-1992: 1 maç
-- 1990-1991: 2 maç
-
-## Not
-
-Büyük taramada haftalık puan durumu snapshot'ı çıkmadı. Bu yüzden puan durumu ekranında şu an güvenilir haftalık puan durumu sadece 2025-2026 sezonu için gösterilir. Diğer sezonlarda maçlar ve maç detayları gösterilir.
+Uygulamada kapalı API, kullanıcı hesabı, token veya gizli veri kullanılmaz. Veriler GitHub üzerindeki açık JSON dosyalarından okunur. Release işlemi kullanıcının yerel ortamındaki GitHub CLI oturumuyla yapılır; paket içinde token bulunmaz.

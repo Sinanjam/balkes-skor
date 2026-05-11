@@ -22,6 +22,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.ScrollView;
@@ -54,6 +55,7 @@ public class MainActivity extends Activity {
     private JSONObject manifest;
     private JSONArray availableSeasons;
     private String currentSeasonId = "2025-2026";
+    private String expandedPlayerName = "";
     private final ArrayList<NavState> backStack = new ArrayList<NavState>();
     private int standingsBaseChildren = 1;
 
@@ -191,9 +193,26 @@ public class MainActivity extends Activity {
 
     private boolean isNewerTag(String tag) {
         if (tag == null || tag.length() == 0) return false;
-        String clean = tag.startsWith("v") ? tag.substring(1) : tag;
-        String current = getAppVersionName();
-        return !(clean.equals(current) || tag.equals(current));
+        int[] latest = versionParts(tag);
+        int[] current = versionParts(getAppVersionName());
+        for (int i = 0; i < 3; i++) {
+            if (latest[i] > current[i]) return true;
+            if (latest[i] < current[i]) return false;
+        }
+        return false;
+    }
+
+    private int[] versionParts(String raw) {
+        int[] out = new int[]{0, 0, 0};
+        if (raw == null) return out;
+        String clean = raw.startsWith("v") ? raw.substring(1) : raw;
+        String[] parts = clean.split("[^0-9]+");
+        int j = 0;
+        for (int i = 0; i < parts.length && j < 3; i++) {
+            if (parts[i] == null || parts[i].length() == 0) continue;
+            try { out[j++] = Integer.parseInt(parts[i]); } catch (Exception ignored) { }
+        }
+        return out;
     }
 
     private void showOffline() {
@@ -288,11 +307,12 @@ public class MainActivity extends Activity {
         navBar.setGravity(Gravity.CENTER);
         navBar.setPadding(dp(10), dp(8), dp(10), dp(8));
         navBar.setBackgroundColor(Color.rgb(13, 14, 19));
-        root.addView(navBar, new LinearLayout.LayoutParams(-1, dp(58)));
+        root.addView(navBar, new LinearLayout.LayoutParams(-1, dp(62)));
         addNav("Ana", "home");
         addNav("Maçlar", "matches");
         addNav("Puan", "standings");
-        addNav("Oyuncular", "players");
+        addNav("Yıllar", "compare");
+        addNav("Oyuncu", "players");
 
         ScrollView scroll = new ScrollView(this);
         content = new LinearLayout(this);
@@ -317,19 +337,26 @@ public class MainActivity extends Activity {
     }
 
     private void go(NavState state) {
-        if (state.arg != null && state.arg.length() > 0 && !state.screen.equals("match")) currentSeasonId = state.arg;
+        if (state.arg != null && state.arg.length() > 0 && carriesSeasonId(state.screen)) currentSeasonId = state.arg;
         backStack.add(state);
         renderCurrent();
+    }
+
+    private boolean carriesSeasonId(String screen) {
+        return "home".equals(screen) || "matches".equals(screen) || "standings".equals(screen) || "compare".equals(screen) || "players".equals(screen) || "about".equals(screen);
     }
 
     private void renderCurrent() {
         if (backStack.size() == 0) { openRootHome(); return; }
         NavState s = backStack.get(backStack.size() - 1);
-        if (s.arg != null && s.arg.length() > 0 && !s.screen.equals("match")) currentSeasonId = s.arg;
+        if (s.arg != null && s.arg.length() > 0 && carriesSeasonId(s.screen)) currentSeasonId = s.arg;
         if ("home".equals(s.screen)) renderHome();
         else if ("matches".equals(s.screen)) renderMatches(currentSeasonId);
         else if ("standings".equals(s.screen)) renderStandings(currentSeasonId);
         else if ("players".equals(s.screen)) renderPlayers();
+        else if ("player".equals(s.screen)) renderPlayerDetail(s.arg);
+        else if ("compare".equals(s.screen)) renderCompare();
+        else if ("about".equals(s.screen)) renderAbout();
         else if ("match".equals(s.screen)) renderMatch(s.arg);
     }
 
@@ -379,7 +406,7 @@ public class MainActivity extends Activity {
         JSONObject summary = season.optJSONObject("summary");
         LinearLayout hero = card();
         text(hero, season.optString("name") + " Sezonu", 20, true, text);
-        text(hero, season.optString("competition", "TFF"), 13, false, muted);
+        text(hero, leagueName(season.optString("competition", "")), 13, false, muted);
         if (summary != null) {
             int total = summary.optInt("matches", summary.optInt("leagueMatches") + summary.optInt("playoffMatches") + summary.optInt("cupMatches"));
             text(hero, total + " maç", 16, true, text);
@@ -404,33 +431,39 @@ public class MainActivity extends Activity {
             c.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { go(new NavState("match", lm.optString("detailUrl"))); } });
         }
 
-        LinearLayout actions = new LinearLayout(this);
-        actions.setOrientation(LinearLayout.HORIZONTAL);
-        content.addView(actions, new LinearLayout.LayoutParams(-1, -2));
-        Button mbtn = redButton("Maçlar");
-        mbtn.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { go(new NavState("matches", currentSeasonId)); } });
-        Button pbtn = darkButton("Puan Durumu");
-        pbtn.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { go(new NavState("standings", currentSeasonId)); } });
-        LinearLayout.LayoutParams ap = new LinearLayout.LayoutParams(0, dp(50), 1);
-        ap.setMargins(0, 0, dp(6), dp(10));
-        actions.addView(mbtn, ap);
-        LinearLayout.LayoutParams ap2 = new LinearLayout.LayoutParams(0, dp(50), 1);
-        ap2.setMargins(dp(6), 0, 0, dp(10));
-        actions.addView(pbtn, ap2);
+        actionRow("Maçlar", "matches", "Puan Durumu", "standings");
+        actionRow("Yıllar", "compare", "Hakkında", "about");
 
         drawSeasonCards();
     }
 
     private void drawSeasonCards() {
         if (availableSeasons == null || availableSeasons.length() == 0) return;
-        TextView h = sectionTitle("Sezonlar");
+        TextView h = sectionTitle("Yıllar");
         content.addView(h);
+        TextView hint = new TextView(this);
+        hint.setText("Sağa kaydırdıkça eski sezonlar");
+        hint.setTextColor(muted);
+        hint.setTextSize(12);
+        hint.setPadding(dp(2), 0, dp(2), dp(8));
+        content.addView(hint);
+
+        HorizontalScrollView hsv = new HorizontalScrollView(this);
+        hsv.setHorizontalScrollBarEnabled(false);
+        LinearLayout row = new LinearLayout(this);
+        row.setOrientation(LinearLayout.HORIZONTAL);
+        hsv.addView(row);
+        content.addView(hsv, new LinearLayout.LayoutParams(-1, -2));
+
         for (int i = 0; i < availableSeasons.length(); i++) {
             final JSONObject s = availableSeasons.optJSONObject(i);
             if (s == null) continue;
-            LinearLayout c = compactCard();
-            text(c, s.optString("name") + "  •  " + s.optInt("matchCount") + " maç", 16, true, text);
-            text(c, s.optString("competition", "TFF"), 12, false, muted);
+            LinearLayout c = cardIn(row, 210);
+            text(c, s.optString("name"), 18, true, text);
+            text(c, s.optInt("matchCount") + " maç", 13, true, red);
+            text(c, leagueName(s.optString("competition", "")), 12, false, muted);
+            JSONObject sum = s.optJSONObject("summary");
+            if (sum != null) text(c, sum.optInt("wins") + "G " + sum.optInt("draws") + "B " + sum.optInt("losses") + "M", 13, false, text);
             c.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { currentSeasonId = s.optString("id", currentSeasonId); go(new NavState("matches", currentSeasonId)); } });
         }
     }
@@ -579,38 +612,259 @@ public class MainActivity extends Activity {
 
     private void renderPlayers() {
         clear("Oyuncular");
+        TextView hint = new TextView(this);
+        hint.setText("Oyuncunun üstüne basınca kart içinde detay açılır");
+        hint.setTextColor(muted);
+        hint.setTextSize(12);
+        hint.setPadding(dp(2), 0, dp(2), dp(10));
+        content.addView(hint);
         loadJson("players_index.json", new JsonCallback() {
             public void ok(Object json) {
                 JSONArray arr = (JSONArray) json;
-                int limit = Math.min(arr.length(), 80);
+                int limit = Math.min(arr.length(), 140);
                 for (int i = 0; i < limit; i++) {
-                    JSONObject p = arr.optJSONObject(i);
+                    final JSONObject p = arr.optJSONObject(i);
                     if (p == null) continue;
+                    final String name = p.optString("name");
+                    final boolean expanded = name.equals(expandedPlayerName);
                     LinearLayout c = compactCard();
-                    text(c, p.optString("name"), 16, true, text);
-                    text(c, p.optInt("appearances") + " maç • " + p.optInt("starts") + " ilk 11 • " + p.optInt("goals") + " gol", 13, false, muted);
+                    if (expanded) c.setBackground(round(surface, dp(18), red));
+
+                    LinearLayout top = row(c);
+                    LinearLayout left = new LinearLayout(MainActivity.this);
+                    left.setOrientation(LinearLayout.VERTICAL);
+                    top.addView(left, new LinearLayout.LayoutParams(0, -2, 1));
+                    text(left, name, 16, true, text);
+                    text(left, p.optInt("appearances") + " maç • " + p.optInt("starts") + " ilk 11 • " + p.optInt("goals") + " gol • " + p.optInt("cards") + " kart", 13, false, muted);
+                    TextView arrow = new TextView(MainActivity.this);
+                    arrow.setText(expanded ? "−" : "+");
+                    arrow.setTextColor(expanded ? red : muted);
+                    arrow.setTextSize(24);
+                    arrow.setTypeface(Typeface.DEFAULT_BOLD);
+                    arrow.setGravity(Gravity.CENTER);
+                    top.addView(arrow, new LinearLayout.LayoutParams(dp(34), dp(42)));
+
+                    if (expanded) drawPlayerInlineExpanded(c, p);
+                    c.setOnClickListener(new View.OnClickListener() {
+                        public void onClick(View v) {
+                            expandedPlayerName = expanded ? "" : name;
+                            renderPlayers();
+                        }
+                    });
                 }
             }
             public void fail(String message) { showConnectionMessage(); }
         });
     }
 
+    private void renderPlayerDetail(final String playerName) {
+        clear("Oyuncu Detayı");
+        loadJson("players_index.json", new JsonCallback() {
+            public void ok(Object json) {
+                JSONArray arr = (JSONArray) json;
+                JSONObject found = null;
+                for (int i = 0; i < arr.length(); i++) {
+                    JSONObject p = arr.optJSONObject(i);
+                    if (p != null && p.optString("name").equals(playerName)) { found = p; break; }
+                }
+                if (found == null) {
+                    LinearLayout c = card();
+                    text(c, "Oyuncu bilgisi bulunamadı.", 16, true, text);
+                    return;
+                }
+                LinearLayout c = card();
+                text(c, found.optString("name"), 22, true, text);
+                drawPlayerInlineExpanded(c, found);
+            }
+            public void fail(String message) { showConnectionMessage(); }
+        });
+    }
+
+    private void drawPlayerInlineExpanded(LinearLayout parent, JSONObject p) {
+        TextView label = text(parent, "Performans", 14, true, red);
+        label.setPadding(0, dp(10), 0, dp(2));
+
+        LinearLayout grid1 = new LinearLayout(this);
+        grid1.setOrientation(LinearLayout.HORIZONTAL);
+        parent.addView(grid1, new LinearLayout.LayoutParams(-1, -2));
+        statBox(grid1, "Maç", p.optInt("appearances"));
+        statBox(grid1, "İlk 11", p.optInt("starts"));
+        statBox(grid1, "Yedek", p.optInt("subs"));
+
+        LinearLayout grid2 = new LinearLayout(this);
+        grid2.setOrientation(LinearLayout.HORIZONTAL);
+        parent.addView(grid2, new LinearLayout.LayoutParams(-1, -2));
+        statBox(grid2, "Gol", p.optInt("goals"));
+        statBox(grid2, "Kart", p.optInt("cards"));
+        statBox(grid2, "Girdi", p.optInt("subbedIn"));
+
+        LinearLayout grid3 = new LinearLayout(this);
+        grid3.setOrientation(LinearLayout.HORIZONTAL);
+        parent.addView(grid3, new LinearLayout.LayoutParams(-1, -2));
+        statBox(grid3, "Çıktı", p.optInt("subbedOut"));
+        statBox(grid3, "Sarı", p.optInt("yellowCards"));
+        statBox(grid3, "Kırmızı", p.optInt("redCards"));
+
+        int unknown = p.optInt("unknownCards");
+        if (unknown > 0) text(parent, "TFF eski kayıtlarında türü ayrışmayan kart: " + unknown, 12, false, muted);
+        if (p.optString("lastMatchDate", "").length() > 0) text(parent, "Son maç: " + p.optString("lastMatchDate"), 12, false, muted);
+
+        JSONArray seasons = p.optJSONArray("seasonStats");
+        if (seasons != null && seasons.length() > 0) {
+            TextView sh = text(parent, "Sezon dağılımı", 14, true, text);
+            sh.setPadding(0, dp(12), 0, dp(4));
+            for (int i = 0; i < Math.min(seasons.length(), 6); i++) {
+                JSONObject s = seasons.optJSONObject(i);
+                if (s == null) continue;
+                TextView row = text(parent,
+                        s.optString("season") + "  •  " + s.optInt("appearances") + " maç  " + s.optInt("starts") + " ilk 11  " + s.optInt("goals") + " gol  " + s.optInt("cards") + " kart",
+                        12, false, muted);
+                row.setPadding(0, dp(3), 0, dp(3));
+            }
+        }
+
+        JSONArray recent = p.optJSONArray("recentMatches");
+        if (recent != null && recent.length() > 0) {
+            TextView rh = text(parent, "Son maçları", 14, true, text);
+            rh.setPadding(0, dp(12), 0, dp(4));
+            for (int i = 0; i < Math.min(recent.length(), 5); i++) {
+                JSONObject m = recent.optJSONObject(i);
+                if (m == null) continue;
+                String line = m.optString("dateDisplay", m.optString("date")) + "  •  " + m.optString("opponent") + "  •  " + m.optString("score") + "  •  " + m.optString("role");
+                TextView mr = text(parent, line, 12, false, muted);
+                mr.setPadding(0, dp(3), 0, dp(3));
+            }
+        }
+    }
+
+    private void renderCompare() {
+        clear("Yıllara Göre Kıyas");
+        if (availableSeasons == null || availableSeasons.length() == 0) {
+            LinearLayout c = card();
+            text(c, "Sezon bilgisi alınamadı.", 16, true, text);
+            return;
+        }
+        text(content, "Sağa kaydırdıkça eski sezonlar", 12, false, muted);
+        HorizontalScrollView hsv = new HorizontalScrollView(this);
+        hsv.setHorizontalScrollBarEnabled(false);
+        LinearLayout row = new LinearLayout(this);
+        row.setOrientation(LinearLayout.HORIZONTAL);
+        hsv.addView(row);
+        content.addView(hsv, new LinearLayout.LayoutParams(-1, -2));
+
+        for (int i = 0; i < availableSeasons.length(); i++) {
+            final JSONObject s = availableSeasons.optJSONObject(i);
+            if (s == null) continue;
+            LinearLayout c = cardIn(row, 238);
+            text(c, s.optString("name"), 21, true, text);
+            text(c, leagueName(s.optString("competition", "")), 12, false, muted);
+            JSONObject sum = s.optJSONObject("summary");
+            if (sum != null) {
+                text(c, sum.optInt("matches", s.optInt("matchCount")) + " maç", 15, true, red);
+                text(c, sum.optInt("wins") + " galibiyet", 13, false, text);
+                text(c, sum.optInt("draws") + " beraberlik", 13, false, text);
+                text(c, sum.optInt("losses") + " mağlubiyet", 13, false, text);
+                text(c, sum.optInt("goalsFor") + " - " + sum.optInt("goalsAgainst") + " gol", 13, false, muted);
+                text(c, "Averaj: " + sum.optInt("goalDifference"), 13, false, muted);
+                if (sum.has("points")) text(c, "Puan: " + sum.optInt("points"), 13, true, text);
+            } else {
+                text(c, s.optInt("matchCount") + " maç", 15, true, red);
+            }
+            c.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { currentSeasonId = s.optString("id", currentSeasonId); go(new NavState("matches", currentSeasonId)); } });
+        }
+    }
+
+    private void renderAbout() {
+        clear("Hakkında");
+        LinearLayout c = card();
+        text(c, "Sadece TFF sitelerinden çekebildiğimiz veriler baz alınmıştır.", 15, false, text);
+        text(c, "Kaynak Kodları: https://github.com/Sinanjam/balkes-skor.git", 14, false, muted);
+        text(c, "Web sitesi: https://sinanjam.github.io/balkes-skor-web/", 14, false, muted);
+        Button code = redButton("Kaynak Kodları");
+        code.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openUrl("https://github.com/Sinanjam/balkes-skor.git"); } });
+        c.addView(code, new LinearLayout.LayoutParams(-1, dp(48)));
+        Button web = darkButton("Web Sitesi");
+        web.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openUrl("https://sinanjam.github.io/balkes-skor-web/"); } });
+        LinearLayout.LayoutParams wp = new LinearLayout.LayoutParams(-1, dp(48));
+        wp.setMargins(0, dp(8), 0, 0);
+        c.addView(web, wp);
+    }
+
     private void seasonChooser(final String targetScreen) {
         if (availableSeasons == null || availableSeasons.length() <= 1) return;
+        HorizontalScrollView hsv = new HorizontalScrollView(this);
+        hsv.setHorizontalScrollBarEnabled(false);
         LinearLayout wrap = new LinearLayout(this);
         wrap.setOrientation(LinearLayout.HORIZONTAL);
         wrap.setPadding(0, 0, 0, dp(8));
-        content.addView(wrap);
-        for (int i = 0; i < Math.min(availableSeasons.length(), 4); i++) {
+        hsv.addView(wrap);
+        content.addView(hsv, new LinearLayout.LayoutParams(-1, -2));
+        for (int i = 0; i < availableSeasons.length(); i++) {
             final JSONObject s = availableSeasons.optJSONObject(i);
             if (s == null) continue;
             Button b = currentSeasonId.equals(s.optString("id")) ? redButton(s.optString("name")) : darkButton(s.optString("name"));
             b.setTextSize(11);
             b.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { currentSeasonId = s.optString("id", currentSeasonId); go(new NavState(targetScreen, currentSeasonId)); } });
-            LinearLayout.LayoutParams bp = new LinearLayout.LayoutParams(0, dp(42), 1);
-            bp.setMargins(dp(2), 0, dp(2), 0);
+            LinearLayout.LayoutParams bp = new LinearLayout.LayoutParams(dp(112), dp(42));
+            bp.setMargins(dp(2), 0, dp(6), 0);
             wrap.addView(b, bp);
         }
+    }
+
+
+    private void actionRow(String leftLabel, final String leftScreen, String rightLabel, final String rightScreen) {
+        LinearLayout actions = new LinearLayout(this);
+        actions.setOrientation(LinearLayout.HORIZONTAL);
+        content.addView(actions, new LinearLayout.LayoutParams(-1, -2));
+        Button left = "matches".equals(leftScreen) ? redButton(leftLabel) : darkButton(leftLabel);
+        left.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { go(new NavState(leftScreen, currentSeasonId)); } });
+        Button right = darkButton(rightLabel);
+        right.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { go(new NavState(rightScreen, currentSeasonId)); } });
+        LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(0, dp(50), 1);
+        lp.setMargins(0, 0, dp(6), dp(10));
+        actions.addView(left, lp);
+        LinearLayout.LayoutParams rp = new LinearLayout.LayoutParams(0, dp(50), 1);
+        rp.setMargins(dp(6), 0, 0, dp(10));
+        actions.addView(right, rp);
+    }
+
+    private void statBox(LinearLayout parent, String label, int value) {
+        LinearLayout b = new LinearLayout(this);
+        b.setOrientation(LinearLayout.VERTICAL);
+        b.setGravity(Gravity.CENTER);
+        b.setPadding(dp(6), dp(8), dp(6), dp(8));
+        b.setBackground(round(surface2, dp(14), stroke));
+        LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(0, -2, 1);
+        p.setMargins(dp(3), dp(10), dp(3), dp(4));
+        parent.addView(b, p);
+        TextView v = text(b, String.valueOf(value), 20, true, red);
+        v.setGravity(Gravity.CENTER);
+        TextView l = text(b, label, 11, false, muted);
+        l.setGravity(Gravity.CENTER);
+    }
+
+    private LinearLayout cardIn(LinearLayout parent, int widthDp) {
+        LinearLayout box = new LinearLayout(this);
+        box.setOrientation(LinearLayout.VERTICAL);
+        box.setPadding(dp(12), dp(11), dp(12), dp(11));
+        box.setBackground(round(surface, dp(18), stroke));
+        LinearLayout.LayoutParams p = new LinearLayout.LayoutParams(dp(widthDp), -2);
+        p.setMargins(0, 0, dp(10), dp(12));
+        parent.addView(box, p);
+        return box;
+    }
+
+    private String leagueName(String value) {
+        if (value == null) return "";
+        return value.replace("Professional Team", "")
+                .replace("Nesine 3. League", "Nesine 3. Lig")
+                .replace("TFF 3. LEAGUE", "TFF 3. Lig")
+                .replace("TFF 2.League", "TFF 2. Lig")
+                .replace("3. League", "3. Lig")
+                .replace("League B Classification", "B Klasman")
+                .replace("Phase", "Kademe")
+                .replace("  ", " ")
+                .trim();
     }
 
     private void showConnectionMessage() {
@@ -791,7 +1045,7 @@ public class MainActivity extends Activity {
         Button b = new Button(this);
         b.setText(label);
         b.setAllCaps(false);
-        b.setTextSize(12);
+        b.setTextSize(11);
         b.setTextColor(Color.WHITE);
         b.setTypeface(Typeface.DEFAULT_BOLD);
         b.setBackground(round(surface2, dp(14), stroke));

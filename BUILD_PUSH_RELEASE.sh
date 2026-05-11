@@ -2,7 +2,7 @@
 set -euo pipefail
 
 REPO_SLUG="${REPO_SLUG:-Sinanjam/balkes-skor}"
-COMMIT_MESSAGE="${COMMIT_MESSAGE:-Balkes Skor v0.2.1 build düzeltmesi ve tasnifli veri}"
+COMMIT_MESSAGE="${COMMIT_MESSAGE:-Balkes Skor v0.5 karanlık tema, yıllar, oyuncu detayı ve hakkında ekranı}"
 APK_NAME="${APK_NAME:-BalkesSkor-beta-debug.apk}"
 
 if [ ! -d .git ]; then
@@ -54,17 +54,18 @@ fi
 cp -f "$APK" "$APK_NAME"
 echo "APK hazır: $(pwd)/$APK_NAME"
 
-cat > RELEASE_NOTES.md <<EOF
+cat > RELEASE_NOTES.md <<EOFNOTES
 # $TITLE
 
-- Sadece karanlık tema.
-- Splash ekranda internet ve GitHub latest release kontrolü.
-- İnternet yoksa uygulama açılmaz; kullanıcıya bağlantı uyarısı gösterilir.
-- Cache/yerel fallback kullanılmaz; güncel veri GitHub üzerinden alınır.
-- TFF tarama çıktıları uygulama formatına tasnif edildi.
-- Logo: Balkes Skor logosu.
+- Sol üst uygulama logosundaki siyah/boş köşe problemi düzeltildi.
+- Veri sistemi GitHub manifest yapısına bağlı kaldı; yeni tarama verileri data/ altında yayınlanınca uygulama güncellemesi gerekmeden görünür.
+- Yıllara göre kıyas ekranı eklendi; sağa kaydırdıkça eski sezonlara gidilir.
+- Oyuncu kartları tıklanabilir hale geldi; maç, ilk 11, yedek, gol, kart ve sezon detayları gösterilir.
+- Hakkında ekranı eklendi.
+- Sadece karanlık tema korunur.
+- İnternet yoksa uygulama Splash sonrası bağlantı uyarısı verir.
 - GitHub Actions kullanılmadı; APK yerelde üretildi.
-EOF
+EOFNOTES
 
 if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
   gh auth setup-git >/dev/null 2>&1 || true
@@ -90,12 +91,11 @@ if ! command -v gh >/dev/null 2>&1; then
   exit 1
 fi
 if ! gh auth status >/dev/null 2>&1; then
-  echo "HATA: gh auth yapılmamış. Önce: gh auth login"
+  echo "HATA: gh auth yapılmamış. Önce: nix-shell -p gh --run 'gh auth login'"
   echo "APK yine de hazır: $(pwd)/$APK_NAME"
   exit 1
 fi
 
-# Aynı tag varsa asset'i güncelle; yoksa normal release oluştur. Normal release olması /releases/latest için gerekli.
 if gh release view "$TAG" --repo "$REPO_SLUG" >/dev/null 2>&1; then
   echo "Mevcut release güncelleniyor: $TAG"
   gh release upload "$TAG" "$APK_NAME" --repo "$REPO_SLUG" --clobber
@@ -107,10 +107,7 @@ else
     --repo "$REPO_SLUG" \
     --target "$BRANCH" \
     --title "$TITLE" \
-    --notes-file RELEASE_NOTES.md || {
-      echo "İlk release oluşturma başarısız oldu; --latest uyumsuzluğu yok sayılarak tekrar deneniyor."
-      gh release create "$TAG" "$APK_NAME" --repo "$REPO_SLUG" --target "$BRANCH" --title "$TITLE" --notes-file RELEASE_NOTES.md
-    }
+    --notes-file RELEASE_NOTES.md
   gh release edit "$TAG" --repo "$REPO_SLUG" --latest >/dev/null 2>&1 || true
 fi
 
