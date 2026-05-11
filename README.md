@@ -1,40 +1,19 @@
 # Balkes Skor
 
-Balıkesirspor odaklı maç merkezi uygulaması. Bu ilk beta/debug sürüm, 2025-2026 sezonu için TFF açık verilerinden dönüştürülen JSON dosyalarını GitHub raw üzerinden okuyacak şekilde hazırlandı.
+Balıkesirspor odaklı maç merkezi uygulaması.
 
-## Özellikler
+## Bu sürüm
 
-- Ana sayfa: sezon özeti, son kayıtlı maç, hızlı erişim
-- Maçlar: 30 lig + 2 play-off maçı
-- Maç detayı: skor, tarih, stat, hakemler, olaylar, ilk 11 ve yedekler
-- Puan durumu: 30 haftalık puan durumu snapshot'ı
-- GitHub raw veri okuma + cache + asset fallback
-- Balkes Skor logosu ve launcher iconları
-- GitHub Actions yoktur
+- Paket adı: `com.sinanjam.balkesskor`
+- Sürüm: `0.2.1-beta-debug`
+- Tema: sadece karanlık tema
+- Veri kaynağı: `https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/`
+- Uygulama internet olmadan çalışmaz; bağlantı yoksa splash sonrası uyarı verir.
+- Splash ekranında GitHub latest release kontrolü yapılır.
+- Güncelleme varsa kullanıcı GitHub latest release sayfasına yönlendirilir.
+- GitHub Actions yoktur; APK yerelde build edilir ve `gh` ile release edilir.
 
-## Veri kaynağı
-
-Uygulama varsayılan olarak şuradan okur:
-
-```text
-https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/
-```
-
-Veri klasörü:
-
-```text
-data/
-  manifest.json
-  search_index.json
-  assets/logo_balkes_skor.png
-  seasons/2025-2026/
-    season.json
-    matches_index.json
-    standings_by_week.json
-    matches/*.json
-```
-
-## Build + push + beta/debug release
+## Build + push + latest release
 
 Fish:
 
@@ -45,27 +24,14 @@ cd ~/Downloads/balkes-skor
 
 Bu komut:
 
-1. Nix geçici Android/Gradle ortamı açar.
+1. Nix Android ortamını açar.
 2. Debug APK üretir.
-3. Güncel kodları ve `data/` klasörünü git commit/push yapar.
-4. Oluşan `BalkesSkor-beta-debug.apk` dosyasını GitHub'da prerelease olarak yayımlar.
+3. Kod ve verileri GitHub'a pushlar.
+4. APK'yı `BalkesSkor-beta-debug.apk` adıyla GitHub release asset'i olarak yükler.
+5. Release tag'i `v0.2.1-beta-debug` olur.
 
-GitHub release için `gh auth login` daha önce yapılmış olmalı.
-
-## Sadece lokal APK
-
-```fish
-cd ~/Downloads/balkes-skor
-./BUILD_LOCAL_DEBUG.fish
-```
-
-APK çıkışı:
+APK linki:
 
 ```text
-~/Downloads/balkes-skor/BalkesSkor-beta-debug.apk
+https://github.com/Sinanjam/balkes-skor/releases/latest/download/BalkesSkor-beta-debug.apk
 ```
-
-
-## Nix Android SDK notu
-
-Bu paket Nix ortamında hem Android Build-Tools 34.0.0 hem de 35.0.0 içerir. Gradle bazı ortamlarda 34.0.0 isteyebildiği için /nix/store yazma hatasını önlemek üzere ikisi birlikte compose edilmiştir.

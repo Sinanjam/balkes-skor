@@ -2,22 +2,27 @@
 set -euo pipefail
 
 REPO_SLUG="${REPO_SLUG:-Sinanjam/balkes-skor}"
-RELEASE_PREFIX="${RELEASE_PREFIX:-beta-debug}"
-COMMIT_MESSAGE="${COMMIT_MESSAGE:-Balkes Skor beta/debug uygulama iskeleti ve veri yayını}"
+COMMIT_MESSAGE="${COMMIT_MESSAGE:-Balkes Skor v0.2.1 build düzeltmesi ve tasnifli veri}"
+APK_NAME="${APK_NAME:-BalkesSkor-beta-debug.apk}"
 
 if [ ! -d .git ]; then
   echo "HATA: Bu script git reposu kökünde çalışmalı."
   exit 1
 fi
-
 if [ -z "${ANDROID_HOME:-}" ]; then
   echo "HATA: ANDROID_HOME yok. Fish wrapper veya nix-shell ile çalıştır."
   exit 1
 fi
 
+rm -rf .github/workflows 2>/dev/null || true
 cat > local.properties <<LOCAL
 sdk.dir=${ANDROID_HOME}
 LOCAL
+
+VERSION_NAME=$(grep -E "versionName '" app/build.gradle | head -n1 | sed -E "s/.*versionName '([^']+)'.*/\1/")
+DEBUG_SUFFIX=$(grep -E "versionNameSuffix '" app/build.gradle | head -n1 | sed -E "s/.*versionNameSuffix '([^']+)'.*/\1/" || true)
+TAG="${RELEASE_TAG:-v${VERSION_NAME}${DEBUG_SUFFIX}}"
+TITLE="Balkes Skor ${VERSION_NAME}${DEBUG_SUFFIX}"
 
 AAPT2_PATH="${ANDROID_HOME}/build-tools/35.0.0/aapt2"
 if [ ! -x "$AAPT2_PATH" ]; then
@@ -25,16 +30,16 @@ if [ ! -x "$AAPT2_PATH" ]; then
 fi
 
 GRADLE_CMD="gradle"
-if [ -x "./gradlew" ]; then
-  GRADLE_CMD="./gradlew"
-fi
+if [ -x "./gradlew" ]; then GRADLE_CMD="./gradlew"; fi
 
-echo "== Balkes Skor beta/debug build =="
+echo "== Balkes Skor build/push/release =="
 echo "Repo: $(pwd)"
+echo "Tag: $TAG"
 echo "Android SDK: $ANDROID_HOME"
 echo "AAPT2: ${AAPT2_PATH:-bulunamadı}"
-echo "Gradle: $GRADLE_CMD"
+echo
 
+rm -rf app/build build
 if [ -n "${AAPT2_PATH:-}" ] && [ -x "$AAPT2_PATH" ]; then
   "$GRADLE_CMD" --no-daemon -Pandroid.aapt2FromMavenOverride="$AAPT2_PATH" assembleDebug
 else
@@ -46,13 +51,25 @@ if [ ! -f "$APK" ]; then
   echo "HATA: APK oluşmadı: $APK"
   exit 1
 fi
+cp -f "$APK" "$APK_NAME"
+echo "APK hazır: $(pwd)/$APK_NAME"
 
-OUT_APK="BalkesSkor-beta-debug.apk"
-cp -f "$APK" "$OUT_APK"
+cat > RELEASE_NOTES.md <<EOF
+# $TITLE
 
-echo "APK hazır: $(pwd)/$OUT_APK"
+- Sadece karanlık tema.
+- Splash ekranda internet ve GitHub latest release kontrolü.
+- İnternet yoksa uygulama açılmaz; kullanıcıya bağlantı uyarısı gösterilir.
+- Cache/yerel fallback kullanılmaz; güncel veri GitHub üzerinden alınır.
+- TFF tarama çıktıları uygulama formatına tasnif edildi.
+- Logo: Balkes Skor logosu.
+- GitHub Actions kullanılmadı; APK yerelde üretildi.
+EOF
 
-# local.properties ve APK .gitignore kapsamında; kaynak + data repoya basılır.
+if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
+  gh auth setup-git >/dev/null 2>&1 || true
+fi
+
 git add .
 if git diff --cached --quiet; then
   echo "Commitlenecek değişiklik yok."
@@ -64,39 +81,41 @@ BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 echo "Git push: origin $BRANCH"
 git push origin "$BRANCH"
 
+echo "Tag güncelleniyor: $TAG"
+git tag -f "$TAG"
+git push origin "refs/tags/$TAG" --force
+
 if ! command -v gh >/dev/null 2>&1; then
-  echo "HATA: gh CLI bulunamadı; release oluşturulamadı."
+  echo "HATA: gh CLI bulunamadı. APK üretildi ama release oluşturulmadı."
   exit 1
 fi
-
 if ! gh auth status >/dev/null 2>&1; then
   echo "HATA: gh auth yapılmamış. Önce: gh auth login"
-  echo "APK yine de hazır: $(pwd)/$OUT_APK"
+  echo "APK yine de hazır: $(pwd)/$APK_NAME"
   exit 1
 fi
 
-TAG="${RELEASE_TAG:-${RELEASE_PREFIX}-$(date -u +%Y%m%d-%H%M%S)}"
-NOTES="RELEASE_NOTES.md"
-if [ ! -f "$NOTES" ]; then
-  cat > "$NOTES" <<NOTES_EOF
-Balkes Skor beta/debug APK.
-
-- Build tipi: debug
-- Veri kaynağı: GitHub raw JSON
-- GitHub Actions kullanılmadı; APK yerelde üretildi.
-NOTES_EOF
-fi
-
-echo "GitHub prerelease oluşturuluyor: $TAG"
+# Aynı tag varsa asset'i güncelle; yoksa normal release oluştur. Normal release olması /releases/latest için gerekli.
 if gh release view "$TAG" --repo "$REPO_SLUG" >/dev/null 2>&1; then
-  gh release upload "$TAG" "$OUT_APK" --repo "$REPO_SLUG" --clobber
+  echo "Mevcut release güncelleniyor: $TAG"
+  gh release upload "$TAG" "$APK_NAME" --repo "$REPO_SLUG" --clobber
+  gh release edit "$TAG" --repo "$REPO_SLUG" --title "$TITLE" --notes-file RELEASE_NOTES.md >/dev/null 2>&1 || true
+  gh release edit "$TAG" --repo "$REPO_SLUG" --latest >/dev/null 2>&1 || true
 else
-  gh release create "$TAG" "$OUT_APK" \
+  echo "Yeni release oluşturuluyor: $TAG"
+  gh release create "$TAG" "$APK_NAME" \
     --repo "$REPO_SLUG" \
     --target "$BRANCH" \
-    --title "Balkes Skor Beta Debug $TAG" \
-    --notes-file "$NOTES" \
-    --prerelease
+    --title "$TITLE" \
+    --notes-file RELEASE_NOTES.md || {
+      echo "İlk release oluşturma başarısız oldu; --latest uyumsuzluğu yok sayılarak tekrar deneniyor."
+      gh release create "$TAG" "$APK_NAME" --repo "$REPO_SLUG" --target "$BRANCH" --title "$TITLE" --notes-file RELEASE_NOTES.md
+    }
+  gh release edit "$TAG" --repo "$REPO_SLUG" --latest >/dev/null 2>&1 || true
 fi
 
-echo "Tamam: kod pushlandı ve debug beta APK prerelease olarak yüklendi."
+echo
+echo "Tamam."
+echo "Kod pushlandı."
+echo "APK release asset: $APK_NAME"
+echo "Latest release: https://github.com/${REPO_SLUG}/releases/latest"

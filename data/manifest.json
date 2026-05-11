@@ -1,7 +1,9 @@
 {
   "app": "Balkes Skor",
-  "schemaVersion": 1,
-  "generatedAt": "2026-05-11T03:54:45Z",
+  "schemaVersion": 2,
+  "dataVersion": 3,
+  "appVersion": "0.2.0-beta-debug",
+  "generatedAt": "2026-05-11T08:34:52Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "team": {
     "id": "balikesirspor",
@@ -16,9 +18,96 @@
       "name": "2025-2026",
       "competition": "Nesine 3. Lig",
       "group": "04. Grup",
+      "matchCount": 33,
       "seasonUrl": "seasons/2025-2026/season.json",
       "matchesIndexUrl": "seasons/2025-2026/matches_index.json",
       "standingsUrl": "seasons/2025-2026/standings_by_week.json"
+    },
+    {
+      "id": "2024-2025",
+      "name": "2024-2025",
+      "competition": "Nesine 3. League (Professional Team)",
+      "group": "",
+      "matchCount": 32,
+      "seasonUrl": "seasons/2024-2025/season.json",
+      "matchesIndexUrl": "seasons/2024-2025/matches_index.json",
+      "standingsUrl": "seasons/2024-2025/standings_by_week.json"
+    },
+    {
+      "id": "2023-2024",
+      "name": "2023-2024",
+      "competition": "TFF 3. LEAGUE (Professional Team)",
+      "group": "",
+      "matchCount": 28,
+      "seasonUrl": "seasons/2023-2024/season.json",
+      "matchesIndexUrl": "seasons/2023-2024/matches_index.json",
+      "standingsUrl": "seasons/2023-2024/standings_by_week.json"
+    },
+    {
+      "id": "2022-2023",
+      "name": "2022-2023",
+      "competition": "TFF 2.League (Professional Team)",
+      "group": "",
+      "matchCount": 37,
+      "seasonUrl": "seasons/2022-2023/season.json",
+      "matchesIndexUrl": "seasons/2022-2023/matches_index.json",
+      "standingsUrl": "seasons/2022-2023/standings_by_week.json"
+    },
+    {
+      "id": "2009-2010",
+      "name": "2009-2010",
+      "competition": "TFF 3. League Phase 1 (Professional Team)",
+      "group": "",
+      "matchCount": 1,
+      "seasonUrl": "seasons/2009-2010/season.json",
+      "matchesIndexUrl": "seasons/2009-2010/matches_index.json",
+      "standingsUrl": "seasons/2009-2010/standings_by_week.json"
+    },
+    {
+      "id": "1994-1995",
+      "name": "1994-1995",
+      "competition": "League B Classification (Professional Team)",
+      "group": "",
+      "matchCount": 1,
+      "seasonUrl": "seasons/1994-1995/season.json",
+      "matchesIndexUrl": "seasons/1994-1995/matches_index.json",
+      "standingsUrl": "seasons/1994-1995/standings_by_week.json"
+    },
+    {
+      "id": "1992-1993",
+      "name": "1992-1993",
+      "competition": "League B Classification (Professional Team)",
+      "group": "",
+      "matchCount": 1,
+      "seasonUrl": "seasons/1992-1993/season.json",
+      "matchesIndexUrl": "seasons/1992-1993/matches_index.json",
+      "standingsUrl": "seasons/1992-1993/standings_by_week.json"
+    },
+    {
+      "id": "1991-1992",
+      "name": "1991-1992",
+      "competition": "3. League (Professional Team)",
+      "group": "",
+      "matchCount": 1,
+      "seasonUrl": "seasons/1991-1992/season.json",
+      "matchesIndexUrl": "seasons/1991-1992/matches_index.json",
+      "standingsUrl": "seasons/1991-1992/standings_by_week.json"
+    },
+    {
+      "id": "1990-1991",
+      "name": "1990-1991",
+      "competition": "3. League (Professional Team)",
+      "group": "",
+      "matchCount": 2,
+      "seasonUrl": "seasons/1990-1991/season.json",
+      "matchesIndexUrl": "seasons/1990-1991/matches_index.json",
+      "standingsUrl": "seasons/1990-1991/standings_by_week.json"
     }
-  ]
+  ],
+  "global": {
+    "playersIndexUrl": "players_index.json",
+    "opponentsIndexUrl": "opponents_index.json",
+    "searchIndexUrl": "search_index.json",
+    "dataReportUrl": "data_report.json"
+  }
 }

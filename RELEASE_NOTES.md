@@ -1,17 +1,9 @@
-# Balkes Skor Beta Debug
+# Balkes Skor 0.2.1-beta-debug
 
-İlk beta/debug APK.
-
-## İçerik
-
-- 2025-2026 Balıkesirspor sezon verisi
-- 32 maç kaydı
-- 30 haftalık puan durumu
-- Maç detaylarında ilk 11, yedekler, gol/kart/değişiklik olayları
-- GitHub raw JSON üzerinden internetli veri okuma
-- Cache ve asset fallback
-- Balkes Skor logosu
-
-## Not
-
-Bu APK debug imzalıdır. GitHub Actions kullanılmadan yerelde üretilir ve prerelease olarak yüklenir.
+- Sadece karanlık tema.
+- Splash ekranda internet ve GitHub latest release kontrolü.
+- İnternet yoksa uygulama açılmaz; kullanıcıya bağlantı uyarısı gösterilir.
+- Cache/yerel fallback kullanılmaz; güncel veri GitHub üzerinden alınır.
+- TFF tarama çıktıları uygulama formatına tasnif edildi.
+- Logo: Balkes Skor logosu.
+- GitHub Actions kullanılmadı; APK yerelde üretildi.
