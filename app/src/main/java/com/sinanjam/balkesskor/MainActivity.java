@@ -42,6 +42,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MainActivity extends Activity {
+    // Main branch data is kept in sync with balkes-skor-web/docs/data by the live data fixpack.
+
     private static final String BASE_DATA_URL = "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/";
     private static final String LATEST_RELEASE_API = "https://api.github.com/repos/Sinanjam/balkes-skor/releases/latest";
     private static final String LATEST_RELEASE_URL = "https://github.com/Sinanjam/balkes-skor/releases/latest";

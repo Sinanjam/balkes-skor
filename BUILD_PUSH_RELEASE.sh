@@ -13,8 +13,6 @@ if [ -z "${ANDROID_HOME:-}" ]; then
   echo "HATA: ANDROID_HOME yok. Fish wrapper veya nix-shell ile çalıştır."
   exit 1
 fi
-
-rm -rf .github/workflows 2>/dev/null || true
 cat > local.properties <<LOCAL
 sdk.dir=${ANDROID_HOME}
 LOCAL
@@ -71,7 +69,23 @@ if command -v gh >/dev/null 2>&1 && gh auth status >/dev/null 2>&1; then
   gh auth setup-git >/dev/null 2>&1 || true
 fi
 
-git add .
+# Stage only project files; do not blindly commit unrelated local files.
+STAGE_PATHS=(
+  app
+  build.gradle
+  settings.gradle
+  data
+  reports
+  README.md
+  BUILD_PUSH_RELEASE.sh
+  BUILD_PUSH_RELEASE.fish
+  balkes-skor.nix
+)
+for path in "${STAGE_PATHS[@]}"; do
+  if [ -e "$path" ]; then
+    git add "$path"
+  fi
+done
 if git diff --cached --quiet; then
   echo "Commitlenecek değişiklik yok."
 else

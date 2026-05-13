@@ -32,3 +32,7 @@ https://github.com/Sinanjam/balkes-skor/releases/latest/download/BalkesSkor-beta
 ## Veri güncelleme
 
 Yeni TFF taraması aynı `data/` şemasına dönüştürüldüğünde uygulama güncellemesi gerekmez. Sadece `data/` klasörü GitHub'a gönderilir; uygulama açılışta GitHub'daki güncel manifest ve sezon dosyalarını okur.
+
+## Live data fixpack notu
+
+Android `data/` klasörü web `docs/data/` ile eşitlendi. Kurulu uygulama `https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/` kaynağını okuyorsa bu push sonrası veriler tekrar gelmelidir.
