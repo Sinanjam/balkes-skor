@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "id": "205830",
+    "matchCode": "653",
+    "season": "2018-2019",
+    "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (5.Tur)",
+    "competitionType": "cup",
+    "competitionLabel": "Ziraat Türkiye Kupası",
+    "stadium": "BALIKESİR ATATÜRK - BALIKESİR",
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+    "stage": "Ziraat Türkiye Kupası",
+    "stageLabel": "Ziraat Türkiye Kupası",
+    "date": "2018-12-18",
+    "time": "15:00",
+    "dateDisplay": "2018-12-18 - 15:00",
+    "homeTeam": "Balıkesirspor",
+    "awayTeam": "ÇAYKUR RİZESPOR A.Ş.",
+    "matchType": "cup",
+    "matchTypeLabel": "Ziraat Türkiye Kupası",
+    "type": "cup",
+    "typeLabel": "Ziraat Türkiye Kupası",
+    "score": {
+      "home": 1,
+      "away": 1,
+      "display": "1-1",
+      "played": true
+    },
+    "balkes": {
+      "isHome": true,
+      "isAway": false,
+      "opponent": "ÇAYKUR RİZESPOR A.Ş.",
+      "goalsFor": 1,
+      "goalsAgainst": 1,
+      "result": "D"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 7,
+      "substitutesAway": 7,
+      "goals": 2,
+      "cards": 2,
+      "substitutions": 6,
+      "players": 38
+    },
+    "detailUrl": "seasons/2018-2019/matches/205830.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=205830",
+      "retrievedAt": "2026-05-14T22:50:48.144358Z",
+      "sourceType": "official_tff_match_detail"
+    }
+  },
+  {
+    "id": "195050",
+    "matchCode": "2231",
+    "season": "2018-2019",
+    "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+    "competitionType": "league",
+    "competitionLabel": "Lig",
+    "stadium": "BOLU ATATÜRK - BOLU",
+    "venue": "BOLU ATATÜRK - BOLU",
+    "stage": "Lig",
+    "stageLabel": "Lig",
+    "date": "2019-03-17",
+    "time": "16:00",
+    "dateDisplay": "2019-03-17 - 16:00",
+    "homeTeam": "BOLUSPOR",
+    "awayTeam": "Balıkesirspor",
+    "matchType": "league",
+    "matchTypeLabel": "Lig",
+    "type": "league",
+    "typeLabel": "Lig",
+    "score": {
+      "home": 1,
+      "away": 0,
+      "display": "1-0",
+      "played": true
+    },
+    "balkes": {
+      "isHome": false,
+      "isAway": true,
+      "opponent": "BOLUSPOR",
+      "goalsFor": 0,
+      "goalsAgainst": 1,
+      "result": "L"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 7,
+      "substitutesAway": 7,
+      "goals": 1,
+      "cards": 6,
+      "substitutions": 5,
+      "players": 38
+    },
+    "detailUrl": "seasons/2018-2019/matches/195050.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=195050",
+      "retrievedAt": "2026-05-14T22:50:46.389587Z",
+      "sourceType": "official_tff_match_detail"
+    }
+  }
+]

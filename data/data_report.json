@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-14T20:33:35.338845Z",
+  "generatedAt": "2026-05-14T22:52:47.921793Z",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
-  "totalAppMatches": 131,
+  "totalAppMatches": 233,
   "seasons": [
     {
       "id": "2025-2026",
@@ -76,10 +76,83 @@
           "league": 38
         }
       }
+    },
+    {
+      "id": "2021-2022",
+      "name": "2021-2022",
+      "matchCount": 36,
+      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 36,
+        "wins": 3,
+        "draws": 3,
+        "losses": 30,
+        "goalsFor": 26,
+        "goalsAgainst": 77,
+        "goalDifference": -51,
+        "matchTypes": {
+          "league": 36
+        }
+      }
+    },
+    {
+      "id": "2020-2021",
+      "name": "2020-2021",
+      "matchCount": 34,
+      "competition": "TFF 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 34,
+        "wins": 9,
+        "draws": 8,
+        "losses": 17,
+        "goalsFor": 35,
+        "goalsAgainst": 53,
+        "goalDifference": -18,
+        "matchTypes": {
+          "league": 34
+        }
+      }
+    },
+    {
+      "id": "2019-2020",
+      "name": "2019-2020",
+      "matchCount": 30,
+      "competition": "TFF 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 30,
+        "wins": 8,
+        "draws": 11,
+        "losses": 11,
+        "goalsFor": 30,
+        "goalsAgainst": 36,
+        "goalDifference": -6,
+        "matchTypes": {
+          "league": 30
+        }
+      }
+    },
+    {
+      "id": "2018-2019",
+      "name": "2018-2019",
+      "matchCount": 2,
+      "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (5.Tur)",
+      "summary": {
+        "matches": 2,
+        "wins": 0,
+        "draws": 1,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "goalDifference": -1,
+        "matchTypes": {
+          "cup": 1,
+          "league": 1
+        }
+      }
     }
   ],
   "playersIndexed": 0,
-  "opponentsIndexed": 64,
+  "opponentsIndexed": 97,
   "notes": [
     "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
     "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."

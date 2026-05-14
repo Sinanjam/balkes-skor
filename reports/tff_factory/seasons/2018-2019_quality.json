@@ -2,10 +2,10 @@
   "season": "2018-2019",
   "selectedIds": 86,
   "allDiscoveredIds": 2057,
-  "detailCandidates": 86,
+  "detailCandidates": 88,
   "candidateMode": "selected_or_known",
-  "matchesPublished": 0,
-  "detailFiles": 0,
+  "matchesPublished": 2,
+  "detailFiles": 2,
   "duplicatesDropped": 0,
   "rejectedReasons": {
     "date_out_of_season:2025-09-07": 1,
@@ -165,10 +165,13 @@
   "standingsSkipped": true,
   "standingsSnapshots": 0,
   "balkesTableFound": false,
-  "matchTypeCounts": {},
+  "matchTypeCounts": {
+    "cup": 1,
+    "league": 1
+  },
   "seasonGuard": {
     "start": "2018-07-01",
     "end": "2019-06-30"
   },
-  "generatedAt": "2026-05-14T21:08:08.450890Z"
+  "generatedAt": "2026-05-14T22:52:47.908121Z"
 }
