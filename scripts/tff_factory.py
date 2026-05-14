@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Balkes TFF Factory v2.2 no-standings fixed2
+Balkes TFF Factory v2.2 perfect details no-standings
 
 Bu sürümün hedefi:
 - Puan tablosu/standings ÇEKMEZ.
@@ -34,7 +34,7 @@ except Exception:
     BeautifulSoup = None
 
 TFF = "https://www.tff.org/Default.aspx"
-FACTORY_VERSION = "v2.2-no-standings-fixed2"
+FACTORY_VERSION = "v2.2-perfect-details-no-standings"
 TEAM_CANONICAL = "Balıkesirspor"
 
 
@@ -93,7 +93,7 @@ def fetch(url: str, path: Path, sleep_s: float = 1.0, force: bool = False) -> tu
     for attempt in range(1, 4):
         try:
             req = urllib.request.Request(url, headers={
-                "User-Agent": "Mozilla/5.0 BalkesTFFFactory-v22-fixed2/1.0",
+                "User-Agent": "Mozilla/5.0 BalkesTFFFactory-v22-perfect-details/1.0",
                 "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.7",
             })
             with urllib.request.urlopen(req, timeout=75) as res:
@@ -256,10 +256,10 @@ def date_in_season(iso_date: str, season: str, seed: dict[str, Any]) -> bool:
 
 def classify_type(*parts: Any) -> tuple[str, str]:
     n = norm(" ".join(str(x or "") for x in parts))
-    if any(k in n for k in ["ziraat", "turkiye kupasi", "ztk", "kupa"]):
-        return "cup", "Ziraat Türkiye Kupası"
-    if any(k in n for k in ["play off", "playoff", "play offs", "playoffs"]):
+    if any(k in n for k in ["play off", "playoff", "play offs", "playoffs", "final musabakalari"]):
         return "playoff", "Play-off"
+    if any(k in n for k in ["ziraat", "turkiye kupasi", "turkiye kupas", "ztk", " kupa "]):
+        return "cup", "Ziraat Türkiye Kupası"
     if "hazirlik" in n or "friendly" in n:
         return "friendly_or_unknown", "Hazırlık/Bilinmeyen"
     return "league", "Lig"
@@ -399,19 +399,275 @@ def parse_officials(soup, txt: str) -> list[dict[str, str]]:
     return officials
 
 
+
 def parse_sections_raw(txt: str) -> dict[str, str]:
     lines = txt.splitlines()
-    sections = {"full_text_excerpt": txt[:25000]}
+    sections = {"full_text_excerpt": txt[:30000]}
     picks = {
-        "officials_raw": ["hakem", "gozlemci", "gözlemci"],
-        "lineups_raw": ["ilk 11", "yedek"],
-        "events_raw": ["sari kart", "sarı kart", "kirmizi kart", "kırmızı kart", "oyuna giren", "oyundan cikan", "oyundan çıkan", "gol", " dk"],
+        "officials_raw": ["hakem", "gozlemci", "gözlemci", "temsilci"],
+        "lineups_raw": ["ilk 11", "yedek", "teknik sorumlu"],
+        "events_raw": ["sari kart", "sarı kart", "kirmizi kart", "kırmızı kart", "oyuna giren", "oyundan cikan", "oyundan çıkan", "gol", " dk", "penalt"],
     }
     for key, needles in picks.items():
         hits = [x for x in lines if any(n in norm(x) for n in needles)]
         if hits:
-            sections[key] = "\n".join(hits[:250])
+            sections[key] = "\n".join(hits[:400])
     return sections
+
+
+def parse_person_id(href: Any) -> str:
+    m = re.search(r"(?:kisiId|hakemId|personId|oyuncuId)=(\d+)", str(href or ""), re.I)
+    return m.group(1) if m else ""
+
+
+def parse_minute_value(raw: Any) -> tuple[Any, str]:
+    text = clean_text(raw)
+    n = norm(text)
+    m = re.search(r"\b(\d{1,3})\s*(?:\.\s*)?(?:dk|dakika|'|’)?\b", n)
+    if m:
+        return int(m.group(1)), text
+    if n in {"ms", "mac sonu", "maç sonu"} or "ms" == n:
+        return "MS", text
+    if "devre" in n:
+        return "HT", text
+    return None, text
+
+
+def repeat_groups(soup, team_no: int, rpt: str) -> dict[str, dict[str, Any]]:
+    groups: dict[str, dict[str, Any]] = {}
+    if not soup:
+        return groups
+    pattern = re.compile(rf"grdTakim{team_no}_{rpt}_ctl(\d+)_([^\s]+)$", re.I)
+    for tag in soup.find_all(True):
+        tid = str(tag.get("id") or "")
+        m = pattern.search(tid)
+        if not m:
+            continue
+        idx, field = m.group(1), m.group(2)
+        if idx == "00":
+            continue
+        g = groups.setdefault(idx, {})
+        txt = clean_text(tag.get_text(" ", strip=True))
+        if txt:
+            g[field] = txt
+        href = tag.get("href")
+        if href:
+            g[field + "Href"] = href
+            pid = parse_person_id(href)
+            if pid:
+                g[field + "Id"] = pid
+        if tag.name == "img":
+            if tag.get("alt"):
+                g[field + "Alt"] = clean_text(tag.get("alt"))
+            if tag.get("src"):
+                g[field + "Src"] = str(tag.get("src"))
+    return groups
+
+
+def player_obj(name: Any, number: Any = "", href: Any = "", role: str = "") -> dict[str, Any]:
+    name = clean_text(name)
+    if not name:
+        return {}
+    name = re.sub(r",?\s*\d{1,3}\s*\.\s*dk.*$", "", name, flags=re.I).strip()
+    number_text = clean_text(number).replace(".", "")
+    num = parse_int_text(number_text)
+    obj: dict[str, Any] = {"name": name}
+    if num is not None:
+        obj["number"] = num
+    pid = parse_person_id(href)
+    if pid:
+        obj["tffPersonId"] = pid
+    if role:
+        obj["role"] = role
+    return obj
+
+
+def parse_roster_group(soup, team_no: int, rpt: str) -> list[dict[str, Any]]:
+    out = []
+    for idx, g in sorted(repeat_groups(soup, team_no, rpt).items(), key=lambda kv: int(kv[0])):
+        name = g.get("lnkOyuncu") or g.get("lblOyuncu") or g.get("lnkTeknikSorumlu") or g.get("lblTeknikSorumlu")
+        href = g.get("lnkOyuncuHref") or g.get("lblOyuncuHref") or g.get("lnkTeknikSorumluHref") or g.get("lblTeknikSorumluHref") or ""
+        number = g.get("formaNo") or ""
+        obj = player_obj(name, number, href)
+        if obj:
+            out.append(obj)
+    return out
+
+
+def parse_lineups_structured(soup, home: str, away: str, sections: dict[str, str]) -> dict[str, Any]:
+    return {
+        "home": {
+            "team": home,
+            "starting11": parse_roster_group(soup, 1, "rptKadrolar"),
+            "substitutes": parse_roster_group(soup, 1, "rptYedekler"),
+            "technicalStaff": parse_roster_group(soup, 1, "rptTeknikKadro"),
+            "raw": sections.get("lineups_raw", ""),
+        },
+        "away": {
+            "team": away,
+            "starting11": parse_roster_group(soup, 2, "rptKadrolar"),
+            "substitutes": parse_roster_group(soup, 2, "rptYedekler"),
+            "technicalStaff": parse_roster_group(soup, 2, "rptTeknikKadro"),
+            "raw": sections.get("lineups_raw", ""),
+        },
+    }
+
+
+def parse_goal_text(raw: Any) -> tuple[str, Any, str, str]:
+    text = clean_text(raw)
+    goal_type = ""
+    mtype = re.search(r"\(([^)]+)\)", text)
+    if mtype:
+        goal_type = clean_text(mtype.group(1))
+    no_type = re.sub(r"\([^)]*\)", "", text).strip()
+    minute, minute_raw = parse_minute_value(no_type)
+    name = re.sub(r",?\s*\d{1,3}\s*\.\s*dk.*$", "", no_type, flags=re.I).strip(" ,-")
+    return clean_text(name), minute, minute_raw, goal_type
+
+
+def parse_goals(soup, team_no: int, team: str) -> list[dict[str, Any]]:
+    out = []
+    for idx, g in sorted(repeat_groups(soup, team_no, "rptGoller").items(), key=lambda kv: int(kv[0])):
+        raw = g.get("lblGol") or g.get("g") or ""
+        name, minute, minute_raw, goal_type = parse_goal_text(raw)
+        if not name:
+            continue
+        href = g.get("lblGolHref") or ""
+        obj: dict[str, Any] = {"type": "goal", "team": team, "player": name, "scorer": name, "raw": raw}
+        if minute is not None:
+            obj["minute"] = minute
+        if minute_raw:
+            obj["minuteRaw"] = minute_raw
+        if goal_type:
+            obj["goalType"] = goal_type
+        pid = parse_person_id(href)
+        if pid:
+            obj["tffPersonId"] = pid
+        out.append(obj)
+    return out
+
+
+def parse_cards(soup, team_no: int, team: str) -> list[dict[str, Any]]:
+    out = []
+    for idx, g in sorted(repeat_groups(soup, team_no, "rptKartlar").items(), key=lambda kv: int(kv[0])):
+        name = clean_text(g.get("lblKart") or "")
+        if not name:
+            continue
+        minute, minute_raw = parse_minute_value(g.get("d") or g.get("k") or "")
+        alt = g.get("kAlt") or ""
+        src = g.get("kSrc") or ""
+        card = "yellow"
+        if "kirmizi" in norm(alt) or "kirmizi" in norm(src) or "red" in norm(src):
+            card = "red"
+        obj: dict[str, Any] = {"type": f"{card}_card", "card": card, "team": team, "player": name}
+        if minute is not None:
+            obj["minute"] = minute
+        if minute_raw:
+            obj["minuteRaw"] = minute_raw
+        pid = parse_person_id(g.get("lblKartHref") or "")
+        if pid:
+            obj["tffPersonId"] = pid
+        out.append(obj)
+    return out
+
+
+def parse_sub_rows(soup, team_no: int, rpt: str, field: str, minute_field: str) -> list[dict[str, Any]]:
+    out = []
+    for idx, g in sorted(repeat_groups(soup, team_no, rpt).items(), key=lambda kv: int(kv[0])):
+        name = clean_text(g.get(field) or "")
+        if not name:
+            continue
+        minute, minute_raw = parse_minute_value(g.get(minute_field) or "")
+        obj: dict[str, Any] = {"player": name, "order": int(idx)}
+        if minute is not None:
+            obj["minute"] = minute
+        if minute_raw:
+            obj["minuteRaw"] = minute_raw
+        pid = parse_person_id(g.get(field + "Href") or "")
+        if pid:
+            obj["tffPersonId"] = pid
+        out.append(obj)
+    return out
+
+
+def parse_substitutions(soup, team_no: int, team: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    outs = parse_sub_rows(soup, team_no, "rptCikanlar", "lblCikan", "oc")
+    ins = parse_sub_rows(soup, team_no, "rptGirenler", "lblGiren", "og")
+    subs = []
+    events = []
+    max_len = max(len(outs), len(ins))
+    for i in range(max_len):
+        outp = outs[i] if i < len(outs) else {}
+        inp = ins[i] if i < len(ins) else {}
+        minute = inp.get("minute", outp.get("minute"))
+        minute_raw = inp.get("minuteRaw", outp.get("minuteRaw", ""))
+        sub: dict[str, Any] = {"team": team, "order": i + 1}
+        if minute is not None:
+            sub["minute"] = minute
+        if minute_raw:
+            sub["minuteRaw"] = minute_raw
+        if outp:
+            sub["playerOut"] = outp.get("player")
+            if outp.get("tffPersonId"):
+                sub["playerOutTffPersonId"] = outp.get("tffPersonId")
+            ev = {"type": "substitution_out", "team": team, "player": outp.get("player"), "order": i + 1}
+            if minute is not None:
+                ev["minute"] = minute
+            if minute_raw:
+                ev["minuteRaw"] = minute_raw
+            events.append(ev)
+        if inp:
+            sub["playerIn"] = inp.get("player")
+            if inp.get("tffPersonId"):
+                sub["playerInTffPersonId"] = inp.get("tffPersonId")
+            ev = {"type": "substitution_in", "team": team, "player": inp.get("player"), "order": i + 1}
+            if minute is not None:
+                ev["minute"] = minute
+            if minute_raw:
+                ev["minuteRaw"] = minute_raw
+            events.append(ev)
+        if sub.get("playerIn") or sub.get("playerOut"):
+            subs.append(sub)
+    return subs, events
+
+
+def build_players_index_for_match(lineups: dict[str, Any], events: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    players: dict[str, dict[str, Any]] = {}
+    def add(name: Any, team: Any = "", role: str = "", number: Any = None, pid: str = ""):
+        name = clean_text(name)
+        if not name:
+            return
+        key = norm(team) + "|" + norm(name)
+        p = players.setdefault(key, {"name": name, "team": team})
+        if role:
+            p.setdefault("roles", [])
+            if role not in p["roles"]:
+                p["roles"].append(role)
+        if number is not None and "number" not in p:
+            p["number"] = number
+        if pid and "tffPersonId" not in p:
+            p["tffPersonId"] = pid
+    for side in ["home", "away"]:
+        block = lineups.get(side, {}) or {}
+        team = block.get("team", "")
+        for role_name, key in [("starting11", "starting11"), ("substitute", "substitutes"), ("technical_staff", "technicalStaff")]:
+            for pl in block.get(key, []) or []:
+                add(pl.get("name"), team, role_name, pl.get("number"), pl.get("tffPersonId", ""))
+    for ev in events:
+        add(ev.get("player") or ev.get("scorer"), ev.get("team", ""), ev.get("type", "event"), pid=ev.get("tffPersonId", ""))
+    return sorted(players.values(), key=lambda x: (norm(x.get("team", "")), norm(x.get("name", ""))))
+
+
+def parse_structured_events(soup, home: str, away: str, txt: str) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
+    goals = parse_goals(soup, 1, home) + parse_goals(soup, 2, away)
+    cards = parse_cards(soup, 1, home) + parse_cards(soup, 2, away)
+    subs1, sub_events1 = parse_substitutions(soup, 1, home)
+    subs2, sub_events2 = parse_substitutions(soup, 2, away)
+    substitutions = subs1 + subs2
+    events = goals + cards + sub_events1 + sub_events2
+    if not events:
+        events = parse_events_best_effort(txt, home, away)
+    return events, goals, cards, substitutions
 
 
 def parse_events_best_effort(txt: str, home: str, away: str) -> list[dict[str, Any]]:
@@ -423,7 +679,7 @@ def parse_events_best_effort(txt: str, home: str, away: str) -> list[dict[str, A
             current_team = home
         elif away and norm(away) in n:
             current_team = away
-        mm = re.search(r"\b(\d{1,3})\s*(?:\.?\s*dk|dakika|')\b", n)
+        mm = re.search(r"\b(\d{1,3})\s*(?:\.?\s*dk|dakika|'|’)?\b", n)
         if not mm:
             continue
         typ = ""
@@ -461,13 +717,29 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
 
     officials = parse_officials(soup, txt)
     sections = parse_sections_raw(txt)
-    events = parse_events_best_effort(txt, home, away)
+    lineups = parse_lineups_structured(soup, home, away, sections)
+    events, goals, cards, substitutions = parse_structured_events(soup, home, away, txt)
+    players = build_players_index_for_match(lineups, events)
+    goal_scorers = [{"player": g.get("player") or g.get("scorer"), "team": g.get("team"), "minute": g.get("minute"), "goalType": g.get("goalType", "")} for g in goals]
+    stadium = parse_stadium(soup)
+    completeness = {
+        "hasStadium": bool(stadium),
+        "starting11Home": len(lineups.get("home", {}).get("starting11", [])),
+        "starting11Away": len(lineups.get("away", {}).get("starting11", [])),
+        "substitutesHome": len(lineups.get("home", {}).get("substitutes", [])),
+        "substitutesAway": len(lineups.get("away", {}).get("substitutes", [])),
+        "goals": len(goals),
+        "cards": len(cards),
+        "substitutions": len(substitutions),
+        "players": len(players),
+    }
+    quality = "A" if home and away and played and match_date and (completeness["starting11Home"] or completeness["starting11Away"] or completeness["goals"] or completeness["cards"]) else "B" if home and away and match_date else "D"
     return {
         "id": str(mid),
         "matchCode": parse_match_code(soup, txt),
         "season": season,
         "competition": competition,
-        "stadium": parse_stadium(soup),
+        "stadium": stadium,
         "date": match_date,
         "time": match_time,
         "dateDisplay": " - ".join(x for x in [match_date, match_time] if x),
@@ -486,13 +758,16 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
         },
         "officials": officials,
         "referees": officials,
-        "lineups": {
-            "home": {"team": home, "starting11": [], "substitutes": [], "raw": sections.get("lineups_raw", "")},
-            "away": {"team": away, "starting11": [], "substitutes": [], "raw": sections.get("lineups_raw", "")},
-        },
+        "lineups": lineups,
+        "players": players,
         "events": events,
+        "goals": goals,
+        "goalScorers": goal_scorers,
+        "cards": cards,
+        "substitutions": substitutions,
         "sections_raw": sections,
-        "quality": "A" if home and away and played and match_date else "B" if home and away and match_date else "D",
+        "detailCompleteness": completeness,
+        "quality": quality,
         "source": {"name": "TFF", "url": source_url, "retrievedAt": now(), "sourceType": "official_tff_match_detail"},
     }
 
@@ -562,7 +837,7 @@ def match_signature(match: dict[str, Any]) -> str:
 
 
 def index_from_detail(d: dict[str, Any]) -> dict[str, Any]:
-    keys = ["id", "matchCode", "season", "competition", "stadium", "date", "time", "dateDisplay", "homeTeam", "awayTeam", "matchType", "matchTypeLabel", "score", "balkes", "quality"]
+    keys = ["id", "matchCode", "season", "competition", "stadium", "date", "time", "dateDisplay", "homeTeam", "awayTeam", "matchType", "matchTypeLabel", "score", "balkes", "quality", "detailCompleteness"]
     out = {k: d.get(k) for k in keys if d.get(k) not in (None, "", {}, [])}
     out["detailUrl"] = f"seasons/{d['season']}/matches/{d['id']}.json"
     out["source"] = d["source"]

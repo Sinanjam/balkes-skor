@@ -1,5 +1,5 @@
 {
-  "policy": "TFF-only; Gemini diagnostic only; v22 no standings fixed3",
+  "policy": "TFF-only; no standings; perfect detail parser with goals/cards/lineups/subs/stadium/matchType",
   "team": "Balıkesirspor",
   "baseline": {
     "minSeasons": 1,
