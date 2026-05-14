@@ -1,9 +1,7 @@
 {
-  "version": 1,
-  "mode": "queue",
+  "version": 2,
+  "mode": "manual",
   "pointer": 0,
-  "lastCompletedSeason": null,
-  "completedSeasons": [],
   "runOrder": [
     "2025-2026",
     "2024-2025",
@@ -41,5 +39,7 @@
     "1992-1993",
     "1991-1992",
     "1990-1991"
-  ]
+  ],
+  "completedSeasons": [],
+  "note": "Cron kapalı. start_season ve max_seasons manuel girilecek."
 }
