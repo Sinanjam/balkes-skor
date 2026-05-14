@@ -1,0 +1,303 @@
+{
+  "id": "223304",
+  "macId": "223304",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 2,
+  "stage": "2. Hafta",
+  "date": "2021-08-20",
+  "time": "20:30",
+  "dateDisplay": "20.08.2021 - 20:30",
+  "homeTeam": "YILPORT SAMSUNSPOR",
+  "awayTeam": "Balıkesirspor",
+  "score": {
+    "home": 3,
+    "away": 1,
+    "display": "3-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "opponent": "YILPORT SAMSUNSPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 3,
+    "result": "L"
+  },
+  "venue": "SAMSUN YENİ 19 MAYIS - SAMSUN - SAMSUN MERKEZ",
+  "referees": [
+    {
+      "name": "ALPER ÇETİN",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "OĞUZ TERZİ",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "NURETTİN DİNÇER DEMİR",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "HAMİT BASIK",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "AYKUT GÜMÜLÜ",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "HAKAN BAŞESGİOĞLU",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "ENDER TÜRKYILMAZ",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "KAMİL KILINÇ",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "6",
+      "player": "YASİN ÖZTEKİN",
+      "team": "YILPORT SAMSUNSPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "11",
+      "player": "YASİN ÖZTEKİN",
+      "team": "YILPORT SAMSUNSPOR",
+      "note": "H"
+    },
+    {
+      "type": "goal",
+      "minute": "67",
+      "player": "YASİN ÖZTEKİN",
+      "team": "YILPORT SAMSUNSPOR",
+      "note": "H"
+    },
+    {
+      "type": "goal",
+      "minute": "28",
+      "player": "OĞUZ HAN AYNAOĞLU",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "25",
+      "player": "CUMALİ BİŞİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "70",
+      "player": "EMİRHAN ÇAKIR",
+      "team": "Balıkesirspor"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "YILPORT SAMSUNSPOR",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "NURULLAH ASLAN"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ANTONIO MANUEL FERNANDES MENDES"
+        },
+        {
+          "shirt_no": "11",
+          "name": "GÖKHAN KARADENİZ"
+        },
+        {
+          "shirt_no": "15",
+          "name": "RECEP BURAK YILMAZ"
+        },
+        {
+          "shirt_no": "21",
+          "name": "KEVIN GNONHER BOLI"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ALİ ÜLGEN"
+        },
+        {
+          "shirt_no": "23",
+          "name": "YASİN ÖZTEKİN"
+        },
+        {
+          "shirt_no": "28",
+          "name": "SONER GÖNÜL"
+        },
+        {
+          "shirt_no": "55",
+          "name": "HASAN KILIÇ"
+        },
+        {
+          "shirt_no": "77",
+          "name": "MELİH OKUTAN"
+        },
+        {
+          "shirt_no": "88",
+          "name": "OSMAN ÇELİK"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "93",
+          "name": "AYKUT ÖZER"
+        },
+        {
+          "shirt_no": "22",
+          "name": "ALAADDİN OKUMUŞ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "YUNUS EMRE ÇİFT"
+        },
+        {
+          "shirt_no": "6",
+          "name": "BARIŞ BAŞDAŞ"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CİHAN KAHRAMAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "MEHMET AKYÜZ"
+        },
+        {
+          "shirt_no": "25",
+          "name": "ERALD ÇİNARİ"
+        },
+        {
+          "shirt_no": "97",
+          "name": "POLAT YALDIR"
+        },
+        {
+          "shirt_no": "99",
+          "name": "ALİ KILIÇ"
+        }
+      ],
+      "coach": "MEHMET ALTIPARMAK"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEMAL KIZILATEŞ"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "1",
+          "name": "ANDRIJA VUKOVIC"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ANDAÇ GÜLERYÜZ"
+        },
+        {
+          "shirt_no": "22",
+          "name": "AYBERK KAYGISIZ"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "97",
+          "name": "BERKAY AYKURT"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "15",
+          "name": "ENES KARABULUT"
+        },
+        {
+          "shirt_no": "23",
+          "name": "EMİRHAN ÇAKIR"
+        },
+        {
+          "shirt_no": "25",
+          "name": "SEDAT YİĞİT KURNAZ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        }
+      ],
+      "coach": "YUSUF ŞİMŞEK"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223304&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223304.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

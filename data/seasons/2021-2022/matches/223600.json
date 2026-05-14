@@ -1,0 +1,314 @@
+{
+  "id": "223600",
+  "macId": "223600",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 33,
+  "stage": "33. Hafta",
+  "date": "2022-05-01",
+  "time": "16:00",
+  "dateDisplay": "1.05.2022 - 16:00",
+  "homeTeam": "BEREKET SİGORTA ÜMRANİYESPOR",
+  "awayTeam": "Balıkesirspor",
+  "score": {
+    "home": 4,
+    "away": 1,
+    "display": "4-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "opponent": "BEREKET SİGORTA ÜMRANİYESPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 4,
+    "result": "L"
+  },
+  "venue": "ÜMRANİYE BELEDİYESİ ŞEHİR STADI - İSTANBUL - ÜMRAN",
+  "referees": [
+    {
+      "name": "TARIK GÜLDAL",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "ADEM ŞAHAN",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "MAHMUT GÜLLE",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "METEHAN ALPAT",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "NAMIK KARAMAN",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "AHMET HAMDİ USTA",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "ALAATTİN ÖZCAN",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "İSMET KEKLİK",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "3",
+      "player": "YACINE BAMMOU",
+      "team": "BEREKET SİGORTA ÜMRANİYESPOR",
+      "note": "H"
+    },
+    {
+      "type": "goal",
+      "minute": "24",
+      "player": "YUSUF EMRE GÜLTEKİN",
+      "team": "BEREKET SİGORTA ÜMRANİYESPOR",
+      "note": "H"
+    },
+    {
+      "type": "goal",
+      "minute": "37",
+      "player": "YONATHAN ALEXANDER DEL VALLE RODRIGUEZ",
+      "team": "BEREKET SİGORTA ÜMRANİYESPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "47",
+      "player": "YUSUF EMRE GÜLTEKİN",
+      "team": "BEREKET SİGORTA ÜMRANİYESPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "65",
+      "player": "BERK TOSUN",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "90+3",
+      "player": "MUHAMMED ALİ DOĞAN",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "74",
+      "player": "AYBERK KAYGISIZ",
+      "team": "Balıkesirspor"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "BEREKET SİGORTA ÜMRANİYESPOR",
+      "starting11": [
+        {
+          "shirt_no": "35",
+          "name": "BURAK ÖĞÜR"
+        },
+        {
+          "shirt_no": "2",
+          "name": "AVDIJA VRSAJEVIC"
+        },
+        {
+          "shirt_no": "5",
+          "name": "ALİM ÖZTÜRK"
+        },
+        {
+          "shirt_no": "20",
+          "name": "OĞUZ GÜRBULAK"
+        },
+        {
+          "shirt_no": "10",
+          "name": "YACINE BAMMOU"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ONUR AYIK"
+        },
+        {
+          "shirt_no": "28",
+          "name": "YONATHAN ALEXANDER DEL VALLE RODRIGUEZ"
+        },
+        {
+          "shirt_no": "40",
+          "name": "YUSUF EMRE GÜLTEKİN"
+        },
+        {
+          "shirt_no": "41",
+          "name": "KARTAL KAYRA YILMAZ"
+        },
+        {
+          "shirt_no": "44",
+          "name": "TOMISLAV GLUMAC"
+        },
+        {
+          "shirt_no": "97",
+          "name": "FARUK CAN GENÇ"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "13",
+          "name": "ORKUN ÖZDEMİR"
+        },
+        {
+          "shirt_no": "4",
+          "name": "MUSTAFA ESER"
+        },
+        {
+          "shirt_no": "14",
+          "name": "FATİH YİĞİT ŞANLİTÜRK"
+        },
+        {
+          "shirt_no": "15",
+          "name": "MUSTAFA CAN KARAGÖZ"
+        },
+        {
+          "shirt_no": "19",
+          "name": "AJDIN HASIC"
+        },
+        {
+          "shirt_no": "8",
+          "name": "SERKAN GÖKSU"
+        },
+        {
+          "shirt_no": "21",
+          "name": "STEFANO NAPOLEONI"
+        },
+        {
+          "shirt_no": "30",
+          "name": "ATALAY BABACAN"
+        },
+        {
+          "shirt_no": "7",
+          "name": "IDRISSA CAMARA"
+        },
+        {
+          "shirt_no": "22",
+          "name": "HÜSEYİN ATAKAN ÜNER"
+        }
+      ],
+      "coach": "RECEP UÇAR"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "26",
+          "name": "YASİN YİĞİT BERBER"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "22",
+          "name": "AYBERK KAYGISIZ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "16",
+          "name": "BERK TOSUN"
+        },
+        {
+          "shirt_no": "77",
+          "name": "BEDİRHAN KOLKOPARAN"
+        },
+        {
+          "shirt_no": "33",
+          "name": "GÜNEY ÇELİK KELEŞ"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "61",
+          "name": "HASAN CAN BİNGÜL"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "15",
+          "name": "ENES KARABULUT"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "25",
+          "name": "SEDAT YİĞİT KURNAZ"
+        },
+        {
+          "shirt_no": "44",
+          "name": "GÖRKEM ALTUN"
+        },
+        {
+          "shirt_no": "97",
+          "name": "BERKAY AYKURT"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        }
+      ],
+      "coach": ""
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223600&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223600.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

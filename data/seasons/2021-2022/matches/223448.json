@@ -1,0 +1,317 @@
+{
+  "id": "223448",
+  "macId": "223448",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 17,
+  "stage": "17. Hafta",
+  "date": "2021-12-18",
+  "time": "19:00",
+  "dateDisplay": "18.12.2021 - 19:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "ALTINORDU",
+  "score": {
+    "home": 3,
+    "away": 4,
+    "display": "3-4",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "ALTINORDU",
+    "goalsFor": 3,
+    "goalsAgainst": 4,
+    "result": "L"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "CANER AK",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "KEMAL ELMAS",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "CEM ÖZBAY",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "VELİ KARAKAYA",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "AYKUT GÜMÜLÜ",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "İSMAİL ŞENOĞLU",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "İLKER EMİR",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "47",
+      "player": "ANIL TAŞDEMİR",
+      "team": "Balıkesirspor",
+      "note": "P"
+    },
+    {
+      "type": "goal",
+      "minute": "56",
+      "player": "DOĞA İŞERİ",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "81",
+      "player": "ANIL TAŞDEMİR",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "33",
+      "player": "AHMET DERELİ",
+      "team": "ALTINORDU",
+      "note": "P"
+    },
+    {
+      "type": "goal",
+      "minute": "37",
+      "player": "AHMET DERELİ",
+      "team": "ALTINORDU",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "50",
+      "player": "AHMET DERELİ",
+      "team": "ALTINORDU",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "90+2",
+      "player": "AHMET DERELİ",
+      "team": "ALTINORDU",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "89",
+      "player": "METEHAN YİLMAZ",
+      "team": "ALTINORDU"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ANDAÇ GÜLERYÜZ"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEMAL KIZILATEŞ"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ABDULKADİR ÖZGEN"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        }
+      ],
+      "coach": ""
+    },
+    "away": {
+      "team": "ALTINORDU",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "ALİ EMRE YANAR"
+        },
+        {
+          "shirt_no": "26",
+          "name": "FURKAN METİN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ALİ DERE"
+        },
+        {
+          "shirt_no": "92",
+          "name": "RAHMİ SALİH KAYA"
+        },
+        {
+          "shirt_no": "2",
+          "name": "VOLKAN FINDIKLI"
+        },
+        {
+          "shirt_no": "5",
+          "name": "METEHAN YİLMAZ"
+        },
+        {
+          "shirt_no": "52",
+          "name": "HÜSAMETTİN YENER"
+        },
+        {
+          "shirt_no": "8",
+          "name": "MUZAFFER KOCAER"
+        },
+        {
+          "shirt_no": "10",
+          "name": "AHMET DERELİ"
+        },
+        {
+          "shirt_no": "25",
+          "name": "KÜRŞAD SÜRMELİ"
+        },
+        {
+          "shirt_no": "42",
+          "name": "KENAN FAKILI"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "16",
+          "name": "EMİRHAN EMİR"
+        },
+        {
+          "shirt_no": "83",
+          "name": "SERHAT ÖZTAŞDELEN"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ŞEREF ÖZCAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "RECEP AYDIN"
+        },
+        {
+          "shirt_no": "18",
+          "name": "RIDVAN KOÇAK"
+        },
+        {
+          "shirt_no": "23",
+          "name": "YUSUF YALÇIN ARSLAN"
+        },
+        {
+          "shirt_no": "77",
+          "name": "EMİRCAN GÜRLÜK"
+        },
+        {
+          "shirt_no": "80",
+          "name": "SAMİ SATILMIŞ"
+        },
+        {
+          "shirt_no": "88",
+          "name": "YUSUF CAN ESENDEMİR"
+        },
+        {
+          "shirt_no": "99",
+          "name": "ANIL ARICIOĞLU"
+        }
+      ],
+      "coach": "HÜSEYİN EROĞLU"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223448&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223448.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

@@ -1,78 +1,15 @@
 {
-  "app": "Balkes Skor",
-  "schemaVersion": 2,
-  "dataVersion": 7,
-  "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-12T22:06:53.731455Z",
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "team": "Balıkesirspor",
-  "assets": {
-    "logo": "assets/logo_balkes_skor.png"
-  },
   "availableSeasons": [
     {
-      "id": "2025-2026",
-      "name": "2025-2026",
-      "matchCount": 33
-    },
-    {
-      "id": "2024-2025",
-      "name": "2024-2025",
-      "matchCount": 33
-    },
-    {
-      "id": "2023-2024",
-      "name": "2023-2024",
-      "matchCount": 29
-    },
-    {
-      "id": "2022-2023",
-      "name": "2022-2023",
-      "matchCount": 37
-    },
-    {
-      "id": "2018-2019",
-      "name": "2018-2019",
-      "matchCount": 2
-    },
-    {
-      "id": "2009-2010",
-      "name": "2009-2010",
-      "matchCount": 1
-    },
-    {
-      "id": "1996-1997",
-      "name": "1996-1997",
-      "matchCount": 1
-    },
-    {
-      "id": "1994-1995",
-      "name": "1994-1995",
-      "matchCount": 1
-    },
-    {
-      "id": "1992-1993",
-      "name": "1992-1993",
-      "matchCount": 1
-    },
-    {
-      "id": "1991-1992",
-      "name": "1991-1992",
-      "matchCount": 1
-    },
-    {
-      "id": "1990-1991",
-      "name": "1990-1991",
-      "matchCount": 2
+      "id": "2021-2022",
+      "name": "2021-2022",
+      "matchCount": 36
     }
   ],
-  "global": {
-    "playersIndexUrl": "players_index.json",
-    "opponentsIndexUrl": "opponents_index.json",
-    "searchIndexUrl": "search_index.json",
-    "dataReportUrl": "data_report.json"
-  },
-  "appDataVersion": 8,
-  "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-13T03:28:13Z"
+  "app": "Balkes Skor",
+  "team": "Balıkesirspor",
+  "schemaVersion": 2,
+  "dataVersion": 1,
+  "appDataVersion": 1,
+  "lastUpdated": "2026-05-14T00:47:58Z"
 }

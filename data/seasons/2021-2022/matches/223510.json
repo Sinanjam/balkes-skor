@@ -1,0 +1,290 @@
+{
+  "id": "223510",
+  "macId": "223510",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 23,
+  "stage": "23. Hafta",
+  "date": "2022-02-16",
+  "time": "14:30",
+  "dateDisplay": "16.02.2022 - 14:30",
+  "homeTeam": "ANKARA KEÇİÖRENGÜCÜ",
+  "awayTeam": "Balıkesirspor",
+  "score": {
+    "home": 3,
+    "away": 1,
+    "display": "3-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "opponent": "ANKARA KEÇİÖRENGÜCÜ",
+    "goalsFor": 1,
+    "goalsAgainst": 3,
+    "result": "L"
+  },
+  "venue": "AKTEPE STADI - ANKARA",
+  "referees": [
+    {
+      "name": "RAMAZAN KELEŞ",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "DENİZ TURGUT",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "NURETTİN DİNÇER DEMİR",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "BATUHAN GÜLTEK",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "ZİYA ÇETİN",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "HÜSEYİN ŞENEL",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "ERCÜMENT ÖZİNAN",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "7",
+      "player": "HAMZA GÜR",
+      "team": "ANKARA KEÇİÖRENGÜCÜ",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "46",
+      "player": "ALİ YAVUZ KOL",
+      "team": "ANKARA KEÇİÖRENGÜCÜ",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "83",
+      "player": "PETER AMBROSE",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "90+2",
+      "player": "BİROL PARLAK",
+      "team": "Balıkesirspor",
+      "note": "K"
+    },
+    {
+      "type": "card",
+      "minute": "35",
+      "player": "DOĞA İŞERİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "62",
+      "player": "SEDAT DURSUN",
+      "team": "Balıkesirspor"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "ANKARA KEÇİÖRENGÜCÜ",
+      "starting11": [
+        {
+          "shirt_no": "71",
+          "name": "METİN UÇAR"
+        },
+        {
+          "shirt_no": "16",
+          "name": "OGÜN BAYRAK"
+        },
+        {
+          "shirt_no": "3",
+          "name": "MUHARREM CİNAN"
+        },
+        {
+          "shirt_no": "4",
+          "name": "MEHMET TAYFUN DİNGİL"
+        },
+        {
+          "shirt_no": "23",
+          "name": "SELİMHAN SOLMAZ"
+        },
+        {
+          "shirt_no": "88",
+          "name": "YAW ACKAH"
+        },
+        {
+          "shirt_no": "21",
+          "name": "IBRAHIM ALHASSAN ADAMU"
+        },
+        {
+          "shirt_no": "77",
+          "name": "OLASUNKANMI IBRAHIM OLAWOYIN"
+        },
+        {
+          "shirt_no": "7",
+          "name": "HAMZA GÜR"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ALİ YAVUZ KOL"
+        },
+        {
+          "shirt_no": "18",
+          "name": "ANTHONY CHIGAEMEZU UZODIMMA"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "34",
+          "name": "BORAN GÜNGÖR"
+        },
+        {
+          "shirt_no": "19",
+          "name": "ABDULKADİR KORKUT"
+        },
+        {
+          "shirt_no": "99",
+          "name": "HÜSAMETTİN TUT"
+        },
+        {
+          "shirt_no": "57",
+          "name": "TAHA BATUHAN YAYIKCI"
+        },
+        {
+          "shirt_no": "25",
+          "name": "UĞUR UTLU"
+        },
+        {
+          "shirt_no": "17",
+          "name": "VUSAL ISKANDARLI"
+        },
+        {
+          "shirt_no": "28",
+          "name": "ARB MANAJ"
+        },
+        {
+          "shirt_no": "15",
+          "name": "AYKUT ÇEVİKER"
+        }
+      ],
+      "coach": "TANER TAŞKIN"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "72",
+          "name": "PETER AMBROSE"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "3",
+          "name": "BERAT AYDOĞDU"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        }
+      ],
+      "coach": "GİRAY BULAK"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223510&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223510.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

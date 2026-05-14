@@ -1,0 +1,308 @@
+{
+  "id": "223573",
+  "macId": "223573",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 30,
+  "stage": "30. Hafta",
+  "date": "2022-04-16",
+  "time": "13:30",
+  "dateDisplay": "16.04.2022 - 13:30",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "NASADOGE MENEMENSPOR",
+  "score": {
+    "home": 1,
+    "away": 1,
+    "display": "1-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "NASADOGE MENEMENSPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 1,
+    "result": "D"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "EREN ÖZYEMİŞCİOĞLU",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "MEHMET ŞAHAN YILMAZ",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "FERDİ KARADORUK",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "LÜTFULLAH ASLAN",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "CENGİZ AKYÜZ",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "MUSTAFA SARAL",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "DURMUŞ CANSEVER",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "6",
+      "player": "ANIL TAŞDEMİR",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "40",
+      "player": "DOĞA İŞERİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "90+1",
+      "player": "ANIL TAŞDEMİR",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "90+4",
+      "player": "BATUHAN İŞÇİLER",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "17",
+      "player": "FOXI KETHEVOAMA",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "goal",
+      "minute": "90+5",
+      "player": "AHMET SAĞAT",
+      "team": "NASADOGE MENEMENSPOR",
+      "note": "P"
+    },
+    {
+      "type": "card",
+      "minute": "77",
+      "player": "ÖMER ŞAHBAŞ",
+      "team": "NASADOGE MENEMENSPOR"
+    },
+    {
+      "type": "card",
+      "minute": "81",
+      "player": "ABDOULAYE CISSE",
+      "team": "NASADOGE MENEMENSPOR"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "3",
+          "name": "BERAT AYDOĞDU"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "72",
+          "name": "PETER AMBROSE"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        }
+      ],
+      "coach": "GİRAY BULAK"
+    },
+    "away": {
+      "team": "NASADOGE MENEMENSPOR",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "BATUHAN AHMET ŞEN"
+        },
+        {
+          "shirt_no": "3",
+          "name": "EMRE BATUHAN ADIGÜZEL"
+        },
+        {
+          "shirt_no": "6",
+          "name": "MAHAMADOU BA"
+        },
+        {
+          "shirt_no": "13",
+          "name": "ABDOULAYE CISSE"
+        },
+        {
+          "shirt_no": "21",
+          "name": "ÖMER ŞAHBAŞ"
+        },
+        {
+          "shirt_no": "27",
+          "name": "TONI CORREIA GOMES"
+        },
+        {
+          "shirt_no": "28",
+          "name": "ABDULLAH AYDIN"
+        },
+        {
+          "shirt_no": "44",
+          "name": "OĞUZHAN ÇAPAR"
+        },
+        {
+          "shirt_no": "54",
+          "name": "BATUHAN KIRDAROĞLU"
+        },
+        {
+          "shirt_no": "71",
+          "name": "MUHAMMED HİMMET ERTÜRK"
+        },
+        {
+          "shirt_no": "90",
+          "name": "OLANREWAJU MUHAMMED KEHINDE"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "25",
+          "name": "MURAT HOCAOĞLU"
+        },
+        {
+          "shirt_no": "11",
+          "name": "AHMET SAĞAT"
+        },
+        {
+          "shirt_no": "19",
+          "name": "MOHAMED MAHDI SABBAH"
+        },
+        {
+          "shirt_no": "22",
+          "name": "CEM ÇELİK"
+        },
+        {
+          "shirt_no": "24",
+          "name": "EMRE ÖZER"
+        },
+        {
+          "shirt_no": "29",
+          "name": "OĞUZHAN AYDOĞAN"
+        },
+        {
+          "shirt_no": "37",
+          "name": "KEREM PAYKOÇ"
+        },
+        {
+          "shirt_no": "70",
+          "name": "EMİR ŞENOCAK"
+        },
+        {
+          "shirt_no": "77",
+          "name": "SİNAN AKGÖL"
+        },
+        {
+          "shirt_no": "91",
+          "name": "MAHMUT AKAN"
+        }
+      ],
+      "coach": "DİLAVER MUTLU"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223573&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223573.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

@@ -1,0 +1,300 @@
+{
+  "id": "223375",
+  "macId": "223375",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 9,
+  "stage": "9. Hafta",
+  "date": "2021-10-24",
+  "time": "16:00",
+  "dateDisplay": "24.10.2021 - 16:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "BURSASPOR",
+  "score": {
+    "home": 0,
+    "away": 2,
+    "display": "0-2",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "BURSASPOR",
+    "goalsFor": 0,
+    "goalsAgainst": 2,
+    "result": "L"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "BURAK PAKKAN",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "FERDİ KARADORUK",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "MERT BULUT",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "ONUR BİNGÖL",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "AKİF UĞURDUR",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "BÜLENT BAYAZIT",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "NURULLAH ÖZTÜRK",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "card",
+      "minute": "90+4",
+      "player": "CUMALİ BİŞİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "66",
+      "player": "OĞUZ HAN AYNAOĞLU",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "goal",
+      "minute": "29",
+      "player": "NAMIK ALASKAROV",
+      "team": "BURSASPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "81",
+      "player": "BATUHAN KÖR",
+      "team": "BURSASPOR",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "81",
+      "player": "İSMAİL YÜKSEK",
+      "team": "BURSASPOR"
+    },
+    {
+      "type": "card",
+      "minute": "90",
+      "player": "EREN GÜLER",
+      "team": "BURSASPOR"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ABDULKADİR ÖZGEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "1",
+          "name": "ANDRIJA VUKOVIC"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ANDAÇ GÜLERYÜZ"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEMAL KIZILATEŞ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        }
+      ],
+      "coach": "İSMET KAMAK"
+    },
+    "away": {
+      "team": "BURSASPOR",
+      "starting11": [
+        {
+          "shirt_no": "35",
+          "name": "ERHAN ERENTÜRK"
+        },
+        {
+          "shirt_no": "3",
+          "name": "ONUR ATASAYAR"
+        },
+        {
+          "shirt_no": "7",
+          "name": "NAMIK ALASKAROV"
+        },
+        {
+          "shirt_no": "18",
+          "name": "TİM MATAVZ"
+        },
+        {
+          "shirt_no": "19",
+          "name": "KEREM ŞEN"
+        },
+        {
+          "shirt_no": "29",
+          "name": "MERT YILMAZ"
+        },
+        {
+          "shirt_no": "31",
+          "name": "LUKA CAPAN"
+        },
+        {
+          "shirt_no": "33",
+          "name": "NICOLAS MAURICIO ZALAZAR"
+        },
+        {
+          "shirt_no": "36",
+          "name": "BURAK ALTIPARMAK"
+        },
+        {
+          "shirt_no": "70",
+          "name": "MASSIMO BRUNO"
+        },
+        {
+          "shirt_no": "80",
+          "name": "İSMAİL YÜKSEK"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "28",
+          "name": "DENİZ AYDIN"
+        },
+        {
+          "shirt_no": "1",
+          "name": "CANBERK YURDAKUL"
+        },
+        {
+          "shirt_no": "5",
+          "name": "EMİRHAN AYDOĞAN"
+        },
+        {
+          "shirt_no": "9",
+          "name": "BATUHAN KÖR"
+        },
+        {
+          "shirt_no": "11",
+          "name": "EREN GÜLER"
+        },
+        {
+          "shirt_no": "14",
+          "name": "HASAN AYAROĞLU"
+        },
+        {
+          "shirt_no": "15",
+          "name": "AYKUT AKGÜN"
+        },
+        {
+          "shirt_no": "20",
+          "name": "VEFA TEMEL"
+        },
+        {
+          "shirt_no": "22",
+          "name": "TAHA ALTIKARDEŞ"
+        },
+        {
+          "shirt_no": "23",
+          "name": "FURKAN EMRE ÜNVER"
+        }
+      ],
+      "coach": "ÖZCAN BİZATİ"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223375&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223375.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

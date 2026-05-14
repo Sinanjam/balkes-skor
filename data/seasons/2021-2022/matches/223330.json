@@ -1,0 +1,292 @@
+{
+  "id": "223330",
+  "macId": "223330",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 4,
+  "stage": "4. Hafta",
+  "date": "2021-09-16",
+  "time": "17:30",
+  "dateDisplay": "16.09.2021 - 17:30",
+  "homeTeam": "KOCAELİSPOR",
+  "awayTeam": "Balıkesirspor",
+  "score": {
+    "home": 3,
+    "away": 1,
+    "display": "3-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "opponent": "KOCAELİSPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 3,
+    "result": "L"
+  },
+  "venue": "KOCAELİ STADI - KOCAELİ",
+  "referees": [
+    {
+      "name": "DİRENÇ TONUSLUOĞLU",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "HÜSEYİN AYLAK",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "EMİR ERAY EYİSOY",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "METEHAN ALPAT",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "CENGİZ AKYÜZ",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "UĞUR KÖLEMEN",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "MEHMET ALİ YURTSEVER",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "2",
+      "player": "DINO NDLOVU",
+      "team": "KOCAELİSPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "18",
+      "player": "DINO NDLOVU",
+      "team": "KOCAELİSPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "40",
+      "player": "DINO NDLOVU",
+      "team": "KOCAELİSPOR",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "53",
+      "player": "MICHAEL PEREIRA",
+      "team": "KOCAELİSPOR"
+    },
+    {
+      "type": "goal",
+      "minute": "90+1",
+      "player": "CUMALİ BİŞİ",
+      "team": "Balıkesirspor",
+      "note": "P"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "KOCAELİSPOR",
+      "starting11": [
+        {
+          "shirt_no": "17",
+          "name": "İSMET YUMAKOĞULLARI"
+        },
+        {
+          "shirt_no": "3",
+          "name": "DIOGO ALEKSIS ÖZÇAKMAK"
+        },
+        {
+          "shirt_no": "6",
+          "name": "MEHMET TAŞ"
+        },
+        {
+          "shirt_no": "7",
+          "name": "MUSA NİZAM"
+        },
+        {
+          "shirt_no": "8",
+          "name": "YILMAZ ÖZEREN"
+        },
+        {
+          "shirt_no": "9",
+          "name": "DINO NDLOVU"
+        },
+        {
+          "shirt_no": "11",
+          "name": "BRYAN ALFREDO CABEZAS SEGURA"
+        },
+        {
+          "shirt_no": "12",
+          "name": "ATİLA TURAN"
+        },
+        {
+          "shirt_no": "13",
+          "name": "ABDOULAYE CISSE"
+        },
+        {
+          "shirt_no": "14",
+          "name": "İLYAS KUBİLAY YAVUZ"
+        },
+        {
+          "shirt_no": "29",
+          "name": "MICHAEL PEREIRA"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "23",
+          "name": "DOĞUKAN KAYA"
+        },
+        {
+          "shirt_no": "15",
+          "name": "ALPAY ÇELEBİ"
+        },
+        {
+          "shirt_no": "18",
+          "name": "JOHANNA OCHIENG OMOLO"
+        },
+        {
+          "shirt_no": "19",
+          "name": "İSA NALBANT"
+        },
+        {
+          "shirt_no": "27",
+          "name": "SEMİH KARADENİZ"
+        },
+        {
+          "shirt_no": "52",
+          "name": "DENİZALP ÖZDEMİR"
+        },
+        {
+          "shirt_no": "61",
+          "name": "TERRENCE LEONARD TISDELL"
+        },
+        {
+          "shirt_no": "77",
+          "name": "BENHUR KESER"
+        },
+        {
+          "shirt_no": "86",
+          "name": "DİLAVER GÜÇLÜ"
+        }
+      ],
+      "coach": "MUSTAFA REŞİT AKÇAY"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "ANDRIJA VUKOVIC"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEMAL KIZILATEŞ"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ANDAÇ GÜLERYÜZ"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ABDULKADİR ÖZGEN"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        }
+      ],
+      "coach": ""
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223330&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223330.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

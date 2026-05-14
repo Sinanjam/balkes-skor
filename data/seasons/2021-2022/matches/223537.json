@@ -1,0 +1,303 @@
+{
+  "id": "223537",
+  "macId": "223537",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 26,
+  "stage": "26. Hafta",
+  "date": "2022-03-07",
+  "time": "20:00",
+  "dateDisplay": "7.03.2022 - 20:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "ALTAŞ DENİZLİSPOR",
+  "score": {
+    "home": 0,
+    "away": 1,
+    "display": "0-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "ALTAŞ DENİZLİSPOR",
+    "goalsFor": 0,
+    "goalsAgainst": 1,
+    "result": "L"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "ALPER AKARSU",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "EMRAH ÜNAL",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "MEHMET AKINCIK",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "BURAK OLCAR",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "NAMIK KARAMAN",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "MEHMET TUNA",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "MUKADDER KARDİYEN",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "card",
+      "minute": "41",
+      "player": "DOĞA İŞERİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "84",
+      "player": "ATİLLA ÖZMEN",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "82",
+      "player": "FOXI KETHEVOAMA",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "goal",
+      "minute": "84",
+      "player": "HAKAN ÇİNEMRE",
+      "team": "ALTAŞ DENİZLİSPOR",
+      "note": "H"
+    },
+    {
+      "type": "card",
+      "minute": "71",
+      "player": "OĞUZ YILMAZ",
+      "team": "ALTAŞ DENİZLİSPOR"
+    },
+    {
+      "type": "card",
+      "minute": "35",
+      "player": "İLHAN DEPE",
+      "team": "ALTAŞ DENİZLİSPOR"
+    },
+    {
+      "type": "card",
+      "minute": "90+5",
+      "player": "ÖZER ÖZDEMİR",
+      "team": "ALTAŞ DENİZLİSPOR"
+    },
+    {
+      "type": "card",
+      "minute": "43",
+      "player": "LEO SCHWECHLEN",
+      "team": "ALTAŞ DENİZLİSPOR"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "72",
+          "name": "PETER AMBROSE"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "3",
+          "name": "BERAT AYDOĞDU"
+        },
+        {
+          "shirt_no": "61",
+          "name": "HASAN CAN BİNGÜL"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        }
+      ],
+      "coach": "GİRAY BULAK"
+    },
+    "away": {
+      "team": "ALTAŞ DENİZLİSPOR",
+      "starting11": [
+        {
+          "shirt_no": "20",
+          "name": "ABDULKADİR SÜNGER"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ÖZER ÖZDEMİR"
+        },
+        {
+          "shirt_no": "15",
+          "name": "OĞUZ YILMAZ"
+        },
+        {
+          "shirt_no": "22",
+          "name": "LEO SCHWECHLEN"
+        },
+        {
+          "shirt_no": "26",
+          "name": "GÖKHAN SÜZEN"
+        },
+        {
+          "shirt_no": "27",
+          "name": "EMRE SAĞLIK"
+        },
+        {
+          "shirt_no": "29",
+          "name": "İLHAN DEPE"
+        },
+        {
+          "shirt_no": "63",
+          "name": "MUHAMMED GÖNÜLAÇAR"
+        },
+        {
+          "shirt_no": "69",
+          "name": "ULRICH KEVIN SELOM MAYI"
+        },
+        {
+          "shirt_no": "77",
+          "name": "ÖMER HASAN ŞİŞMANOĞLU"
+        },
+        {
+          "shirt_no": "97",
+          "name": "BRICE FLORENTIN DJA DJEDJE"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "1",
+          "name": "HÜSEYİN ALTINTAŞ"
+        },
+        {
+          "shirt_no": "3",
+          "name": "HAKAN ÇİNEMRE"
+        },
+        {
+          "shirt_no": "5",
+          "name": "ASIM HAMZAÇEBİ"
+        },
+        {
+          "shirt_no": "9",
+          "name": "MUSTAFA ÇEÇENOĞLU"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BEKİR TURAÇ BÖKE"
+        },
+        {
+          "shirt_no": "2",
+          "name": "TIAGO JORGE OLIVEIRA LOPES"
+        },
+        {
+          "shirt_no": "41",
+          "name": "MUHAMMET ÖZKAL"
+        },
+        {
+          "shirt_no": "13",
+          "name": "ALİ EREN YALÇIN"
+        }
+      ],
+      "coach": "MESUT BAKKAL"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223537&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223537.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

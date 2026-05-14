@@ -1,0 +1,305 @@
+{
+  "id": "223393",
+  "macId": "223393",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 11,
+  "stage": "11. Hafta",
+  "date": "2021-11-07",
+  "time": "16:00",
+  "dateDisplay": "7.11.2021 - 16:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "ADANASPOR A.Ş.",
+  "score": {
+    "home": 1,
+    "away": 2,
+    "display": "1-2",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "ADANASPOR A.Ş.",
+    "goalsFor": 1,
+    "goalsAgainst": 2,
+    "result": "L"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "ÇAĞDAŞ ALTAY",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "MEHMET ŞAHAN YILMAZ",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "ERKAN AKBULUT",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "CAN CENGİZ",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "KEMAL ÇAKMAK",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "MÜMTAZ NECİMOĞLU",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "ERHAN ŞAHİN",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "84",
+      "player": "ROMAN BEZJAK",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "77",
+      "player": "CUMALİ BİŞİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "90+6",
+      "player": "ERDEM GÖKÇE",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "36",
+      "player": "ROMAN BEZJAK",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "goal",
+      "minute": "38",
+      "player": "CELİL YÜKSEL",
+      "team": "ADANASPOR A.Ş.",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "61",
+      "player": "SAMED ALİ KAYA",
+      "team": "ADANASPOR A.Ş.",
+      "note": "H"
+    },
+    {
+      "type": "card",
+      "minute": "30",
+      "player": "CELİL YÜKSEL",
+      "team": "ADANASPOR A.Ş."
+    },
+    {
+      "type": "card",
+      "minute": "42",
+      "player": "FIRATCAN ÜZÜM",
+      "team": "ADANASPOR A.Ş."
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ABDULKADİR ÖZGEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEMAL KIZILATEŞ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ANDAÇ GÜLERYÜZ"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        }
+      ],
+      "coach": "İSMET KAMAK"
+    },
+    "away": {
+      "team": "ADANASPOR A.Ş.",
+      "starting11": [
+        {
+          "shirt_no": "18",
+          "name": "GORAN KARACIC"
+        },
+        {
+          "shirt_no": "12",
+          "name": "ISAAC DONKOR"
+        },
+        {
+          "shirt_no": "35",
+          "name": "UĞURCAN YAZĞILI"
+        },
+        {
+          "shirt_no": "23",
+          "name": "EVREN KORKMAZ"
+        },
+        {
+          "shirt_no": "99",
+          "name": "FIRATCAN ÜZÜM"
+        },
+        {
+          "shirt_no": "6",
+          "name": "YOUSSEF AIT BENASSER"
+        },
+        {
+          "shirt_no": "20",
+          "name": "THOMAS JAN PAUL BRUNS"
+        },
+        {
+          "shirt_no": "5",
+          "name": "CELİL YÜKSEL"
+        },
+        {
+          "shirt_no": "3",
+          "name": "MUHAMMET ÖMER ÇAKI"
+        },
+        {
+          "shirt_no": "17",
+          "name": "SAMED ALİ KAYA"
+        },
+        {
+          "shirt_no": "9",
+          "name": "OGNJEN OZEGOVIC"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "1",
+          "name": "BURAK ÇAPKINOĞLU"
+        },
+        {
+          "shirt_no": "30",
+          "name": "RÜŞTÜ HANLI"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEM ÖZDEMİR"
+        },
+        {
+          "shirt_no": "77",
+          "name": "HIFSULLAH İSMAİL ERDOĞAN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "SAMUEL TETTEH"
+        },
+        {
+          "shirt_no": "94",
+          "name": "İBRAHİM AKSU"
+        },
+        {
+          "shirt_no": "90",
+          "name": "AHMETHAN KÖSE"
+        },
+        {
+          "shirt_no": "13",
+          "name": "HARUN KAYA"
+        }
+      ],
+      "coach": "SAİT KARAFIRTINALAR"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223393&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223393.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

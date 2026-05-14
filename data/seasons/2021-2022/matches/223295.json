@@ -1,0 +1,286 @@
+{
+  "id": "223295",
+  "macId": "223295",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 1,
+  "stage": "1. Hafta",
+  "date": "2021-08-14",
+  "time": "21:45",
+  "dateDisplay": "14.08.2021 - 21:45",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "BEYPİLİÇ BOLUSPOR",
+  "score": {
+    "home": 1,
+    "away": 0,
+    "display": "1-0",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "BEYPİLİÇ BOLUSPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 0,
+    "result": "W"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "OĞUZHAN AKSU",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "MEHMET ŞAHAN YILMAZ",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "MERT BULUT",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "YALÇIN TAŞKINFURAT",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "MEHMET KAYA",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "MURAT YAMAK",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "DURMUŞ CANSEVER",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "ŞABAN GÜVEN EKER",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "55",
+      "player": "ANIL TAŞDEMİR",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "90",
+      "player": "SEDAT DURSUN",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "63",
+      "player": "HÜSEYİN KARABEY",
+      "team": "Balıkesirspor"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CEMAL KIZILATEŞ"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "1",
+          "name": "ANDRIJA VUKOVIC"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "4",
+          "name": "ALPEREN ERDİNÇ"
+        },
+        {
+          "shirt_no": "7",
+          "name": "ANDAÇ GÜLERYÜZ"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "15",
+          "name": "ENES KARABULUT"
+        },
+        {
+          "shirt_no": "23",
+          "name": "EMİRHAN ÇAKIR"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "33",
+          "name": "GÜNEY ÇELİK KELEŞ"
+        },
+        {
+          "shirt_no": "97",
+          "name": "BERKAY AYKURT"
+        }
+      ],
+      "coach": "YUSUF ŞİMŞEK"
+    },
+    "away": {
+      "team": "BEYPİLİÇ BOLUSPOR",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "GENTIAN SELMANI"
+        },
+        {
+          "shirt_no": "3",
+          "name": "ABDURRAHİM DURSUN"
+        },
+        {
+          "shirt_no": "4",
+          "name": "FETHİ ÖZER"
+        },
+        {
+          "shirt_no": "5",
+          "name": "TUGAY KACAR"
+        },
+        {
+          "shirt_no": "8",
+          "name": "ERAY ATASEVEN"
+        },
+        {
+          "shirt_no": "10",
+          "name": "DEJVİ BREGU"
+        },
+        {
+          "shirt_no": "23",
+          "name": "KABONGO KASONGO"
+        },
+        {
+          "shirt_no": "40",
+          "name": "EMİN BAYRAM"
+        },
+        {
+          "shirt_no": "52",
+          "name": "ARDA KÖKSAL"
+        },
+        {
+          "shirt_no": "66",
+          "name": "ABDURRAHMAN CANLI"
+        },
+        {
+          "shirt_no": "89",
+          "name": "ERKAM REŞMEN"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "13",
+          "name": "ÖMER ALICI"
+        },
+        {
+          "shirt_no": "6",
+          "name": "BURAK ASAN"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ONORIODE MARSHAL ODAH"
+        },
+        {
+          "shirt_no": "15",
+          "name": "ARDA HİLMİ ŞENGÜL"
+        },
+        {
+          "shirt_no": "17",
+          "name": "ATAMER BİLGİN"
+        },
+        {
+          "shirt_no": "20",
+          "name": "TALHA ERDOĞAN"
+        },
+        {
+          "shirt_no": "22",
+          "name": "MEHMET ZAHİT ÇINAR"
+        },
+        {
+          "shirt_no": "50",
+          "name": "ALİ KETEN"
+        },
+        {
+          "shirt_no": "54",
+          "name": "ENSAR BİLİR"
+        },
+        {
+          "shirt_no": "67",
+          "name": "BERTU ALİCAN ÖZYÜREK"
+        }
+      ],
+      "coach": "REHA KEMAL ERGİNER"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223295&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223295.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

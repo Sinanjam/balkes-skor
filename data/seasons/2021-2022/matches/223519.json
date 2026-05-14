@@ -1,0 +1,308 @@
+{
+  "id": "223519",
+  "macId": "223519",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 24,
+  "stage": "24. Hafta",
+  "date": "2022-02-20",
+  "time": "16:00",
+  "dateDisplay": "20.02.2022 - 16:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "İSTANBULSPOR A.Ş.",
+  "score": {
+    "home": 1,
+    "away": 3,
+    "display": "1-3",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "İSTANBULSPOR A.Ş.",
+    "goalsFor": 1,
+    "goalsAgainst": 3,
+    "result": "L"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "MURAT ERDOĞAN",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "MUHAMMET YUMAK",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "MERT BULUT",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "SÜLEYMAN SOYUTÜRK",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "ZİYA ÇETİN",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "ERSEL KILIÇ",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "LEVENT AKYER",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "minute": "76",
+      "player": "İBRAHİM HALİL ÇOLAK",
+      "team": "Balıkesirspor",
+      "note": "F"
+    },
+    {
+      "type": "card",
+      "minute": "79",
+      "player": "DOĞA İŞERİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "45+1",
+      "player": "ABRAHAM NNAMDI NWANKWO",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "goal",
+      "minute": "48",
+      "player": "MUAMMER SARIKAYA",
+      "team": "İSTANBULSPOR A.Ş.",
+      "note": "H"
+    },
+    {
+      "type": "goal",
+      "minute": "66",
+      "player": "JETMİR TOPALLİ",
+      "team": "İSTANBULSPOR A.Ş.",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "72",
+      "player": "İBRAHİM YILMAZ",
+      "team": "İSTANBULSPOR A.Ş.",
+      "note": "P"
+    },
+    {
+      "type": "card",
+      "minute": "30",
+      "player": "MEHMET YEŞİL",
+      "team": "İSTANBULSPOR A.Ş."
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "72",
+          "name": "PETER AMBROSE"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "39",
+          "name": "HÜSEYİN KARABEY"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ROMAN BEZJAK"
+        },
+        {
+          "shirt_no": "3",
+          "name": "BERAT AYDOĞDU"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        }
+      ],
+      "coach": "GİRAY BULAK"
+    },
+    "away": {
+      "team": "İSTANBULSPOR A.Ş.",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "MUHAMMED ALPEREN UYSAL"
+        },
+        {
+          "shirt_no": "4",
+          "name": "MEHMET YEŞİL"
+        },
+        {
+          "shirt_no": "9",
+          "name": "İBRAHİM YILMAZ"
+        },
+        {
+          "shirt_no": "13",
+          "name": "OĞUZHAN BERBER"
+        },
+        {
+          "shirt_no": "20",
+          "name": "FERHAT YAZGAN"
+        },
+        {
+          "shirt_no": "24",
+          "name": "MUAMMER SARIKAYA"
+        },
+        {
+          "shirt_no": "27",
+          "name": "VALON ETHEMI"
+        },
+        {
+          "shirt_no": "50",
+          "name": "MICHAEL OLOGO INAINFE"
+        },
+        {
+          "shirt_no": "57",
+          "name": "MELİH KABASAKAL"
+        },
+        {
+          "shirt_no": "66",
+          "name": "ALİ YAŞAR"
+        },
+        {
+          "shirt_no": "98",
+          "name": "JETMİR TOPALLİ"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "26",
+          "name": "MÜCAHİT SERBEST"
+        },
+        {
+          "shirt_no": "3",
+          "name": "TUNCER DUHAN AKSU"
+        },
+        {
+          "shirt_no": "6",
+          "name": "BERKAY GÖRMEZ"
+        },
+        {
+          "shirt_no": "10",
+          "name": "EDUART RROCA"
+        },
+        {
+          "shirt_no": "11",
+          "name": "ALDIN CAJIC"
+        },
+        {
+          "shirt_no": "19",
+          "name": "EMİR KAAN GÜLTEKİN"
+        },
+        {
+          "shirt_no": "23",
+          "name": "OKAN ERDOĞAN"
+        },
+        {
+          "shirt_no": "44",
+          "name": "YUSUF ALİ ÖZER"
+        },
+        {
+          "shirt_no": "47",
+          "name": "ABDURRAHMAN EMEK"
+        },
+        {
+          "shirt_no": "48",
+          "name": "MERTAN CANER ÖZTÜRK"
+        }
+      ],
+      "coach": "MEHMET HÜSEYİN DALGIÇ"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223519&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223519.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}

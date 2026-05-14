@@ -1,0 +1,284 @@
+{
+  "id": "223475",
+  "macId": "223475",
+  "season": "2021-2022",
+  "competition": "TFF 1. League (Professional Team)",
+  "roundType": "league",
+  "week": 20,
+  "stage": "20. Hafta",
+  "date": "2022-01-16",
+  "time": "16:00",
+  "dateDisplay": "16.01.2022 - 16:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "YILPORT SAMSUNSPOR",
+  "score": {
+    "home": 0,
+    "away": 2,
+    "display": "0-2",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "opponent": "YILPORT SAMSUNSPOR",
+    "goalsFor": 0,
+    "goalsAgainst": 2,
+    "result": "L"
+  },
+  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+  "referees": [
+    {
+      "name": "ABDULLAH BUĞRA TAŞKINSOY",
+      "role": "Referee",
+      "role_tr": "Referee"
+    },
+    {
+      "name": "OĞUZ KAĞAN ÇALIŞIR",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "MEHMET AKINCIK",
+      "role": "Assistant Referee",
+      "role_tr": "Assistant Referee"
+    },
+    {
+      "name": "FEVZİ ERDEM AKBAŞ",
+      "role": "Fourth Official",
+      "role_tr": "Fourth Official"
+    },
+    {
+      "name": "AKİF UĞURDUR",
+      "role": "Observer",
+      "role_tr": "Observer"
+    },
+    {
+      "name": "BERK ÖZBEK",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    },
+    {
+      "name": "SÜLEYMAN BASA",
+      "role": "Delegate",
+      "role_tr": "Delegate"
+    }
+  ],
+  "events": [
+    {
+      "type": "card",
+      "minute": "90",
+      "player": "CUMALİ BİŞİ",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "card",
+      "minute": "33",
+      "player": "SEDAT DURSUN",
+      "team": "Balıkesirspor"
+    },
+    {
+      "type": "goal",
+      "minute": "19",
+      "player": "YASİN ÖZTEKİN",
+      "team": "YILPORT SAMSUNSPOR",
+      "note": "F"
+    },
+    {
+      "type": "goal",
+      "minute": "83",
+      "player": "MORYKE FOFANA",
+      "team": "YILPORT SAMSUNSPOR",
+      "note": "F"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "shirt_no": "19",
+          "name": "ATİLLA ÖZMEN"
+        },
+        {
+          "shirt_no": "5",
+          "name": "SEDAT DURSUN"
+        },
+        {
+          "shirt_no": "35",
+          "name": "BATUHAN İŞÇİLER"
+        },
+        {
+          "shirt_no": "6",
+          "name": "DOĞA İŞERİ"
+        },
+        {
+          "shirt_no": "2",
+          "name": "ERDEM GÖKÇE"
+        },
+        {
+          "shirt_no": "14",
+          "name": "BOSSE ADAM CEDRIC KORE"
+        },
+        {
+          "shirt_no": "90",
+          "name": "FOXI KETHEVOAMA"
+        },
+        {
+          "shirt_no": "20",
+          "name": "ABRAHAM NNAMDI NWANKWO"
+        },
+        {
+          "shirt_no": "63",
+          "name": "İBRAHİM HALİL ÇOLAK"
+        },
+        {
+          "shirt_no": "18",
+          "name": "MAHATMA OSUMANU OTOO"
+        },
+        {
+          "shirt_no": "72",
+          "name": "PETER AMBROSE"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "99",
+          "name": "YİĞİTHAN KIR"
+        },
+        {
+          "shirt_no": "27",
+          "name": "OLTION BILALLI"
+        },
+        {
+          "shirt_no": "93",
+          "name": "CUMALİ BİŞİ"
+        },
+        {
+          "shirt_no": "10",
+          "name": "ANIL TAŞDEMİR"
+        },
+        {
+          "shirt_no": "22",
+          "name": "AYBERK KAYGISIZ"
+        },
+        {
+          "shirt_no": "23",
+          "name": "EMİRHAN ÇAKIR"
+        },
+        {
+          "shirt_no": "53",
+          "name": "BİROL PARLAK"
+        },
+        {
+          "shirt_no": "12",
+          "name": "MUHAMMED ALİ DOĞAN"
+        },
+        {
+          "shirt_no": "17",
+          "name": "OĞUZ HAN AYNAOĞLU"
+        }
+      ],
+      "coach": "GİRAY BULAK"
+    },
+    "away": {
+      "team": "YILPORT SAMSUNSPOR",
+      "starting11": [
+        {
+          "shirt_no": "1",
+          "name": "NURULLAH ASLAN"
+        },
+        {
+          "shirt_no": "22",
+          "name": "ALAADDİN OKUMUŞ"
+        },
+        {
+          "shirt_no": "4",
+          "name": "YUNUS EMRE ÇİFT"
+        },
+        {
+          "shirt_no": "19",
+          "name": "SHELDON MICHAEL LOUIS BATEAU"
+        },
+        {
+          "shirt_no": "28",
+          "name": "SONER GÖNÜL"
+        },
+        {
+          "shirt_no": "88",
+          "name": "OSMAN ÇELİK"
+        },
+        {
+          "shirt_no": "55",
+          "name": "HASAN KILIÇ"
+        },
+        {
+          "shirt_no": "8",
+          "name": "CİHAN KAHRAMAN"
+        },
+        {
+          "shirt_no": "23",
+          "name": "YASİN ÖZTEKİN"
+        },
+        {
+          "shirt_no": "70",
+          "name": "MORYKE FOFANA"
+        },
+        {
+          "shirt_no": "9",
+          "name": "ANTONIO MANUEL FERNANDES MENDES"
+        }
+      ],
+      "substitutes": [
+        {
+          "shirt_no": "93",
+          "name": "AYKUT ÖZER"
+        },
+        {
+          "shirt_no": "15",
+          "name": "RECEP BURAK YILMAZ"
+        },
+        {
+          "shirt_no": "3",
+          "name": "HÜSEYİN ÖZTÜRK"
+        },
+        {
+          "shirt_no": "44",
+          "name": "BERK TAŞKIN"
+        },
+        {
+          "shirt_no": "7",
+          "name": "TOLCAY CİĞERCİ"
+        },
+        {
+          "shirt_no": "20",
+          "name": "MUHAMMET ALİ ÖZBASKICI"
+        },
+        {
+          "shirt_no": "25",
+          "name": "ERALD ÇİNARİ"
+        },
+        {
+          "shirt_no": "77",
+          "name": "MELİH OKUTAN"
+        },
+        {
+          "shirt_no": "99",
+          "name": "ALİ KILIÇ"
+        },
+        {
+          "shirt_no": "18",
+          "name": "ELHADJ ABDOURAHAMANE BAH"
+        }
+      ],
+      "coach": "FUAT ÇAPA"
+    }
+  },
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?macId=223475&pageID=528"
+  },
+  "raw": {
+    "sourceZip": "TFF-Entegrasyon.zip",
+    "rawTextFile": "raw_text/223475.txt"
+  },
+  "fetchedAt": "2026-05-14T00:12:06Z"
+}
