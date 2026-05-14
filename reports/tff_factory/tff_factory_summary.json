@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T23:10:51.639186Z",
+  "generatedAt": "2026-05-14T23:15:50.959632Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.4-strict-legacy-known-only",
@@ -28,99 +28,7 @@
         "start": "2018-07-01",
         "end": "2019-06-30"
       },
-      "generatedAt": "2026-05-14T23:10:51.623433Z"
-    },
-    {
-      "season": "2017-2018",
-      "skipped": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "selectedIds": 0,
-      "allDiscoveredIds": 0,
-      "detailCandidates": 0,
-      "candidateMode": "skip_no_tff_record",
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "2017-07-01",
-        "end": "2018-06-30"
-      },
-      "generatedAt": "2026-05-14T23:10:51.623722Z"
-    },
-    {
-      "season": "2016-2017",
-      "skipped": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "selectedIds": 0,
-      "allDiscoveredIds": 0,
-      "detailCandidates": 0,
-      "candidateMode": "skip_no_tff_record",
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "2016-07-01",
-        "end": "2017-06-30"
-      },
-      "generatedAt": "2026-05-14T23:10:51.624006Z"
-    },
-    {
-      "season": "2015-2016",
-      "skipped": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "selectedIds": 0,
-      "allDiscoveredIds": 0,
-      "detailCandidates": 0,
-      "candidateMode": "skip_no_tff_record",
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "2015-07-01",
-        "end": "2016-06-30"
-      },
-      "generatedAt": "2026-05-14T23:10:51.624315Z"
-    },
-    {
-      "season": "2014-2015",
-      "skipped": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "selectedIds": 0,
-      "allDiscoveredIds": 0,
-      "detailCandidates": 0,
-      "candidateMode": "skip_no_tff_record",
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "2014-07-01",
-        "end": "2015-06-30"
-      },
-      "generatedAt": "2026-05-14T23:10:51.624593Z"
+      "generatedAt": "2026-05-14T23:15:50.945976Z"
     }
   ],
   "after": {
