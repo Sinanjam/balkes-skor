@@ -937,12 +937,46 @@ def index_from_detail(d: dict[str, Any]) -> dict[str, Any]:
 
 
 
-def season_skip_reason(item: dict[str, Any]) -> str:
+def season_year_start(season: str) -> int:
+    try:
+        return int(str(season)[:4])
+    except Exception:
+        return 9999
+
+
+def has_exact_tff_target(item: dict[str, Any]) -> bool:
+    """True when the season has an exact TFF target or explicit known match IDs.
+
+    This is intentionally stricter than the generic pageIds fallback. Old TFF
+    pages often redirect/show current-season fixture links; using only generic
+    pageIds caused 2018-2019 runs to probe 2025-2026 macIds. For legacy seasons
+    we only hit TFF when a season-specific target or hand-verified macId exists.
+    """
+    if item.get("knownMatchIds"):
+        return True
+    plan = item.get("tffPlan") or {}
+    if str(item.get("targetPageID") or plan.get("pageID") or "").strip():
+        return True
+    if any(isinstance(u, str) and u.strip() for u in (item.get("targetUrls") or [])):
+        return True
+    return False
+
+
+def is_legacy_history_season(item: dict[str, Any], args: argparse.Namespace | None = None) -> bool:
+    season = str(item.get("season") or "")
+    cutoff = 2018
+    if args is not None:
+        cutoff = int(getattr(args, "legacy_target_cutoff_year", cutoff) or cutoff)
+    return bool(item.get("legacySeason")) or season_year_start(season) <= cutoff
+
+
+def season_skip_reason(item: dict[str, Any], args: argparse.Namespace | None = None) -> str:
     """Return a non-empty reason when this season should not hit TFF.
 
-    Amateur-era seasons are intentionally skipped so the workflow does not waste
-    time probing TFF pages that are not expected to have official match-detail
-    records.
+    Amateur-era seasons are intentionally skipped. Legacy professional seasons
+    are also skipped when no exact season target/known macId exists, because the
+    generic pageId fallback can surface modern-season macIds and waste hundreds
+    of requests with 0 reliable hits.
     """
     for key in ["skipTff", "skipTffFetch", "noTffRecord", "amateurSeason"]:
         if bool(item.get(key)):
@@ -950,6 +984,9 @@ def season_skip_reason(item: dict[str, Any]) -> str:
     status = norm(item.get("professionalStatus") or item.get("level") or "")
     if status == "amateur" or "amator" in status:
         return str(item.get("skipReason") or "amateur_season_no_tff_match_detail")
+    strict = True if args is None else bool(getattr(args, "strict_legacy_targets", True))
+    if strict and is_legacy_history_season(item, args) and not has_exact_tff_target(item):
+        return str(item.get("skipReason") or "legacy_professional_missing_exact_tff_target_no_blind_scan")
     return ""
 
 
@@ -959,7 +996,7 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
     raw_root = Path(args.raw_root)
     reports_root = Path(args.reports_root)
     log(f"=== {season} başladı ===")
-    skip_reason = season_skip_reason(item)
+    skip_reason = season_skip_reason(item, args)
     if skip_reason:
         log(f"{season}: TFF taraması atlandı -> {skip_reason}")
         quality = {
@@ -1191,6 +1228,8 @@ def main() -> None:
     ap.add_argument("--sleep", type=float, default=1.0)
     ap.add_argument("--max-discovery-probe", type=int, default=1500)
     ap.add_argument("--legacy-broad-probe-limit", type=int, default=350)
+    ap.add_argument("--strict-legacy-targets", action=argparse.BooleanOptionalAction, default=True)
+    ap.add_argument("--legacy-target-cutoff-year", type=int, default=2018)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--skip-standings", action="store_true", default=True)
     args = ap.parse_args()

@@ -32,9 +32,14 @@ on:
         type: boolean
         default: true
       legacy_broad_probe_limit:
-        description: "Eski profesyonel sezonlarda selectedIds 0 hit verirse kaç geniş aday denensin?"
+        description: "Sadece exact target/known macId olan legacy sezonlarda geniş aday limiti. Exact target yoksa kullanılmaz."
         required: true
         default: "350"
+      strict_legacy_targets:
+        description: "Eski sezonlarda exact TFF target/known macId yoksa kör taramayı kapat."
+        required: true
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -97,6 +102,7 @@ jobs:
             --sleep "1.0" \
             --max-discovery-probe "1500" \
             --legacy-broad-probe-limit "${{ github.event.inputs.legacy_broad_probe_limit }}" \
+            ${{ github.event.inputs.strict_legacy_targets == 'true' && '--strict-legacy-targets' || '--no-strict-legacy-targets' }} \
             --skip-standings
 
       - name: Validate produced data
