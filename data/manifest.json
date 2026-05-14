@@ -3,7 +3,7 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-14T22:52:47.912481Z",
+  "generatedAt": "2026-05-14T23:00:16.962896Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -159,12 +159,15 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778799167,
+  "appDataVersion": 1778799616,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T22:52:47.912491Z",
+  "lastUpdated": "2026-05-14T23:00:16.962908Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processedSeasonsInLastRun": [
-    "2018-2019"
+    "2018-2019",
+    "2017-2018",
+    "2016-2017",
+    "2015-2016"
   ]
 }

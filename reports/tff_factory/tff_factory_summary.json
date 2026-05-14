@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T22:52:47.922220Z",
+  "generatedAt": "2026-05-14T23:00:16.972463Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
@@ -179,7 +179,76 @@
         "start": "2018-07-01",
         "end": "2019-06-30"
       },
-      "generatedAt": "2026-05-14T22:52:47.908121Z"
+      "generatedAt": "2026-05-14T23:00:16.957725Z"
+    },
+    {
+      "season": "2017-2018",
+      "skipped": true,
+      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
+      "selectedIds": 0,
+      "allDiscoveredIds": 0,
+      "detailCandidates": 0,
+      "candidateMode": "skip_no_tff_record",
+      "matchesPublished": 0,
+      "detailFiles": 0,
+      "duplicatesDropped": 0,
+      "rejectedReasons": {},
+      "rejectedSamples": {},
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {},
+      "seasonGuard": {
+        "start": "2017-07-01",
+        "end": "2018-06-30"
+      },
+      "generatedAt": "2026-05-14T23:00:16.958200Z"
+    },
+    {
+      "season": "2016-2017",
+      "skipped": true,
+      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
+      "selectedIds": 0,
+      "allDiscoveredIds": 0,
+      "detailCandidates": 0,
+      "candidateMode": "skip_no_tff_record",
+      "matchesPublished": 0,
+      "detailFiles": 0,
+      "duplicatesDropped": 0,
+      "rejectedReasons": {},
+      "rejectedSamples": {},
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {},
+      "seasonGuard": {
+        "start": "2016-07-01",
+        "end": "2017-06-30"
+      },
+      "generatedAt": "2026-05-14T23:00:16.958483Z"
+    },
+    {
+      "season": "2015-2016",
+      "skipped": true,
+      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
+      "selectedIds": 0,
+      "allDiscoveredIds": 0,
+      "detailCandidates": 0,
+      "candidateMode": "skip_no_tff_record",
+      "matchesPublished": 0,
+      "detailFiles": 0,
+      "duplicatesDropped": 0,
+      "rejectedReasons": {},
+      "rejectedSamples": {},
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {},
+      "seasonGuard": {
+        "start": "2015-07-01",
+        "end": "2016-06-30"
+      },
+      "generatedAt": "2026-05-14T23:00:16.958786Z"
     }
   ],
   "after": {
