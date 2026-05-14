@@ -1,0 +1,142 @@
+name: TFF Factory Auto
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_season:
+        description: "Start season"
+        required: true
+        default: "2025-2026"
+      max_seasons:
+        description: "How many seasons to process"
+        required: true
+        default: "1"
+      create_pr:
+        description: "Commit changes to PR branch"
+        required: true
+        type: boolean
+        default: true
+      run_gemini:
+        description: "Run Gemini diagnostics if GEMINI_API_KEY exists"
+        required: true
+        type: boolean
+        default: true
+
+  schedule:
+    # 03:10 UTC = 06:10 Türkiye saati
+    - cron: "10 3 * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: read
+
+jobs:
+  tff-factory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install parser deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml
+
+      - name: Resolve settings
+        id: settings
+        shell: bash
+        run: |
+          START_SEASON="${{ github.event.inputs.start_season || '2025-2026' }}"
+          MAX_SEASONS="${{ github.event.inputs.max_seasons || '1' }}"
+          CREATE_PR="${{ github.event.inputs.create_pr || 'true' }}"
+          RUN_GEMINI="${{ github.event.inputs.run_gemini || 'true' }}"
+          echo "start_season=$START_SEASON" >> "$GITHUB_OUTPUT"
+          echo "max_seasons=$MAX_SEASONS" >> "$GITHUB_OUTPUT"
+          echo "create_pr=$CREATE_PR" >> "$GITHUB_OUTPUT"
+          echo "run_gemini=$RUN_GEMINI" >> "$GITHUB_OUTPUT"
+
+      - name: Validate current data
+        run: |
+          python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
+
+      - name: Run TFF Factory
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python scripts/tff_factory.py \
+            --seed sources/tff/registry/balkes_tff_seed_registry.json \
+            --data-root data \
+            --raw-root sources/tff/raw \
+            --reports-root reports/tff_factory \
+            --start-season "${{ steps.settings.outputs.start_season }}" \
+            --max-seasons "${{ steps.settings.outputs.max_seasons }}" \
+            --sleep "1.5"
+
+      - name: Validate produced data
+        run: |
+          python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
+
+      - name: Gemini diagnostics
+        if: ${{ always() && steps.settings.outputs.run_gemini == 'true' && secrets.GEMINI_API_KEY != '' }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+        run: |
+          python scripts/gemini_tff_helper.py \
+            --reports-root reports/tff_factory \
+            --raw-root sources/tff/raw \
+            --max-files 10
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tff-factory-report
+          path: |
+            reports/tff_factory/**/*.json
+            sources/tff/**/*.json
+
+      - name: Create PR
+        if: ${{ success() && steps.settings.outputs.create_pr == 'true' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          BRANCH="factory/tff-${{ steps.settings.outputs.start_season }}"
+          git checkout -B "$BRANCH"
+
+          git add data sources/tff reports/tff_factory
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Run TFF factory from ${{ steps.settings.outputs.start_season }}"
+          git push -f origin "$BRANCH"
+
+          BODY_FILE="$(mktemp)"
+          echo "TFF-only factory run." >> "$BODY_FILE"
+          echo "" >> "$BODY_FILE"
+          echo "- Start season: ${{ steps.settings.outputs.start_season }}" >> "$BODY_FILE"
+          echo "- Max seasons: ${{ steps.settings.outputs.max_seasons }}" >> "$BODY_FILE"
+          echo "- Validation: passed" >> "$BODY_FILE"
+          echo "- Gemini diagnostics: ${{ steps.settings.outputs.run_gemini }}" >> "$BODY_FILE"
+          echo "- Source policy: TFF-only" >> "$BODY_FILE"
+
+          gh pr create \
+            --title "Run TFF factory from ${{ steps.settings.outputs.start_season }}" \
+            --body-file "$BODY_FILE" \
+            --base main \
+            --head "$BRANCH" || true

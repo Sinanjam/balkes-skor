@@ -1,0 +1,773 @@
+{
+  "policy": "TFF-only. App/site data must be produced only from official/open TFF pages.",
+  "team": "Balıkesirspor",
+  "teamNameVariants": [
+    "Balıkesirspor",
+    "BALIKESİRSPOR",
+    "Balikesirspor",
+    "BALIKESIRSPOR"
+  ],
+  "baseline": {
+    "minSeasons": 12,
+    "minMatches": 177
+  },
+  "daily": {
+    "startSeason": "2025-2026",
+    "maxSeasons": 1
+  },
+  "fullHistoryBlocks": [
+    {
+      "startSeason": "2025-2026",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "2020-2021",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "2015-2016",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "2010-2011",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "2005-2006",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "2000-2001",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "1995-1996",
+      "maxSeasons": 5
+    },
+    {
+      "startSeason": "1990-1991",
+      "maxSeasons": 5
+    }
+  ],
+  "runOrder": [
+    "2025-2026",
+    "2024-2025",
+    "2023-2024",
+    "2022-2023",
+    "2021-2022",
+    "2020-2021",
+    "2019-2020",
+    "2018-2019",
+    "2017-2018",
+    "2016-2017",
+    "2015-2016",
+    "2014-2015",
+    "2013-2014",
+    "2012-2013",
+    "2011-2012",
+    "2010-2011",
+    "2009-2010",
+    "2008-2009",
+    "2007-2008",
+    "2006-2007",
+    "2005-2006",
+    "2004-2005",
+    "2003-2004",
+    "2002-2003",
+    "2001-2002",
+    "2000-2001",
+    "1999-2000",
+    "1998-1999",
+    "1997-1998",
+    "1996-1997",
+    "1995-1996",
+    "1994-1995",
+    "1993-1994",
+    "1992-1993",
+    "1991-1992",
+    "1990-1991"
+  ],
+  "leaguePageIds": {
+    "tff-1-lig": [
+      337,
+      142
+    ],
+    "tff-2-lig": [
+      976
+    ],
+    "tff-3-lig": [
+      971
+    ],
+    "turkiye-kupasi": [
+      288,
+      196
+    ],
+    "generic-match-detail": [
+      528,
+      29
+    ]
+  },
+  "seasons": [
+    {
+      "season": "2025-2026",
+      "priority": 1,
+      "competitionGuess": "Nesine 3. Lig",
+      "pageIds": [
+        971,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2024-2025",
+      "priority": 2,
+      "competitionGuess": "Nesine 3. Lig",
+      "pageIds": [
+        971,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2023-2024",
+      "priority": 3,
+      "competitionGuess": "TFF 3. Lig",
+      "pageIds": [
+        971,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2022-2023",
+      "priority": 4,
+      "competitionGuess": "TFF 2. Lig",
+      "pageIds": [
+        976,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2021-2022",
+      "priority": 5,
+      "competitionGuess": "TFF 1. Lig",
+      "pageIds": [
+        337,
+        142,
+        29,
+        528
+      ],
+      "knownMatchIds": [
+        223295,
+        223304,
+        223321,
+        223330,
+        223339,
+        223348,
+        223357,
+        223366,
+        223375,
+        223384,
+        223393,
+        223402,
+        223411,
+        223420,
+        223429,
+        223439,
+        223448,
+        223457,
+        223466,
+        223475,
+        223492,
+        223501,
+        223510,
+        223519,
+        223528,
+        223537,
+        223546,
+        223555,
+        223564,
+        223573,
+        223582,
+        223591,
+        223600,
+        223610,
+        223619,
+        223628
+      ],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2020-2021",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2019-2020",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2018-2019",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2017-2018",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2016-2017",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2015-2016",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2014-2015",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2013-2014",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2012-2013",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2011-2012",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2010-2011",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2009-2010",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2008-2009",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2007-2008",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2006-2007",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2005-2006",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2004-2005",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2003-2004",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2002-2003",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2001-2002",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "2000-2001",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1999-2000",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1998-1999",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1997-1998",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1996-1997",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1995-1996",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1994-1995",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1993-1994",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1992-1993",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1991-1992",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    },
+    {
+      "season": "1990-1991",
+      "priority": 50,
+      "competitionGuess": "",
+      "pageIds": [
+        337,
+        142,
+        976,
+        971,
+        288,
+        196,
+        29,
+        528
+      ],
+      "knownMatchIds": [],
+      "discoverStandings": true,
+      "tryWeeklyStandings": true
+    }
+  ]
+}
