@@ -1,0 +1,64 @@
+{
+  "season": "2019-2020",
+  "selectedIds": 94,
+  "allDiscoveredIds": 311,
+  "detailCandidates": 94,
+  "candidateMode": "selected_or_known",
+  "matchesPublished": 30,
+  "detailFiles": 30,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "balkes_not_found": 60,
+    "date_out_of_season:2020-07-02": 1,
+    "date_out_of_season:2020-07-06": 1,
+    "date_out_of_season:2020-07-11": 1,
+    "date_out_of_season:2020-07-19": 1
+  },
+  "rejectedSamples": {
+    "balkes_not_found": [
+      "207460",
+      "207466",
+      "207467",
+      "207470",
+      "207473",
+      "207479",
+      "207484",
+      "207486",
+      "207494",
+      "207500",
+      "207501",
+      "207507",
+      "207512",
+      "207514",
+      "207519",
+      "207528",
+      "207530",
+      "207534",
+      "207539",
+      "207547"
+    ],
+    "date_out_of_season:2020-07-02": [
+      "207737"
+    ],
+    "date_out_of_season:2020-07-06": [
+      "207745"
+    ],
+    "date_out_of_season:2020-07-11": [
+      "207754"
+    ],
+    "date_out_of_season:2020-07-19": [
+      "207763"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {
+    "league": 30
+  },
+  "seasonGuard": {
+    "start": "2019-07-01",
+    "end": "2020-06-30"
+  },
+  "generatedAt": "2026-05-14T21:05:38.037957Z"
+}

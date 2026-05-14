@@ -1,0 +1,48 @@
+{
+  "season": "2021-2022",
+  "selectedIds": 103,
+  "allDiscoveredIds": 347,
+  "detailCandidates": 103,
+  "candidateMode": "selected_or_known",
+  "matchesPublished": 36,
+  "detailFiles": 36,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "balkes_not_found": 67
+  },
+  "rejectedSamples": {
+    "balkes_not_found": [
+      "223299",
+      "223300",
+      "223305",
+      "223320",
+      "223335",
+      "223338",
+      "223341",
+      "223344",
+      "223354",
+      "223355",
+      "223359",
+      "223360",
+      "223368",
+      "223371",
+      "223377",
+      "223385",
+      "223386",
+      "223395",
+      "223396",
+      "223403"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {
+    "league": 36
+  },
+  "seasonGuard": {
+    "start": "2021-07-01",
+    "end": "2022-06-30"
+  },
+  "generatedAt": "2026-05-14T20:56:05.852924Z"
+}
