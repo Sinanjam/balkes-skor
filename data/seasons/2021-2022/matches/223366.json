@@ -1,344 +1,68 @@
 {
   "id": "223366",
-  "macId": "223366",
+  "tffMatchId": "223366",
   "season": "2021-2022",
-  "competition": "TFF 1. League (Professional Team)",
-  "roundType": "league",
-  "week": 8,
-  "stage": "8. Hafta",
-  "date": "2021-10-16",
+  "competition": "TRENDYOL SÜPER LİG",
+  "group": "",
+  "roundType": "cup",
+  "week": null,
+  "stage": "",
+  "date": "2021-16-10",
   "time": "16:00",
-  "dateDisplay": "16.10.2021 - 16:00",
-  "homeTeam": "ALTAŞ DENİZLİSPOR",
-  "awayTeam": "Balıkesirspor",
+  "dateDisplay": "10.16.2021 - 16:00",
+  "stadium": "",
+  "venue": "",
+  "city": "",
+  "referee": "",
+  "assistantReferees": [],
+  "fourthOfficial": "",
+  "referees": [],
+  "homeTeam": "",
+  "awayTeam": "",
   "score": {
-    "home": 2,
-    "away": 1,
-    "display": "2-1",
+    "home": null,
+    "away": null,
+    "display": "",
     "played": true
   },
-  "balkes": {
-    "isHome": false,
-    "opponent": "ALTAŞ DENİZLİSPOR",
-    "goalsFor": 1,
-    "goalsAgainst": 2,
-    "result": "L"
+  "halfTimeScore": {
+    "home": null,
+    "away": null,
+    "display": ""
   },
-  "venue": "DENİZLİ ATATÜRK STADI - DENİZLİ",
-  "referees": [
-    {
-      "name": "CİHAN AYDIN",
-      "role": "Referee",
-      "role_tr": "Referee"
-    },
-    {
-      "name": "SERDAR DİYADİN",
-      "role": "Assistant Referee",
-      "role_tr": "Assistant Referee"
-    },
-    {
-      "name": "MEHMET ŞENGÜL",
-      "role": "Assistant Referee",
-      "role_tr": "Assistant Referee"
-    },
-    {
-      "name": "EREN ÖZYEMİŞCİOĞLU",
-      "role": "Fourth Official",
-      "role_tr": "Fourth Official"
-    },
-    {
-      "name": "KEMAL ÇAKMAK",
-      "role": "Observer",
-      "role_tr": "Observer"
-    },
-    {
-      "name": "AHMET TOLUNAY",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    },
-    {
-      "name": "ŞEVKET CANITEZ",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    },
-    {
-      "name": "SERKAN DİYEMLİ",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    }
-  ],
-  "events": [
-    {
-      "type": "goal",
-      "minute": "76",
-      "player": "HAKAN ÇİNEMRE",
-      "team": "ALTAŞ DENİZLİSPOR",
-      "note": "H"
-    },
-    {
-      "type": "goal",
-      "minute": "90+4",
-      "player": "ULRICH KEVIN SELOM MAYI",
-      "team": "ALTAŞ DENİZLİSPOR",
-      "note": "F"
-    },
-    {
-      "type": "card",
-      "minute": "34",
-      "player": "OĞUZ YILMAZ",
-      "team": "ALTAŞ DENİZLİSPOR"
-    },
-    {
-      "type": "card",
-      "minute": "34",
-      "player": "MUĞDAT ÇELİK",
-      "team": "ALTAŞ DENİZLİSPOR"
-    },
-    {
-      "type": "card",
-      "minute": "90+7",
-      "player": "HAKAN ÇİNEMRE",
-      "team": "ALTAŞ DENİZLİSPOR"
-    },
-    {
-      "type": "card",
-      "minute": "77",
-      "player": "EMRE SAĞLIK",
-      "team": "ALTAŞ DENİZLİSPOR"
-    },
-    {
-      "type": "card",
-      "minute": "90+5",
-      "player": "ISMAİL AİSSATİ",
-      "team": "ALTAŞ DENİZLİSPOR"
-    },
-    {
-      "type": "goal",
-      "minute": "9",
-      "player": "İBRAHİM HALİL ÇOLAK",
-      "team": "Balıkesirspor",
-      "note": "F"
-    },
-    {
-      "type": "card",
-      "minute": "78",
-      "player": "CUMALİ BİŞİ",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "57",
-      "player": "BATUHAN İŞÇİLER",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "90+7",
-      "player": "SEDAT DURSUN",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "70",
-      "player": "ABDULKADİR ÖZGEN",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "38",
-      "player": "ERDEM GÖKÇE",
-      "team": "Balıkesirspor"
-    }
-  ],
+  "events": [],
+  "homeCoach": "",
+  "awayCoach": "",
   "lineups": {
     "home": {
-      "team": "ALTAŞ DENİZLİSPOR",
-      "starting11": [
-        {
-          "shirt_no": "33",
-          "name": "ADAM MIECZYSLAW STACKHOWIAK"
-        },
-        {
-          "shirt_no": "3",
-          "name": "HAKAN ÇİNEMRE"
-        },
-        {
-          "shirt_no": "8",
-          "name": "OGENYI EDDY ONAZI"
-        },
-        {
-          "shirt_no": "15",
-          "name": "OĞUZ YILMAZ"
-        },
-        {
-          "shirt_no": "21",
-          "name": "ISMAİL AİSSATİ"
-        },
-        {
-          "shirt_no": "22",
-          "name": "LEO SCHWECHLEN"
-        },
-        {
-          "shirt_no": "26",
-          "name": "GÖKHAN SÜZEN"
-        },
-        {
-          "shirt_no": "63",
-          "name": "MUHAMMED GÖNÜLAÇAR"
-        },
-        {
-          "shirt_no": "69",
-          "name": "ULRICH KEVIN SELOM MAYI"
-        },
-        {
-          "shirt_no": "29",
-          "name": "İLHAN DEPE"
-        },
-        {
-          "shirt_no": "99",
-          "name": "MUĞDAT ÇELİK"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "20",
-          "name": "ABDULKADİR SÜNGER"
-        },
-        {
-          "shirt_no": "30",
-          "name": "BRAHİM DARRİ"
-        },
-        {
-          "shirt_no": "9",
-          "name": "MUSTAFA ÇEÇENOĞLU"
-        },
-        {
-          "shirt_no": "11",
-          "name": "OKAN DERİCİ"
-        },
-        {
-          "shirt_no": "19",
-          "name": "ERDAL AKDARI"
-        },
-        {
-          "shirt_no": "27",
-          "name": "EMRE SAĞLIK"
-        },
-        {
-          "shirt_no": "37",
-          "name": "ALAATTİN ÖNER"
-        },
-        {
-          "shirt_no": "94",
-          "name": "MUHAMMED EREN KIRYOLCU"
-        },
-        {
-          "shirt_no": "97",
-          "name": "BRICE FLORENTIN DJA DJEDJE"
-        }
-      ],
-      "coach": "BULUT TURHAN"
+      "team": "",
+      "starting11": [],
+      "substitutes": [],
+      "coach": ""
     },
     "away": {
-      "team": "Balıkesirspor",
-      "starting11": [
-        {
-          "shirt_no": "19",
-          "name": "ATİLLA ÖZMEN"
-        },
-        {
-          "shirt_no": "2",
-          "name": "ERDEM GÖKÇE"
-        },
-        {
-          "shirt_no": "53",
-          "name": "BİROL PARLAK"
-        },
-        {
-          "shirt_no": "14",
-          "name": "BOSSE ADAM CEDRIC KORE"
-        },
-        {
-          "shirt_no": "10",
-          "name": "ANIL TAŞDEMİR"
-        },
-        {
-          "shirt_no": "35",
-          "name": "BATUHAN İŞÇİLER"
-        },
-        {
-          "shirt_no": "17",
-          "name": "OĞUZ HAN AYNAOĞLU"
-        },
-        {
-          "shirt_no": "9",
-          "name": "ABDULKADİR ÖZGEN"
-        },
-        {
-          "shirt_no": "5",
-          "name": "SEDAT DURSUN"
-        },
-        {
-          "shirt_no": "93",
-          "name": "CUMALİ BİŞİ"
-        },
-        {
-          "shirt_no": "63",
-          "name": "İBRAHİM HALİL ÇOLAK"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "1",
-          "name": "ANDRIJA VUKOVIC"
-        },
-        {
-          "shirt_no": "39",
-          "name": "HÜSEYİN KARABEY"
-        },
-        {
-          "shirt_no": "7",
-          "name": "ANDAÇ GÜLERYÜZ"
-        },
-        {
-          "shirt_no": "8",
-          "name": "CEMAL KIZILATEŞ"
-        },
-        {
-          "shirt_no": "4",
-          "name": "ALPEREN ERDİNÇ"
-        },
-        {
-          "shirt_no": "90",
-          "name": "FOXI KETHEVOAMA"
-        },
-        {
-          "shirt_no": "18",
-          "name": "MAHATMA OSUMANU OTOO"
-        },
-        {
-          "shirt_no": "11",
-          "name": "ROMAN BEZJAK"
-        },
-        {
-          "shirt_no": "12",
-          "name": "MUHAMMED ALİ DOĞAN"
-        },
-        {
-          "shirt_no": "6",
-          "name": "DOĞA İŞERİ"
-        }
-      ],
-      "coach": "İSMET KAMAK"
+      "team": "",
+      "starting11": [],
+      "substitutes": [],
+      "coach": ""
     }
   },
   "source": {
     "name": "TFF",
     "url": "https://www.tff.org/Default.aspx?macId=223366&pageID=528"
   },
-  "raw": {
-    "sourceZip": "TFF-Entegrasyon.zip",
-    "rawTextFile": "raw_text/223366.txt"
+  "dataQuality": {
+    "level": "official_tff_open_data",
+    "notes": [
+      "Takım adları TFF textinden otomatik güvenle ayrıştırılamadı.",
+      "Skor TFF textinden otomatik güvenle ayrıştırılamadı."
+    ]
   },
-  "fetchedAt": "2026-05-14T00:12:06Z"
+  "balkes": {
+    "isHome": false,
+    "opponent": "",
+    "goalsFor": null,
+    "goalsAgainst": null,
+    "result": ""
+  }
 }

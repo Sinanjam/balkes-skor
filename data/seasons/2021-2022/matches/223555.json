@@ -1,318 +1,49 @@
 {
   "id": "223555",
-  "macId": "223555",
+  "tffMatchId": "223555",
   "season": "2021-2022",
-  "competition": "TFF 1. League (Professional Team)",
-  "roundType": "league",
-  "week": 28,
-  "stage": "28. Hafta",
-  "date": "2022-04-03",
+  "competition": "TRENDYOL SÜPER LİG",
+  "group": "",
+  "roundType": "cup",
+  "week": null,
+  "stage": "",
+  "date": "2022-03-04",
   "time": "16:00",
-  "dateDisplay": "3.04.2022 - 16:00",
-  "homeTeam": "Balıkesirspor",
-  "awayTeam": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
+  "dateDisplay": "04.03.2022 - 16:00",
+  "stadium": "",
+  "venue": "",
+  "city": "",
+  "referee": "",
+  "assistantReferees": [],
+  "fourthOfficial": "",
+  "referees": [],
+  "homeTeam": "",
+  "awayTeam": "",
   "score": {
-    "home": 1,
-    "away": 5,
-    "display": "1-5",
+    "home": null,
+    "away": null,
+    "display": "",
     "played": true
   },
-  "balkes": {
-    "isHome": true,
-    "opponent": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-    "goalsFor": 1,
-    "goalsAgainst": 5,
-    "result": "L"
+  "halfTimeScore": {
+    "home": null,
+    "away": null,
+    "display": ""
   },
-  "venue": "BALIKESİR ATATÜRK - BALIKESİR",
-  "referees": [
-    {
-      "name": "CAN CENGİZ",
-      "role": "Referee",
-      "role_tr": "Referee"
-    },
-    {
-      "name": "MEHMET KAPLUHAN",
-      "role": "Assistant Referee",
-      "role_tr": "Assistant Referee"
-    },
-    {
-      "name": "MURAT TEMEL",
-      "role": "Assistant Referee",
-      "role_tr": "Assistant Referee"
-    },
-    {
-      "name": "METEHAN ALPAT",
-      "role": "Fourth Official",
-      "role_tr": "Fourth Official"
-    },
-    {
-      "name": "AKİF UĞURDUR",
-      "role": "Observer",
-      "role_tr": "Observer"
-    },
-    {
-      "name": "HÜSNÜ ARSLAN",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    },
-    {
-      "name": "HAYDAR ÖZDEMİR",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    }
-  ],
-  "events": [
-    {
-      "type": "goal",
-      "minute": "82",
-      "player": "BATUHAN İŞÇİLER",
-      "team": "Balıkesirspor",
-      "note": "P"
-    },
-    {
-      "type": "card",
-      "minute": "28",
-      "player": "MAHATMA OSUMANU OTOO",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "90",
-      "player": "ABRAHAM NNAMDI NWANKWO",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "63",
-      "player": "PETER AMBROSE",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "goal",
-      "minute": "11",
-      "player": "AARON SAMUEL OLANARE",
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-      "note": "F"
-    },
-    {
-      "type": "goal",
-      "minute": "26",
-      "player": "AARON SAMUEL OLANARE",
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-      "note": "F"
-    },
-    {
-      "type": "goal",
-      "minute": "46",
-      "player": "MUCAHİT ALBAYRAK",
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-      "note": "F"
-    },
-    {
-      "type": "goal",
-      "minute": "52",
-      "player": "EREN TOZLU",
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-      "note": "H"
-    },
-    {
-      "type": "goal",
-      "minute": "64",
-      "player": "AARON SAMUEL OLANARE",
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-      "note": "F"
-    },
-    {
-      "type": "card",
-      "minute": "45",
-      "player": "MUSTAFA AKBAŞ",
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR"
-    }
-  ],
+  "events": [],
+  "homeCoach": "",
+  "awayCoach": "",
   "lineups": {
     "home": {
-      "team": "Balıkesirspor",
-      "starting11": [
-        {
-          "shirt_no": "99",
-          "name": "YİĞİTHAN KIR"
-        },
-        {
-          "shirt_no": "2",
-          "name": "ERDEM GÖKÇE"
-        },
-        {
-          "shirt_no": "5",
-          "name": "SEDAT DURSUN"
-        },
-        {
-          "shirt_no": "6",
-          "name": "DOĞA İŞERİ"
-        },
-        {
-          "shirt_no": "14",
-          "name": "BOSSE ADAM CEDRIC KORE"
-        },
-        {
-          "shirt_no": "18",
-          "name": "MAHATMA OSUMANU OTOO"
-        },
-        {
-          "shirt_no": "20",
-          "name": "ABRAHAM NNAMDI NWANKWO"
-        },
-        {
-          "shirt_no": "35",
-          "name": "BATUHAN İŞÇİLER"
-        },
-        {
-          "shirt_no": "63",
-          "name": "İBRAHİM HALİL ÇOLAK"
-        },
-        {
-          "shirt_no": "72",
-          "name": "PETER AMBROSE"
-        },
-        {
-          "shirt_no": "90",
-          "name": "FOXI KETHEVOAMA"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "26",
-          "name": "YASİN YİĞİT BERBER"
-        },
-        {
-          "shirt_no": "3",
-          "name": "BERAT AYDOĞDU"
-        },
-        {
-          "shirt_no": "4",
-          "name": "ALPEREN ERDİNÇ"
-        },
-        {
-          "shirt_no": "10",
-          "name": "ANIL TAŞDEMİR"
-        },
-        {
-          "shirt_no": "11",
-          "name": "ROMAN BEZJAK"
-        },
-        {
-          "shirt_no": "12",
-          "name": "MUHAMMED ALİ DOĞAN"
-        },
-        {
-          "shirt_no": "17",
-          "name": "OĞUZ HAN AYNAOĞLU"
-        },
-        {
-          "shirt_no": "27",
-          "name": "OLTION BILALLI"
-        },
-        {
-          "shirt_no": "53",
-          "name": "BİROL PARLAK"
-        },
-        {
-          "shirt_no": "93",
-          "name": "CUMALİ BİŞİ"
-        }
-      ],
-      "coach": "GİRAY BULAK"
+      "team": "",
+      "starting11": [],
+      "substitutes": [],
+      "coach": ""
     },
     "away": {
-      "team": "BÜYÜKŞEHİR BELEDİYE ERZURUMSPOR",
-      "starting11": [
-        {
-          "shirt_no": "29",
-          "name": "JAKUB SZUMSKI"
-        },
-        {
-          "shirt_no": "2",
-          "name": "MUSTAFA AKBAŞ"
-        },
-        {
-          "shirt_no": "6",
-          "name": "GÖKHAN KARDEŞ"
-        },
-        {
-          "shirt_no": "7",
-          "name": "EMİRCAN ALTINTAŞ"
-        },
-        {
-          "shirt_no": "22",
-          "name": "MUSTAFA YUMLU"
-        },
-        {
-          "shirt_no": "25",
-          "name": "AARON SAMUEL OLANARE"
-        },
-        {
-          "shirt_no": "27",
-          "name": "MARTIN HASEK"
-        },
-        {
-          "shirt_no": "35",
-          "name": "ORHAN OVACIKLI"
-        },
-        {
-          "shirt_no": "39",
-          "name": "EREN TOZLU"
-        },
-        {
-          "shirt_no": "53",
-          "name": "MUCAHİT ALBAYRAK"
-        },
-        {
-          "shirt_no": "55",
-          "name": "VALDMIRO TUALUNGO PAULO LAMEIRA"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "1",
-          "name": "MEHMET GÖKTÜĞ BAKIRBAŞ"
-        },
-        {
-          "shirt_no": "13",
-          "name": "RIDVAN OĞUZHAN YAĞCI"
-        },
-        {
-          "shirt_no": "5",
-          "name": "HASAN BATUHAN ARTARSLAN"
-        },
-        {
-          "shirt_no": "8",
-          "name": "SÜLEYMAN KOÇ"
-        },
-        {
-          "shirt_no": "12",
-          "name": "ALY MALLE"
-        },
-        {
-          "shirt_no": "14",
-          "name": "ALİCAN ÖZFESLİ"
-        },
-        {
-          "shirt_no": "20",
-          "name": "GÖKHAN ALSAN"
-        },
-        {
-          "shirt_no": "40",
-          "name": "EYÜP OSKAN"
-        },
-        {
-          "shirt_no": "46",
-          "name": "HÜSEYİN MEVLÜTOĞLU"
-        },
-        {
-          "shirt_no": "61",
-          "name": "OLTAN KARAKULLUKÇU"
-        }
-      ],
+      "team": "",
+      "starting11": [],
+      "substitutes": [],
       "coach": ""
     }
   },
@@ -320,9 +51,18 @@
     "name": "TFF",
     "url": "https://www.tff.org/Default.aspx?macId=223555&pageID=528"
   },
-  "raw": {
-    "sourceZip": "TFF-Entegrasyon.zip",
-    "rawTextFile": "raw_text/223555.txt"
+  "dataQuality": {
+    "level": "official_tff_open_data",
+    "notes": [
+      "Takım adları TFF textinden otomatik güvenle ayrıştırılamadı.",
+      "Skor TFF textinden otomatik güvenle ayrıştırılamadı."
+    ]
   },
-  "fetchedAt": "2026-05-14T00:12:06Z"
+  "balkes": {
+    "isHome": false,
+    "opponent": "",
+    "goalsFor": null,
+    "goalsAgainst": null,
+    "result": ""
+  }
 }

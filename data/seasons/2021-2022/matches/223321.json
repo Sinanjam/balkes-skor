@@ -1,302 +1,68 @@
 {
   "id": "223321",
-  "macId": "223321",
+  "tffMatchId": "223321",
   "season": "2021-2022",
-  "competition": "TFF 1. League (Professional Team)",
-  "roundType": "league",
-  "week": 3,
-  "stage": "3. Hafta",
-  "date": "2021-09-13",
+  "competition": "TRENDYOL SÜPER LİG",
+  "group": "",
+  "roundType": "cup",
+  "week": null,
+  "stage": "",
+  "date": "2021-13-09",
   "time": "20:00",
-  "dateDisplay": "13.09.2021 - 20:00",
-  "homeTeam": "Balıkesirspor",
-  "awayTeam": "TUZLASPOR A.Ş.",
+  "dateDisplay": "09.13.2021 - 20:00",
+  "stadium": "",
+  "venue": "",
+  "city": "",
+  "referee": "",
+  "assistantReferees": [],
+  "fourthOfficial": "",
+  "referees": [],
+  "homeTeam": "",
+  "awayTeam": "",
   "score": {
-    "home": 0,
-    "away": 1,
-    "display": "0-1",
+    "home": null,
+    "away": null,
+    "display": "",
     "played": true
   },
-  "balkes": {
-    "isHome": true,
-    "opponent": "TUZLASPOR A.Ş.",
-    "goalsFor": 0,
-    "goalsAgainst": 1,
-    "result": "L"
+  "halfTimeScore": {
+    "home": null,
+    "away": null,
+    "display": ""
   },
-  "venue": "BALIKESİR BELEDİYE SUNİ ÇİM SAHA - BALIKESİR",
-  "referees": [
-    {
-      "name": "DAVUT DAKUL ÇELİK",
-      "role": "Referee",
-      "role_tr": "Referee"
-    },
-    {
-      "name": "MURAT TEMEL",
-      "role": "Assistant Referee",
-      "role_tr": "Assistant Referee"
-    },
-    {
-      "name": "SERHAT SAĞIR",
-      "role": "Assistant Referee",
-      "role_tr": "Assistant Referee"
-    },
-    {
-      "name": "MELİS ÖZÇİĞDEM",
-      "role": "Fourth Official",
-      "role_tr": "Fourth Official"
-    },
-    {
-      "name": "ALİ ŞAHAN",
-      "role": "Observer",
-      "role_tr": "Observer"
-    },
-    {
-      "name": "ŞAHSUVAR ERBAŞ",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    },
-    {
-      "name": "GÜLAY GÜNEŞ",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    },
-    {
-      "name": "SONER ÖZDEMİR",
-      "role": "Delegate",
-      "role_tr": "Delegate"
-    }
-  ],
-  "events": [
-    {
-      "type": "card",
-      "minute": "45",
-      "player": "BİROL PARLAK",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "card",
-      "minute": "57",
-      "player": "CUMALİ BİŞİ",
-      "team": "Balıkesirspor"
-    },
-    {
-      "type": "goal",
-      "minute": "45+1",
-      "player": "TAYFUN AYDOĞAN",
-      "team": "TUZLASPOR A.Ş.",
-      "note": "F"
-    },
-    {
-      "type": "card",
-      "minute": "14",
-      "player": "FERHAT ÖZTORUN",
-      "team": "TUZLASPOR A.Ş."
-    },
-    {
-      "type": "card",
-      "minute": "85",
-      "player": "SEDAT ŞAHİNTÜRK",
-      "team": "TUZLASPOR A.Ş."
-    },
-    {
-      "type": "card",
-      "minute": "9",
-      "player": "SAFA KINALI",
-      "team": "TUZLASPOR A.Ş."
-    },
-    {
-      "type": "card",
-      "minute": "82",
-      "player": "PHİLİPP ALEXANDER ANGELER",
-      "team": "TUZLASPOR A.Ş."
-    }
-  ],
+  "events": [],
+  "homeCoach": "",
+  "awayCoach": "",
   "lineups": {
     "home": {
-      "team": "Balıkesirspor",
-      "starting11": [
-        {
-          "shirt_no": "19",
-          "name": "ATİLLA ÖZMEN"
-        },
-        {
-          "shirt_no": "53",
-          "name": "BİROL PARLAK"
-        },
-        {
-          "shirt_no": "6",
-          "name": "DOĞA İŞERİ"
-        },
-        {
-          "shirt_no": "10",
-          "name": "ANIL TAŞDEMİR"
-        },
-        {
-          "shirt_no": "17",
-          "name": "OĞUZ HAN AYNAOĞLU"
-        },
-        {
-          "shirt_no": "35",
-          "name": "BATUHAN İŞÇİLER"
-        },
-        {
-          "shirt_no": "63",
-          "name": "İBRAHİM HALİL ÇOLAK"
-        },
-        {
-          "shirt_no": "12",
-          "name": "MUHAMMED ALİ DOĞAN"
-        },
-        {
-          "shirt_no": "5",
-          "name": "SEDAT DURSUN"
-        },
-        {
-          "shirt_no": "11",
-          "name": "ROMAN BEZJAK"
-        },
-        {
-          "shirt_no": "93",
-          "name": "CUMALİ BİŞİ"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "1",
-          "name": "ANDRIJA VUKOVIC"
-        },
-        {
-          "shirt_no": "8",
-          "name": "CEMAL KIZILATEŞ"
-        },
-        {
-          "shirt_no": "15",
-          "name": "ENES KARABULUT"
-        },
-        {
-          "shirt_no": "27",
-          "name": "OLTION BILALLI"
-        },
-        {
-          "shirt_no": "2",
-          "name": "ERDEM GÖKÇE"
-        },
-        {
-          "shirt_no": "39",
-          "name": "HÜSEYİN KARABEY"
-        },
-        {
-          "shirt_no": "90",
-          "name": "FOXI KETHEVOAMA"
-        },
-        {
-          "shirt_no": "9",
-          "name": "ABDULKADİR ÖZGEN"
-        },
-        {
-          "shirt_no": "14",
-          "name": "BOSSE ADAM CEDRIC KORE"
-        },
-        {
-          "shirt_no": "18",
-          "name": "MAHATMA OSUMANU OTOO"
-        }
-      ],
+      "team": "",
+      "starting11": [],
+      "substitutes": [],
       "coach": ""
     },
     "away": {
-      "team": "TUZLASPOR A.Ş.",
-      "starting11": [
-        {
-          "shirt_no": "23",
-          "name": "PHİLİPP ALEXANDER ANGELER"
-        },
-        {
-          "shirt_no": "4",
-          "name": "İSMAİL KONUK"
-        },
-        {
-          "shirt_no": "7",
-          "name": "AHMET YAZAR"
-        },
-        {
-          "shirt_no": "9",
-          "name": "MARCUS PEDERSEN"
-        },
-        {
-          "shirt_no": "11",
-          "name": "JURGEN BARDHI"
-        },
-        {
-          "shirt_no": "14",
-          "name": "LAMINE DIACK"
-        },
-        {
-          "shirt_no": "17",
-          "name": "SAMET ASATEKİN"
-        },
-        {
-          "shirt_no": "52",
-          "name": "TAYFUN AYDOĞAN"
-        },
-        {
-          "shirt_no": "61",
-          "name": "SAFA KINALI"
-        },
-        {
-          "shirt_no": "87",
-          "name": "FERHAT ÖZTORUN"
-        },
-        {
-          "shirt_no": "90",
-          "name": "VEACESLAV POSMAC"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "76",
-          "name": "ZVONIMIR MIKULIC"
-        },
-        {
-          "shirt_no": "6",
-          "name": "AYKUT ÇEVİKER"
-        },
-        {
-          "shirt_no": "8",
-          "name": "MUHAMMED SARIKAYA"
-        },
-        {
-          "shirt_no": "18",
-          "name": "İBRAHİM HALİL AKSU"
-        },
-        {
-          "shirt_no": "20",
-          "name": "RAHMİ ANIL BAŞARAN"
-        },
-        {
-          "shirt_no": "22",
-          "name": "İBRAHİM HAS"
-        },
-        {
-          "shirt_no": "38",
-          "name": "SELÇUK ALİBAZ"
-        },
-        {
-          "shirt_no": "96",
-          "name": "SEDAT ŞAHİNTÜRK"
-        }
-      ],
-      "coach": "UĞUR TÜTÜNEKER"
+      "team": "",
+      "starting11": [],
+      "substitutes": [],
+      "coach": ""
     }
   },
   "source": {
     "name": "TFF",
     "url": "https://www.tff.org/Default.aspx?macId=223321&pageID=528"
   },
-  "raw": {
-    "sourceZip": "TFF-Entegrasyon.zip",
-    "rawTextFile": "raw_text/223321.txt"
+  "dataQuality": {
+    "level": "official_tff_open_data",
+    "notes": [
+      "Takım adları TFF textinden otomatik güvenle ayrıştırılamadı.",
+      "Skor TFF textinden otomatik güvenle ayrıştırılamadı."
+    ]
   },
-  "fetchedAt": "2026-05-14T00:12:06Z"
+  "balkes": {
+    "isHome": false,
+    "opponent": "",
+    "goalsFor": null,
+    "goalsAgainst": null,
+    "result": ""
+  }
 }
