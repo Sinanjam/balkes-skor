@@ -20,6 +20,7 @@
           pythonEnv = pkgs.python312.withPackages (ps: with ps; [
             beautifulsoup4
             lxml
+            rich
           ]);
         in {
           default = pkgs.mkShell {
@@ -34,7 +35,7 @@
               findutils
             ];
             shellHook = ''
-              echo "Balkes Skor shell hazır. Örnek: fish run_tff_factory.fish 2018-2019 5 350"
+              echo "Balkes Skor shell hazır. Örnekler: fish run_tff_factory.fish 2018-2019 5 350 | fish run_standings_builder.fish 2024-2025 1 auto 2500 true"
             '';
           };
         });

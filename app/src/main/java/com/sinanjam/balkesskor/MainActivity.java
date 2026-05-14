@@ -608,8 +608,23 @@ public class MainActivity extends Activity {
         for (int i = 0; i < arr.length(); i++) {
             JSONObject t = arr.optJSONObject(i);
             if (t == null) continue;
-            TextView row = text(c, t.optInt("rank") + ". " + t.optString("team") + "   " + t.optInt("played") + "O  " + t.optInt("won") + "G  " + t.optInt("drawn") + "B  " + t.optInt("lost") + "M   " + t.optInt("points") + "P", t.optBoolean("isBalkes") ? 15 : 12, t.optBoolean("isBalkes"), t.optBoolean("isBalkes") ? red : text);
+            boolean balkesRow = t.optBoolean("isBalkes");
+            String penalty = t.optString("penaltyNote", "");
+            int deduction = t.optInt("pointsDeducted", 0);
+            String line = t.optInt("rank") + ". " + t.optString("team")
+                    + "   " + t.optInt("played") + "O"
+                    + "  " + t.optInt("won") + "G"
+                    + "  " + t.optInt("drawn") + "B"
+                    + "  " + t.optInt("lost") + "M"
+                    + "  " + t.optInt("goalsFor") + "A"
+                    + "  " + t.optInt("goalsAgainst") + "Y"
+                    + "  " + t.optInt("goalDifference") + "AV"
+                    + "   " + t.optInt("points") + "P";
+            if (deduction != 0) line += " (" + deduction + ")";
+            TextView row = text(c, line, balkesRow ? 15 : 12, balkesRow, balkesRow ? red : text);
             row.setPadding(0, dp(5), 0, dp(5));
+            if (balkesRow) row.setBackground(round(surface2, dp(10), red));
+            if (penalty.length() > 0) text(c, "Ceza/ek karar: " + penalty, 11, false, muted);
         }
     }
 
