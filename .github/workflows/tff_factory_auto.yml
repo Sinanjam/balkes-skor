@@ -85,10 +85,10 @@ jobs:
           python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
 
       - name: Gemini diagnostics
-        if: ${{ always() && steps.settings.outputs.run_gemini == 'true' && secrets.GEMINI_API_KEY != '' }}
+        if: ${{ always() && steps.settings.outputs.run_gemini == 'true' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.0-flash' }}
+          GEMINI_MODEL: gemini-2.0-flash
         run: |
           python scripts/gemini_tff_helper.py \
             --reports-root reports/tff_factory \
