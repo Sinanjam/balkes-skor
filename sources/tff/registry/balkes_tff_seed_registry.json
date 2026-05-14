@@ -394,7 +394,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 1. Lig",
+      "leagueEra": "TFF 1. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 350,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2017-2018",
@@ -409,7 +417,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 1. Lig",
+      "leagueEra": "TFF 1. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 350,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2016-2017",
@@ -424,7 +440,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 1. Lig",
+      "leagueEra": "TFF 1. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 350,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2015-2016",
@@ -439,7 +463,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 1. Lig",
+      "leagueEra": "TFF 1. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 350,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2014-2015",
@@ -454,7 +486,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Süper Lig",
+      "leagueEra": "Süper Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 350,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2013-2014",
@@ -469,7 +509,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 1. Lig",
+      "leagueEra": "TFF 1. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2012-2013",
@@ -499,7 +547,12 @@
       "targetUrls": [
         "https://www.tff.org/Default.aspx?pageID=1239"
       ],
-      "planConfidence": "medium"
+      "planConfidence": "medium",
+      "professionalStatus": "professional",
+      "competition": "TFF 2. Lig",
+      "leagueEra": "TFF 2. Lig",
+      "allowLegacyBroadFallback": false,
+      "legacyBroadProbeLimit": 0
     },
     {
       "season": "2011-2012",
@@ -514,7 +567,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 2. Lig",
+      "leagueEra": "TFF 2. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2010-2011",
@@ -529,7 +590,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 2. Lig",
+      "leagueEra": "TFF 2. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2009-2010",
@@ -544,7 +613,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 3. Lig",
+      "leagueEra": "TFF 3. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2008-2009",
@@ -559,7 +636,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 3. Lig",
+      "leagueEra": "TFF 3. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2007-2008",
@@ -574,7 +659,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 3. Lig",
+      "leagueEra": "TFF 3. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2006-2007",
@@ -589,7 +682,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "TFF 3. Lig",
+      "leagueEra": "TFF 3. Lig",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "2005-2006",
@@ -604,7 +705,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "amateur",
+      "competition": "Amatör Futbol Ligleri",
+      "skipTff": true,
+      "noTffRecord": true,
+      "skipReason": "2001-2006 Balıkesirspor amateur era; official TFF professional match-detail scan is skipped to avoid wasted probes.",
+      "allowLegacyBroadFallback": false,
+      "legacyBroadProbeLimit": 0,
+      "planConfidence": "amateur-skip"
     },
     {
       "season": "2004-2005",
@@ -619,7 +728,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "amateur",
+      "competition": "Amatör Futbol Ligleri",
+      "skipTff": true,
+      "noTffRecord": true,
+      "skipReason": "2001-2006 Balıkesirspor amateur era; official TFF professional match-detail scan is skipped to avoid wasted probes.",
+      "allowLegacyBroadFallback": false,
+      "legacyBroadProbeLimit": 0,
+      "planConfidence": "amateur-skip"
     },
     {
       "season": "2003-2004",
@@ -634,7 +751,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "amateur",
+      "competition": "Amatör Futbol Ligleri",
+      "skipTff": true,
+      "noTffRecord": true,
+      "skipReason": "2001-2006 Balıkesirspor amateur era; official TFF professional match-detail scan is skipped to avoid wasted probes.",
+      "allowLegacyBroadFallback": false,
+      "legacyBroadProbeLimit": 0,
+      "planConfidence": "amateur-skip"
     },
     {
       "season": "2002-2003",
@@ -649,7 +774,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "amateur",
+      "competition": "Amatör Futbol Ligleri",
+      "skipTff": true,
+      "noTffRecord": true,
+      "skipReason": "2001-2006 Balıkesirspor amateur era; official TFF professional match-detail scan is skipped to avoid wasted probes.",
+      "allowLegacyBroadFallback": false,
+      "legacyBroadProbeLimit": 0,
+      "planConfidence": "amateur-skip"
     },
     {
       "season": "2001-2002",
@@ -664,7 +797,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "amateur",
+      "competition": "Amatör Futbol Ligleri",
+      "skipTff": true,
+      "noTffRecord": true,
+      "skipReason": "2001-2006 Balıkesirspor amateur era; official TFF professional match-detail scan is skipped to avoid wasted probes.",
+      "allowLegacyBroadFallback": false,
+      "legacyBroadProbeLimit": 0,
+      "planConfidence": "amateur-skip"
     },
     {
       "season": "2000-2001",
@@ -679,7 +820,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 3. Ligi",
+      "leagueEra": "Türkiye 3. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1999-2000",
@@ -694,7 +843,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 3. Ligi",
+      "leagueEra": "Türkiye 3. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1998-1999",
@@ -709,7 +866,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 3. Ligi",
+      "leagueEra": "Türkiye 3. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1997-1998",
@@ -724,7 +889,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 3. Ligi",
+      "leagueEra": "Türkiye 3. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1996-1997",
@@ -739,7 +912,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 2. Ligi",
+      "leagueEra": "Türkiye 2. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1995-1996",
@@ -754,7 +935,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 2. Ligi",
+      "leagueEra": "Türkiye 2. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1994-1995",
@@ -769,7 +958,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 2. Ligi",
+      "leagueEra": "Türkiye 2. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1993-1994",
@@ -784,7 +981,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 2. Ligi",
+      "leagueEra": "Türkiye 2. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1992-1993",
@@ -799,7 +1004,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 2. Ligi",
+      "leagueEra": "Türkiye 2. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1991-1992",
@@ -814,7 +1027,15 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 3. Ligi",
+      "leagueEra": "Türkiye 3. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     },
     {
       "season": "1990-1991",
@@ -829,7 +1050,28 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "professionalStatus": "professional",
+      "competition": "Türkiye 3. Ligi",
+      "leagueEra": "Türkiye 3. Ligi",
+      "planConfidence": "history-only-legacy-probe",
+      "targetUrls": [],
+      "allowLegacyBroadFallback": true,
+      "legacyBroadProbeLimit": 150,
+      "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits."
     }
-  ]
+  ],
+  "legacyBackfillPolicy": {
+    "updatedAt": "2026-05-15",
+    "goal": "Backfill professional Balıkesirspor seasons down to 1990-1991 while skipping amateur-era seasons with no expected TFF professional match detail records.",
+    "amateurSkipSeasons": [
+      "2005-2006",
+      "2004-2005",
+      "2003-2004",
+      "2002-2003",
+      "2001-2002"
+    ],
+    "professionalLegacyProbe": "For professional seasons without confirmed targetPageID, run narrow selected-ID discovery first; if it produces zero hits, try a capped broad fallback and still validate Balkes/team/date before publishing.",
+    "sourceNote": "League-era ranges are based on public Balıkesirspor history; exact TFF pageID/grupID entries should replace history-only probes when confirmed."
+  }
 }

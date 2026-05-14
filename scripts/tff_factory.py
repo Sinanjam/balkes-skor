@@ -304,16 +304,46 @@ def teams_from_soup(soup, txt: str) -> tuple[str, str]:
     if home and away:
         return home, away
 
-    # Title fallback: "EV DEPLASMAN - Maç Detayları TFF". Balkes olan tarafı bulmak için satırı parçala.
-    first = txt.splitlines()[0] if txt.splitlines() else ""
-    first = re.sub(r"\s+-\s+Maç Detayları.*$", "", first, flags=re.I)
-    # Bilinen ayraç yoksa ilk Balkes varyantı etrafında böl.
-    if is_balkes(first):
-        # En iyi fallback: meta description'da genellikle "TAKIM1 TAKIM2 - Türkiye..." var.
-        # Bu fallback her zaman mükemmel değil, soup id'leri yoksa kalite D olur.
-        pass
-    return home, away
+    # Legacy TFF pages sometimes do not expose lnkTakim1/lnkTakim2 ids.
+    # In those pages the most reliable fallback is the page title / first lines:
+    #   "EV SAHİBİ 2-1 DEPLASMAN - Maç Detayları ..."
+    # or occasionally:
+    #   "EV SAHİBİ - DEPLASMAN"
+    candidates: list[str] = []
+    if soup:
+        if soup.title and soup.title.string:
+            candidates.append(clean_text(soup.title.string))
+        for meta_name in ["description", "og:title"]:
+            tag = soup.find("meta", attrs={"name": meta_name}) or soup.find("meta", attrs={"property": meta_name})
+            if tag and tag.get("content"):
+                candidates.append(clean_text(tag.get("content")))
+    candidates.extend([x for x in txt.splitlines()[:80] if is_balkes(x)])
 
+    def strip_tail(line: str) -> str:
+        line = clean_text(line)
+        line = re.sub(r"\s+-\s+(Maç|Mac)\s+Detay.*$", "", line, flags=re.I)
+        line = re.sub(r"\s+\|\s+.*$", "", line)
+        return line.strip(" -–|")
+
+    for raw_line in candidates:
+        line = strip_tail(raw_line)
+        if not is_balkes(line):
+            continue
+        # Score-title form: TEAM A 2-1 TEAM B
+        m = re.match(r"^(.{2,80}?)\s+\d{1,2}\s*[-–]\s*\d{1,2}\s+(.{2,80}?)$", line)
+        if m:
+            h, a = clean_team(m.group(1)), clean_team(m.group(2))
+            if h and a and (is_balkes(h) or is_balkes(a)):
+                return h, a
+        # Separator-title form: TEAM A - TEAM B (avoid splitting score hyphen)
+        parts = re.split(r"\s+[-–]\s+", line)
+        parts = [clean_team(x) for x in parts if clean_team(x)]
+        if len(parts) >= 2:
+            h, a = parts[0], parts[1]
+            if h and a and (is_balkes(h) or is_balkes(a)):
+                return h, a
+
+    return home, away
 
 def score_from_soup(soup, txt: str) -> tuple[Any, Any, str, bool]:
     h = a = None
@@ -906,12 +936,55 @@ def index_from_detail(d: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+
+def season_skip_reason(item: dict[str, Any]) -> str:
+    """Return a non-empty reason when this season should not hit TFF.
+
+    Amateur-era seasons are intentionally skipped so the workflow does not waste
+    time probing TFF pages that are not expected to have official match-detail
+    records.
+    """
+    for key in ["skipTff", "skipTffFetch", "noTffRecord", "amateurSeason"]:
+        if bool(item.get(key)):
+            return str(item.get("skipReason") or item.get("note") or key)
+    status = norm(item.get("professionalStatus") or item.get("level") or "")
+    if status == "amateur" or "amator" in status:
+        return str(item.get("skipReason") or "amateur_season_no_tff_match_detail")
+    return ""
+
+
 def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[str, Any]) -> dict[str, Any]:
     season = item["season"]
     data_root = Path(args.data_root)
     raw_root = Path(args.raw_root)
     reports_root = Path(args.reports_root)
     log(f"=== {season} başladı ===")
+    skip_reason = season_skip_reason(item)
+    if skip_reason:
+        log(f"{season}: TFF taraması atlandı -> {skip_reason}")
+        quality = {
+            "season": season,
+            "skipped": True,
+            "skipReason": skip_reason,
+            "selectedIds": 0,
+            "allDiscoveredIds": 0,
+            "detailCandidates": 0,
+            "candidateMode": "skip_no_tff_record",
+            "matchesPublished": 0,
+            "detailFiles": 0,
+            "duplicatesDropped": 0,
+            "rejectedReasons": {},
+            "rejectedSamples": {},
+            "standingsSkipped": True,
+            "standingsSnapshots": 0,
+            "balkesTableFound": False,
+            "matchTypeCounts": {},
+            "seasonGuard": {"start": season_bounds(season, seed)[0], "end": season_bounds(season, seed)[1]},
+            "generatedAt": now(),
+        }
+        write_json(reports_root / "seasons" / f"{season}_quality.json", quality)
+        return quality
+
     selected, all_ids, _ = discover(item, raw_root, args.sleep, args.force)
     known = {str(x) for x in item.get("knownMatchIds", [])}
     if selected or known:
@@ -942,6 +1015,28 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
                 rejected_samples[reason].append(str(mid))
         if i % 50 == 0 or i == len(candidates):
             log(f"{season}: detail doğrulama {i}/{len(candidates)}, hits={len(by_id)}")
+
+    if not by_id and selected and all_ids and bool(item.get("allowLegacyBroadFallback")):
+        already = set(str(x) for x in candidates)
+        extra = [str(x) for x in all_ids if str(x) not in already]
+        limit = int(item.get("legacyBroadProbeLimit") or getattr(args, "legacy_broad_probe_limit", 350) or 0)
+        if limit > 0:
+            extra = extra[:limit]
+        log(f"{season}: selectedIds 0 hit verdi; legacy geniş fallback başlıyor, extraCandidates={len(extra)}")
+        for j, mid in enumerate(extra, start=1):
+            detail, reason = fetch_detail_if_valid(mid, season, raw_root, args.sleep, args.force, seed)
+            candidates.append(mid)
+            if detail:
+                by_id[str(mid)] = detail
+            else:
+                rejected[reason] = rejected.get(reason, 0) + 1
+                rejected_samples.setdefault(reason, [])
+                if len(rejected_samples[reason]) < 20:
+                    rejected_samples[reason].append(str(mid))
+            if j % 50 == 0 or j == len(extra):
+                log(f"{season}: legacy geniş fallback {j}/{len(extra)}, hits={len(by_id)}")
+        if extra:
+            mode = mode + "+legacy_broad_after_zero_hits"
 
     by_sig: dict[str, dict[str, Any]] = {}
     duplicates = []
@@ -1095,6 +1190,7 @@ def main() -> None:
     ap.add_argument("--max-seasons", type=int, default=3)
     ap.add_argument("--sleep", type=float, default=1.0)
     ap.add_argument("--max-discovery-probe", type=int, default=1500)
+    ap.add_argument("--legacy-broad-probe-limit", type=int, default=350)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--skip-standings", action="store_true", default=True)
     args = ap.parse_args()

@@ -3,14 +3,13 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-14T21:55:24.580240Z",
+  "generatedAt": "2026-05-14T20:33:35.332804Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
       "matchCount": 32,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
       "summary": {
         "matches": 32,
         "wins": 18,
@@ -79,60 +78,6 @@
           "league": 38
         }
       }
-    },
-    {
-      "id": "2021-2022",
-      "name": "2021-2022",
-      "matchCount": 36,
-      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 36,
-        "wins": 3,
-        "draws": 3,
-        "losses": 30,
-        "goalsFor": 26,
-        "goalsAgainst": 77,
-        "goalDifference": -51,
-        "matchTypes": {
-          "league": 36
-        }
-      }
-    },
-    {
-      "id": "2020-2021",
-      "name": "2020-2021",
-      "matchCount": 34,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 34,
-        "wins": 9,
-        "draws": 8,
-        "losses": 17,
-        "goalsFor": 35,
-        "goalsAgainst": 53,
-        "goalDifference": -18,
-        "matchTypes": {
-          "league": 34
-        }
-      }
-    },
-    {
-      "id": "2019-2020",
-      "name": "2019-2020",
-      "matchCount": 30,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 30,
-        "wins": 8,
-        "draws": 11,
-        "losses": 11,
-        "goalsFor": 30,
-        "goalsAgainst": 36,
-        "goalDifference": -6,
-        "matchTypes": {
-          "league": 30
-        }
-      }
     }
   ],
   "global": {
@@ -141,12 +86,12 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778795724,
+  "appDataVersion": 1778790815,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T21:55:24.580250Z",
+  "lastUpdated": "2026-05-14T20:33:35.332815Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processedSeasonsInLastRun": [
-    "2025-2026"
+    "2022-2023"
   ]
 }

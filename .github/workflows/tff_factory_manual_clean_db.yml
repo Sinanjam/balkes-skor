@@ -31,6 +31,10 @@ on:
         required: true
         type: boolean
         default: true
+      legacy_broad_probe_limit:
+        description: "Eski profesyonel sezonlarda selectedIds 0 hit verirse kaç geniş aday denensin?"
+        required: true
+        default: "350"
 
 permissions:
   contents: write
@@ -92,6 +96,7 @@ jobs:
             --max-seasons "${{ github.event.inputs.max_seasons }}" \
             --sleep "1.0" \
             --max-discovery-probe "1500" \
+            --legacy-broad-probe-limit "${{ github.event.inputs.legacy_broad_probe_limit }}" \
             --skip-standings
 
       - name: Validate produced data

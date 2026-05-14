@@ -3,12 +3,7 @@
   "matchCode": "4835",
   "season": "2025-2026",
   "competition": "Nesine 3. Lig (Profesyonel Takım)",
-  "competitionType": "league",
-  "competitionLabel": "Lig",
   "stadium": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
-  "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
-  "stage": "Lig",
-  "stageLabel": "Lig",
   "date": "2025-12-21",
   "time": "17:00",
   "dateDisplay": "2025-12-21 - 17:00",
@@ -16,8 +11,6 @@
   "awayTeam": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
   "matchType": "league",
   "matchTypeLabel": "Lig",
-  "type": "league",
-  "typeLabel": "Lig",
   "score": {
     "home": 1,
     "away": 1,
@@ -75,67 +68,56 @@
         {
           "name": "TALHA DEMİRKOL",
           "number": 28,
-          "shirt_no": "28",
           "tffPersonId": "1919922"
         },
         {
           "name": "HARUN TOPRAK",
           "number": 6,
-          "shirt_no": "6",
           "tffPersonId": "1771562"
         },
         {
           "name": "TALHA DOĞUŞ",
           "number": 8,
-          "shirt_no": "8",
           "tffPersonId": "2022790"
         },
         {
           "name": "ARTUN AKÇAKIN",
           "number": 9,
-          "shirt_no": "9",
           "tffPersonId": "652987"
         },
         {
           "name": "SEDAT YİĞİT KURNAZ",
           "number": 10,
-          "shirt_no": "10",
           "tffPersonId": "1712887"
         },
         {
           "name": "BORA YILMAZ",
           "number": 17,
-          "shirt_no": "17",
           "tffPersonId": "1629396"
         },
         {
           "name": "YEKTA SÖNMEZ",
           "number": 20,
-          "shirt_no": "20",
           "tffPersonId": "1515022"
         },
         {
           "name": "HASAN GÜNDOĞDU",
           "number": 21,
-          "shirt_no": "21",
           "tffPersonId": "1214605"
         },
         {
           "name": "ERŞAN YAŞA",
           "number": 27,
-          "shirt_no": "27",
           "tffPersonId": "1589637"
         },
         {
           "name": "AHMET NECAT AYDIN",
           "number": 29,
-          "shirt_no": "29",
           "tffPersonId": "1770316"
         },
         {
           "name": "YİĞİT EPÖZDEMİR",
           "number": 33,
-          "shirt_no": "33",
           "tffPersonId": "1749227"
         }
       ],
@@ -143,61 +125,51 @@
         {
           "name": "MEHMET EMRE YAR",
           "number": 76,
-          "shirt_no": "76",
           "tffPersonId": "1894863"
         },
         {
           "name": "OĞUZCAN KESGİN",
           "number": 18,
-          "shirt_no": "18",
           "tffPersonId": "1757645"
         },
         {
           "name": "EFE ÖZEN",
           "number": 30,
-          "shirt_no": "30",
           "tffPersonId": "2022352"
         },
         {
           "name": "BURAK CAN",
           "number": 35,
-          "shirt_no": "35",
           "tffPersonId": "2100614"
         },
         {
           "name": "MİKDAT ÇİL",
           "number": 41,
-          "shirt_no": "41",
           "tffPersonId": "2015877"
         },
         {
           "name": "YİĞİT DÖNMEZ",
           "number": 45,
-          "shirt_no": "45",
           "tffPersonId": "2063980"
         },
         {
           "name": "KÜRŞAT MUTLU",
           "number": 61,
-          "shirt_no": "61",
           "tffPersonId": "2054966"
         },
         {
           "name": "ALİ TOPÇU",
           "number": 70,
-          "shirt_no": "70",
           "tffPersonId": "2825011"
         },
         {
           "name": "HASAN HÜSEYİN ERİŞ",
           "number": 85,
-          "shirt_no": "85",
           "tffPersonId": "2209227"
         },
         {
           "name": "KADİRCAN ALBAHAN",
           "number": 99,
-          "shirt_no": "99",
           "tffPersonId": "2441590"
         }
       ],
@@ -206,7 +178,6 @@
           "name": "CEM KAVÇAK"
         }
       ],
-      "coach": "CEM KAVÇAK",
       "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
     },
     "away": {
@@ -215,67 +186,56 @@
         {
           "name": "BATU EFE AKDAĞ",
           "number": 44,
-          "shirt_no": "44",
           "tffPersonId": "2074005"
         },
         {
           "name": "BARAN KIRMACİ",
           "number": 5,
-          "shirt_no": "5",
           "tffPersonId": "1898794"
         },
         {
           "name": "MURAT ARSLAN",
           "number": 8,
-          "shirt_no": "8",
           "tffPersonId": "1292958"
         },
         {
           "name": "ABDULKADİR KUZEY",
           "number": 9,
-          "shirt_no": "9",
           "tffPersonId": "881674"
         },
         {
           "name": "ERTUĞRUL YILDIRIM",
           "number": 19,
-          "shirt_no": "19",
           "tffPersonId": "2022696"
         },
         {
           "name": "RECEP KEREM BİROL",
           "number": 23,
-          "shirt_no": "23",
           "tffPersonId": "2074511"
         },
         {
           "name": "EGE ASIM DUYAR",
           "number": 24,
-          "shirt_no": "24",
           "tffPersonId": "2102574"
         },
         {
           "name": "METE ŞENTÜRK",
           "number": 26,
-          "shirt_no": "26",
           "tffPersonId": "1672907"
         },
         {
           "name": "ARDA FURKAN ABBAK",
           "number": 48,
-          "shirt_no": "48",
           "tffPersonId": "1552792"
         },
         {
           "name": "EGE KARAYEL",
           "number": 70,
-          "shirt_no": "70",
           "tffPersonId": "2166967"
         },
         {
           "name": "ENVER BÜYÜKDERE",
           "number": 86,
-          "shirt_no": "86",
           "tffPersonId": "1997529"
         }
       ],
@@ -283,61 +243,51 @@
         {
           "name": "ASLAN İLİDİ",
           "number": 73,
-          "shirt_no": "73",
           "tffPersonId": "2094315"
         },
         {
           "name": "AYTUĞ YILDIRIM",
           "number": 3,
-          "shirt_no": "3",
           "tffPersonId": "2144729"
         },
         {
           "name": "EMRE AKBULUT",
           "number": 7,
-          "shirt_no": "7",
           "tffPersonId": "1367797"
         },
         {
           "name": "TURAN ALİ DEMİRCİ",
           "number": 12,
-          "shirt_no": "12",
           "tffPersonId": "1800969"
         },
         {
           "name": "AHMET ATA KALAYCIOĞLU",
           "number": 17,
-          "shirt_no": "17",
           "tffPersonId": "1967002"
         },
         {
           "name": "BATUHAN GÜNER",
           "number": 53,
-          "shirt_no": "53",
           "tffPersonId": "1984905"
         },
         {
           "name": "İLHAN DOĞANAY",
           "number": 69,
-          "shirt_no": "69",
           "tffPersonId": "2029154"
         },
         {
           "name": "BERKE KILIÇ",
           "number": 77,
-          "shirt_no": "77",
           "tffPersonId": "1847146"
         },
         {
           "name": "BORAN YILMAZ",
           "number": 83,
-          "shirt_no": "83",
           "tffPersonId": "1999310"
         },
         {
           "name": "ÖMER HIZIROĞLU",
           "number": 96,
-          "shirt_no": "96",
           "tffPersonId": "1989952"
         }
       ],
@@ -346,7 +296,6 @@
           "name": "FERHAT BÖLÜKBAŞI"
         }
       ],
-      "coach": "FERHAT BÖLÜKBAŞI",
       "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
     }
   },
@@ -896,18 +845,6 @@
       "tffPersonId": "2166967"
     },
     {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "order": 1,
-      "player_in": "ALİ TOPÇU",
-      "player_out": "BORA YILMAZ",
-      "playerIn": "ALİ TOPÇU",
-      "playerOut": "BORA YILMAZ",
-      "minute": 73,
-      "minuteRaw": "73.dk",
-      "minute_text": "73.dk"
-    },
-    {
       "type": "substitution_out",
       "team": "Balıkesirspor",
       "player": "BORA YILMAZ",
@@ -922,18 +859,6 @@
       "order": 1,
       "minute": 73,
       "minuteRaw": "73.dk"
-    },
-    {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "order": 2,
-      "player_in": "KADİRCAN ALBAHAN",
-      "player_out": "SEDAT YİĞİT KURNAZ",
-      "playerIn": "KADİRCAN ALBAHAN",
-      "playerOut": "SEDAT YİĞİT KURNAZ",
-      "minute": 89,
-      "minuteRaw": "89.dk",
-      "minute_text": "89.dk"
     },
     {
       "type": "substitution_out",
@@ -952,18 +877,6 @@
       "minuteRaw": "89.dk"
     },
     {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "order": 3,
-      "player_in": "OĞUZCAN KESGİN",
-      "player_out": "TALHA DOĞUŞ",
-      "playerIn": "OĞUZCAN KESGİN",
-      "playerOut": "TALHA DOĞUŞ",
-      "minute": 89,
-      "minuteRaw": "89.dk",
-      "minute_text": "89.dk"
-    },
-    {
       "type": "substitution_out",
       "team": "Balıkesirspor",
       "player": "TALHA DOĞUŞ",
@@ -978,18 +891,6 @@
       "order": 3,
       "minute": 89,
       "minuteRaw": "89.dk"
-    },
-    {
-      "type": "substitution",
-      "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-      "order": 1,
-      "player_in": "ÖMER HIZIROĞLU",
-      "player_out": "ABDULKADİR KUZEY",
-      "playerIn": "ÖMER HIZIROĞLU",
-      "playerOut": "ABDULKADİR KUZEY",
-      "minute": 78,
-      "minuteRaw": "78.dk",
-      "minute_text": "78.dk"
     },
     {
       "type": "substitution_out",
@@ -1008,18 +909,6 @@
       "minuteRaw": "78.dk"
     },
     {
-      "type": "substitution",
-      "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-      "order": 2,
-      "player_in": "BORAN YILMAZ",
-      "player_out": "BARAN KIRMACİ",
-      "playerIn": "BORAN YILMAZ",
-      "playerOut": "BARAN KIRMACİ",
-      "minute": 64,
-      "minuteRaw": "64.dk",
-      "minute_text": "64.dk"
-    },
-    {
       "type": "substitution_out",
       "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
       "player": "BARAN KIRMACİ",
@@ -1034,18 +923,6 @@
       "order": 2,
       "minute": 64,
       "minuteRaw": "64.dk"
-    },
-    {
-      "type": "substitution",
-      "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-      "order": 3,
-      "player_in": "BERKE KILIÇ",
-      "player_out": "ENVER BÜYÜKDERE",
-      "playerIn": "BERKE KILIÇ",
-      "playerOut": "ENVER BÜYÜKDERE",
-      "minute": 87,
-      "minuteRaw": "87.dk",
-      "minute_text": "87.dk"
     },
     {
       "type": "substitution_out",
@@ -1064,18 +941,6 @@
       "minuteRaw": "87.dk"
     },
     {
-      "type": "substitution",
-      "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-      "order": 4,
-      "player_in": "AHMET ATA KALAYCIOĞLU",
-      "player_out": "ERTUĞRUL YILDIRIM",
-      "playerIn": "AHMET ATA KALAYCIOĞLU",
-      "playerOut": "ERTUĞRUL YILDIRIM",
-      "minute": 87,
-      "minuteRaw": "87.dk",
-      "minute_text": "87.dk"
-    },
-    {
       "type": "substitution_out",
       "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
       "player": "ERTUĞRUL YILDIRIM",
@@ -1090,18 +955,6 @@
       "order": 4,
       "minute": 87,
       "minuteRaw": "87.dk"
-    },
-    {
-      "type": "substitution",
-      "team": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-      "order": 5,
-      "player_in": "İLHAN DOĞANAY",
-      "player_out": "EGE KARAYEL",
-      "playerIn": "İLHAN DOĞANAY",
-      "playerOut": "EGE KARAYEL",
-      "minute": 78,
-      "minuteRaw": "78.dk",
-      "minute_text": "78.dk"
     },
     {
       "type": "substitution_out",
@@ -1266,10 +1119,8 @@
       "minute": 73,
       "minuteRaw": "73.dk",
       "playerOut": "BORA YILMAZ",
-      "player_out": "BORA YILMAZ",
       "playerOutTffPersonId": "1629396",
       "playerIn": "ALİ TOPÇU",
-      "player_in": "ALİ TOPÇU",
       "playerInTffPersonId": "2825011"
     },
     {
@@ -1278,10 +1129,8 @@
       "minute": 89,
       "minuteRaw": "89.dk",
       "playerOut": "SEDAT YİĞİT KURNAZ",
-      "player_out": "SEDAT YİĞİT KURNAZ",
       "playerOutTffPersonId": "1712887",
       "playerIn": "KADİRCAN ALBAHAN",
-      "player_in": "KADİRCAN ALBAHAN",
       "playerInTffPersonId": "2441590"
     },
     {
@@ -1290,10 +1139,8 @@
       "minute": 89,
       "minuteRaw": "89.dk",
       "playerOut": "TALHA DOĞUŞ",
-      "player_out": "TALHA DOĞUŞ",
       "playerOutTffPersonId": "2022790",
       "playerIn": "OĞUZCAN KESGİN",
-      "player_in": "OĞUZCAN KESGİN",
       "playerInTffPersonId": "1757645"
     },
     {
@@ -1302,10 +1149,8 @@
       "minute": 78,
       "minuteRaw": "78.dk",
       "playerOut": "ABDULKADİR KUZEY",
-      "player_out": "ABDULKADİR KUZEY",
       "playerOutTffPersonId": "881674",
       "playerIn": "ÖMER HIZIROĞLU",
-      "player_in": "ÖMER HIZIROĞLU",
       "playerInTffPersonId": "1989952"
     },
     {
@@ -1314,10 +1159,8 @@
       "minute": 64,
       "minuteRaw": "64.dk",
       "playerOut": "BARAN KIRMACİ",
-      "player_out": "BARAN KIRMACİ",
       "playerOutTffPersonId": "1898794",
       "playerIn": "BORAN YILMAZ",
-      "player_in": "BORAN YILMAZ",
       "playerInTffPersonId": "1999310"
     },
     {
@@ -1326,10 +1169,8 @@
       "minute": 87,
       "minuteRaw": "87.dk",
       "playerOut": "ENVER BÜYÜKDERE",
-      "player_out": "ENVER BÜYÜKDERE",
       "playerOutTffPersonId": "1997529",
       "playerIn": "BERKE KILIÇ",
-      "player_in": "BERKE KILIÇ",
       "playerInTffPersonId": "1847146"
     },
     {
@@ -1338,10 +1179,8 @@
       "minute": 87,
       "minuteRaw": "87.dk",
       "playerOut": "ERTUĞRUL YILDIRIM",
-      "player_out": "ERTUĞRUL YILDIRIM",
       "playerOutTffPersonId": "2022696",
       "playerIn": "AHMET ATA KALAYCIOĞLU",
-      "player_in": "AHMET ATA KALAYCIOĞLU",
       "playerInTffPersonId": "1967002"
     },
     {
@@ -1350,10 +1189,8 @@
       "minute": 78,
       "minuteRaw": "78.dk",
       "playerOut": "EGE KARAYEL",
-      "player_out": "EGE KARAYEL",
       "playerOutTffPersonId": "2166967",
       "playerIn": "İLHAN DOĞANAY",
-      "player_in": "İLHAN DOĞANAY",
       "playerInTffPersonId": "2029154"
     }
   ],
@@ -1378,7 +1215,7 @@
   "source": {
     "name": "TFF",
     "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285724",
-    "retrievedAt": "2026-05-14T21:54:24.136976Z",
+    "retrievedAt": "2026-05-14T19:40:10.340492Z",
     "sourceType": "official_tff_match_detail"
   }
 }

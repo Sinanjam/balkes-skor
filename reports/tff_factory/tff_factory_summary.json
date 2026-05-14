@@ -1,62 +1,61 @@
 {
-  "generatedAt": "2026-05-14T21:55:24.589854Z",
+  "generatedAt": "2026-05-14T20:33:35.339168Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processed": [
     {
-      "season": "2025-2026",
-      "selectedIds": 86,
-      "allDiscoveredIds": 986,
-      "detailCandidates": 86,
+      "season": "2022-2023",
+      "selectedIds": 108,
+      "allDiscoveredIds": 735,
+      "detailCandidates": 108,
       "candidateMode": "selected_or_known",
-      "matchesPublished": 32,
-      "detailFiles": 32,
+      "matchesPublished": 38,
+      "detailFiles": 38,
       "duplicatesDropped": 0,
       "rejectedReasons": {
-        "balkes_not_found": 54
+        "balkes_not_found": 70
       },
       "rejectedSamples": {
         "balkes_not_found": [
-          "285616",
-          "285619",
-          "285624",
-          "285625",
-          "285628",
-          "285639",
-          "285641",
-          "285642",
-          "285648",
-          "285654",
-          "285657",
-          "285659",
-          "285660",
-          "285673",
-          "285675",
-          "285676",
-          "285683",
-          "285690",
-          "285692",
-          "285695"
+          "235736",
+          "235739",
+          "235743",
+          "235750",
+          "235752",
+          "235766",
+          "235769",
+          "235771",
+          "235772",
+          "235780",
+          "235791",
+          "235795",
+          "235799",
+          "235811",
+          "235815",
+          "235818",
+          "235821",
+          "235831",
+          "235837",
+          "235839"
         ]
       },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
       "matchTypeCounts": {
-        "league": 30,
-        "playoff": 2
+        "league": 38
       },
       "seasonGuard": {
-        "start": "2025-07-01",
-        "end": "2026-06-30"
+        "start": "2022-07-01",
+        "end": "2023-06-30"
       },
-      "generatedAt": "2026-05-14T21:55:24.574852Z"
+      "generatedAt": "2026-05-14T20:33:35.328743Z"
     }
   ],
   "after": {
-    "seasons": 7,
-    "matches": 231
+    "seasons": 4,
+    "matches": 131
   },
   "safeToPush": true
 }
