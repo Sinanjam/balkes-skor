@@ -1,33 +1,24 @@
 {
   "id": "2025-2026",
   "name": "2025-2026",
-  "team": {
-    "id": "balikesirspor",
-    "name": "Balıkesirspor",
-    "tffClubId": "135"
-  },
-  "competition": "Nesine 3. Lig",
-  "group": "04. Grup",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.2-no-standings-fixed2",
+  "updatedAt": "2026-05-14T19:18:26.693137Z",
   "summary": {
-    "matches": 33,
-    "leagueMatches": 30,
-    "playoffMatches": 2,
-    "cupMatches": 1,
+    "matches": 32,
     "wins": 18,
     "draws": 7,
-    "losses": 8,
-    "goalsFor": 62,
-    "goalsAgainst": 30,
-    "goalDifference": 32,
-    "points": 61,
-    "finalRank": null
+    "losses": 7,
+    "goalsFor": 61,
+    "goalsAgainst": 28,
+    "goalDifference": 33,
+    "matchTypes": {
+      "league": 30,
+      "playoff": 2
+    }
   },
   "files": {
     "matchesIndex": "seasons/2025-2026/matches_index.json",
     "standingsByWeek": "seasons/2025-2026/standings_by_week.json"
-  },
-  "source": {
-    "name": "TFF",
-    "note": "Açık TFF sayfalarından dönüştürülmüş veri"
   }
 }

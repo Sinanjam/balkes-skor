@@ -1,53 +1,19 @@
 {
-  "generatedAt": "2026-05-14T05:19:50Z",
-  "sourceZip": "balkes-tff-veri.zip + TFF-Entegrasyon.zip",
-  "uploadedScan": {
-    "generated_at": "2026-05-11T10:54:26",
-    "mode": "max",
-    "visited_pages": 9000,
-    "team_pages_found": 2855,
-    "fixture_pages_found": 2736,
-    "match_details_found": 117,
-    "standings_snapshots_found": 0,
-    "fixture_windows_found": 81332,
-    "errors": 8,
-    "output_dir": "/home/sinanjam/balkes-tff-veri/processed",
-    "notes": [
-      "Bu araç yalnızca açık TFF HTML sayfalarını gezer; login, gizli API veya korumalı veri kullanmaz.",
-      "sections_raw alanı özellikle korunur: parser kaçırsa bile ilk 11/yedek/gol/kart/değişiklik metni ham olarak saklanır.",
-      "Eksik kalan sezonlar için resmi TFF URLlerini tff_urls.txt dosyasına ekleyip scripti tekrar çalıştırabilirsin; cache kaldığı için kaldığı yerden hızlanır."
-    ]
-  },
-  "convertedProfessionalMatchesFromScan": 104,
-  "skippedOrNonProfessionalDetails": 13,
-  "totalAppMatches": 152,
+  "generatedAt": "2026-05-14T19:18:26.695648Z",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.2-no-standings-fixed2",
+  "totalAppMatches": 32,
   "seasons": [
-    "2025-2026",
-    "2024-2025",
-    "2023-2024",
-    "2022-2023",
-    "2021-2022",
-    "2018-2019",
-    "2009-2010",
-    "1996-1997",
-    "1994-1995",
-    "1992-1993",
-    "1991-1992",
-    "1990-1991"
+    {
+      "id": "2025-2026",
+      "name": "2025-2026",
+      "matchCount": 32
+    }
   ],
-  "standingsSeasons": [
-    "2025-2026"
-  ],
-  "playersIndexed": 41,
-  "opponentsIndexed": 35,
+  "playersIndexed": 0,
+  "opponentsIndexed": 16,
   "notes": [
-    "Uygulama kullanıcıya ham TFF metni, cache/debug veya kaynak içi teknik bilgi göstermez.",
-    "Büyük taramada haftalık puan durumu çıkmadığı için puan durumu yalnızca 2025-2026 sezonunda hazırdır.",
-    "Fixture window kayıtları çok sayıda ham pencere olduğundan uygulamaya doğrudan maç olarak alınmadı; temiz maç ekranlarında yalnızca detay sayfası doğrulanmış maçlar kullanıldı.",
-    "2021-2022 sezonu TFF-Entegrasyon çıktısından mevcut sezonlar silinmeden güvenli şekilde eklendi.",
-    "Data report totalAppMatches manifest.availableSeasons toplamı ile eşitlendi."
-  ],
-  "source": "TFF açık sayfaları ve Balkes Skor season sync",
-  "coverage": {},
-  "validation": {}
+    "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
+    "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."
+  ]
 }

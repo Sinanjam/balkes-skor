@@ -1,0 +1,49 @@
+{
+  "season": "2025-2026",
+  "selectedIds": 86,
+  "allDiscoveredIds": 986,
+  "detailCandidates": 86,
+  "candidateMode": "selected_or_known",
+  "matchesPublished": 32,
+  "detailFiles": 32,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "balkes_not_found": 54
+  },
+  "rejectedSamples": {
+    "balkes_not_found": [
+      "285616",
+      "285619",
+      "285624",
+      "285625",
+      "285628",
+      "285639",
+      "285641",
+      "285642",
+      "285648",
+      "285654",
+      "285657",
+      "285659",
+      "285660",
+      "285673",
+      "285675",
+      "285676",
+      "285683",
+      "285690",
+      "285692",
+      "285695"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {
+    "league": 30,
+    "playoff": 2
+  },
+  "seasonGuard": {
+    "start": "2025-07-01",
+    "end": "2026-06-30"
+  },
+  "generatedAt": "2026-05-14T19:18:26.693459Z"
+}
