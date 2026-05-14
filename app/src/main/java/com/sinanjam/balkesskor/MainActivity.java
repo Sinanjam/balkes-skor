@@ -480,8 +480,7 @@ public class MainActivity extends Activity {
                     final JSONObject m = arr.optJSONObject(i);
                     if (m == null) continue;
                     LinearLayout c = card();
-                    String stage = m.optString("stage");
-                    text(c, stage + " • " + m.optString("dateDisplay"), 12, true, muted);
+                    text(c, matchMeta(m), 12, true, muted);
                     scoreBoard(c, m.optString("homeTeam"), score(m), m.optString("awayTeam"));
                     JSONObject b = m.optJSONObject("balkes");
                     if (b != null) resultChip(c, b.optString("result"));
@@ -502,11 +501,12 @@ public class MainActivity extends Activity {
 
     private void drawMatch(JSONObject m) {
         LinearLayout top = card();
-        text(top, m.optString("stage") + " • " + m.optString("dateDisplay"), 13, false, muted);
+        text(top, matchMeta(m), 13, false, muted);
         scoreBoard(top, m.optString("homeTeam"), score(m), m.optString("awayTeam"));
         JSONObject b = m.optJSONObject("balkes");
         if (b != null) resultChip(top, b.optString("result"));
-        if (m.optString("venue", "").length() > 0) text(top, "Stat: " + m.optString("venue"), 13, false, muted);
+        String stadium = m.optString("stadium", m.optString("venue", ""));
+        if (stadium.length() > 0) text(top, "Stat: " + stadium, 13, false, muted);
         JSONArray refs = m.optJSONArray("referees");
         if (refs != null && refs.length() > 0) {
             JSONObject r = refs.optJSONObject(0);
@@ -543,12 +543,13 @@ public class MainActivity extends Activity {
         if ((start == null || start.length() == 0) && (subs == null || subs.length() == 0)) return;
         LinearLayout c = card();
         text(c, side.optString("team"), 18, true, text);
-        if (side.optString("coach", "").length() > 0) text(c, "Teknik sorumlu: " + side.optString("coach"), 12, false, muted);
+        String coach = sideCoach(side);
+        if (coach.length() > 0) text(c, "Teknik sorumlu: " + coach, 12, false, muted);
         if (start != null && start.length() > 0) {
             text(c, "İlk 11", 15, true, red);
             for (int i = 0; i < start.length(); i++) {
                 JSONObject p = start.optJSONObject(i);
-                if (p != null) text(c, cleanNo(p.optString("shirt_no")) + "  " + p.optString("name"), 13, false, text);
+                if (p != null) text(c, cleanNo(p.optString("shirt_no", p.optString("number", ""))) + "  " + p.optString("name"), 13, false, text);
             }
         }
         if (subs != null && subs.length() > 0) {
@@ -558,7 +559,7 @@ public class MainActivity extends Activity {
                 JSONObject p = subs.optJSONObject(i);
                 if (p != null) {
                     if (sb.length() > 0) sb.append(" • ");
-                    sb.append(cleanNo(p.optString("shirt_no"))).append(" ").append(p.optString("name"));
+                    sb.append(cleanNo(p.optString("shirt_no", p.optString("number", "")))).append(" ").append(p.optString("name"));
                 }
             }
             text(c, sb.toString(), 12, false, muted);
@@ -937,6 +938,31 @@ public class MainActivity extends Activity {
         try { startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(u))); } catch (Exception ignored) { }
     }
 
+    private String matchMeta(JSONObject m) {
+        String label = m.optString("matchTypeLabel", m.optString("typeLabel", m.optString("stage", "")));
+        if (label.length() == 0) {
+            String t = m.optString("matchType", m.optString("type", ""));
+            if ("cup".equals(t)) label = "ZTK";
+            else if ("playoff".equals(t)) label = "Play-off";
+            else if ("league".equals(t)) label = "Lig";
+        }
+        String d = m.optString("dateDisplay", m.optString("date", ""));
+        if (label.length() > 0 && d.length() > 0) return label + " • " + d;
+        if (label.length() > 0) return label;
+        return d;
+    }
+
+    private String sideCoach(JSONObject side) {
+        String coach = side.optString("coach", "");
+        if (coach.length() > 0) return coach;
+        JSONArray staff = side.optJSONArray("technicalStaff");
+        if (staff != null && staff.length() > 0) {
+            JSONObject first = staff.optJSONObject(0);
+            if (first != null) return first.optString("name", "");
+        }
+        return "";
+    }
+
     private boolean contains(String[] arr, String v) {
         for (String a : arr) if (a.equals(v)) return true;
         return false;
@@ -985,7 +1011,10 @@ public class MainActivity extends Activity {
         String team = e.optString("team");
         if ("goal".equals(type)) return min + "  ⚽  " + e.optString("player") + "  •  " + team;
         if ("own_goal".equals(type)) return min + "  ⚽  " + e.optString("player") + " (K.K.)  •  " + team;
-        if ("card".equals(type) || "yellow_card".equals(type) || "red_card".equals(type)) return min + "  🟨  " + e.optString("player") + "  •  " + team;
+        if ("card".equals(type) || "yellow_card".equals(type) || "red_card".equals(type)) {
+            String icon = "red_card".equals(type) || "red".equals(e.optString("card")) ? "🟥" : "🟨";
+            return min + "  " + icon + "  " + e.optString("player") + "  •  " + team;
+        }
         if ("substitution".equals(type)) return min + "  ⇄  " + e.optString("player_in") + " / " + e.optString("player_out") + "  •  " + team;
         return min + "  " + team;
     }

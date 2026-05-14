@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Balkes TFF Factory v2.2 perfect details no-standings
+Balkes TFF Factory v2.3 targeted perfect details no-standings
 
 Bu sürümün hedefi:
 - Puan tablosu/standings ÇEKMEZ.
@@ -34,7 +34,7 @@ except Exception:
     BeautifulSoup = None
 
 TFF = "https://www.tff.org/Default.aspx"
-FACTORY_VERSION = "v2.2-perfect-details-no-standings"
+FACTORY_VERSION = "v2.3-targeted-perfect-details-appfix"
 TEAM_CANONICAL = "Balıkesirspor"
 
 
@@ -474,6 +474,7 @@ def player_obj(name: Any, number: Any = "", href: Any = "", role: str = "") -> d
     obj: dict[str, Any] = {"name": name}
     if num is not None:
         obj["number"] = num
+        obj["shirt_no"] = str(num)
     pid = parse_person_id(href)
     if pid:
         obj["tffPersonId"] = pid
@@ -494,22 +495,30 @@ def parse_roster_group(soup, team_no: int, rpt: str) -> list[dict[str, Any]]:
     return out
 
 
-def parse_lineups_structured(soup, home: str, away: str, sections: dict[str, str]) -> dict[str, Any]:
+def lineup_side(team: str, starting: list[dict[str, Any]], subs: list[dict[str, Any]], staff: list[dict[str, Any]], sections: dict[str, str]) -> dict[str, Any]:
+    coach = ""
+    if staff:
+        coach = clean_text(staff[0].get("name", ""))
     return {
-        "home": {
-            "team": home,
-            "starting11": parse_roster_group(soup, 1, "rptKadrolar"),
-            "substitutes": parse_roster_group(soup, 1, "rptYedekler"),
-            "technicalStaff": parse_roster_group(soup, 1, "rptTeknikKadro"),
-            "raw": sections.get("lineups_raw", ""),
-        },
-        "away": {
-            "team": away,
-            "starting11": parse_roster_group(soup, 2, "rptKadrolar"),
-            "substitutes": parse_roster_group(soup, 2, "rptYedekler"),
-            "technicalStaff": parse_roster_group(soup, 2, "rptTeknikKadro"),
-            "raw": sections.get("lineups_raw", ""),
-        },
+        "team": team,
+        "starting11": starting,
+        "substitutes": subs,
+        "technicalStaff": staff,
+        "coach": coach,
+        "raw": sections.get("lineups_raw", ""),
+    }
+
+
+def parse_lineups_structured(soup, home: str, away: str, sections: dict[str, str]) -> dict[str, Any]:
+    home_start = parse_roster_group(soup, 1, "rptKadrolar")
+    home_subs = parse_roster_group(soup, 1, "rptYedekler")
+    home_staff = parse_roster_group(soup, 1, "rptTeknikKadro")
+    away_start = parse_roster_group(soup, 2, "rptKadrolar")
+    away_subs = parse_roster_group(soup, 2, "rptYedekler")
+    away_staff = parse_roster_group(soup, 2, "rptTeknikKadro")
+    return {
+        "home": lineup_side(home, home_start, home_subs, home_staff, sections),
+        "away": lineup_side(away, away_start, away_subs, away_staff, sections),
     }
 
 
@@ -608,26 +617,35 @@ def parse_substitutions(soup, team_no: int, team: str) -> tuple[list[dict[str, A
             sub["minuteRaw"] = minute_raw
         if outp:
             sub["playerOut"] = outp.get("player")
+            sub["player_out"] = outp.get("player")
             if outp.get("tffPersonId"):
                 sub["playerOutTffPersonId"] = outp.get("tffPersonId")
-            ev = {"type": "substitution_out", "team": team, "player": outp.get("player"), "order": i + 1}
-            if minute is not None:
-                ev["minute"] = minute
-            if minute_raw:
-                ev["minuteRaw"] = minute_raw
-            events.append(ev)
         if inp:
             sub["playerIn"] = inp.get("player")
+            sub["player_in"] = inp.get("player")
             if inp.get("tffPersonId"):
                 sub["playerInTffPersonId"] = inp.get("tffPersonId")
-            ev = {"type": "substitution_in", "team": team, "player": inp.get("player"), "order": i + 1}
+        if sub.get("playerIn") or sub.get("playerOut"):
+            subs.append(sub)
+            ev = {"type": "substitution", "team": team, "order": i + 1,
+                  "player_in": sub.get("playerIn", ""), "player_out": sub.get("playerOut", ""),
+                  "playerIn": sub.get("playerIn", ""), "playerOut": sub.get("playerOut", "")}
             if minute is not None:
                 ev["minute"] = minute
             if minute_raw:
                 ev["minuteRaw"] = minute_raw
+                ev["minute_text"] = minute_raw
             events.append(ev)
-        if sub.get("playerIn") or sub.get("playerOut"):
-            subs.append(sub)
+            if outp:
+                raw_ev = {"type": "substitution_out", "team": team, "player": outp.get("player"), "order": i + 1}
+                if minute is not None: raw_ev["minute"] = minute
+                if minute_raw: raw_ev["minuteRaw"] = minute_raw
+                events.append(raw_ev)
+            if inp:
+                raw_ev = {"type": "substitution_in", "team": team, "player": inp.get("player"), "order": i + 1}
+                if minute is not None: raw_ev["minute"] = minute
+                if minute_raw: raw_ev["minuteRaw"] = minute_raw
+                events.append(raw_ev)
     return subs, events
 
 
@@ -706,6 +724,7 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
     match_date, match_time = parse_date_time(soup, txt)
     competition = parse_competition(soup, txt)
     match_type, match_label = classify_type(competition)
+    stage = match_label
     is_home = is_balkes(home)
     is_away = is_balkes(away)
     opponent = away if is_home else home if is_away else (away or home)
@@ -739,7 +758,12 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
         "matchCode": parse_match_code(soup, txt),
         "season": season,
         "competition": competition,
+        "competitionType": match_type,
+        "competitionLabel": match_label,
         "stadium": stadium,
+        "venue": stadium,
+        "stage": stage,
+        "stageLabel": stage,
         "date": match_date,
         "time": match_time,
         "dateDisplay": " - ".join(x for x in [match_date, match_time] if x),
@@ -747,6 +771,8 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
         "awayTeam": away,
         "matchType": match_type,
         "matchTypeLabel": match_label,
+        "type": match_type,
+        "typeLabel": match_label,
         "score": {"home": sh, "away": sa, "display": sdisp, "played": played},
         "balkes": {
             "isHome": bool(is_home),
@@ -805,9 +831,45 @@ def parse_standings(raw: str) -> list[dict[str, Any]]:
     return []
 
 
+def planned_urls_for_item(item: dict[str, Any]) -> list[tuple[str, str]]:
+    urls: list[tuple[str, str]] = []
+    plan = item.get("tffPlan") or {}
+    page_id = str(item.get("targetPageID") or plan.get("pageID") or "").strip()
+    group_id = str(item.get("targetGrupID") or plan.get("grupID") or "").strip()
+    max_week = int(item.get("maxWeek") or plan.get("maxWeek") or 0)
+    if not page_id:
+        return urls
+    base_params: dict[str, Any] = {"pageID": page_id}
+    if group_id:
+        base_params["grupID"] = group_id
+    urls.append((f"target_pageID_{page_id}_group_{group_id or 'none'}", tff_url(**base_params)))
+    for week in range(1, max_week + 1):
+        params = dict(base_params)
+        params["hafta"] = str(week)
+        urls.append((f"target_pageID_{page_id}_group_{group_id or 'none'}_week_{week:02d}", tff_url(**params)))
+    for u in item.get("targetUrls", []) or []:
+        if isinstance(u, str) and u.strip():
+            urls.append(("target_extra_" + hashlib.sha1(u.encode()).hexdigest()[:8], u.strip()))
+    return urls
+
+
 def discover(item: dict[str, Any], raw_root: Path, sleep_s: float, force: bool = False) -> tuple[list[str], list[str], list[dict[str, Any]]]:
     season = item["season"]
     selected, all_ids = set(), set()
+    target_urls = planned_urls_for_item(item)
+    if target_urls:
+        log(f"{season}: hedef sezon planı kullanılıyor, urlSayısı={len(target_urls)}")
+        for label, url in target_urls:
+            ok, raw = fetch(url, raw_root / season / "planned" / f"{label}.html", sleep_s, force)
+            if not ok:
+                continue
+            all_ids.update(extract_ids(raw))
+            selected.update(extract_balkes_ids(raw))
+        if selected:
+            return sorted(selected, key=lambda x: int(x)), sorted(all_ids, key=lambda x: int(x)), []
+        log(f"{season}: hedef planda Balkes selectedIds çıkmadı; all_ids={len(all_ids)}. Geniş fallback kapalı.")
+        return [], sorted(all_ids, key=lambda x: int(x)), []
+
     for page_id in item.get("pageIds", []):
         url = tff_url(pageID=page_id)
         ok, raw = fetch(url, raw_root / season / "pages" / f"pageID_{page_id}.html", sleep_s, force)
@@ -837,7 +899,7 @@ def match_signature(match: dict[str, Any]) -> str:
 
 
 def index_from_detail(d: dict[str, Any]) -> dict[str, Any]:
-    keys = ["id", "matchCode", "season", "competition", "stadium", "date", "time", "dateDisplay", "homeTeam", "awayTeam", "matchType", "matchTypeLabel", "score", "balkes", "quality", "detailCompleteness"]
+    keys = ["id", "matchCode", "season", "competition", "competitionType", "competitionLabel", "stadium", "venue", "stage", "stageLabel", "date", "time", "dateDisplay", "homeTeam", "awayTeam", "matchType", "matchTypeLabel", "type", "typeLabel", "score", "balkes", "quality", "detailCompleteness"]
     out = {k: d.get(k) for k in keys if d.get(k) not in (None, "", {}, [])}
     out["detailUrl"] = f"seasons/{d['season']}/matches/{d['id']}.json"
     out["source"] = d["source"]
@@ -914,9 +976,11 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
         if b.get("goalsAgainst") is not None:
             ga += int(b.get("goalsAgainst") or 0)
 
+    season_competition = details[0].get("competition", "") if details else ""
     write_json(season_dir / "season.json", {
         "id": season,
         "name": season,
+        "competition": season_competition,
         "sourcePolicy": "TFF-only",
         "factoryVersion": FACTORY_VERSION,
         "updatedAt": now(),
@@ -952,8 +1016,15 @@ def build_manifest(data_root: Path, processed: list[str]) -> None:
     seasons = []
     for p in sorted((data_root / "seasons").glob("*/matches_index.json"), reverse=True):
         arr = read_json(p, [])
+        season_json = read_json(p.parent / "season.json", {})
         if isinstance(arr, list) and arr:
-            seasons.append({"id": p.parent.name, "name": p.parent.name, "matchCount": len(arr)})
+            item = {"id": p.parent.name, "name": p.parent.name, "matchCount": len(arr)}
+            if isinstance(season_json, dict):
+                if season_json.get("competition"):
+                    item["competition"] = season_json.get("competition")
+                if season_json.get("summary"):
+                    item["summary"] = season_json.get("summary")
+            seasons.append(item)
     write_json(data_root / "manifest.json", {
         "app": "Balkes Skor",
         "schemaVersion": 3,

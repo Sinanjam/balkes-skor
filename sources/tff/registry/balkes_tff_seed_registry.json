@@ -1,5 +1,5 @@
 {
-  "policy": "TFF-only; no standings; perfect detail parser with goals/cards/lineups/subs/stadium/matchType",
+  "policy": "TFF-only; perfect details; no standings; season-targeted discovery v2.3",
   "team": "Balıkesirspor",
   "baseline": {
     "minSeasons": 1,
@@ -226,7 +226,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "Nesine 3. Lig",
+        "group": "2. Grup",
+        "pageID": "1733",
+        "grupID": "2605",
+        "maxWeek": 30,
+        "confidence": "high"
+      },
+      "targetPageID": "1733",
+      "targetGrupID": "2605",
+      "maxWeek": 30,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?grupID=2605&pageID=1733"
+      ],
+      "planConfidence": "high"
     },
     {
       "season": "2023-2024",
@@ -236,7 +251,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "TFF 3. Lig",
+        "group": "4. Grup",
+        "pageID": "1651",
+        "grupID": "2445",
+        "maxWeek": 28,
+        "confidence": "high"
+      },
+      "targetPageID": "1651",
+      "targetGrupID": "2445",
+      "maxWeek": 28,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?grupID=2445&pageID=1651"
+      ],
+      "planConfidence": "high"
     },
     {
       "season": "2022-2023",
@@ -247,7 +277,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "TFF 2. Lig",
+        "group": "Kırmızı Grup",
+        "pageID": "1632",
+        "grupID": "2234",
+        "maxWeek": 38,
+        "confidence": "high"
+      },
+      "targetPageID": "1632",
+      "targetGrupID": "2234",
+      "maxWeek": 38,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?grupID=2234&pageID=1632"
+      ],
+      "planConfidence": "high"
     },
     {
       "season": "2021-2022",
@@ -259,7 +304,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "Spor Toto 1. Lig",
+        "group": "",
+        "pageID": "1580",
+        "grupID": "",
+        "maxWeek": 38,
+        "confidence": "high"
+      },
+      "targetPageID": "1580",
+      "targetGrupID": "",
+      "maxWeek": 38,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?pageID=1580"
+      ],
+      "planConfidence": "high"
     },
     {
       "season": "2020-2021",
@@ -274,7 +334,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "TFF 1. Lig",
+        "group": "",
+        "pageID": "1530",
+        "grupID": "",
+        "maxWeek": 34,
+        "confidence": "high"
+      },
+      "targetPageID": "1530",
+      "targetGrupID": "",
+      "maxWeek": 34,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?pageID=1530"
+      ],
+      "planConfidence": "high"
     },
     {
       "season": "2019-2020",
@@ -289,7 +364,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "TFF 1. Lig",
+        "group": "",
+        "pageID": "1502",
+        "grupID": "",
+        "maxWeek": 34,
+        "confidence": "high"
+      },
+      "targetPageID": "1502",
+      "targetGrupID": "",
+      "maxWeek": 34,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?pageID=1502"
+      ],
+      "planConfidence": "high"
     },
     {
       "season": "2018-2019",
@@ -394,7 +484,22 @@
         528
       ],
       "knownMatchIds": [],
-      "tryWeeklyStandings": false
+      "tryWeeklyStandings": false,
+      "tffPlan": {
+        "competition": "Spor Toto 2. Lig",
+        "group": "Beyaz Grup",
+        "pageID": "1239",
+        "grupID": "",
+        "maxWeek": 34,
+        "confidence": "medium"
+      },
+      "targetPageID": "1239",
+      "targetGrupID": "",
+      "maxWeek": 34,
+      "targetUrls": [
+        "https://www.tff.org/Default.aspx?pageID=1239"
+      ],
+      "planConfidence": "medium"
     },
     {
       "season": "2011-2012",

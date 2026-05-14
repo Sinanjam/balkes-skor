@@ -1,4 +1,4 @@
-name: TFF Factory Perfect Details No Standings
+name: TFF Factory v2.3 Targeted Perfect Details
 
 on:
   workflow_dispatch:
@@ -79,7 +79,7 @@ jobs:
         run: |
           python scripts/clean_database.py --data-root data
 
-      - name: Run TFF Factory perfect details no-standings
+      - name: Run TFF Factory v2.3 targeted perfect details
         env:
           PYTHONUNBUFFERED: "1"
         run: |
@@ -107,7 +107,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tff-factory-perfect-details-${{ github.event.inputs.start_season }}-${{ github.run_id }}
+          name: tff-factory-v23-targeted-perfect-${{ github.event.inputs.start_season }}-${{ github.run_id }}
           path: |
             reports/tff_factory/**/*.json
             reports/tff_factory/backups/*.zip
