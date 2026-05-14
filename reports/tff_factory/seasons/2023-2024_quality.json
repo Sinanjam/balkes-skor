@@ -1,0 +1,48 @@
+{
+  "season": "2023-2024",
+  "selectedIds": 78,
+  "allDiscoveredIds": 866,
+  "detailCandidates": 78,
+  "candidateMode": "selected_or_known",
+  "matchesPublished": 28,
+  "detailFiles": 28,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "balkes_not_found": 50
+  },
+  "rejectedSamples": {
+    "balkes_not_found": [
+      "251166",
+      "251167",
+      "251173",
+      "251174",
+      "251181",
+      "251184",
+      "251191",
+      "251193",
+      "251197",
+      "251202",
+      "251206",
+      "251212",
+      "251216",
+      "251218",
+      "251221",
+      "251227",
+      "251230",
+      "251232",
+      "251241",
+      "251245"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {
+    "league": 28
+  },
+  "seasonGuard": {
+    "start": "2023-07-01",
+    "end": "2024-06-30"
+  },
+  "generatedAt": "2026-05-14T20:22:36.390577Z"
+}

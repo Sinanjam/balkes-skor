@@ -3,7 +3,7 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-14T20:15:43.605198Z",
+  "generatedAt": "2026-05-14T20:22:36.393197Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -42,6 +42,24 @@
           "playoff": 3
         }
       }
+    },
+    {
+      "id": "2023-2024",
+      "name": "2023-2024",
+      "matchCount": 28,
+      "competition": "TFF 3. LİG (Profesyonel Takım)",
+      "summary": {
+        "matches": 28,
+        "wins": 7,
+        "draws": 12,
+        "losses": 9,
+        "goalsFor": 28,
+        "goalsAgainst": 32,
+        "goalDifference": -4,
+        "matchTypes": {
+          "league": 28
+        }
+      }
     }
   ],
   "global": {
@@ -50,12 +68,12 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778789743,
+  "appDataVersion": 1778790156,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T20:15:43.605209Z",
+  "lastUpdated": "2026-05-14T20:22:36.393207Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processedSeasonsInLastRun": [
-    "2024-2025"
+    "2023-2024"
   ]
 }
