@@ -17,9 +17,13 @@ on:
         required: true
         type: boolean
         default: true
+
   schedule:
+    # 06:10 Türkiye saati
     - cron: "10 3 * * *"
+    # 14:10 Türkiye saati
     - cron: "10 11 * * *"
+    # 22:10 Türkiye saati
     - cron: "10 19 * * *"
 
 permissions:
@@ -30,16 +34,22 @@ permissions:
 jobs:
   tff-factory:
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 240
+
     steps:
       - uses: actions/checkout@v4
-        with: { fetch-depth: 0 }
+        with:
+          fetch-depth: 0
+
       - uses: actions/setup-python@v5
-        with: { python-version: "3.12" }
+        with:
+          python-version: "3.12"
+
       - name: Install parser deps
         run: |
           python -m pip install --upgrade pip
           pip install beautifulsoup4 lxml
+
       - name: Load queue state branch
         shell: bash
         run: |
@@ -48,7 +58,11 @@ jobs:
           if git show-ref --verify --quiet refs/remotes/origin/factory/queue-state; then
             mkdir -p sources/tff/state
             git show origin/factory/queue-state:sources/tff/state/season_queue.json > sources/tff/state/season_queue.json || true
+            echo "Loaded queue state from factory/queue-state"
+          else
+            echo "No queue state branch yet; using repo state"
           fi
+
       - name: Resolve settings and claim season
         id: settings
         shell: bash
@@ -61,20 +75,41 @@ jobs:
           echo "start_input=$START_INPUT" >> "$GITHUB_OUTPUT"
           echo "run_gemini=$RUN_GEMINI" >> "$GITHUB_OUTPUT"
           echo "create_pr=$CREATE_PR" >> "$GITHUB_OUTPUT"
+
       - name: Validate current data
-        run: python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
-      - name: Run TFF Factory v2-safe
-        env: { PYTHONUNBUFFERED: "1" }
         run: |
-          python scripts/tff_factory.py             --seed sources/tff/registry/balkes_tff_seed_registry.json             --data-root data             --raw-root sources/tff/raw             --reports-root reports/tff_factory             --start-season "${{ steps.settings.outputs.season }}"             --max-seasons "1"             --sleep "1.5"
+          python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
+
+      - name: Run TFF Factory v2.1-safe
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          python scripts/tff_factory.py \
+            --seed sources/tff/registry/balkes_tff_seed_registry.json \
+            --data-root data \
+            --raw-root sources/tff/raw \
+            --reports-root reports/tff_factory \
+            --start-season "${{ steps.settings.outputs.season }}" \
+            --max-seasons "1" \
+            --sleep "1.5" \
+            --max-discovery-probe "1500"
+
       - name: Validate produced data
-        run: python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
+        run: |
+          python scripts/validate_data.py --data-root data --min-seasons 12 --min-matches 177
+
       - name: Gemini diagnostics
         if: ${{ always() && steps.settings.outputs.run_gemini == 'true' }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: gemini-2.0-flash
-        run: python scripts/gemini_tff_helper.py --reports-root reports/tff_factory --raw-root sources/tff/raw --max-files 2 --sleep 5
+        run: |
+          python scripts/gemini_tff_helper.py \
+            --reports-root reports/tff_factory \
+            --raw-root sources/tff/raw \
+            --max-files 2 \
+            --sleep 5
+
       - name: Upload raw/report artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -85,47 +120,82 @@ jobs:
             sources/tff/raw/**/*.html
             sources/tff/raw/**/*.txt
           if-no-files-found: ignore
+
       - name: Commit data branch
         if: ${{ success() }}
         id: branch
-        env: { GH_TOKEN: "${{ github.token }}" }
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           BRANCH="factory/tff-${{ steps.settings.outputs.season }}-${{ github.run_id }}"
           echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
           git checkout -B "$BRANCH"
+
           git add data reports/tff_factory sources/tff/registry sources/tff/state .gitignore
           git reset -- sources/tff/raw || true
-          if git diff --cached --quiet; then echo "No changes to commit"; echo "changed=false" >> "$GITHUB_OUTPUT"; exit 0; fi
-          git commit -m "Run TFF factory v2-safe for ${{ steps.settings.outputs.season }}"
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          git commit -m "Run TFF factory v2.1-safe for ${{ steps.settings.outputs.season }}"
           git push -f origin "$BRANCH"
           echo "changed=true" >> "$GITHUB_OUTPUT"
+
       - name: Try create PR
         if: ${{ success() && steps.branch.outputs.changed == 'true' && steps.settings.outputs.create_pr == 'true' }}
-        env: { GH_TOKEN: "${{ github.token }}" }
+        env:
+          GH_TOKEN: ${{ github.token }}
         shell: bash
         run: |
           BODY_FILE="$(mktemp)"
-          echo "TFF-only v2-safe factory run." >> "$BODY_FILE"
+          echo "TFF-only v2.1-safe factory run." >> "$BODY_FILE"
+          echo "" >> "$BODY_FILE"
           echo "- Season: ${{ steps.settings.outputs.season }}" >> "$BODY_FILE"
           echo "- Validation: passed" >> "$BODY_FILE"
-          echo "- Raw HTML: artifact only" >> "$BODY_FILE"
-          echo "- Existing rich details protected" >> "$BODY_FILE"
-          echo "- Lig/ZTK/Play-off: matchType" >> "$BODY_FILE"
-          gh pr create --title "Run TFF factory v2-safe for ${{ steps.settings.outputs.season }}" --body-file "$BODY_FILE" --base main --head "${{ steps.branch.outputs.branch }}" || true
+          echo "- Raw HTML: artifact only, not committed" >> "$BODY_FILE"
+          echo "- Existing rich details: protected" >> "$BODY_FILE"
+          echo "- selectedIds=0 fallback: detail-page verification" >> "$BODY_FILE"
+          echo "- Classification: Lig/ZTK/Play-off via matchType" >> "$BODY_FILE"
+          gh pr create \
+            --title "Run TFF factory v2.1-safe for ${{ steps.settings.outputs.season }}" \
+            --body-file "$BODY_FILE" \
+            --base main \
+            --head "${{ steps.branch.outputs.branch }}" || true
+
       - name: Complete queue state
         if: ${{ success() && steps.settings.outputs.start_input == 'auto' }}
         shell: bash
         run: |
-          python scripts/season_queue.py complete --seed sources/tff/registry/balkes_tff_seed_registry.json --state sources/tff/state/season_queue.json --claim-file reports/tff_factory/queue_claim.json --start-season auto
+          python scripts/season_queue.py complete \
+            --seed sources/tff/registry/balkes_tff_seed_registry.json \
+            --state sources/tff/state/season_queue.json \
+            --claim-file reports/tff_factory/queue_claim.json \
+            --start-season auto
+
           cp sources/tff/state/season_queue.json /tmp/season_queue.json
+
           git fetch origin factory/queue-state:refs/remotes/origin/factory/queue-state || true
-          if git show-ref --verify --quiet refs/remotes/origin/factory/queue-state; then git checkout -B factory/queue-state origin/factory/queue-state; else git checkout -B factory/queue-state origin/main; fi
+          if git show-ref --verify --quiet refs/remotes/origin/factory/queue-state; then
+            git checkout -B factory/queue-state origin/factory/queue-state
+          else
+            git checkout -B factory/queue-state origin/main
+          fi
+
           mkdir -p sources/tff/state
           cp /tmp/season_queue.json sources/tff/state/season_queue.json
           git add sources/tff/state/season_queue.json
-          if git diff --cached --quiet; then echo "Queue state unchanged"; exit 0; fi
+
+          if git diff --cached --quiet; then
+            echo "Queue state unchanged"
+            exit 0
+          fi
+
           git commit -m "Advance TFF season queue after ${{ steps.settings.outputs.season }}"
           git push -f origin factory/queue-state
