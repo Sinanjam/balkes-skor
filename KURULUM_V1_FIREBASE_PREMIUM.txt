@@ -1,0 +1,30 @@
+Balkes Skor v1.0.0 Firebase Premium Patch
+
+1) Repo köküne gir:
+cd ~/balkes-skor
+
+2) Patch'i aç:
+unzip -o ~/Downloads/balkes-skor-v1-firebase-premium-final-patch.zip -d .
+sudo chown -R $(id -u):$(id -g) .
+
+Fish kullanıyorsan:
+sudo chown -R (id -u):(id -g) .
+
+3) Firebase dosyasını kontrol et:
+ls app/google-services.json
+grep com.sinanjam.balkesskor app/google-services.json
+
+4) Commit + push:
+git add -A
+git commit -m "Prepare Balkes Skor v1.0.0 Firebase premium release"
+git pull --rebase origin main
+git push origin main
+
+5) Latest APK release:
+fish RELEASE_V1_LATEST.fish
+
+6) Firebase sayaç backend'i:
+firebase login
+firebase use --add
+firebase deploy --only firestore:rules
+firebase deploy --only functions

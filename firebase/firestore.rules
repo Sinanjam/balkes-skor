@@ -1,0 +1,22 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /app_activity/{fid} {
+      allow create, update: if request.resource.data.keys().hasOnly([
+        'lastSeen',
+        'platform',
+        'appVersion'
+      ])
+      && request.resource.data.platform == 'android'
+      && request.resource.data.lastSeen == request.time;
+
+      allow read, delete: if false;
+    }
+
+    match /public_stats/{doc} {
+      allow read: if doc == 'app';
+      allow write: if false;
+    }
+  }
+}

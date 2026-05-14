@@ -36,3 +36,11 @@ Yeni TFF taraması aynı `data/` şemasına dönüştürüldüğünde uygulama g
 ## Live data fixpack notu
 
 Android `data/` klasörü web `docs/data/` ile eşitlendi. Kurulu uygulama `https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/` kaynağını okuyorsa bu push sonrası veriler tekrar gelmelidir.
+
+## v1.0.0 Firebase premium release
+
+Production paket adı: `com.sinanjam.balkesskor`. `app/google-services.json` bu paket adına ait olmalıdır. Latest APK release için:
+
+```fish
+fish RELEASE_V1_LATEST.fish
+```

@@ -31,6 +31,12 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.SetOptions;
+import com.google.firebase.installations.FirebaseInstallations;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -38,11 +44,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MainActivity extends Activity {
-    // Main branch data is kept in sync with balkes-skor-web/docs/data by the live data fixpack.
+    // v1.0.0 release: production package com.sinanjam.balkesskor, live data via GitHub main/data.
 
     private static final String BASE_DATA_URL = "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/";
     private static final String LATEST_RELEASE_API = "https://api.github.com/repos/Sinanjam/balkes-skor/releases/latest";
@@ -58,19 +66,21 @@ public class MainActivity extends Activity {
     private JSONArray availableSeasons;
     private String currentSeasonId = "2025-2026";
     private String expandedPlayerName = "";
+    private TextView activeUsersValue;
     private final ArrayList<NavState> backStack = new ArrayList<NavState>();
     private int standingsBaseChildren = 1;
 
-    private final int red = Color.rgb(230, 0, 18);
-    private final int redSoft = Color.rgb(145, 11, 22);
-    private final int bg = Color.rgb(10, 11, 15);
-    private final int surface = Color.rgb(22, 24, 31);
-    private final int surface2 = Color.rgb(31, 34, 43);
-    private final int stroke = Color.rgb(62, 65, 76);
-    private final int text = Color.rgb(247, 247, 247);
-    private final int muted = Color.rgb(174, 178, 190);
-    private final int green = Color.rgb(60, 190, 120);
-    private final int yellow = Color.rgb(245, 190, 70);
+    private final int red = Color.rgb(214, 0, 18);
+    private final int redSoft = Color.rgb(104, 8, 20);
+    private final int bg = Color.rgb(5, 6, 12);
+    private final int surface = Color.rgb(18, 19, 27);
+    private final int surface2 = Color.rgb(28, 30, 40);
+    private final int stroke = Color.rgb(76, 63, 72);
+    private final int text = Color.rgb(250, 250, 252);
+    private final int muted = Color.rgb(184, 188, 199);
+    private final int green = Color.rgb(42, 183, 116);
+    private final int yellow = Color.rgb(238, 184, 72);
+    private final int gold = Color.rgb(238, 184, 72);
 
     private static class NavState {
         String screen;
@@ -92,6 +102,7 @@ public class MainActivity extends Activity {
             w.setNavigationBarColor(Color.BLACK);
         }
         showSplash();
+        trackAppOpen();
         startAppChecks();
     }
 
@@ -106,7 +117,7 @@ public class MainActivity extends Activity {
         root.setOrientation(LinearLayout.VERTICAL);
         root.setGravity(Gravity.CENTER);
         root.setPadding(dp(28), dp(28), dp(28), dp(28));
-        root.setBackground(gradient(bg, Color.rgb(35, 8, 13)));
+        root.setBackground(gradient(Color.rgb(3, 5, 12), Color.rgb(70, 5, 16)));
         setContentView(root);
 
         ImageView logo = new ImageView(this);
@@ -119,13 +130,13 @@ public class MainActivity extends Activity {
         TextView title = new TextView(this);
         title.setText("Balkes Skor");
         title.setTextColor(text);
-        title.setTextSize(30);
+        title.setTextSize(32);
         title.setTypeface(Typeface.DEFAULT_BOLD);
         title.setGravity(Gravity.CENTER);
         root.addView(title);
 
         TextView sub = new TextView(this);
-        sub.setText("Balıkesirspor maç merkezi");
+        sub.setText("Balıkesirspor maç merkezi • v1.0.0");
         sub.setTextColor(muted);
         sub.setTextSize(14);
         sub.setGravity(Gravity.CENTER);
@@ -278,8 +289,8 @@ public class MainActivity extends Activity {
         header.setOrientation(LinearLayout.HORIZONTAL);
         header.setGravity(Gravity.CENTER_VERTICAL);
         header.setPadding(dp(14), dp(12), dp(14), dp(12));
-        header.setBackground(gradient(redSoft, red));
-        root.addView(header, new LinearLayout.LayoutParams(-1, dp(82)));
+        header.setBackground(gradient(Color.rgb(20, 4, 10), Color.rgb(133, 8, 24)));
+        root.addView(header, new LinearLayout.LayoutParams(-1, dp(88)));
 
         ImageView logo = new ImageView(this);
         logo.setImageResource(getResources().getIdentifier("logo_balkes_skor", "drawable", getPackageName()));
@@ -294,12 +305,12 @@ public class MainActivity extends Activity {
         TextView title = new TextView(this);
         title.setText("Balkes Skor");
         title.setTextColor(Color.WHITE);
-        title.setTextSize(24);
+        title.setTextSize(25);
         title.setTypeface(Typeface.DEFAULT_BOLD);
         titles.addView(title);
 
         TextView sub = new TextView(this);
-        sub.setText("Balıkesirspor maç merkezi");
+        sub.setText("Premium maç arşivi • canlı veri");
         sub.setTextColor(Color.WHITE);
         sub.setTextSize(12);
         titles.addView(sub);
@@ -314,7 +325,7 @@ public class MainActivity extends Activity {
         addNav("Maçlar", "matches");
         addNav("Puan", "standings");
         addNav("Yıllar", "compare");
-        addNav("Oyuncu", "players");
+        addNav("Hakkında", "about");
 
         ScrollView scroll = new ScrollView(this);
         content = new LinearLayout(this);
@@ -345,7 +356,7 @@ public class MainActivity extends Activity {
     }
 
     private boolean carriesSeasonId(String screen) {
-        return "home".equals(screen) || "matches".equals(screen) || "standings".equals(screen) || "compare".equals(screen) || "players".equals(screen) || "about".equals(screen);
+        return "home".equals(screen) || "matches".equals(screen) || "standings".equals(screen) || "compare".equals(screen) || "about".equals(screen);
     }
 
     private void renderCurrent() {
@@ -355,8 +366,6 @@ public class MainActivity extends Activity {
         if ("home".equals(s.screen)) renderHome();
         else if ("matches".equals(s.screen)) renderMatches(currentSeasonId);
         else if ("standings".equals(s.screen)) renderStandings(currentSeasonId);
-        else if ("players".equals(s.screen)) renderPlayers();
-        else if ("player".equals(s.screen)) renderPlayerDetail(s.arg);
         else if ("compare".equals(s.screen)) renderCompare();
         else if ("about".equals(s.screen)) renderAbout();
         else if ("match".equals(s.screen)) renderMatch(s.arg);
@@ -392,7 +401,7 @@ public class MainActivity extends Activity {
     }
 
     private void renderHome() {
-        clear("Ana Sayfa");
+        clear("Balkes Skor");
         loadJson("seasons/" + currentSeasonId + "/season.json", new JsonCallback() {
             public void ok(final Object seasonObj) {
                 loadJson("seasons/" + currentSeasonId + "/matches_index.json", new JsonCallback() {
@@ -409,6 +418,7 @@ public class MainActivity extends Activity {
         LinearLayout hero = card();
         text(hero, season.optString("name") + " Sezonu", 20, true, text);
         text(hero, leagueName(season.optString("competition", "")), 13, false, muted);
+        text(hero, "Canlı veri kaynağı: GitHub main/data • v1.0.0", 11, false, gold);
         if (summary != null) {
             int total = summary.optInt("matches", summary.optInt("leagueMatches") + summary.optInt("playoffMatches") + summary.optInt("cupMatches"));
             text(hero, total + " maç", 16, true, text);
@@ -602,30 +612,35 @@ public class MainActivity extends Activity {
         next.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { drawStandingsWeek(weeks, Math.min(weeks.length() - 1, idx + 1)); } });
 
         LinearLayout c = card();
-        text(c, "Hafta " + snap.optInt("week"), 17, true, text);
+        text(c, "Hafta " + snap.optInt("week"), 18, true, text);
+        String source = snap.optString("source", "");
+        if (source.length() > 0) text(c, "Kaynak: " + source, 11, false, muted);
+        text(c, "Sıra  Takım                         O  G  B  M   A   Y   Av   P", 11, true, muted);
         JSONArray arr = snap.optJSONArray("standings");
         if (arr == null) return;
         for (int i = 0; i < arr.length(); i++) {
             JSONObject t = arr.optJSONObject(i);
             if (t == null) continue;
-            boolean balkesRow = t.optBoolean("isBalkes");
+            boolean balkes = t.optBoolean("isBalkes") || isBalkesName(t.optString("team"));
+            TextView row = text(c, standingsRowText(t), balkes ? 14 : 12, balkes, balkes ? Color.WHITE : text);
+            row.setPadding(dp(8), dp(6), dp(8), dp(6));
+            if (balkes) row.setBackground(round(redSoft, dp(12), red));
             String penalty = t.optString("penaltyNote", "");
-            int deduction = t.optInt("pointsDeducted", 0);
-            String line = t.optInt("rank") + ". " + t.optString("team")
-                    + "   " + t.optInt("played") + "O"
-                    + "  " + t.optInt("won") + "G"
-                    + "  " + t.optInt("drawn") + "B"
-                    + "  " + t.optInt("lost") + "M"
-                    + "  " + t.optInt("goalsFor") + "A"
-                    + "  " + t.optInt("goalsAgainst") + "Y"
-                    + "  " + t.optInt("goalDifference") + "AV"
-                    + "   " + t.optInt("points") + "P";
-            if (deduction != 0) line += " (" + deduction + ")";
-            TextView row = text(c, line, balkesRow ? 15 : 12, balkesRow, balkesRow ? red : text);
-            row.setPadding(0, dp(5), 0, dp(5));
-            if (balkesRow) row.setBackground(round(surface2, dp(10), red));
-            if (penalty.length() > 0) text(c, "Ceza/ek karar: " + penalty, 11, false, muted);
+            int deducted = t.optInt("pointsDeducted", 0);
+            if (balkes && (penalty.length() > 0 || deducted != 0)) {
+                text(c, "Balıkesirspor ceza/not: " + (penalty.length() > 0 ? penalty : String.valueOf(deducted) + " puan"), 11, false, gold);
+            }
         }
+    }
+
+    private String standingsRowText(JSONObject t) {
+        int gf = t.has("goalsFor") ? t.optInt("goalsFor") : t.optInt("for");
+        int ga = t.has("goalsAgainst") ? t.optInt("goalsAgainst") : t.optInt("against");
+        int gd = t.has("goalDifference") ? t.optInt("goalDifference") : gf - ga;
+        return String.format(java.util.Locale.US,
+                "%2d. %-24s %2d %2d %2d %2d %3d %3d %4d %3d",
+                t.optInt("rank"), t.optString("team"), t.optInt("played"), t.optInt("won"),
+                t.optInt("drawn"), t.optInt("lost"), gf, ga, gd, t.optInt("points"));
     }
 
     private void renderPlayers() {
@@ -794,13 +809,31 @@ public class MainActivity extends Activity {
 
     private void renderAbout() {
         clear("Hakkında");
+
+        LinearLayout stat = card();
+        text(stat, "Son 30 günde aktif kullanıcı", 15, true, muted);
+        activeUsersValue = text(stat, "Yükleniyor...", 32, true, gold);
+        text(stat, "Balkes Skor'u son 30 gün içinde açan benzersiz kurulum sayısıdır. Kişisel kimlik bilgisi göstermez.", 12, false, muted);
+        loadActiveUsers30d();
+
         LinearLayout c = card();
-        text(c, "Sadece TFF sitelerinden çekebildiğimiz veriler baz alınmıştır.", 15, false, text);
-        text(c, "Kaynak Kodları: https://github.com/Sinanjam/balkes-skor.git", 14, false, muted);
-        text(c, "Web sitesi: https://sinanjam.github.io/balkes-skor-web/", 14, false, muted);
-        Button code = redButton("Kaynak Kodları");
+        text(c, "Balkes Skor v1.0.0", 22, true, text);
+        text(c, "Balıkesirspor maçlarını, sezon özetlerini ve puan durumu verilerini sade ve hızlı bir arayüzle sunan bağımsız bir arşiv uygulamasıdır.", 14, false, text);
+        text(c, "Uygulama içeriği TFF açık sayfaları, kamuya açık arşivler ve proje içinde doğrulanan veri çıktıları üzerinden derlenir. Veri dosyaları GitHub main/data üzerinden canlı okunur; bu yüzden yalnızca veri güncellendiğinde yeni APK/release yayınlamak gerekmez.", 13, false, muted);
+        text(c, "Sorumluluk reddi", 16, true, gold);
+        text(c, "Balkes Skor resmi kulüp ya da federasyon uygulaması değildir. Derlenmiş bilgilerde eksik, gecikmiş, hatalı ya da sonradan değişmiş kayıtlar bulunabilir. Resmi ve hukuki değerlendirme gereken durumlarda TFF ve ilgili kurumların güncel kayıtları esas alınmalıdır.", 13, false, muted);
+        text(c, "İçerik kaldırma ve düzeltme talepleri", 16, true, gold);
+        text(c, "Telif, kişisel veri, yanlış bilgi veya kaldırma/düzeltme talepleri için GitHub profilinden iletişime geçebilirsiniz: https://github.com/Sinanjam", 13, false, muted);
+        text(c, "Kaynak Kodları: https://github.com/Sinanjam/balkes-skor.git", 13, false, muted);
+        text(c, "Web sitesi: https://sinanjam.github.io/balkes-skor-web/", 13, false, muted);
+        Button profile = redButton("İletişim / İçerik Kaldırma");
+        profile.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openUrl("https://github.com/Sinanjam"); } });
+        c.addView(profile, new LinearLayout.LayoutParams(-1, dp(48)));
+        Button code = darkButton("Kaynak Kodları");
         code.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openUrl("https://github.com/Sinanjam/balkes-skor.git"); } });
-        c.addView(code, new LinearLayout.LayoutParams(-1, dp(48)));
+        LinearLayout.LayoutParams cp = new LinearLayout.LayoutParams(-1, dp(48));
+        cp.setMargins(0, dp(8), 0, 0);
+        c.addView(code, cp);
         Button web = darkButton("Web Sitesi");
         web.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { openUrl("https://sinanjam.github.io/balkes-skor-web/"); } });
         LinearLayout.LayoutParams wp = new LinearLayout.LayoutParams(-1, dp(48));
@@ -895,6 +928,44 @@ public class MainActivity extends Activity {
         c.addView(retry);
     }
 
+    private void trackAppOpen() {
+        try {
+            FirebaseInstallations.getInstance().getId()
+                    .addOnSuccessListener(fid -> {
+                        try {
+                            Map<String, Object> data = new HashMap<String, Object>();
+                            data.put("lastSeen", FieldValue.serverTimestamp());
+                            data.put("platform", "android");
+                            data.put("appVersion", getAppVersionName());
+                            FirebaseFirestore.getInstance()
+                                    .collection("app_activity")
+                                    .document(fid)
+                                    .set(data, SetOptions.merge());
+                        } catch (Exception ignored) { }
+                    });
+        } catch (Exception ignored) { }
+    }
+
+    private void loadActiveUsers30d() {
+        try {
+            FirebaseFirestore.getInstance()
+                    .collection("public_stats")
+                    .document("app")
+                    .get()
+                    .addOnSuccessListener(doc -> {
+                        if (activeUsersValue == null) return;
+                        Long count = doc.getLong("activeUsers30d");
+                        if (count == null) activeUsersValue.setText("Hazırlanıyor");
+                        else activeUsersValue.setText(String.valueOf(count));
+                    })
+                    .addOnFailureListener(e -> {
+                        if (activeUsersValue != null) activeUsersValue.setText("Veri alınamadı");
+                    });
+        } catch (Exception ex) {
+            if (activeUsersValue != null) activeUsersValue.setText("Veri alınamadı");
+        }
+    }
+
     private void loadJson(final String path, final JsonCallback cb) {
         executor.execute(new Runnable() {
             public void run() {
@@ -981,6 +1052,13 @@ public class MainActivity extends Activity {
     private boolean contains(String[] arr, String v) {
         for (String a : arr) if (a.equals(v)) return true;
         return false;
+    }
+
+    private boolean isBalkesName(String value) {
+        if (value == null) return false;
+        String n = value.toLowerCase(new java.util.Locale("tr", "TR"));
+        n = n.replace("ı", "i").replace("ğ", "g").replace("ü", "u").replace("ş", "s").replace("ö", "o").replace("ç", "c");
+        return n.contains("balikesirspor") || (n.contains("balikes") && n.contains("spor")) || n.contains("balkes");
     }
 
     private String score(JSONObject m) {
@@ -1104,7 +1182,7 @@ public class MainActivity extends Activity {
         b.setAllCaps(false);
         b.setTextColor(Color.WHITE);
         b.setTypeface(Typeface.DEFAULT_BOLD);
-        b.setBackground(round(red, dp(14), red));
+        b.setBackground(gradient(redSoft, red));
         return b;
     }
 
