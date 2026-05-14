@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-05-14T05:37:17.004478Z",
+  "status": "ok",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.1-safe",
+  "startSeason": "2024-2025",
+  "processed": [
+    {
+      "season": "2024-2025",
+      "selectedIds": 0,
+      "allDiscoveredIds": 986,
+      "fallbackDetailCandidates": 986,
+      "fallbackDetailHits": 0,
+      "existingIds": 33,
+      "finalQueue": 33,
+      "matchesPublished": 33,
+      "detailFiles": 33,
+      "detailsCreated": 0,
+      "detailsReplaced": 0,
+      "detailsKeptBecauseExistingWasRicher": 33,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 29,
+        "cup": 1,
+        "playoff": 3
+      },
+      "generatedAt": "2026-05-14T05:37:17.001188Z"
+    }
+  ],
+  "before": {
+    "seasons": 12,
+    "matches": 177
+  },
+  "after": {
+    "seasons": 12,
+    "matches": 177
+  },
+  "safeToPush": true,
+  "notes": [
+    "v2.1-safe mevcut zengin maç detaylarını daha zayıf parse ile ezmez.",
+    "selectedIds boşsa TFF maç detaylarını tek tek açıp Balıkesirspor geçenleri fallback ile yakalar.",
+    "Raw HTML artifact olarak saklanır, repo commit edilmez.",
+    "Lig/ZTK/Play-off matchType alanıyla sınıflandırılır.",
+    "Puan tablosu parser'ı Balıkesirspor geçen tabloyu tercih eder."
+  ]
+}
