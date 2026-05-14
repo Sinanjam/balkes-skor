@@ -3,7 +3,12 @@
   "matchCode": "4851",
   "season": "2025-2026",
   "competition": "Nesine 3. Lig (Profesyonel Takım)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
   "stadium": "TİRE - GAZİ MUSTAFA KEMAL ATATÜRK STADI - İZMİR -",
+  "venue": "TİRE - GAZİ MUSTAFA KEMAL ATATÜRK STADI - İZMİR -",
+  "stage": "Lig",
+  "stageLabel": "Lig",
   "date": "2026-01-18",
   "time": "17:00",
   "dateDisplay": "2026-01-18 - 17:00",
@@ -11,6 +16,8 @@
   "awayTeam": "Balıkesirspor",
   "matchType": "league",
   "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
   "score": {
     "home": 1,
     "away": 1,
@@ -68,56 +75,67 @@
         {
           "name": "MERT DANIŞMAZ",
           "number": 85,
+          "shirt_no": "85",
           "tffPersonId": "913673"
         },
         {
           "name": "ONUR ŞİRİN",
           "number": 4,
+          "shirt_no": "4",
           "tffPersonId": "892503"
         },
         {
           "name": "MUSTAFA ÇALIŞKAN",
           "number": 7,
+          "shirt_no": "7",
           "tffPersonId": "1584646"
         },
         {
           "name": "SEDAT YAHŞİ",
           "number": 17,
+          "shirt_no": "17",
           "tffPersonId": "1297802"
         },
         {
           "name": "UMUT CAN ÇOBAN",
           "number": 19,
+          "shirt_no": "19",
           "tffPersonId": "1557145"
         },
         {
           "name": "MERT ALTINÖZ",
           "number": 23,
+          "shirt_no": "23",
           "tffPersonId": "1588605"
         },
         {
           "name": "EMİR ENES ARAZ",
           "number": 27,
+          "shirt_no": "27",
           "tffPersonId": "1857929"
         },
         {
           "name": "İBRAHİM MİRZA ARAL",
           "number": 10,
+          "shirt_no": "10",
           "tffPersonId": "2294081"
         },
         {
           "name": "BORA ULU",
           "number": 61,
+          "shirt_no": "61",
           "tffPersonId": "1598084"
         },
         {
           "name": "IŞIKCAN KOCA",
           "number": 30,
+          "shirt_no": "30",
           "tffPersonId": "2160477"
         },
         {
           "name": "SİRAC BERA ATMACA",
           "number": 82,
+          "shirt_no": "82",
           "tffPersonId": "1841123"
         }
       ],
@@ -125,40 +143,48 @@
         {
           "name": "BAYRAM KILIÇ",
           "number": 65,
+          "shirt_no": "65",
           "tffPersonId": "1700697"
         },
         {
           "name": "ERSİN ÇOŞĞUN",
           "number": 2,
+          "shirt_no": "2",
           "tffPersonId": "1835156"
         },
         {
           "name": "SARP TURAN",
           "number": 14,
+          "shirt_no": "14",
           "tffPersonId": "2107764"
         },
         {
           "name": "EFE UYMUR",
           "number": 21,
+          "shirt_no": "21",
           "tffPersonId": "2036940"
         },
         {
           "name": "SERKAN YEŞİLYURT",
           "number": 77,
+          "shirt_no": "77",
           "tffPersonId": "1764287"
         },
         {
           "name": "ÖZGÜR ÖZÇELİK",
           "number": 35,
+          "shirt_no": "35",
           "tffPersonId": "2135082"
         },
         {
           "name": "ENİSCAN ATİK",
           "number": 88,
+          "shirt_no": "88",
           "tffPersonId": "1681186"
         }
       ],
       "technicalStaff": [],
+      "coach": "",
       "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
     },
     "away": {
@@ -167,56 +193,67 @@
         {
           "name": "TALHA DEMİRKOL",
           "number": 28,
+          "shirt_no": "28",
           "tffPersonId": "1919922"
         },
         {
           "name": "AHMET GÜLAY",
           "number": 3,
+          "shirt_no": "3",
           "tffPersonId": "1613131"
         },
         {
           "name": "SERHAT VELİOĞLU",
           "number": 5,
+          "shirt_no": "5",
           "tffPersonId": "969678"
         },
         {
           "name": "HARUN TOPRAK",
           "number": 6,
+          "shirt_no": "6",
           "tffPersonId": "1771562"
         },
         {
           "name": "SEDAT YİĞİT KURNAZ",
           "number": 10,
+          "shirt_no": "10",
           "tffPersonId": "1712887"
         },
         {
           "name": "YEKTA SÖNMEZ",
           "number": 20,
+          "shirt_no": "20",
           "tffPersonId": "1515022"
         },
         {
           "name": "TAYFUN KIRCA",
           "number": 22,
+          "shirt_no": "22",
           "tffPersonId": "1501265"
         },
         {
           "name": "ERŞAN YAŞA",
           "number": 27,
+          "shirt_no": "27",
           "tffPersonId": "1589637"
         },
         {
           "name": "KUBAN ALTUNBUDAK",
           "number": 44,
+          "shirt_no": "44",
           "tffPersonId": "1706048"
         },
         {
           "name": "ALİ TOPÇU",
           "number": 70,
+          "shirt_no": "70",
           "tffPersonId": "2825011"
         },
         {
           "name": "YİĞİT BAYINDIR",
           "number": 78,
+          "shirt_no": "78",
           "tffPersonId": "1897526"
         }
       ],
@@ -224,51 +261,61 @@
         {
           "name": "MEHMET EMRE YAR",
           "number": 76,
+          "shirt_no": "76",
           "tffPersonId": "1894863"
         },
         {
           "name": "TALHA DOĞUŞ",
           "number": 8,
+          "shirt_no": "8",
           "tffPersonId": "2022790"
         },
         {
           "name": "MUHAMMED RESUL YILDIRIM",
           "number": 17,
+          "shirt_no": "17",
           "tffPersonId": "2879486"
         },
         {
           "name": "AHMET NECAT AYDIN",
           "number": 29,
+          "shirt_no": "29",
           "tffPersonId": "1770316"
         },
         {
           "name": "EFE ÖZEN",
           "number": 30,
+          "shirt_no": "30",
           "tffPersonId": "2022352"
         },
         {
           "name": "MİKDAT ÇİL",
           "number": 41,
+          "shirt_no": "41",
           "tffPersonId": "2015877"
         },
         {
           "name": "YİĞİT EPÖZDEMİR",
           "number": 33,
+          "shirt_no": "33",
           "tffPersonId": "1749227"
         },
         {
           "name": "HASAN HÜSEYİN ERİŞ",
           "number": 85,
+          "shirt_no": "85",
           "tffPersonId": "2209227"
         },
         {
           "name": "ADEM SOLAK",
           "number": 55,
+          "shirt_no": "55",
           "tffPersonId": "2235744"
         },
         {
           "name": "KADİRCAN ALBAHAN",
           "number": 99,
+          "shirt_no": "99",
           "tffPersonId": "2441590"
         }
       ],
@@ -277,6 +324,7 @@
           "name": "ZAFER UYSAL"
         }
       ],
+      "coach": "ZAFER UYSAL",
       "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
     }
   },
@@ -748,6 +796,18 @@
       "tffPersonId": "1589637"
     },
     {
+      "type": "substitution",
+      "team": "TİRE 2021 FUTBOL KULÜBÜ",
+      "order": 1,
+      "player_in": "SARP TURAN",
+      "player_out": "EMİR ENES ARAZ",
+      "playerIn": "SARP TURAN",
+      "playerOut": "EMİR ENES ARAZ",
+      "minute": 90,
+      "minuteRaw": "90+3.dk",
+      "minute_text": "90+3.dk"
+    },
+    {
       "type": "substitution_out",
       "team": "TİRE 2021 FUTBOL KULÜBÜ",
       "player": "EMİR ENES ARAZ",
@@ -762,6 +822,18 @@
       "order": 1,
       "minute": 90,
       "minuteRaw": "90+3.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "TİRE 2021 FUTBOL KULÜBÜ",
+      "order": 2,
+      "player_in": "SERKAN YEŞİLYURT",
+      "player_out": "IŞIKCAN KOCA",
+      "playerIn": "SERKAN YEŞİLYURT",
+      "playerOut": "IŞIKCAN KOCA",
+      "minute": 74,
+      "minuteRaw": "74.dk",
+      "minute_text": "74.dk"
     },
     {
       "type": "substitution_out",
@@ -780,6 +852,18 @@
       "minuteRaw": "74.dk"
     },
     {
+      "type": "substitution",
+      "team": "TİRE 2021 FUTBOL KULÜBÜ",
+      "order": 3,
+      "player_in": "EFE UYMUR",
+      "player_out": "İBRAHİM MİRZA ARAL",
+      "playerIn": "EFE UYMUR",
+      "playerOut": "İBRAHİM MİRZA ARAL",
+      "minute": 86,
+      "minuteRaw": "86.dk",
+      "minute_text": "86.dk"
+    },
+    {
       "type": "substitution_out",
       "team": "TİRE 2021 FUTBOL KULÜBÜ",
       "player": "İBRAHİM MİRZA ARAL",
@@ -794,6 +878,18 @@
       "order": 3,
       "minute": 86,
       "minuteRaw": "86.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "AHMET NECAT AYDIN",
+      "player_out": "TAYFUN KIRCA",
+      "playerIn": "AHMET NECAT AYDIN",
+      "playerOut": "TAYFUN KIRCA",
+      "minute": 74,
+      "minuteRaw": "74.dk",
+      "minute_text": "74.dk"
     },
     {
       "type": "substitution_out",
@@ -812,6 +908,18 @@
       "minuteRaw": "74.dk"
     },
     {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 2,
+      "player_in": "TALHA DOĞUŞ",
+      "player_out": "YİĞİT BAYINDIR",
+      "playerIn": "TALHA DOĞUŞ",
+      "playerOut": "YİĞİT BAYINDIR",
+      "minute": 35,
+      "minuteRaw": "35.dk",
+      "minute_text": "35.dk"
+    },
+    {
       "type": "substitution_out",
       "team": "Balıkesirspor",
       "player": "YİĞİT BAYINDIR",
@@ -826,6 +934,18 @@
       "order": 2,
       "minute": 35,
       "minuteRaw": "35.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 3,
+      "player_in": "MUHAMMED RESUL YILDIRIM",
+      "player_out": "ALİ TOPÇU",
+      "playerIn": "MUHAMMED RESUL YILDIRIM",
+      "playerOut": "ALİ TOPÇU",
+      "minute": 84,
+      "minuteRaw": "84.dk",
+      "minute_text": "84.dk"
     },
     {
       "type": "substitution_out",
@@ -954,8 +1074,10 @@
       "minute": 90,
       "minuteRaw": "90+3.dk",
       "playerOut": "EMİR ENES ARAZ",
+      "player_out": "EMİR ENES ARAZ",
       "playerOutTffPersonId": "1857929",
       "playerIn": "SARP TURAN",
+      "player_in": "SARP TURAN",
       "playerInTffPersonId": "2107764"
     },
     {
@@ -964,8 +1086,10 @@
       "minute": 74,
       "minuteRaw": "74.dk",
       "playerOut": "IŞIKCAN KOCA",
+      "player_out": "IŞIKCAN KOCA",
       "playerOutTffPersonId": "2160477",
       "playerIn": "SERKAN YEŞİLYURT",
+      "player_in": "SERKAN YEŞİLYURT",
       "playerInTffPersonId": "1764287"
     },
     {
@@ -974,8 +1098,10 @@
       "minute": 86,
       "minuteRaw": "86.dk",
       "playerOut": "İBRAHİM MİRZA ARAL",
+      "player_out": "İBRAHİM MİRZA ARAL",
       "playerOutTffPersonId": "2294081",
       "playerIn": "EFE UYMUR",
+      "player_in": "EFE UYMUR",
       "playerInTffPersonId": "2036940"
     },
     {
@@ -984,8 +1110,10 @@
       "minute": 74,
       "minuteRaw": "74.dk",
       "playerOut": "TAYFUN KIRCA",
+      "player_out": "TAYFUN KIRCA",
       "playerOutTffPersonId": "1501265",
       "playerIn": "AHMET NECAT AYDIN",
+      "player_in": "AHMET NECAT AYDIN",
       "playerInTffPersonId": "1770316"
     },
     {
@@ -994,8 +1122,10 @@
       "minute": 35,
       "minuteRaw": "35.dk",
       "playerOut": "YİĞİT BAYINDIR",
+      "player_out": "YİĞİT BAYINDIR",
       "playerOutTffPersonId": "1897526",
       "playerIn": "TALHA DOĞUŞ",
+      "player_in": "TALHA DOĞUŞ",
       "playerInTffPersonId": "2022790"
     },
     {
@@ -1004,8 +1134,10 @@
       "minute": 84,
       "minuteRaw": "84.dk",
       "playerOut": "ALİ TOPÇU",
+      "player_out": "ALİ TOPÇU",
       "playerOutTffPersonId": "2825011",
       "playerIn": "MUHAMMED RESUL YILDIRIM",
+      "player_in": "MUHAMMED RESUL YILDIRIM",
       "playerInTffPersonId": "2879486"
     }
   ],
@@ -1030,7 +1162,7 @@
   "source": {
     "name": "TFF",
     "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285740",
-    "retrievedAt": "2026-05-14T19:40:20.278582Z",
+    "retrievedAt": "2026-05-14T21:54:30.676356Z",
     "sourceType": "official_tff_match_detail"
   }
 }

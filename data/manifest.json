@@ -3,13 +3,14 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-14T21:08:08.454915Z",
+  "generatedAt": "2026-05-14T21:55:24.580240Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
       "matchCount": 32,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
       "summary": {
         "matches": 32,
         "wins": 18,
@@ -140,15 +141,12 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778792888,
+  "appDataVersion": 1778795724,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T21:08:08.454927Z",
+  "lastUpdated": "2026-05-14T21:55:24.580250Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processedSeasonsInLastRun": [
-    "2021-2022",
-    "2020-2021",
-    "2019-2020",
-    "2018-2019"
+    "2025-2026"
   ]
 }

@@ -1,217 +1,22 @@
 {
-  "generatedAt": "2026-05-14T21:08:08.464546Z",
+  "generatedAt": "2026-05-14T21:55:24.589854Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processed": [
     {
-      "season": "2021-2022",
-      "selectedIds": 103,
-      "allDiscoveredIds": 347,
-      "detailCandidates": 103,
-      "candidateMode": "selected_or_known",
-      "matchesPublished": 36,
-      "detailFiles": 36,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {
-        "balkes_not_found": 67
-      },
-      "rejectedSamples": {
-        "balkes_not_found": [
-          "223299",
-          "223300",
-          "223305",
-          "223320",
-          "223335",
-          "223338",
-          "223341",
-          "223344",
-          "223354",
-          "223355",
-          "223359",
-          "223360",
-          "223368",
-          "223371",
-          "223377",
-          "223385",
-          "223386",
-          "223395",
-          "223396",
-          "223403"
-        ]
-      },
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {
-        "league": 36
-      },
-      "seasonGuard": {
-        "start": "2021-07-01",
-        "end": "2022-06-30"
-      },
-      "generatedAt": "2026-05-14T20:56:05.852924Z"
-    },
-    {
-      "season": "2020-2021",
-      "selectedIds": 99,
-      "allDiscoveredIds": 311,
-      "detailCandidates": 99,
-      "candidateMode": "selected_or_known",
-      "matchesPublished": 34,
-      "detailFiles": 34,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {
-        "balkes_not_found": 65
-      },
-      "rejectedSamples": {
-        "balkes_not_found": [
-          "219400",
-          "219403",
-          "219407",
-          "219413",
-          "219418",
-          "219420",
-          "219434",
-          "219435",
-          "219440",
-          "219445",
-          "219448",
-          "219453",
-          "219461",
-          "219466",
-          "219473",
-          "219477",
-          "219482",
-          "219488",
-          "219495",
-          "219497"
-        ]
-      },
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {
-        "league": 34
-      },
-      "seasonGuard": {
-        "start": "2020-07-01",
-        "end": "2021-06-30"
-      },
-      "generatedAt": "2026-05-14T21:00:48.376562Z"
-    },
-    {
-      "season": "2019-2020",
-      "selectedIds": 94,
-      "allDiscoveredIds": 311,
-      "detailCandidates": 94,
-      "candidateMode": "selected_or_known",
-      "matchesPublished": 30,
-      "detailFiles": 30,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {
-        "balkes_not_found": 60,
-        "date_out_of_season:2020-07-02": 1,
-        "date_out_of_season:2020-07-06": 1,
-        "date_out_of_season:2020-07-11": 1,
-        "date_out_of_season:2020-07-19": 1
-      },
-      "rejectedSamples": {
-        "balkes_not_found": [
-          "207460",
-          "207466",
-          "207467",
-          "207470",
-          "207473",
-          "207479",
-          "207484",
-          "207486",
-          "207494",
-          "207500",
-          "207501",
-          "207507",
-          "207512",
-          "207514",
-          "207519",
-          "207528",
-          "207530",
-          "207534",
-          "207539",
-          "207547"
-        ],
-        "date_out_of_season:2020-07-02": [
-          "207737"
-        ],
-        "date_out_of_season:2020-07-06": [
-          "207745"
-        ],
-        "date_out_of_season:2020-07-11": [
-          "207754"
-        ],
-        "date_out_of_season:2020-07-19": [
-          "207763"
-        ]
-      },
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {
-        "league": 30
-      },
-      "seasonGuard": {
-        "start": "2019-07-01",
-        "end": "2020-06-30"
-      },
-      "generatedAt": "2026-05-14T21:05:38.037957Z"
-    },
-    {
-      "season": "2018-2019",
+      "season": "2025-2026",
       "selectedIds": 86,
-      "allDiscoveredIds": 2057,
+      "allDiscoveredIds": 986,
       "detailCandidates": 86,
       "candidateMode": "selected_or_known",
-      "matchesPublished": 0,
-      "detailFiles": 0,
+      "matchesPublished": 32,
+      "detailFiles": 32,
       "duplicatesDropped": 0,
       "rejectedReasons": {
-        "date_out_of_season:2025-09-07": 1,
-        "balkes_not_found": 54,
-        "date_out_of_season:2025-09-13": 1,
-        "date_out_of_season:2025-09-21": 1,
-        "date_out_of_season:2025-09-28": 1,
-        "date_out_of_season:2025-10-05": 1,
-        "date_out_of_season:2025-10-12": 1,
-        "date_out_of_season:2025-10-19": 1,
-        "date_out_of_season:2025-10-26": 1,
-        "date_out_of_season:2025-11-01": 1,
-        "date_out_of_season:2025-11-09": 1,
-        "date_out_of_season:2025-11-30": 1,
-        "date_out_of_season:2025-12-07": 1,
-        "date_out_of_season:2025-12-13": 1,
-        "date_out_of_season:2025-12-17": 1,
-        "date_out_of_season:2025-12-21": 1,
-        "date_out_of_season:2026-01-11": 1,
-        "date_out_of_season:2026-01-18": 1,
-        "date_out_of_season:2026-01-25": 1,
-        "date_out_of_season:2026-02-01": 1,
-        "date_out_of_season:2026-02-08": 1,
-        "date_out_of_season:2026-02-14": 1,
-        "date_out_of_season:2026-02-22": 1,
-        "date_out_of_season:2026-02-28": 1,
-        "date_out_of_season:2026-03-08": 1,
-        "date_out_of_season:2026-03-15": 1,
-        "date_out_of_season:2026-03-25": 1,
-        "date_out_of_season:2026-03-29": 1,
-        "date_out_of_season:2026-04-05": 1,
-        "date_out_of_season:2026-04-12": 1,
-        "date_out_of_season:2026-04-18": 1,
-        "date_out_of_season:2026-04-24": 1,
-        "date_out_of_season:2026-04-28": 1
+        "balkes_not_found": 54
       },
       "rejectedSamples": {
-        "date_out_of_season:2025-09-07": [
-          "285615"
-        ],
         "balkes_not_found": [
           "285616",
           "285619",
@@ -233,110 +38,20 @@
           "285690",
           "285692",
           "285695"
-        ],
-        "date_out_of_season:2025-09-13": [
-          "285620"
-        ],
-        "date_out_of_season:2025-09-21": [
-          "285632"
-        ],
-        "date_out_of_season:2025-09-28": [
-          "285636"
-        ],
-        "date_out_of_season:2025-10-05": [
-          "285649"
-        ],
-        "date_out_of_season:2025-10-12": [
-          "285653"
-        ],
-        "date_out_of_season:2025-10-19": [
-          "285664"
-        ],
-        "date_out_of_season:2025-10-26": [
-          "285671"
-        ],
-        "date_out_of_season:2025-11-01": [
-          "285679"
-        ],
-        "date_out_of_season:2025-11-09": [
-          "285682"
-        ],
-        "date_out_of_season:2025-11-30": [
-          "285694"
-        ],
-        "date_out_of_season:2025-12-07": [
-          "285700"
-        ],
-        "date_out_of_season:2025-12-13": [
-          "285709"
-        ],
-        "date_out_of_season:2025-12-17": [
-          "285718"
-        ],
-        "date_out_of_season:2025-12-21": [
-          "285724"
-        ],
-        "date_out_of_season:2026-01-11": [
-          "285735"
-        ],
-        "date_out_of_season:2026-01-18": [
-          "285740"
-        ],
-        "date_out_of_season:2026-01-25": [
-          "285752"
-        ],
-        "date_out_of_season:2026-02-01": [
-          "285756"
-        ],
-        "date_out_of_season:2026-02-08": [
-          "285769"
-        ],
-        "date_out_of_season:2026-02-14": [
-          "285773"
-        ],
-        "date_out_of_season:2026-02-22": [
-          "285784"
-        ],
-        "date_out_of_season:2026-02-28": [
-          "285791"
-        ],
-        "date_out_of_season:2026-03-08": [
-          "285799"
-        ],
-        "date_out_of_season:2026-03-15": [
-          "285802"
-        ],
-        "date_out_of_season:2026-03-25": [
-          "285814"
-        ],
-        "date_out_of_season:2026-03-29": [
-          "285820"
-        ],
-        "date_out_of_season:2026-04-05": [
-          "285829"
-        ],
-        "date_out_of_season:2026-04-12": [
-          "285838"
-        ],
-        "date_out_of_season:2026-04-18": [
-          "285844"
-        ],
-        "date_out_of_season:2026-04-24": [
-          "316898"
-        ],
-        "date_out_of_season:2026-04-28": [
-          "316899"
         ]
       },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "2018-07-01",
-        "end": "2019-06-30"
+      "matchTypeCounts": {
+        "league": 30,
+        "playoff": 2
       },
-      "generatedAt": "2026-05-14T21:08:08.450890Z"
+      "seasonGuard": {
+        "start": "2025-07-01",
+        "end": "2026-06-30"
+      },
+      "generatedAt": "2026-05-14T21:55:24.574852Z"
     }
   ],
   "after": {
