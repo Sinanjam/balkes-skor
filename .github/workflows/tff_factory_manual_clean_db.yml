@@ -1,4 +1,4 @@
-name: TFF Factory Manual Clean DB
+name: TFF Factory Manual Clean DB No Standings Fixed
 
 on:
   workflow_dispatch:
@@ -26,6 +26,11 @@ on:
         required: true
         type: boolean
         default: false
+      skip_standings:
+        description: "Puan tablosu bu factory içinde kapalıdır."
+        required: true
+        type: boolean
+        default: true
 
 permissions:
   contents: write
@@ -74,7 +79,7 @@ jobs:
         run: |
           python scripts/clean_database.py --data-root data
 
-      - name: Run TFF Factory v2.2 manual clean-db
+      - name: Run TFF Factory v2.2 no-standings-fixed
         env:
           PYTHONUNBUFFERED: "1"
         run: |

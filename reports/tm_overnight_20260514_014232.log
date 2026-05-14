@@ -1,0 +1,4 @@
+  File "/home/sinanjam/Downloads/balkes-skor/scripts/tm_overnight_enrich.py", line 362
+    f"/clubs/{urllib.parse.quote(str(club_id), safe=)}/profile",
+                                               ^^^^^
+SyntaxError: expected argument value expression

@@ -1,0 +1,4 @@
+  File "/home/sinanjam/Downloads/balkes-skor/scripts/tm_night_runner.py", line 285
+    profile = fetch_json(f"/clubs/{urllib.parse.quote(str(club_id), safe=)}/profile", RAW / "balikesirspor_club_profile.json")
+                                                                    ^^^^^
+SyntaxError: expected argument value expression

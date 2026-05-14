@@ -1,0 +1,87 @@
+nohup: ignoring input
+[01:48:49] API kontrol ediliyor: http://127.0.0.1:8000
+[01:48:49] API hazır.
+[01:48:49] Kulüp aranıyor: Balıkesirspor
+[01:48:59] Kulüp aranıyor: Balikesirspor
+[01:49:09] Kulüp aranıyor: Balıkesirspor Kulübü
+[01:49:20] Kulüp aranıyor: Balikesirspor Kulubu
+[01:49:31] Kulüp seçildi: Balikesirspor / ID=20698
+[01:49:31] Sezon yil sayisi: 36
+[01:49:41] Kulüp profili kaydedildi.
+[01:49:41] Kadro çekiliyor: 1990
+[01:49:52] 1990 oyuncu adayı: 13
+[01:49:52] Kadro çekiliyor: 1991
+[01:50:03] 1991 oyuncu adayı: 17
+[01:50:03] Kadro çekiliyor: 1992
+[01:50:14] 1992 oyuncu adayı: 25
+[01:50:14] Kadro çekiliyor: 1993
+[01:50:25] 1993 oyuncu adayı: 28
+[01:50:25] Kadro çekiliyor: 1994
+[01:50:35] 1994 oyuncu adayı: 24
+[01:50:35] Kadro çekiliyor: 1995
+[01:50:46] 1995 oyuncu adayı: 29
+[01:50:46] Kadro çekiliyor: 1996
+[01:50:57] 1996 oyuncu adayı: 29
+[01:50:57] Kadro çekiliyor: 1997
+[01:51:08] 1997 oyuncu adayı: 18
+[01:51:08] Kadro çekiliyor: 1998
+[01:51:19] 1998 oyuncu adayı: 13
+[01:51:19] Kadro çekiliyor: 1999
+[01:51:30] 1999 oyuncu adayı: 16
+[01:51:30] Kadro çekiliyor: 2000
+[01:51:41] 2000 oyuncu adayı: 16
+[01:51:41] Kadro çekiliyor: 2001
+[01:51:51] 2001 oyuncu adayı: 5
+[01:51:51] Kadro çekiliyor: 2002
+[01:52:02] 2002 oyuncu adayı: 2
+[01:52:02] Kadro çekiliyor: 2003
+[01:52:13] 2003 oyuncu adayı: 0
+[01:52:13] Kadro çekiliyor: 2004
+[01:52:23] 2004 oyuncu adayı: 4
+[01:52:23] Kadro çekiliyor: 2005
+[01:52:34] 2005 oyuncu adayı: 9
+[01:52:34] Kadro çekiliyor: 2006
+[01:52:44] 2006 oyuncu adayı: 10
+[01:52:44] Kadro çekiliyor: 2007
+[01:52:55] 2007 oyuncu adayı: 10
+[01:52:55] Kadro çekiliyor: 2008
+[01:53:05] 2008 oyuncu adayı: 12
+[01:53:05] Kadro çekiliyor: 2009
+[01:53:16] 2009 oyuncu adayı: 28
+[01:53:16] Kadro çekiliyor: 2010
+[01:53:28] 2010 oyuncu adayı: 32
+[01:53:28] Kadro çekiliyor: 2011
+[01:53:39] 2011 oyuncu adayı: 32
+[01:53:39] Kadro çekiliyor: 2012
+[01:53:50] 2012 oyuncu adayı: 31
+[01:53:50] Kadro çekiliyor: 2013
+[01:54:01] 2013 oyuncu adayı: 39
+[01:54:01] Kadro çekiliyor: 2014
+[01:54:12] 2014 oyuncu adayı: 35
+[01:54:12] Kadro çekiliyor: 2015
+[01:54:24] 2015 oyuncu adayı: 36
+[01:54:24] Kadro çekiliyor: 2016
+[01:54:35] 2016 oyuncu adayı: 35
+[01:54:35] Kadro çekiliyor: 2017
+[01:54:47] 2017 oyuncu adayı: 29
+[01:54:47] Kadro çekiliyor: 2018
+[01:54:58] 2018 oyuncu adayı: 29
+[01:54:58] Kadro çekiliyor: 2019
+[01:55:09] 2019 oyuncu adayı: 42
+[01:55:09] Kadro çekiliyor: 2020
+[01:55:21] 2020 oyuncu adayı: 56
+[01:55:21] Kadro çekiliyor: 2021
+[01:55:33] 2021 oyuncu adayı: 45
+[01:55:33] Kadro çekiliyor: 2022
+[01:55:44] 2022 oyuncu adayı: 39
+[01:55:44] Kadro çekiliyor: 2023
+[01:55:55] 2023 oyuncu adayı: 53
+[01:55:55] Kadro çekiliyor: 2024
+[01:56:06] 2024 oyuncu adayı: 32
+[01:56:06] Kadro çekiliyor: 2025
+[01:56:18] 2025 oyuncu adayı: 33
+[01:56:18] Transfermarkt benzersiz oyuncu: 472
+[01:56:18] data/players_index.json liste olarak okunamadı veya boş. Sadece transfermarkt_roster_index.json üretildi.
+/home/sinanjam/Downloads/balkes-skor/scripts/tm_night_runner.py:331: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "generatedAt": datetime.utcnow().isoformat() + "Z",
+[01:56:18] BİTTİ.

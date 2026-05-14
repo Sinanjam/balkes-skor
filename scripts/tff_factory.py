@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Balkes TFF Factory v2.2 manual clean-db
+Balkes TFF Factory v2.2 no-standings fixed
 
 Amaç:
 - Otomatik cron yok; workflow manuel çalışır.
@@ -12,7 +12,7 @@ Amaç:
 - Encoding bozukluklarına toleranslı Balıkesirspor tespiti yapar.
 - Sezon/tarih guard ile yanlış sezon karışmasını engeller.
 - Duplicate yazmaz, şüpheli kayıtları raporlar.
-- Detay parser: skor/tarih/takım/hakem/kadro/olay için en iyi çaba + sections_raw.
+- Detay parser: skor/tarih/takım için daha toleranslı; puan tablosu kapalı; sections_raw korunur.
 """
 
 from __future__ import annotations
@@ -38,7 +38,7 @@ except Exception:
     BeautifulSoup = None
 
 TFF = "https://www.tff.org/Default.aspx"
-FACTORY_VERSION = "v2.2-manual-clean-db"
+FACTORY_VERSION = "v2.2-no-standings-fixed"
 
 
 def now() -> str:
@@ -203,7 +203,7 @@ def parse_score(s: str) -> tuple[int, int, str] | None:
 
 def parse_date_any(s: str) -> str:
     s = fix_mojibake(s)
-    # dd.mm.yyyy
+    # dd.mm.yyyy / dd/mm/yyyy
     m = re.search(r"\b(\d{1,2})[./](\d{1,2})[./](\d{4})\b", s)
     if m:
         d, mo, y = int(m.group(1)), int(m.group(2)), int(m.group(3))
@@ -211,6 +211,7 @@ def parse_date_any(s: str) -> str:
             return date(y, mo, d).isoformat()
         except Exception:
             return ""
+
     # yyyy-mm-dd
     m = re.search(r"\b(\d{4})-(\d{1,2})-(\d{1,2})\b", s)
     if m:
@@ -218,6 +219,25 @@ def parse_date_any(s: str) -> str:
             return date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
         except Exception:
             return ""
+
+    # 24 Şubat 1991 / 24 Subat 1991 gibi TFF eski formatları
+    months = {
+        "ocak": 1, "subat": 2, "şubat": 2, "mart": 3, "nisan": 4,
+        "mayis": 5, "mayıs": 5, "haziran": 6, "temmuz": 7,
+        "agustos": 8, "ağustos": 8, "eylul": 9, "eylül": 9,
+        "ekim": 10, "kasim": 11, "kasım": 11, "aralik": 12, "aralık": 12,
+    }
+    m = re.search(r"\b(\d{1,2})\s+([A-Za-zÇĞİÖŞÜçğıöşü]+)\s+(\d{4})\b", s, re.I)
+    if m:
+        d = int(m.group(1))
+        mon = norm(m.group(2)).replace(" ", "")
+        y = int(m.group(3))
+        mo = months.get(mon)
+        if mo:
+            try:
+                return date(y, mo, d).isoformat()
+            except Exception:
+                return ""
     return ""
 
 
@@ -285,6 +305,116 @@ def teams_near_score(txt: str) -> tuple[str, str]:
             if i + 1 < len(candidates):
                 return line, candidates[i + 1]
     return "", ""
+
+
+
+BAD_TEAM_LINE_TOKENS = [
+    "tff", "tam saha", "anasayfa", "haber", "istatistik", "detaylar",
+    "hakem", "gözlemci", "gozlemci", "tarih", "saat", "stat", "stadyum",
+    "profesyonel", "amatör", "fikstür", "puan", "sıra", "takım", "oyuncu",
+    "yedek", "ilk 11", "teknik", "sarı kart", "kırmızı kart", "gol",
+    "devre", "maç kodu", "mac kodu"
+]
+
+
+def clean_team_name(s: Any) -> str:
+    s = html.unescape(fix_mojibake(s))
+    s = re.sub(r"\s+", " ", s).strip(" -–:|/\t\r\n")
+    s = re.sub(r"^\d+\.?\s*", "", s).strip()
+    s = re.sub(r"\b(?:Detaylar|Maç Detayı|Mac Detayi|Müsabaka|Musabaka)\b.*$", "", s, flags=re.I).strip(" -–:|")
+    if is_balkes(s):
+        return "Balıkesirspor"
+    return s
+
+
+def is_bad_team_line(line: Any) -> bool:
+    n = norm(line)
+    if not n or len(n) < 3:
+        return True
+    if parse_score(str(line or "")):
+        return True
+    if any(tok in n for tok in BAD_TEAM_LINE_TOKENS):
+        return True
+    if re.fullmatch(r"[\d\s:\.\-/]+", str(line or "")):
+        return True
+    return False
+
+
+def candidate_team_line(line: Any) -> bool:
+    line = clean_team_name(line)
+    if is_bad_team_line(line):
+        return False
+    letters = len(re.findall(r"[A-Za-zÇĞİÖŞÜçğıöşü]", line))
+    return 3 <= letters <= 90
+
+
+def split_teams_score_from_line(line: str) -> tuple[str, str, int, int] | None:
+    # Tek satır formatı: BALIKESİRSPOR 2-1 RAKİP veya RAKİP 0 - 2 BALIKESİRSPOR
+    # DİKKAT: tüm satırı clean_team_name ile normalize etme; içinde Balkes geçince bütün satırı "Balıkesirspor" yapar.
+    line = html.unescape(fix_mojibake(line))
+    line = re.sub(r"\b\d{1,2}[./]\d{1,2}[./]\d{4}\b", " ", line)
+    line = re.sub(r"\b\d{4}-\d{1,2}-\d{1,2}\b", " ", line)
+    line = re.sub(r"\b([01]?\d|2[0-3])[:.]\d{2}\b", " ", line)
+    line = re.sub(r"\b(?:Hakem|Gözlemci|Gozlemci|Stat|Stadyum|Detaylar)\b.*$", "", line, flags=re.I)
+    line = re.sub(r"\s+", " ", line).strip(" -–:|")
+
+    m = re.search(r"(?P<home>[A-Za-zÇĞİÖŞÜçğıöşü0-9 .'\-&/()]{3,90}?)\s+(?P<h>\d{1,2})\s*[-–]\s*(?P<a>\d{1,2})(?:\s*\([^)]*\))?\s+(?P<away>[A-Za-zÇĞİÖŞÜçğıöşü0-9 .'\-&/()]{3,90})", line)
+    if not m:
+        return None
+    home = clean_team_name(m.group("home"))
+    away = clean_team_name(m.group("away"))
+    if not home or not away or is_bad_team_line(home) or is_bad_team_line(away):
+        return None
+    return home, away, int(m.group("h")), int(m.group("a"))
+
+
+def find_teams_and_score(txt: str, raw: str = "") -> tuple[str, str, int | None, int | None, str]:
+    # 1) TFF başlık/meta gibi tek satır formatlarını önce dene.
+    haystack = "\n".join([txt, re.sub(r"<[^>]+>", "\n", raw or "")])
+    lines = [re.sub(r"\s+", " ", html.unescape(fix_mojibake(x))).strip() for x in haystack.splitlines()]
+    lines = [x for x in lines if x]
+
+    for line in lines:
+        cand = split_teams_score_from_line(line)
+        if cand:
+            home, away, h, a = cand
+            if is_balkes(home) or is_balkes(away):
+                return home, away, h, a, f"{h}-{a}"
+
+    # 2) Skor ayrı satırdaysa yakındaki takım satırlarıyla eşleştir.
+    for i, line in enumerate(lines):
+        sc = parse_score(line)
+        if not sc:
+            continue
+        h, a, display = sc
+        before = [clean_team_name(x) for x in lines[max(0, i - 12):i] if candidate_team_line(x)]
+        after = [clean_team_name(x) for x in lines[i + 1:i + 13] if candidate_team_line(x)]
+        pairs = []
+        if before and after:
+            pairs.append((before[-1], after[0]))
+        for b in before[-4:]:
+            for af in after[:4]:
+                pairs.append((b, af))
+        for home, away in pairs:
+            if home and away and (is_balkes(home) or is_balkes(away)):
+                return home, away, h, a, display
+
+    # 3) Takım var ama skor parse edilemediyse yine takım bilgisini döndür.
+    candidates = [clean_team_name(x) for x in lines[:160] if candidate_team_line(x)]
+    for i, line in enumerate(candidates):
+        if is_balkes(line):
+            prev_line = candidates[i - 1] if i > 0 else ""
+            next_line = candidates[i + 1] if i + 1 < len(candidates) else ""
+            if next_line and not is_balkes(next_line):
+                return line, next_line, None, None, ""
+            if prev_line and not is_balkes(prev_line):
+                return prev_line, line, None, None, ""
+
+    return "", "", None, None, ""
+
+
+def raw_contains_balkes(raw: str, txt: str = "") -> bool:
+    return is_balkes(raw) or is_balkes(txt)
 
 
 def parse_match_code(txt: str) -> str:
@@ -374,22 +504,34 @@ def parse_lineups_best_effort(txt: str, home: str, away: str) -> dict[str, Any]:
 
 def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[str, Any]) -> dict[str, Any]:
     txt = text_from_html(raw)
-    home, away = teams_near_score(txt)
-    sc = parse_score(txt)
+
+    home, away, h, a, display = find_teams_and_score(txt, raw)
+    if not home or not away:
+        # Eski yöntem yine fallback olarak dursun.
+        home, away = teams_near_score(txt)
+        sc = parse_score(txt)
+        if sc:
+            h, a, display = sc
+
     match_date = parse_date_any(txt)
     match_time = parse_time_any(txt)
     mt, ml = classify_type(txt)
 
-    if sc:
-        h, a, display = sc
+    if display:
+        try:
+            h = int(h)
+            a = int(a)
+        except Exception:
+            h = a = None
+            display = ""
     else:
         h = a = None
-        display = ""
 
     is_home = is_balkes(home)
-    opponent = away if is_home else home
-    gf = h if is_home else a
-    ga = a if is_home else h
+    is_away = is_balkes(away)
+    opponent = away if is_home else home if is_away else (away or home)
+    gf = h if is_home else a if is_away else None
+    ga = a if is_home else h if is_away else None
     result = ""
     try:
         result = "W" if gf > ga else "D" if gf == ga else "L"
@@ -400,6 +542,8 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
     officials = parse_officials(txt)
     events = parse_events_best_effort(txt, home, away)
     lineups = parse_lineups_best_effort(txt, home, away)
+
+    quality = "A" if home and away and display and match_date and (is_home or is_away) else "B" if raw_contains_balkes(raw, txt) and (home or away or display) else "D"
 
     return {
         "id": str(mid),
@@ -419,6 +563,7 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
         "score": {"home": h, "away": a, "display": display, "played": bool(display)},
         "balkes": {
             "isHome": is_home,
+            "isAway": is_away,
             "opponent": opponent,
             "goalsFor": gf,
             "goalsAgainst": ga,
@@ -429,7 +574,7 @@ def parse_detail(mid: str, raw: str, season: str, source_url: str, seed: dict[st
         "lineups": lineups,
         "events": events,
         "sections_raw": sections,
-        "quality": "B" if home and away and display and match_date else "D",
+        "quality": quality,
         "source": {"name": "TFF", "url": source_url, "retrievedAt": now(), "sourceType": "official_tff_match_detail"},
     }
 
@@ -438,14 +583,26 @@ def detail_is_valid_for_season(detail: dict[str, Any], season: str, seed: dict[s
     txt = json.dumps(detail, ensure_ascii=False)
     if not is_balkes(txt):
         return False, "balkes_not_found"
+
+    # Tarih en önemli sezon guard'ıdır. Tarih varsa sezon dışına izin verme.
+    if detail.get("date") and not date_in_season(detail["date"], season, seed):
+        return False, f"date_out_of_season:{detail.get('date')}"
+
+    # Tarih yoksa tamamen kabul etmiyoruz; ama reason artık açık raporlanacak.
     if not detail.get("date"):
         return False, "date_missing"
-    if not date_in_season(detail["date"], season, seed):
-        return False, f"date_out_of_season:{detail.get('date')}"
+
     if not detail.get("score", {}).get("display"):
         return False, "score_missing"
-    if not detail.get("homeTeam") or not detail.get("awayTeam"):
+
+    home = detail.get("homeTeam") or ""
+    away = detail.get("awayTeam") or ""
+    if not home or not away:
         return False, "teams_missing"
+
+    if not (is_balkes(home) or is_balkes(away) or is_balkes(detail.get("balkes", {}).get("opponent"))):
+        return False, "teams_do_not_include_balkes"
+
     return True, "ok"
 
 
@@ -482,50 +639,9 @@ def row_team_and_numbers(cells: list[str]) -> tuple[str, list[int]]:
 
 
 def parse_standings(raw: str) -> list[dict[str, Any]]:
-    if not BeautifulSoup:
-        return []
-    soup = BeautifulSoup(raw, "html.parser")
-    tables = []
-    for table in soup.find_all("table"):
-        rows = []
-        for tr in table.find_all("tr"):
-            cells = [html.unescape(fix_mojibake(c.get_text(" ", strip=True))).strip() for c in tr.find_all(["td", "th"])]
-            cells = [c for c in cells if c]
-            if len(cells) < 3:
-                continue
-            team, nums = row_team_and_numbers(cells)
-            if not team or len(nums) < 3:
-                continue
-            gf = nums[5] if len(nums) > 5 else 0
-            ga = nums[6] if len(nums) > 6 else 0
-            rows.append({
-                "rank": nums[0] if nums else len(rows) + 1,
-                "team": team,
-                "played": nums[1] if len(nums) > 1 else 0,
-                "won": nums[2] if len(nums) > 2 else 0,
-                "drawn": nums[3] if len(nums) > 3 else 0,
-                "lost": nums[4] if len(nums) > 4 else 0,
-                "goalsFor": gf,
-                "goalsAgainst": ga,
-                "goalDifference": gf - ga,
-                "points": nums[-1],
-                "isBalkes": is_balkes(team),
-            })
-        # Takım tekrarlarını temizle.
-        clean = []
-        seen = set()
-        for r in rows:
-            k = norm(r["team"])
-            if k in seen:
-                continue
-            seen.add(k)
-            clean.append(r)
-        if len(clean) >= 4:
-            tables.append(clean)
-    with_balkes = [t for t in tables if any(r.get("isBalkes") for r in t)]
-    if with_balkes:
-        return max(with_balkes, key=len)
-    return max(tables, key=len) if tables else []
+    # v2.2 no-standings-fixed: haftalık puan tablosu çekimi bu factory içinde kapalı.
+    # Puan tablosu ayrı Nix standings projesiyle üretilecek.
+    return []
 
 
 def discover(item: dict[str, Any], raw_root: Path, sleep_s: float) -> tuple[list[str], list[str], list[dict[str, Any]]]:
@@ -616,13 +732,22 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
     log(f"=== {season} başladı ===")
     selected, all_ids, standings_candidates = discover(item, raw_root, args.sleep)
 
-    queue = set(selected) | {str(x) for x in item.get("knownMatchIds", [])}
-    # Clean DB'de asıl güvenilir yol: tüm keşfedilenleri detay sayfasında doğrulamak.
-    candidates = sorted((set(all_ids) | queue), key=lambda x: int(x))
+    known_ids = {str(x) for x in item.get("knownMatchIds", [])}
+    queue = set(selected) | known_ids
+
+    # v2.2 fixed: selectedIds varsa önce yalnızca selected/known doğrulanır.
+    # selectedIds=0 ise eski güvenli fallback olarak allDiscoveredIds detay taramasına geçilir.
+    if queue:
+        candidate_mode = "selected_or_known"
+        candidates = sorted(queue, key=lambda x: int(x))
+    else:
+        candidate_mode = "all_discovered_fallback"
+        candidates = sorted(set(all_ids), key=lambda x: int(x))
+
     if args.max_discovery_probe > 0:
         candidates = candidates[:args.max_discovery_probe]
 
-    log(f"{season}: selectedIds={len(selected)}, allDiscoveredIds={len(all_ids)}, detailCandidates={len(candidates)}")
+    log(f"{season}: selectedIds={len(selected)}, allDiscoveredIds={len(all_ids)}, detailCandidates={len(candidates)}, candidateMode={candidate_mode}")
 
     season_dir = data_root / "seasons" / season
     matches_dir = season_dir / "matches"
@@ -631,12 +756,16 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
     by_id: dict[str, dict[str, Any]] = {}
     duplicate_candidates = []
     rejected = {}
+    rejected_samples: dict[str, list[str]] = {}
     for i, mid in enumerate(candidates, start=1):
         detail, reason = fetch_detail_if_valid(mid, season, raw_root, args.sleep, args.force, seed)
         if detail:
             by_id[str(mid)] = detail
         else:
             rejected[reason] = rejected.get(reason, 0) + 1
+            rejected_samples.setdefault(reason, [])
+            if len(rejected_samples[reason]) < 12:
+                rejected_samples[reason].append(str(mid))
         if i % 50 == 0:
             log(f"{season}: detail doğrulama {i}/{len(candidates)}, hits={len(by_id)}")
 
@@ -727,10 +856,12 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
         "selectedIds": len(selected),
         "allDiscoveredIds": len(all_ids),
         "detailCandidates": len(candidates),
+        "candidateMode": candidate_mode,
         "matchesPublished": len(index_arr),
         "detailFiles": len(list(matches_dir.glob("*.json"))),
         "duplicatesDropped": len(duplicate_candidates),
         "rejectedReasons": rejected,
+        "rejectedSamples": rejected_samples,
         "standingsSnapshots": len(selected_tables),
         "balkesTableFound": bool(selected_tables),
         "matchTypeCounts": type_counts,
