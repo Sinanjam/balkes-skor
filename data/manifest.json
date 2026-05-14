@@ -3,13 +3,45 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-14T19:41:33.868304Z",
+  "generatedAt": "2026-05-14T20:15:43.605198Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
-      "matchCount": 32
+      "matchCount": 32,
+      "summary": {
+        "matches": 32,
+        "wins": 18,
+        "draws": 7,
+        "losses": 7,
+        "goalsFor": 61,
+        "goalsAgainst": 28,
+        "goalDifference": 33,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 2
+        }
+      }
+    },
+    {
+      "id": "2024-2025",
+      "name": "2024-2025",
+      "matchCount": 33,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 33,
+        "wins": 18,
+        "draws": 6,
+        "losses": 9,
+        "goalsFor": 56,
+        "goalsAgainst": 30,
+        "goalDifference": 26,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 3
+        }
+      }
     }
   ],
   "global": {
@@ -18,12 +50,12 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778787693,
+  "appDataVersion": 1778789743,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T19:41:33.868318Z",
+  "lastUpdated": "2026-05-14T20:15:43.605209Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v2.2-perfect-details-no-standings",
+  "factoryVersion": "v2.3-targeted-perfect-details-appfix",
   "processedSeasonsInLastRun": [
-    "2025-2026"
+    "2024-2025"
   ]
 }

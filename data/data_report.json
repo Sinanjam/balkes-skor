@@ -1,17 +1,49 @@
 {
-  "generatedAt": "2026-05-14T19:41:33.870540Z",
+  "generatedAt": "2026-05-14T20:15:43.608704Z",
   "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.2-perfect-details-no-standings",
-  "totalAppMatches": 32,
+  "factoryVersion": "v2.3-targeted-perfect-details-appfix",
+  "totalAppMatches": 65,
   "seasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
-      "matchCount": 32
+      "matchCount": 32,
+      "summary": {
+        "matches": 32,
+        "wins": 18,
+        "draws": 7,
+        "losses": 7,
+        "goalsFor": 61,
+        "goalsAgainst": 28,
+        "goalDifference": 33,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 2
+        }
+      }
+    },
+    {
+      "id": "2024-2025",
+      "name": "2024-2025",
+      "matchCount": 33,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 33,
+        "wins": 18,
+        "draws": 6,
+        "losses": 9,
+        "goalsFor": 56,
+        "goalsAgainst": 30,
+        "goalDifference": 26,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 3
+        }
+      }
     }
   ],
   "playersIndexed": 0,
-  "opponentsIndexed": 16,
+  "opponentsIndexed": 33,
   "notes": [
     "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
     "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."
