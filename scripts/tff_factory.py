@@ -34,7 +34,7 @@ except Exception:
     BeautifulSoup = None
 
 TFF = "https://www.tff.org/Default.aspx"
-FACTORY_VERSION = "v2.3-targeted-perfect-details-appfix"
+FACTORY_VERSION = "v2.4-strict-legacy-known-only"
 TEAM_CANONICAL = "Balıkesirspor"
 
 
@@ -944,22 +944,29 @@ def season_year_start(season: str) -> int:
         return 9999
 
 
-def has_exact_tff_target(item: dict[str, Any]) -> bool:
-    """True when the season has an exact TFF target or explicit known match IDs.
+def has_known_match_ids(item: dict[str, Any]) -> bool:
+    return bool(item.get("knownMatchIds"))
 
-    This is intentionally stricter than the generic pageIds fallback. Old TFF
-    pages often redirect/show current-season fixture links; using only generic
-    pageIds caused 2018-2019 runs to probe 2025-2026 macIds. For legacy seasons
-    we only hit TFF when a season-specific target or hand-verified macId exists.
+
+def has_planned_tff_target(item: dict[str, Any]) -> bool:
+    """True only when the season has a season-specific TFF page/url target.
+
+    This deliberately excludes knownMatchIds. A legacy season may have a few
+    hand-verified match IDs without having a reliable season page. In that case
+    we must fetch only those known IDs and must not run generic pageId discovery,
+    because generic pages can expose modern-season macIds.
     """
-    if item.get("knownMatchIds"):
-        return True
     plan = item.get("tffPlan") or {}
     if str(item.get("targetPageID") or plan.get("pageID") or "").strip():
         return True
     if any(isinstance(u, str) and u.strip() for u in (item.get("targetUrls") or [])):
         return True
     return False
+
+
+def has_exact_tff_target(item: dict[str, Any]) -> bool:
+    """True when the season has an exact TFF page/url or explicit known match IDs."""
+    return has_planned_tff_target(item) or has_known_match_ids(item)
 
 
 def is_legacy_history_season(item: dict[str, Any], args: argparse.Namespace | None = None) -> bool:
@@ -1022,16 +1029,26 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
         write_json(reports_root / "seasons" / f"{season}_quality.json", quality)
         return quality
 
-    selected, all_ids, _ = discover(item, raw_root, args.sleep, args.force)
     known = {str(x) for x in item.get("knownMatchIds", [])}
-    if selected or known:
-        candidates = sorted(set(selected) | known, key=lambda x: int(x))
-        mode = "selected_or_known"
+    legacy = is_legacy_history_season(item, args)
+    planned_target = has_planned_tff_target(item)
+    known_only = bool(item.get("knownOnly")) or (legacy and known and not planned_target)
+
+    if known_only:
+        selected, all_ids = [], []
+        candidates = sorted(known, key=lambda x: int(x))
+        mode = "known_match_ids_only"
+        log(f"{season}: known-only güvenli mod; generic pageId discovery kapalı, knownIds={len(candidates)}")
     else:
-        candidates = list(all_ids)
-        mode = "all_discovered_fallback"
-    if args.max_discovery_probe > 0:
-        candidates = candidates[:args.max_discovery_probe]
+        selected, all_ids, _ = discover(item, raw_root, args.sleep, args.force)
+        if selected or known:
+            candidates = sorted(set(selected) | known, key=lambda x: int(x))
+            mode = "selected_or_known"
+        else:
+            candidates = list(all_ids)
+            mode = "all_discovered_fallback"
+        if args.max_discovery_probe > 0:
+            candidates = candidates[:args.max_discovery_probe]
     log(f"{season}: selectedIds={len(selected)}, allDiscoveredIds={len(all_ids)}, detailCandidates={len(candidates)}, candidateMode={mode}")
 
     season_dir = data_root / "seasons" / season
@@ -1053,7 +1070,8 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
         if i % 50 == 0 or i == len(candidates):
             log(f"{season}: detail doğrulama {i}/{len(candidates)}, hits={len(by_id)}")
 
-    if not by_id and selected and all_ids and bool(item.get("allowLegacyBroadFallback")):
+    if (not by_id and selected and all_ids and bool(item.get("allowLegacyBroadFallback"))
+            and not bool(item.get("knownOnly")) and has_planned_tff_target(item)):
         already = set(str(x) for x in candidates)
         extra = [str(x) for x in all_ids if str(x) not in already]
         limit = int(item.get("legacyBroadProbeLimit") or getattr(args, "legacy_broad_probe_limit", 350) or 0)
@@ -1126,6 +1144,8 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
         "allDiscoveredIds": len(all_ids),
         "detailCandidates": len(candidates),
         "candidateMode": mode,
+        "knownOnly": bool(known_only),
+        "plannedTarget": bool(planned_target),
         "matchesPublished": len(index),
         "detailFiles": len(list(matches_dir.glob("*.json"))),
         "duplicatesDropped": len(duplicates),
