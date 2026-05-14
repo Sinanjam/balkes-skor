@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-05-14T04:38:47.834075Z",
+  "status": "ok",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2-safe",
+  "startSeason": "2025-2026",
+  "processed": [
+    {
+      "season": "2025-2026",
+      "selectedIds": 0,
+      "allDiscoveredIds": 986,
+      "existingIds": 33,
+      "finalQueue": 33,
+      "matchesPublished": 33,
+      "detailFiles": 33,
+      "detailsCreated": 0,
+      "detailsReplaced": 0,
+      "detailsKeptBecauseExistingWasRicher": 33,
+      "standingsSnapshots": 30,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 30,
+        "cup": 1,
+        "playoff": 2
+      },
+      "generatedAt": "2026-05-14T04:38:47.830856Z"
+    }
+  ],
+  "before": {
+    "seasons": 12,
+    "matches": 177
+  },
+  "after": {
+    "seasons": 12,
+    "matches": 177
+  },
+  "safeToPush": true,
+  "notes": [
+    "v2-safe mevcut zengin maç detaylarını daha zayıf parse ile ezmez.",
+    "Raw HTML artifact olarak saklanır, repo commit edilmez.",
+    "Lig/ZTK/Play-off matchType alanıyla sınıflandırılır."
+  ]
+}

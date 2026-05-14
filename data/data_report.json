@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-14T01:15:00Z",
+  "generatedAt": "2026-05-14T04:38:47.833756Z",
   "sourceZip": "balkes-tff-veri.zip + TFF-Entegrasyon.zip",
   "uploadedScan": {
     "generated_at": "2026-05-11T10:54:26",
@@ -24,63 +24,51 @@
   "seasons": [
     {
       "id": "2025-2026",
-      "matchCount": 33,
-      "competition": "Nesine 3. Lig"
+      "matchCount": 33
     },
     {
       "id": "2024-2025",
-      "matchCount": 33,
-      "competition": "Nesine 3. League (Professional Team)"
+      "matchCount": 33
     },
     {
       "id": "2023-2024",
-      "matchCount": 29,
-      "competition": "TFF 3. LEAGUE (Professional Team)"
+      "matchCount": 29
     },
     {
       "id": "2022-2023",
-      "matchCount": 37,
-      "competition": "TFF 2.League (Professional Team)"
+      "matchCount": 37
     },
     {
       "id": "2021-2022",
-      "matchCount": 36,
-      "competition": "TFF 1. Lig (Profesyonel Takım)"
+      "matchCount": 36
     },
     {
       "id": "2018-2019",
-      "matchCount": 2,
-      "competition": "TFF 1. League / Cup (Professional Team)"
+      "matchCount": 2
     },
     {
       "id": "2009-2010",
-      "matchCount": 1,
-      "competition": "TFF 3. League Phase 1 (Professional Team)"
+      "matchCount": 1
     },
     {
       "id": "1996-1997",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)"
+      "matchCount": 1
     },
     {
       "id": "1994-1995",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)"
+      "matchCount": 1
     },
     {
       "id": "1992-1993",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)"
+      "matchCount": 1
     },
     {
       "id": "1991-1992",
-      "matchCount": 1,
-      "competition": "3. League (Professional Team)"
+      "matchCount": 1
     },
     {
       "id": "1990-1991",
-      "matchCount": 2,
-      "competition": "3. League (Professional Team)"
+      "matchCount": 2
     }
   ],
   "standingsSeasons": [
@@ -94,5 +82,7 @@
     "Fixture window kayıtları çok sayıda ham pencere olduğundan uygulamaya doğrudan maç olarak alınmadı; temiz maç ekranlarında yalnızca detay sayfası doğrulanmış maçlar kullanıldı.",
     "2021-2022 sezonu TFF-Entegrasyon çıktısından mevcut sezonlar silinmeden güvenli şekilde eklendi.",
     "Data report totalAppMatches manifest.availableSeasons toplamı ile eşitlendi."
-  ]
+  ],
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2-safe"
 }

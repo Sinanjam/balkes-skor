@@ -10,17 +10,11 @@
   "group": "04. Grup",
   "summary": {
     "matches": 33,
-    "leagueMatches": 30,
-    "playoffMatches": 2,
-    "cupMatches": 1,
-    "wins": 18,
-    "draws": 7,
-    "losses": 8,
-    "goalsFor": 62,
-    "goalsAgainst": 30,
-    "goalDifference": 32,
-    "points": 61,
-    "finalRank": null
+    "matchTypes": {
+      "league": 30,
+      "cup": 1,
+      "playoff": 2
+    }
   },
   "files": {
     "matchesIndex": "seasons/2025-2026/matches_index.json",
@@ -29,5 +23,8 @@
   "source": {
     "name": "TFF",
     "note": "Açık TFF sayfalarından dönüştürülmüş veri"
-  }
+  },
+  "factoryVersion": "v2-safe",
+  "sourcePolicy": "TFF-only",
+  "updatedAt": "2026-05-14T04:38:47.828769Z"
 }
