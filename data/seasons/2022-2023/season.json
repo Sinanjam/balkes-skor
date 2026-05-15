@@ -15,10 +15,16 @@
     "goalDifference": -44,
     "matchTypes": {
       "league": 38
-    }
+    },
+    "points": 25,
+    "rawPoints": 25,
+    "pointsDeducted": 0,
+    "finalRank": 19
   },
   "files": {
     "matchesIndex": "seasons/2022-2023/matches_index.json",
     "standingsByWeek": "seasons/2022-2023/standings_by_week.json"
-  }
+  },
+  "standingsUpdatedAt": "2026-05-15T02:33:17.584941Z",
+  "standingsBuilderVersion": "standings-builder-v2-fast-safe"
 }

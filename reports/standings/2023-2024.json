@@ -1,0 +1,29 @@
+{
+  "season": "2023-2024",
+  "generatedAt": "2026-05-15T02:16:09.557992Z",
+  "builderVersion": "standings-builder-v2-fast-safe",
+  "mode": "auto",
+  "maxWeek": 28,
+  "source": "official_tff_weekly_table",
+  "weeksGenerated": 28,
+  "teams": 17,
+  "matchesUsed": 0,
+  "penaltiesApplied": 0,
+  "warnings": [],
+  "balkesFinal": {
+    "rank": 10,
+    "team": "Balıkesirspor",
+    "played": 27,
+    "won": 7,
+    "drawn": 12,
+    "lost": 8,
+    "goalsFor": 27,
+    "goalsAgainst": 30,
+    "goalDifference": -3,
+    "points": 33,
+    "rawPoints": 33,
+    "pointsDeducted": 0,
+    "penaltyNote": "",
+    "isBalkes": true
+  }
+}

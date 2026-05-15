@@ -10,15 +10,21 @@
     "wins": 8,
     "draws": 11,
     "losses": 11,
-    "goalsFor": 30,
-    "goalsAgainst": 36,
-    "goalDifference": -6,
+    "goalsFor": 36,
+    "goalsAgainst": 48,
+    "goalDifference": -12,
     "matchTypes": {
       "league": 30
-    }
+    },
+    "points": 38,
+    "rawPoints": 38,
+    "pointsDeducted": 0,
+    "finalRank": 13
   },
   "files": {
     "matchesIndex": "seasons/2019-2020/matches_index.json",
     "standingsByWeek": "seasons/2019-2020/standings_by_week.json"
-  }
+  },
+  "standingsUpdatedAt": "2026-05-15T02:47:24.933326Z",
+  "standingsBuilderVersion": "standings-builder-v2-fast-safe"
 }

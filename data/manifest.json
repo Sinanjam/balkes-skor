@@ -34,14 +34,19 @@
         "wins": 18,
         "draws": 6,
         "losses": 9,
-        "goalsFor": 56,
-        "goalsAgainst": 30,
-        "goalDifference": 26,
+        "goalsFor": 54,
+        "goalsAgainst": 27,
+        "goalDifference": 27,
         "matchTypes": {
           "league": 30,
           "playoff": 3
-        }
-      }
+        },
+        "points": 56,
+        "rawPoints": 56,
+        "pointsDeducted": 0,
+        "finalRank": 4
+      },
+      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
     },
     {
       "id": "2023-2024",
@@ -53,13 +58,18 @@
         "wins": 7,
         "draws": 12,
         "losses": 9,
-        "goalsFor": 28,
-        "goalsAgainst": 32,
-        "goalDifference": -4,
+        "goalsFor": 27,
+        "goalsAgainst": 30,
+        "goalDifference": -3,
         "matchTypes": {
           "league": 28
-        }
-      }
+        },
+        "points": 33,
+        "rawPoints": 33,
+        "pointsDeducted": 0,
+        "finalRank": 10
+      },
+      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
     },
     {
       "id": "2022-2023",
@@ -76,8 +86,13 @@
         "goalDifference": -44,
         "matchTypes": {
           "league": 38
-        }
-      }
+        },
+        "points": 25,
+        "rawPoints": 25,
+        "pointsDeducted": 0,
+        "finalRank": 19
+      },
+      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
     },
     {
       "id": "2021-2022",
@@ -94,8 +109,13 @@
         "goalDifference": -51,
         "matchTypes": {
           "league": 36
-        }
-      }
+        },
+        "points": 12,
+        "rawPoints": 12,
+        "pointsDeducted": 0,
+        "finalRank": 21
+      },
+      "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
     },
     {
       "id": "2020-2021",
@@ -112,8 +132,13 @@
         "goalDifference": -18,
         "matchTypes": {
           "league": 34
-        }
-      }
+        },
+        "points": 35,
+        "rawPoints": 35,
+        "pointsDeducted": 0,
+        "finalRank": 15
+      },
+      "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
     },
     {
       "id": "2019-2020",
@@ -125,13 +150,18 @@
         "wins": 8,
         "draws": 11,
         "losses": 11,
-        "goalsFor": 30,
-        "goalsAgainst": 36,
-        "goalDifference": -6,
+        "goalsFor": 36,
+        "goalsAgainst": 48,
+        "goalDifference": -12,
         "matchTypes": {
           "league": 30
-        }
-      }
+        },
+        "points": 38,
+        "rawPoints": 38,
+        "pointsDeducted": 0,
+        "finalRank": 13
+      },
+      "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
     },
     {
       "id": "2018-2019",
@@ -166,5 +196,7 @@
   "factoryVersion": "v2.4-strict-legacy-known-only",
   "processedSeasonsInLastRun": [
     "2018-2019"
-  ]
+  ],
+  "standingsUpdatedAt": "2026-05-15T02:54:01.598857Z",
+  "standingsBuilderVersion": "standings-builder-v2-fast-safe"
 }
