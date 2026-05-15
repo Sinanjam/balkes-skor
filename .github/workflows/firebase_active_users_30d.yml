@@ -8,9 +8,14 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: firebase-active-users-30d
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@v4
@@ -18,19 +23,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+          cache: "pip"
 
       - name: Install Firestore client
         run: |
           python -m pip install --upgrade pip
           pip install google-cloud-firestore
 
+      - name: Prepare Firebase credentials
+        env:
+          FIREBASE_SERVICE_ACCOUNT_B64: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_B64 }}
+          FIREBASE_SERVICE_ACCOUNT_BALKES_SKOR: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BALKES_SKOR }}
+        run: |
+          python scripts/prepare_firebase_credentials.py
+
       - name: Refresh active users count
         env:
           FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_SERVICE_ACCOUNT_BALKES_SKOR: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_BALKES_SKOR }}
+          GOOGLE_APPLICATION_CREDENTIALS: /tmp/firebase-service-account.json
         run: |
           test -n "$FIREBASE_PROJECT_ID"
-          test -n "$FIREBASE_SERVICE_ACCOUNT_BALKES_SKOR"
-          echo "$FIREBASE_SERVICE_ACCOUNT_BALKES_SKOR" > /tmp/firebase-service-account.json
-          export GOOGLE_APPLICATION_CREDENTIALS=/tmp/firebase-service-account.json
+          test -f "$GOOGLE_APPLICATION_CREDENTIALS"
           python scripts/firebase_active_users_30d.py
