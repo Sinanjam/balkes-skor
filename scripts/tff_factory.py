@@ -34,7 +34,7 @@ except Exception:
     BeautifulSoup = None
 
 TFF = "https://www.tff.org/Default.aspx"
-FACTORY_VERSION = "v2.4-strict-legacy-known-only"
+FACTORY_VERSION = "v2.5-safe-legacy-pageid-probe"
 TEAM_CANONICAL = "Balıkesirspor"
 
 
@@ -882,6 +882,150 @@ def planned_urls_for_item(item: dict[str, Any]) -> list[tuple[str, str]]:
             urls.append(("target_extra_" + hashlib.sha1(u.encode()).hexdigest()[:8], u.strip()))
     return urls
 
+def has_legacy_pageid_probe(item: dict[str, Any]) -> bool:
+    probe = item.get("legacyPageIdProbe") or item.get("legacyPageIDProbe") or {}
+    if not isinstance(probe, dict) or not probe.get("enabled", True):
+        return False
+    ranges = probe.get("pageIdRanges") or probe.get("pageIDRanges") or []
+    if ranges:
+        return True
+    start = probe.get("start") or probe.get("pageIdStart") or probe.get("pageIDStart")
+    end = probe.get("end") or probe.get("pageIdEnd") or probe.get("pageIDEnd")
+    return start is not None and end is not None
+
+
+def legacy_probe_ranges(item: dict[str, Any]) -> list[tuple[int, int]]:
+    probe = item.get("legacyPageIdProbe") or item.get("legacyPageIDProbe") or {}
+    out: list[tuple[int, int]] = []
+    if not isinstance(probe, dict) or not probe.get("enabled", True):
+        return out
+    for r in probe.get("pageIdRanges") or probe.get("pageIDRanges") or []:
+        if isinstance(r, dict):
+            a = r.get("start") or r.get("from") or r.get("pageIdStart") or r.get("pageIDStart")
+            b = r.get("end") or r.get("to") or r.get("pageIdEnd") or r.get("pageIDEnd")
+        elif isinstance(r, (list, tuple)) and len(r) >= 2:
+            a, b = r[0], r[1]
+        else:
+            continue
+        try:
+            ia, ib = int(a), int(b)
+            out.append((min(ia, ib), max(ia, ib)))
+        except Exception:
+            continue
+    if not out:
+        try:
+            a = int(probe.get("start") or probe.get("pageIdStart") or probe.get("pageIDStart"))
+            b = int(probe.get("end") or probe.get("pageIdEnd") or probe.get("pageIDEnd"))
+            out.append((min(a, b), max(a, b)))
+        except Exception:
+            pass
+    return out
+
+
+def legacy_probe_max_week(item: dict[str, Any]) -> int:
+    probe = item.get("legacyPageIdProbe") or item.get("legacyPageIDProbe") or {}
+    try:
+        return int(probe.get("maxWeek") or item.get("maxWeek") or 40)
+    except Exception:
+        return 40
+
+
+def legacy_probe_group_limit(item: dict[str, Any]) -> int:
+    probe = item.get("legacyPageIdProbe") or item.get("legacyPageIDProbe") or {}
+    try:
+        return int(probe.get("groupLimit") or 40)
+    except Exception:
+        return 40
+
+
+def legacy_probe_should_expand_weeks(raw: str, selected_count_before: int, selected: set[str]) -> bool:
+    # Haftalık sayfalara yalnızca sayfada Balkes ipucu varsa gir. Bu, modern ana sayfa
+    # veya alakasız sezon sayfalarında binlerce gereksiz isteği engeller.
+    if len(selected) > selected_count_before:
+        return True
+    return is_balkes(raw)
+
+
+def discover_legacy_pageid_probe(item: dict[str, Any], raw_root: Path, sleep_s: float, force: bool = False) -> tuple[list[str], list[str], list[dict[str, Any]]]:
+    """Season-specific pageID window scanner for old professional seasons.
+
+    v2.4 correctly stopped blind current-page scanning. v2.5 adds a safe
+    bounded historical pageID probe so 2017-2018 and older professional seasons
+    are not skipped forever. It scans only configured pageID windows, expands
+    weeks only on pages/groups mentioning Balıkesirspor, and the final accepted
+    matches still must pass Balıkesirspor + date-in-season validation.
+    """
+    season = item["season"]
+    selected: set[str] = set()
+    all_ids: set[str] = set()
+    diagnostics: list[dict[str, Any]] = []
+    ranges = legacy_probe_ranges(item)
+    max_week = legacy_probe_max_week(item)
+    group_limit = legacy_probe_group_limit(item)
+    seen_urls: set[str] = set()
+
+    def add_from_raw(label: str, raw: str) -> tuple[int, int]:
+        before_sel = len(selected)
+        before_all = len(all_ids)
+        all_ids.update(extract_ids(raw))
+        selected.update(extract_balkes_ids(raw))
+        return len(selected) - before_sel, len(all_ids) - before_all
+
+    def fetch_once(label: str, url: str) -> str:
+        if url in seen_urls:
+            return ""
+        seen_urls.add(url)
+        ok, raw = fetch(url, raw_root / season / "legacy_pageid_probe" / f"{label}.html", sleep_s, force)
+        return raw if ok else ""
+
+    for start, end in ranges:
+        for page_id in range(start, end + 1):
+            base_label = f"pageID_{page_id}"
+            raw = fetch_once(base_label, tff_url(pageID=page_id))
+            if not raw:
+                continue
+            sel_delta, all_delta = add_from_raw(base_label, raw)
+            groups = extract_param(raw, "grupID")[:group_limit]
+            page_hint = legacy_probe_should_expand_weeks(raw, len(selected) - sel_delta, selected)
+            if sel_delta or page_hint:
+                diagnostics.append({
+                    "pageID": page_id,
+                    "baseSelectedDelta": sel_delta,
+                    "baseAllDelta": all_delta,
+                    "groups": groups[:20],
+                    "expandedWeeks": bool(max_week),
+                })
+            for gid in groups:
+                group_label = f"pageID_{page_id}_group_{gid}"
+                graw = fetch_once(group_label, tff_url(pageID=page_id, grupID=gid))
+                if not graw:
+                    continue
+                g_sel_delta, g_all_delta = add_from_raw(group_label, graw)
+                expand_weeks = legacy_probe_should_expand_weeks(graw, len(selected) - g_sel_delta, selected)
+                if g_sel_delta or expand_weeks:
+                    diagnostics.append({
+                        "pageID": page_id,
+                        "grupID": gid,
+                        "groupSelectedDelta": g_sel_delta,
+                        "groupAllDelta": g_all_delta,
+                        "expandedWeeks": bool(max_week),
+                    })
+                if expand_weeks and max_week > 0:
+                    for week in range(1, max_week + 1):
+                        week_label = f"pageID_{page_id}_group_{gid}_week_{week:02d}"
+                        wraw = fetch_once(week_label, tff_url(pageID=page_id, grupID=gid, hafta=week))
+                        if not wraw:
+                            continue
+                        add_from_raw(week_label, wraw)
+            if not groups and page_hint and max_week > 0:
+                for week in range(1, max_week + 1):
+                    week_label = f"pageID_{page_id}_week_{week:02d}"
+                    wraw = fetch_once(week_label, tff_url(pageID=page_id, hafta=week))
+                    if not wraw:
+                        continue
+                    add_from_raw(week_label, wraw)
+    return sorted(selected, key=lambda x: int(x)), sorted(all_ids, key=lambda x: int(x)), diagnostics
+
 
 def discover(item: dict[str, Any], raw_root: Path, sleep_s: float, force: bool = False) -> tuple[list[str], list[str], list[dict[str, Any]]]:
     season = item["season"]
@@ -899,6 +1043,11 @@ def discover(item: dict[str, Any], raw_root: Path, sleep_s: float, force: bool =
             return sorted(selected, key=lambda x: int(x)), sorted(all_ids, key=lambda x: int(x)), []
         log(f"{season}: hedef planda Balkes selectedIds çıkmadı; all_ids={len(all_ids)}. Geniş fallback kapalı.")
         return [], sorted(all_ids, key=lambda x: int(x)), []
+
+    if has_legacy_pageid_probe(item):
+        ranges = legacy_probe_ranges(item)
+        log(f"{season}: exact target yok; güvenli legacy pageID probe kullanılıyor, ranges={ranges}")
+        return discover_legacy_pageid_probe(item, raw_root, sleep_s, force)
 
     for page_id in item.get("pageIds", []):
         url = tff_url(pageID=page_id)
@@ -966,7 +1115,7 @@ def has_planned_tff_target(item: dict[str, Any]) -> bool:
 
 def has_exact_tff_target(item: dict[str, Any]) -> bool:
     """True when the season has an exact TFF page/url or explicit known match IDs."""
-    return has_planned_tff_target(item) or has_known_match_ids(item)
+    return has_planned_tff_target(item) or has_known_match_ids(item) or has_legacy_pageid_probe(item)
 
 
 def is_legacy_history_season(item: dict[str, Any], args: argparse.Namespace | None = None) -> bool:
@@ -1032,18 +1181,24 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
     known = {str(x) for x in item.get("knownMatchIds", [])}
     legacy = is_legacy_history_season(item, args)
     planned_target = has_planned_tff_target(item)
-    known_only = bool(item.get("knownOnly")) or (legacy and known and not planned_target)
+    known_only = bool(item.get("knownOnly")) or (legacy and known and not planned_target and not has_legacy_pageid_probe(item))
 
+    discovery_diagnostics: list[dict[str, Any]] = []
     if known_only:
         selected, all_ids = [], []
         candidates = sorted(known, key=lambda x: int(x))
         mode = "known_match_ids_only"
         log(f"{season}: known-only güvenli mod; generic pageId discovery kapalı, knownIds={len(candidates)}")
     else:
-        selected, all_ids, _ = discover(item, raw_root, args.sleep, args.force)
+        selected, all_ids, discovery_diagnostics = discover(item, raw_root, args.sleep, args.force)
         if selected or known:
             candidates = sorted(set(selected) | known, key=lambda x: int(x))
-            mode = "selected_or_known"
+            mode = "selected_or_known" if not has_legacy_pageid_probe(item) else "legacy_pageid_probe_selected_or_known"
+        elif has_legacy_pageid_probe(item):
+            # PageID probe sırasında sayfada macId olabilir ama Balıkesirspor satırı bulunmadıysa
+            # all_ids fallback yapılmaz. Aksi halde yine alakasız sezon/lig havuzunu detay detay tararız.
+            candidates = []
+            mode = "legacy_pageid_probe_no_selected_ids"
         else:
             candidates = list(all_ids)
             mode = "all_discovered_fallback"
@@ -1146,6 +1301,8 @@ def process_season(item: dict[str, Any], args: argparse.Namespace, seed: dict[st
         "candidateMode": mode,
         "knownOnly": bool(known_only),
         "plannedTarget": bool(planned_target),
+        "legacyPageIdProbe": bool(has_legacy_pageid_probe(item)),
+        "legacyProbeDiagnostics": discovery_diagnostics,
         "matchesPublished": len(index),
         "detailFiles": len(list(matches_dir.glob("*.json"))),
         "duplicatesDropped": len(duplicates),

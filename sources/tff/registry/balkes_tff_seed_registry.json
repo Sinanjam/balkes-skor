@@ -1,5 +1,5 @@
 {
-  "policy": "TFF-only; perfect details; strict legacy known-only/no-blind-scan v2.4",
+  "policy": "TFF-only; perfect details; strict legacy with safe bounded pageID probe v2.5",
   "team": "Balıkesirspor",
   "baseline": {
     "minSeasons": 1,
@@ -402,19 +402,36 @@
       "professionalStatus": "professional",
       "competition": "TFF 1. Lig",
       "leagueEra": "TFF 1. Lig",
-      "planConfidence": "known_match_ids_only",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 350,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
       "legacySafetyNote": "No blind generic pageId scan; only hand-verified knownMatchIds are probed until exact season target is added.",
-      "knownOnly": true,
+      "knownOnly": false,
       "skipTff": false,
       "skipReason": "",
       "notes": [
-        "Hand-verified macId only. No generic legacy discovery; exact historical TFF season target is not verified."
-      ]
+        "Hand-verified macId only. No generic legacy discovery; exact historical TFF season target is not verified.",
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ],
+      "requiresExactTffTarget": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1460,
+            "end": 1505
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      }
     },
     {
       "season": "2017-2018",
@@ -433,17 +450,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 1. Lig",
       "leagueEra": "TFF 1. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 350,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1400,
+            "end": 1485
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2016-2017",
@@ -462,17 +497,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 1. Lig",
       "leagueEra": "TFF 1. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 350,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1360,
+            "end": 1445
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2015-2016",
@@ -491,17 +544,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 1. Lig",
       "leagueEra": "TFF 1. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 350,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1320,
+            "end": 1405
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2014-2015",
@@ -520,17 +591,35 @@
       "professionalStatus": "professional",
       "competition": "Süper Lig",
       "leagueEra": "Süper Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 350,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1280,
+            "end": 1365
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2013-2014",
@@ -549,17 +638,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 1. Lig",
       "leagueEra": "TFF 1. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1230,
+            "end": 1315
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2012-2013",
@@ -617,17 +724,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 2. Lig",
       "leagueEra": "TFF 2. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1160,
+            "end": 1245
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2010-2011",
@@ -646,17 +771,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 2. Lig",
       "leagueEra": "TFF 2. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 1080,
+            "end": 1185
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2009-2010",
@@ -675,17 +818,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 3. Lig",
       "leagueEra": "TFF 3. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 980,
+            "end": 1120
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2008-2009",
@@ -704,17 +865,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 3. Lig",
       "leagueEra": "TFF 3. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 850,
+            "end": 1005
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2007-2008",
@@ -733,17 +912,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 3. Lig",
       "leagueEra": "TFF 3. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 720,
+            "end": 880
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2006-2007",
@@ -762,17 +959,35 @@
       "professionalStatus": "professional",
       "competition": "TFF 3. Lig",
       "leagueEra": "TFF 3. Lig",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 600,
+            "end": 760
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "2005-2006",
@@ -1054,19 +1269,36 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 2. Ligi",
       "leagueEra": "Türkiye 2. Ligi",
-      "planConfidence": "known_match_ids_only",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
       "legacySafetyNote": "No blind generic pageId scan; only hand-verified knownMatchIds are probed until exact season target is added.",
-      "knownOnly": true,
+      "knownOnly": false,
       "skipTff": false,
       "skipReason": "",
       "notes": [
-        "Hand-verified macId only. No generic legacy discovery; exact historical TFF season target is not verified."
-      ]
+        "Hand-verified macId only. No generic legacy discovery; exact historical TFF season target is not verified.",
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ],
+      "requiresExactTffTarget": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 360,
+            "end": 620
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      }
     },
     {
       "season": "1995-1996",
@@ -1085,17 +1317,35 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 2. Ligi",
       "leagueEra": "Türkiye 2. Ligi",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 300,
+            "end": 560
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "1994-1995",
@@ -1114,17 +1364,35 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 2. Ligi",
       "leagueEra": "Türkiye 2. Ligi",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 240,
+            "end": 500
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "1993-1994",
@@ -1143,17 +1411,35 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 2. Ligi",
       "leagueEra": "Türkiye 2. Ligi",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 180,
+            "end": 440
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "1992-1993",
@@ -1172,17 +1458,35 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 2. Ligi",
       "leagueEra": "Türkiye 2. Ligi",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 120,
+            "end": 380
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "1991-1992",
@@ -1201,17 +1505,35 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 3. Ligi",
       "leagueEra": "Türkiye 3. Ligi",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 80,
+            "end": 320
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     },
     {
       "season": "1990-1991",
@@ -1230,17 +1552,35 @@
       "professionalStatus": "professional",
       "competition": "Türkiye 3. Ligi",
       "leagueEra": "Türkiye 3. Ligi",
-      "planConfidence": "history-only-legacy-probe",
+      "planConfidence": "bounded-legacy-pageid-probe",
       "targetUrls": [],
       "allowLegacyBroadFallback": false,
-      "legacyBroadProbeLimit": 150,
+      "legacyBroadProbeLimit": 0,
       "legacyDiscoveryNote": "No exact TFF season pageID is confirmed in registry yet; factory uses generic page discovery, verifies date/team, and broad-fallbacks only if selected IDs produce zero hits.",
       "legacySeason": true,
-      "requiresExactTffTarget": true,
+      "requiresExactTffTarget": false,
       "legacySafetyNote": "Skipped in strict mode until exact TFF targetPageID/targetUrl or hand-verified knownMatchIds are added.",
-      "skipTff": true,
-      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
-      "knownOnly": false
+      "skipTff": false,
+      "skipReason": "",
+      "knownOnly": false,
+      "noTffRecord": false,
+      "amateurSeason": false,
+      "legacyPageIdProbe": {
+        "enabled": true,
+        "pageIdRanges": [
+          {
+            "start": 40,
+            "end": 280
+          }
+        ],
+        "maxWeek": 40,
+        "groupLimit": 40,
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe"
+      },
+      "notes": [
+        "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
+      ]
     }
   ],
   "legacyBackfillPolicy": {
