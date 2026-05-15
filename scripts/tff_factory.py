@@ -24,6 +24,7 @@ import time
 import unicodedata
 import urllib.parse
 import urllib.request
+import urllib.error
 from datetime import datetime, date, timezone
 from pathlib import Path
 from typing import Any
@@ -34,7 +35,9 @@ except Exception:
     BeautifulSoup = None
 
 TFF = "https://www.tff.org/Default.aspx"
-FACTORY_VERSION = "v2.5-safe-legacy-pageid-probe"
+FAST_SKIP_HTTP_CODES = {502, 503, 504}
+FETCH_LAST_ERROR_BY_PATH: dict[str, str] = {}
+FACTORY_VERSION = "v2.6-safe-legacy-gateway-guard"
 TEAM_CANONICAL = "Balıkesirspor"
 
 
@@ -87,13 +90,14 @@ def decode_bytes(raw: bytes, content_type: str = "") -> str:
 
 def fetch(url: str, path: Path, sleep_s: float = 1.0, force: bool = False) -> tuple[bool, str]:
     path.parent.mkdir(parents=True, exist_ok=True)
+    FETCH_LAST_ERROR_BY_PATH[str(path)] = ""
     if path.exists() and path.stat().st_size > 200 and not force:
         return True, path.read_text(encoding="utf-8", errors="replace")
     last = ""
     for attempt in range(1, 4):
         try:
             req = urllib.request.Request(url, headers={
-                "User-Agent": "Mozilla/5.0 BalkesTFFFactory-v22-perfect-details/1.0",
+                "User-Agent": "Mozilla/5.0 BalkesTFFFactory-v26-gateway-guard/1.0",
                 "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.7",
             })
             with urllib.request.urlopen(req, timeout=75) as res:
@@ -101,10 +105,26 @@ def fetch(url: str, path: Path, sleep_s: float = 1.0, force: bool = False) -> tu
                 ctype = res.headers.get("Content-Type", "")
             text = decode_bytes(body, ctype)
             path.write_text(text, encoding="utf-8")
-            time.sleep(sleep_s)
+            if sleep_s:
+                time.sleep(sleep_s)
+            FETCH_LAST_ERROR_BY_PATH[str(path)] = ""
             return True, text
+        except urllib.error.HTTPError as exc:
+            last = f"HTTP Error {exc.code}: {exc.reason}"
+            code_key = f"http_{exc.code}"
+            FETCH_LAST_ERROR_BY_PATH[str(path)] = code_key
+            if int(exc.code) in FAST_SKIP_HTTP_CODES:
+                # TFF legacy archive often returns 502/503/504 on dead group branches.
+                # Retrying the same toxic URL costs minutes and never increases accuracy.
+                log(f"fetch hızlı atla: {url} -> {last}")
+                path.with_suffix(path.suffix + ".error.txt").write_text(last, encoding="utf-8")
+                return False, ""
+            log(f"fetch hata {attempt}/3: {url} -> {last}")
+            time.sleep(max(2.0, sleep_s * attempt))
         except Exception as exc:
             last = str(exc)
+            err_norm = str(exc).lower()
+            FETCH_LAST_ERROR_BY_PATH[str(path)] = "timeout" if "timed out" in err_norm or "timeout" in err_norm else "error"
             log(f"fetch hata {attempt}/3: {url} -> {last}")
             time.sleep(max(2.0, sleep_s * attempt))
     path.with_suffix(path.suffix + ".error.txt").write_text(last, encoding="utf-8")
@@ -938,6 +958,24 @@ def legacy_probe_group_limit(item: dict[str, Any]) -> int:
         return 40
 
 
+def legacy_probe_gateway_skip_after(item: dict[str, Any]) -> int:
+    """Consecutive gateway/timeout errors before abandoning a dead branch.
+
+    This is not a season duration/probe limit. It only prevents repeated 502/503/504
+    requests on the same unreachable pageID/group branch. The season scan continues
+    with the next pageID, so correctness is preserved without accepting guessed data.
+    """
+    probe = item.get("legacyPageIdProbe") or item.get("legacyPageIDProbe") or {}
+    try:
+        return max(1, int(probe.get("gatewaySkipAfter") or probe.get("httpErrorSkipAfter") or 3))
+    except Exception:
+        return 3
+
+
+def is_gateway_fetch_error(err: str) -> bool:
+    return str(err or "") in {"http_502", "http_503", "http_504", "timeout"}
+
+
 def legacy_probe_should_expand_weeks(raw: str, selected_count_before: int, selected: set[str]) -> bool:
     # Haftalık sayfalara yalnızca sayfada Balkes ipucu varsa gir. Bu, modern ana sayfa
     # veya alakasız sezon sayfalarında binlerce gereksiz isteği engeller.
@@ -949,11 +987,11 @@ def legacy_probe_should_expand_weeks(raw: str, selected_count_before: int, selec
 def discover_legacy_pageid_probe(item: dict[str, Any], raw_root: Path, sleep_s: float, force: bool = False) -> tuple[list[str], list[str], list[dict[str, Any]]]:
     """Season-specific pageID window scanner for old professional seasons.
 
-    v2.4 correctly stopped blind current-page scanning. v2.5 adds a safe
-    bounded historical pageID probe so 2017-2018 and older professional seasons
-    are not skipped forever. It scans only configured pageID windows, expands
-    weeks only on pages/groups mentioning Balıkesirspor, and the final accepted
-    matches still must pass Balıkesirspor + date-in-season validation.
+    v2.6 keeps the correctness model from v2.5 but adds a gateway guard:
+    legacy TFF group branches that repeatedly return 502/503/504 or timeout are
+    abandoned quickly, while the rest of the season pageID window continues.
+    There is deliberately no per-season time cap; bad branches are skipped only
+    after repeated unreachable responses and are recorded in diagnostics.
     """
     season = item["season"]
     selected: set[str] = set()
@@ -962,6 +1000,7 @@ def discover_legacy_pageid_probe(item: dict[str, Any], raw_root: Path, sleep_s: 
     ranges = legacy_probe_ranges(item)
     max_week = legacy_probe_max_week(item)
     group_limit = legacy_probe_group_limit(item)
+    gateway_skip_after = legacy_probe_gateway_skip_after(item)
     seen_urls: set[str] = set()
 
     def add_from_raw(label: str, raw: str) -> tuple[int, int]:
@@ -971,18 +1010,27 @@ def discover_legacy_pageid_probe(item: dict[str, Any], raw_root: Path, sleep_s: 
         selected.update(extract_balkes_ids(raw))
         return len(selected) - before_sel, len(all_ids) - before_all
 
-    def fetch_once(label: str, url: str) -> str:
+    def fetch_once(label: str, url: str) -> tuple[str, str]:
         if url in seen_urls:
-            return ""
+            return "", "seen"
         seen_urls.add(url)
-        ok, raw = fetch(url, raw_root / season / "legacy_pageid_probe" / f"{label}.html", sleep_s, force)
-        return raw if ok else ""
+        path = raw_root / season / "legacy_pageid_probe" / f"{label}.html"
+        ok, raw = fetch(url, path, sleep_s, force)
+        err = FETCH_LAST_ERROR_BY_PATH.get(str(path), "")
+        return (raw if ok else ""), err
+
+    def diag_gateway(kind: str, page_id: int, err: str, **extra: Any) -> None:
+        item_diag: dict[str, Any] = {"kind": kind, "pageID": page_id, "error": err}
+        item_diag.update(extra)
+        diagnostics.append(item_diag)
 
     for start, end in ranges:
         for page_id in range(start, end + 1):
             base_label = f"pageID_{page_id}"
-            raw = fetch_once(base_label, tff_url(pageID=page_id))
+            raw, err = fetch_once(base_label, tff_url(pageID=page_id))
             if not raw:
+                if is_gateway_fetch_error(err):
+                    diag_gateway("page_gateway_skip", page_id, err)
                 continue
             sel_delta, all_delta = add_from_raw(base_label, raw)
             groups = extract_param(raw, "grupID")[:group_limit]
@@ -995,11 +1043,28 @@ def discover_legacy_pageid_probe(item: dict[str, Any], raw_root: Path, sleep_s: 
                     "groups": groups[:20],
                     "expandedWeeks": bool(max_week),
                 })
+
+            consecutive_group_gateway_errors = 0
             for gid in groups:
+                if consecutive_group_gateway_errors >= gateway_skip_after:
+                    diag_gateway(
+                        "page_group_branch_abandoned",
+                        page_id,
+                        "consecutive_gateway_errors",
+                        gatewayErrors=consecutive_group_gateway_errors,
+                        remainingGroupsSkipped=True,
+                    )
+                    break
+
                 group_label = f"pageID_{page_id}_group_{gid}"
-                graw = fetch_once(group_label, tff_url(pageID=page_id, grupID=gid))
+                graw, gerr = fetch_once(group_label, tff_url(pageID=page_id, grupID=gid))
                 if not graw:
+                    if is_gateway_fetch_error(gerr):
+                        consecutive_group_gateway_errors += 1
+                        diag_gateway("group_gateway_skip", page_id, gerr, grupID=gid, consecutive=consecutive_group_gateway_errors)
                     continue
+
+                consecutive_group_gateway_errors = 0
                 g_sel_delta, g_all_delta = add_from_raw(group_label, graw)
                 expand_weeks = legacy_probe_should_expand_weeks(graw, len(selected) - g_sel_delta, selected)
                 if g_sel_delta or expand_weeks:
@@ -1011,18 +1076,47 @@ def discover_legacy_pageid_probe(item: dict[str, Any], raw_root: Path, sleep_s: 
                         "expandedWeeks": bool(max_week),
                     })
                 if expand_weeks and max_week > 0:
+                    consecutive_week_gateway_errors = 0
                     for week in range(1, max_week + 1):
+                        if consecutive_week_gateway_errors >= gateway_skip_after:
+                            diag_gateway(
+                                "week_branch_abandoned",
+                                page_id,
+                                "consecutive_gateway_errors",
+                                grupID=gid,
+                                gatewayErrors=consecutive_week_gateway_errors,
+                                remainingWeeksSkipped=True,
+                            )
+                            break
                         week_label = f"pageID_{page_id}_group_{gid}_week_{week:02d}"
-                        wraw = fetch_once(week_label, tff_url(pageID=page_id, grupID=gid, hafta=week))
+                        wraw, werr = fetch_once(week_label, tff_url(pageID=page_id, grupID=gid, hafta=week))
                         if not wraw:
+                            if is_gateway_fetch_error(werr):
+                                consecutive_week_gateway_errors += 1
+                                diag_gateway("week_gateway_skip", page_id, werr, grupID=gid, week=week, consecutive=consecutive_week_gateway_errors)
                             continue
+                        consecutive_week_gateway_errors = 0
                         add_from_raw(week_label, wraw)
             if not groups and page_hint and max_week > 0:
+                consecutive_week_gateway_errors = 0
                 for week in range(1, max_week + 1):
+                    if consecutive_week_gateway_errors >= gateway_skip_after:
+                        diag_gateway(
+                            "page_week_branch_abandoned",
+                            page_id,
+                            "consecutive_gateway_errors",
+                            gatewayErrors=consecutive_week_gateway_errors,
+                            remainingWeeksSkipped=True,
+                        )
+                        break
                     week_label = f"pageID_{page_id}_week_{week:02d}"
-                    wraw = fetch_once(week_label, tff_url(pageID=page_id, hafta=week))
+                    wraw, werr = fetch_once(week_label, tff_url(pageID=page_id, hafta=week))
                     if not wraw:
+                        if is_gateway_fetch_error(werr):
+                            consecutive_week_gateway_errors += 1
+                            diag_gateway("page_week_gateway_skip", page_id, werr, week=week, consecutive=consecutive_week_gateway_errors)
                         continue
+                    consecutive_week_gateway_errors = 0
                     add_from_raw(week_label, wraw)
     return sorted(selected, key=lambda x: int(x)), sorted(all_ids, key=lambda x: int(x)), diagnostics
 

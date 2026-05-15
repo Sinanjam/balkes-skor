@@ -1,5 +1,5 @@
 {
-  "policy": "TFF-only; perfect details; strict legacy with safe bounded pageID probe v2.5",
+  "policy": "TFF-only; perfect details; strict legacy safe pageID probe v2.6 with gateway-branch guard/no blind current scan",
   "team": "Balıkesirspor",
   "baseline": {
     "minSeasons": 1,
@@ -429,8 +429,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       }
     },
     {
@@ -473,8 +474,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -520,8 +522,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -567,8 +570,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -614,8 +618,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -661,8 +666,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -747,8 +753,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -794,8 +801,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -841,8 +849,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -888,8 +897,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -935,8 +945,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -982,8 +993,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -1296,8 +1308,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       }
     },
     {
@@ -1340,8 +1353,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -1387,8 +1401,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -1434,8 +1449,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -1481,8 +1497,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -1528,8 +1545,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
@@ -1575,8 +1593,9 @@
         ],
         "maxWeek": 40,
         "groupLimit": 40,
-        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; accept only match details with Balıkesirspor and date inside season",
-        "confidence": "safe-bounded-probe"
+        "strategy": "scan bounded historical pageID window; expand weeks only when page/group mentions Balıkesirspor; abandon repeated 502/503/504 gateway branches; accept only match details with Balıkesirspor and date inside season",
+        "confidence": "safe-bounded-probe-gateway-guard",
+        "gatewaySkipAfter": 3
       },
       "notes": [
         "v2.5: exact target missing; safe bounded pageID probe enabled instead of blind current-page scan."
