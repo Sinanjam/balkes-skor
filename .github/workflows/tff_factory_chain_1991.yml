@@ -1,4 +1,4 @@
-name: TFF Factory v3.1 Chain to 1991
+name: TFF Factory v3.2 Chain to 1991
 
 on:
   workflow_dispatch:
@@ -152,7 +152,7 @@ jobs:
             set -e
             STRICT_ARG="--strict-legacy-targets"
             if [ "$STRICT_LEGACY_TARGETS" != "true" ]; then STRICT_ARG="--no-strict-legacy-targets"; fi
-            python scripts/tff_factory_v29_speed_complete_accuracy.py \
+            python scripts/tff_factory_v32_senior_professional_guard.py \
               --seed sources/tff/registry/balkes_tff_seed_registry.json \
               --data-root data \
               --raw-root sources/tff/raw \
@@ -164,6 +164,7 @@ jobs:
               --legacy-broad-probe-limit "$LEGACY_BROAD_PROBE_LIMIT" \
               $STRICT_ARG \
               --skip-standings
+            python scripts/clean_bad_professional_data_v32.py --data-root data --reports-root reports/tff_factory --write
             python scripts/validate_data.py --data-root data --min-seasons 1 --min-matches 1
             if [ "$SKIP_STANDINGS" = "false" ]; then
               python scripts/tff_standings_builder_v31.py \
@@ -234,7 +235,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tff-chain-v31-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
+          name: tff-chain-v32-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
           path: |
             data/**/*.json
             reports/tff_chain/**/*.json

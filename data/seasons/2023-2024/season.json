@@ -2,24 +2,20 @@
   "id": "2023-2024",
   "name": "2023-2024",
   "competition": "TFF 3. LİG (Profesyonel Takım)",
-  "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.9-speed-complete-accuracy",
-  "updatedAt": "2026-05-15T06:14:22.787292Z",
+  "sourcePolicy": "TFF senior professional only",
+  "factoryVersion": "v3.2-senior-professional-guard-cleaner",
+  "updatedAt": "2026-05-15T17:30:57.813985Z",
   "summary": {
     "matches": 28,
     "wins": 7,
     "draws": 12,
     "losses": 9,
-    "goalsFor": 27,
-    "goalsAgainst": 30,
-    "goalDifference": -3,
+    "goalsFor": 28,
+    "goalsAgainst": 32,
+    "goalDifference": -4,
     "matchTypes": {
       "league": 28
-    },
-    "points": 33,
-    "rawPoints": 33,
-    "pointsDeducted": 0,
-    "finalRank": 8
+    }
   },
   "files": {
     "matchesIndex": "seasons/2023-2024/matches_index.json",

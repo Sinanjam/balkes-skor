@@ -2,8 +2,7 @@
   "app": "Balkes Skor",
   "schemaVersion": 3,
   "dataVersion": 1,
-  "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-15T14:56:38.049181Z",
+  "generatedAt": "2026-05-15T17:30:59.063013Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -23,7 +22,8 @@
           "league": 30,
           "playoff": 2
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
     },
     {
       "id": "2024-2025",
@@ -35,18 +35,15 @@
         "wins": 18,
         "draws": 6,
         "losses": 9,
-        "goalsFor": 54,
-        "goalsAgainst": 27,
-        "goalDifference": 27,
+        "goalsFor": 56,
+        "goalsAgainst": 30,
+        "goalDifference": 26,
         "matchTypes": {
           "league": 30,
           "playoff": 3
-        },
-        "points": 56,
-        "rawPoints": 56,
-        "pointsDeducted": 0,
-        "finalRank": 2
-      }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
     },
     {
       "id": "2023-2024",
@@ -58,17 +55,14 @@
         "wins": 7,
         "draws": 12,
         "losses": 9,
-        "goalsFor": 27,
-        "goalsAgainst": 30,
-        "goalDifference": -3,
+        "goalsFor": 28,
+        "goalsAgainst": 32,
+        "goalDifference": -4,
         "matchTypes": {
           "league": 28
-        },
-        "points": 33,
-        "rawPoints": 33,
-        "pointsDeducted": 0,
-        "finalRank": 8
-      }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
     },
     {
       "id": "2022-2023",
@@ -85,12 +79,9 @@
         "goalDifference": -44,
         "matchTypes": {
           "league": 38
-        },
-        "points": 25,
-        "rawPoints": 25,
-        "pointsDeducted": 0,
-        "finalRank": 17
-      }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
     },
     {
       "id": "2021-2022",
@@ -107,12 +98,9 @@
         "goalDifference": -51,
         "matchTypes": {
           "league": 36
-        },
-        "points": 12,
-        "rawPoints": 12,
-        "pointsDeducted": 0,
-        "finalRank": 19
-      }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
     },
     {
       "id": "2020-2021",
@@ -129,12 +117,9 @@
         "goalDifference": -18,
         "matchTypes": {
           "league": 34
-        },
-        "points": 35,
-        "rawPoints": 35,
-        "pointsDeducted": 0,
-        "finalRank": 13
-      }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
     },
     {
       "id": "2019-2020",
@@ -146,134 +131,135 @@
         "wins": 8,
         "draws": 11,
         "losses": 11,
-        "goalsFor": 36,
-        "goalsAgainst": 48,
-        "goalDifference": -12,
+        "goalsFor": 30,
+        "goalsAgainst": 36,
+        "goalDifference": -6,
         "matchTypes": {
           "league": 30
-        },
-        "points": 38,
-        "rawPoints": 38,
-        "pointsDeducted": 0,
-        "finalRank": 13
-      }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
     },
     {
       "id": "2018-2019",
       "name": "2018-2019",
-      "matchCount": 207,
+      "matchCount": 41,
       "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 207,
-        "wins": 60,
-        "draws": 29,
-        "losses": 117,
-        "goalsFor": 251,
-        "goalsAgainst": 409,
-        "goalDifference": -158,
+        "matches": 41,
+        "wins": 14,
+        "draws": 8,
+        "losses": 18,
+        "goalsFor": 49,
+        "goalsAgainst": 52,
+        "goalDifference": -3,
         "matchTypes": {
-          "league": 201,
+          "league": 35,
           "cup": 6
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2018-2019/standings_by_week.json"
     },
     {
       "id": "2017-2018",
       "name": "2017-2018",
-      "matchCount": 206,
+      "matchCount": 31,
       "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 206,
-        "wins": 66,
-        "draws": 33,
-        "losses": 107,
-        "goalsFor": 303,
-        "goalsAgainst": 414,
-        "goalDifference": -111,
+        "matches": 31,
+        "wins": 12,
+        "draws": 7,
+        "losses": 12,
+        "goalsFor": 51,
+        "goalsAgainst": 50,
+        "goalDifference": 1,
         "matchTypes": {
-          "league": 204,
-          "cup": 2
+          "league": 30,
+          "cup": 1
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2017-2018/standings_by_week.json"
     },
     {
       "id": "2016-2017",
       "name": "2016-2017",
-      "matchCount": 253,
+      "matchCount": 36,
       "competition": "TFF 1.Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 253,
-        "wins": 108,
-        "draws": 48,
-        "losses": 97,
-        "goalsFor": 442,
-        "goalsAgainst": 381,
-        "goalDifference": 61,
+        "matches": 36,
+        "wins": 11,
+        "draws": 12,
+        "losses": 13,
+        "goalsFor": 58,
+        "goalsAgainst": 52,
+        "goalDifference": 6,
         "matchTypes": {
-          "league": 250,
-          "cup": 2,
-          "playoff": 1
+          "league": 34,
+          "cup": 2
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2016-2017/standings_by_week.json"
     },
     {
       "id": "2015-2016",
       "name": "2015-2016",
-      "matchCount": 209,
+      "matchCount": 38,
       "competition": "PTT 1.Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 209,
-        "wins": 88,
-        "draws": 47,
-        "losses": 74,
-        "goalsFor": 343,
-        "goalsAgainst": 302,
-        "goalDifference": 41,
+        "matches": 38,
+        "wins": 14,
+        "draws": 14,
+        "losses": 10,
+        "goalsFor": 45,
+        "goalsAgainst": 36,
+        "goalDifference": 9,
         "matchTypes": {
-          "league": 205,
+          "league": 34,
           "cup": 2,
           "playoff": 2
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2015-2016/standings_by_week.json"
     },
     {
       "id": "2014-2015",
       "name": "2014-2015",
-      "matchCount": 236,
+      "matchCount": 34,
       "competition": "Spor Toto Süper Lig Süleyman Seba Sezonu (Profesyonel Takım)",
       "summary": {
-        "matches": 236,
-        "wins": 84,
-        "draws": 45,
-        "losses": 107,
-        "goalsFor": 342,
-        "goalsAgainst": 384,
-        "goalDifference": -42,
+        "matches": 34,
+        "wins": 6,
+        "draws": 9,
+        "losses": 19,
+        "goalsFor": 50,
+        "goalsAgainst": 72,
+        "goalDifference": -22,
         "matchTypes": {
-          "league": 235,
+          "league": 33,
           "cup": 1
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2014-2015/standings_by_week.json"
     },
     {
       "id": "2013-2014",
       "name": "2013-2014",
-      "matchCount": 191,
+      "matchCount": 39,
       "competition": "PTT 1.Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 191,
-        "wins": 95,
-        "draws": 38,
-        "losses": 58,
-        "goalsFor": 335,
-        "goalsAgainst": 219,
-        "goalDifference": 116,
+        "matches": 39,
+        "wins": 24,
+        "draws": 7,
+        "losses": 8,
+        "goalsFor": 64,
+        "goalsAgainst": 38,
+        "goalDifference": 26,
         "matchTypes": {
-          "league": 185,
-          "cup": 4,
-          "playoff": 2
+          "league": 35,
+          "cup": 4
         }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2013-2014/standings_by_week.json"
     },
     {
       "id": "2012-2013",
@@ -290,50 +276,29 @@
         "goalDifference": 26,
         "matchTypes": {
           "league": 32
-        },
-        "points": 69,
-        "rawPoints": 69,
-        "pointsDeducted": 0,
-        "finalRank": 1
+        }
       },
       "standingsByWeekUrl": "seasons/2012-2013/standings_by_week.json"
     },
     {
       "id": "2011-2012",
       "name": "2011-2012",
-      "matchCount": 138,
+      "matchCount": 33,
       "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 138,
-        "wins": 38,
-        "draws": 26,
-        "losses": 74,
-        "goalsFor": 201,
-        "goalsAgainst": 326,
-        "goalDifference": -125,
+        "matches": 33,
+        "wins": 20,
+        "draws": 8,
+        "losses": 5,
+        "goalsFor": 73,
+        "goalsAgainst": 33,
+        "goalDifference": 40,
         "matchTypes": {
-          "league": 137,
+          "league": 32,
           "playoff": 1
         }
-      }
-    },
-    {
-      "id": "2010-2011",
-      "name": "2010-2011",
-      "matchCount": 2,
-      "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (1. Kademe)",
-      "summary": {
-        "matches": 2,
-        "wins": 1,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 1,
-        "goalsAgainst": 2,
-        "goalDifference": -1,
-        "matchTypes": {
-          "cup": 2
-        }
-      }
+      },
+      "standingsByWeekUrl": "seasons/2011-2012/standings_by_week.json"
     }
   ],
   "global": {
@@ -342,17 +307,7 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778856998,
-  "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-15T14:56:38.049192Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v2.9-speed-complete-accuracy",
-  "processedSeasonsInLastRun": [
-    "2013-2014",
-    "2012-2013",
-    "2011-2012",
-    "2010-2011"
-  ],
-  "standingsUpdatedAt": "2026-05-15T15:02:29.558288Z",
-  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+  "factoryVersion": "v3.2-senior-professional-guard-cleaner",
+  "seniorProfessionalGuard": true
 }

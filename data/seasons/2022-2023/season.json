@@ -2,9 +2,9 @@
   "id": "2022-2023",
   "name": "2022-2023",
   "competition": "TFF 2.Lig (Profesyonel Takım)",
-  "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.9-speed-complete-accuracy",
-  "updatedAt": "2026-05-15T06:17:26.438413Z",
+  "sourcePolicy": "TFF senior professional only",
+  "factoryVersion": "v3.2-senior-professional-guard-cleaner",
+  "updatedAt": "2026-05-15T17:30:57.857847Z",
   "summary": {
     "matches": 38,
     "wins": 6,
@@ -15,11 +15,7 @@
     "goalDifference": -44,
     "matchTypes": {
       "league": 38
-    },
-    "points": 25,
-    "rawPoints": 25,
-    "pointsDeducted": 0,
-    "finalRank": 17
+    }
   },
   "files": {
     "matchesIndex": "seasons/2022-2023/matches_index.json",

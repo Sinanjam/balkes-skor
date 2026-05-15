@@ -2,25 +2,21 @@
   "id": "2024-2025",
   "name": "2024-2025",
   "competition": "Nesine 3. Lig (Profesyonel Takım)",
-  "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.9-speed-complete-accuracy",
-  "updatedAt": "2026-05-15T06:12:08.418203Z",
+  "sourcePolicy": "TFF senior professional only",
+  "factoryVersion": "v3.2-senior-professional-guard-cleaner",
+  "updatedAt": "2026-05-15T17:30:57.783829Z",
   "summary": {
     "matches": 33,
     "wins": 18,
     "draws": 6,
     "losses": 9,
-    "goalsFor": 54,
-    "goalsAgainst": 27,
-    "goalDifference": 27,
+    "goalsFor": 56,
+    "goalsAgainst": 30,
+    "goalDifference": 26,
     "matchTypes": {
       "league": 30,
       "playoff": 3
-    },
-    "points": 56,
-    "rawPoints": 56,
-    "pointsDeducted": 0,
-    "finalRank": 2
+    }
   },
   "files": {
     "matchesIndex": "seasons/2024-2025/matches_index.json",
