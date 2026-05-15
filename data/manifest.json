@@ -2,7 +2,7 @@
   "app": "Balkes Skor",
   "schemaVersion": 3,
   "dataVersion": 1,
-  "generatedAt": "2026-05-15T17:44:29.300083Z",
+  "generatedAt": "2026-05-15T18:39:44.775103Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -35,17 +35,13 @@
         "wins": 18,
         "draws": 6,
         "losses": 9,
-        "goalsFor": 54,
-        "goalsAgainst": 27,
-        "goalDifference": 27,
+        "goalsFor": 56,
+        "goalsAgainst": 30,
+        "goalDifference": 26,
         "matchTypes": {
           "league": 30,
           "playoff": 3
-        },
-        "points": 56,
-        "rawPoints": 56,
-        "pointsDeducted": 0,
-        "finalRank": 2
+        }
       },
       "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
     },
@@ -59,16 +55,12 @@
         "wins": 7,
         "draws": 12,
         "losses": 9,
-        "goalsFor": 27,
-        "goalsAgainst": 30,
-        "goalDifference": -3,
+        "goalsFor": 28,
+        "goalsAgainst": 32,
+        "goalDifference": -4,
         "matchTypes": {
           "league": 28
-        },
-        "points": 33,
-        "rawPoints": 33,
-        "pointsDeducted": 0,
-        "finalRank": 8
+        }
       },
       "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
     },
@@ -87,11 +79,7 @@
         "goalDifference": -44,
         "matchTypes": {
           "league": 38
-        },
-        "points": 25,
-        "rawPoints": 25,
-        "pointsDeducted": 0,
-        "finalRank": 17
+        }
       },
       "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
     },
@@ -110,7 +98,11 @@
         "goalDifference": -51,
         "matchTypes": {
           "league": 36
-        }
+        },
+        "points": 12,
+        "rawPoints": 12,
+        "pointsDeducted": 0,
+        "finalRank": 19
       },
       "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
     },
@@ -129,7 +121,11 @@
         "goalDifference": -18,
         "matchTypes": {
           "league": 34
-        }
+        },
+        "points": 35,
+        "rawPoints": 35,
+        "pointsDeducted": 0,
+        "finalRank": 13
       },
       "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
     },
@@ -143,12 +139,16 @@
         "wins": 8,
         "draws": 11,
         "losses": 11,
-        "goalsFor": 30,
-        "goalsAgainst": 36,
-        "goalDifference": -6,
+        "goalsFor": 36,
+        "goalsAgainst": 48,
+        "goalDifference": -12,
         "matchTypes": {
           "league": 30
-        }
+        },
+        "points": 38,
+        "rawPoints": 38,
+        "pointsDeducted": 0,
+        "finalRank": 13
       },
       "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
     },
@@ -322,6 +322,6 @@
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v3.2-senior-professional-guard-cleaner",
   "seniorProfessionalGuard": true,
-  "standingsUpdatedAt": "2026-05-15T18:04:38.090138Z",
+  "standingsUpdatedAt": "2026-05-15T18:48:38.007623Z",
   "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }
