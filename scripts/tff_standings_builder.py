@@ -23,6 +23,7 @@ import subprocess
 import sys
 import time
 import urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import urllib.request
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -48,6 +49,7 @@ try:
         is_balkes,
         norm,
         parse_detail,
+        parse_date_any,
         read_json,
         season_bounds,
         tff_url,
@@ -59,7 +61,7 @@ except Exception as exc:  # pragma: no cover
 
 TFF = "https://www.tff.org/Default.aspx"
 DEFAULT_PENALTIES = "data/standings_penalties.json"
-BUILDER_VERSION = "standings-builder-v1-pc-nix-fish"
+BUILDER_VERSION = "standings-builder-v2-fast-safe"
 
 
 def now() -> str:
@@ -138,15 +140,32 @@ def build_item_urls(item: dict[str, Any], week: int | None = None) -> list[tuple
     if week is None:
         return bases
 
+    # Fast/default path: TFF league pages use `hafta` for weekly fixture/table views.
+    # The v1 builder tried 5 different parameter names for every week, causing
+    # 5x network requests. Fallback variants are handled by build_week_urls().
+    return build_week_urls(bases, week, ["hafta"])
+
+
+def build_week_urls(bases: list[tuple[str, str]], week: int, keys: list[str]) -> list[tuple[str, str]]:
+    urls: list[tuple[str, str]] = []
     for label, base in bases:
         parsed = urllib.parse.urlparse(base)
         qs = dict(urllib.parse.parse_qsl(parsed.query, keep_blank_values=True))
-        for key in ["hafta", "Hafta", "haftaNo", "haftaID", "week"]:
+        for key in keys:
             wqs = dict(qs)
             wqs[key] = str(week)
             url = urllib.parse.urlunparse(parsed._replace(query=urllib.parse.urlencode(wqs)))
             urls.append((f"{label}_{key}_{week:02d}", url))
     return urls
+
+
+def week_param_candidates(mode: str) -> list[str]:
+    if mode == "fast":
+        return ["hafta"]
+    if mode == "wide":
+        return ["hafta", "Hafta", "haftaNo", "haftaID", "week"]
+    # smart: start narrow, expand only if the week produced no useful page.
+    return ["hafta", "Hafta", "haftaNo", "haftaID", "week"]
 
 
 def maybe_header_map(cells: list[str]) -> dict[str, int]:
@@ -449,51 +468,267 @@ def detail_is_league_match(detail: dict[str, Any], season: str, seed: dict[str, 
     return True
 
 
-def collect_week_match_ids(item: dict[str, Any], season: str, raw_root: Path, sleep_s: float, force: bool, max_week: int) -> dict[str, int]:
-    by_id: dict[str, int] = {}
-    for week in range(1, max_week + 1):
-        found_this_week = set()
-        for label, url in build_item_urls(item, week):
-            ok, raw = fetch_url(url, raw_root / season / "weekly_pages" / f"{safe_name(label)}.html", sleep_s, force)
-            if not ok:
+
+def parse_score_text(value: str) -> tuple[int | None, int | None, str, bool]:
+    text = clean_text(value)
+    # Avoid dates such as 07.09.2025; prefer explicit score separators.
+    m = re.search(r"(?<!\d)(\d{1,2})\s*[-–]\s*(\d{1,2})(?!\d)", text)
+    if not m:
+        return None, None, "", False
+    h, a = int(m.group(1)), int(m.group(2))
+    return h, a, f"{h}-{a}", True
+
+
+def cell_looks_like_team(value: str) -> bool:
+    text = clean_text(value)
+    if not text or len(norm(text)) < 3:
+        return False
+    n = norm(text)
+    bad = {
+        "detay", "mac detay", "maç detay", "hafta", "tarih", "saat", "skor", "sonuc", "sonuç",
+        "stadyum", "stad", "hakem", "rapor", "puan durumu", "fikstur", "fikstür",
+    }
+    if n in bad or any(n.startswith(x + " ") for x in bad):
+        return False
+    if parse_date_any(text):
+        return False
+    if re.fullmatch(r"[+−\-]?\d+", text.replace(" ", "")):
+        return False
+    if re.fullmatch(r"\d{1,2}[:.]\d{2}", text):
+        return False
+    if re.search(r"\b\d{1,2}\s*[-–]\s*\d{1,2}\b", text):
+        return False
+    return bool(re.search(r"[A-Za-zÇĞİÖŞÜçğıöşü]", text))
+
+
+def html_unescape(value: Any) -> str:
+    import html as _html
+    return _html.unescape(str(value or ""))
+
+
+def parse_listing_matches(raw: str, season: str, week: int, source_url: str, seed: dict[str, Any]) -> dict[str, dict[str, Any]]:
+    """Best-effort fixture parser for TFF weekly pages.
+
+    It returns only conservative rows where macId + date in season + two team
+    names + played score are visible in the listing. Those rows are enough to
+    compute the table without opening each match detail page.
+    """
+    sp = soup(raw)
+    if not sp:
+        return {}
+    out: dict[str, dict[str, Any]] = {}
+    for tr in sp.find_all("tr"):
+        hrefs = [a.get("href") or "" for a in tr.find_all("a", href=True)]
+        mids: list[str] = []
+        for h in hrefs:
+            mids.extend(re.findall(r"[?&]macId=(\d+)", html_unescape(h), flags=re.I))
+        if not mids:
+            continue
+        mid = sorted(set(mids), key=lambda x: int(x))[0]
+        cells = [clean_text(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
+        cells = [c for c in cells if c]
+        row_text = clean_text(tr.get_text(" ", strip=True))
+        hscore, ascore, score_display, played = parse_score_text(row_text)
+        if not played:
+            continue
+        match_date = parse_date_any(row_text)
+        if not match_date or not date_in_season(match_date, season, seed):
+            continue
+        score_idx = None
+        for i, c in enumerate(cells):
+            if parse_score_text(c)[3]:
+                score_idx = i
+                break
+        team_cells = [(i, clean_team(c)) for i, c in enumerate(cells) if cell_looks_like_team(c)]
+        cleaned: list[tuple[int, str]] = []
+        for i, t in team_cells:
+            if len(t) > 80:
                 continue
-            for mid in extract_match_ids(raw):
-                found_this_week.add(mid)
+            if not cleaned or norm(cleaned[-1][1]) != norm(t):
+                cleaned.append((i, t))
+        home = away = ""
+        if score_idx is not None:
+            before = [(i, t) for i, t in cleaned if i < score_idx]
+            after = [(i, t) for i, t in cleaned if i > score_idx]
+            if before and after:
+                home, away = before[-1][1], after[0][1]
+        if not home or not away:
+            sane = [t for _, t in cleaned if not norm(t).startswith("mac detay")]
+            if len(sane) >= 2:
+                home, away = sane[0], sane[1]
+        if not home or not away or norm(home) == norm(away):
+            continue
+        detail = {
+            "id": str(mid),
+            "season": season,
+            "competition": "Lig",
+            "competitionType": "league",
+            "competitionLabel": "Lig",
+            "date": match_date,
+            "time": "",
+            "dateDisplay": match_date,
+            "homeTeam": home,
+            "awayTeam": away,
+            "matchType": "league",
+            "matchTypeLabel": "Lig",
+            "type": "league",
+            "typeLabel": "Lig",
+            "score": {"home": hscore, "away": ascore, "display": score_display, "played": True},
+            "source": {"name": "TFF", "url": source_url, "retrievedAt": now(), "sourceType": "official_tff_weekly_fixture_row"},
+            "standingsWeek": week,
+        }
+        out[str(mid)] = finalize_listing_detail(detail)
+    return out
+
+
+def finalize_listing_detail(detail: dict[str, Any]) -> dict[str, Any]:
+    home = clean_team(detail.get("homeTeam", ""))
+    away = clean_team(detail.get("awayTeam", ""))
+    score = detail.get("score") or {}
+    h, a = score.get("home"), score.get("away")
+    is_home = is_balkes(home)
+    is_away = is_balkes(away)
+    gf = h if is_home else a if is_away else None
+    ga = a if is_home else h if is_away else None
+    result = ""
+    if gf is not None and ga is not None:
+        result = "W" if int(gf) > int(ga) else "D" if int(gf) == int(ga) else "L"
+    detail["homeTeam"] = home
+    detail["awayTeam"] = away
+    detail["balkes"] = {
+        "isHome": bool(is_home),
+        "isAway": bool(is_away),
+        "opponent": away if is_home else home if is_away else "",
+        "goalsFor": gf,
+        "goalsAgainst": ga,
+        "result": result,
+    }
+    return detail
+
+def collect_week_fixtures(item: dict[str, Any], season: str, seed: dict[str, Any], raw_root: Path, sleep_s: float, force: bool, max_week: int, week_param_mode: str = "smart") -> tuple[dict[str, int], dict[str, dict[str, Any]], dict[str, Any]]:
+    """Collect match IDs and conservative listing-level match rows.
+
+    v1 tried 5 param names for every week. v2 learns the working param per base
+    URL: `hafta` first, fallback variants only when a week returns no IDs/matches.
+    """
+    by_id: dict[str, int] = {}
+    listing_details: dict[str, dict[str, Any]] = {}
+    bases = build_item_urls(item, None)
+    preferred_key: dict[str, str] = {}
+    stats: dict[str, Any] = {"weeklyPagesFetched": 0, "fallbackParamAttempts": 0, "listingRowsParsed": 0, "workingWeekParams": {}}
+    all_keys = week_param_candidates(week_param_mode)
+    for week in range(1, max_week + 1):
+        found_this_week: set[str] = set()
+        parsed_this_week = 0
+        for base_label, base_url in bases:
+            keys = [preferred_key[base_label]] if base_label in preferred_key else ["hafta"]
+            for pass_no in [1, 2]:
+                useful = False
+                for key in keys:
+                    for label, url in build_week_urls([(base_label, base_url)], week, [key]):
+                        ok, raw = fetch_url(url, raw_root / season / "weekly_pages" / f"{safe_name(label)}.html", sleep_s, force)
+                        stats["weeklyPagesFetched"] += 1
+                        if not ok:
+                            continue
+                        ids = set(extract_match_ids(raw))
+                        parsed = parse_listing_matches(raw, season, week, url, seed)
+                        if ids or parsed:
+                            found_this_week.update(ids)
+                            for mid, detail in parsed.items():
+                                listing_details[mid] = detail
+                                found_this_week.add(mid)
+                            parsed_this_week += len(parsed)
+                            preferred_key[base_label] = key
+                            stats["workingWeekParams"][base_label] = key
+                            useful = True
+                            break
+                    if useful:
+                        break
+                if useful or week_param_mode == "fast" or pass_no == 2:
+                    break
+                # Fallback only for empty/unrecognized week pages.
+                keys = [k for k in all_keys if k != "hafta"]
+                stats["fallbackParamAttempts"] += len(keys)
         for mid in found_this_week:
             by_id.setdefault(mid, week)
-        log(f"{season}: hafta {week}/{max_week} fikstür ID={len(found_this_week)} toplamID={len(by_id)}")
+        stats["listingRowsParsed"] += parsed_this_week
+        log(f"{season}: hafta {week}/{max_week} fikstürID={len(found_this_week)} listingRows={parsed_this_week} toplamID={len(by_id)}")
     if not by_id:
-        for label, url in build_item_urls(item, None):
+        for label, url in bases:
             ok, raw = fetch_url(url, raw_root / season / "weekly_pages" / f"{safe_name(label)}_base.html", sleep_s, force)
+            stats["weeklyPagesFetched"] += 1
             if not ok:
                 continue
             for mid in extract_match_ids(raw):
                 by_id.setdefault(mid, 0)
+    return by_id, listing_details, stats
+
+
+def collect_week_match_ids(item: dict[str, Any], season: str, raw_root: Path, sleep_s: float, force: bool, max_week: int) -> dict[str, int]:
+    by_id, _details, _stats = collect_week_fixtures(item, season, {}, raw_root, sleep_s, force, max_week, "smart")
     return by_id
 
 
-def fetch_full_league_matches(item: dict[str, Any], season: str, seed: dict[str, Any], raw_root: Path, sleep_s: float, force: bool, max_week: int, probe_limit: int) -> list[dict[str, Any]]:
-    week_by_id = collect_week_match_ids(item, season, raw_root, sleep_s, force, max_week)
+def fetch_detail_worker(mid: str, season: str, raw_root: Path, sleep_s: float, force: bool, seed: dict[str, Any]) -> tuple[str, dict[str, Any] | None, str]:
+    url = tff_url(pageID=29, macId=mid)
+    ok, raw = fetch_url(url, raw_root / season / "match_details" / f"{mid}.html", sleep_s, force)
+    if not ok:
+        return mid, None, "fetch_failed"
+    try:
+        detail = parse_detail(mid, raw, season, url, seed)
+    except Exception as exc:
+        return mid, None, f"parse_error:{exc}"
+    if not detail_is_league_match(detail, season, seed):
+        return mid, None, "not_league_or_invalid"
+    return mid, detail, "ok"
+
+
+def fetch_full_league_matches(item: dict[str, Any], season: str, seed: dict[str, Any], raw_root: Path, sleep_s: float, force: bool, max_week: int, probe_limit: int, workers: int = 4, detail_fetch_mode: str = "missing", week_param_mode: str = "smart") -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    week_by_id, listing_details, stats = collect_week_fixtures(item, season, seed, raw_root, sleep_s, force, max_week, week_param_mode)
     mids = sorted(week_by_id.keys(), key=lambda x: int(x))
     if probe_limit > 0:
         mids = mids[:probe_limit]
-    details: list[dict[str, Any]] = []
-    for idx, mid in enumerate(mids, 1):
-        url = tff_url(pageID=29, macId=mid)
-        ok, raw = fetch_url(url, raw_root / season / "match_details" / f"{mid}.html", sleep_s, force)
-        if not ok:
-            continue
-        try:
-            detail = parse_detail(mid, raw, season, url, seed)
-        except Exception as exc:
-            log(f"{season}: macId={mid} parse hata: {exc}")
-            continue
-        if not detail_is_league_match(detail, season, seed):
-            continue
-        detail["standingsWeek"] = int(week_by_id.get(mid) or 0)
-        details.append(detail)
-        if idx % 50 == 0 or idx == len(mids):
-            log(f"{season}: detay {idx}/{len(mids)} ligMaçı={len(details)}")
+    details_by_id: dict[str, dict[str, Any]] = {}
+    if detail_fetch_mode != "all":
+        for mid in mids:
+            d = listing_details.get(mid)
+            if d and detail_is_league_match(d, season, seed):
+                details_by_id[mid] = d
+    if detail_fetch_mode == "none":
+        to_fetch: list[str] = []
+    elif detail_fetch_mode == "all":
+        to_fetch = mids
+    else:
+        to_fetch = [mid for mid in mids if mid not in details_by_id]
+    stats["detailCandidates"] = len(mids)
+    stats["detailFetchNeeded"] = len(to_fetch)
+    stats["listingDetailsUsed"] = len(details_by_id)
+    rejected: dict[str, int] = {}
+    if to_fetch:
+        log(f"{season}: detay fetch gerekli={len(to_fetch)} workers={workers} mode={detail_fetch_mode}")
+    if workers <= 1:
+        iterator = (fetch_detail_worker(mid, season, raw_root, sleep_s, force, seed) for mid in to_fetch)
+        for idx, (mid, detail, reason) in enumerate(iterator, 1):
+            if detail:
+                detail["standingsWeek"] = int(week_by_id.get(mid) or 0)
+                details_by_id[mid] = detail
+            else:
+                rejected[reason] = rejected.get(reason, 0) + 1
+            if idx % 50 == 0 or idx == len(to_fetch):
+                log(f"{season}: detay {idx}/{len(to_fetch)} ligMaçı={len(details_by_id)}")
+    else:
+        with ThreadPoolExecutor(max_workers=max(1, workers)) as ex:
+            futs = {ex.submit(fetch_detail_worker, mid, season, raw_root, sleep_s, force, seed): mid for mid in to_fetch}
+            for idx, fut in enumerate(as_completed(futs), 1):
+                mid, detail, reason = fut.result()
+                if detail:
+                    detail["standingsWeek"] = int(week_by_id.get(mid) or 0)
+                    details_by_id[mid] = detail
+                else:
+                    rejected[reason] = rejected.get(reason, 0) + 1
+                if idx % 50 == 0 or idx == len(to_fetch):
+                    log(f"{season}: detay {idx}/{len(to_fetch)} ligMaçı={len(details_by_id)}")
+    details = list(details_by_id.values())
     # If week is unknown, assign by date order roughly using match batches per round.
     if details and all(int(d.get("standingsWeek") or 0) == 0 for d in details):
         teams = sorted({norm(d["homeTeam"]) for d in details} | {norm(d["awayTeam"]) for d in details})
@@ -501,13 +736,21 @@ def fetch_full_league_matches(item: dict[str, Any], season: str, seed: dict[str,
         details.sort(key=lambda d: (d.get("date") or "", int(d.get("id") or 0)))
         for i, d in enumerate(details):
             d["standingsWeek"] = min(max_week, i // per_round + 1)
-    return details
+    stats["detailsRejected"] = rejected
+    return details, stats
 
 
 def compute_weekly_standings(matches: list[dict[str, Any]], season: str, max_week: int, penalties: dict[str, Any]) -> list[dict[str, Any]]:
     snapshots: list[dict[str, Any]] = []
     stats: dict[str, TeamStats] = {}
     by_week: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    # Initialize every team before week 1 so bye weeks / not-yet-played teams
+    # still appear with 0 matches instead of popping into the table later.
+    for m in matches:
+        for side in ["homeTeam", "awayTeam"]:
+            team = clean_team(m.get(side, ""))
+            if team:
+                stats.setdefault(norm(team), TeamStats(team))
     for m in matches:
         week = int(m.get("standingsWeek") or 0)
         if week <= 0:
@@ -677,8 +920,12 @@ def process_one(season: str, item: dict[str, Any], args: argparse.Namespace, see
         report["warnings"].append("Resmi haftalık tablo bulunamadı.")
     if not snapshots and args.mode in {"auto", "computed-only"}:
         log(f"{season}: maç detaylarından hesaplama deneniyor")
-        matches = fetch_full_league_matches(item, season, seed, raw_root, args.sleep, args.force, max_week, args.probe_limit)
+        matches, fetch_stats = fetch_full_league_matches(
+            item, season, seed, raw_root, args.sleep, args.force, max_week,
+            args.probe_limit, args.workers, args.detail_fetch_mode, args.week_param_mode
+        )
         report["matchesUsed"] = len(matches)
+        report["fetchStats"] = fetch_stats
         teams = sorted({clean_team(m.get("homeTeam", "")) for m in matches} | {clean_team(m.get("awayTeam", "")) for m in matches})
         teams = [t for t in teams if t]
         report["teams"] = len(teams)
@@ -714,9 +961,12 @@ def main() -> int:
     ap.add_argument("--mode", choices=["auto", "official-only", "computed-only"], default="auto")
     ap.add_argument("--default-max-week", type=int, default=34)
     ap.add_argument("--probe-limit", type=int, default=2500)
+    ap.add_argument("--workers", type=int, default=4, help="Parallel detail fetch workers. Use 1 for fully serial/polite mode.")
+    ap.add_argument("--detail-fetch-mode", choices=["missing", "all", "none"], default="missing", help="missing=listing rows first, details only for missing rows; all=verify every ID; none=listing-only fast mode.")
+    ap.add_argument("--week-param-mode", choices=["smart", "fast", "wide"], default="smart", help="smart tries hafta first then fallbacks only when needed; fast uses only hafta; wide tries all params.")
     ap.add_argument("--min-match-coverage", type=float, default=0.55)
     ap.add_argument("--allow-partial", action="store_true")
-    ap.add_argument("--sleep", type=float, default=0.8)
+    ap.add_argument("--sleep", type=float, default=0.25)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--commit", action="store_true")
     ap.add_argument("--push", action="store_true")
@@ -747,11 +997,13 @@ def main() -> int:
     }
     write_json(reports_root / "last_run_summary.json", summary)
     if args.commit or args.push:
+        # Do not add raw HTML or tee logs. Keep committed reports to compact JSON only.
+        report_jsons = [str(p) for p in sorted(reports_root.glob("*.json"))]
         paths = [
             str(data_root / "manifest.json"),
             str(data_root / "standings_penalties.json"),
             str(data_root / "seasons"),
-            str(reports_root),
+            *report_jsons,
         ]
         message = f"Build weekly standings from {seasons[0]} ({len(seasons)} seasons)"
         commit_and_push(paths, message, args.push, args.branch)

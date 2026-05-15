@@ -5,6 +5,9 @@ set MODE "auto"
 set PROBE_LIMIT "2500"
 set AUTO_PUSH "false"
 set FORCE "false"
+set WORKERS "4"
+set DETAIL_MODE "missing"
+set WEEK_PARAM_MODE "smart"
 
 if test -n "$argv[1]"; set START_SEASON "$argv[1]"; end
 if test -n "$argv[2]"; set MAX_SEASONS "$argv[2]"; end
@@ -12,6 +15,9 @@ if test -n "$argv[3]"; set MODE "$argv[3]"; end
 if test -n "$argv[4]"; set PROBE_LIMIT "$argv[4]"; end
 if test -n "$argv[5]"; set AUTO_PUSH "$argv[5]"; end
 if test -n "$argv[6]"; set FORCE "$argv[6]"; end
+if test -n "$argv[7]"; set WORKERS "$argv[7]"; end
+if test -n "$argv[8]"; set DETAIL_MODE "$argv[8]"; end
+if test -n "$argv[9]"; set WEEK_PARAM_MODE "$argv[9]"; end
 
 mkdir -p reports/standings sources/tff/standings_raw
 set LOG reports/standings/run_(date +%Y%m%d_%H%M%S).log
@@ -23,6 +29,9 @@ echo "Mod: $MODE"
 echo "Probe limit: $PROBE_LIMIT"
 echo "Auto push: $AUTO_PUSH"
 echo "Force refetch: $FORCE"
+echo "Workers: $WORKERS"
+echo "Detail fetch mode: $DETAIL_MODE"
+echo "Week param mode: $WEEK_PARAM_MODE"
 
 set EXTRA_ARGS
 if test "$FORCE" = "true"
@@ -42,7 +51,10 @@ env PYTHONUNBUFFERED=1 python3 scripts/tff_standings_builder.py \
     --max-seasons "$MAX_SEASONS" \
     --mode "$MODE" \
     --probe-limit "$PROBE_LIMIT" \
-    --sleep 1.0 \
+    --workers "$WORKERS" \
+    --detail-fetch-mode "$DETAIL_MODE" \
+    --week-param-mode "$WEEK_PARAM_MODE" \
+    --sleep 0.25 \
     $EXTRA_ARGS 2>&1 | tee "$LOG"
 
 set STATUS $pipestatus[1]
