@@ -1,0 +1,1237 @@
+{
+  "id": "192861",
+  "matchCode": "22082",
+  "season": "2017-2018",
+  "competition": "Kadınlar 3.Ligi (Kadın Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "Avni Kalkavan - KOCAELİ",
+  "venue": "Avni Kalkavan - KOCAELİ",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2018-02-11",
+  "time": "12:00",
+  "dateDisplay": "2018-02-11 - 12:00",
+  "homeTeam": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+  "awayTeam": "Balıkesirspor",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 6,
+    "away": 2,
+    "display": "6-2",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "isAway": true,
+    "opponent": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+    "goalsFor": 2,
+    "goalsAgainst": 6,
+    "result": "L"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "BURAK CELEP"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "OKAN ORAL"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "BURAK ULAŞ"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "BURAK CELEP"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "OKAN ORAL"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "BURAK ULAŞ"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "starting11": [
+        {
+          "name": "SUDENUR YOLCU",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1719688"
+        },
+        {
+          "name": "LEYLA İLTER",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1911941"
+        },
+        {
+          "name": "SUDE YAVUZ",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1719670"
+        },
+        {
+          "name": "FATMA SARE ÖZTÜRK",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1428963"
+        },
+        {
+          "name": "DAMLA ÇOBAN",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1395212"
+        },
+        {
+          "name": "MEDİNE ERKAN",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1309424"
+        },
+        {
+          "name": "SÜMEYRA KIVANÇ",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1451796"
+        },
+        {
+          "name": "HELİN ATAÇ",
+          "number": 18,
+          "shirt_no": "18",
+          "tffPersonId": "1812015"
+        },
+        {
+          "name": "MERVE ŞIKKİBAR",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1168002"
+        },
+        {
+          "name": "ECE TEKMEN",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1719693"
+        },
+        {
+          "name": "ERVA KARAOVALI",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1842547"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "BAŞAK SEDA BAYRAM",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "2055659"
+        },
+        {
+          "name": "SILA GÜNER",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "2010333"
+        },
+        {
+          "name": "RABİA KOCATÜRK",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "2052940"
+        },
+        {
+          "name": "MELİSA GÜLEÇ",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "2011492"
+        },
+        {
+          "name": "BUSE DOĞAN",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1991814"
+        },
+        {
+          "name": "DAMLA YILDIZ",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "2011106"
+        },
+        {
+          "name": "KÜBRA DENİZ",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1719692"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "ÖZGE ARSLAN"
+        }
+      ],
+      "coach": "ÖZGE ARSLAN",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "BUSE ŞAHİN",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1252559"
+        },
+        {
+          "name": "RABİA BALABAN",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1527603"
+        },
+        {
+          "name": "EBRU AYDIN",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "974342"
+        },
+        {
+          "name": "YAREN ÇETİN",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1813312"
+        },
+        {
+          "name": "AÇELYA ÖZTÜRK",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1615766"
+        },
+        {
+          "name": "GÜLŞAH TARI",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1621453"
+        },
+        {
+          "name": "MERVE AKER",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1343047"
+        },
+        {
+          "name": "AYŞE ÖNAL",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1167996"
+        },
+        {
+          "name": "ESRA SOLMAZ",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1309432"
+        },
+        {
+          "name": "NESLİHAN DEMİROĞLU",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1342370"
+        },
+        {
+          "name": "GÖZDE GÜL",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1165780"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "BEYZA NUR BUDAK",
+          "number": 20,
+          "shirt_no": "20",
+          "tffPersonId": "1914139"
+        },
+        {
+          "name": "TUĞBA TÜRKER",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1717239"
+        },
+        {
+          "name": "EBRU YAŞAR",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1814609"
+        },
+        {
+          "name": "YAĞMUR DİREK",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1209107"
+        },
+        {
+          "name": "SEVİLAY SAYGI",
+          "number": 23,
+          "shirt_no": "23",
+          "tffPersonId": "1252712"
+        },
+        {
+          "name": "ÜLKÜHAN KÖSE",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1657014"
+        },
+        {
+          "name": "FATMA EROĞLU",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1614045"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "NAHİT ÖZDAYI"
+        }
+      ],
+      "coach": "NAHİT ÖZDAYI",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "AÇELYA ÖZTÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 6,
+      "tffPersonId": "1615766"
+    },
+    {
+      "name": "AYŞE ÖNAL",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 7,
+      "tffPersonId": "1167996"
+    },
+    {
+      "name": "BEYZA NUR BUDAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 20,
+      "tffPersonId": "1914139"
+    },
+    {
+      "name": "BUSE ŞAHİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 1,
+      "tffPersonId": "1252559"
+    },
+    {
+      "name": "EBRU AYDIN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 3,
+      "tffPersonId": "974342"
+    },
+    {
+      "name": "EBRU YAŞAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 14,
+      "tffPersonId": "1814609"
+    },
+    {
+      "name": "ESRA SOLMAZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 9,
+      "tffPersonId": "1309432"
+    },
+    {
+      "name": "FATMA EROĞLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 2,
+      "tffPersonId": "1614045"
+    },
+    {
+      "name": "GÖZDE GÜL",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 19,
+      "tffPersonId": "1165780"
+    },
+    {
+      "name": "GÜLŞAH TARI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 12,
+      "tffPersonId": "1621453"
+    },
+    {
+      "name": "MERVE AKER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 11,
+      "tffPersonId": "1343047"
+    },
+    {
+      "name": "NAHİT ÖZDAYI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "NESLİHAN DEMİROĞLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 5,
+      "tffPersonId": "1342370"
+    },
+    {
+      "name": "RABİA BALABAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 16,
+      "tffPersonId": "1527603"
+    },
+    {
+      "name": "SEVİLAY SAYGI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 23,
+      "tffPersonId": "1252712"
+    },
+    {
+      "name": "TUĞBA TÜRKER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 10,
+      "tffPersonId": "1717239"
+    },
+    {
+      "name": "ÜLKÜHAN KÖSE",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 17,
+      "tffPersonId": "1657014"
+    },
+    {
+      "name": "YAĞMUR DİREK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 8,
+      "tffPersonId": "1209107"
+    },
+    {
+      "name": "YAREN ÇETİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1813312"
+    },
+    {
+      "name": "BAŞAK SEDA BAYRAM",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "2055659"
+    },
+    {
+      "name": "BUSE DOĞAN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 16,
+      "tffPersonId": "1991814"
+    },
+    {
+      "name": "DAMLA ÇOBAN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 17,
+      "tffPersonId": "1395212"
+    },
+    {
+      "name": "DAMLA YILDIZ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 2,
+      "tffPersonId": "2011106"
+    },
+    {
+      "name": "ECE TEKMEN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11",
+        "goal",
+        "yellow_card"
+      ],
+      "number": 10,
+      "tffPersonId": "1719693"
+    },
+    {
+      "name": "ERVA KARAOVALI",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11",
+        "goal",
+        "substitution_out"
+      ],
+      "number": 3,
+      "tffPersonId": "1842547"
+    },
+    {
+      "name": "FATMA SARE ÖZTÜRK",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1428963"
+    },
+    {
+      "name": "HELİN ATAÇ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 18,
+      "tffPersonId": "1812015"
+    },
+    {
+      "name": "KÜBRA DENİZ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 6,
+      "tffPersonId": "1719692"
+    },
+    {
+      "name": "LEYLA İLTER",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1911941"
+    },
+    {
+      "name": "MEDİNE ERKAN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 13,
+      "tffPersonId": "1309424"
+    },
+    {
+      "name": "MELİSA GÜLEÇ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 7,
+      "tffPersonId": "2011492"
+    },
+    {
+      "name": "MERVE ŞIKKİBAR",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 9,
+      "tffPersonId": "1168002"
+    },
+    {
+      "name": "ÖZGE ARSLAN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "RABİA KOCATÜRK",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 15,
+      "tffPersonId": "2052940"
+    },
+    {
+      "name": "SILA GÜNER",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 14,
+      "tffPersonId": "2010333"
+    },
+    {
+      "name": "SUDE YAVUZ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "1719670"
+    },
+    {
+      "name": "SUDENUR YOLCU",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1719688"
+    },
+    {
+      "name": "SÜMEYRA KIVANÇ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 8,
+      "tffPersonId": "1451796"
+    },
+    {
+      "name": "SÜMEYRA KIVANÇ,45+",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "goal"
+      ],
+      "tffPersonId": "1451796"
+    },
+    {
+      "name": "SÜMEYRA KIVANÇ,90+",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "roles": [
+        "goal"
+      ],
+      "tffPersonId": "1451796"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ECE TEKMEN",
+      "scorer": "ECE TEKMEN",
+      "raw": "ECE TEKMEN,5.dk (F)",
+      "minute": 5,
+      "minuteRaw": "ECE TEKMEN,5.dk",
+      "goalType": "F",
+      "tffPersonId": "1719693"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SÜMEYRA KIVANÇ,45+",
+      "scorer": "SÜMEYRA KIVANÇ,45+",
+      "raw": "SÜMEYRA KIVANÇ,45+1.dk (F)",
+      "minute": 45,
+      "minuteRaw": "SÜMEYRA KIVANÇ,45+1.dk",
+      "goalType": "F",
+      "tffPersonId": "1451796"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SÜMEYRA KIVANÇ",
+      "scorer": "SÜMEYRA KIVANÇ",
+      "raw": "SÜMEYRA KIVANÇ,55.dk (P)",
+      "minute": 55,
+      "minuteRaw": "SÜMEYRA KIVANÇ,55.dk",
+      "goalType": "P",
+      "tffPersonId": "1451796"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ERVA KARAOVALI",
+      "scorer": "ERVA KARAOVALI",
+      "raw": "ERVA KARAOVALI,65.dk (F)",
+      "minute": 65,
+      "minuteRaw": "ERVA KARAOVALI,65.dk",
+      "goalType": "F",
+      "tffPersonId": "1842547"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SÜMEYRA KIVANÇ,90+",
+      "scorer": "SÜMEYRA KIVANÇ,90+",
+      "raw": "SÜMEYRA KIVANÇ,90+2.dk (F)",
+      "minute": 90,
+      "minuteRaw": "SÜMEYRA KIVANÇ,90+2.dk",
+      "goalType": "F",
+      "tffPersonId": "1451796"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ECE TEKMEN",
+      "scorer": "ECE TEKMEN",
+      "raw": "ECE TEKMEN,77.dk (F)",
+      "minute": 77,
+      "minuteRaw": "ECE TEKMEN,77.dk",
+      "goalType": "F",
+      "tffPersonId": "1719693"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "EBRU AYDIN",
+      "scorer": "EBRU AYDIN",
+      "raw": "EBRU AYDIN,35.dk (F)",
+      "minute": 35,
+      "minuteRaw": "EBRU AYDIN,35.dk",
+      "goalType": "F",
+      "tffPersonId": "974342"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "ESRA SOLMAZ",
+      "scorer": "ESRA SOLMAZ",
+      "raw": "ESRA SOLMAZ,82.dk (H)",
+      "minute": 82,
+      "minuteRaw": "ESRA SOLMAZ,82.dk",
+      "goalType": "H",
+      "tffPersonId": "1309432"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ECE TEKMEN",
+      "minute": 77,
+      "minuteRaw": "77.dk",
+      "tffPersonId": "1719693"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "BUSE ŞAHİN",
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "tffPersonId": "1252559"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "NESLİHAN DEMİROĞLU",
+      "minute": 56,
+      "minuteRaw": "56.dk",
+      "tffPersonId": "1342370"
+    },
+    {
+      "type": "substitution",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "order": 1,
+      "player_in": "KÜBRA DENİZ",
+      "player_out": "DAMLA ÇOBAN",
+      "playerIn": "KÜBRA DENİZ",
+      "playerOut": "DAMLA ÇOBAN",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "DAMLA ÇOBAN",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "KÜBRA DENİZ",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "order": 2,
+      "player_in": "SILA GÜNER",
+      "player_out": "ERVA KARAOVALI",
+      "playerIn": "SILA GÜNER",
+      "playerOut": "ERVA KARAOVALI",
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "minute_text": "75.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ERVA KARAOVALI",
+      "order": 2,
+      "minute": 75,
+      "minuteRaw": "75.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SILA GÜNER",
+      "order": 2,
+      "minute": 75,
+      "minuteRaw": "75.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "order": 3,
+      "player_in": "DAMLA YILDIZ",
+      "player_out": "LEYLA İLTER",
+      "playerIn": "DAMLA YILDIZ",
+      "playerOut": "LEYLA İLTER",
+      "minute": 65,
+      "minuteRaw": "65.dk",
+      "minute_text": "65.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "LEYLA İLTER",
+      "order": 3,
+      "minute": 65,
+      "minuteRaw": "65.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "DAMLA YILDIZ",
+      "order": 3,
+      "minute": 65,
+      "minuteRaw": "65.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "YAĞMUR DİREK",
+      "player_out": "GÖZDE GÜL",
+      "playerIn": "YAĞMUR DİREK",
+      "playerOut": "GÖZDE GÜL",
+      "minute": 79,
+      "minuteRaw": "79.dk",
+      "minute_text": "79.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "GÖZDE GÜL",
+      "order": 1,
+      "minute": 79,
+      "minuteRaw": "79.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "YAĞMUR DİREK",
+      "order": 1,
+      "minute": 79,
+      "minuteRaw": "79.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 2,
+      "player_in": "ÜLKÜHAN KÖSE",
+      "player_out": "AÇELYA ÖZTÜRK",
+      "playerIn": "ÜLKÜHAN KÖSE",
+      "playerOut": "AÇELYA ÖZTÜRK",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "AÇELYA ÖZTÜRK",
+      "order": 2,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "ÜLKÜHAN KÖSE",
+      "order": 2,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 3,
+      "player_in": "TUĞBA TÜRKER",
+      "player_out": "GÜLŞAH TARI",
+      "playerIn": "TUĞBA TÜRKER",
+      "playerOut": "GÜLŞAH TARI",
+      "minute": 68,
+      "minuteRaw": "68.dk",
+      "minute_text": "68.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "GÜLŞAH TARI",
+      "order": 3,
+      "minute": 68,
+      "minuteRaw": "68.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "TUĞBA TÜRKER",
+      "order": 3,
+      "minute": 68,
+      "minuteRaw": "68.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ECE TEKMEN",
+      "scorer": "ECE TEKMEN",
+      "raw": "ECE TEKMEN,5.dk (F)",
+      "minute": 5,
+      "minuteRaw": "ECE TEKMEN,5.dk",
+      "goalType": "F",
+      "tffPersonId": "1719693"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SÜMEYRA KIVANÇ,45+",
+      "scorer": "SÜMEYRA KIVANÇ,45+",
+      "raw": "SÜMEYRA KIVANÇ,45+1.dk (F)",
+      "minute": 45,
+      "minuteRaw": "SÜMEYRA KIVANÇ,45+1.dk",
+      "goalType": "F",
+      "tffPersonId": "1451796"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SÜMEYRA KIVANÇ",
+      "scorer": "SÜMEYRA KIVANÇ",
+      "raw": "SÜMEYRA KIVANÇ,55.dk (P)",
+      "minute": 55,
+      "minuteRaw": "SÜMEYRA KIVANÇ,55.dk",
+      "goalType": "P",
+      "tffPersonId": "1451796"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ERVA KARAOVALI",
+      "scorer": "ERVA KARAOVALI",
+      "raw": "ERVA KARAOVALI,65.dk (F)",
+      "minute": 65,
+      "minuteRaw": "ERVA KARAOVALI,65.dk",
+      "goalType": "F",
+      "tffPersonId": "1842547"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "SÜMEYRA KIVANÇ,90+",
+      "scorer": "SÜMEYRA KIVANÇ,90+",
+      "raw": "SÜMEYRA KIVANÇ,90+2.dk (F)",
+      "minute": 90,
+      "minuteRaw": "SÜMEYRA KIVANÇ,90+2.dk",
+      "goalType": "F",
+      "tffPersonId": "1451796"
+    },
+    {
+      "type": "goal",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ECE TEKMEN",
+      "scorer": "ECE TEKMEN",
+      "raw": "ECE TEKMEN,77.dk (F)",
+      "minute": 77,
+      "minuteRaw": "ECE TEKMEN,77.dk",
+      "goalType": "F",
+      "tffPersonId": "1719693"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "EBRU AYDIN",
+      "scorer": "EBRU AYDIN",
+      "raw": "EBRU AYDIN,35.dk (F)",
+      "minute": 35,
+      "minuteRaw": "EBRU AYDIN,35.dk",
+      "goalType": "F",
+      "tffPersonId": "974342"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "ESRA SOLMAZ",
+      "scorer": "ESRA SOLMAZ",
+      "raw": "ESRA SOLMAZ,82.dk (H)",
+      "minute": 82,
+      "minuteRaw": "ESRA SOLMAZ,82.dk",
+      "goalType": "H",
+      "tffPersonId": "1309432"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "ECE TEKMEN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "minute": 5,
+      "goalType": "F"
+    },
+    {
+      "player": "SÜMEYRA KIVANÇ,45+",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "minute": 45,
+      "goalType": "F"
+    },
+    {
+      "player": "SÜMEYRA KIVANÇ",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "minute": 55,
+      "goalType": "P"
+    },
+    {
+      "player": "ERVA KARAOVALI",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "minute": 65,
+      "goalType": "F"
+    },
+    {
+      "player": "SÜMEYRA KIVANÇ,90+",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "minute": 90,
+      "goalType": "F"
+    },
+    {
+      "player": "ECE TEKMEN",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "minute": 77,
+      "goalType": "F"
+    },
+    {
+      "player": "EBRU AYDIN",
+      "team": "Balıkesirspor",
+      "minute": 35,
+      "goalType": "F"
+    },
+    {
+      "player": "ESRA SOLMAZ",
+      "team": "Balıkesirspor",
+      "minute": 82,
+      "goalType": "H"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "player": "ECE TEKMEN",
+      "minute": 77,
+      "minuteRaw": "77.dk",
+      "tffPersonId": "1719693"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "BUSE ŞAHİN",
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "tffPersonId": "1252559"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "NESLİHAN DEMİROĞLU",
+      "minute": 56,
+      "minuteRaw": "56.dk",
+      "tffPersonId": "1342370"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "DAMLA ÇOBAN",
+      "player_out": "DAMLA ÇOBAN",
+      "playerOutTffPersonId": "1395212",
+      "playerIn": "KÜBRA DENİZ",
+      "player_in": "KÜBRA DENİZ",
+      "playerInTffPersonId": "1719692"
+    },
+    {
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "order": 2,
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "playerOut": "ERVA KARAOVALI",
+      "player_out": "ERVA KARAOVALI",
+      "playerOutTffPersonId": "1842547",
+      "playerIn": "SILA GÜNER",
+      "player_in": "SILA GÜNER",
+      "playerInTffPersonId": "2010333"
+    },
+    {
+      "team": "KOCAELİ BAYAN FUTBOL KULÜBÜ",
+      "order": 3,
+      "minute": 65,
+      "minuteRaw": "65.dk",
+      "playerOut": "LEYLA İLTER",
+      "player_out": "LEYLA İLTER",
+      "playerOutTffPersonId": "1911941",
+      "playerIn": "DAMLA YILDIZ",
+      "player_in": "DAMLA YILDIZ",
+      "playerInTffPersonId": "2011106"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 79,
+      "minuteRaw": "79.dk",
+      "playerOut": "GÖZDE GÜL",
+      "player_out": "GÖZDE GÜL",
+      "playerOutTffPersonId": "1165780",
+      "playerIn": "YAĞMUR DİREK",
+      "player_in": "YAĞMUR DİREK",
+      "playerInTffPersonId": "1209107"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 2,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "AÇELYA ÖZTÜRK",
+      "player_out": "AÇELYA ÖZTÜRK",
+      "playerOutTffPersonId": "1615766",
+      "playerIn": "ÜLKÜHAN KÖSE",
+      "player_in": "ÜLKÜHAN KÖSE",
+      "playerInTffPersonId": "1657014"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 3,
+      "minute": 68,
+      "minuteRaw": "68.dk",
+      "playerOut": "GÜLŞAH TARI",
+      "player_out": "GÜLŞAH TARI",
+      "playerOutTffPersonId": "1621453",
+      "playerIn": "TUĞBA TÜRKER",
+      "player_in": "TUĞBA TÜRKER",
+      "playerInTffPersonId": "1717239"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "KOCAELİ BAYAN FUTBOL KULÜBÜ BALIKESİR BÜYÜKŞEHİR BELEDİYESPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nKOCAELİ BAYAN FUTBOL KULÜBÜ\n6\nBALIKESİR BÜYÜKŞEHİR BELEDİYESPOR\n2\nKadınlar 3.Ligi (Kadın Takımı)\nMaç Kodu:\n22082\nAvni Kalkavan - KOCAELİ\n11.02.2018 - 12:00\nBURAK CELEP(Hakem)\nOKAN ORAL(1. Yardımcı Hakem)\nBURAK ULAŞ(2. Yardımcı Hakem)\nDUYGU KELEŞ(Gözlemci)\nİlk 11\n1.\nSUDENUR YOLCU\n11.\nLEYLA İLTER\n5.\nSUDE YAVUZ\n4.\nFATMA SARE ÖZTÜRK\n17.\nDAMLA ÇOBAN\n13.\nMEDİNE ERKAN\n8.\nSÜMEYRA KIVANÇ\n18.\nHELİN ATAÇ\n9.\nMERVE ŞIKKİBAR\n10.\nECE TEKMEN\n3.\nERVA KARAOVALI\nYedekler\n12.\nBAŞAK SEDA BAYRAM\n14.\nSILA GÜNER\n15.\nRABİA KOCATÜRK\n7.\nMELİSA GÜLEÇ\n16.\nBUSE DOĞAN\n2.\nDAMLA YILDIZ\n6.\nKÜBRA DENİZ\nTeknik Sorumlu\nÖZGE ARSLAN\nGoller\nECE TEKMEN,5.dk (F)\nSÜMEYRA KIVANÇ,45+1.dk (F)\nSÜMEYRA KIVANÇ,55.dk (P)\nERVA KARAOVALI,65.dk (F)\nSÜMEYRA KIVANÇ,90+2.dk (F)\nECE TEKMEN,77.dk (F)\nKartlar\nECE TEKMEN\n77.dk\nOyundan Çıkanlar\nDAMLA ÇOBAN\n46.dk\nERVA KARAOVALI\n75.dk\nLEYLA İLTER\n65.dk\nOyuna Girenler\nKÜBRA DENİZ\n46.dk\nSILA GÜNER\n75.dk\nDAMLA YILDIZ\n65.dk\nİlk 11\n1.\nBUSE ŞAHİN\n16.\nRABİA BALABAN\n3.\nEBRU AYDIN\n4.\nYAREN ÇETİN\n6.\nAÇELYA ÖZTÜRK\n12.\nGÜLŞAH TARI\n11.\nMERVE AKER\n7.\nAYŞE ÖNAL\n9.\nESRA SOLMAZ\n5.\nNESLİHAN DEMİROĞLU\n19.\nGÖZDE GÜL\nYedekler\n20.\nBEYZA NUR BUDAK\n10.\nTUĞBA TÜRKER\n14.\nEBRU YAŞAR\n8.\nYAĞMUR DİREK\n23.\nSEVİLAY SAYGI\n17.\nÜLKÜHAN KÖSE\n2.\nFATMA EROĞLU\nTeknik Sorumlu\nNAHİT ÖZDAYI\nGoller\nEBRU AYDIN,35.dk (F)\nESRA SOLMAZ,82.dk (H)\nKartlar\nBUSE ŞAHİN\n55.dk\nNESLİHAN DEMİROĞLU\n56.dk\nOyundan Çıkanlar\nGÖZDE GÜL\n79.dk\nAÇELYA ÖZTÜRK\n46.dk\nGÜLŞAH TARI\n68.dk\nOyuna Girenler\nYAĞMUR DİREK\n79.dk\nÜLKÜHAN KÖSE\n46.dk\nTUĞBA TÜRKER\n68.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nBURAK CELEP(Hakem)\nOKAN ORAL(1. Yardımcı Hakem)\nBURAK ULAŞ(2. Yardımcı Hakem)\nDUYGU KELEŞ(Gözlemci)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "Goller\nECE TEKMEN,5.dk (F)\nSÜMEYRA KIVANÇ,45+1.dk (F)\nSÜMEYRA KIVANÇ,55.dk (P)\nERVA KARAOVALI,65.dk (F)\nSÜMEYRA KIVANÇ,90+2.dk (F)\nECE TEKMEN,77.dk (F)\n77.dk\nOyundan Çıkanlar\n46.dk\n75.dk\n65.dk\nOyuna Girenler\n46.dk\n75.dk\n65.dk\nGoller\nEBRU AYDIN,35.dk (F)\nESRA SOLMAZ,82.dk (H)\n55.dk\n56.dk\nOyundan Çıkanlar\n79.dk\n46.dk\n68.dk\nOyuna Girenler\n79.dk\n46.dk\n68.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 7,
+    "substitutesAway": 7,
+    "goals": 8,
+    "cards": 3,
+    "substitutions": 6,
+    "players": 40
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=192861",
+    "retrievedAt": "2026-05-15T08:28:38.561798Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}

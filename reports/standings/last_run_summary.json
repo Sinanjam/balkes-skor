@@ -1,97 +1,55 @@
 {
-  "generatedAt": "2026-05-15T07:14:08.521891Z",
+  "generatedAt": "2026-05-15T12:05:59.042249Z",
   "builderVersion": "standings-builder-v3.1-chain-safe",
   "seasons": [
     {
-      "season": "2021-2022",
-      "generatedAt": "2026-05-15T07:06:05.258680Z",
-      "builderVersion": "standings-builder-v3.1-chain-safe",
-      "mode": "auto",
-      "maxWeek": 38,
-      "source": "official_tff_weekly_table",
-      "weeksGenerated": 38,
-      "teams": 19,
-      "matchesUsed": 0,
-      "penaltiesApplied": 0,
-      "warnings": [],
-      "balkesFinal": {
-        "rank": 19,
-        "team": "Balıkesirspor",
-        "played": 36,
-        "won": 3,
-        "drawn": 3,
-        "lost": 30,
-        "goalsFor": 26,
-        "goalsAgainst": 77,
-        "goalDifference": -51,
-        "points": 12,
-        "rawPoints": 12,
-        "pointsDeducted": 0,
-        "penaltyNote": "",
-        "isBalkes": true
-      }
-    },
-    {
-      "season": "2020-2021",
-      "generatedAt": "2026-05-15T07:09:21.134379Z",
+      "season": "2017-2018",
+      "generatedAt": "2026-05-15T12:05:58.652333Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
-      "source": "official_tff_weekly_table",
-      "weeksGenerated": 34,
-      "teams": 18,
+      "source": "none",
+      "weeksGenerated": 0,
+      "teams": 0,
       "matchesUsed": 0,
       "penaltiesApplied": 0,
-      "warnings": [],
-      "balkesFinal": {
-        "rank": 13,
-        "team": "Balıkesirspor",
-        "played": 34,
-        "won": 9,
-        "drawn": 8,
-        "lost": 17,
-        "goalsFor": 35,
-        "goalsAgainst": 53,
-        "goalDifference": -18,
-        "points": 35,
-        "rawPoints": 35,
-        "pointsDeducted": 0,
-        "penaltyNote": "",
-        "isBalkes": true
-      }
+      "warnings": [
+        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
+      ]
     },
     {
-      "season": "2019-2020",
-      "generatedAt": "2026-05-15T07:11:52.837490Z",
+      "season": "2016-2017",
+      "generatedAt": "2026-05-15T12:05:58.747793Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
-      "source": "official_tff_weekly_table",
-      "weeksGenerated": 34,
-      "teams": 18,
+      "source": "none",
+      "weeksGenerated": 0,
+      "teams": 0,
       "matchesUsed": 0,
       "penaltiesApplied": 0,
-      "warnings": [],
-      "balkesFinal": {
-        "rank": 13,
-        "team": "Balıkesirspor",
-        "played": 34,
-        "won": 9,
-        "drawn": 11,
-        "lost": 14,
-        "goalsFor": 36,
-        "goalsAgainst": 48,
-        "goalDifference": -12,
-        "points": 38,
-        "rawPoints": 38,
-        "pointsDeducted": 0,
-        "penaltyNote": "",
-        "isBalkes": true
-      }
+      "warnings": [
+        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
+      ]
     },
     {
-      "season": "2018-2019",
-      "generatedAt": "2026-05-15T07:14:08.433848Z",
+      "season": "2015-2016",
+      "generatedAt": "2026-05-15T12:05:58.854770Z",
+      "builderVersion": "standings-builder-v3.1-chain-safe",
+      "mode": "auto",
+      "maxWeek": 34,
+      "source": "none",
+      "weeksGenerated": 0,
+      "teams": 0,
+      "matchesUsed": 0,
+      "penaltiesApplied": 0,
+      "warnings": [
+        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
+      ]
+    },
+    {
+      "season": "2014-2015",
+      "generatedAt": "2026-05-15T12:05:58.937114Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,

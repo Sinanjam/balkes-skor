@@ -1,0 +1,903 @@
+{
+  "id": "177685",
+  "matchCode": "22032",
+  "season": "2016-2017",
+  "competition": "Kadınlar 3.Ligi (Kadın Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "BEHİÇ ERKİN SPOR KOMPLEKSİ - ESKİŞEHİR",
+  "venue": "BEHİÇ ERKİN SPOR KOMPLEKSİ - ESKİŞEHİR",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2016-12-18",
+  "time": "12:30",
+  "dateDisplay": "2016-12-18 - 12:30",
+  "homeTeam": "ÇAMLICA GENÇLİK VE SPOR",
+  "awayTeam": "Balıkesirspor",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 1,
+    "away": 1,
+    "display": "1-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "isAway": true,
+    "opponent": "ÇAMLICA GENÇLİK VE SPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 1,
+    "result": "D"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "YUNUS DOĞAN"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "YUNUS GÜL"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "ARZU GÖRGÜN"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "YUNUS DOĞAN"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "YUNUS GÜL"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "ARZU GÖRGÜN"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "starting11": [
+        {
+          "name": "GAMZE CAN",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1474321"
+        },
+        {
+          "name": "SERAP MEYDAN",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1426500"
+        },
+        {
+          "name": "İREM FATMA KARA",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1614820"
+        },
+        {
+          "name": "İREM KAYA",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1431604"
+        },
+        {
+          "name": "BUSE YILDIZ",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1508296"
+        },
+        {
+          "name": "DAMLA ÇOBAN",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1395212"
+        },
+        {
+          "name": "İREM BAYAR",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1718442"
+        },
+        {
+          "name": "ARZU AKKUŞ",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1423396"
+        },
+        {
+          "name": "İREM NUR KAYA",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1508293"
+        },
+        {
+          "name": "BERFİN GÜMÜŞGÜL",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1578505"
+        },
+        {
+          "name": "TUĞBA DİLAVER",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1423413"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "ASLI GÜLLÜ",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1852414"
+        },
+        {
+          "name": "MELİKE ERTUGAN",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1869000"
+        },
+        {
+          "name": "DÖNDÜ GÜL KULA",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1869001"
+        },
+        {
+          "name": "AYNUR DİNÇER",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1871616"
+        },
+        {
+          "name": "BURCU BABA",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1869002"
+        },
+        {
+          "name": "ÖZLEM AKTAŞ",
+          "number": 18,
+          "shirt_no": "18",
+          "tffPersonId": "1954153"
+        },
+        {
+          "name": "KÜBRA KALKAN",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1861680"
+        }
+      ],
+      "technicalStaff": [],
+      "coach": "",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "SEVGİ ÇOBAN",
+          "number": 35,
+          "shirt_no": "35",
+          "tffPersonId": "1309426"
+        },
+        {
+          "name": "BUSE GÜNEŞ",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1309421"
+        },
+        {
+          "name": "EBRU AYDIN",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "974342"
+        },
+        {
+          "name": "EZGİ MELEK ASLAN",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1343332"
+        },
+        {
+          "name": "SEVGİ ÖZTÜRK",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1310824"
+        },
+        {
+          "name": "EKİN ÖZTÜRK",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1032398"
+        },
+        {
+          "name": "PELİN TAŞDİVAR",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1456935"
+        },
+        {
+          "name": "YAĞMUR DİREK",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1209107"
+        },
+        {
+          "name": "MERVE AKER",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1343047"
+        },
+        {
+          "name": "MERVE ÖZDEMİR",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1252267"
+        },
+        {
+          "name": "ŞEYMA SAĞBİLGE",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1620731"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "MAŞALA DEMİR",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1537705"
+        },
+        {
+          "name": "GÖKÇE KOYUNCU",
+          "number": 18,
+          "shirt_no": "18",
+          "tffPersonId": "1914140"
+        },
+        {
+          "name": "HATİCE DAĞLI",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1914606"
+        }
+      ],
+      "technicalStaff": [],
+      "coach": "",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "BUSE GÜNEŞ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 2,
+      "tffPersonId": "1309421"
+    },
+    {
+      "name": "EBRU AYDIN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "974342"
+    },
+    {
+      "name": "EKİN ÖZTÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 6,
+      "tffPersonId": "1032398"
+    },
+    {
+      "name": "EZGİ MELEK ASLAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1343332"
+    },
+    {
+      "name": "GÖKÇE KOYUNCU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 18,
+      "tffPersonId": "1914140"
+    },
+    {
+      "name": "HATİCE DAĞLI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 16,
+      "tffPersonId": "1914606"
+    },
+    {
+      "name": "MAŞALA DEMİR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 14,
+      "tffPersonId": "1537705"
+    },
+    {
+      "name": "MERVE AKER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 9,
+      "tffPersonId": "1343047"
+    },
+    {
+      "name": "MERVE ÖZDEMİR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 10,
+      "tffPersonId": "1252267"
+    },
+    {
+      "name": "PELİN TAŞDİVAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 17,
+      "tffPersonId": "1456935"
+    },
+    {
+      "name": "SEVGİ ÇOBAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 35,
+      "tffPersonId": "1309426"
+    },
+    {
+      "name": "SEVGİ ÖZTÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 5,
+      "tffPersonId": "1310824"
+    },
+    {
+      "name": "ŞEYMA SAĞBİLGE",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 11,
+      "tffPersonId": "1620731"
+    },
+    {
+      "name": "YAĞMUR DİREK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 8,
+      "tffPersonId": "1209107"
+    },
+    {
+      "name": "ARZU AKKUŞ",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1423396"
+    },
+    {
+      "name": "ASLI GÜLLÜ",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 16,
+      "tffPersonId": "1852414"
+    },
+    {
+      "name": "AYNUR DİNÇER",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 15,
+      "tffPersonId": "1871616"
+    },
+    {
+      "name": "BERFİN GÜMÜŞGÜL",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 9,
+      "tffPersonId": "1578505"
+    },
+    {
+      "name": "BURCU BABA",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 14,
+      "tffPersonId": "1869002"
+    },
+    {
+      "name": "BUSE YILDIZ",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 13,
+      "tffPersonId": "1508296"
+    },
+    {
+      "name": "DAMLA ÇOBAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 17,
+      "tffPersonId": "1395212"
+    },
+    {
+      "name": "DÖNDÜ GÜL KULA",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 2,
+      "tffPersonId": "1869001"
+    },
+    {
+      "name": "GAMZE CAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1474321"
+    },
+    {
+      "name": "İREM BAYAR",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1718442"
+    },
+    {
+      "name": "İREM FATMA KARA",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 6,
+      "tffPersonId": "1614820"
+    },
+    {
+      "name": "İREM KAYA",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 7,
+      "tffPersonId": "1431604"
+    },
+    {
+      "name": "İREM NUR KAYA",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 8,
+      "tffPersonId": "1508293"
+    },
+    {
+      "name": "KÜBRA KALKAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "1861680"
+    },
+    {
+      "name": "MELİKE ERTUGAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 5,
+      "tffPersonId": "1869000"
+    },
+    {
+      "name": "ÖZLEM AKTAŞ",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 18,
+      "tffPersonId": "1954153"
+    },
+    {
+      "name": "SERAP MEYDAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 3,
+      "tffPersonId": "1426500"
+    },
+    {
+      "name": "TUĞBA DİLAVER",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 10,
+      "tffPersonId": "1423413"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "DAMLA ÇOBAN",
+      "scorer": "DAMLA ÇOBAN",
+      "raw": "DAMLA ÇOBAN,60.dk (F)",
+      "minute": 60,
+      "minuteRaw": "DAMLA ÇOBAN,60.dk",
+      "goalType": "F",
+      "tffPersonId": "1395212"
+    },
+    {
+      "type": "goal",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "SERAP MEYDAN",
+      "scorer": "SERAP MEYDAN",
+      "raw": "SERAP MEYDAN,11.dk (K)",
+      "minute": 11,
+      "minuteRaw": "SERAP MEYDAN,11.dk",
+      "goalType": "K",
+      "tffPersonId": "1426500"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "İREM NUR KAYA",
+      "minute": 65,
+      "minuteRaw": "65.dk",
+      "tffPersonId": "1508293"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "EKİN ÖZTÜRK",
+      "minute": 38,
+      "minuteRaw": "38.dk",
+      "tffPersonId": "1032398"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "YAĞMUR DİREK",
+      "minute": 68,
+      "minuteRaw": "68.dk",
+      "tffPersonId": "1209107"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "SEVGİ ÖZTÜRK",
+      "minute": 85,
+      "minuteRaw": "85.dk",
+      "tffPersonId": "1310824"
+    },
+    {
+      "type": "substitution",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "order": 1,
+      "player_in": "ASLI GÜLLÜ",
+      "player_out": "TUĞBA DİLAVER",
+      "playerIn": "ASLI GÜLLÜ",
+      "playerOut": "TUĞBA DİLAVER",
+      "minute": 56,
+      "minuteRaw": "56.dk",
+      "minute_text": "56.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "TUĞBA DİLAVER",
+      "order": 1,
+      "minute": 56,
+      "minuteRaw": "56.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "ASLI GÜLLÜ",
+      "order": 1,
+      "minute": 56,
+      "minuteRaw": "56.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "order": 2,
+      "player_in": "DÖNDÜ GÜL KULA",
+      "player_out": "BERFİN GÜMÜŞGÜL",
+      "playerIn": "DÖNDÜ GÜL KULA",
+      "playerOut": "BERFİN GÜMÜŞGÜL",
+      "minute": 76,
+      "minuteRaw": "76.dk",
+      "minute_text": "76.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "BERFİN GÜMÜŞGÜL",
+      "order": 2,
+      "minute": 76,
+      "minuteRaw": "76.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "DÖNDÜ GÜL KULA",
+      "order": 2,
+      "minute": 76,
+      "minuteRaw": "76.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "order": 3,
+      "player_in": "ÖZLEM AKTAŞ",
+      "player_out": "İREM BAYAR",
+      "playerIn": "ÖZLEM AKTAŞ",
+      "playerOut": "İREM BAYAR",
+      "minute": 83,
+      "minuteRaw": "83.dk",
+      "minute_text": "83.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "İREM BAYAR",
+      "order": 3,
+      "minute": 83,
+      "minuteRaw": "83.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "ÖZLEM AKTAŞ",
+      "order": 3,
+      "minute": 83,
+      "minuteRaw": "83.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "MAŞALA DEMİR",
+      "player_out": "PELİN TAŞDİVAR",
+      "playerIn": "MAŞALA DEMİR",
+      "playerOut": "PELİN TAŞDİVAR",
+      "minute": 87,
+      "minuteRaw": "87.dk",
+      "minute_text": "87.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "PELİN TAŞDİVAR",
+      "order": 1,
+      "minute": 87,
+      "minuteRaw": "87.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "MAŞALA DEMİR",
+      "order": 1,
+      "minute": 87,
+      "minuteRaw": "87.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "DAMLA ÇOBAN",
+      "scorer": "DAMLA ÇOBAN",
+      "raw": "DAMLA ÇOBAN,60.dk (F)",
+      "minute": 60,
+      "minuteRaw": "DAMLA ÇOBAN,60.dk",
+      "goalType": "F",
+      "tffPersonId": "1395212"
+    },
+    {
+      "type": "goal",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "SERAP MEYDAN",
+      "scorer": "SERAP MEYDAN",
+      "raw": "SERAP MEYDAN,11.dk (K)",
+      "minute": 11,
+      "minuteRaw": "SERAP MEYDAN,11.dk",
+      "goalType": "K",
+      "tffPersonId": "1426500"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "DAMLA ÇOBAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "minute": 60,
+      "goalType": "F"
+    },
+    {
+      "player": "SERAP MEYDAN",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "minute": 11,
+      "goalType": "K"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "player": "İREM NUR KAYA",
+      "minute": 65,
+      "minuteRaw": "65.dk",
+      "tffPersonId": "1508293"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "EKİN ÖZTÜRK",
+      "minute": 38,
+      "minuteRaw": "38.dk",
+      "tffPersonId": "1032398"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "YAĞMUR DİREK",
+      "minute": 68,
+      "minuteRaw": "68.dk",
+      "tffPersonId": "1209107"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "SEVGİ ÖZTÜRK",
+      "minute": 85,
+      "minuteRaw": "85.dk",
+      "tffPersonId": "1310824"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "order": 1,
+      "minute": 56,
+      "minuteRaw": "56.dk",
+      "playerOut": "TUĞBA DİLAVER",
+      "player_out": "TUĞBA DİLAVER",
+      "playerOutTffPersonId": "1423413",
+      "playerIn": "ASLI GÜLLÜ",
+      "player_in": "ASLI GÜLLÜ",
+      "playerInTffPersonId": "1852414"
+    },
+    {
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "order": 2,
+      "minute": 76,
+      "minuteRaw": "76.dk",
+      "playerOut": "BERFİN GÜMÜŞGÜL",
+      "player_out": "BERFİN GÜMÜŞGÜL",
+      "playerOutTffPersonId": "1578505",
+      "playerIn": "DÖNDÜ GÜL KULA",
+      "player_in": "DÖNDÜ GÜL KULA",
+      "playerInTffPersonId": "1869001"
+    },
+    {
+      "team": "ÇAMLICA GENÇLİK VE SPOR",
+      "order": 3,
+      "minute": 83,
+      "minuteRaw": "83.dk",
+      "playerOut": "İREM BAYAR",
+      "player_out": "İREM BAYAR",
+      "playerOutTffPersonId": "1718442",
+      "playerIn": "ÖZLEM AKTAŞ",
+      "player_in": "ÖZLEM AKTAŞ",
+      "playerInTffPersonId": "1954153"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 87,
+      "minuteRaw": "87.dk",
+      "playerOut": "PELİN TAŞDİVAR",
+      "player_out": "PELİN TAŞDİVAR",
+      "playerOutTffPersonId": "1456935",
+      "playerIn": "MAŞALA DEMİR",
+      "player_in": "MAŞALA DEMİR",
+      "playerInTffPersonId": "1537705"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "ÇAMLICA GENÇLİK VE SPOR BALIKESİR BÜYÜKŞEHİR BELEDİYESPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nÇAMLICA GENÇLİK VE SPOR\n1\nBALIKESİR BÜYÜKŞEHİR BELEDİYESPOR\n1\nKadınlar 3.Ligi (Kadın Takımı)\nMaç Kodu:\n22032\nBEHİÇ ERKİN SPOR KOMPLEKSİ - ESKİŞEHİR\n18.12.2016 - 12:30\nYUNUS DOĞAN(Hakem)\nYUNUS GÜL(1. Yardımcı Hakem)\nARZU GÖRGÜN(2. Yardımcı Hakem)\nÖMER KÖK(Gözlemci)\nİlk 11\n1.\nGAMZE CAN\n3.\nSERAP MEYDAN\n6.\nİREM FATMA KARA\n7.\nİREM KAYA\n13.\nBUSE YILDIZ\n17.\nDAMLA ÇOBAN\n11.\nİREM BAYAR\n4.\nARZU AKKUŞ\n8.\nİREM NUR KAYA\n9.\nBERFİN GÜMÜŞGÜL\n10.\nTUĞBA DİLAVER\nYedekler\n16.\nASLI GÜLLÜ\n5.\nMELİKE ERTUGAN\n2.\nDÖNDÜ GÜL KULA\n15.\nAYNUR DİNÇER\n14.\nBURCU BABA\n18.\nÖZLEM AKTAŞ\n12.\nKÜBRA KALKAN\nTeknik Sorumlu\nGoller\nDAMLA ÇOBAN,60.dk (F)\nSERAP MEYDAN,11.dk (K)\nKartlar\nİREM NUR KAYA\n65.dk\nOyundan Çıkanlar\nTUĞBA DİLAVER\n56.dk\nBERFİN GÜMÜŞGÜL\n76.dk\nİREM BAYAR\n83.dk\nOyuna Girenler\nASLI GÜLLÜ\n56.dk\nDÖNDÜ GÜL KULA\n76.dk\nÖZLEM AKTAŞ\n83.dk\nİlk 11\n35.\nSEVGİ ÇOBAN\n2.\nBUSE GÜNEŞ\n3.\nEBRU AYDIN\n4.\nEZGİ MELEK ASLAN\n5.\nSEVGİ ÖZTÜRK\n6.\nEKİN ÖZTÜRK\n17.\nPELİN TAŞDİVAR\n8.\nYAĞMUR DİREK\n9.\nMERVE AKER\n10.\nMERVE ÖZDEMİR\n11.\nŞEYMA SAĞBİLGE\nYedekler\n14.\nMAŞALA DEMİR\n18.\nGÖKÇE KOYUNCU\n16.\nHATİCE DAĞLI\nTeknik Sorumlu\nKartlar\nEKİN ÖZTÜRK\n38.dk\nYAĞMUR DİREK\n68.dk\nSEVGİ ÖZTÜRK\n85.dk\nOyundan Çıkanlar\nPELİN TAŞDİVAR\n87.dk\nOyuna Girenler\nMAŞALA DEMİR\n87.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nYUNUS DOĞAN(Hakem)\nYUNUS GÜL(1. Yardımcı Hakem)\nARZU GÖRGÜN(2. Yardımcı Hakem)\nÖMER KÖK(Gözlemci)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "Goller\nDAMLA ÇOBAN,60.dk (F)\nSERAP MEYDAN,11.dk (K)\n65.dk\nOyundan Çıkanlar\n56.dk\n76.dk\n83.dk\nOyuna Girenler\n56.dk\n76.dk\n83.dk\n38.dk\n68.dk\n85.dk\nOyundan Çıkanlar\n87.dk\nOyuna Girenler\n87.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 7,
+    "substitutesAway": 3,
+    "goals": 2,
+    "cards": 4,
+    "substitutions": 4,
+    "players": 32
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=177685",
+    "retrievedAt": "2026-05-15T10:01:20.604958Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}

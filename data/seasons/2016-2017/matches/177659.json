@@ -1,0 +1,999 @@
+{
+  "id": "177659",
+  "matchCode": "22006",
+  "season": "2016-2017",
+  "competition": "Kadınlar 3.Ligi (Kadın Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "13 KASIM STADI - TEKİRDAĞ - TEKİRDAĞ MERKEZ",
+  "venue": "13 KASIM STADI - TEKİRDAĞ - TEKİRDAĞ MERKEZ",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2016-11-13",
+  "time": "12:00",
+  "dateDisplay": "2016-11-13 - 12:00",
+  "homeTeam": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+  "awayTeam": "Balıkesirspor",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 2,
+    "away": 3,
+    "display": "2-3",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "isAway": true,
+    "opponent": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+    "goalsFor": 3,
+    "goalsAgainst": 2,
+    "result": "W"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "SEFA KISA"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "TUGAY BAŞOL"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "TAYFUN SEYREK"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "SEFA KISA"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "TUGAY BAŞOL"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "TAYFUN SEYREK"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "starting11": [
+        {
+          "name": "ELİF BALCI",
+          "number": 99,
+          "shirt_no": "99",
+          "tffPersonId": "614558"
+        },
+        {
+          "name": "DİLARA YILMAZ",
+          "number": 33,
+          "shirt_no": "33",
+          "tffPersonId": "1814606"
+        },
+        {
+          "name": "EBRU YAŞAR",
+          "number": 59,
+          "shirt_no": "59",
+          "tffPersonId": "1814609"
+        },
+        {
+          "name": "TİLBE YORULMAZ",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1813305"
+        },
+        {
+          "name": "YAREN ÇETİN",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1813312"
+        },
+        {
+          "name": "TUĞÇE ÖZTÜRK",
+          "number": 77,
+          "shirt_no": "77",
+          "tffPersonId": "1879191"
+        },
+        {
+          "name": "FATMANUR DENİZ",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1852931"
+        },
+        {
+          "name": "HATİCE AYDİN DUYGU",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1816446"
+        },
+        {
+          "name": "EMİNE GÖNÜL",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1814610"
+        },
+        {
+          "name": "MELTEM TARIM",
+          "number": 25,
+          "shirt_no": "25",
+          "tffPersonId": "1813315"
+        },
+        {
+          "name": "RABİA CANBAZ",
+          "number": 18,
+          "shirt_no": "18",
+          "tffPersonId": "1816479"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "AYÇA IŞIK",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1954817"
+        },
+        {
+          "name": "EDA ÇELİK",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1954816"
+        },
+        {
+          "name": "ÇİĞDEM URUÇ",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1895750"
+        },
+        {
+          "name": "KARDELEN ELMAS",
+          "number": 29,
+          "shirt_no": "29",
+          "tffPersonId": "1467062"
+        },
+        {
+          "name": "TUĞBA ÖZTÜRK",
+          "number": 55,
+          "shirt_no": "55",
+          "tffPersonId": "1879194"
+        },
+        {
+          "name": "BEYZA DEMİR",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1817851"
+        },
+        {
+          "name": "MERVE DEMİRBAŞ",
+          "number": 35,
+          "shirt_no": "35",
+          "tffPersonId": "1868857"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "BEKİR ALİ EREN"
+        }
+      ],
+      "coach": "BEKİR ALİ EREN",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "BUSE ŞAHİN",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1252559"
+        },
+        {
+          "name": "BUSE GÜNEŞ",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1309421"
+        },
+        {
+          "name": "EBRU AYDIN",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "974342"
+        },
+        {
+          "name": "EZGİ MELEK ASLAN",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1343332"
+        },
+        {
+          "name": "SEVGİ ÖZTÜRK",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1310824"
+        },
+        {
+          "name": "EKİN ÖZTÜRK",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1032398"
+        },
+        {
+          "name": "SEVGİ ÇOBAN",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1309426"
+        },
+        {
+          "name": "YAĞMUR DİREK",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1209107"
+        },
+        {
+          "name": "MERVE AKER",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1343047"
+        },
+        {
+          "name": "MERVE ÖZDEMİR",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1252267"
+        },
+        {
+          "name": "ŞEYMA SAĞBİLGE",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1620731"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "BEYZA NUR BUDAK",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1914139"
+        },
+        {
+          "name": "HÜLYA KÖROĞLU",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1913751"
+        },
+        {
+          "name": "MAŞALA DEMİR",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1537705"
+        },
+        {
+          "name": "ELİF TOPAL",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1914132"
+        },
+        {
+          "name": "HATİCE DAĞLI",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1914606"
+        },
+        {
+          "name": "PELİN TAŞDİVAR",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1456935"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "NAHİT ÖZDAYI"
+        }
+      ],
+      "coach": "NAHİT ÖZDAYI",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "BEYZA NUR BUDAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "1914139"
+    },
+    {
+      "name": "BUSE GÜNEŞ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 2,
+      "tffPersonId": "1309421"
+    },
+    {
+      "name": "BUSE ŞAHİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1252559"
+    },
+    {
+      "name": "EBRU AYDIN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "974342"
+    },
+    {
+      "name": "EKİN ÖZTÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 6,
+      "tffPersonId": "1032398"
+    },
+    {
+      "name": "ELİF TOPAL",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 15,
+      "tffPersonId": "1914132"
+    },
+    {
+      "name": "EZGİ MELEK ASLAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1343332"
+    },
+    {
+      "name": "HATİCE DAĞLI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 16,
+      "tffPersonId": "1914606"
+    },
+    {
+      "name": "HÜLYA KÖROĞLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 13,
+      "tffPersonId": "1913751"
+    },
+    {
+      "name": "MAŞALA DEMİR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 14,
+      "tffPersonId": "1537705"
+    },
+    {
+      "name": "MERVE AKER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 9,
+      "tffPersonId": "1343047"
+    },
+    {
+      "name": "MERVE ÖZDEMİR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 10,
+      "tffPersonId": "1252267"
+    },
+    {
+      "name": "NAHİT ÖZDAYI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "PELİN TAŞDİVAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 17,
+      "tffPersonId": "1456935"
+    },
+    {
+      "name": "SEVGİ ÇOBAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 7,
+      "tffPersonId": "1309426"
+    },
+    {
+      "name": "SEVGİ ÖZTÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "1310824"
+    },
+    {
+      "name": "ŞEYMA SAĞBİLGE",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1620731"
+    },
+    {
+      "name": "YAĞMUR DİREK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 8,
+      "tffPersonId": "1209107"
+    },
+    {
+      "name": "AYÇA IŞIK",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 13,
+      "tffPersonId": "1954817"
+    },
+    {
+      "name": "BEKİR ALİ EREN",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "BEYZA DEMİR",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 19,
+      "tffPersonId": "1817851"
+    },
+    {
+      "name": "ÇİĞDEM URUÇ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 10,
+      "tffPersonId": "1895750"
+    },
+    {
+      "name": "DİLARA YILMAZ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 33,
+      "tffPersonId": "1814606"
+    },
+    {
+      "name": "EBRU YAŞAR",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 59,
+      "tffPersonId": "1814609"
+    },
+    {
+      "name": "EDA ÇELİK",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 15,
+      "tffPersonId": "1954816"
+    },
+    {
+      "name": "ELİF BALCI",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 99,
+      "tffPersonId": "614558"
+    },
+    {
+      "name": "EMİNE GÖNÜL",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 9,
+      "tffPersonId": "1814610"
+    },
+    {
+      "name": "FATMANUR DENİZ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 8,
+      "tffPersonId": "1852931"
+    },
+    {
+      "name": "HATİCE AYDİN DUYGU",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 17,
+      "tffPersonId": "1816446"
+    },
+    {
+      "name": "KARDELEN ELMAS",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute",
+        "yellow_card",
+        "substitution_in"
+      ],
+      "number": 29,
+      "tffPersonId": "1467062"
+    },
+    {
+      "name": "MELTEM TARIM",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 25,
+      "tffPersonId": "1813315"
+    },
+    {
+      "name": "MERVE DEMİRBAŞ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 35,
+      "tffPersonId": "1868857"
+    },
+    {
+      "name": "RABİA CANBAZ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 18,
+      "tffPersonId": "1816479"
+    },
+    {
+      "name": "TİLBE YORULMAZ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "1813305"
+    },
+    {
+      "name": "TUĞBA ÖZTÜRK",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 55,
+      "tffPersonId": "1879194"
+    },
+    {
+      "name": "TUĞÇE ÖZTÜRK",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 77,
+      "tffPersonId": "1879191"
+    },
+    {
+      "name": "YAREN ÇETİN",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1813312"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "EMİNE GÖNÜL",
+      "scorer": "EMİNE GÖNÜL",
+      "raw": "EMİNE GÖNÜL,32.dk (F)",
+      "minute": 32,
+      "minuteRaw": "EMİNE GÖNÜL,32.dk",
+      "goalType": "F",
+      "tffPersonId": "1814610"
+    },
+    {
+      "type": "goal",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "RABİA CANBAZ",
+      "scorer": "RABİA CANBAZ",
+      "raw": "RABİA CANBAZ,73.dk (F)",
+      "minute": 73,
+      "minuteRaw": "RABİA CANBAZ,73.dk",
+      "goalType": "F",
+      "tffPersonId": "1816479"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "SEVGİ ÇOBAN",
+      "scorer": "SEVGİ ÇOBAN",
+      "raw": "SEVGİ ÇOBAN,2.dk (F)",
+      "minute": 2,
+      "minuteRaw": "SEVGİ ÇOBAN,2.dk",
+      "goalType": "F",
+      "tffPersonId": "1309426"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "SEVGİ ÇOBAN",
+      "scorer": "SEVGİ ÇOBAN",
+      "raw": "SEVGİ ÇOBAN,22.dk (H)",
+      "minute": 22,
+      "minuteRaw": "SEVGİ ÇOBAN,22.dk",
+      "goalType": "H",
+      "tffPersonId": "1309426"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "MERVE AKER",
+      "scorer": "MERVE AKER",
+      "raw": "MERVE AKER,80.dk (F)",
+      "minute": 80,
+      "minuteRaw": "MERVE AKER,80.dk",
+      "goalType": "F",
+      "tffPersonId": "1343047"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "KARDELEN ELMAS",
+      "minute": 78,
+      "minuteRaw": "78.dk",
+      "tffPersonId": "1467062"
+    },
+    {
+      "type": "substitution",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "order": 1,
+      "player_in": "KARDELEN ELMAS",
+      "player_out": "MELTEM TARIM",
+      "playerIn": "KARDELEN ELMAS",
+      "playerOut": "MELTEM TARIM",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "MELTEM TARIM",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "KARDELEN ELMAS",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "order": 2,
+      "player_in": "TUĞBA ÖZTÜRK",
+      "player_out": "DİLARA YILMAZ",
+      "playerIn": "TUĞBA ÖZTÜRK",
+      "playerOut": "DİLARA YILMAZ",
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "minute_text": "55.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "DİLARA YILMAZ",
+      "order": 2,
+      "minute": 55,
+      "minuteRaw": "55.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "TUĞBA ÖZTÜRK",
+      "order": 2,
+      "minute": 55,
+      "minuteRaw": "55.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "order": 3,
+      "player_in": "BEYZA DEMİR",
+      "player_out": "TUĞÇE ÖZTÜRK",
+      "playerIn": "BEYZA DEMİR",
+      "playerOut": "TUĞÇE ÖZTÜRK",
+      "minute": 85,
+      "minuteRaw": "85.dk",
+      "minute_text": "85.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "TUĞÇE ÖZTÜRK",
+      "order": 3,
+      "minute": 85,
+      "minuteRaw": "85.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "BEYZA DEMİR",
+      "order": 3,
+      "minute": 85,
+      "minuteRaw": "85.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "PELİN TAŞDİVAR",
+      "player_out": "ŞEYMA SAĞBİLGE",
+      "playerIn": "PELİN TAŞDİVAR",
+      "playerOut": "ŞEYMA SAĞBİLGE",
+      "minute": 76,
+      "minuteRaw": "76.dk",
+      "minute_text": "76.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "ŞEYMA SAĞBİLGE",
+      "order": 1,
+      "minute": 76,
+      "minuteRaw": "76.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "PELİN TAŞDİVAR",
+      "order": 1,
+      "minute": 76,
+      "minuteRaw": "76.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "EMİNE GÖNÜL",
+      "scorer": "EMİNE GÖNÜL",
+      "raw": "EMİNE GÖNÜL,32.dk (F)",
+      "minute": 32,
+      "minuteRaw": "EMİNE GÖNÜL,32.dk",
+      "goalType": "F",
+      "tffPersonId": "1814610"
+    },
+    {
+      "type": "goal",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "RABİA CANBAZ",
+      "scorer": "RABİA CANBAZ",
+      "raw": "RABİA CANBAZ,73.dk (F)",
+      "minute": 73,
+      "minuteRaw": "RABİA CANBAZ,73.dk",
+      "goalType": "F",
+      "tffPersonId": "1816479"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "SEVGİ ÇOBAN",
+      "scorer": "SEVGİ ÇOBAN",
+      "raw": "SEVGİ ÇOBAN,2.dk (F)",
+      "minute": 2,
+      "minuteRaw": "SEVGİ ÇOBAN,2.dk",
+      "goalType": "F",
+      "tffPersonId": "1309426"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "SEVGİ ÇOBAN",
+      "scorer": "SEVGİ ÇOBAN",
+      "raw": "SEVGİ ÇOBAN,22.dk (H)",
+      "minute": 22,
+      "minuteRaw": "SEVGİ ÇOBAN,22.dk",
+      "goalType": "H",
+      "tffPersonId": "1309426"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "MERVE AKER",
+      "scorer": "MERVE AKER",
+      "raw": "MERVE AKER,80.dk (F)",
+      "minute": 80,
+      "minuteRaw": "MERVE AKER,80.dk",
+      "goalType": "F",
+      "tffPersonId": "1343047"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "EMİNE GÖNÜL",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "minute": 32,
+      "goalType": "F"
+    },
+    {
+      "player": "RABİA CANBAZ",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "minute": 73,
+      "goalType": "F"
+    },
+    {
+      "player": "SEVGİ ÇOBAN",
+      "team": "Balıkesirspor",
+      "minute": 2,
+      "goalType": "F"
+    },
+    {
+      "player": "SEVGİ ÇOBAN",
+      "team": "Balıkesirspor",
+      "minute": 22,
+      "goalType": "H"
+    },
+    {
+      "player": "MERVE AKER",
+      "team": "Balıkesirspor",
+      "minute": 80,
+      "goalType": "F"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "player": "KARDELEN ELMAS",
+      "minute": 78,
+      "minuteRaw": "78.dk",
+      "tffPersonId": "1467062"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "MELTEM TARIM",
+      "player_out": "MELTEM TARIM",
+      "playerOutTffPersonId": "1813315",
+      "playerIn": "KARDELEN ELMAS",
+      "player_in": "KARDELEN ELMAS",
+      "playerInTffPersonId": "1467062"
+    },
+    {
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "order": 2,
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "playerOut": "DİLARA YILMAZ",
+      "player_out": "DİLARA YILMAZ",
+      "playerOutTffPersonId": "1814606",
+      "playerIn": "TUĞBA ÖZTÜRK",
+      "player_in": "TUĞBA ÖZTÜRK",
+      "playerInTffPersonId": "1879194"
+    },
+    {
+      "team": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR",
+      "order": 3,
+      "minute": 85,
+      "minuteRaw": "85.dk",
+      "playerOut": "TUĞÇE ÖZTÜRK",
+      "player_out": "TUĞÇE ÖZTÜRK",
+      "playerOutTffPersonId": "1879191",
+      "playerIn": "BEYZA DEMİR",
+      "player_in": "BEYZA DEMİR",
+      "playerInTffPersonId": "1817851"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 76,
+      "minuteRaw": "76.dk",
+      "playerOut": "ŞEYMA SAĞBİLGE",
+      "player_out": "ŞEYMA SAĞBİLGE",
+      "playerOutTffPersonId": "1620731",
+      "playerIn": "PELİN TAŞDİVAR",
+      "player_in": "PELİN TAŞDİVAR",
+      "playerInTffPersonId": "1456935"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "TEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR BALIKESİR BÜYÜKŞEHİR BELEDİYESPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nTEKİRDAĞ GENÇLİK HİZMETLERİ VE SPOR\n2\nBALIKESİR BÜYÜKŞEHİR BELEDİYESPOR\n3\nKadınlar 3.Ligi (Kadın Takımı)\nMaç Kodu:\n22006\n13 KASIM STADI - TEKİRDAĞ - TEKİRDAĞ MERKEZ\n13.11.2016 - 12:00\nSEFA KISA(Hakem)\nTUGAY BAŞOL(1. Yardımcı Hakem)\nTAYFUN SEYREK(2. Yardımcı Hakem)\nDURSUN ALİ YILMAZ(Gözlemci)\nİlk 11\n99.\nELİF BALCI\n33.\nDİLARA YILMAZ\n59.\nEBRU YAŞAR\n5.\nTİLBE YORULMAZ\n4.\nYAREN ÇETİN\n77.\nTUĞÇE ÖZTÜRK\n8.\nFATMANUR DENİZ\n17.\nHATİCE AYDİN DUYGU\n9.\nEMİNE GÖNÜL\n25.\nMELTEM TARIM\n18.\nRABİA CANBAZ\nYedekler\n13.\nAYÇA IŞIK\n15.\nEDA ÇELİK\n10.\nÇİĞDEM URUÇ\n29.\nKARDELEN ELMAS\n55.\nTUĞBA ÖZTÜRK\n19.\nBEYZA DEMİR\n35.\nMERVE DEMİRBAŞ\nTeknik Sorumlu\nBEKİR ALİ EREN\nGoller\nEMİNE GÖNÜL,32.dk (F)\nRABİA CANBAZ,73.dk (F)\nKartlar\nKARDELEN ELMAS\n78.dk\nOyundan Çıkanlar\nMELTEM TARIM\n46.dk\nDİLARA YILMAZ\n55.dk\nTUĞÇE ÖZTÜRK\n85.dk\nOyuna Girenler\nKARDELEN ELMAS\n46.dk\nTUĞBA ÖZTÜRK\n55.dk\nBEYZA DEMİR\n85.dk\nİlk 11\n1.\nBUSE ŞAHİN\n2.\nBUSE GÜNEŞ\n3.\nEBRU AYDIN\n4.\nEZGİ MELEK ASLAN\n5.\nSEVGİ ÖZTÜRK\n6.\nEKİN ÖZTÜRK\n7.\nSEVGİ ÇOBAN\n8.\nYAĞMUR DİREK\n9.\nMERVE AKER\n10.\nMERVE ÖZDEMİR\n11.\nŞEYMA SAĞBİLGE\nYedekler\n12.\nBEYZA NUR BUDAK\n13.\nHÜLYA KÖROĞLU\n14.\nMAŞALA DEMİR\n15.\nELİF TOPAL\n16.\nHATİCE DAĞLI\n17.\nPELİN TAŞDİVAR\nTeknik Sorumlu\nNAHİT ÖZDAYI\nGoller\nSEVGİ ÇOBAN,2.dk (F)\nSEVGİ ÇOBAN,22.dk (H)\nMERVE AKER,80.dk (F)\nOyundan Çıkanlar\nŞEYMA SAĞBİLGE\n76.dk\nOyuna Girenler\nPELİN TAŞDİVAR\n76.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nSEFA KISA(Hakem)\nTUGAY BAŞOL(1. Yardımcı Hakem)\nTAYFUN SEYREK(2. Yardımcı Hakem)\nDURSUN ALİ YILMAZ(Gözlemci)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "Goller\nEMİNE GÖNÜL,32.dk (F)\nRABİA CANBAZ,73.dk (F)\n78.dk\nOyundan Çıkanlar\n46.dk\n55.dk\n85.dk\nOyuna Girenler\n46.dk\n55.dk\n85.dk\nGoller\nSEVGİ ÇOBAN,2.dk (F)\nSEVGİ ÇOBAN,22.dk (H)\nMERVE AKER,80.dk (F)\nOyundan Çıkanlar\n76.dk\nOyuna Girenler\n76.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 7,
+    "substitutesAway": 6,
+    "goals": 5,
+    "cards": 1,
+    "substitutions": 4,
+    "players": 37
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=177659",
+    "retrievedAt": "2026-05-15T10:01:18.623463Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}

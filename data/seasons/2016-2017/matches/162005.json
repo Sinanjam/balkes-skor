@@ -1,0 +1,994 @@
+{
+  "id": "162005",
+  "matchCode": "35420",
+  "season": "2016-2017",
+  "competition": "Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "ALTINORDU FUTBOL TESİSLERİ - İZMİR - SELÇUK",
+  "venue": "ALTINORDU FUTBOL TESİSLERİ - İZMİR - SELÇUK",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2016-11-19",
+  "time": "14:00",
+  "dateDisplay": "2016-11-19 - 14:00",
+  "homeTeam": "ALTINORDU A.Ş.",
+  "awayTeam": "Balıkesirspor",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 2,
+    "away": 2,
+    "display": "2-2",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "isAway": true,
+    "opponent": "ALTINORDU A.Ş.",
+    "goalsFor": 2,
+    "goalsAgainst": 2,
+    "result": "D"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "ABDULLAH AKBULUT"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "AHMET DİPÇİN"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "ABDULLAH GENÇ"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "ABDULLAH AKBULUT"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "AHMET DİPÇİN"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "ABDULLAH GENÇ"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "ALTINORDU A.Ş.",
+      "starting11": [
+        {
+          "name": "NAHİT CAMKESENLER",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1663345"
+        },
+        {
+          "name": "BERKANT GÜNDEM",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1545001"
+        },
+        {
+          "name": "MURAT ALTAY",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1637278"
+        },
+        {
+          "name": "ÖZGÜR DERYOL",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1717750"
+        },
+        {
+          "name": "RAVİL TAGİR",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1877358"
+        },
+        {
+          "name": "EFE MUSTAFA ÇETİN",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1516700"
+        },
+        {
+          "name": "UFUK BİRDAL",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1509171"
+        },
+        {
+          "name": "AHMET ERTUĞRUL ÖZTÜRK",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1616563"
+        },
+        {
+          "name": "EGEMEN ALPTEKİN",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1593861"
+        },
+        {
+          "name": "BURAK İNCE",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1713564"
+        },
+        {
+          "name": "YİĞİT EMRE ÇELTİK",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1617212"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "MUHAMMET DEMİRCİ",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1532885"
+        },
+        {
+          "name": "SERKAN KAYIKCI",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1538107"
+        },
+        {
+          "name": "FIRAT BİLİCİ",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1576804"
+        },
+        {
+          "name": "BERKAY GÜNTAY",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1576803"
+        },
+        {
+          "name": "YUSUFHAN ÇALIK",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1578512"
+        },
+        {
+          "name": "ABDULLAH SOĞUCAK",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1714037"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "ZİYA GÜLER"
+        }
+      ],
+      "coach": "ZİYA GÜLER",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "HARUN SAVAŞ",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1618383"
+        },
+        {
+          "name": "TALHA ATEŞAVCI",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1583414"
+        },
+        {
+          "name": "ARİF DAVRAN",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1784878"
+        },
+        {
+          "name": "SERHAT ŞENER",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1614413"
+        },
+        {
+          "name": "FEVZİ İSLİMYE",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1621017"
+        },
+        {
+          "name": "BERK TOSUN",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1621067"
+        },
+        {
+          "name": "BERKAY AYKURT",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1621081"
+        },
+        {
+          "name": "CEMRE ÖMEROĞLU",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1615672"
+        },
+        {
+          "name": "METİN ALTIÖZ",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1929184"
+        },
+        {
+          "name": "ÜMİT DOĞRU",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1614412"
+        },
+        {
+          "name": "EMİR YİĞİT KANER",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1545013"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "MEHMET CAN ÖZENÇ",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1544923"
+        },
+        {
+          "name": "FARUK YILDIZ",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1613926"
+        },
+        {
+          "name": "ERDEM SOBAY",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1750492"
+        },
+        {
+          "name": "ERTU ÇEKİN",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1802637"
+        },
+        {
+          "name": "SEDAT BAYDAR",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1834404"
+        }
+      ],
+      "technicalStaff": [],
+      "coach": "",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "ABDULLAH SOĞUCAK",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 17,
+      "tffPersonId": "1714037"
+    },
+    {
+      "name": "AHMET ERTUĞRUL ÖZTÜRK",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 8,
+      "tffPersonId": "1616563"
+    },
+    {
+      "name": "BERKANT GÜNDEM",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 2,
+      "tffPersonId": "1545001"
+    },
+    {
+      "name": "BERKAY GÜNTAY",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 15,
+      "tffPersonId": "1576803"
+    },
+    {
+      "name": "BURAK İNCE",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 10,
+      "tffPersonId": "1713564"
+    },
+    {
+      "name": "EFE MUSTAFA ÇETİN",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 6,
+      "tffPersonId": "1516700"
+    },
+    {
+      "name": "EGEMEN ALPTEKİN",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 9,
+      "tffPersonId": "1593861"
+    },
+    {
+      "name": "FIRAT BİLİCİ",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 14,
+      "tffPersonId": "1576804"
+    },
+    {
+      "name": "MUHAMMET DEMİRCİ",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "1532885"
+    },
+    {
+      "name": "MURAT ALTAY",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1637278"
+    },
+    {
+      "name": "NAHİT CAMKESENLER",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1663345"
+    },
+    {
+      "name": "ÖZGÜR DERYOL",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 4,
+      "tffPersonId": "1717750"
+    },
+    {
+      "name": "RAVİL TAGİR",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "1877358"
+    },
+    {
+      "name": "SERKAN KAYIKCI",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 13,
+      "tffPersonId": "1538107"
+    },
+    {
+      "name": "UFUK BİRDAL",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 7,
+      "tffPersonId": "1509171"
+    },
+    {
+      "name": "YİĞİT EMRE ÇELTİK",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "starting11"
+      ],
+      "number": 11,
+      "tffPersonId": "1617212"
+    },
+    {
+      "name": "YUSUFHAN ÇALIK",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 16,
+      "tffPersonId": "1578512"
+    },
+    {
+      "name": "ZİYA GÜLER",
+      "team": "ALTINORDU A.Ş.",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "ARİF DAVRAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1784878"
+    },
+    {
+      "name": "BERK TOSUN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 6,
+      "tffPersonId": "1621067"
+    },
+    {
+      "name": "BERKAY AYKURT",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 7,
+      "tffPersonId": "1621081"
+    },
+    {
+      "name": "CEMRE ÖMEROĞLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 8,
+      "tffPersonId": "1615672"
+    },
+    {
+      "name": "EMİR YİĞİT KANER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 11,
+      "tffPersonId": "1545013"
+    },
+    {
+      "name": "ERDEM SOBAY",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 14,
+      "tffPersonId": "1750492"
+    },
+    {
+      "name": "ERTU ÇEKİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 15,
+      "tffPersonId": "1802637"
+    },
+    {
+      "name": "FARUK YILDIZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 13,
+      "tffPersonId": "1613926"
+    },
+    {
+      "name": "FEVZİ İSLİMYE",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "1621017"
+    },
+    {
+      "name": "HARUN SAVAŞ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1618383"
+    },
+    {
+      "name": "MEHMET CAN ÖZENÇ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "1544923"
+    },
+    {
+      "name": "METİN ALTIÖZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 9,
+      "tffPersonId": "1929184"
+    },
+    {
+      "name": "SEDAT BAYDAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 16,
+      "tffPersonId": "1834404"
+    },
+    {
+      "name": "SERHAT ŞENER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1614413"
+    },
+    {
+      "name": "TALHA ATEŞAVCI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 2,
+      "tffPersonId": "1583414"
+    },
+    {
+      "name": "ÜMİT DOĞRU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 10,
+      "tffPersonId": "1614412"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "ALTINORDU A.Ş.",
+      "player": "BURAK İNCE",
+      "scorer": "BURAK İNCE",
+      "raw": "BURAK İNCE,36.dk (F)",
+      "minute": 36,
+      "minuteRaw": "BURAK İNCE,36.dk",
+      "goalType": "F",
+      "tffPersonId": "1713564"
+    },
+    {
+      "type": "goal",
+      "team": "ALTINORDU A.Ş.",
+      "player": "UFUK BİRDAL",
+      "scorer": "UFUK BİRDAL",
+      "raw": "UFUK BİRDAL,79.dk (F)",
+      "minute": 79,
+      "minuteRaw": "UFUK BİRDAL,79.dk",
+      "goalType": "F",
+      "tffPersonId": "1509171"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "METİN ALTIÖZ",
+      "scorer": "METİN ALTIÖZ",
+      "raw": "METİN ALTIÖZ,62.dk (F)",
+      "minute": 62,
+      "minuteRaw": "METİN ALTIÖZ,62.dk",
+      "goalType": "F",
+      "tffPersonId": "1929184"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "EMİR YİĞİT KANER",
+      "scorer": "EMİR YİĞİT KANER",
+      "raw": "EMİR YİĞİT KANER,64.dk (F)",
+      "minute": 64,
+      "minuteRaw": "EMİR YİĞİT KANER,64.dk",
+      "goalType": "F",
+      "tffPersonId": "1545013"
+    },
+    {
+      "type": "substitution",
+      "team": "ALTINORDU A.Ş.",
+      "order": 1,
+      "player_in": "YUSUFHAN ÇALIK",
+      "player_out": "EFE MUSTAFA ÇETİN",
+      "playerIn": "YUSUFHAN ÇALIK",
+      "playerOut": "EFE MUSTAFA ÇETİN",
+      "minute": 53,
+      "minuteRaw": "53.dk",
+      "minute_text": "53.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALTINORDU A.Ş.",
+      "player": "EFE MUSTAFA ÇETİN",
+      "order": 1,
+      "minute": 53,
+      "minuteRaw": "53.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALTINORDU A.Ş.",
+      "player": "YUSUFHAN ÇALIK",
+      "order": 1,
+      "minute": 53,
+      "minuteRaw": "53.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALTINORDU A.Ş.",
+      "order": 2,
+      "player_in": "BERKAY GÜNTAY",
+      "player_out": "BERKANT GÜNDEM",
+      "playerIn": "BERKAY GÜNTAY",
+      "playerOut": "BERKANT GÜNDEM",
+      "minute": 68,
+      "minuteRaw": "68.dk",
+      "minute_text": "68.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALTINORDU A.Ş.",
+      "player": "BERKANT GÜNDEM",
+      "order": 2,
+      "minute": 68,
+      "minuteRaw": "68.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALTINORDU A.Ş.",
+      "player": "BERKAY GÜNTAY",
+      "order": 2,
+      "minute": 68,
+      "minuteRaw": "68.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALTINORDU A.Ş.",
+      "order": 3,
+      "player_in": "SERKAN KAYIKCI",
+      "player_out": "EGEMEN ALPTEKİN",
+      "playerIn": "SERKAN KAYIKCI",
+      "playerOut": "EGEMEN ALPTEKİN",
+      "minute": 59,
+      "minuteRaw": "59.dk",
+      "minute_text": "59.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALTINORDU A.Ş.",
+      "player": "EGEMEN ALPTEKİN",
+      "order": 3,
+      "minute": 59,
+      "minuteRaw": "59.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALTINORDU A.Ş.",
+      "player": "SERKAN KAYIKCI",
+      "order": 3,
+      "minute": 59,
+      "minuteRaw": "59.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALTINORDU A.Ş.",
+      "order": 4,
+      "player_in": "FIRAT BİLİCİ",
+      "player_out": "AHMET ERTUĞRUL ÖZTÜRK",
+      "playerIn": "FIRAT BİLİCİ",
+      "playerOut": "AHMET ERTUĞRUL ÖZTÜRK",
+      "minute": 70,
+      "minuteRaw": "70.dk",
+      "minute_text": "70.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALTINORDU A.Ş.",
+      "player": "AHMET ERTUĞRUL ÖZTÜRK",
+      "order": 4,
+      "minute": 70,
+      "minuteRaw": "70.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALTINORDU A.Ş.",
+      "player": "FIRAT BİLİCİ",
+      "order": 4,
+      "minute": 70,
+      "minuteRaw": "70.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALTINORDU A.Ş.",
+      "order": 5,
+      "player_in": "ABDULLAH SOĞUCAK",
+      "player_out": "ÖZGÜR DERYOL",
+      "playerIn": "ABDULLAH SOĞUCAK",
+      "playerOut": "ÖZGÜR DERYOL",
+      "minute": 41,
+      "minuteRaw": "41.dk",
+      "minute_text": "41.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALTINORDU A.Ş.",
+      "player": "ÖZGÜR DERYOL",
+      "order": 5,
+      "minute": 41,
+      "minuteRaw": "41.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALTINORDU A.Ş.",
+      "player": "ABDULLAH SOĞUCAK",
+      "order": 5,
+      "minute": 41,
+      "minuteRaw": "41.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "ERDEM SOBAY",
+      "player_out": "CEMRE ÖMEROĞLU",
+      "playerIn": "ERDEM SOBAY",
+      "playerOut": "CEMRE ÖMEROĞLU",
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "minute_text": "75.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "CEMRE ÖMEROĞLU",
+      "order": 1,
+      "minute": 75,
+      "minuteRaw": "75.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "ERDEM SOBAY",
+      "order": 1,
+      "minute": 75,
+      "minuteRaw": "75.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "ALTINORDU A.Ş.",
+      "player": "BURAK İNCE",
+      "scorer": "BURAK İNCE",
+      "raw": "BURAK İNCE,36.dk (F)",
+      "minute": 36,
+      "minuteRaw": "BURAK İNCE,36.dk",
+      "goalType": "F",
+      "tffPersonId": "1713564"
+    },
+    {
+      "type": "goal",
+      "team": "ALTINORDU A.Ş.",
+      "player": "UFUK BİRDAL",
+      "scorer": "UFUK BİRDAL",
+      "raw": "UFUK BİRDAL,79.dk (F)",
+      "minute": 79,
+      "minuteRaw": "UFUK BİRDAL,79.dk",
+      "goalType": "F",
+      "tffPersonId": "1509171"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "METİN ALTIÖZ",
+      "scorer": "METİN ALTIÖZ",
+      "raw": "METİN ALTIÖZ,62.dk (F)",
+      "minute": 62,
+      "minuteRaw": "METİN ALTIÖZ,62.dk",
+      "goalType": "F",
+      "tffPersonId": "1929184"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "EMİR YİĞİT KANER",
+      "scorer": "EMİR YİĞİT KANER",
+      "raw": "EMİR YİĞİT KANER,64.dk (F)",
+      "minute": 64,
+      "minuteRaw": "EMİR YİĞİT KANER,64.dk",
+      "goalType": "F",
+      "tffPersonId": "1545013"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "BURAK İNCE",
+      "team": "ALTINORDU A.Ş.",
+      "minute": 36,
+      "goalType": "F"
+    },
+    {
+      "player": "UFUK BİRDAL",
+      "team": "ALTINORDU A.Ş.",
+      "minute": 79,
+      "goalType": "F"
+    },
+    {
+      "player": "METİN ALTIÖZ",
+      "team": "Balıkesirspor",
+      "minute": 62,
+      "goalType": "F"
+    },
+    {
+      "player": "EMİR YİĞİT KANER",
+      "team": "Balıkesirspor",
+      "minute": 64,
+      "goalType": "F"
+    }
+  ],
+  "cards": [],
+  "substitutions": [
+    {
+      "team": "ALTINORDU A.Ş.",
+      "order": 1,
+      "minute": 53,
+      "minuteRaw": "53.dk",
+      "playerOut": "EFE MUSTAFA ÇETİN",
+      "player_out": "EFE MUSTAFA ÇETİN",
+      "playerOutTffPersonId": "1516700",
+      "playerIn": "YUSUFHAN ÇALIK",
+      "player_in": "YUSUFHAN ÇALIK",
+      "playerInTffPersonId": "1578512"
+    },
+    {
+      "team": "ALTINORDU A.Ş.",
+      "order": 2,
+      "minute": 68,
+      "minuteRaw": "68.dk",
+      "playerOut": "BERKANT GÜNDEM",
+      "player_out": "BERKANT GÜNDEM",
+      "playerOutTffPersonId": "1545001",
+      "playerIn": "BERKAY GÜNTAY",
+      "player_in": "BERKAY GÜNTAY",
+      "playerInTffPersonId": "1576803"
+    },
+    {
+      "team": "ALTINORDU A.Ş.",
+      "order": 3,
+      "minute": 59,
+      "minuteRaw": "59.dk",
+      "playerOut": "EGEMEN ALPTEKİN",
+      "player_out": "EGEMEN ALPTEKİN",
+      "playerOutTffPersonId": "1593861",
+      "playerIn": "SERKAN KAYIKCI",
+      "player_in": "SERKAN KAYIKCI",
+      "playerInTffPersonId": "1538107"
+    },
+    {
+      "team": "ALTINORDU A.Ş.",
+      "order": 4,
+      "minute": 70,
+      "minuteRaw": "70.dk",
+      "playerOut": "AHMET ERTUĞRUL ÖZTÜRK",
+      "player_out": "AHMET ERTUĞRUL ÖZTÜRK",
+      "playerOutTffPersonId": "1616563",
+      "playerIn": "FIRAT BİLİCİ",
+      "player_in": "FIRAT BİLİCİ",
+      "playerInTffPersonId": "1576804"
+    },
+    {
+      "team": "ALTINORDU A.Ş.",
+      "order": 5,
+      "minute": 41,
+      "minuteRaw": "41.dk",
+      "playerOut": "ÖZGÜR DERYOL",
+      "player_out": "ÖZGÜR DERYOL",
+      "playerOutTffPersonId": "1717750",
+      "playerIn": "ABDULLAH SOĞUCAK",
+      "player_in": "ABDULLAH SOĞUCAK",
+      "playerInTffPersonId": "1714037"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "playerOut": "CEMRE ÖMEROĞLU",
+      "player_out": "CEMRE ÖMEROĞLU",
+      "playerOutTffPersonId": "1615672",
+      "playerIn": "ERDEM SOBAY",
+      "player_in": "ERDEM SOBAY",
+      "playerInTffPersonId": "1750492"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "ALTINORDU A.Ş. BALIKESİRSPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nALTINORDU A.Ş.\n2\nBALIKESİRSPOR\n2\nBölgesel Gelişim U15 Ligi (Akademi U15 Takımı)\nMaç Kodu:\n35420\nALTINORDU FUTBOL TESİSLERİ - İZMİR - SELÇUK\n19.11.2016 - 14:00\nABDULLAH AKBULUT(Hakem)\nAHMET DİPÇİN(1. Yardımcı Hakem)\nABDULLAH GENÇ(2. Yardımcı Hakem)\nİlk 11\n1.\nNAHİT CAMKESENLER\n2.\nBERKANT GÜNDEM\n3.\nMURAT ALTAY\n4.\nÖZGÜR DERYOL\n5.\nRAVİL TAGİR\n6.\nEFE MUSTAFA ÇETİN\n7.\nUFUK BİRDAL\n8.\nAHMET ERTUĞRUL ÖZTÜRK\n9.\nEGEMEN ALPTEKİN\n10.\nBURAK İNCE\n11.\nYİĞİT EMRE ÇELTİK\nYedekler\n12.\nMUHAMMET DEMİRCİ\n13.\nSERKAN KAYIKCI\n14.\nFIRAT BİLİCİ\n15.\nBERKAY GÜNTAY\n16.\nYUSUFHAN ÇALIK\n17.\nABDULLAH SOĞUCAK\nTeknik Sorumlu\nZİYA GÜLER\nGoller\nBURAK İNCE,36.dk (F)\nUFUK BİRDAL,79.dk (F)\nOyundan Çıkanlar\nEFE MUSTAFA ÇETİN\n53.dk\nBERKANT GÜNDEM\n68.dk\nEGEMEN ALPTEKİN\n41.dk\nAHMET ERTUĞRUL ÖZTÜRK\n70.dk\nÖZGÜR DERYOL\n59.dk\nOyuna Girenler\nYUSUFHAN ÇALIK\n53.dk\nBERKAY GÜNTAY\n68.dk\nSERKAN KAYIKCI\n59.dk\nFIRAT BİLİCİ\n70.dk\nABDULLAH SOĞUCAK\n41.dk\nİlk 11\n1.\nHARUN SAVAŞ\n2.\nTALHA ATEŞAVCI\n3.\nARİF DAVRAN\n4.\nSERHAT ŞENER\n5.\nFEVZİ İSLİMYE\n6.\nBERK TOSUN\n7.\nBERKAY AYKURT\n8.\nCEMRE ÖMEROĞLU\n9.\nMETİN ALTIÖZ\n10.\nÜMİT DOĞRU\n11.\nEMİR YİĞİT KANER\nYedekler\n12.\nMEHMET CAN ÖZENÇ\n13.\nFARUK YILDIZ\n14.\nERDEM SOBAY\n15.\nERTU ÇEKİN\n16.\nSEDAT BAYDAR\nTeknik Sorumlu\nGoller\nMETİN ALTIÖZ,62.dk (F)\nEMİR YİĞİT KANER,64.dk (F)\nOyundan Çıkanlar\nCEMRE ÖMEROĞLU\n75.dk\nOyuna Girenler\nERDEM SOBAY\n75.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nABDULLAH AKBULUT(Hakem)\nAHMET DİPÇİN(1. Yardımcı Hakem)\nABDULLAH GENÇ(2. Yardımcı Hakem)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "Goller\nBURAK İNCE,36.dk (F)\nUFUK BİRDAL,79.dk (F)\nOyundan Çıkanlar\n53.dk\n68.dk\n41.dk\n70.dk\n59.dk\nOyuna Girenler\n53.dk\n68.dk\n59.dk\n70.dk\n41.dk\nGoller\nMETİN ALTIÖZ,62.dk (F)\nEMİR YİĞİT KANER,64.dk (F)\nOyundan Çıkanlar\n75.dk\nOyuna Girenler\n75.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 6,
+    "substitutesAway": 5,
+    "goals": 4,
+    "cards": 0,
+    "substitutions": 6,
+    "players": 34
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=162005",
+    "retrievedAt": "2026-05-15T09:58:51.265187Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}

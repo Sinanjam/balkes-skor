@@ -1,7 +1,7 @@
 {
   "season": "2014-2015",
-  "generatedAt": "2026-05-15T02:47:24.936581Z",
-  "builderVersion": "standings-builder-v2-fast-safe",
+  "generatedAt": "2026-05-15T12:05:58.937114Z",
+  "builderVersion": "standings-builder-v3.1-chain-safe",
   "mode": "auto",
   "maxWeek": 34,
   "source": "none",
@@ -10,6 +10,6 @@
   "matchesUsed": 0,
   "penaltiesApplied": 0,
   "warnings": [
-    "Registry içinde targetPageID/targetUrls yok; resmi tablo ve full fikstür çekimi yapılamadı."
+    "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
   ]
 }

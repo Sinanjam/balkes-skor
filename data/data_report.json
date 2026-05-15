@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-15T07:06:05.016597Z",
+  "generatedAt": "2026-05-15T12:05:58.384620Z",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.9-speed-complete-accuracy",
-  "totalAppMatches": 438,
+  "totalAppMatches": 1342,
   "seasons": [
     {
       "id": "2025-2026",
@@ -105,7 +105,11 @@
         "goalDifference": -51,
         "matchTypes": {
           "league": 36
-        }
+        },
+        "points": 12,
+        "rawPoints": 12,
+        "pointsDeducted": 0,
+        "finalRank": 19
       }
     },
     {
@@ -123,7 +127,11 @@
         "goalDifference": -18,
         "matchTypes": {
           "league": 34
-        }
+        },
+        "points": 35,
+        "rawPoints": 35,
+        "pointsDeducted": 0,
+        "finalRank": 13
       }
     },
     {
@@ -136,12 +144,16 @@
         "wins": 8,
         "draws": 11,
         "losses": 11,
-        "goalsFor": 30,
-        "goalsAgainst": 36,
-        "goalDifference": -6,
+        "goalsFor": 36,
+        "goalsAgainst": 48,
+        "goalDifference": -12,
         "matchTypes": {
           "league": 30
-        }
+        },
+        "points": 38,
+        "rawPoints": 38,
+        "pointsDeducted": 0,
+        "finalRank": 13
       }
     },
     {
@@ -162,10 +174,88 @@
           "cup": 6
         }
       }
+    },
+    {
+      "id": "2017-2018",
+      "name": "2017-2018",
+      "matchCount": 206,
+      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 206,
+        "wins": 66,
+        "draws": 33,
+        "losses": 107,
+        "goalsFor": 303,
+        "goalsAgainst": 414,
+        "goalDifference": -111,
+        "matchTypes": {
+          "league": 204,
+          "cup": 2
+        }
+      }
+    },
+    {
+      "id": "2016-2017",
+      "name": "2016-2017",
+      "matchCount": 253,
+      "competition": "TFF 1.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 253,
+        "wins": 108,
+        "draws": 48,
+        "losses": 97,
+        "goalsFor": 442,
+        "goalsAgainst": 381,
+        "goalDifference": 61,
+        "matchTypes": {
+          "league": 250,
+          "cup": 2,
+          "playoff": 1
+        }
+      }
+    },
+    {
+      "id": "2015-2016",
+      "name": "2015-2016",
+      "matchCount": 209,
+      "competition": "PTT 1.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 209,
+        "wins": 88,
+        "draws": 47,
+        "losses": 74,
+        "goalsFor": 343,
+        "goalsAgainst": 302,
+        "goalDifference": 41,
+        "matchTypes": {
+          "league": 205,
+          "cup": 2,
+          "playoff": 2
+        }
+      }
+    },
+    {
+      "id": "2014-2015",
+      "name": "2014-2015",
+      "matchCount": 236,
+      "competition": "Spor Toto Süper Lig Süleyman Seba Sezonu (Profesyonel Takım)",
+      "summary": {
+        "matches": 236,
+        "wins": 84,
+        "draws": 45,
+        "losses": 107,
+        "goalsFor": 342,
+        "goalsAgainst": 384,
+        "goalDifference": -42,
+        "matchTypes": {
+          "league": 235,
+          "cup": 1
+        }
+      }
     }
   ],
   "playersIndexed": 0,
-  "opponentsIndexed": 113,
+  "opponentsIndexed": 191,
   "notes": [
     "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
     "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."

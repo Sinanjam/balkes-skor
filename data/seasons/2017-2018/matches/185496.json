@@ -1,0 +1,915 @@
+{
+  "id": "185496",
+  "matchCode": "70499",
+  "season": "2017-2018",
+  "competition": "Elit U19 Ligi (Elit Akademi U19 Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "ALİ HİKMET PAŞA 1 NOLU SENTETİK ÇİM SAHA - BALIKES",
+  "venue": "ALİ HİKMET PAŞA 1 NOLU SENTETİK ÇİM SAHA - BALIKES",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2018-02-18",
+  "time": "13:00",
+  "dateDisplay": "2018-02-18 - 13:00",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "TETİŞ YAPI ELAZIĞSPOR",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 0,
+    "away": 1,
+    "display": "0-1",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "isAway": false,
+    "opponent": "TETİŞ YAPI ELAZIĞSPOR",
+    "goalsFor": 0,
+    "goalsAgainst": 1,
+    "result": "L"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "ZEYNUR ÇAKIR"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "AHMED DUROĞLU"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "BARAN GÜL"
+    },
+    {
+      "role": "Dördüncü Hakem",
+      "name": "BİRKAN ALTINDAŞ"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "ZEYNUR ÇAKIR"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "AHMED DUROĞLU"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "BARAN GÜL"
+    },
+    {
+      "role": "Dördüncü Hakem",
+      "name": "BİRKAN ALTINDAŞ"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "FETHİ ATA",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1461659"
+        },
+        {
+          "name": "EMRE ÇALIK",
+          "number": 23,
+          "shirt_no": "23",
+          "tffPersonId": "1499631"
+        },
+        {
+          "name": "BERKAY TÜRK",
+          "number": 24,
+          "shirt_no": "24",
+          "tffPersonId": "1531955"
+        },
+        {
+          "name": "BATUHAN GÜVEN",
+          "number": 21,
+          "shirt_no": "21",
+          "tffPersonId": "1346249"
+        },
+        {
+          "name": "EMRE BAŞTEPE",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1430290"
+        },
+        {
+          "name": "MELİH MERCAN",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1386328"
+        },
+        {
+          "name": "EMRE ŞAHİN",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1765512"
+        },
+        {
+          "name": "ÖMER TAYYİB KARADUMAN",
+          "number": 26,
+          "shirt_no": "26",
+          "tffPersonId": "1556663"
+        },
+        {
+          "name": "MEHMET CİHAN",
+          "number": 27,
+          "shirt_no": "27",
+          "tffPersonId": "1430298"
+        },
+        {
+          "name": "HAZAR MUTLU",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1351258"
+        },
+        {
+          "name": "AHMET TEKİN",
+          "number": 20,
+          "shirt_no": "20",
+          "tffPersonId": "1468628"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "YİĞİTHAN KIR",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1588286"
+        },
+        {
+          "name": "BERKAY AKGÜN",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1386333"
+        },
+        {
+          "name": "ALİ ADAR",
+          "number": 22,
+          "shirt_no": "22",
+          "tffPersonId": "1430286"
+        },
+        {
+          "name": "OZAN YILDIRIM",
+          "number": 18,
+          "shirt_no": "18",
+          "tffPersonId": "1430289"
+        },
+        {
+          "name": "MUSTAFA BERKE YILDIRIM",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1556432"
+        },
+        {
+          "name": "EGEMEN GENÇ",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1440140"
+        },
+        {
+          "name": "ALİ TÜREL",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1427155"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "AHMET GÜRKAN ŞEHİRLİ"
+        }
+      ],
+      "coach": "AHMET GÜRKAN ŞEHİRLİ",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "starting11": [
+        {
+          "name": "ALİ KARATAŞ",
+          "number": 61,
+          "shirt_no": "61",
+          "tffPersonId": "1580859"
+        },
+        {
+          "name": "EREN YERLİ",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1382230"
+        },
+        {
+          "name": "MEHMETŞAH AKAR",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1566209"
+        },
+        {
+          "name": "DOĞUŞ KAYA",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1555326"
+        },
+        {
+          "name": "AHMET CAN ASLAN",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1163763"
+        },
+        {
+          "name": "YUSUF KARATAŞ",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1595361"
+        },
+        {
+          "name": "FATİH ÇELİK",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1373177"
+        },
+        {
+          "name": "AHMET GİSHTİ",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1668419"
+        },
+        {
+          "name": "MUHAMMET OĞUZHAN DEDEOĞLU",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1477086"
+        },
+        {
+          "name": "YASİN ORAK",
+          "number": 20,
+          "shirt_no": "20",
+          "tffPersonId": "1494276"
+        },
+        {
+          "name": "MUHAMMED ADIGÜZEL",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1518387"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "BURAK KORKMAZ",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1430935"
+        },
+        {
+          "name": "ZANA İSLAMOĞLU",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1533868"
+        },
+        {
+          "name": "BAVER TANGÜNER",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1362018"
+        },
+        {
+          "name": "NİHAT BAL",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1566210"
+        },
+        {
+          "name": "FATİH KARAKUŞ",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1365056"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "KENAN KAMAÇ"
+        }
+      ],
+      "coach": "KENAN KAMAÇ",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "AHMET GÜRKAN ŞEHİRLİ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "AHMET TEKİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 20,
+      "tffPersonId": "1468628"
+    },
+    {
+      "name": "ALİ ADAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "yellow_card",
+        "substitution_in"
+      ],
+      "number": 22,
+      "tffPersonId": "1430286"
+    },
+    {
+      "name": "ALİ TÜREL",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 11,
+      "tffPersonId": "1427155"
+    },
+    {
+      "name": "BATUHAN GÜVEN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 21,
+      "tffPersonId": "1346249"
+    },
+    {
+      "name": "BERKAY AKGÜN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 2,
+      "tffPersonId": "1386333"
+    },
+    {
+      "name": "BERKAY TÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 24,
+      "tffPersonId": "1531955"
+    },
+    {
+      "name": "EGEMEN GENÇ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 6,
+      "tffPersonId": "1440140"
+    },
+    {
+      "name": "EMRE BAŞTEPE",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1430290"
+    },
+    {
+      "name": "EMRE ÇALIK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 23,
+      "tffPersonId": "1499631"
+    },
+    {
+      "name": "EMRE ŞAHİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 15,
+      "tffPersonId": "1765512"
+    },
+    {
+      "name": "FETHİ ATA",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1461659"
+    },
+    {
+      "name": "HAZAR MUTLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 9,
+      "tffPersonId": "1351258"
+    },
+    {
+      "name": "MEHMET CİHAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 27,
+      "tffPersonId": "1430298"
+    },
+    {
+      "name": "MELİH MERCAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 16,
+      "tffPersonId": "1386328"
+    },
+    {
+      "name": "MUSTAFA BERKE YILDIRIM",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 17,
+      "tffPersonId": "1556432"
+    },
+    {
+      "name": "ÖMER TAYYİB KARADUMAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 26,
+      "tffPersonId": "1556663"
+    },
+    {
+      "name": "OZAN YILDIRIM",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 18,
+      "tffPersonId": "1430289"
+    },
+    {
+      "name": "YİĞİTHAN KIR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "1588286"
+    },
+    {
+      "name": "AHMET CAN ASLAN",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 5,
+      "tffPersonId": "1163763"
+    },
+    {
+      "name": "AHMET GİSHTİ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 8,
+      "tffPersonId": "1668419"
+    },
+    {
+      "name": "ALİ KARATAŞ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 61,
+      "tffPersonId": "1580859"
+    },
+    {
+      "name": "BAVER TANGÜNER",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 15,
+      "tffPersonId": "1362018"
+    },
+    {
+      "name": "BURAK KORKMAZ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 1,
+      "tffPersonId": "1430935"
+    },
+    {
+      "name": "DOĞUŞ KAYA",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1555326"
+    },
+    {
+      "name": "EREN YERLİ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 2,
+      "tffPersonId": "1382230"
+    },
+    {
+      "name": "FATİH ÇELİK",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 17,
+      "tffPersonId": "1373177"
+    },
+    {
+      "name": "FATİH KARAKUŞ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 19,
+      "tffPersonId": "1365056"
+    },
+    {
+      "name": "KENAN KAMAÇ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "MEHMETŞAH AKAR",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1566209"
+    },
+    {
+      "name": "MUHAMMED ADIGÜZEL",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1518387"
+    },
+    {
+      "name": "MUHAMMET OĞUZHAN DEDEOĞLU",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 9,
+      "tffPersonId": "1477086"
+    },
+    {
+      "name": "NİHAT BAL",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 16,
+      "tffPersonId": "1566210"
+    },
+    {
+      "name": "YASİN ORAK",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 20,
+      "tffPersonId": "1494276"
+    },
+    {
+      "name": "YUSUF KARATAŞ",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 6,
+      "tffPersonId": "1595361"
+    },
+    {
+      "name": "ZANA İSLAMOĞLU",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 13,
+      "tffPersonId": "1533868"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "MUHAMMET OĞUZHAN DEDEOĞLU",
+      "scorer": "MUHAMMET OĞUZHAN DEDEOĞLU",
+      "raw": "MUHAMMET OĞUZHAN DEDEOĞLU,86.dk (F)",
+      "minute": 86,
+      "minuteRaw": "MUHAMMET OĞUZHAN DEDEOĞLU,86.dk",
+      "goalType": "F",
+      "tffPersonId": "1477086"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "MELİH MERCAN",
+      "minute": 89,
+      "minuteRaw": "89.dk",
+      "tffPersonId": "1386328"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "ALİ ADAR",
+      "minute": 84,
+      "minuteRaw": "84.dk",
+      "tffPersonId": "1430286"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "AHMET GİSHTİ",
+      "minute": 82,
+      "minuteRaw": "82.dk",
+      "tffPersonId": "1668419"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "ALİ ADAR",
+      "player_out": "ÖMER TAYYİB KARADUMAN",
+      "playerIn": "ALİ ADAR",
+      "playerOut": "ÖMER TAYYİB KARADUMAN",
+      "minute": 60,
+      "minuteRaw": "60.dk",
+      "minute_text": "60.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "ÖMER TAYYİB KARADUMAN",
+      "order": 1,
+      "minute": 60,
+      "minuteRaw": "60.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "ALİ ADAR",
+      "order": 1,
+      "minute": 60,
+      "minuteRaw": "60.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "order": 1,
+      "player_in": "BAVER TANGÜNER",
+      "player_out": "AHMET CAN ASLAN",
+      "playerIn": "BAVER TANGÜNER",
+      "playerOut": "AHMET CAN ASLAN",
+      "minute": 72,
+      "minuteRaw": "72.dk",
+      "minute_text": "72.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "AHMET CAN ASLAN",
+      "order": 1,
+      "minute": 72,
+      "minuteRaw": "72.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "BAVER TANGÜNER",
+      "order": 1,
+      "minute": 72,
+      "minuteRaw": "72.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "order": 2,
+      "player_in": "FATİH KARAKUŞ",
+      "player_out": "EREN YERLİ",
+      "playerIn": "FATİH KARAKUŞ",
+      "playerOut": "EREN YERLİ",
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "minute_text": "55.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "EREN YERLİ",
+      "order": 2,
+      "minute": 55,
+      "minuteRaw": "55.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "FATİH KARAKUŞ",
+      "order": 2,
+      "minute": 55,
+      "minuteRaw": "55.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "order": 3,
+      "player_in": "NİHAT BAL",
+      "player_out": "MUHAMMED ADIGÜZEL",
+      "playerIn": "NİHAT BAL",
+      "playerOut": "MUHAMMED ADIGÜZEL",
+      "minute": 83,
+      "minuteRaw": "83.dk",
+      "minute_text": "83.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "MUHAMMED ADIGÜZEL",
+      "order": 3,
+      "minute": 83,
+      "minuteRaw": "83.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "NİHAT BAL",
+      "order": 3,
+      "minute": 83,
+      "minuteRaw": "83.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "MUHAMMET OĞUZHAN DEDEOĞLU",
+      "scorer": "MUHAMMET OĞUZHAN DEDEOĞLU",
+      "raw": "MUHAMMET OĞUZHAN DEDEOĞLU,86.dk (F)",
+      "minute": 86,
+      "minuteRaw": "MUHAMMET OĞUZHAN DEDEOĞLU,86.dk",
+      "goalType": "F",
+      "tffPersonId": "1477086"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "MUHAMMET OĞUZHAN DEDEOĞLU",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "minute": 86,
+      "goalType": "F"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "MELİH MERCAN",
+      "minute": 89,
+      "minuteRaw": "89.dk",
+      "tffPersonId": "1386328"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "ALİ ADAR",
+      "minute": 84,
+      "minuteRaw": "84.dk",
+      "tffPersonId": "1430286"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "player": "AHMET GİSHTİ",
+      "minute": 82,
+      "minuteRaw": "82.dk",
+      "tffPersonId": "1668419"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 60,
+      "minuteRaw": "60.dk",
+      "playerOut": "ÖMER TAYYİB KARADUMAN",
+      "player_out": "ÖMER TAYYİB KARADUMAN",
+      "playerOutTffPersonId": "1556663",
+      "playerIn": "ALİ ADAR",
+      "player_in": "ALİ ADAR",
+      "playerInTffPersonId": "1430286"
+    },
+    {
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "order": 1,
+      "minute": 72,
+      "minuteRaw": "72.dk",
+      "playerOut": "AHMET CAN ASLAN",
+      "player_out": "AHMET CAN ASLAN",
+      "playerOutTffPersonId": "1163763",
+      "playerIn": "BAVER TANGÜNER",
+      "player_in": "BAVER TANGÜNER",
+      "playerInTffPersonId": "1362018"
+    },
+    {
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "order": 2,
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "playerOut": "EREN YERLİ",
+      "player_out": "EREN YERLİ",
+      "playerOutTffPersonId": "1382230",
+      "playerIn": "FATİH KARAKUŞ",
+      "player_in": "FATİH KARAKUŞ",
+      "playerInTffPersonId": "1365056"
+    },
+    {
+      "team": "TETİŞ YAPI ELAZIĞSPOR",
+      "order": 3,
+      "minute": 83,
+      "minuteRaw": "83.dk",
+      "playerOut": "MUHAMMED ADIGÜZEL",
+      "player_out": "MUHAMMED ADIGÜZEL",
+      "playerOutTffPersonId": "1518387",
+      "playerIn": "NİHAT BAL",
+      "player_in": "NİHAT BAL",
+      "playerInTffPersonId": "1566210"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "BALIKESİRSPOR BALTOK TETİŞ YAPI ELAZIĞSPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nBALIKESİRSPOR BALTOK\n0\nTETİŞ YAPI ELAZIĞSPOR\n1\nElit U19 Ligi (Elit Akademi U19 Takımı)\nMaç Kodu:\n70499\nALİ HİKMET PAŞA 1 NOLU SENTETİK ÇİM SAHA - BALIKES\n18.02.2018 - 13:00\nZEYNUR ÇAKIR(Hakem)\nAHMED DUROĞLU(1. Yardımcı Hakem)\nBARAN GÜL(2. Yardımcı Hakem)\nBİRKAN ALTINDAŞ(Dördüncü Hakem)\nSEDAT YILDIRIM(Gözlemci)\nİlk 11\n1.\nFETHİ ATA\n23.\nEMRE ÇALIK\n24.\nBERKAY TÜRK\n21.\nBATUHAN GÜVEN\n3.\nEMRE BAŞTEPE\n16.\nMELİH MERCAN\n15.\nEMRE ŞAHİN\n26.\nÖMER TAYYİB KARADUMAN\n27.\nMEHMET CİHAN\n9.\nHAZAR MUTLU\n20.\nAHMET TEKİN\nYedekler\n12.\nYİĞİTHAN KIR\n2.\nBERKAY AKGÜN\n22.\nALİ ADAR\n18.\nOZAN YILDIRIM\n17.\nMUSTAFA BERKE YILDIRIM\n6.\nEGEMEN GENÇ\n11.\nALİ TÜREL\nTeknik Sorumlu\nAHMET GÜRKAN ŞEHİRLİ\nKartlar\nMELİH MERCAN\n89.dk\nALİ ADAR\n84.dk\nOyundan Çıkanlar\nÖMER TAYYİB KARADUMAN\n60.dk\nOyuna Girenler\nALİ ADAR\n60.dk\nİlk 11\n61.\nALİ KARATAŞ\n2.\nEREN YERLİ\n3.\nMEHMETŞAH AKAR\n4.\nDOĞUŞ KAYA\n5.\nAHMET CAN ASLAN\n6.\nYUSUF KARATAŞ\n17.\nFATİH ÇELİK\n8.\nAHMET GİSHTİ\n9.\nMUHAMMET OĞUZHAN DEDEOĞLU\n20.\nYASİN ORAK\n11.\nMUHAMMED ADIGÜZEL\nYedekler\n1.\nBURAK KORKMAZ\n13.\nZANA İSLAMOĞLU\n15.\nBAVER TANGÜNER\n16.\nNİHAT BAL\n19.\nFATİH KARAKUŞ\nTeknik Sorumlu\nKENAN KAMAÇ\nGoller\nMUHAMMET OĞUZHAN DEDEOĞLU,86.dk (F)\nKartlar\nAHMET GİSHTİ\n82.dk\nOyundan Çıkanlar\nAHMET CAN ASLAN\n72.dk\nEREN YERLİ\n55.dk\nMUHAMMED ADIGÜZEL\n83.dk\nOyuna Girenler\nBAVER TANGÜNER\n72.dk\nFATİH KARAKUŞ\n55.dk\nNİHAT BAL\n83.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nZEYNUR ÇAKIR(Hakem)\nAHMED DUROĞLU(1. Yardımcı Hakem)\nBARAN GÜL(2. Yardımcı Hakem)\nBİRKAN ALTINDAŞ(Dördüncü Hakem)\nSEDAT YILDIRIM(Gözlemci)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "89.dk\n84.dk\nOyundan Çıkanlar\n60.dk\nOyuna Girenler\n60.dk\nGoller\nMUHAMMET OĞUZHAN DEDEOĞLU,86.dk (F)\n82.dk\nOyundan Çıkanlar\n72.dk\n55.dk\n83.dk\nOyuna Girenler\n72.dk\n55.dk\n83.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 7,
+    "substitutesAway": 5,
+    "goals": 1,
+    "cards": 3,
+    "substitutions": 4,
+    "players": 36
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=185496",
+    "retrievedAt": "2026-05-15T08:27:04.487742Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}

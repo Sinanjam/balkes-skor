@@ -1,0 +1,26 @@
+{
+  "id": "2016-2017",
+  "name": "2016-2017",
+  "competition": "TFF 1.Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
+  "updatedAt": "2026-05-15T10:03:13.391553Z",
+  "summary": {
+    "matches": 253,
+    "wins": 108,
+    "draws": 48,
+    "losses": 97,
+    "goalsFor": 442,
+    "goalsAgainst": 381,
+    "goalDifference": 61,
+    "matchTypes": {
+      "league": 250,
+      "cup": 2,
+      "playoff": 1
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2016-2017/matches_index.json",
+    "standingsByWeek": "seasons/2016-2017/standings_by_week.json"
+  }
+}

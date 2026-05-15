@@ -1,191 +1,678 @@
 {
-  "generatedAt": "2026-05-15T07:06:05.017026Z",
+  "generatedAt": "2026-05-15T12:05:58.385152Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.9-speed-complete-accuracy",
   "processed": [
     {
-      "season": "2021-2022",
-      "selectedIds": 103,
-      "allDiscoveredIds": 347,
-      "detailCandidates": 103,
-      "candidateMode": "selected_or_known",
-      "knownOnly": false,
-      "plannedTarget": true,
-      "legacyPageIdProbe": false,
-      "legacyProbeDiagnostics": [],
-      "matchesPublished": 36,
-      "detailFiles": 36,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {
-        "balkes_not_found": 67
-      },
-      "rejectedSamples": {
-        "balkes_not_found": [
-          "223299",
-          "223300",
-          "223305",
-          "223320",
-          "223335",
-          "223338",
-          "223341",
-          "223344",
-          "223354",
-          "223355",
-          "223359",
-          "223360",
-          "223368",
-          "223371",
-          "223377",
-          "223385",
-          "223386",
-          "223395",
-          "223396",
-          "223403"
-        ]
-      },
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {
-        "league": 36
-      },
-      "seasonGuard": {
-        "start": "2021-07-01",
-        "end": "2022-06-30"
-      },
-      "generatedAt": "2026-05-15T06:47:02.017063Z"
-    },
-    {
-      "season": "2020-2021",
-      "selectedIds": 99,
-      "allDiscoveredIds": 311,
-      "detailCandidates": 99,
-      "candidateMode": "selected_or_known",
-      "knownOnly": false,
-      "plannedTarget": true,
-      "legacyPageIdProbe": false,
-      "legacyProbeDiagnostics": [],
-      "matchesPublished": 34,
-      "detailFiles": 34,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {
-        "balkes_not_found": 65
-      },
-      "rejectedSamples": {
-        "balkes_not_found": [
-          "219400",
-          "219403",
-          "219407",
-          "219413",
-          "219418",
-          "219420",
-          "219434",
-          "219435",
-          "219440",
-          "219445",
-          "219448",
-          "219453",
-          "219461",
-          "219466",
-          "219473",
-          "219477",
-          "219482",
-          "219488",
-          "219495",
-          "219497"
-        ]
-      },
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {
-        "league": 34
-      },
-      "seasonGuard": {
-        "start": "2020-07-01",
-        "end": "2021-06-30"
-      },
-      "generatedAt": "2026-05-15T06:48:52.810892Z"
-    },
-    {
-      "season": "2019-2020",
-      "selectedIds": 94,
-      "allDiscoveredIds": 311,
-      "detailCandidates": 94,
-      "candidateMode": "selected_or_known",
-      "knownOnly": false,
-      "plannedTarget": true,
-      "legacyPageIdProbe": false,
-      "legacyProbeDiagnostics": [],
-      "matchesPublished": 30,
-      "detailFiles": 30,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {
-        "balkes_not_found": 60,
-        "date_out_of_season:2020-07-02": 1,
-        "date_out_of_season:2020-07-06": 1,
-        "date_out_of_season:2020-07-11": 1,
-        "date_out_of_season:2020-07-19": 1
-      },
-      "rejectedSamples": {
-        "balkes_not_found": [
-          "207460",
-          "207466",
-          "207467",
-          "207470",
-          "207473",
-          "207479",
-          "207484",
-          "207486",
-          "207494",
-          "207500",
-          "207501",
-          "207507",
-          "207512",
-          "207514",
-          "207519",
-          "207528",
-          "207530",
-          "207534",
-          "207539",
-          "207547"
-        ],
-        "date_out_of_season:2020-07-02": [
-          "207737"
-        ],
-        "date_out_of_season:2020-07-06": [
-          "207745"
-        ],
-        "date_out_of_season:2020-07-11": [
-          "207754"
-        ],
-        "date_out_of_season:2020-07-19": [
-          "207763"
-        ]
-      },
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {
-        "league": 30
-      },
-      "seasonGuard": {
-        "start": "2019-07-01",
-        "end": "2020-06-30"
-      },
-      "generatedAt": "2026-05-15T06:50:27.390765Z"
-    },
-    {
-      "season": "2018-2019",
-      "selectedIds": 378,
-      "allDiscoveredIds": 6637,
-      "detailCandidates": 378,
+      "season": "2017-2018",
+      "selectedIds": 858,
+      "allDiscoveredIds": 18337,
+      "detailCandidates": 858,
       "candidateMode": "legacy_pageid_probe_selected_or_known",
       "knownOnly": false,
       "plannedTarget": false,
       "legacyPageIdProbe": true,
       "legacyProbeDiagnostics": [
+        {
+          "kind": "page_hint",
+          "pageID": 1414,
+          "baseSelectedDelta": 99,
+          "baseAllDelta": 311,
+          "groups": []
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1416,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 969,
+          "groups": [
+            "1356",
+            "1357",
+            "1358"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1416,
+          "grupID": "1356",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1416,
+          "grupID": "1357",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1416,
+          "grupID": "1358",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1417,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 10,
+          "groups": [
+            "1359",
+            "1360"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1417,
+          "grupID": "1359",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1417,
+          "grupID": "1360",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 9
+        },
+        {
+          "kind": "group_fast_skip",
+          "pageID": 1418,
+          "error": "http_504",
+          "grupID": "1453",
+          "cumulative": 1
+        },
+        {
+          "kind": "group_fast_skip",
+          "pageID": 1418,
+          "error": "http_504",
+          "grupID": "1455",
+          "cumulative": 2
+        },
+        {
+          "kind": "group_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1404",
+          "cumulative": 1
+        },
+        {
+          "kind": "group_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1405",
+          "cumulative": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1419,
+          "grupID": "1520",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1520",
+          "week": 2,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1520",
+          "week": 11,
+          "cumulative": 2
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1420,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 19,
+          "groups": [
+            "1381",
+            "1382",
+            "1383",
+            "1384",
+            "1385",
+            "1386",
+            "1387"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1381",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1382",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1383",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1384",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1385",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1386",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1387",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1421,
+          "grupID": "1377",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1422,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 17,
+          "groups": [
+            "1368",
+            "1369",
+            "1370",
+            "1371",
+            "1372",
+            "1373",
+            "1374"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1368",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1369",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1370",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1371",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1372",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1373",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1422,
+          "error": "timeout",
+          "grupID": "1373",
+          "week": 34,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1422,
+          "error": "timeout",
+          "grupID": "1373",
+          "week": 36,
+          "cumulative": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1374",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1423,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 17,
+          "groups": [
+            "1395",
+            "1396",
+            "1397",
+            "1398",
+            "1399",
+            "1400",
+            "1401"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1395",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1396",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1397",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1398",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1399",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1400",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1401",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1425,
+          "baseSelectedDelta": 2,
+          "baseAllDelta": 243,
+          "groups": [
+            "1457",
+            "1458",
+            "1459",
+            "1460",
+            "1461",
+            "1462",
+            "1463",
+            "1464"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1457",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1458",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1459",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1460",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1461",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1462",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1463",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1464",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1428,
+          "baseSelectedDelta": 2,
+          "baseAllDelta": 21,
+          "groups": [
+            "1467",
+            "1468",
+            "1469",
+            "1470",
+            "1471",
+            "1472",
+            "1473",
+            "1474"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1467",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1468",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1469",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1470",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1471",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1472",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1473",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1474",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1441,
+          "baseSelectedDelta": 97,
+          "baseAllDelta": 311,
+          "groups": []
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1446,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 10,
+          "groups": [
+            "1500",
+            "1501"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1446,
+          "grupID": "1500",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1446,
+          "grupID": "1501",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1450,
+          "grupID": "1601",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1451,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 18,
+          "groups": [
+            "1529",
+            "1530",
+            "1531",
+            "1532"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1451,
+          "grupID": "1529",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1451,
+          "grupID": "1530",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1451,
+          "grupID": "1531",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1451,
+          "grupID": "1532",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1452,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 18,
+          "groups": [
+            "1533",
+            "1534",
+            "1535",
+            "1536",
+            "1619",
+            "1620"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1452,
+          "grupID": "1533",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1452,
+          "grupID": "1619",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1452,
+          "grupID": "1620",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1453,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 18,
+          "groups": [
+            "1537",
+            "1538",
+            "1539",
+            "1540",
+            "1615",
+            "1616"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1453,
+          "grupID": "1537",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1453,
+          "grupID": "1615",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1453,
+          "grupID": "1616",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1454,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 10,
+          "groups": [
+            "1517",
+            "1518"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1454,
+          "grupID": "1517",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1454,
+          "grupID": "1518",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1455,
+          "grupID": "1520",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1456,
+          "grupID": "1266",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
         {
           "kind": "page_hint",
           "pageID": 1463,
@@ -197,14 +684,14 @@
           "kind": "page_week_fast_skip",
           "pageID": 1463,
           "error": "http_504",
-          "week": 3,
+          "week": 20,
           "cumulative": 1
         },
         {
           "kind": "page_week_fast_skip",
           "pageID": 1463,
           "error": "http_504",
-          "week": 16,
+          "week": 30,
           "cumulative": 2
         },
         {
@@ -277,6 +764,13 @@
           "grupID": "1636",
           "groupSelectedDelta": 0,
           "groupAllDelta": 0
+        },
+        {
+          "kind": "group_fast_skip",
+          "pageID": 1476,
+          "error": "timeout",
+          "grupID": "1639",
+          "cumulative": 1
         },
         {
           "kind": "group_hint",
@@ -374,307 +868,4861 @@
           "grupID": "1631",
           "groupSelectedDelta": 1,
           "groupAllDelta": 8
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 1487,
-          "baseSelectedDelta": 6,
-          "baseAllDelta": 195,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 1495,
-          "baseSelectedDelta": 1,
-          "baseAllDelta": 3,
-          "groups": [
-            "1880",
-            "1881",
-            "1882",
-            "1883",
-            "1884"
-          ]
-        },
-        {
-          "kind": "group_hint",
-          "pageID": 1495,
-          "grupID": "1880",
-          "groupSelectedDelta": 0,
-          "groupAllDelta": 0
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 1502,
-          "baseSelectedDelta": 94,
-          "baseAllDelta": 311,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 1503,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": [
-            "1632",
-            "1633",
-            "1634",
-            "1635"
-          ]
-        },
-        {
-          "kind": "group_hint",
-          "pageID": 1503,
-          "grupID": "1632",
-          "groupSelectedDelta": 0,
-          "groupAllDelta": 0
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 1504,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": [
-            "1632",
-            "1633",
-            "1634",
-            "1635"
-          ]
-        },
-        {
-          "kind": "group_hint",
-          "pageID": 1504,
-          "grupID": "1632",
-          "groupSelectedDelta": 0,
-          "groupAllDelta": 0
         }
       ],
-      "matchesPublished": 207,
-      "detailFiles": 207,
-      "duplicatesDropped": 4,
+      "matchesPublished": 206,
+      "detailFiles": 206,
+      "duplicatesDropped": 8,
       "rejectedReasons": {
-        "date_out_of_season:2017-09-19": 1,
-        "balkes_not_found": 122,
-        "date_out_of_season:2019-08-17": 1,
-        "date_out_of_season:2019-08-24": 1,
-        "date_out_of_season:2019-08-31": 1,
-        "date_out_of_season:2019-09-13": 1,
-        "date_out_of_season:2019-09-20": 1,
-        "date_out_of_season:2019-09-29": 1,
-        "date_out_of_season:2019-10-05": 1,
-        "date_out_of_season:2019-10-20": 1,
-        "date_out_of_season:2019-10-26": 1,
-        "date_out_of_season:2019-11-04": 1,
-        "date_out_of_season:2019-11-10": 1,
-        "date_out_of_season:2019-11-24": 1,
-        "date_out_of_season:2019-12-02": 1,
-        "date_out_of_season:2019-12-07": 1,
-        "date_out_of_season:2019-12-15": 1,
-        "date_out_of_season:2019-12-21": 1,
-        "date_out_of_season:2019-12-28": 1,
-        "date_out_of_season:2020-01-20": 1,
-        "date_out_of_season:2020-01-26": 1,
-        "date_out_of_season:2020-02-02": 1,
-        "date_out_of_season:2020-02-09": 1,
-        "date_out_of_season:2020-02-16": 1,
-        "date_out_of_season:2020-02-23": 1,
-        "date_out_of_season:2020-02-27": 1,
-        "date_out_of_season:2020-03-02": 1,
-        "date_out_of_season:2020-03-06": 1,
-        "date_out_of_season:2020-03-10": 1,
-        "date_out_of_season:2020-03-16": 1,
-        "date_out_of_season:2020-06-20": 1,
-        "date_out_of_season:2020-06-28": 1,
-        "date_out_of_season:2020-07-02": 1,
-        "date_out_of_season:2020-07-06": 1,
-        "date_out_of_season:2020-07-11": 1,
-        "date_out_of_season:2020-07-19": 1,
-        "date_out_of_season:2020-03-22": 1,
-        "date_out_of_season:2020-03-29": 1,
-        "date_out_of_season:2020-04-05": 1,
-        "date_out_of_season:2020-04-12": 1,
-        "date_out_of_season:2020-04-19": 1,
-        "date_out_of_season:2020-05-03": 1,
-        "date_out_of_season:2020-05-12": 1,
-        "date_out_of_season:2020-05-17": 1,
-        "date_out_of_season:2020-05-31": 1,
-        "date_out_of_season:2020-06-06": 1
+        "date_out_of_season:2015-10-10": 1,
+        "date_out_of_season:2015-10-17": 1,
+        "date_out_of_season:2015-10-24": 1,
+        "date_out_of_season:2015-10-30": 1,
+        "date_out_of_season:2015-11-07": 1,
+        "date_out_of_season:2015-11-14": 1,
+        "date_out_of_season:2015-11-21": 1,
+        "date_out_of_season:2015-11-28": 1,
+        "date_out_of_season:2015-12-05": 1,
+        "date_out_of_season:2015-12-12": 1,
+        "date_out_of_season:2015-12-19": 1,
+        "date_out_of_season:2015-12-26": 1,
+        "date_out_of_season:2016-01-09": 1,
+        "date_out_of_season:2016-01-16": 1,
+        "date_out_of_season:2016-01-23": 1,
+        "date_out_of_season:2016-01-30": 1,
+        "date_out_of_season:2016-02-06": 1,
+        "date_out_of_season:2016-02-13": 1,
+        "date_out_of_season:2016-02-20": 1,
+        "date_out_of_season:2016-02-27": 1,
+        "date_out_of_season:2016-03-05": 1,
+        "date_out_of_season:2016-03-12": 1,
+        "date_out_of_season:2016-03-19": 1,
+        "date_out_of_season:2016-03-26": 1,
+        "date_out_of_season:2016-04-02": 1,
+        "date_out_of_season:2016-04-09": 1,
+        "date_out_of_season:2016-08-22": 2,
+        "balkes_not_found": 190,
+        "date_out_of_season:2016-08-28": 2,
+        "date_out_of_season:2016-09-11": 2,
+        "date_out_of_season:2016-09-18": 2,
+        "date_out_of_season:2016-09-25": 4,
+        "date_out_of_season:2016-10-02": 4,
+        "date_out_of_season:2016-10-15": 4,
+        "date_out_of_season:2016-10-23": 4,
+        "date_out_of_season:2016-10-30": 4,
+        "date_out_of_season:2016-11-05": 4,
+        "date_out_of_season:2016-11-19": 4,
+        "date_out_of_season:2016-11-27": 3,
+        "date_out_of_season:2016-12-04": 5,
+        "date_out_of_season:2016-12-10": 4,
+        "date_out_of_season:2016-12-16": 2,
+        "date_out_of_season:2016-12-24": 3,
+        "date_out_of_season:2017-01-21": 4,
+        "date_out_of_season:2017-01-27": 2,
+        "date_out_of_season:2017-02-13": 1,
+        "date_out_of_season:2017-02-19": 4,
+        "date_out_of_season:2017-02-25": 4,
+        "date_out_of_season:2017-03-05": 5,
+        "date_out_of_season:2017-03-13": 1,
+        "date_out_of_season:2017-03-18": 4,
+        "date_out_of_season:2017-04-03": 1,
+        "date_out_of_season:2017-04-09": 3,
+        "date_out_of_season:2017-04-20": 2,
+        "date_out_of_season:2017-04-24": 1,
+        "date_out_of_season:2017-04-30": 4,
+        "date_out_of_season:2017-05-03": 2,
+        "date_out_of_season:2017-05-08": 2,
+        "date_out_of_season:2017-05-14": 3,
+        "date_out_of_season:2017-05-20": 3,
+        "date_out_of_season:2016-11-26": 2,
+        "date_out_of_season:2016-12-22": 1,
+        "date_out_of_season:2017-01-15": 4,
+        "date_out_of_season:2017-02-12": 4,
+        "date_out_of_season:2017-02-17": 1,
+        "date_out_of_season:2017-03-14": 1,
+        "date_out_of_season:2017-04-02": 4,
+        "date_out_of_season:2017-04-23": 1,
+        "date_out_of_season:2016-09-03": 2,
+        "date_out_of_season:2016-09-09": 2,
+        "date_out_of_season:2016-09-24": 2,
+        "date_out_of_season:2016-10-01": 2,
+        "date_out_of_season:2016-11-02": 2,
+        "date_out_of_season:2016-10-29": 2,
+        "date_out_of_season:2016-11-12": 4,
+        "date_out_of_season:2016-11-16": 2,
+        "date_missing": 1,
+        "date_out_of_season:2016-12-03": 2,
+        "date_out_of_season:2016-12-17": 2,
+        "date_out_of_season:2017-01-04": 2,
+        "date_out_of_season:2017-01-25": 2,
+        "date_out_of_season:2017-01-14": 2,
+        "date_out_of_season:2017-02-11": 2,
+        "date_out_of_season:2017-02-18": 2,
+        "date_out_of_season:2017-03-04": 2,
+        "date_out_of_season:2017-03-11": 2,
+        "date_out_of_season:2017-03-25": 2,
+        "date_out_of_season:2017-04-12": 2,
+        "date_out_of_season:2017-04-08": 4,
+        "date_out_of_season:2017-04-15": 4,
+        "date_out_of_season:2017-04-22": 5,
+        "date_out_of_season:2017-04-29": 3,
+        "date_out_of_season:2016-09-04": 2,
+        "date_out_of_season:2016-09-10": 2,
+        "date_out_of_season:2016-10-16": 2,
+        "date_out_of_season:2016-11-06": 2,
+        "date_out_of_season:2016-11-17": 2,
+        "date_out_of_season:2016-12-08": 2,
+        "date_out_of_season:2016-12-11": 3,
+        "date_out_of_season:2016-12-18": 3,
+        "date_out_of_season:2016-12-25": 3,
+        "date_out_of_season:2017-01-05": 2,
+        "date_out_of_season:2017-01-26": 2,
+        "date_out_of_season:2017-01-22": 3,
+        "date_out_of_season:2017-02-26": 3,
+        "date_out_of_season:2017-03-12": 2,
+        "date_out_of_season:2017-03-19": 3,
+        "date_out_of_season:2017-03-26": 4,
+        "date_out_of_season:2016-09-21": 1,
+        "date_out_of_season:2016-10-26": 1,
+        "date_out_of_season:2016-11-13": 1,
+        "date_out_of_season:2016-11-20": 1,
+        "date_out_of_season:2017-01-29": 1,
+        "date_out_of_season:2017-02-04": 1,
+        "date_out_of_season:2017-05-02": 1,
+        "date_out_of_season:2017-05-06": 1,
+        "date_out_of_season:2017-06-14": 1,
+        "date_out_of_season:2018-08-12": 2,
+        "date_out_of_season:2018-08-19": 2,
+        "date_out_of_season:2018-08-26": 2,
+        "date_out_of_season:2018-09-01": 4,
+        "date_out_of_season:2018-09-17": 2,
+        "date_out_of_season:2018-09-23": 5,
+        "date_out_of_season:2018-09-30": 5,
+        "date_out_of_season:2018-10-07": 5,
+        "date_out_of_season:2018-10-20": 4,
+        "date_out_of_season:2018-10-28": 2,
+        "date_out_of_season:2018-11-05": 2,
+        "date_out_of_season:2018-11-10": 4,
+        "date_out_of_season:2018-11-23": 2,
+        "date_out_of_season:2018-12-01": 4,
+        "date_out_of_season:2018-12-10": 2,
+        "date_out_of_season:2018-12-15": 4,
+        "date_out_of_season:2018-12-23": 5,
+        "date_out_of_season:2019-01-20": 5,
+        "date_out_of_season:2019-01-27": 2,
+        "date_out_of_season:2019-02-01": 2,
+        "date_out_of_season:2019-02-10": 4,
+        "date_out_of_season:2019-02-16": 4,
+        "date_out_of_season:2019-02-22": 2,
+        "date_out_of_season:2019-03-04": 1,
+        "date_out_of_season:2019-03-10": 4,
+        "date_out_of_season:2019-03-17": 3,
+        "date_out_of_season:2019-04-03": 4,
+        "date_out_of_season:2019-04-06": 2,
+        "date_out_of_season:2019-04-14": 2,
+        "date_out_of_season:2019-04-22": 2,
+        "date_out_of_season:2019-04-28": 2,
+        "date_out_of_season:2019-05-05": 2,
+        "date_out_of_season:2019-05-12": 2,
+        "date_out_of_season:2019-05-17": 2,
+        "date_out_of_season:2019-03-03": 3,
+        "date_out_of_season:2018-09-26": 2,
+        "date_out_of_season:2018-08-18": 2,
+        "date_out_of_season:2018-08-25": 2,
+        "date_out_of_season:2018-09-15": 2,
+        "date_out_of_season:2018-09-22": 2,
+        "date_out_of_season:2018-09-29": 2,
+        "date_out_of_season:2018-10-27": 2,
+        "date_out_of_season:2018-11-03": 2,
+        "date_out_of_season:2018-11-24": 2,
+        "date_out_of_season:2018-12-11": 2,
+        "date_out_of_season:2018-12-22": 2,
+        "date_out_of_season:2019-01-19": 2,
+        "date_out_of_season:2019-01-26": 2,
+        "date_out_of_season:2019-02-02": 2,
+        "date_out_of_season:2019-03-23": 3,
+        "date_out_of_season:2019-02-23": 2,
+        "date_out_of_season:2019-03-02": 2,
+        "date_out_of_season:2019-03-16": 4,
+        "date_out_of_season:2019-04-07": 5,
+        "date_out_of_season:2019-04-13": 2,
+        "date_out_of_season:2019-04-20": 2,
+        "date_out_of_season:2019-04-27": 2,
+        "date_out_of_season:2019-05-04": 2,
+        "date_out_of_season:2019-05-11": 2,
+        "date_out_of_season:2019-05-18": 2,
+        "date_out_of_season:2018-09-09": 3,
+        "date_out_of_season:2018-09-16": 3,
+        "date_out_of_season:2018-10-14": 3,
+        "date_out_of_season:2018-10-21": 3,
+        "date_out_of_season:2018-11-04": 3,
+        "date_out_of_season:2018-11-25": 3,
+        "date_out_of_season:2018-12-02": 3,
+        "date_out_of_season:2018-12-09": 3,
+        "date_out_of_season:2018-12-16": 3,
+        "date_out_of_season:2018-12-30": 3,
+        "date_out_of_season:2019-01-06": 3,
+        "date_out_of_season:2019-02-17": 3,
+        "date_out_of_season:2019-02-24": 3,
+        "date_out_of_season:2019-03-24": 2,
+        "date_out_of_season:2019-02-20": 1,
+        "date_out_of_season:2019-03-13": 1,
+        "date_out_of_season:2019-03-09": 1,
+        "date_out_of_season:2018-11-28": 1
       },
       "rejectedSamples": {
-        "date_out_of_season:2017-09-19": [
-          "188729"
+        "date_out_of_season:2015-10-10": [
+          "153122"
+        ],
+        "date_out_of_season:2015-10-17": [
+          "153129"
+        ],
+        "date_out_of_season:2015-10-24": [
+          "153136"
+        ],
+        "date_out_of_season:2015-10-30": [
+          "153143"
+        ],
+        "date_out_of_season:2015-11-07": [
+          "153150"
+        ],
+        "date_out_of_season:2015-11-14": [
+          "153157"
+        ],
+        "date_out_of_season:2015-11-21": [
+          "153164"
+        ],
+        "date_out_of_season:2015-11-28": [
+          "153171"
+        ],
+        "date_out_of_season:2015-12-05": [
+          "153178"
+        ],
+        "date_out_of_season:2015-12-12": [
+          "153185"
+        ],
+        "date_out_of_season:2015-12-19": [
+          "153192"
+        ],
+        "date_out_of_season:2015-12-26": [
+          "153199"
+        ],
+        "date_out_of_season:2016-01-09": [
+          "153206"
+        ],
+        "date_out_of_season:2016-01-16": [
+          "153213"
+        ],
+        "date_out_of_season:2016-01-23": [
+          "153220"
+        ],
+        "date_out_of_season:2016-01-30": [
+          "153227"
+        ],
+        "date_out_of_season:2016-02-06": [
+          "153234"
+        ],
+        "date_out_of_season:2016-02-13": [
+          "153241"
+        ],
+        "date_out_of_season:2016-02-20": [
+          "153248"
+        ],
+        "date_out_of_season:2016-02-27": [
+          "153255"
+        ],
+        "date_out_of_season:2016-03-05": [
+          "153262"
+        ],
+        "date_out_of_season:2016-03-12": [
+          "153269"
+        ],
+        "date_out_of_season:2016-03-19": [
+          "153276"
+        ],
+        "date_out_of_season:2016-03-26": [
+          "153283"
+        ],
+        "date_out_of_season:2016-04-02": [
+          "153290"
+        ],
+        "date_out_of_season:2016-04-09": [
+          "153297"
+        ],
+        "date_out_of_season:2016-08-22": [
+          "157839",
+          "158451"
         ],
         "balkes_not_found": [
-          "194821",
-          "194826",
-          "194837",
-          "194842",
-          "194844",
-          "194846",
-          "194852",
-          "194854",
-          "194861",
-          "194864",
-          "194872",
-          "194878",
-          "194882",
-          "194884",
-          "194892",
-          "194895",
-          "194904",
-          "194906",
-          "194915",
-          "194920"
+          "157844",
+          "157848",
+          "157858",
+          "157859",
+          "157862",
+          "157864",
+          "157873",
+          "157877",
+          "157878",
+          "157880",
+          "157886",
+          "157893",
+          "157899",
+          "157908",
+          "157914",
+          "157917",
+          "157918",
+          "157920",
+          "157922",
+          "157934"
         ],
-        "date_out_of_season:2019-08-17": [
-          "207461"
+        "date_out_of_season:2016-08-28": [
+          "157851",
+          "158463"
         ],
-        "date_out_of_season:2019-08-24": [
-          "207469"
+        "date_out_of_season:2016-09-11": [
+          "157860",
+          "158472"
         ],
-        "date_out_of_season:2019-08-31": [
-          "207481"
+        "date_out_of_season:2016-09-18": [
+          "157865",
+          "158477"
         ],
-        "date_out_of_season:2019-09-13": [
-          "207492"
+        "date_out_of_season:2016-09-25": [
+          "157879",
+          "158491",
+          "163188",
+          "164255"
         ],
-        "date_out_of_season:2019-09-20": [
-          "207497"
+        "date_out_of_season:2016-10-02": [
+          "157891",
+          "158503",
+          "163191",
+          "164258"
         ],
-        "date_out_of_season:2019-09-29": [
-          "207506"
+        "date_out_of_season:2016-10-15": [
+          "157896",
+          "158508",
+          "161959",
+          "166773"
         ],
-        "date_out_of_season:2019-10-05": [
-          "207516"
+        "date_out_of_season:2016-10-23": [
+          "157903",
+          "158515",
+          "163220",
+          "164287"
         ],
-        "date_out_of_season:2019-10-20": [
-          "207527"
+        "date_out_of_season:2016-10-30": [
+          "157910",
+          "158522",
+          "163226",
+          "164293"
         ],
-        "date_out_of_season:2019-10-26": [
-          "207538"
+        "date_out_of_season:2016-11-05": [
+          "157926",
+          "158538",
+          "161986",
+          "166800"
         ],
-        "date_out_of_season:2019-11-04": [
-          "207544"
+        "date_out_of_season:2016-11-19": [
+          "157933",
+          "158545",
+          "162005",
+          "166819"
         ],
-        "date_out_of_season:2019-11-10": [
-          "207551"
+        "date_out_of_season:2016-11-27": [
+          "157943",
+          "163265",
+          "164332"
         ],
-        "date_out_of_season:2019-11-24": [
-          "207562"
+        "date_out_of_season:2016-12-04": [
+          "157954",
+          "158566",
+          "163272",
+          "164339",
+          "177672"
         ],
-        "date_out_of_season:2019-12-02": [
-          "207569"
+        "date_out_of_season:2016-12-10": [
+          "157955",
+          "158567",
+          "162031",
+          "166845"
         ],
-        "date_out_of_season:2019-12-07": [
-          "207584"
+        "date_out_of_season:2016-12-16": [
+          "157964",
+          "158576"
         ],
-        "date_out_of_season:2019-12-15": [
-          "207592"
+        "date_out_of_season:2016-12-24": [
+          "157978",
+          "162046",
+          "166860"
         ],
-        "date_out_of_season:2019-12-21": [
-          "207601"
+        "date_out_of_season:2017-01-21": [
+          "157992",
+          "158604",
+          "162078",
+          "166892"
         ],
-        "date_out_of_season:2019-12-28": [
-          "207610"
+        "date_out_of_season:2017-01-27": [
+          "158004",
+          "158616"
         ],
-        "date_out_of_season:2020-01-20": [
-          "207614"
+        "date_out_of_season:2017-02-13": [
+          "158013"
         ],
-        "date_out_of_season:2020-01-26": [
-          "207622"
+        "date_out_of_season:2017-02-19": [
+          "158018",
+          "163356",
+          "164423",
+          "177698"
         ],
-        "date_out_of_season:2020-02-02": [
-          "207634"
+        "date_out_of_season:2017-02-25": [
+          "158032",
+          "158644",
+          "162113",
+          "166927"
         ],
-        "date_out_of_season:2020-02-09": [
-          "207645"
+        "date_out_of_season:2017-03-05": [
+          "158044",
+          "158656",
+          "163371",
+          "164438",
+          "177738"
         ],
-        "date_out_of_season:2020-02-16": [
-          "207650"
+        "date_out_of_season:2017-03-13": [
+          "158049"
         ],
-        "date_out_of_season:2020-02-23": [
-          "207659"
+        "date_out_of_season:2017-03-18": [
+          "158056",
+          "158668",
+          "162137",
+          "166951"
         ],
-        "date_out_of_season:2020-02-27": [
-          "207669"
+        "date_out_of_season:2017-04-03": [
+          "158063"
         ],
-        "date_out_of_season:2020-03-02": [
-          "207680"
+        "date_out_of_season:2017-04-09": [
+          "158079",
+          "158691",
+          "177769"
         ],
-        "date_out_of_season:2020-03-06": [
-          "207691"
+        "date_out_of_season:2017-04-20": [
+          "158086",
+          "158698"
         ],
-        "date_out_of_season:2020-03-10": [
-          "207697"
+        "date_out_of_season:2017-04-24": [
+          "158096"
         ],
-        "date_out_of_season:2020-03-16": [
-          "207704"
+        "date_out_of_season:2017-04-30": [
+          "158107",
+          "158719",
+          "163431",
+          "164498"
         ],
-        "date_out_of_season:2020-06-20": [
-          "207715"
+        "date_out_of_season:2017-05-03": [
+          "158108",
+          "158720"
         ],
-        "date_out_of_season:2020-06-28": [
-          "207722"
+        "date_out_of_season:2017-05-08": [
+          "158117",
+          "158729"
         ],
-        "date_out_of_season:2020-07-02": [
-          "207737"
+        "date_out_of_season:2017-05-14": [
+          "158131",
+          "158743",
+          "177802"
         ],
-        "date_out_of_season:2020-07-06": [
-          "207745"
+        "date_out_of_season:2017-05-20": [
+          "158142",
+          "158754",
+          "177805"
         ],
-        "date_out_of_season:2020-07-11": [
-          "207754"
+        "date_out_of_season:2016-11-26": [
+          "158555",
+          "166830"
         ],
-        "date_out_of_season:2020-07-19": [
-          "207763"
+        "date_out_of_season:2016-12-22": [
+          "158590"
         ],
-        "date_out_of_season:2020-03-22": [
-          "218668"
+        "date_out_of_season:2017-01-15": [
+          "158601",
+          "163324",
+          "164391",
+          "177703"
         ],
-        "date_out_of_season:2020-03-29": [
-          "218672"
+        "date_out_of_season:2017-02-12": [
+          "158625",
+          "163344",
+          "164411",
+          "177727"
         ],
-        "date_out_of_season:2020-04-05": [
-          "218675"
+        "date_out_of_season:2017-02-17": [
+          "158630"
         ],
-        "date_out_of_season:2020-04-12": [
-          "218677"
+        "date_out_of_season:2017-03-14": [
+          "158661"
         ],
-        "date_out_of_season:2020-04-19": [
-          "218679"
+        "date_out_of_season:2017-04-02": [
+          "158675",
+          "163401",
+          "164468",
+          "177763"
         ],
-        "date_out_of_season:2020-05-03": [
-          "218683"
+        "date_out_of_season:2017-04-23": [
+          "158708"
         ],
-        "date_out_of_season:2020-05-12": [
-          "218687"
+        "date_out_of_season:2016-09-03": [
+          "161922",
+          "166736"
         ],
-        "date_out_of_season:2020-05-17": [
-          "218690"
+        "date_out_of_season:2016-09-09": [
+          "161926",
+          "166740"
         ],
-        "date_out_of_season:2020-05-31": [
-          "218692"
+        "date_out_of_season:2016-09-24": [
+          "161939",
+          "166753"
         ],
-        "date_out_of_season:2020-06-06": [
-          "218694"
+        "date_out_of_season:2016-10-01": [
+          "161942",
+          "166756"
+        ],
+        "date_out_of_season:2016-11-02": [
+          "161971",
+          "166785"
+        ],
+        "date_out_of_season:2016-10-29": [
+          "161977",
+          "166791"
+        ],
+        "date_out_of_season:2016-11-12": [
+          "161995",
+          "163244",
+          "164311",
+          "166809"
+        ],
+        "date_out_of_season:2016-11-16": [
+          "162001",
+          "166815"
+        ],
+        "date_missing": [
+          "162016"
+        ],
+        "date_out_of_season:2016-12-03": [
+          "162023",
+          "166837"
+        ],
+        "date_out_of_season:2016-12-17": [
+          "162041",
+          "166855"
+        ],
+        "date_out_of_season:2017-01-04": [
+          "162058",
+          "166872"
+        ],
+        "date_out_of_season:2017-01-25": [
+          "162062",
+          "166876"
+        ],
+        "date_out_of_season:2017-01-14": [
+          "162075",
+          "166889"
+        ],
+        "date_out_of_season:2017-02-11": [
+          "162095",
+          "166909"
+        ],
+        "date_out_of_season:2017-02-18": [
+          "162107",
+          "166921"
+        ],
+        "date_out_of_season:2017-03-04": [
+          "162122",
+          "166936"
+        ],
+        "date_out_of_season:2017-03-11": [
+          "162131",
+          "166945"
+        ],
+        "date_out_of_season:2017-03-25": [
+          "162141",
+          "166955"
+        ],
+        "date_out_of_season:2017-04-12": [
+          "162152",
+          "166966"
+        ],
+        "date_out_of_season:2017-04-08": [
+          "162159",
+          "163408",
+          "164475",
+          "166973"
+        ],
+        "date_out_of_season:2017-04-15": [
+          "162167",
+          "163416",
+          "164483",
+          "166981"
+        ],
+        "date_out_of_season:2017-04-22": [
+          "162177",
+          "163426",
+          "164493",
+          "166991",
+          "177781"
+        ],
+        "date_out_of_season:2017-04-29": [
+          "162182",
+          "166996",
+          "177789"
+        ],
+        "date_out_of_season:2016-09-04": [
+          "163171",
+          "164238"
+        ],
+        "date_out_of_season:2016-09-10": [
+          "163175",
+          "164242"
+        ],
+        "date_out_of_season:2016-10-16": [
+          "163208",
+          "164275"
+        ],
+        "date_out_of_season:2016-11-06": [
+          "163235",
+          "164302"
+        ],
+        "date_out_of_season:2016-11-17": [
+          "163250",
+          "164317"
+        ],
+        "date_out_of_season:2016-12-08": [
+          "163254",
+          "164321"
+        ],
+        "date_out_of_season:2016-12-11": [
+          "163280",
+          "164347",
+          "177679"
+        ],
+        "date_out_of_season:2016-12-18": [
+          "163290",
+          "164357",
+          "177685"
+        ],
+        "date_out_of_season:2016-12-25": [
+          "163295",
+          "164362",
+          "177691"
+        ],
+        "date_out_of_season:2017-01-05": [
+          "163307",
+          "164374"
+        ],
+        "date_out_of_season:2017-01-26": [
+          "163311",
+          "164378"
+        ],
+        "date_out_of_season:2017-01-22": [
+          "163327",
+          "164394",
+          "177711"
+        ],
+        "date_out_of_season:2017-02-26": [
+          "163362",
+          "164429",
+          "177737"
+        ],
+        "date_out_of_season:2017-03-12": [
+          "163380",
+          "164447"
+        ],
+        "date_out_of_season:2017-03-19": [
+          "163386",
+          "164453",
+          "177750"
+        ],
+        "date_out_of_season:2017-03-26": [
+          "163390",
+          "164457",
+          "177757",
+          "178959"
+        ],
+        "date_out_of_season:2016-09-21": [
+          "177193"
+        ],
+        "date_out_of_season:2016-10-26": [
+          "177261"
+        ],
+        "date_out_of_season:2016-11-13": [
+          "177659"
+        ],
+        "date_out_of_season:2016-11-20": [
+          "177660"
+        ],
+        "date_out_of_season:2017-01-29": [
+          "177715"
+        ],
+        "date_out_of_season:2017-02-04": [
+          "177724"
+        ],
+        "date_out_of_season:2017-05-02": [
+          "177776"
+        ],
+        "date_out_of_season:2017-05-06": [
+          "177793"
+        ],
+        "date_out_of_season:2017-06-14": [
+          "180127"
+        ],
+        "date_out_of_season:2018-08-12": [
+          "194822",
+          "195434"
+        ],
+        "date_out_of_season:2018-08-19": [
+          "194836",
+          "195448"
+        ],
+        "date_out_of_season:2018-08-26": [
+          "194843",
+          "195455"
+        ],
+        "date_out_of_season:2018-09-01": [
+          "194850",
+          "195462",
+          "199303",
+          "199915"
+        ],
+        "date_out_of_season:2018-09-17": [
+          "194862",
+          "195474"
+        ],
+        "date_out_of_season:2018-09-23": [
+          "194867",
+          "195479",
+          "200226",
+          "200334",
+          "200442"
+        ],
+        "date_out_of_season:2018-09-30": [
+          "194875",
+          "195487",
+          "200228",
+          "200336",
+          "200444"
+        ],
+        "date_out_of_season:2018-10-07": [
+          "194890",
+          "195502",
+          "200233",
+          "200341",
+          "200449"
+        ],
+        "date_out_of_season:2018-10-20": [
+          "194897",
+          "195509",
+          "199350",
+          "199962"
+        ],
+        "date_out_of_season:2018-10-28": [
+          "194907",
+          "195519"
+        ],
+        "date_out_of_season:2018-11-05": [
+          "194912",
+          "195524"
+        ],
+        "date_out_of_season:2018-11-10": [
+          "194925",
+          "195537",
+          "199378",
+          "199990"
+        ],
+        "date_out_of_season:2018-11-23": [
+          "194931",
+          "195543"
+        ],
+        "date_out_of_season:2018-12-01": [
+          "194938",
+          "195550",
+          "199391",
+          "200003"
+        ],
+        "date_out_of_season:2018-12-10": [
+          "194953",
+          "195565"
+        ],
+        "date_out_of_season:2018-12-15": [
+          "194955",
+          "195567",
+          "199408",
+          "200020"
+        ],
+        "date_out_of_season:2018-12-23": [
+          "194970",
+          "195582",
+          "200269",
+          "200377",
+          "200485"
+        ],
+        "date_out_of_season:2019-01-20": [
+          "194975",
+          "195587",
+          "200284",
+          "200392",
+          "200500"
+        ],
+        "date_out_of_season:2019-01-27": [
+          "194989",
+          "195601"
+        ],
+        "date_out_of_season:2019-02-01": [
+          "194996",
+          "195608"
+        ],
+        "date_out_of_season:2019-02-10": [
+          "195003",
+          "195615",
+          "200291",
+          "200399"
+        ],
+        "date_out_of_season:2019-02-16": [
+          "195015",
+          "195627",
+          "199468",
+          "200080"
+        ],
+        "date_out_of_season:2019-02-22": [
+          "195020",
+          "195632"
+        ],
+        "date_out_of_season:2019-03-04": [
+          "195028"
+        ],
+        "date_out_of_season:2019-03-10": [
+          "195043",
+          "195655",
+          "200305",
+          "200413"
+        ],
+        "date_out_of_season:2019-03-17": [
+          "195050",
+          "195662",
+          "200526"
+        ],
+        "date_out_of_season:2019-04-03": [
+          "195060",
+          "195672",
+          "199513",
+          "200125"
+        ],
+        "date_out_of_season:2019-04-06": [
+          "195065",
+          "195677"
+        ],
+        "date_out_of_season:2019-04-14": [
+          "195078",
+          "195690"
+        ],
+        "date_out_of_season:2019-04-22": [
+          "195084",
+          "195696"
+        ],
+        "date_out_of_season:2019-04-28": [
+          "195091",
+          "195703"
+        ],
+        "date_out_of_season:2019-05-05": [
+          "195106",
+          "195718"
+        ],
+        "date_out_of_season:2019-05-12": [
+          "195108",
+          "195720"
+        ],
+        "date_out_of_season:2019-05-17": [
+          "195123",
+          "195735"
+        ],
+        "date_out_of_season:2019-03-03": [
+          "195640",
+          "200300",
+          "200408"
+        ],
+        "date_out_of_season:2018-09-26": [
+          "199275",
+          "199887"
+        ],
+        "date_out_of_season:2018-08-18": [
+          "199289",
+          "199901"
+        ],
+        "date_out_of_season:2018-08-25": [
+          "199296",
+          "199908"
+        ],
+        "date_out_of_season:2018-09-15": [
+          "199315",
+          "199927"
+        ],
+        "date_out_of_season:2018-09-22": [
+          "199320",
+          "199932"
+        ],
+        "date_out_of_season:2018-09-29": [
+          "199328",
+          "199940"
+        ],
+        "date_out_of_season:2018-10-27": [
+          "199360",
+          "199972"
+        ],
+        "date_out_of_season:2018-11-03": [
+          "199365",
+          "199977"
+        ],
+        "date_out_of_season:2018-11-24": [
+          "199384",
+          "199996"
+        ],
+        "date_out_of_season:2018-12-11": [
+          "199406",
+          "200018"
+        ],
+        "date_out_of_season:2018-12-22": [
+          "199423",
+          "200035"
+        ],
+        "date_out_of_season:2019-01-19": [
+          "199428",
+          "200040"
+        ],
+        "date_out_of_season:2019-01-26": [
+          "199442",
+          "200054"
+        ],
+        "date_out_of_season:2019-02-02": [
+          "199449",
+          "200061"
+        ],
+        "date_out_of_season:2019-03-23": [
+          "199456",
+          "200068",
+          "200312"
+        ],
+        "date_out_of_season:2019-02-23": [
+          "199473",
+          "200085"
+        ],
+        "date_out_of_season:2019-03-02": [
+          "199481",
+          "200093"
+        ],
+        "date_out_of_season:2019-03-16": [
+          "199503",
+          "200115",
+          "200310",
+          "200418"
+        ],
+        "date_out_of_season:2019-04-07": [
+          "199518",
+          "200130",
+          "200320",
+          "200428",
+          "200536"
+        ],
+        "date_out_of_season:2019-04-13": [
+          "199531",
+          "200143"
+        ],
+        "date_out_of_season:2019-04-20": [
+          "199537",
+          "200149"
+        ],
+        "date_out_of_season:2019-04-27": [
+          "199544",
+          "200156"
+        ],
+        "date_out_of_season:2019-05-04": [
+          "199559",
+          "200171"
+        ],
+        "date_out_of_season:2019-05-11": [
+          "199561",
+          "200173"
+        ],
+        "date_out_of_season:2019-05-18": [
+          "199576",
+          "200188"
+        ],
+        "date_out_of_season:2018-09-09": [
+          "200219",
+          "200327",
+          "200435"
+        ],
+        "date_out_of_season:2018-09-16": [
+          "200222",
+          "200330",
+          "200438"
+        ],
+        "date_out_of_season:2018-10-14": [
+          "200238",
+          "200346",
+          "200454"
+        ],
+        "date_out_of_season:2018-10-21": [
+          "200240",
+          "200348",
+          "200456"
+        ],
+        "date_out_of_season:2018-11-04": [
+          "200248",
+          "200356",
+          "200464"
+        ],
+        "date_out_of_season:2018-11-25": [
+          "200255",
+          "200363",
+          "200471"
+        ],
+        "date_out_of_season:2018-12-02": [
+          "200258",
+          "200366",
+          "200474"
+        ],
+        "date_out_of_season:2018-12-09": [
+          "200262",
+          "200370",
+          "200478"
+        ],
+        "date_out_of_season:2018-12-16": [
+          "200264",
+          "200372",
+          "200480"
+        ],
+        "date_out_of_season:2018-12-30": [
+          "200274",
+          "200382",
+          "200490"
+        ],
+        "date_out_of_season:2019-01-06": [
+          "200276",
+          "200384",
+          "200492"
+        ],
+        "date_out_of_season:2019-02-17": [
+          "200294",
+          "200402",
+          "200510"
+        ],
+        "date_out_of_season:2019-02-24": [
+          "200298",
+          "200406",
+          "200514"
+        ],
+        "date_out_of_season:2019-03-24": [
+          "200420",
+          "200528"
+        ],
+        "date_out_of_season:2019-02-20": [
+          "200507"
+        ],
+        "date_out_of_season:2019-03-13": [
+          "200516"
+        ],
+        "date_out_of_season:2019-03-09": [
+          "200521"
+        ],
+        "date_out_of_season:2018-11-28": [
+          "205802"
         ]
       },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
       "matchTypeCounts": {
-        "league": 201,
-        "cup": 6
+        "league": 204,
+        "cup": 2
       },
       "seasonGuard": {
-        "start": "2018-07-01",
-        "end": "2019-06-30"
+        "start": "2017-07-01",
+        "end": "2018-06-30"
       },
-      "generatedAt": "2026-05-15T07:06:04.983409Z"
+      "generatedAt": "2026-05-15T08:32:15.390613Z"
+    },
+    {
+      "season": "2016-2017",
+      "selectedIds": 696,
+      "allDiscoveredIds": 18702,
+      "detailCandidates": 696,
+      "candidateMode": "legacy_pageid_probe_selected_or_known",
+      "knownOnly": false,
+      "plannedTarget": false,
+      "legacyPageIdProbe": true,
+      "legacyProbeDiagnostics": [
+        {
+          "kind": "page_hint",
+          "pageID": 1381,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 1041,
+          "groups": [
+            "1143",
+            "1144",
+            "1145"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1381,
+          "grupID": "1143",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1381,
+          "grupID": "1144",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1381,
+          "grupID": "1145",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1383,
+          "baseSelectedDelta": 2,
+          "baseAllDelta": 244,
+          "groups": [
+            "1322",
+            "1323",
+            "1324",
+            "1325",
+            "1326",
+            "1327",
+            "1328",
+            "1329"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1322",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1323",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1324",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1325",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1326",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1327",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1328",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1329",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1384,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 625,
+          "groups": [
+            "1146",
+            "1147"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1384,
+          "grupID": "1146",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1384,
+          "grupID": "1147",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1385,
+          "baseSelectedDelta": 102,
+          "baseAllDelta": 311,
+          "groups": []
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1388,
+          "grupID": "1149",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 9
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1389,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 78,
+          "groups": [
+            "1191",
+            "1192",
+            "1193",
+            "1194",
+            "1195",
+            "1196",
+            "1197",
+            "1198",
+            "1199",
+            "1200",
+            "1201",
+            "1202"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1191",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1192",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1193",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1194",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1195",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1196",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1197",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1389,
+          "error": "timeout",
+          "grupID": "1197",
+          "week": 16,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1198",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1199",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1200",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1201",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1202",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1393,
+          "grupID": "1151",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 9
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1396,
+          "grupID": "1250",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1397,
+          "baseSelectedDelta": 4,
+          "baseAllDelta": 27,
+          "groups": [
+            "1274",
+            "1275",
+            "1276",
+            "1277",
+            "1278",
+            "1279",
+            "1280",
+            "1281",
+            "1340",
+            "1341"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1274",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1275",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1397,
+          "error": "timeout",
+          "grupID": "1275",
+          "week": 37,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1276",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1277",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1278",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1279",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1280",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1281",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1340",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1341",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1398,
+          "grupID": "1266",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1399,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 27,
+          "groups": [
+            "1256",
+            "1257",
+            "1258",
+            "1259",
+            "1260",
+            "1261",
+            "1262",
+            "1263",
+            "1264",
+            "1338",
+            "1339"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1256",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1257",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1258",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1259",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1260",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1261",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1262",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1263",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1264",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1338",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1339",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1414,
+          "baseSelectedDelta": 99,
+          "baseAllDelta": 311,
+          "groups": []
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1416,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 969,
+          "groups": [
+            "1356",
+            "1357",
+            "1358"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1416,
+          "grupID": "1356",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1416,
+          "grupID": "1357",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1416,
+          "grupID": "1358",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1417,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 10,
+          "groups": [
+            "1359",
+            "1360"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1417,
+          "grupID": "1359",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1417,
+          "grupID": "1360",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 9
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1419,
+          "grupID": "1404",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1519",
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1419,
+          "grupID": "1520",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1520",
+          "week": 6,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1419,
+          "error": "http_504",
+          "grupID": "1520",
+          "week": 15,
+          "cumulative": 2
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1420,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 19,
+          "groups": [
+            "1381",
+            "1382",
+            "1383",
+            "1384",
+            "1385",
+            "1386",
+            "1387"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1381",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1382",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1383",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1384",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1385",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1386",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1420,
+          "grupID": "1387",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1421,
+          "grupID": "1377",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1422,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 17,
+          "groups": [
+            "1368",
+            "1369",
+            "1370",
+            "1371",
+            "1372",
+            "1373",
+            "1374"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1368",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1369",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1370",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1371",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1422,
+          "error": "timeout",
+          "grupID": "1371",
+          "week": 15,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1372",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1373",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1422,
+          "grupID": "1374",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1423,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 17,
+          "groups": [
+            "1395",
+            "1396",
+            "1397",
+            "1398",
+            "1399",
+            "1400",
+            "1401"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1395",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1396",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1397",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 8
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1398",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1399",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1423,
+          "error": "timeout",
+          "grupID": "1399",
+          "week": 38,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1400",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1423,
+          "grupID": "1401",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1425,
+          "baseSelectedDelta": 2,
+          "baseAllDelta": 243,
+          "groups": [
+            "1457",
+            "1458",
+            "1459",
+            "1460",
+            "1461",
+            "1462",
+            "1463",
+            "1464"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1457",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1458",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1425,
+          "error": "timeout",
+          "grupID": "1458",
+          "week": 23,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1459",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1460",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1461",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1462",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1463",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1425,
+          "grupID": "1464",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1428,
+          "baseSelectedDelta": 2,
+          "baseAllDelta": 21,
+          "groups": [
+            "1467",
+            "1468",
+            "1469",
+            "1470",
+            "1471",
+            "1472",
+            "1473",
+            "1474"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1467",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1468",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1469",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1470",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1471",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1472",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1473",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1428,
+          "grupID": "1474",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1441,
+          "baseSelectedDelta": 97,
+          "baseAllDelta": 311,
+          "groups": []
+        }
+      ],
+      "matchesPublished": 253,
+      "detailFiles": 253,
+      "duplicatesDropped": 2,
+      "rejectedReasons": {
+        "date_out_of_season:2015-08-16": 3,
+        "balkes_not_found": 194,
+        "date_out_of_season:2015-08-22": 3,
+        "date_out_of_season:2015-08-29": 3,
+        "date_out_of_season:2015-09-13": 3,
+        "date_out_of_season:2015-09-18": 3,
+        "date_out_of_season:2015-09-26": 3,
+        "date_out_of_season:2015-10-04": 3,
+        "date_out_of_season:2015-10-17": 5,
+        "date_out_of_season:2015-10-23": 1,
+        "date_out_of_season:2015-10-29": 3,
+        "date_out_of_season:2015-11-08": 5,
+        "date_out_of_season:2015-11-23": 1,
+        "date_out_of_season:2015-11-28": 6,
+        "date_out_of_season:2015-12-06": 4,
+        "date_out_of_season:2015-12-14": 3,
+        "date_out_of_season:2015-12-19": 6,
+        "date_out_of_season:2015-12-28": 3,
+        "date_out_of_season:2016-01-17": 4,
+        "date_out_of_season:2016-01-23": 5,
+        "date_out_of_season:2016-02-06": 6,
+        "date_out_of_season:2016-02-14": 4,
+        "date_out_of_season:2016-02-20": 4,
+        "date_out_of_season:2016-02-26": 3,
+        "date_out_of_season:2016-03-04": 3,
+        "date_out_of_season:2016-03-13": 2,
+        "date_out_of_season:2016-03-19": 5,
+        "date_out_of_season:2016-04-03": 4,
+        "date_out_of_season:2016-04-09": 6,
+        "date_out_of_season:2016-04-13": 3,
+        "date_out_of_season:2016-04-18": 3,
+        "date_out_of_season:2016-04-24": 3,
+        "date_out_of_season:2016-05-01": 3,
+        "date_out_of_season:2016-05-08": 3,
+        "date_out_of_season:2016-05-14": 3,
+        "date_out_of_season:2015-10-24": 4,
+        "date_out_of_season:2015-11-22": 3,
+        "date_out_of_season:2016-02-19": 2,
+        "date_out_of_season:2016-03-11": 2,
+        "date_out_of_season:2015-09-22": 1,
+        "date_out_of_season:2015-10-21": 2,
+        "date_out_of_season:2015-10-18": 2,
+        "date_out_of_season:2015-10-25": 2,
+        "date_out_of_season:2015-10-31": 2,
+        "date_out_of_season:2015-11-15": 2,
+        "date_out_of_season:2015-11-29": 1,
+        "date_out_of_season:2015-12-20": 1,
+        "date_out_of_season:2015-12-27": 1,
+        "date_out_of_season:2016-01-13": 1,
+        "date_out_of_season:2016-01-10": 1,
+        "date_out_of_season:2016-01-24": 1,
+        "date_out_of_season:2016-02-07": 1,
+        "date_out_of_season:2016-02-28": 1,
+        "date_out_of_season:2016-03-06": 1,
+        "date_out_of_season:2016-03-20": 2,
+        "date_out_of_season:2016-03-27": 1,
+        "date_out_of_season:2016-04-17": 1,
+        "date_out_of_season:2016-04-23": 2,
+        "date_out_of_season:2015-10-10": 2,
+        "date_out_of_season:2015-10-30": 2,
+        "date_out_of_season:2015-11-07": 2,
+        "date_out_of_season:2015-11-14": 2,
+        "date_out_of_season:2015-11-21": 2,
+        "date_out_of_season:2015-12-05": 3,
+        "date_out_of_season:2015-12-12": 3,
+        "date_out_of_season:2015-12-26": 3,
+        "date_out_of_season:2016-01-09": 3,
+        "date_out_of_season:2016-01-16": 3,
+        "date_out_of_season:2016-02-03": 1,
+        "date_out_of_season:2016-01-30": 3,
+        "date_out_of_season:2016-02-12": 1,
+        "date_out_of_season:2016-02-27": 3,
+        "date_out_of_season:2016-03-05": 3,
+        "date_out_of_season:2016-03-12": 3,
+        "date_out_of_season:2016-03-26": 3,
+        "date_out_of_season:2016-04-02": 3,
+        "date_out_of_season:2016-02-13": 2,
+        "date_out_of_season:2015-12-02": 1,
+        "date_out_of_season:2016-04-21": 1,
+        "date_out_of_season:2016-05-19": 2,
+        "date_out_of_season:2016-05-23": 1,
+        "date_out_of_season:2016-05-20": 1,
+        "date_out_of_season:2016-05-22": 1,
+        "date_out_of_season:2017-08-13": 1,
+        "date_out_of_season:2017-08-19": 1,
+        "date_out_of_season:2017-08-25": 1,
+        "date_out_of_season:2017-09-09": 1,
+        "date_out_of_season:2017-09-15": 1,
+        "date_out_of_season:2017-09-25": 1,
+        "date_out_of_season:2017-10-01": 1,
+        "date_out_of_season:2017-10-14": 1,
+        "date_out_of_season:2017-10-22": 1,
+        "date_out_of_season:2017-10-28": 1,
+        "date_out_of_season:2017-11-05": 1,
+        "date_out_of_season:2017-11-19": 1,
+        "date_out_of_season:2017-11-27": 1,
+        "date_out_of_season:2017-12-03": 1,
+        "date_out_of_season:2017-12-09": 1,
+        "date_out_of_season:2017-12-15": 1,
+        "date_out_of_season:2017-12-24": 1,
+        "date_out_of_season:2018-01-20": 1,
+        "date_out_of_season:2018-01-26": 1,
+        "date_out_of_season:2018-02-05": 1,
+        "date_out_of_season:2018-02-11": 1,
+        "date_out_of_season:2018-02-17": 1,
+        "date_out_of_season:2018-02-20": 1,
+        "date_out_of_season:2018-02-24": 1,
+        "date_out_of_season:2018-03-03": 1,
+        "date_out_of_season:2018-03-07": 1,
+        "date_out_of_season:2018-03-12": 1,
+        "date_out_of_season:2018-03-18": 1,
+        "date_out_of_season:2018-04-01": 1,
+        "date_out_of_season:2018-04-09": 1,
+        "date_out_of_season:2018-04-15": 1,
+        "date_out_of_season:2018-04-22": 1,
+        "date_out_of_season:2018-04-28": 1,
+        "date_out_of_season:2018-05-04": 1
+      },
+      "rejectedSamples": {
+        "date_out_of_season:2015-08-16": [
+          "140286",
+          "142537",
+          "143149"
+        ],
+        "balkes_not_found": [
+          "140287",
+          "140288",
+          "140289",
+          "140292",
+          "140296",
+          "140300",
+          "140307",
+          "140309",
+          "140312",
+          "140320",
+          "140326",
+          "140327",
+          "140331",
+          "140344",
+          "140349",
+          "140353",
+          "140355",
+          "140358",
+          "140365",
+          "140367"
+        ],
+        "date_out_of_season:2015-08-22": [
+          "140294",
+          "142545",
+          "143157"
+        ],
+        "date_out_of_season:2015-08-29": [
+          "140302",
+          "142553",
+          "143165"
+        ],
+        "date_out_of_season:2015-09-13": [
+          "140316",
+          "142567",
+          "143179"
+        ],
+        "date_out_of_season:2015-09-18": [
+          "140325",
+          "142576",
+          "143188"
+        ],
+        "date_out_of_season:2015-09-26": [
+          "140334",
+          "142585",
+          "143197"
+        ],
+        "date_out_of_season:2015-10-04": [
+          "140341",
+          "142592",
+          "143204"
+        ],
+        "date_out_of_season:2015-10-17": [
+          "140351",
+          "142602",
+          "143214",
+          "152072",
+          "153129"
+        ],
+        "date_out_of_season:2015-10-23": [
+          "140362"
+        ],
+        "date_out_of_season:2015-10-29": [
+          "140369",
+          "142620",
+          "143232"
+        ],
+        "date_out_of_season:2015-11-08": [
+          "140377",
+          "142628",
+          "143240",
+          "151217",
+          "154342"
+        ],
+        "date_out_of_season:2015-11-23": [
+          "140381"
+        ],
+        "date_out_of_season:2015-11-28": [
+          "140390",
+          "142641",
+          "143253",
+          "152114",
+          "153171",
+          "154363"
+        ],
+        "date_out_of_season:2015-12-06": [
+          "140404",
+          "142655",
+          "143267",
+          "151233"
+        ],
+        "date_out_of_season:2015-12-14": [
+          "140410",
+          "142661",
+          "143273"
+        ],
+        "date_out_of_season:2015-12-19": [
+          "140423",
+          "142674",
+          "143286",
+          "152135",
+          "153192",
+          "154384"
+        ],
+        "date_out_of_season:2015-12-28": [
+          "140427",
+          "142678",
+          "143290"
+        ],
+        "date_out_of_season:2016-01-17": [
+          "140439",
+          "142690",
+          "143302",
+          "151253"
+        ],
+        "date_out_of_season:2016-01-23": [
+          "140447",
+          "142698",
+          "143310",
+          "153220",
+          "154412"
+        ],
+        "date_out_of_season:2016-02-06": [
+          "140455",
+          "142706",
+          "143318",
+          "152177",
+          "153234",
+          "154426"
+        ],
+        "date_out_of_season:2016-02-14": [
+          "140469",
+          "142720",
+          "143332",
+          "151269"
+        ],
+        "date_out_of_season:2016-02-20": [
+          "140478",
+          "152191",
+          "153248",
+          "154440"
+        ],
+        "date_out_of_season:2016-02-26": [
+          "140487",
+          "142738",
+          "143350"
+        ],
+        "date_out_of_season:2016-03-04": [
+          "140494",
+          "142745",
+          "143357"
+        ],
+        "date_out_of_season:2016-03-13": [
+          "140504",
+          "151280"
+        ],
+        "date_out_of_season:2016-03-19": [
+          "140515",
+          "142766",
+          "143378",
+          "152219",
+          "153276"
+        ],
+        "date_out_of_season:2016-04-03": [
+          "140522",
+          "142773",
+          "143385",
+          "151293"
+        ],
+        "date_out_of_season:2016-04-09": [
+          "140530",
+          "142781",
+          "143393",
+          "152240",
+          "153297",
+          "154489"
+        ],
+        "date_out_of_season:2016-04-13": [
+          "140534",
+          "142785",
+          "143397"
+        ],
+        "date_out_of_season:2016-04-18": [
+          "140543",
+          "142794",
+          "143406"
+        ],
+        "date_out_of_season:2016-04-24": [
+          "140557",
+          "142808",
+          "143420"
+        ],
+        "date_out_of_season:2016-05-01": [
+          "140563",
+          "142814",
+          "143426"
+        ],
+        "date_out_of_season:2016-05-08": [
+          "140576",
+          "142827",
+          "143439"
+        ],
+        "date_out_of_season:2016-05-14": [
+          "140580",
+          "142831",
+          "143443"
+        ],
+        "date_out_of_season:2015-10-24": [
+          "142613",
+          "143225",
+          "152079",
+          "153136"
+        ],
+        "date_out_of_season:2015-11-22": [
+          "142632",
+          "143244",
+          "154356"
+        ],
+        "date_out_of_season:2016-02-19": [
+          "142729",
+          "143341"
+        ],
+        "date_out_of_season:2016-03-11": [
+          "142755",
+          "143367"
+        ],
+        "date_out_of_season:2015-09-22": [
+          "146083"
+        ],
+        "date_out_of_season:2015-10-21": [
+          "151199",
+          "154314"
+        ],
+        "date_out_of_season:2015-10-18": [
+          "151205",
+          "154321"
+        ],
+        "date_out_of_season:2015-10-25": [
+          "151208",
+          "154328"
+        ],
+        "date_out_of_season:2015-10-31": [
+          "151213",
+          "154335"
+        ],
+        "date_out_of_season:2015-11-15": [
+          "151221",
+          "154349"
+        ],
+        "date_out_of_season:2015-11-29": [
+          "151226"
+        ],
+        "date_out_of_season:2015-12-20": [
+          "151235"
+        ],
+        "date_out_of_season:2015-12-27": [
+          "151241"
+        ],
+        "date_out_of_season:2016-01-13": [
+          "151244"
+        ],
+        "date_out_of_season:2016-01-10": [
+          "151249"
+        ],
+        "date_out_of_season:2016-01-24": [
+          "151257"
+        ],
+        "date_out_of_season:2016-02-07": [
+          "151262"
+        ],
+        "date_out_of_season:2016-02-28": [
+          "151271"
+        ],
+        "date_out_of_season:2016-03-06": [
+          "151277"
+        ],
+        "date_out_of_season:2016-03-20": [
+          "151285",
+          "154468"
+        ],
+        "date_out_of_season:2016-03-27": [
+          "151289"
+        ],
+        "date_out_of_season:2016-04-17": [
+          "151298"
+        ],
+        "date_out_of_season:2016-04-23": [
+          "151305",
+          "156717"
+        ],
+        "date_out_of_season:2015-10-10": [
+          "152065",
+          "153122"
+        ],
+        "date_out_of_season:2015-10-30": [
+          "152086",
+          "153143"
+        ],
+        "date_out_of_season:2015-11-07": [
+          "152093",
+          "153150"
+        ],
+        "date_out_of_season:2015-11-14": [
+          "152100",
+          "153157"
+        ],
+        "date_out_of_season:2015-11-21": [
+          "152107",
+          "153164"
+        ],
+        "date_out_of_season:2015-12-05": [
+          "152121",
+          "153178",
+          "154370"
+        ],
+        "date_out_of_season:2015-12-12": [
+          "152128",
+          "153185",
+          "154377"
+        ],
+        "date_out_of_season:2015-12-26": [
+          "152142",
+          "153199",
+          "154391"
+        ],
+        "date_out_of_season:2016-01-09": [
+          "152149",
+          "153206",
+          "154398"
+        ],
+        "date_out_of_season:2016-01-16": [
+          "152156",
+          "153213",
+          "154405"
+        ],
+        "date_out_of_season:2016-02-03": [
+          "152163"
+        ],
+        "date_out_of_season:2016-01-30": [
+          "152170",
+          "153227",
+          "154419"
+        ],
+        "date_out_of_season:2016-02-12": [
+          "152184"
+        ],
+        "date_out_of_season:2016-02-27": [
+          "152198",
+          "153255",
+          "154447"
+        ],
+        "date_out_of_season:2016-03-05": [
+          "152205",
+          "153262",
+          "154454"
+        ],
+        "date_out_of_season:2016-03-12": [
+          "152212",
+          "153269",
+          "154461"
+        ],
+        "date_out_of_season:2016-03-26": [
+          "152226",
+          "153283",
+          "154475"
+        ],
+        "date_out_of_season:2016-04-02": [
+          "152233",
+          "153290",
+          "154482"
+        ],
+        "date_out_of_season:2016-02-13": [
+          "153241",
+          "154433"
+        ],
+        "date_out_of_season:2015-12-02": [
+          "155218"
+        ],
+        "date_out_of_season:2016-04-21": [
+          "156694"
+        ],
+        "date_out_of_season:2016-05-19": [
+          "156853",
+          "156860"
+        ],
+        "date_out_of_season:2016-05-23": [
+          "156855"
+        ],
+        "date_out_of_season:2016-05-20": [
+          "156863"
+        ],
+        "date_out_of_season:2016-05-22": [
+          "156864"
+        ],
+        "date_out_of_season:2017-08-13": [
+          "180647"
+        ],
+        "date_out_of_season:2017-08-19": [
+          "180651"
+        ],
+        "date_out_of_season:2017-08-25": [
+          "180665"
+        ],
+        "date_out_of_season:2017-09-09": [
+          "180670"
+        ],
+        "date_out_of_season:2017-09-15": [
+          "180680"
+        ],
+        "date_out_of_season:2017-09-25": [
+          "180692"
+        ],
+        "date_out_of_season:2017-10-01": [
+          "180700"
+        ],
+        "date_out_of_season:2017-10-14": [
+          "180711"
+        ],
+        "date_out_of_season:2017-10-22": [
+          "180713"
+        ],
+        "date_out_of_season:2017-10-28": [
+          "180722"
+        ],
+        "date_out_of_season:2017-11-05": [
+          "180734"
+        ],
+        "date_out_of_season:2017-11-19": [
+          "180741"
+        ],
+        "date_out_of_season:2017-11-27": [
+          "180751"
+        ],
+        "date_out_of_season:2017-12-03": [
+          "180765"
+        ],
+        "date_out_of_season:2017-12-09": [
+          "180772"
+        ],
+        "date_out_of_season:2017-12-15": [
+          "180777"
+        ],
+        "date_out_of_season:2017-12-24": [
+          "180789"
+        ],
+        "date_out_of_season:2018-01-20": [
+          "180800"
+        ],
+        "date_out_of_season:2018-01-26": [
+          "180804"
+        ],
+        "date_out_of_season:2018-02-05": [
+          "180818"
+        ],
+        "date_out_of_season:2018-02-11": [
+          "180823"
+        ],
+        "date_out_of_season:2018-02-17": [
+          "180833"
+        ],
+        "date_out_of_season:2018-02-20": [
+          "180845"
+        ],
+        "date_out_of_season:2018-02-24": [
+          "180853"
+        ],
+        "date_out_of_season:2018-03-03": [
+          "180864"
+        ],
+        "date_out_of_season:2018-03-07": [
+          "180866"
+        ],
+        "date_out_of_season:2018-03-12": [
+          "180875"
+        ],
+        "date_out_of_season:2018-03-18": [
+          "180887"
+        ],
+        "date_out_of_season:2018-04-01": [
+          "180894"
+        ],
+        "date_out_of_season:2018-04-09": [
+          "180904"
+        ],
+        "date_out_of_season:2018-04-15": [
+          "180918"
+        ],
+        "date_out_of_season:2018-04-22": [
+          "180925"
+        ],
+        "date_out_of_season:2018-04-28": [
+          "180930"
+        ],
+        "date_out_of_season:2018-05-04": [
+          "180942"
+        ]
+      },
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 250,
+        "cup": 2,
+        "playoff": 1
+      },
+      "seasonGuard": {
+        "start": "2016-07-01",
+        "end": "2017-06-30"
+      },
+      "generatedAt": "2026-05-15T10:03:13.392586Z"
+    },
+    {
+      "season": "2015-2016",
+      "selectedIds": 485,
+      "allDiscoveredIds": 12694,
+      "detailCandidates": 485,
+      "candidateMode": "legacy_pageid_probe_selected_or_known",
+      "knownOnly": false,
+      "plannedTarget": false,
+      "legacyPageIdProbe": true,
+      "legacyProbeDiagnostics": [
+        {
+          "kind": "page_hint",
+          "pageID": 1321,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 933,
+          "groups": [
+            "1058",
+            "1059",
+            "1060"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1321,
+          "grupID": "1058",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1321,
+          "grupID": "1059",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1321,
+          "grupID": "1060",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1323,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 10,
+          "groups": [
+            "1061",
+            "1062"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1323,
+          "grupID": "1061",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1325,
+          "grupID": "1072",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1329,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 10,
+          "groups": [
+            "1063",
+            "1064"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1329,
+          "grupID": "1063",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1331,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 19,
+          "groups": [
+            "1094",
+            "1095",
+            "1096",
+            "1097",
+            "1098",
+            "1099",
+            "1139",
+            "1140"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1094",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1095",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1096",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1097",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1098",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1099",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1139",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1140",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1332,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 19,
+          "groups": [
+            "1088",
+            "1089",
+            "1090",
+            "1091",
+            "1092",
+            "1093",
+            "1137",
+            "1138"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1332,
+          "grupID": "1088",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1332,
+          "grupID": "1137",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1332,
+          "grupID": "1138",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1333,
+          "baseSelectedDelta": 4,
+          "baseAllDelta": 27,
+          "groups": [
+            "1082",
+            "1083",
+            "1084",
+            "1085",
+            "1086",
+            "1087",
+            "1135",
+            "1136"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1082",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1083",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1084",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1085",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1086",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1087",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1135",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1136",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1334,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 19,
+          "groups": [
+            "1076",
+            "1077",
+            "1078",
+            "1079",
+            "1080",
+            "1081",
+            "1133",
+            "1134"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1334,
+          "grupID": "1076",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1334,
+          "grupID": "1133",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1334,
+          "grupID": "1134",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1335,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 149,
+          "groups": [
+            "1113",
+            "1114",
+            "1115",
+            "1116",
+            "1117",
+            "1118",
+            "1119",
+            "1120"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1113",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1114",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1115",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1116",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1117",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1118",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1119",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1335,
+          "error": "timeout",
+          "grupID": "1119",
+          "week": 33,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1335,
+          "error": "timeout",
+          "grupID": "1119",
+          "week": 34,
+          "cumulative": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1120",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1381,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 1041,
+          "groups": [
+            "1143",
+            "1144",
+            "1145"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1381,
+          "grupID": "1143",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1381,
+          "grupID": "1144",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1381,
+          "grupID": "1145",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1383,
+          "baseSelectedDelta": 2,
+          "baseAllDelta": 244,
+          "groups": [
+            "1322",
+            "1323",
+            "1324",
+            "1325",
+            "1326",
+            "1327",
+            "1328",
+            "1329"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1322",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1323",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1324",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1325",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1326",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1327",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1328",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1383,
+          "grupID": "1329",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1384,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 625,
+          "groups": [
+            "1146",
+            "1147"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1384,
+          "grupID": "1146",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1384,
+          "grupID": "1147",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1385,
+          "baseSelectedDelta": 102,
+          "baseAllDelta": 311,
+          "groups": []
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1388,
+          "grupID": "1149",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 9
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1389,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 78,
+          "groups": [
+            "1191",
+            "1192",
+            "1193",
+            "1194",
+            "1195",
+            "1196",
+            "1197",
+            "1198",
+            "1199",
+            "1200",
+            "1201",
+            "1202"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1191",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1192",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1193",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1194",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1195",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1196",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1197",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1198",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1199",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1200",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1201",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1389,
+          "grupID": "1202",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1393,
+          "grupID": "1151",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 9
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1396,
+          "grupID": "1250",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1397,
+          "baseSelectedDelta": 4,
+          "baseAllDelta": 27,
+          "groups": [
+            "1274",
+            "1275",
+            "1276",
+            "1277",
+            "1278",
+            "1279",
+            "1280",
+            "1281",
+            "1340",
+            "1341"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1274",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1275",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1276",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1277",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1278",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1279",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1280",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1281",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1340",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1397,
+          "grupID": "1341",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1398,
+          "grupID": "1266",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1399,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 27,
+          "groups": [
+            "1256",
+            "1257",
+            "1258",
+            "1259",
+            "1260",
+            "1261",
+            "1262",
+            "1263",
+            "1264",
+            "1338",
+            "1339"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1256",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1257",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1258",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1259",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1260",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1261",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1262",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1263",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1264",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 3
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1338",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1399,
+          "grupID": "1339",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        }
+      ],
+      "matchesPublished": 209,
+      "detailFiles": 209,
+      "duplicatesDropped": 4,
+      "rejectedReasons": {
+        "date_out_of_season:2014-08-31": 1,
+        "date_out_of_season:2014-09-14": 4,
+        "date_out_of_season:2014-09-21": 4,
+        "date_out_of_season:2014-09-28": 5,
+        "date_out_of_season:2014-10-05": 2,
+        "date_out_of_season:2014-10-19": 4,
+        "date_out_of_season:2014-10-26": 4,
+        "date_out_of_season:2014-11-02": 4,
+        "date_out_of_season:2014-11-09": 4,
+        "date_out_of_season:2014-11-23": 2,
+        "date_out_of_season:2014-11-30": 4,
+        "date_out_of_season:2014-12-07": 3,
+        "date_out_of_season:2014-12-14": 4,
+        "date_out_of_season:2014-12-20": 3,
+        "date_out_of_season:2014-12-28": 3,
+        "date_out_of_season:2015-01-04": 1,
+        "date_out_of_season:2015-01-25": 3,
+        "date_out_of_season:2015-02-01": 4,
+        "date_out_of_season:2015-02-08": 5,
+        "date_out_of_season:2015-02-14": 3,
+        "date_out_of_season:2015-03-11": 1,
+        "date_out_of_season:2015-03-01": 4,
+        "date_out_of_season:2015-03-08": 4,
+        "date_out_of_season:2015-03-13": 2,
+        "date_out_of_season:2015-03-22": 4,
+        "date_out_of_season:2015-04-05": 4,
+        "date_out_of_season:2015-04-19": 2,
+        "date_out_of_season:2015-04-26": 2,
+        "date_out_of_season:2015-05-03": 1,
+        "date_out_of_season:2015-05-09": 2,
+        "date_out_of_season:2015-05-13": 1,
+        "date_out_of_season:2015-05-17": 1,
+        "date_out_of_season:2015-05-24": 1,
+        "date_out_of_season:2015-05-29": 1,
+        "date_out_of_season:2014-08-29": 1,
+        "date_out_of_season:2014-09-13": 3,
+        "date_out_of_season:2014-09-20": 3,
+        "date_out_of_season:2014-10-20": 1,
+        "date_out_of_season:2014-10-25": 3,
+        "date_out_of_season:2014-11-03": 1,
+        "date_out_of_season:2014-11-08": 3,
+        "date_out_of_season:2014-11-24": 1,
+        "date_out_of_season:2014-11-29": 3,
+        "date_out_of_season:2014-12-06": 3,
+        "date_out_of_season:2014-12-13": 3,
+        "date_out_of_season:2014-12-21": 3,
+        "date_out_of_season:2014-12-27": 3,
+        "date_out_of_season:2015-01-05": 1,
+        "date_out_of_season:2015-01-24": 3,
+        "date_out_of_season:2015-01-30": 1,
+        "date_out_of_season:2015-02-16": 1,
+        "date_out_of_season:2015-03-29": 4,
+        "date_out_of_season:2015-03-07": 3,
+        "date_out_of_season:2015-03-20": 1,
+        "date_out_of_season:2015-04-04": 3,
+        "date_out_of_season:2015-05-02": 1,
+        "date_out_of_season:2015-05-12": 1,
+        "date_out_of_season:2015-05-16": 1,
+        "date_out_of_season:2015-05-23": 1,
+        "date_out_of_season:2015-05-28": 1,
+        "date_out_of_season:2014-10-12": 3,
+        "date_out_of_season:2014-11-16": 3,
+        "date_out_of_season:2014-12-08": 1,
+        "date_out_of_season:2015-01-18": 3,
+        "date_out_of_season:2015-01-26": 1,
+        "date_out_of_season:2015-02-15": 3,
+        "date_out_of_season:2015-02-22": 1,
+        "date_out_of_season:2015-02-28": 3,
+        "date_out_of_season:2015-03-17": 1,
+        "date_out_of_season:2015-04-12": 1,
+        "date_out_of_season:2014-09-27": 2,
+        "date_out_of_season:2014-10-11": 2,
+        "date_out_of_season:2014-10-18": 2,
+        "date_out_of_season:2014-11-01": 2,
+        "date_out_of_season:2014-11-15": 2,
+        "date_out_of_season:2015-01-21": 2,
+        "date_out_of_season:2015-01-31": 2,
+        "date_out_of_season:2015-01-17": 2,
+        "date_out_of_season:2015-02-07": 2,
+        "date_out_of_season:2015-03-04": 2,
+        "date_out_of_season:2015-03-14": 2,
+        "date_out_of_season:2015-03-21": 2,
+        "date_out_of_season:2015-03-28": 2,
+        "date_out_of_season:2015-02-04": 2,
+        "date_out_of_season:2015-03-05": 2,
+        "date_out_of_season:2015-03-15": 2,
+        "date_out_of_season:2014-09-24": 1,
+        "date_out_of_season:2015-05-19": 1,
+        "date_out_of_season:2015-05-20": 1,
+        "date_out_of_season:2015-05-22": 1,
+        "balkes_not_found": 66
+      },
+      "rejectedSamples": {
+        "date_out_of_season:2014-08-31": [
+          "131730"
+        ],
+        "date_out_of_season:2014-09-14": [
+          "131738",
+          "134150",
+          "136625",
+          "137513"
+        ],
+        "date_out_of_season:2014-09-21": [
+          "131746",
+          "134154",
+          "136629",
+          "137517"
+        ],
+        "date_out_of_season:2014-09-28": [
+          "131760",
+          "132372",
+          "134160",
+          "136636",
+          "137524"
+        ],
+        "date_out_of_season:2014-10-05": [
+          "131769",
+          "132381"
+        ],
+        "date_out_of_season:2014-10-19": [
+          "131778",
+          "134180",
+          "136647",
+          "137535"
+        ],
+        "date_out_of_season:2014-10-26": [
+          "131785",
+          "134181",
+          "136649",
+          "137537"
+        ],
+        "date_out_of_season:2014-11-02": [
+          "131795",
+          "134190",
+          "136658",
+          "137546"
+        ],
+        "date_out_of_season:2014-11-09": [
+          "131806",
+          "134196",
+          "136659",
+          "137547"
+        ],
+        "date_out_of_season:2014-11-23": [
+          "131813",
+          "134211"
+        ],
+        "date_out_of_season:2014-11-30": [
+          "131821",
+          "134218",
+          "136670",
+          "137558"
+        ],
+        "date_out_of_season:2014-12-07": [
+          "131825",
+          "136674",
+          "137562"
+        ],
+        "date_out_of_season:2014-12-14": [
+          "131834",
+          "134232",
+          "136681",
+          "137569"
+        ],
+        "date_out_of_season:2014-12-20": [
+          "131848",
+          "134908",
+          "135796"
+        ],
+        "date_out_of_season:2014-12-28": [
+          "131854",
+          "136692",
+          "137580"
+        ],
+        "date_out_of_season:2015-01-04": [
+          "131867"
+        ],
+        "date_out_of_season:2015-01-25": [
+          "131871",
+          "136709",
+          "137597"
+        ],
+        "date_out_of_season:2015-02-01": [
+          "131883",
+          "134251",
+          "136703",
+          "137591"
+        ],
+        "date_out_of_season:2015-02-08": [
+          "131891",
+          "132503",
+          "134258",
+          "136715",
+          "137603"
+        ],
+        "date_out_of_season:2015-02-14": [
+          "131899",
+          "134943",
+          "135831"
+        ],
+        "date_out_of_season:2015-03-11": [
+          "131913"
+        ],
+        "date_out_of_season:2015-03-01": [
+          "131922",
+          "132534",
+          "136729",
+          "137617"
+        ],
+        "date_out_of_season:2015-03-08": [
+          "131931",
+          "134287",
+          "136737",
+          "137625"
+        ],
+        "date_out_of_season:2015-03-13": [
+          "131938",
+          "132550"
+        ],
+        "date_out_of_season:2015-03-22": [
+          "131948",
+          "134302",
+          "136748",
+          "137636"
+        ],
+        "date_out_of_season:2015-04-05": [
+          "131959",
+          "134317",
+          "136754",
+          "137642"
+        ],
+        "date_out_of_season:2015-04-19": [
+          "131966",
+          "132578"
+        ],
+        "date_out_of_season:2015-04-26": [
+          "131974",
+          "132586"
+        ],
+        "date_out_of_season:2015-05-03": [
+          "131978"
+        ],
+        "date_out_of_season:2015-05-09": [
+          "131987",
+          "132599"
+        ],
+        "date_out_of_season:2015-05-13": [
+          "132001"
+        ],
+        "date_out_of_season:2015-05-17": [
+          "132007"
+        ],
+        "date_out_of_season:2015-05-24": [
+          "132020"
+        ],
+        "date_out_of_season:2015-05-29": [
+          "132024"
+        ],
+        "date_out_of_season:2014-08-29": [
+          "132342"
+        ],
+        "date_out_of_season:2014-09-13": [
+          "132350",
+          "134849",
+          "135737"
+        ],
+        "date_out_of_season:2014-09-20": [
+          "132358",
+          "134853",
+          "135741"
+        ],
+        "date_out_of_season:2014-10-20": [
+          "132390"
+        ],
+        "date_out_of_season:2014-10-25": [
+          "132397",
+          "134873",
+          "135761"
+        ],
+        "date_out_of_season:2014-11-03": [
+          "132407"
+        ],
+        "date_out_of_season:2014-11-08": [
+          "132418",
+          "134883",
+          "135771"
+        ],
+        "date_out_of_season:2014-11-24": [
+          "132425"
+        ],
+        "date_out_of_season:2014-11-29": [
+          "132433",
+          "134894",
+          "135782"
+        ],
+        "date_out_of_season:2014-12-06": [
+          "132437",
+          "134898",
+          "135786"
+        ],
+        "date_out_of_season:2014-12-13": [
+          "132446",
+          "134905",
+          "135793"
+        ],
+        "date_out_of_season:2014-12-21": [
+          "132460",
+          "136684",
+          "137572"
+        ],
+        "date_out_of_season:2014-12-27": [
+          "132466",
+          "134916",
+          "135804"
+        ],
+        "date_out_of_season:2015-01-05": [
+          "132479"
+        ],
+        "date_out_of_season:2015-01-24": [
+          "132483",
+          "134933",
+          "135821"
+        ],
+        "date_out_of_season:2015-01-30": [
+          "132495"
+        ],
+        "date_out_of_season:2015-02-16": [
+          "132511"
+        ],
+        "date_out_of_season:2015-03-29": [
+          "132525",
+          "134309",
+          "136749",
+          "137637"
+        ],
+        "date_out_of_season:2015-03-07": [
+          "132543",
+          "134961",
+          "135849"
+        ],
+        "date_out_of_season:2015-03-20": [
+          "132560"
+        ],
+        "date_out_of_season:2015-04-04": [
+          "132571",
+          "134978",
+          "135866"
+        ],
+        "date_out_of_season:2015-05-02": [
+          "132590"
+        ],
+        "date_out_of_season:2015-05-12": [
+          "132613"
+        ],
+        "date_out_of_season:2015-05-16": [
+          "132619"
+        ],
+        "date_out_of_season:2015-05-23": [
+          "132632"
+        ],
+        "date_out_of_season:2015-05-28": [
+          "132636"
+        ],
+        "date_out_of_season:2014-10-12": [
+          "134167",
+          "136639",
+          "137527"
+        ],
+        "date_out_of_season:2014-11-16": [
+          "134204",
+          "136664",
+          "137552"
+        ],
+        "date_out_of_season:2014-12-08": [
+          "134226"
+        ],
+        "date_out_of_season:2015-01-18": [
+          "134241",
+          "136704",
+          "137592"
+        ],
+        "date_out_of_season:2015-01-26": [
+          "134245"
+        ],
+        "date_out_of_season:2015-02-15": [
+          "134271",
+          "136719",
+          "137607"
+        ],
+        "date_out_of_season:2015-02-22": [
+          "134272"
+        ],
+        "date_out_of_season:2015-02-28": [
+          "134281",
+          "134953",
+          "135841"
+        ],
+        "date_out_of_season:2015-03-17": [
+          "134295"
+        ],
+        "date_out_of_season:2015-04-12": [
+          "134323"
+        ],
+        "date_out_of_season:2014-09-27": [
+          "134860",
+          "135748"
+        ],
+        "date_out_of_season:2014-10-11": [
+          "134863",
+          "135751"
+        ],
+        "date_out_of_season:2014-10-18": [
+          "134871",
+          "135759"
+        ],
+        "date_out_of_season:2014-11-01": [
+          "134882",
+          "135770"
+        ],
+        "date_out_of_season:2014-11-15": [
+          "134888",
+          "135776"
+        ],
+        "date_out_of_season:2015-01-21": [
+          "134918",
+          "135806"
+        ],
+        "date_out_of_season:2015-01-31": [
+          "134927",
+          "135815"
+        ],
+        "date_out_of_season:2015-01-17": [
+          "134928",
+          "135816"
+        ],
+        "date_out_of_season:2015-02-07": [
+          "134939",
+          "135827"
+        ],
+        "date_out_of_season:2015-03-04": [
+          "134950",
+          "135838"
+        ],
+        "date_out_of_season:2015-03-14": [
+          "134963",
+          "135851"
+        ],
+        "date_out_of_season:2015-03-21": [
+          "134972",
+          "135860"
+        ],
+        "date_out_of_season:2015-03-28": [
+          "134973",
+          "135861"
+        ],
+        "date_out_of_season:2015-02-04": [
+          "136694",
+          "137582"
+        ],
+        "date_out_of_season:2015-03-05": [
+          "136726",
+          "137614"
+        ],
+        "date_out_of_season:2015-03-15": [
+          "136739",
+          "137627"
+        ],
+        "date_out_of_season:2014-09-24": [
+          "138886"
+        ],
+        "date_out_of_season:2015-05-19": [
+          "139923"
+        ],
+        "date_out_of_season:2015-05-20": [
+          "139925"
+        ],
+        "date_out_of_season:2015-05-22": [
+          "139927"
+        ],
+        "balkes_not_found": [
+          "140287",
+          "140288",
+          "140289",
+          "140292",
+          "140296",
+          "140300",
+          "140307",
+          "140309",
+          "140312",
+          "140320",
+          "140326",
+          "140327",
+          "140331",
+          "140344",
+          "140349",
+          "140353",
+          "140355",
+          "140358",
+          "140365",
+          "140367"
+        ]
+      },
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 205,
+        "cup": 2,
+        "playoff": 2
+      },
+      "seasonGuard": {
+        "start": "2015-07-01",
+        "end": "2016-06-30"
+      },
+      "generatedAt": "2026-05-15T11:22:08.788784Z"
+    },
+    {
+      "season": "2014-2015",
+      "selectedIds": 443,
+      "allDiscoveredIds": 7100,
+      "detailCandidates": 443,
+      "candidateMode": "legacy_pageid_probe_selected_or_known",
+      "knownOnly": false,
+      "plannedTarget": false,
+      "legacyPageIdProbe": true,
+      "legacyProbeDiagnostics": [
+        {
+          "kind": "group_hint",
+          "pageID": 1284,
+          "grupID": "1034",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1285,
+          "grupID": "1029",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 6
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1286,
+          "grupID": "1027",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1287,
+          "grupID": "1020",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1288,
+          "grupID": "1013",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1289,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 84,
+          "groups": []
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1292,
+          "baseSelectedDelta": 4,
+          "baseAllDelta": 179,
+          "groups": [
+            "1046",
+            "1047"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1292,
+          "grupID": "1046",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1292,
+          "grupID": "1047",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1318,
+          "baseSelectedDelta": 99,
+          "baseAllDelta": 306,
+          "groups": []
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1321,
+          "baseSelectedDelta": 0,
+          "baseAllDelta": 933,
+          "groups": [
+            "1058",
+            "1059",
+            "1060"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1321,
+          "grupID": "1058",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1321,
+          "error": "timeout",
+          "grupID": "1058",
+          "week": 6,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1321,
+          "grupID": "1059",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1321,
+          "grupID": "1060",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1323,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 10,
+          "groups": [
+            "1061",
+            "1062"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1323,
+          "grupID": "1061",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1325,
+          "grupID": "1072",
+          "groupSelectedDelta": 1,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1329,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 10,
+          "groups": [
+            "1063",
+            "1064"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1329,
+          "grupID": "1063",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1331,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 19,
+          "groups": [
+            "1094",
+            "1095",
+            "1096",
+            "1097",
+            "1098",
+            "1099",
+            "1139",
+            "1140"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1094",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1095",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1096",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1097",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1098",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1099",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1139",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1331,
+          "grupID": "1140",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1332,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 19,
+          "groups": [
+            "1088",
+            "1089",
+            "1090",
+            "1091",
+            "1092",
+            "1093",
+            "1137",
+            "1138"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1332,
+          "grupID": "1088",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1332,
+          "grupID": "1137",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1332,
+          "grupID": "1138",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1333,
+          "baseSelectedDelta": 4,
+          "baseAllDelta": 27,
+          "groups": [
+            "1082",
+            "1083",
+            "1084",
+            "1085",
+            "1086",
+            "1087",
+            "1135",
+            "1136"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1082",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1083",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1084",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 7
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1085",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1086",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 4
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1087",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 5
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1135",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1333,
+          "grupID": "1136",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1334,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 19,
+          "groups": [
+            "1076",
+            "1077",
+            "1078",
+            "1079",
+            "1080",
+            "1081",
+            "1133",
+            "1134"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1334,
+          "grupID": "1076",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1334,
+          "grupID": "1133",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1334,
+          "grupID": "1134",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "page_hint",
+          "pageID": 1335,
+          "baseSelectedDelta": 1,
+          "baseAllDelta": 149,
+          "groups": [
+            "1113",
+            "1114",
+            "1115",
+            "1116",
+            "1117",
+            "1118",
+            "1119",
+            "1120"
+          ]
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1113",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 0
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1114",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_week_fast_skip",
+          "pageID": 1335,
+          "error": "timeout",
+          "grupID": "1114",
+          "week": 31,
+          "cumulative": 1
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1115",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1116",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1117",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1118",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1119",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        },
+        {
+          "kind": "group_hint",
+          "pageID": 1335,
+          "grupID": "1120",
+          "groupSelectedDelta": 0,
+          "groupAllDelta": 2
+        }
+      ],
+      "matchesPublished": 236,
+      "detailFiles": 236,
+      "duplicatesDropped": 4,
+      "rejectedReasons": {
+        "date_out_of_season:2013-09-21": 3,
+        "date_out_of_season:2013-09-28": 3,
+        "date_out_of_season:2013-10-05": 3,
+        "date_out_of_season:2013-10-12": 3,
+        "date_out_of_season:2013-10-26": 3,
+        "date_out_of_season:2013-11-02": 3,
+        "date_out_of_season:2013-11-09": 3,
+        "date_out_of_season:2013-11-23": 3,
+        "date_out_of_season:2013-11-30": 3,
+        "date_out_of_season:2013-12-07": 3,
+        "date_out_of_season:2013-12-14": 3,
+        "date_out_of_season:2013-12-21": 3,
+        "date_out_of_season:2013-12-28": 3,
+        "date_out_of_season:2014-01-04": 3,
+        "date_out_of_season:2014-01-18": 3,
+        "date_out_of_season:2014-01-25": 3,
+        "date_out_of_season:2014-02-01": 3,
+        "date_out_of_season:2014-02-08": 3,
+        "date_out_of_season:2014-02-15": 3,
+        "date_out_of_season:2014-02-22": 3,
+        "date_out_of_season:2014-03-01": 3,
+        "date_out_of_season:2014-03-15": 3,
+        "date_out_of_season:2014-03-22": 3,
+        "date_out_of_season:2014-03-29": 3,
+        "date_out_of_season:2014-04-05": 3,
+        "date_out_of_season:2014-04-12": 3,
+        "date_out_of_season:2014-04-19": 3,
+        "date_out_of_season:2014-04-26": 3,
+        "date_out_of_season:2013-09-22": 2,
+        "date_out_of_season:2013-09-29": 2,
+        "date_out_of_season:2013-10-06": 2,
+        "date_out_of_season:2013-10-13": 2,
+        "date_out_of_season:2013-10-27": 2,
+        "date_out_of_season:2013-11-03": 2,
+        "date_out_of_season:2013-11-17": 2,
+        "date_out_of_season:2013-11-24": 2,
+        "date_out_of_season:2013-12-01": 2,
+        "date_out_of_season:2013-12-08": 2,
+        "date_out_of_season:2013-12-15": 2,
+        "date_out_of_season:2013-12-22": 2,
+        "date_out_of_season:2014-01-12": 2,
+        "date_out_of_season:2014-01-19": 2,
+        "date_out_of_season:2014-01-26": 2,
+        "date_out_of_season:2014-02-02": 2,
+        "date_out_of_season:2014-02-09": 2,
+        "date_out_of_season:2014-02-16": 2,
+        "date_out_of_season:2014-03-09": 2,
+        "date_out_of_season:2014-03-16": 2,
+        "date_out_of_season:2014-03-26": 2,
+        "date_out_of_season:2014-04-02": 2,
+        "date_out_of_season:2014-04-06": 2,
+        "date_out_of_season:2014-04-13": 2,
+        "date_out_of_season:2013-10-02": 1,
+        "date_out_of_season:2013-10-30": 1,
+        "date_out_of_season:2013-12-04": 1,
+        "date_out_of_season:2013-12-18": 1,
+        "date_out_of_season:2014-01-11": 1,
+        "balkes_not_found": 65,
+        "date_out_of_season:2022-05-11": 1
+      },
+      "rejectedSamples": {
+        "date_out_of_season:2013-09-21": [
+          "123623",
+          "124365",
+          "125683"
+        ],
+        "date_out_of_season:2013-09-28": [
+          "123632",
+          "124374",
+          "125692"
+        ],
+        "date_out_of_season:2013-10-05": [
+          "123636",
+          "124378",
+          "125696"
+        ],
+        "date_out_of_season:2013-10-12": [
+          "123641",
+          "124383",
+          "125701"
+        ],
+        "date_out_of_season:2013-10-26": [
+          "123649",
+          "124391",
+          "125709"
+        ],
+        "date_out_of_season:2013-11-02": [
+          "123657",
+          "124399",
+          "125717"
+        ],
+        "date_out_of_season:2013-11-09": [
+          "123662",
+          "124404",
+          "125722"
+        ],
+        "date_out_of_season:2013-11-23": [
+          "123676",
+          "124418",
+          "125736"
+        ],
+        "date_out_of_season:2013-11-30": [
+          "123687",
+          "124429",
+          "125747"
+        ],
+        "date_out_of_season:2013-12-07": [
+          "123691",
+          "124433",
+          "125751"
+        ],
+        "date_out_of_season:2013-12-14": [
+          "123701",
+          "124443",
+          "125761"
+        ],
+        "date_out_of_season:2013-12-21": [
+          "123706",
+          "124448",
+          "125766"
+        ],
+        "date_out_of_season:2013-12-28": [
+          "123715",
+          "124457",
+          "125775"
+        ],
+        "date_out_of_season:2014-01-04": [
+          "123721",
+          "124463",
+          "125781"
+        ],
+        "date_out_of_season:2014-01-18": [
+          "123728",
+          "124470",
+          "125788"
+        ],
+        "date_out_of_season:2014-01-25": [
+          "123737",
+          "124479",
+          "125797"
+        ],
+        "date_out_of_season:2014-02-01": [
+          "123741",
+          "124483",
+          "125801"
+        ],
+        "date_out_of_season:2014-02-08": [
+          "123746",
+          "124488",
+          "125806"
+        ],
+        "date_out_of_season:2014-02-15": [
+          "123754",
+          "124496",
+          "125814"
+        ],
+        "date_out_of_season:2014-02-22": [
+          "123762",
+          "124504",
+          "125822"
+        ],
+        "date_out_of_season:2014-03-01": [
+          "123767",
+          "124509",
+          "125827"
+        ],
+        "date_out_of_season:2014-03-15": [
+          "123781",
+          "124523",
+          "125841"
+        ],
+        "date_out_of_season:2014-03-22": [
+          "123792",
+          "124534",
+          "125852"
+        ],
+        "date_out_of_season:2014-03-29": [
+          "123796",
+          "124538",
+          "125856"
+        ],
+        "date_out_of_season:2014-04-05": [
+          "123806",
+          "124548",
+          "125866"
+        ],
+        "date_out_of_season:2014-04-12": [
+          "123811",
+          "124553",
+          "125871"
+        ],
+        "date_out_of_season:2014-04-19": [
+          "123820",
+          "124562",
+          "125880"
+        ],
+        "date_out_of_season:2014-04-26": [
+          "123826",
+          "124568",
+          "125886"
+        ],
+        "date_out_of_season:2013-09-22": [
+          "126113",
+          "127206"
+        ],
+        "date_out_of_season:2013-09-29": [
+          "126118",
+          "127211"
+        ],
+        "date_out_of_season:2013-10-06": [
+          "126127",
+          "127220"
+        ],
+        "date_out_of_season:2013-10-13": [
+          "126129",
+          "127222"
+        ],
+        "date_out_of_season:2013-10-27": [
+          "126135",
+          "127228"
+        ],
+        "date_out_of_season:2013-11-03": [
+          "126140",
+          "127233"
+        ],
+        "date_out_of_season:2013-11-17": [
+          "126152",
+          "127245"
+        ],
+        "date_out_of_season:2013-11-24": [
+          "126161",
+          "127254"
+        ],
+        "date_out_of_season:2013-12-01": [
+          "126165",
+          "127258"
+        ],
+        "date_out_of_season:2013-12-08": [
+          "126173",
+          "127266"
+        ],
+        "date_out_of_season:2013-12-15": [
+          "126178",
+          "127271"
+        ],
+        "date_out_of_season:2013-12-22": [
+          "126185",
+          "127278"
+        ],
+        "date_out_of_season:2014-01-12": [
+          "126191",
+          "127284"
+        ],
+        "date_out_of_season:2014-01-19": [
+          "126196",
+          "127289"
+        ],
+        "date_out_of_season:2014-01-26": [
+          "126205",
+          "127298"
+        ],
+        "date_out_of_season:2014-02-02": [
+          "126207",
+          "127300"
+        ],
+        "date_out_of_season:2014-02-09": [
+          "126213",
+          "127306"
+        ],
+        "date_out_of_season:2014-02-16": [
+          "126218",
+          "127311"
+        ],
+        "date_out_of_season:2014-03-09": [
+          "126230",
+          "127323"
+        ],
+        "date_out_of_season:2014-03-16": [
+          "126239",
+          "127332"
+        ],
+        "date_out_of_season:2014-03-26": [
+          "126243",
+          "127336"
+        ],
+        "date_out_of_season:2014-04-02": [
+          "126251",
+          "127344"
+        ],
+        "date_out_of_season:2014-04-06": [
+          "126256",
+          "127349"
+        ],
+        "date_out_of_season:2014-04-13": [
+          "126263",
+          "127356"
+        ],
+        "date_out_of_season:2013-10-02": [
+          "127623"
+        ],
+        "date_out_of_season:2013-10-30": [
+          "127681"
+        ],
+        "date_out_of_season:2013-12-04": [
+          "128325"
+        ],
+        "date_out_of_season:2013-12-18": [
+          "128366"
+        ],
+        "date_out_of_season:2014-01-11": [
+          "128418"
+        ],
+        "balkes_not_found": [
+          "129548",
+          "129555",
+          "129558",
+          "129563",
+          "129566",
+          "129570",
+          "129577",
+          "129581",
+          "129585",
+          "129592",
+          "129601",
+          "129602",
+          "129605",
+          "129612",
+          "129622",
+          "129624",
+          "129625",
+          "129629",
+          "129636",
+          "129640"
+        ],
+        "date_out_of_season:2022-05-11": [
+          "234125"
+        ]
+      },
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 235,
+        "cup": 1
+      },
+      "seasonGuard": {
+        "start": "2014-07-01",
+        "end": "2015-06-30"
+      },
+      "generatedAt": "2026-05-15T12:05:58.315957Z"
     }
   ],
   "after": {
-    "seasons": 8,
-    "matches": 438
+    "seasons": 12,
+    "matches": 1342
   },
   "safeToPush": true
 }

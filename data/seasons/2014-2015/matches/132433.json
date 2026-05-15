@@ -1,0 +1,1106 @@
+{
+  "id": "132433",
+  "matchCode": "9196",
+  "season": "2014-2015",
+  "competition": "U21 Ligi (PAF Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "VALİ NİHAT CANPOLAT STADI - KAYSERİ",
+  "venue": "VALİ NİHAT CANPOLAT STADI - KAYSERİ",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2014-11-29",
+  "time": "13:30",
+  "dateDisplay": "2014-11-29 - 13:30",
+  "homeTeam": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+  "awayTeam": "Balıkesirspor",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 1,
+    "away": 2,
+    "display": "1-2",
+    "played": true
+  },
+  "balkes": {
+    "isHome": false,
+    "isAway": true,
+    "opponent": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+    "goalsFor": 2,
+    "goalsAgainst": 1,
+    "result": "W"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "NECATİ SELÇUK ŞAHİN"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "İSMAİL SAKAR"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "KEMAL HATTATİOĞLU"
+    },
+    {
+      "role": "Dördüncü Hakem",
+      "name": "HARUN SOYEŞİK"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "NECATİ SELÇUK ŞAHİN"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "İSMAİL SAKAR"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "KEMAL HATTATİOĞLU"
+    },
+    {
+      "role": "Dördüncü Hakem",
+      "name": "HARUN SOYEŞİK"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "starting11": [
+        {
+          "name": "MUSTAFA ÖZTÜRK",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1243629"
+        },
+        {
+          "name": "MEHMET KURTULUŞ",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1199285"
+        },
+        {
+          "name": "MEHMET BAYRAM",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1128093"
+        },
+        {
+          "name": "YUNUS ÖZTÜRK",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1127334"
+        },
+        {
+          "name": "BİLAL KILIÇ",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "903379"
+        },
+        {
+          "name": "MEVLÜT YILMAZ",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "998693"
+        },
+        {
+          "name": "MEHMET SEÇME",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1058054"
+        },
+        {
+          "name": "OKAN YENİDÜNYA",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1130968"
+        },
+        {
+          "name": "EMRE ÖZDEN",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1058097"
+        },
+        {
+          "name": "SERKAN DEMİREZEN",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1058041"
+        },
+        {
+          "name": "TALHA ÇOBAN",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1162984"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "HASRET TOKAT",
+          "number": 12,
+          "shirt_no": "12",
+          "tffPersonId": "1058065"
+        },
+        {
+          "name": "CÜNEYT TURGUT",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1226366"
+        },
+        {
+          "name": "AHMET ÖZDEMİR",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1016819"
+        },
+        {
+          "name": "İBRAHİM KARAASLAN",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1058021"
+        },
+        {
+          "name": "ŞAHİN KOL",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1148771"
+        },
+        {
+          "name": "ERTUĞRUL GÜDEREK",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1229731"
+        },
+        {
+          "name": "HACI ALİ EMEL",
+          "number": 18,
+          "shirt_no": "18",
+          "tffPersonId": "1226353"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "RIDVAN ÇEÇEN"
+        }
+      ],
+      "coach": "RIDVAN ÇEÇEN",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "MUHARREM TUNAY MERAL",
+          "number": 95,
+          "shirt_no": "95",
+          "tffPersonId": "1202696"
+        },
+        {
+          "name": "OĞUZHAN ÇAPAR",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1048331"
+        },
+        {
+          "name": "KAAN TÜRKÇETİN",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1249004"
+        },
+        {
+          "name": "NAZİF TEKİN",
+          "number": 80,
+          "shirt_no": "80",
+          "tffPersonId": "1045323"
+        },
+        {
+          "name": "TEZCAN YILDIRIM",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1164668"
+        },
+        {
+          "name": "ŞERİF KORKMAZ",
+          "number": 88,
+          "shirt_no": "88",
+          "tffPersonId": "1146076"
+        },
+        {
+          "name": "MEHMET YASİN ÇALIŞKAN",
+          "number": 35,
+          "shirt_no": "35",
+          "tffPersonId": "1072831"
+        },
+        {
+          "name": "HARUN RAŞİT OYBAK",
+          "number": 45,
+          "shirt_no": "45",
+          "tffPersonId": "1300112"
+        },
+        {
+          "name": "SERTAN ÇAKIR",
+          "number": 48,
+          "shirt_no": "48",
+          "tffPersonId": "1045328"
+        },
+        {
+          "name": "AHMET FURKAN HASTÜRK",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1330815"
+        },
+        {
+          "name": "MURAT ÖZAVCI",
+          "number": 67,
+          "shirt_no": "67",
+          "tffPersonId": "1302246"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "ENES ÇETİN",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1384129"
+        },
+        {
+          "name": "AKÇAN DENİZ SAYAR",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1280052"
+        },
+        {
+          "name": "İBRAHİM İÇUZ",
+          "number": 77,
+          "shirt_no": "77",
+          "tffPersonId": "969461"
+        },
+        {
+          "name": "MUHAMMED CAN",
+          "number": 32,
+          "shirt_no": "32",
+          "tffPersonId": "1151234"
+        },
+        {
+          "name": "ÇAĞATAY VATAN",
+          "number": 97,
+          "shirt_no": "97",
+          "tffPersonId": "1148183"
+        },
+        {
+          "name": "İLYAS KANDEMİR",
+          "number": 22,
+          "shirt_no": "22",
+          "tffPersonId": "1149115"
+        },
+        {
+          "name": "MUSTAFA ÖNAY",
+          "number": 54,
+          "shirt_no": "54",
+          "tffPersonId": "1046770"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "EŞREF ERKEKOĞLU"
+        }
+      ],
+      "coach": "EŞREF ERKEKOĞLU",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "AHMET FURKAN HASTÜRK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 16,
+      "tffPersonId": "1330815"
+    },
+    {
+      "name": "AKÇAN DENİZ SAYAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 7,
+      "tffPersonId": "1280052"
+    },
+    {
+      "name": "ÇAĞATAY VATAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 97,
+      "tffPersonId": "1148183"
+    },
+    {
+      "name": "ENES ÇETİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 1,
+      "tffPersonId": "1384129"
+    },
+    {
+      "name": "EŞREF ERKEKOĞLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "HARUN RAŞİT OYBAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 45,
+      "tffPersonId": "1300112"
+    },
+    {
+      "name": "İBRAHİM İÇUZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 77,
+      "tffPersonId": "969461"
+    },
+    {
+      "name": "İLYAS KANDEMİR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 22,
+      "tffPersonId": "1149115"
+    },
+    {
+      "name": "KAAN TÜRKÇETİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1249004"
+    },
+    {
+      "name": "MEHMET YASİN ÇALIŞKAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 35,
+      "tffPersonId": "1072831"
+    },
+    {
+      "name": "MUHAMMED CAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 32,
+      "tffPersonId": "1151234"
+    },
+    {
+      "name": "MUHARREM TUNAY MERAL",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 95,
+      "tffPersonId": "1202696"
+    },
+    {
+      "name": "MURAT ÖZAVCI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 67,
+      "tffPersonId": "1302246"
+    },
+    {
+      "name": "MUSTAFA ÖNAY",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 54,
+      "tffPersonId": "1046770"
+    },
+    {
+      "name": "NAZİF TEKİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 80,
+      "tffPersonId": "1045323"
+    },
+    {
+      "name": "OĞUZHAN ÇAPAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 5,
+      "tffPersonId": "1048331"
+    },
+    {
+      "name": "ŞERİF KORKMAZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 88,
+      "tffPersonId": "1146076"
+    },
+    {
+      "name": "SERTAN ÇAKIR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 48,
+      "tffPersonId": "1045328"
+    },
+    {
+      "name": "TEZCAN YILDIRIM",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 19,
+      "tffPersonId": "1164668"
+    },
+    {
+      "name": "AHMET ÖZDEMİR",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 14,
+      "tffPersonId": "1016819"
+    },
+    {
+      "name": "BİLAL KILIÇ",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "903379"
+    },
+    {
+      "name": "CÜNEYT TURGUT",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 13,
+      "tffPersonId": "1226366"
+    },
+    {
+      "name": "EMRE ÖZDEN",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 9,
+      "tffPersonId": "1058097"
+    },
+    {
+      "name": "ERTUĞRUL GÜDEREK",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 17,
+      "tffPersonId": "1229731"
+    },
+    {
+      "name": "HACI ALİ EMEL",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute",
+        "goal",
+        "yellow_card",
+        "substitution_in"
+      ],
+      "number": 18,
+      "tffPersonId": "1226353"
+    },
+    {
+      "name": "HASRET TOKAT",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 12,
+      "tffPersonId": "1058065"
+    },
+    {
+      "name": "İBRAHİM KARAASLAN",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute",
+        "yellow_card",
+        "substitution_in"
+      ],
+      "number": 15,
+      "tffPersonId": "1058021"
+    },
+    {
+      "name": "MEHMET BAYRAM",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1128093"
+    },
+    {
+      "name": "MEHMET KURTULUŞ",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 2,
+      "tffPersonId": "1199285"
+    },
+    {
+      "name": "MEHMET SEÇME",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 7,
+      "tffPersonId": "1058054"
+    },
+    {
+      "name": "MEVLÜT YILMAZ",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 6,
+      "tffPersonId": "998693"
+    },
+    {
+      "name": "MUSTAFA ÖZTÜRK",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 1,
+      "tffPersonId": "1243629"
+    },
+    {
+      "name": "OKAN YENİDÜNYA",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 8,
+      "tffPersonId": "1130968"
+    },
+    {
+      "name": "RIDVAN ÇEÇEN",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "ŞAHİN KOL",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 16,
+      "tffPersonId": "1148771"
+    },
+    {
+      "name": "SERKAN DEMİREZEN",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 10,
+      "tffPersonId": "1058041"
+    },
+    {
+      "name": "TALHA ÇOBAN",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1162984"
+    },
+    {
+      "name": "YUNUS ÖZTÜRK",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1127334"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "HACI ALİ EMEL",
+      "scorer": "HACI ALİ EMEL",
+      "raw": "HACI ALİ EMEL,64.dk (F)",
+      "minute": 64,
+      "minuteRaw": "HACI ALİ EMEL,64.dk",
+      "goalType": "F",
+      "tffPersonId": "1226353"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "OĞUZHAN ÇAPAR",
+      "scorer": "OĞUZHAN ÇAPAR",
+      "raw": "OĞUZHAN ÇAPAR,8.dk (P)",
+      "minute": 8,
+      "minuteRaw": "OĞUZHAN ÇAPAR,8.dk",
+      "goalType": "P",
+      "tffPersonId": "1048331"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "AHMET FURKAN HASTÜRK",
+      "scorer": "AHMET FURKAN HASTÜRK",
+      "raw": "AHMET FURKAN HASTÜRK,53.dk (F)",
+      "minute": 53,
+      "minuteRaw": "AHMET FURKAN HASTÜRK,53.dk",
+      "goalType": "F",
+      "tffPersonId": "1330815"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "MEVLÜT YILMAZ",
+      "minute": 7,
+      "minuteRaw": "7.dk",
+      "tffPersonId": "998693"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "İBRAHİM KARAASLAN",
+      "minute": 45,
+      "minuteRaw": "45.dk",
+      "tffPersonId": "1058021"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "OKAN YENİDÜNYA",
+      "minute": 51,
+      "minuteRaw": "51.dk",
+      "tffPersonId": "1130968"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "HACI ALİ EMEL",
+      "minute": 89,
+      "minuteRaw": "89.dk",
+      "tffPersonId": "1226353"
+    },
+    {
+      "type": "substitution",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "order": 1,
+      "player_in": "HACI ALİ EMEL",
+      "player_out": "EMRE ÖZDEN",
+      "playerIn": "HACI ALİ EMEL",
+      "playerOut": "EMRE ÖZDEN",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "EMRE ÖZDEN",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "HACI ALİ EMEL",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "order": 2,
+      "player_in": "AHMET ÖZDEMİR",
+      "player_out": "TALHA ÇOBAN",
+      "playerIn": "AHMET ÖZDEMİR",
+      "playerOut": "TALHA ÇOBAN",
+      "minute": 67,
+      "minuteRaw": "67.dk",
+      "minute_text": "67.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "TALHA ÇOBAN",
+      "order": 2,
+      "minute": 67,
+      "minuteRaw": "67.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "AHMET ÖZDEMİR",
+      "order": 2,
+      "minute": 67,
+      "minuteRaw": "67.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "order": 3,
+      "player_in": "İBRAHİM KARAASLAN",
+      "player_out": "MEHMET KURTULUŞ",
+      "playerIn": "İBRAHİM KARAASLAN",
+      "playerOut": "MEHMET KURTULUŞ",
+      "minute": 30,
+      "minuteRaw": "30.dk",
+      "minute_text": "30.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "MEHMET KURTULUŞ",
+      "order": 3,
+      "minute": 30,
+      "minuteRaw": "30.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "İBRAHİM KARAASLAN",
+      "order": 3,
+      "minute": 30,
+      "minuteRaw": "30.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "ÇAĞATAY VATAN",
+      "player_out": "NAZİF TEKİN",
+      "playerIn": "ÇAĞATAY VATAN",
+      "playerOut": "NAZİF TEKİN",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "NAZİF TEKİN",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "ÇAĞATAY VATAN",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 2,
+      "player_in": "AKÇAN DENİZ SAYAR",
+      "player_out": "TEZCAN YILDIRIM",
+      "playerIn": "AKÇAN DENİZ SAYAR",
+      "playerOut": "TEZCAN YILDIRIM",
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "minute_text": "75.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "TEZCAN YILDIRIM",
+      "order": 2,
+      "minute": 75,
+      "minuteRaw": "75.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "AKÇAN DENİZ SAYAR",
+      "order": 2,
+      "minute": 75,
+      "minuteRaw": "75.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 3,
+      "player_in": "İLYAS KANDEMİR",
+      "player_out": "KAAN TÜRKÇETİN",
+      "playerIn": "İLYAS KANDEMİR",
+      "playerOut": "KAAN TÜRKÇETİN",
+      "minute": 89,
+      "minuteRaw": "89.dk",
+      "minute_text": "89.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "KAAN TÜRKÇETİN",
+      "order": 3,
+      "minute": 89,
+      "minuteRaw": "89.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "İLYAS KANDEMİR",
+      "order": 3,
+      "minute": 89,
+      "minuteRaw": "89.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "HACI ALİ EMEL",
+      "scorer": "HACI ALİ EMEL",
+      "raw": "HACI ALİ EMEL,64.dk (F)",
+      "minute": 64,
+      "minuteRaw": "HACI ALİ EMEL,64.dk",
+      "goalType": "F",
+      "tffPersonId": "1226353"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "OĞUZHAN ÇAPAR",
+      "scorer": "OĞUZHAN ÇAPAR",
+      "raw": "OĞUZHAN ÇAPAR,8.dk (P)",
+      "minute": 8,
+      "minuteRaw": "OĞUZHAN ÇAPAR,8.dk",
+      "goalType": "P",
+      "tffPersonId": "1048331"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "AHMET FURKAN HASTÜRK",
+      "scorer": "AHMET FURKAN HASTÜRK",
+      "raw": "AHMET FURKAN HASTÜRK,53.dk (F)",
+      "minute": 53,
+      "minuteRaw": "AHMET FURKAN HASTÜRK,53.dk",
+      "goalType": "F",
+      "tffPersonId": "1330815"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "HACI ALİ EMEL",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "minute": 64,
+      "goalType": "F"
+    },
+    {
+      "player": "OĞUZHAN ÇAPAR",
+      "team": "Balıkesirspor",
+      "minute": 8,
+      "goalType": "P"
+    },
+    {
+      "player": "AHMET FURKAN HASTÜRK",
+      "team": "Balıkesirspor",
+      "minute": 53,
+      "goalType": "F"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "MEVLÜT YILMAZ",
+      "minute": 7,
+      "minuteRaw": "7.dk",
+      "tffPersonId": "998693"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "İBRAHİM KARAASLAN",
+      "minute": 45,
+      "minuteRaw": "45.dk",
+      "tffPersonId": "1058021"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "OKAN YENİDÜNYA",
+      "minute": 51,
+      "minuteRaw": "51.dk",
+      "tffPersonId": "1130968"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "player": "HACI ALİ EMEL",
+      "minute": 89,
+      "minuteRaw": "89.dk",
+      "tffPersonId": "1226353"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "EMRE ÖZDEN",
+      "player_out": "EMRE ÖZDEN",
+      "playerOutTffPersonId": "1058097",
+      "playerIn": "HACI ALİ EMEL",
+      "player_in": "HACI ALİ EMEL",
+      "playerInTffPersonId": "1226353"
+    },
+    {
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "order": 2,
+      "minute": 67,
+      "minuteRaw": "67.dk",
+      "playerOut": "TALHA ÇOBAN",
+      "player_out": "TALHA ÇOBAN",
+      "playerOutTffPersonId": "1162984",
+      "playerIn": "AHMET ÖZDEMİR",
+      "player_in": "AHMET ÖZDEMİR",
+      "playerInTffPersonId": "1016819"
+    },
+    {
+      "team": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR",
+      "order": 3,
+      "minute": 30,
+      "minuteRaw": "30.dk",
+      "playerOut": "MEHMET KURTULUŞ",
+      "player_out": "MEHMET KURTULUŞ",
+      "playerOutTffPersonId": "1199285",
+      "playerIn": "İBRAHİM KARAASLAN",
+      "player_in": "İBRAHİM KARAASLAN",
+      "playerInTffPersonId": "1058021"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "NAZİF TEKİN",
+      "player_out": "NAZİF TEKİN",
+      "playerOutTffPersonId": "1045323",
+      "playerIn": "ÇAĞATAY VATAN",
+      "player_in": "ÇAĞATAY VATAN",
+      "playerInTffPersonId": "1148183"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 2,
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "playerOut": "TEZCAN YILDIRIM",
+      "player_out": "TEZCAN YILDIRIM",
+      "playerOutTffPersonId": "1164668",
+      "playerIn": "AKÇAN DENİZ SAYAR",
+      "player_in": "AKÇAN DENİZ SAYAR",
+      "playerInTffPersonId": "1280052"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 3,
+      "minute": 89,
+      "minuteRaw": "89.dk",
+      "playerOut": "KAAN TÜRKÇETİN",
+      "player_out": "KAAN TÜRKÇETİN",
+      "playerOutTffPersonId": "1249004",
+      "playerIn": "İLYAS KANDEMİR",
+      "player_in": "İLYAS KANDEMİR",
+      "playerInTffPersonId": "1149115"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "SUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR BALIKESİRSPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nSUAT ALTIN İNŞAAT KAYSERİ ERCİYESSPOR\n1\nBALIKESİRSPOR\n2\nU21 Ligi (PAF Takımı)\nMaç Kodu:\n9196\nVALİ NİHAT CANPOLAT STADI - KAYSERİ\n29.11.2014 - 13:30\nNECATİ SELÇUK ŞAHİN(Hakem)\nİSMAİL SAKAR(1. Yardımcı Hakem)\nKEMAL HATTATİOĞLU(2. Yardımcı Hakem)\nHARUN SOYEŞİK(Dördüncü Hakem)\nNAHİT SARIKAYA(Gözlemci)\nİlk 11\n1.\nMUSTAFA ÖZTÜRK\n2.\nMEHMET KURTULUŞ\n3.\nMEHMET BAYRAM\n4.\nYUNUS ÖZTÜRK\n5.\nBİLAL KILIÇ\n6.\nMEVLÜT YILMAZ\n7.\nMEHMET SEÇME\n8.\nOKAN YENİDÜNYA\n9.\nEMRE ÖZDEN\n10.\nSERKAN DEMİREZEN\n11.\nTALHA ÇOBAN\nYedekler\n12.\nHASRET TOKAT\n13.\nCÜNEYT TURGUT\n14.\nAHMET ÖZDEMİR\n15.\nİBRAHİM KARAASLAN\n16.\nŞAHİN KOL\n17.\nERTUĞRUL GÜDEREK\n18.\nHACI ALİ EMEL\nTeknik Sorumlu\nRIDVAN ÇEÇEN\nGoller\nHACI ALİ EMEL,64.dk (F)\nKartlar\nMEVLÜT YILMAZ\n7.dk\nİBRAHİM KARAASLAN\n45.dk\nOKAN YENİDÜNYA\n51.dk\nHACI ALİ EMEL\n89.dk\nOyundan Çıkanlar\nEMRE ÖZDEN\n46.dk\nTALHA ÇOBAN\n67.dk\nMEHMET KURTULUŞ\n30.dk\nOyuna Girenler\nHACI ALİ EMEL\n46.dk\nAHMET ÖZDEMİR\n67.dk\nİBRAHİM KARAASLAN\n30.dk\nİlk 11\n95.\nMUHARREM TUNAY MERAL\n5.\nOĞUZHAN ÇAPAR\n11.\nKAAN TÜRKÇETİN\n80.\nNAZİF TEKİN\n19.\nTEZCAN YILDIRIM\n88.\nŞERİF KORKMAZ\n35.\nMEHMET YASİN ÇALIŞKAN\n45.\nHARUN RAŞİT OYBAK\n48.\nSERTAN ÇAKIR\n16.\nAHMET FURKAN HASTÜRK\n67.\nMURAT ÖZAVCI\nYedekler\n1.\nENES ÇETİN\n7.\nAKÇAN DENİZ SAYAR\n77.\nİBRAHİM İÇUZ\n32.\nMUHAMMED CAN\n97.\nÇAĞATAY VATAN\n22.\nİLYAS KANDEMİR\n54.\nMUSTAFA ÖNAY\nTeknik Sorumlu\nEŞREF ERKEKOĞLU\nGoller\nOĞUZHAN ÇAPAR,8.dk (P)\nAHMET FURKAN HASTÜRK,53.dk (F)\nOyundan Çıkanlar\nNAZİF TEKİN\n46.dk\nTEZCAN YILDIRIM\n75.dk\nKAAN TÜRKÇETİN\n89.dk\nOyuna Girenler\nÇAĞATAY VATAN\n46.dk\nAKÇAN DENİZ SAYAR\n75.dk\nİLYAS KANDEMİR\n89.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nNECATİ SELÇUK ŞAHİN(Hakem)\nİSMAİL SAKAR(1. Yardımcı Hakem)\nKEMAL HATTATİOĞLU(2. Yardımcı Hakem)\nHARUN SOYEŞİK(Dördüncü Hakem)\nNAHİT SARIKAYA(Gözlemci)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "Goller\nHACI ALİ EMEL,64.dk (F)\n7.dk\n45.dk\n51.dk\n89.dk\nOyundan Çıkanlar\n46.dk\n67.dk\n30.dk\nOyuna Girenler\n46.dk\n67.dk\n30.dk\nGoller\nOĞUZHAN ÇAPAR,8.dk (P)\nAHMET FURKAN HASTÜRK,53.dk (F)\nOyundan Çıkanlar\n46.dk\n75.dk\n89.dk\nOyuna Girenler\n46.dk\n75.dk\n89.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 7,
+    "substitutesAway": 7,
+    "goals": 3,
+    "cards": 4,
+    "substitutions": 6,
+    "players": 38
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=132433",
+    "retrievedAt": "2026-05-15T12:03:16.910563Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}
