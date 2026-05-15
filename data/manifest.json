@@ -1,15 +1,118 @@
 {
   "app": "Balkes Skor",
   "schemaVersion": 3,
-  "generatedAt": "2026-05-15T05:33:53.142185Z",
+  "dataVersion": 1,
+  "appVersion": "0.5.0-beta-debug",
+  "generatedAt": "2026-05-15T06:17:26.443386Z",
   "team": "Balıkesirspor",
-  "availableSeasons": [],
+  "availableSeasons": [
+    {
+      "id": "2025-2026",
+      "name": "2025-2026",
+      "matchCount": 32,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 32,
+        "wins": 18,
+        "draws": 7,
+        "losses": 7,
+        "goalsFor": 61,
+        "goalsAgainst": 28,
+        "goalDifference": 33,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 2
+        }
+      }
+    },
+    {
+      "id": "2024-2025",
+      "name": "2024-2025",
+      "matchCount": 33,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 33,
+        "wins": 18,
+        "draws": 6,
+        "losses": 9,
+        "goalsFor": 54,
+        "goalsAgainst": 27,
+        "goalDifference": 27,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 3
+        },
+        "points": 56,
+        "rawPoints": 56,
+        "pointsDeducted": 0,
+        "finalRank": 2
+      },
+      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
+    },
+    {
+      "id": "2023-2024",
+      "name": "2023-2024",
+      "matchCount": 28,
+      "competition": "TFF 3. LİG (Profesyonel Takım)",
+      "summary": {
+        "matches": 28,
+        "wins": 7,
+        "draws": 12,
+        "losses": 9,
+        "goalsFor": 27,
+        "goalsAgainst": 30,
+        "goalDifference": -3,
+        "matchTypes": {
+          "league": 28
+        },
+        "points": 33,
+        "rawPoints": 33,
+        "pointsDeducted": 0,
+        "finalRank": 8
+      },
+      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
+    },
+    {
+      "id": "2022-2023",
+      "name": "2022-2023",
+      "matchCount": 38,
+      "competition": "TFF 2.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 38,
+        "wins": 6,
+        "draws": 10,
+        "losses": 22,
+        "goalsFor": 32,
+        "goalsAgainst": 76,
+        "goalDifference": -44,
+        "matchTypes": {
+          "league": 38
+        },
+        "points": 25,
+        "rawPoints": 25,
+        "pointsDeducted": 0,
+        "finalRank": 17
+      },
+      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
+    }
+  ],
   "global": {
     "playersIndexUrl": "players_index.json",
     "opponentsIndexUrl": "opponents_index.json",
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "factoryVersion": "v2.2-no-standings-fixed2",
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/"
+  "appDataVersion": 1778825846,
+  "appMinVersion": "0.5.0-beta-debug",
+  "lastUpdated": "2026-05-15T06:17:26.443406Z",
+  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
+  "processedSeasonsInLastRun": [
+    "2025-2026",
+    "2024-2025",
+    "2023-2024",
+    "2022-2023"
+  ],
+  "standingsUpdatedAt": "2026-05-15T06:39:30.005510Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }

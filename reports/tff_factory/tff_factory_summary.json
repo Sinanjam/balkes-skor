@@ -1,39 +1,223 @@
 {
-  "generatedAt": "2026-05-14T23:15:50.959632Z",
+  "generatedAt": "2026-05-15T06:17:26.450121Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.4-strict-legacy-known-only",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
   "processed": [
     {
-      "season": "2018-2019",
-      "selectedIds": 0,
-      "allDiscoveredIds": 0,
-      "detailCandidates": 2,
-      "candidateMode": "known_match_ids_only",
-      "knownOnly": true,
+      "season": "2025-2026",
+      "selectedIds": 86,
+      "allDiscoveredIds": 986,
+      "detailCandidates": 86,
+      "candidateMode": "selected_or_known",
+      "knownOnly": false,
       "plannedTarget": false,
-      "matchesPublished": 2,
-      "detailFiles": 2,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 32,
+      "detailFiles": 32,
       "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
+      "rejectedReasons": {
+        "balkes_not_found": 54
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "285616",
+          "285619",
+          "285624",
+          "285625",
+          "285628",
+          "285639",
+          "285641",
+          "285642",
+          "285648",
+          "285654",
+          "285657",
+          "285659",
+          "285660",
+          "285673",
+          "285675",
+          "285676",
+          "285683",
+          "285690",
+          "285692",
+          "285695"
+        ]
+      },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
       "matchTypeCounts": {
-        "cup": 1,
-        "league": 1
+        "league": 30,
+        "playoff": 2
       },
       "seasonGuard": {
-        "start": "2018-07-01",
-        "end": "2019-06-30"
+        "start": "2025-07-01",
+        "end": "2026-06-30"
       },
-      "generatedAt": "2026-05-14T23:15:50.945976Z"
+      "generatedAt": "2026-05-15T06:09:24.195168Z"
+    },
+    {
+      "season": "2024-2025",
+      "selectedIds": 81,
+      "allDiscoveredIds": 986,
+      "detailCandidates": 81,
+      "candidateMode": "selected_or_known",
+      "knownOnly": false,
+      "plannedTarget": true,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 33,
+      "detailFiles": 33,
+      "duplicatesDropped": 0,
+      "rejectedReasons": {
+        "balkes_not_found": 48
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "265583",
+          "265590",
+          "265592",
+          "265599",
+          "265608",
+          "265613",
+          "265618",
+          "265621",
+          "265622",
+          "265628",
+          "265636",
+          "265638",
+          "265640",
+          "265647",
+          "265661",
+          "265662",
+          "265665",
+          "265670",
+          "265674",
+          "265679"
+        ]
+      },
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 30,
+        "playoff": 3
+      },
+      "seasonGuard": {
+        "start": "2024-07-01",
+        "end": "2025-06-30"
+      },
+      "generatedAt": "2026-05-15T06:12:08.418504Z"
+    },
+    {
+      "season": "2023-2024",
+      "selectedIds": 78,
+      "allDiscoveredIds": 866,
+      "detailCandidates": 78,
+      "candidateMode": "selected_or_known",
+      "knownOnly": false,
+      "plannedTarget": true,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 28,
+      "detailFiles": 28,
+      "duplicatesDropped": 0,
+      "rejectedReasons": {
+        "balkes_not_found": 50
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "251166",
+          "251167",
+          "251173",
+          "251174",
+          "251181",
+          "251184",
+          "251191",
+          "251193",
+          "251197",
+          "251202",
+          "251206",
+          "251212",
+          "251216",
+          "251218",
+          "251221",
+          "251227",
+          "251230",
+          "251232",
+          "251241",
+          "251245"
+        ]
+      },
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 28
+      },
+      "seasonGuard": {
+        "start": "2023-07-01",
+        "end": "2024-06-30"
+      },
+      "generatedAt": "2026-05-15T06:14:22.787574Z"
+    },
+    {
+      "season": "2022-2023",
+      "selectedIds": 108,
+      "allDiscoveredIds": 735,
+      "detailCandidates": 108,
+      "candidateMode": "selected_or_known",
+      "knownOnly": false,
+      "plannedTarget": true,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 38,
+      "detailFiles": 38,
+      "duplicatesDropped": 0,
+      "rejectedReasons": {
+        "balkes_not_found": 70
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "235736",
+          "235739",
+          "235743",
+          "235750",
+          "235752",
+          "235766",
+          "235769",
+          "235771",
+          "235772",
+          "235780",
+          "235791",
+          "235795",
+          "235799",
+          "235811",
+          "235815",
+          "235818",
+          "235821",
+          "235831",
+          "235837",
+          "235839"
+        ]
+      },
+      "standingsSkipped": true,
+      "standingsSnapshots": 0,
+      "balkesTableFound": false,
+      "matchTypeCounts": {
+        "league": 38
+      },
+      "seasonGuard": {
+        "start": "2022-07-01",
+        "end": "2023-06-30"
+      },
+      "generatedAt": "2026-05-15T06:17:26.438730Z"
     }
   ],
   "after": {
-    "seasons": 8,
-    "matches": 233
+    "seasons": 4,
+    "matches": 131
   },
   "safeToPush": true
 }
