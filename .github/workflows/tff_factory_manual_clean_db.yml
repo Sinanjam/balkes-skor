@@ -1,4 +1,4 @@
-name: TFF Factory v2.9 Speed Complete Accuracy
+name: TFF Factory v3.0 Integrated Data + Standings
 
 on:
   workflow_dispatch:
@@ -27,10 +27,26 @@ on:
         type: boolean
         default: false
       skip_standings:
-        description: "Puan tablosu çekimi kapalıdır."
+        description: "true: sadece maç verisi. false: maç verisinden sonra puan tablolarını da üret."
         required: true
         type: boolean
         default: true
+      standings_mode:
+        description: "Puan tablosu modu: auto, official-only, computed-only"
+        required: true
+        default: "auto"
+      standings_detail_mode:
+        description: "Tablo hesaplama detay modu: missing, all, none. En doğru: all; dengeli: missing."
+        required: true
+        default: "missing"
+      standings_workers:
+        description: "Puan tablosu detay çekimi paralel işçi sayısı. Öneri: 6"
+        required: true
+        default: "6"
+      standings_week_param_mode:
+        description: "Hafta parametre modu: smart, fast, wide"
+        required: true
+        default: "smart"
       legacy_broad_probe_limit:
         description: "Sadece exact target/known macId olan legacy sezonlarda geniş aday limiti. Exact target yoksa kullanılmaz."
         required: true
@@ -91,6 +107,7 @@ jobs:
       - name: Run TFF Factory v2.9 speed complete accuracy
         env:
           PYTHONUNBUFFERED: "1"
+        shell: bash
         run: |
           python scripts/tff_factory_v29_speed_complete_accuracy.py \
             --seed sources/tff/registry/balkes_tff_seed_registry.json \
@@ -105,9 +122,53 @@ jobs:
             ${{ github.event.inputs.strict_legacy_targets == 'true' && '--strict-legacy-targets' || '--no-strict-legacy-targets' }} \
             --skip-standings
 
-      - name: Validate produced data
+      - name: Validate produced match data
         run: |
           python scripts/validate_data.py --data-root data --min-seasons 1 --min-matches 1
+
+      - name: Run Standings Builder v3 clean tables
+        if: ${{ github.event.inputs.skip_standings == 'false' }}
+        env:
+          PYTHONUNBUFFERED: "1"
+        shell: bash
+        run: |
+          python scripts/tff_standings_builder.py \
+            --seed sources/tff/registry/balkes_tff_seed_registry.json \
+            --data-root data \
+            --raw-root sources/tff/standings_raw \
+            --reports-root reports/standings \
+            --penalties data/standings_penalties.json \
+            --start-season "${{ github.event.inputs.start_season }}" \
+            --max-seasons "${{ github.event.inputs.max_seasons }}" \
+            --mode "${{ github.event.inputs.standings_mode }}" \
+            --probe-limit "5000" \
+            --workers "${{ github.event.inputs.standings_workers }}" \
+            --detail-fetch-mode "${{ github.event.inputs.standings_detail_mode }}" \
+            --week-param-mode "${{ github.event.inputs.standings_week_param_mode }}" \
+            --sleep "0.15" \
+            --allow-partial
+
+      - name: Validate standings outputs
+        if: ${{ github.event.inputs.skip_standings == 'false' }}
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          start = "${{ github.event.inputs.start_season }}"
+          max_seasons = int("${{ github.event.inputs.max_seasons }}")
+          summary = Path("reports/standings/last_run_summary.json")
+          if not summary.exists():
+              raise SystemExit("reports/standings/last_run_summary.json yok")
+          data = json.loads(summary.read_text(encoding="utf-8"))
+          produced = [s for s in data.get("seasons", []) if s.get("weeksGenerated")]
+          if not produced:
+              raise SystemExit("Hiç puan tablosu üretilmedi")
+          print("standings seasons produced:", ", ".join(s.get("season", "?") for s in produced))
+          for s in produced:
+              if not s.get("balkesFinal"):
+                  print("warning: Balkes row yok:", s.get("season"))
+          PY
 
       - name: Gemini diagnostics
         if: ${{ always() && github.event.inputs.run_gemini == 'true' }}
@@ -118,20 +179,24 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tff-factory-v29-speed-complete-accuracy-${{ github.event.inputs.start_season }}-${{ github.run_id }}
+          name: tff-factory-v30-integrated-${{ github.event.inputs.start_season }}-${{ github.run_id }}
           path: |
             reports/tff_factory/**/*.json
+            reports/standings/**/*.json
             reports/tff_factory/backups/*.zip
             sources/tff/raw/**/*.html
             sources/tff/raw/**/*.txt
+            sources/tff/standings_raw/**/*.html
+            sources/tff/standings_raw/**/*.txt
           if-no-files-found: ignore
 
       - name: Commit and push to main
         if: ${{ success() && github.event.inputs.auto_push_main == 'true' }}
         shell: bash
         run: |
-          git add -A data reports/tff_factory sources/tff/registry sources/tff/state .gitignore
+          git add -A data reports/tff_factory reports/standings sources/tff/registry sources/tff/state .gitignore
           git reset -- sources/tff/raw || true
+          git reset -- sources/tff/standings_raw || true
           git reset -- reports/tff_factory/backups || true
 
           if git diff --cached --quiet; then
@@ -139,6 +204,10 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Build clean TFF data from ${{ github.event.inputs.start_season }} (${{ github.event.inputs.max_seasons }} seasons)"
+          if [ "${{ github.event.inputs.skip_standings }}" = "false" ]; then
+            git commit -m "Build TFF data and standings from ${{ github.event.inputs.start_season }} (${{ github.event.inputs.max_seasons }} seasons)"
+          else
+            git commit -m "Build clean TFF data from ${{ github.event.inputs.start_season }} (${{ github.event.inputs.max_seasons }} seasons)"
+          fi
           git pull --rebase origin main
           git push origin HEAD:main
