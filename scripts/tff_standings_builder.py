@@ -61,7 +61,7 @@ except Exception as exc:  # pragma: no cover
 
 TFF = "https://www.tff.org/Default.aspx"
 DEFAULT_PENALTIES = "data/standings_penalties.json"
-BUILDER_VERSION = "standings-builder-v2-fast-safe"
+BUILDER_VERSION = "standings-builder-v3-clean-computed-safe"
 
 
 def now() -> str:
@@ -88,13 +88,13 @@ def fetch_url(url: str, path: Path, sleep_s: float = 0.8, force: bool = False) -
     if path.exists() and path.stat().st_size > 200 and not force:
         return True, path.read_text(encoding="utf-8", errors="replace")
     last = ""
-    for attempt in range(1, 4):
+    for attempt in range(1, 3):
         try:
             req = urllib.request.Request(url, headers={
                 "User-Agent": "Mozilla/5.0 BalkesSkorStandingsBuilder/1.0",
                 "Accept-Language": "tr-TR,tr;q=0.9,en;q=0.7",
             })
-            with urllib.request.urlopen(req, timeout=75) as res:
+            with urllib.request.urlopen(req, timeout=18) as res:
                 raw = res.read()
                 content_type = res.headers.get("Content-Type", "")
             text = decode_bytes(raw, content_type)
@@ -104,7 +104,7 @@ def fetch_url(url: str, path: Path, sleep_s: float = 0.8, force: bool = False) -
             return True, text
         except Exception as exc:
             last = str(exc)
-            time.sleep(max(1.5, sleep_s * attempt))
+            time.sleep(min(1.0, max(0.2, sleep_s * attempt)))
     path.with_suffix(path.suffix + ".error.txt").write_text(last, encoding="utf-8")
     return False, ""
 
@@ -292,6 +292,66 @@ def normalize_standing_row(row: dict[str, Any]) -> dict[str, Any] | None:
     }
 
 
+
+def valid_standing_row(row: dict[str, Any]) -> bool:
+    """Reject bogus table fragments such as '1. Devre / 2. Devre'."""
+    if not row:
+        return False
+    team = clean_team(row.get("team", ""))
+    n = norm(team)
+    bad_exact = {"devre", "1 devre", "2 devre", "ilk yari", "ikinci yari", "ic saha", "dis saha", "genel", "takim"}
+    if not team or n in bad_exact or n.endswith(" devre"):
+        return False
+    if not re.search(r"[A-Za-zÇĞİÖŞÜçğıöşü]", team):
+        return False
+    try:
+        played = int(row.get("played") or 0)
+        won = int(row.get("won") or 0)
+        drawn = int(row.get("drawn") or 0)
+        lost = int(row.get("lost") or 0)
+        gf = int(row.get("goalsFor") or 0)
+        ga = int(row.get("goalsAgainst") or 0)
+        gd = int(row.get("goalDifference") if row.get("goalDifference") is not None else gf - ga)
+        pts = int(row.get("points") or 0)
+    except Exception:
+        return False
+    if played < 0 or played > 50 or won < 0 or drawn < 0 or lost < 0:
+        return False
+    if won + drawn + lost != played:
+        return False
+    if gf < 0 or ga < 0 or abs(gd - (gf - ga)) > 1:
+        return False
+    # A few sanctions/restorations are possible, but absurd values indicate a parsed header/fragment.
+    if pts < -20 or pts > won * 3 + drawn + 15:
+        return False
+    return True
+
+
+def clean_standings_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    cleaned = [r for r in rows if valid_standing_row(r)]
+    seen: set[str] = set()
+    out: list[dict[str, Any]] = []
+    for r in cleaned:
+        key = norm(r.get("team", ""))
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        out.append(r)
+    for i, r in enumerate(out, 1):
+        if not r.get("rank") or int(r.get("rank") or 0) <= 0:
+            r["rank"] = i
+        r["isBalkes"] = bool(is_balkes(r.get("team", "")))
+    return out
+
+
+def standings_rows_are_usable(rows: list[dict[str, Any]], require_balkes: bool = True) -> bool:
+    rows = clean_standings_rows(rows)
+    if len(rows) < 8:
+        return False
+    if require_balkes and not any(r.get("isBalkes") or is_balkes(r.get("team", "")) for r in rows):
+        return False
+    return True
+
 def parse_official_standings(raw: str) -> list[dict[str, Any]]:
     sp = soup(raw)
     if not sp:
@@ -311,13 +371,14 @@ def parse_official_standings(raw: str) -> list[dict[str, Any]]:
             row = row_from_cells(cells, header)
             if row:
                 rows.append(row)
-        if len(rows) >= 4:
+        rows = clean_standings_rows(rows)
+        if len(rows) >= 8:
             candidates.append(rows)
     if not candidates:
         return []
     # Prefer tables with Balkes and many rows.
     candidates.sort(key=lambda rows: (any(r.get("isBalkes") for r in rows), len(rows)), reverse=True)
-    rows = candidates[0]
+    rows = clean_standings_rows(candidates[0])
     # Ensure rank order when missing.
     for i, r in enumerate(rows, 1):
         if not r.get("rank"):
@@ -782,11 +843,12 @@ def try_official_weekly(item: dict[str, Any], season: str, raw_root: Path, sleep
             ok, raw = fetch_url(url, raw_root / season / "official_tables" / f"{safe_name(label)}.html", sleep_s, force)
             if not ok:
                 continue
-            rows = parse_official_standings(raw)
-            if rows and (not best or len(rows) > len(best) or any(r.get("isBalkes") for r in rows)):
+            rows = clean_standings_rows(parse_official_standings(raw))
+            if standings_rows_are_usable(rows, require_balkes=True) and (not best or len(rows) > len(best) or any(r.get("isBalkes") for r in rows)):
                 best = rows
                 best_url = url
         if best:
+            best = clean_standings_rows(best)
             for i, row in enumerate(best, 1):
                 if not row.get("rank"):
                     row["rank"] = i
@@ -878,6 +940,49 @@ def commit_and_push(paths: list[str], message: str, push: bool, branch: str) -> 
         subprocess.run(["git", "push", "origin", f"HEAD:{branch}"], check=True)
 
 
+
+def load_existing_league_matches(data_root: Path, season: str, seed: dict[str, Any]) -> list[dict[str, Any]]:
+    """Use already-published match JSON/index when a season has no target TFF URL.
+
+    This fixes legacy seasons where the match factory found valid games but the
+    standings builder used to stop with 'hedef TFF URL yok'.
+    """
+    season_dir = data_root / "seasons" / season
+    index = read_json(season_dir / "matches_index.json", []) or []
+    matches: list[dict[str, Any]] = []
+    for item in index if isinstance(index, list) else []:
+        if not isinstance(item, dict):
+            continue
+        detail = item
+        detail_url = str(item.get("detailUrl") or "")
+        if detail_url:
+            candidate = read_json(data_root / detail_url, None)
+            if isinstance(candidate, dict):
+                detail = candidate
+        if detail_is_league_match(detail, season, seed):
+            matches.append(detail)
+    if not matches:
+        return []
+    matches.sort(key=lambda d: (d.get("date") or "", int(str(d.get("id") or 0))))
+    teams = sorted({norm(m.get("homeTeam", "")) for m in matches} | {norm(m.get("awayTeam", "")) for m in matches})
+    per_round = max(1, len([t for t in teams if t]) // 2)
+    for i, m in enumerate(matches):
+        if int(m.get("standingsWeek") or 0) <= 0:
+            m["standingsWeek"] = i // per_round + 1
+    return matches
+
+
+def snapshots_look_clean(snapshots: list[dict[str, Any]]) -> bool:
+    if not snapshots:
+        return False
+    good = 0
+    for s in snapshots:
+        rows = clean_standings_rows(s.get("standings") or [])
+        if standings_rows_are_usable(rows, require_balkes=True):
+            s["standings"] = rows
+            good += 1
+    return good >= max(1, len(snapshots) // 2)
+
 def process_one(season: str, item: dict[str, Any], args: argparse.Namespace, seed: dict[str, Any], penalties: dict[str, Any]) -> dict[str, Any]:
     data_root = Path(args.data_root)
     raw_root = Path(args.raw_root)
@@ -905,17 +1010,40 @@ def process_one(season: str, item: dict[str, Any], args: argparse.Namespace, see
         return report
 
     if not build_item_urls(item, None):
-        report["warnings"].append("Registry içinde targetPageID/targetUrls yok; resmi tablo ve full fikstür çekimi yapılamadı.")
+        log(f"{season}: hedef TFF URL yok; mevcut maç JSON'larından tablo hesaplama deneniyor")
+        matches = load_existing_league_matches(data_root, season, seed)
+        report["matchesUsed"] = len(matches)
+        teams = sorted({clean_team(m.get("homeTeam", "")) for m in matches} | {clean_team(m.get("awayTeam", "")) for m in matches})
+        teams = [t for t in teams if t]
+        report["teams"] = len(teams)
+        if matches:
+            max_week_existing = max(int(m.get("standingsWeek") or 0) for m in matches)
+            max_week = max(max_week, max_week_existing)
+            snapshots = compute_weekly_standings(matches, season, max_week, penalties)
+            for _snap in snapshots:
+                _snap["standings"] = clean_standings_rows(_snap.get("standings") or [])
+            report["source"] = "computed_from_existing_match_json"
+            update_season_files(data_root, season, snapshots)
+            report["weeksGenerated"] = len(snapshots)
+            final = snapshots[-1].get("standings") or []
+            report["balkesFinal"] = next((r for r in final if r.get("isBalkes")), None)
+            write_json(reports_root / f"{season}.json", report)
+            log(f"{season}: tamam source={report['source']} weeks={report['weeksGenerated']} matches={len(matches)}")
+            return report
+        report["warnings"].append("Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil.")
         write_json(reports_root / f"{season}.json", report)
-        log(f"{season}: hedef TFF URL yok")
+        log(f"{season}: hedef TFF URL yok ve mevcut maç yok")
         return report
 
     snapshots: list[dict[str, Any]] = []
     if args.mode in {"auto", "official-only"}:
         log(f"{season}: resmi haftalık tablo deneniyor")
         snapshots = try_official_weekly(item, season, raw_root, args.sleep, args.force, max_week)
-        if snapshots:
+        if snapshots and snapshots_look_clean(snapshots):
             report["source"] = "official_tff_weekly_table"
+        elif snapshots:
+            report["warnings"].append("Resmi tablo parse edildi ama satır tutarlılığı zayıf; hesaplama fallback kullanılacak.")
+            snapshots = []
     if not snapshots and args.mode == "official-only":
         report["warnings"].append("Resmi haftalık tablo bulunamadı.")
     if not snapshots and args.mode in {"auto", "computed-only"}:
@@ -938,6 +1066,8 @@ def process_one(season: str, item: dict[str, Any], args: argparse.Namespace, see
         else:
             report["warnings"].append(f"Yeterli lig maçı bulunamadı: {len(matches)} maç, minimum eşik {min_matches}. Partial tablo yazılmadı.")
     if snapshots:
+        for _snap in snapshots:
+            _snap["standings"] = clean_standings_rows(_snap.get("standings") or [])
         update_season_files(data_root, season, snapshots)
         report["weeksGenerated"] = len(snapshots)
         final = snapshots[-1].get("standings") or []
@@ -966,7 +1096,7 @@ def main() -> int:
     ap.add_argument("--week-param-mode", choices=["smart", "fast", "wide"], default="smart", help="smart tries hafta first then fallbacks only when needed; fast uses only hafta; wide tries all params.")
     ap.add_argument("--min-match-coverage", type=float, default=0.55)
     ap.add_argument("--allow-partial", action="store_true")
-    ap.add_argument("--sleep", type=float, default=0.25)
+    ap.add_argument("--sleep", type=float, default=0.15)
     ap.add_argument("--force", action="store_true")
     ap.add_argument("--commit", action="store_true")
     ap.add_argument("--push", action="store_true")

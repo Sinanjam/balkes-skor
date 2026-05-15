@@ -2,10 +2,10 @@
 set START_SEASON "2025-2026"
 set MAX_SEASONS "1"
 set MODE "auto"
-set PROBE_LIMIT "2500"
+set PROBE_LIMIT "5000"
 set AUTO_PUSH "false"
 set FORCE "false"
-set WORKERS "4"
+set WORKERS "6"
 set DETAIL_MODE "missing"
 set WEEK_PARAM_MODE "smart"
 
@@ -22,7 +22,7 @@ if test -n "$argv[9]"; set WEEK_PARAM_MODE "$argv[9]"; end
 mkdir -p reports/standings sources/tff/standings_raw
 set LOG reports/standings/run_(date +%Y%m%d_%H%M%S).log
 
-echo "Balkes Skor standings builder başlıyor"
+echo "Balkes Skor standings builder v3 başlıyor"
 echo "Sezon: $START_SEASON"
 echo "Max sezon: $MAX_SEASONS"
 echo "Mod: $MODE"
@@ -30,7 +30,7 @@ echo "Probe limit: $PROBE_LIMIT"
 echo "Auto push: $AUTO_PUSH"
 echo "Force refetch: $FORCE"
 echo "Workers: $WORKERS"
-echo "Detail fetch mode: $DETAIL_MODE"
+echo "Detail mode: $DETAIL_MODE"
 echo "Week param mode: $WEEK_PARAM_MODE"
 
 set EXTRA_ARGS
@@ -51,10 +51,11 @@ env PYTHONUNBUFFERED=1 python3 scripts/tff_standings_builder.py \
     --max-seasons "$MAX_SEASONS" \
     --mode "$MODE" \
     --probe-limit "$PROBE_LIMIT" \
+    --sleep 0.15 \
     --workers "$WORKERS" \
     --detail-fetch-mode "$DETAIL_MODE" \
     --week-param-mode "$WEEK_PARAM_MODE" \
-    --sleep 0.25 \
+    --allow-partial \
     $EXTRA_ARGS 2>&1 | tee "$LOG"
 
 set STATUS $pipestatus[1]
@@ -65,8 +66,8 @@ end
 
 if test "$AUTO_PUSH" != "true"
     echo "Bitti. Pushlamak için:"
-    echo "  git add data reports/standings app/src/main/java/com/sinanjam/balkesskor/MainActivity.java scripts/tff_standings_builder.py run_standings_builder.fish flake.nix"
-    echo "  git commit -m 'Build weekly standings data'"
+    echo "  git add data reports/standings scripts/tff_standings_builder.py run_standings_builder.fish"
+    echo "  git commit -m 'Build clean weekly standings data'"
     echo "  git pull --rebase origin main"
     echo "  git push origin main"
 end

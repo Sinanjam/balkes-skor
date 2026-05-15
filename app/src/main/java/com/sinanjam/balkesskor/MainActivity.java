@@ -612,35 +612,99 @@ public class MainActivity extends Activity {
         next.setOnClickListener(new View.OnClickListener() { public void onClick(View v) { drawStandingsWeek(weeks, Math.min(weeks.length() - 1, idx + 1)); } });
 
         LinearLayout c = card();
-        text(c, "Hafta " + snap.optInt("week"), 18, true, text);
+        text(c, "Hafta " + snap.optInt("week"), 20, true, text);
         String source = snap.optString("source", "");
         if (source.length() > 0) text(c, "Kaynak: " + source, 11, false, muted);
-        text(c, "Sıra  Takım                         O  G  B  M   A   Y   Av   P", 11, true, muted);
+        text(c, "Sıralama kartları: O/G/B/M, A-Y, averaj ve puan değerleri temizlenmiş veriden gösterilir.", 11, false, muted);
         JSONArray arr = snap.optJSONArray("standings");
         if (arr == null) return;
+        int shown = 0;
         for (int i = 0; i < arr.length(); i++) {
             JSONObject t = arr.optJSONObject(i);
-            if (t == null) continue;
+            if (t == null || !isValidStandingRow(t)) continue;
             boolean balkes = t.optBoolean("isBalkes") || isBalkesName(t.optString("team"));
-            TextView row = text(c, standingsRowText(t), balkes ? 14 : 12, balkes, balkes ? Color.WHITE : text);
-            row.setPadding(dp(8), dp(6), dp(8), dp(6));
-            if (balkes) row.setBackground(round(redSoft, dp(12), red));
+            standingTeamCard(c, t, balkes);
             String penalty = t.optString("penaltyNote", "");
             int deducted = t.optInt("pointsDeducted", 0);
             if (balkes && (penalty.length() > 0 || deducted != 0)) {
                 text(c, "Balıkesirspor ceza/not: " + (penalty.length() > 0 ? penalty : String.valueOf(deducted) + " puan"), 11, false, gold);
             }
+            shown++;
         }
+        if (shown == 0) {
+            text(c, "Bu haftanın puan tablosu temizlenemedi. Veri yeniden üretildiğinde otomatik düzelecek.", 13, true, gold);
+        }
+    }
+
+    private boolean isValidStandingRow(JSONObject t) {
+        String team = t.optString("team", "");
+        if (team.length() == 0) return false;
+        String n = team.toLowerCase(new java.util.Locale("tr", "TR"));
+        n = n.replace("ı", "i").replace("ğ", "g").replace("ü", "u").replace("ş", "s").replace("ö", "o").replace("ç", "c");
+        if (n.equals("devre") || n.equals("1 devre") || n.equals("2 devre") || n.endsWith(" devre") || n.equals("takim")) return false;
+        int played = t.optInt("played");
+        int won = t.optInt("won");
+        int drawn = t.optInt("drawn");
+        int lost = t.optInt("lost");
+        int gf = t.has("goalsFor") ? t.optInt("goalsFor") : t.optInt("for");
+        int ga = t.has("goalsAgainst") ? t.optInt("goalsAgainst") : t.optInt("against");
+        int gd = t.has("goalDifference") ? t.optInt("goalDifference") : gf - ga;
+        int pts = t.optInt("points");
+        if (played < 0 || played > 50 || won < 0 || drawn < 0 || lost < 0) return false;
+        if (won + drawn + lost != played) return false;
+        if (gf < 0 || ga < 0 || Math.abs(gd - (gf - ga)) > 1) return false;
+        if (pts < -20 || pts > won * 3 + drawn + 15) return false;
+        return true;
+    }
+
+    private void standingTeamCard(LinearLayout parent, JSONObject t, boolean balkes) {
+        LinearLayout box = new LinearLayout(this);
+        box.setOrientation(LinearLayout.VERTICAL);
+        box.setPadding(dp(10), dp(9), dp(10), dp(9));
+        box.setBackground(balkes ? round(redSoft, dp(14), red) : round(surface2, dp(14), stroke));
+        LinearLayout.LayoutParams bp = new LinearLayout.LayoutParams(-1, -2);
+        bp.setMargins(0, dp(7), 0, 0);
+        parent.addView(box, bp);
+
+        LinearLayout top = row(box);
+        TextView rank = new TextView(this);
+        rank.setText(String.valueOf(t.optInt("rank")) + ".");
+        rank.setTextColor(balkes ? Color.WHITE : muted);
+        rank.setTextSize(14);
+        rank.setTypeface(Typeface.DEFAULT_BOLD);
+        top.addView(rank, new LinearLayout.LayoutParams(dp(34), -2));
+
+        TextView team = new TextView(this);
+        team.setText(t.optString("team"));
+        team.setTextColor(Color.WHITE);
+        team.setTextSize(balkes ? 16 : 14);
+        team.setTypeface(Typeface.DEFAULT_BOLD);
+        team.setSingleLine(false);
+        top.addView(team, new LinearLayout.LayoutParams(0, -2, 1));
+
+        TextView pts = new TextView(this);
+        pts.setText(t.optInt("points") + " P");
+        pts.setTextColor(balkes ? Color.WHITE : gold);
+        pts.setTextSize(16);
+        pts.setTypeface(Typeface.DEFAULT_BOLD);
+        pts.setGravity(Gravity.RIGHT);
+        top.addView(pts, new LinearLayout.LayoutParams(dp(62), -2));
+
+        int gf = t.has("goalsFor") ? t.optInt("goalsFor") : t.optInt("for");
+        int ga = t.has("goalsAgainst") ? t.optInt("goalsAgainst") : t.optInt("against");
+        int gd = t.has("goalDifference") ? t.optInt("goalDifference") : gf - ga;
+        String metrics = "O " + t.optInt("played") + "   G " + t.optInt("won") + "   B " + t.optInt("drawn") + "   M " + t.optInt("lost")
+                + "   A/Y " + gf + "-" + ga + "   Av " + gd;
+        TextView m = text(box, metrics, 12, false, balkes ? Color.WHITE : muted);
+        m.setPadding(dp(34), dp(4), 0, 0);
     }
 
     private String standingsRowText(JSONObject t) {
         int gf = t.has("goalsFor") ? t.optInt("goalsFor") : t.optInt("for");
         int ga = t.has("goalsAgainst") ? t.optInt("goalsAgainst") : t.optInt("against");
         int gd = t.has("goalDifference") ? t.optInt("goalDifference") : gf - ga;
-        return String.format(java.util.Locale.US,
-                "%2d. %-24s %2d %2d %2d %2d %3d %3d %4d %3d",
-                t.optInt("rank"), t.optString("team"), t.optInt("played"), t.optInt("won"),
-                t.optInt("drawn"), t.optInt("lost"), gf, ga, gd, t.optInt("points"));
+        return t.optInt("rank") + ". " + t.optString("team") + "  O " + t.optInt("played") + "  G " + t.optInt("won")
+                + "  B " + t.optInt("drawn") + "  M " + t.optInt("lost") + "  " + gf + "-" + ga + "  Av " + gd + "  P " + t.optInt("points");
     }
 
     private void renderPlayers() {
