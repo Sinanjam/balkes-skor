@@ -1,0 +1,110 @@
+[
+  {
+    "id": "89739",
+    "matchCode": "505",
+    "season": "2010-2011",
+    "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (1. Kademe)",
+    "competitionType": "cup",
+    "competitionLabel": "Ziraat Türkiye Kupası",
+    "stadium": "BALIKESİR ATATÜRK",
+    "venue": "BALIKESİR ATATÜRK",
+    "stage": "Ziraat Türkiye Kupası",
+    "stageLabel": "Ziraat Türkiye Kupası",
+    "date": "2010-09-01",
+    "time": "16:00",
+    "dateDisplay": "2010-09-01 - 16:00",
+    "homeTeam": "Balıkesirspor",
+    "awayTeam": "KÖRFEZ SPOR",
+    "matchType": "cup",
+    "matchTypeLabel": "Ziraat Türkiye Kupası",
+    "type": "cup",
+    "typeLabel": "Ziraat Türkiye Kupası",
+    "score": {
+      "home": 1,
+      "away": 0,
+      "display": "1-0",
+      "played": true
+    },
+    "balkes": {
+      "isHome": true,
+      "isAway": false,
+      "opponent": "KÖRFEZ SPOR",
+      "goalsFor": 1,
+      "goalsAgainst": 0,
+      "result": "W"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 7,
+      "substitutesAway": 7,
+      "goals": 1,
+      "cards": 4,
+      "substitutions": 6,
+      "players": 38
+    },
+    "detailUrl": "seasons/2010-2011/matches/89739.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=89739",
+      "retrievedAt": "2026-05-15T14:51:13.983479Z",
+      "sourceType": "official_tff_match_detail"
+    }
+  },
+  {
+    "id": "94042",
+    "matchCode": "519",
+    "season": "2010-2011",
+    "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (2. Kademe)",
+    "competitionType": "cup",
+    "competitionLabel": "Ziraat Türkiye Kupası",
+    "stadium": "BEYPAZARI İLÇE",
+    "venue": "BEYPAZARI İLÇE",
+    "stage": "Ziraat Türkiye Kupası",
+    "stageLabel": "Ziraat Türkiye Kupası",
+    "date": "2010-09-22",
+    "time": "15:00",
+    "dateDisplay": "2010-09-22 - 15:00",
+    "homeTeam": "BEYPAZARI ŞEKERSPOR",
+    "awayTeam": "Balıkesirspor",
+    "matchType": "cup",
+    "matchTypeLabel": "Ziraat Türkiye Kupası",
+    "type": "cup",
+    "typeLabel": "Ziraat Türkiye Kupası",
+    "score": {
+      "home": 2,
+      "away": 0,
+      "display": "2-0",
+      "played": true
+    },
+    "balkes": {
+      "isHome": false,
+      "isAway": true,
+      "opponent": "BEYPAZARI ŞEKERSPOR",
+      "goalsFor": 0,
+      "goalsAgainst": 2,
+      "result": "L"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 7,
+      "substitutesAway": 7,
+      "goals": 2,
+      "cards": 8,
+      "substitutions": 6,
+      "players": 38
+    },
+    "detailUrl": "seasons/2010-2011/matches/94042.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=94042",
+      "retrievedAt": "2026-05-15T14:51:15.620154Z",
+      "sourceType": "official_tff_match_detail"
+    }
+  }
+]

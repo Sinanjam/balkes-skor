@@ -1,0 +1,1216 @@
+{
+  "id": "102233",
+  "matchCode": "35007",
+  "season": "2011-2012",
+  "competition": "Coca-Cola Akademi U15 Ligi (Akademi U15 Takımı)",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "BALIKESİR BELEDİYE SPOR TESİSLERİ - BALIKESİR",
+  "venue": "BALIKESİR BELEDİYE SPOR TESİSLERİ - BALIKESİR",
+  "stage": "Lig",
+  "stageLabel": "Lig",
+  "date": "2011-12-03",
+  "time": "13:45",
+  "dateDisplay": "2011-12-03 - 13:45",
+  "homeTeam": "Balıkesirspor",
+  "awayTeam": "BURSASPOR",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
+  "score": {
+    "home": 1,
+    "away": 6,
+    "display": "1-6",
+    "played": true
+  },
+  "balkes": {
+    "isHome": true,
+    "isAway": false,
+    "opponent": "BURSASPOR",
+    "goalsFor": 1,
+    "goalsAgainst": 6,
+    "result": "L"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "VOLKAN KÖR"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "MEHMET ZEKİ UZAR"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "MEHMET ALİ KAYIKÇI"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "VOLKAN KÖR"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "MEHMET ZEKİ UZAR"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "MEHMET ALİ KAYIKÇI"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "HASAN CAN ANKARALI",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1147527"
+        },
+        {
+          "name": "İSA IŞIK",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1229655"
+        },
+        {
+          "name": "EKREM ONUR BACAK",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1148204"
+        },
+        {
+          "name": "MUHAMMED CAN",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1151234"
+        },
+        {
+          "name": "ÇAĞATAY VATAN",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1148183"
+        },
+        {
+          "name": "AKÇAN DENİZ SAYAR",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1280052"
+        },
+        {
+          "name": "FAZLI ÇETİN",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1243170"
+        },
+        {
+          "name": "AYBERK AŞKAN",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1148197"
+        },
+        {
+          "name": "ŞABAN TÜKENMEZ",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1046733"
+        },
+        {
+          "name": "ENES BAŞKURT",
+          "number": 13,
+          "shirt_no": "13",
+          "tffPersonId": "1149199"
+        },
+        {
+          "name": "ALİ MELİH TECER",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1042227"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "METEHAN AYTAN",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1341680"
+        },
+        {
+          "name": "FURKAN ALTINÖZ",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1281863"
+        },
+        {
+          "name": "FURKAN DURMAZ",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1042214"
+        },
+        {
+          "name": "AHMET SAMET KUMRU",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1342795"
+        },
+        {
+          "name": "İSMAİL GÜNDOĞAN",
+          "number": 20,
+          "shirt_no": "20",
+          "tffPersonId": "1283561"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "ENGİN ÇATIR"
+        }
+      ],
+      "coach": "ENGİN ÇATIR",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "BURSASPOR",
+      "starting11": [
+        {
+          "name": "MUHAMMED ŞENGEZER",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1021203"
+        },
+        {
+          "name": "MEHMET ZEKİ ÇELİK",
+          "number": 2,
+          "shirt_no": "2",
+          "tffPersonId": "1164658"
+        },
+        {
+          "name": "RÜŞTÜ HANLI",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1046962"
+        },
+        {
+          "name": "ERTUĞRUL ERSOY",
+          "number": 4,
+          "shirt_no": "4",
+          "tffPersonId": "1153929"
+        },
+        {
+          "name": "FURKAN EMRE ÜNVER",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "1055613"
+        },
+        {
+          "name": "GÖKHAN BERKAY YILDIZ",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "1149380"
+        },
+        {
+          "name": "ENES ÜNAL",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "980555"
+        },
+        {
+          "name": "UTKU TÜRK",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1003843"
+        },
+        {
+          "name": "BERKE YILMAZ",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1164669"
+        },
+        {
+          "name": "ÖZKAN GARİP",
+          "number": 15,
+          "shirt_no": "15",
+          "tffPersonId": "1307393"
+        },
+        {
+          "name": "MÜCAHİT HAKTAN KARABULUT",
+          "number": 24,
+          "shirt_no": "24",
+          "tffPersonId": "986770"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "DOĞUKAN HASAN DALAY",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1046967"
+        },
+        {
+          "name": "KUBİLAY KANATSIZKUŞ",
+          "number": 16,
+          "shirt_no": "16",
+          "tffPersonId": "1056887"
+        },
+        {
+          "name": "SEDAT DURSUN",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1209334"
+        },
+        {
+          "name": "MELİH ODUNCULAR",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1164670"
+        },
+        {
+          "name": "KENAN MUTLU",
+          "number": 22,
+          "shirt_no": "22",
+          "tffPersonId": "1129402"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "YILMAZ BURUL"
+        }
+      ],
+      "coach": "YILMAZ BURUL",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "AHMET SAMET KUMRU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 15,
+      "tffPersonId": "1342795"
+    },
+    {
+      "name": "AKÇAN DENİZ SAYAR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 7,
+      "tffPersonId": "1280052"
+    },
+    {
+      "name": "ALİ MELİH TECER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 16,
+      "tffPersonId": "1042227"
+    },
+    {
+      "name": "AYBERK AŞKAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 9,
+      "tffPersonId": "1148197"
+    },
+    {
+      "name": "ÇAĞATAY VATAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 6,
+      "tffPersonId": "1148183"
+    },
+    {
+      "name": "EKREM ONUR BACAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1148204"
+    },
+    {
+      "name": "ENES BAŞKURT",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 13,
+      "tffPersonId": "1149199"
+    },
+    {
+      "name": "ENGİN ÇATIR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "FAZLI ÇETİN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 8,
+      "tffPersonId": "1243170"
+    },
+    {
+      "name": "FURKAN ALTINÖZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 3,
+      "tffPersonId": "1281863"
+    },
+    {
+      "name": "FURKAN DURMAZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 14,
+      "tffPersonId": "1042214"
+    },
+    {
+      "name": "HASAN CAN ANKARALI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 1,
+      "tffPersonId": "1147527"
+    },
+    {
+      "name": "İSA IŞIK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 2,
+      "tffPersonId": "1229655"
+    },
+    {
+      "name": "İSMAİL GÜNDOĞAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 20,
+      "tffPersonId": "1283561"
+    },
+    {
+      "name": "METEHAN AYTAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 19,
+      "tffPersonId": "1341680"
+    },
+    {
+      "name": "MUHAMMED CAN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 5,
+      "tffPersonId": "1151234"
+    },
+    {
+      "name": "ŞABAN TÜKENMEZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card"
+      ],
+      "number": 11,
+      "tffPersonId": "1046733"
+    },
+    {
+      "name": "BERKE YILMAZ",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 14,
+      "tffPersonId": "1164669"
+    },
+    {
+      "name": "DOĞUKAN HASAN DALAY",
+      "team": "BURSASPOR",
+      "roles": [
+        "substitute",
+        "goal",
+        "substitution_in"
+      ],
+      "number": 7,
+      "tffPersonId": "1046967"
+    },
+    {
+      "name": "ENES ÜNAL",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 10,
+      "tffPersonId": "980555"
+    },
+    {
+      "name": "ERTUĞRUL ERSOY",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 4,
+      "tffPersonId": "1153929"
+    },
+    {
+      "name": "FURKAN EMRE ÜNVER",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "1055613"
+    },
+    {
+      "name": "GÖKHAN BERKAY YILDIZ",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 8,
+      "tffPersonId": "1149380"
+    },
+    {
+      "name": "KENAN MUTLU",
+      "team": "BURSASPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 22,
+      "tffPersonId": "1129402"
+    },
+    {
+      "name": "KUBİLAY KANATSIZKUŞ",
+      "team": "BURSASPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 16,
+      "tffPersonId": "1056887"
+    },
+    {
+      "name": "MEHMET ZEKİ ÇELİK",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 2,
+      "tffPersonId": "1164658"
+    },
+    {
+      "name": "MELİH ODUNCULAR",
+      "team": "BURSASPOR",
+      "roles": [
+        "substitute"
+      ],
+      "number": 19,
+      "tffPersonId": "1164670"
+    },
+    {
+      "name": "MÜCAHİT HAKTAN KARABULUT",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 24,
+      "tffPersonId": "986770"
+    },
+    {
+      "name": "MUHAMMED ŞENGEZER",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 1,
+      "tffPersonId": "1021203"
+    },
+    {
+      "name": "ÖZKAN GARİP",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11",
+        "yellow_card",
+        "substitution_out"
+      ],
+      "number": 15,
+      "tffPersonId": "1307393"
+    },
+    {
+      "name": "RÜŞTÜ HANLI",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1046962"
+    },
+    {
+      "name": "SEDAT DURSUN",
+      "team": "BURSASPOR",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 17,
+      "tffPersonId": "1209334"
+    },
+    {
+      "name": "UTKU TÜRK",
+      "team": "BURSASPOR",
+      "roles": [
+        "starting11"
+      ],
+      "number": 11,
+      "tffPersonId": "1003843"
+    },
+    {
+      "name": "YILMAZ BURUL",
+      "team": "BURSASPOR",
+      "roles": [
+        "technical_staff"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "AYBERK AŞKAN",
+      "scorer": "AYBERK AŞKAN",
+      "raw": "AYBERK AŞKAN,63.dk (H)",
+      "minute": 63,
+      "minuteRaw": "AYBERK AŞKAN,63.dk",
+      "goalType": "H",
+      "tffPersonId": "1148197"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,8.dk (P)",
+      "minute": 8,
+      "minuteRaw": "ENES ÜNAL,8.dk",
+      "goalType": "P",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,13.dk (F)",
+      "minute": 13,
+      "minuteRaw": "ENES ÜNAL,13.dk",
+      "goalType": "F",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,43.dk (F)",
+      "minute": 43,
+      "minuteRaw": "ENES ÜNAL,43.dk",
+      "goalType": "F",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,73.dk (F)",
+      "minute": 73,
+      "minuteRaw": "ENES ÜNAL,73.dk",
+      "goalType": "F",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "DOĞUKAN HASAN DALAY",
+      "scorer": "DOĞUKAN HASAN DALAY",
+      "raw": "DOĞUKAN HASAN DALAY,75.dk (F)",
+      "minute": 75,
+      "minuteRaw": "DOĞUKAN HASAN DALAY,75.dk",
+      "goalType": "F",
+      "tffPersonId": "1046967"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "BERKE YILMAZ",
+      "scorer": "BERKE YILMAZ",
+      "raw": "BERKE YILMAZ,80.dk (F)",
+      "minute": 80,
+      "minuteRaw": "BERKE YILMAZ,80.dk",
+      "goalType": "F",
+      "tffPersonId": "1164669"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "ŞABAN TÜKENMEZ",
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "tffPersonId": "1046733"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "MUHAMMED CAN",
+      "minute": 6,
+      "minuteRaw": "6.dk",
+      "tffPersonId": "1151234"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "BURSASPOR",
+      "player": "ÖZKAN GARİP",
+      "minute": 34,
+      "minuteRaw": "34.dk",
+      "tffPersonId": "1307393"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "FURKAN ALTINÖZ",
+      "player_out": "ALİ MELİH TECER",
+      "playerIn": "FURKAN ALTINÖZ",
+      "playerOut": "ALİ MELİH TECER",
+      "minute": 45,
+      "minuteRaw": "45.dk",
+      "minute_text": "45.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "ALİ MELİH TECER",
+      "order": 1,
+      "minute": 45,
+      "minuteRaw": "45.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "FURKAN ALTINÖZ",
+      "order": 1,
+      "minute": 45,
+      "minuteRaw": "45.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 2,
+      "player_in": "METEHAN AYTAN",
+      "player_out": "HASAN CAN ANKARALI",
+      "playerIn": "METEHAN AYTAN",
+      "playerOut": "HASAN CAN ANKARALI",
+      "minute": 60,
+      "minuteRaw": "60.dk",
+      "minute_text": "60.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "HASAN CAN ANKARALI",
+      "order": 2,
+      "minute": 60,
+      "minuteRaw": "60.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "METEHAN AYTAN",
+      "order": 2,
+      "minute": 60,
+      "minuteRaw": "60.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 3,
+      "player_in": "FURKAN DURMAZ",
+      "player_out": "ENES BAŞKURT",
+      "playerIn": "FURKAN DURMAZ",
+      "playerOut": "ENES BAŞKURT",
+      "minute": 45,
+      "minuteRaw": "45.dk",
+      "minute_text": "45.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "ENES BAŞKURT",
+      "order": 3,
+      "minute": 45,
+      "minuteRaw": "45.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "FURKAN DURMAZ",
+      "order": 3,
+      "minute": 45,
+      "minuteRaw": "45.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 4,
+      "player_in": "İSMAİL GÜNDOĞAN",
+      "player_out": "İSA IŞIK",
+      "playerIn": "İSMAİL GÜNDOĞAN",
+      "playerOut": "İSA IŞIK",
+      "minute": 22,
+      "minuteRaw": "22.dk",
+      "minute_text": "22.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "İSA IŞIK",
+      "order": 4,
+      "minute": 22,
+      "minuteRaw": "22.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "İSMAİL GÜNDOĞAN",
+      "order": 4,
+      "minute": 22,
+      "minuteRaw": "22.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 5,
+      "player_in": "AHMET SAMET KUMRU",
+      "player_out": "AKÇAN DENİZ SAYAR",
+      "playerIn": "AHMET SAMET KUMRU",
+      "playerOut": "AKÇAN DENİZ SAYAR",
+      "minute": 36,
+      "minuteRaw": "36.dk",
+      "minute_text": "36.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "AKÇAN DENİZ SAYAR",
+      "order": 5,
+      "minute": 36,
+      "minuteRaw": "36.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "AHMET SAMET KUMRU",
+      "order": 5,
+      "minute": 36,
+      "minuteRaw": "36.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "BURSASPOR",
+      "order": 1,
+      "player_in": "KENAN MUTLU",
+      "player_out": "MUHAMMED ŞENGEZER",
+      "playerIn": "KENAN MUTLU",
+      "playerOut": "MUHAMMED ŞENGEZER",
+      "minute": 50,
+      "minuteRaw": "50.dk",
+      "minute_text": "50.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "BURSASPOR",
+      "player": "MUHAMMED ŞENGEZER",
+      "order": 1,
+      "minute": 50,
+      "minuteRaw": "50.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "BURSASPOR",
+      "player": "KENAN MUTLU",
+      "order": 1,
+      "minute": 50,
+      "minuteRaw": "50.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "BURSASPOR",
+      "order": 2,
+      "player_in": "DOĞUKAN HASAN DALAY",
+      "player_out": "GÖKHAN BERKAY YILDIZ",
+      "playerIn": "DOĞUKAN HASAN DALAY",
+      "playerOut": "GÖKHAN BERKAY YILDIZ",
+      "minute": 48,
+      "minuteRaw": "48.dk",
+      "minute_text": "48.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "BURSASPOR",
+      "player": "GÖKHAN BERKAY YILDIZ",
+      "order": 2,
+      "minute": 48,
+      "minuteRaw": "48.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "BURSASPOR",
+      "player": "DOĞUKAN HASAN DALAY",
+      "order": 2,
+      "minute": 48,
+      "minuteRaw": "48.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "BURSASPOR",
+      "order": 3,
+      "player_in": "SEDAT DURSUN",
+      "player_out": "ÖZKAN GARİP",
+      "playerIn": "SEDAT DURSUN",
+      "playerOut": "ÖZKAN GARİP",
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "minute_text": "55.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "BURSASPOR",
+      "player": "ÖZKAN GARİP",
+      "order": 3,
+      "minute": 55,
+      "minuteRaw": "55.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "BURSASPOR",
+      "player": "SEDAT DURSUN",
+      "order": 3,
+      "minute": 55,
+      "minuteRaw": "55.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "AYBERK AŞKAN",
+      "scorer": "AYBERK AŞKAN",
+      "raw": "AYBERK AŞKAN,63.dk (H)",
+      "minute": 63,
+      "minuteRaw": "AYBERK AŞKAN,63.dk",
+      "goalType": "H",
+      "tffPersonId": "1148197"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,8.dk (P)",
+      "minute": 8,
+      "minuteRaw": "ENES ÜNAL,8.dk",
+      "goalType": "P",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,13.dk (F)",
+      "minute": 13,
+      "minuteRaw": "ENES ÜNAL,13.dk",
+      "goalType": "F",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,43.dk (F)",
+      "minute": 43,
+      "minuteRaw": "ENES ÜNAL,43.dk",
+      "goalType": "F",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "ENES ÜNAL",
+      "scorer": "ENES ÜNAL",
+      "raw": "ENES ÜNAL,73.dk (F)",
+      "minute": 73,
+      "minuteRaw": "ENES ÜNAL,73.dk",
+      "goalType": "F",
+      "tffPersonId": "980555"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "DOĞUKAN HASAN DALAY",
+      "scorer": "DOĞUKAN HASAN DALAY",
+      "raw": "DOĞUKAN HASAN DALAY,75.dk (F)",
+      "minute": 75,
+      "minuteRaw": "DOĞUKAN HASAN DALAY,75.dk",
+      "goalType": "F",
+      "tffPersonId": "1046967"
+    },
+    {
+      "type": "goal",
+      "team": "BURSASPOR",
+      "player": "BERKE YILMAZ",
+      "scorer": "BERKE YILMAZ",
+      "raw": "BERKE YILMAZ,80.dk (F)",
+      "minute": 80,
+      "minuteRaw": "BERKE YILMAZ,80.dk",
+      "goalType": "F",
+      "tffPersonId": "1164669"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "AYBERK AŞKAN",
+      "team": "Balıkesirspor",
+      "minute": 63,
+      "goalType": "H"
+    },
+    {
+      "player": "ENES ÜNAL",
+      "team": "BURSASPOR",
+      "minute": 8,
+      "goalType": "P"
+    },
+    {
+      "player": "ENES ÜNAL",
+      "team": "BURSASPOR",
+      "minute": 13,
+      "goalType": "F"
+    },
+    {
+      "player": "ENES ÜNAL",
+      "team": "BURSASPOR",
+      "minute": 43,
+      "goalType": "F"
+    },
+    {
+      "player": "ENES ÜNAL",
+      "team": "BURSASPOR",
+      "minute": 73,
+      "goalType": "F"
+    },
+    {
+      "player": "DOĞUKAN HASAN DALAY",
+      "team": "BURSASPOR",
+      "minute": 75,
+      "goalType": "F"
+    },
+    {
+      "player": "BERKE YILMAZ",
+      "team": "BURSASPOR",
+      "minute": 80,
+      "goalType": "F"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "ŞABAN TÜKENMEZ",
+      "minute": 75,
+      "minuteRaw": "75.dk",
+      "tffPersonId": "1046733"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "MUHAMMED CAN",
+      "minute": 6,
+      "minuteRaw": "6.dk",
+      "tffPersonId": "1151234"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "BURSASPOR",
+      "player": "ÖZKAN GARİP",
+      "minute": 34,
+      "minuteRaw": "34.dk",
+      "tffPersonId": "1307393"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 45,
+      "minuteRaw": "45.dk",
+      "playerOut": "ALİ MELİH TECER",
+      "player_out": "ALİ MELİH TECER",
+      "playerOutTffPersonId": "1042227",
+      "playerIn": "FURKAN ALTINÖZ",
+      "player_in": "FURKAN ALTINÖZ",
+      "playerInTffPersonId": "1281863"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 2,
+      "minute": 60,
+      "minuteRaw": "60.dk",
+      "playerOut": "HASAN CAN ANKARALI",
+      "player_out": "HASAN CAN ANKARALI",
+      "playerOutTffPersonId": "1147527",
+      "playerIn": "METEHAN AYTAN",
+      "player_in": "METEHAN AYTAN",
+      "playerInTffPersonId": "1341680"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 3,
+      "minute": 45,
+      "minuteRaw": "45.dk",
+      "playerOut": "ENES BAŞKURT",
+      "player_out": "ENES BAŞKURT",
+      "playerOutTffPersonId": "1149199",
+      "playerIn": "FURKAN DURMAZ",
+      "player_in": "FURKAN DURMAZ",
+      "playerInTffPersonId": "1042214"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 4,
+      "minute": 22,
+      "minuteRaw": "22.dk",
+      "playerOut": "İSA IŞIK",
+      "player_out": "İSA IŞIK",
+      "playerOutTffPersonId": "1229655",
+      "playerIn": "İSMAİL GÜNDOĞAN",
+      "player_in": "İSMAİL GÜNDOĞAN",
+      "playerInTffPersonId": "1283561"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 5,
+      "minute": 36,
+      "minuteRaw": "36.dk",
+      "playerOut": "AKÇAN DENİZ SAYAR",
+      "player_out": "AKÇAN DENİZ SAYAR",
+      "playerOutTffPersonId": "1280052",
+      "playerIn": "AHMET SAMET KUMRU",
+      "player_in": "AHMET SAMET KUMRU",
+      "playerInTffPersonId": "1342795"
+    },
+    {
+      "team": "BURSASPOR",
+      "order": 1,
+      "minute": 50,
+      "minuteRaw": "50.dk",
+      "playerOut": "MUHAMMED ŞENGEZER",
+      "player_out": "MUHAMMED ŞENGEZER",
+      "playerOutTffPersonId": "1021203",
+      "playerIn": "KENAN MUTLU",
+      "player_in": "KENAN MUTLU",
+      "playerInTffPersonId": "1129402"
+    },
+    {
+      "team": "BURSASPOR",
+      "order": 2,
+      "minute": 48,
+      "minuteRaw": "48.dk",
+      "playerOut": "GÖKHAN BERKAY YILDIZ",
+      "player_out": "GÖKHAN BERKAY YILDIZ",
+      "playerOutTffPersonId": "1149380",
+      "playerIn": "DOĞUKAN HASAN DALAY",
+      "player_in": "DOĞUKAN HASAN DALAY",
+      "playerInTffPersonId": "1046967"
+    },
+    {
+      "team": "BURSASPOR",
+      "order": 3,
+      "minute": 55,
+      "minuteRaw": "55.dk",
+      "playerOut": "ÖZKAN GARİP",
+      "player_out": "ÖZKAN GARİP",
+      "playerOutTffPersonId": "1307393",
+      "playerIn": "SEDAT DURSUN",
+      "player_in": "SEDAT DURSUN",
+      "playerInTffPersonId": "1209334"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "BALIKESİRSPOR BURSASPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nBALIKESİRSPOR\n1\nBURSASPOR\n6\nCoca-Cola Akademi U15 Ligi (Akademi U15 Takımı)\nMaç Kodu:\n35007\nBALIKESİR BELEDİYE SPOR TESİSLERİ - BALIKESİR\n3.12.2011 - 13:45\nVOLKAN KÖR(Hakem)\nMEHMET ZEKİ UZAR(1. Yardımcı Hakem)\nMEHMET ALİ KAYIKÇI(2. Yardımcı Hakem)\nİlk 11\n1.\nHASAN CAN ANKARALI\n2.\nİSA IŞIK\n4.\nEKREM ONUR BACAK\n5.\nMUHAMMED CAN\n6.\nÇAĞATAY VATAN\n7.\nAKÇAN DENİZ SAYAR\n8.\nFAZLI ÇETİN\n9.\nAYBERK AŞKAN\n11.\nŞABAN TÜKENMEZ\n13.\nENES BAŞKURT\n16.\nALİ MELİH TECER\nYedekler\n19.\nMETEHAN AYTAN\n3.\nFURKAN ALTINÖZ\n14.\nFURKAN DURMAZ\n15.\nAHMET SAMET KUMRU\n20.\nİSMAİL GÜNDOĞAN\nTeknik Sorumlu\nENGİN ÇATIR\nGoller\nAYBERK AŞKAN,63.dk (H)\nKartlar\nŞABAN TÜKENMEZ\n75.dk\nMUHAMMED CAN\n6.dk\nOyundan Çıkanlar\nALİ MELİH TECER\n45.dk\nHASAN CAN ANKARALI\n60.dk\nENES BAŞKURT\n22.dk\nİSA IŞIK\n45.dk\nAKÇAN DENİZ SAYAR\n36.dk\nOyuna Girenler\nFURKAN ALTINÖZ\n45.dk\nMETEHAN AYTAN\n60.dk\nFURKAN DURMAZ\n45.dk\nİSMAİL GÜNDOĞAN\n22.dk\nAHMET SAMET KUMRU\n36.dk\nİlk 11\n1.\nMUHAMMED ŞENGEZER\n2.\nMEHMET ZEKİ ÇELİK\n3.\nRÜŞTÜ HANLI\n4.\nERTUĞRUL ERSOY\n5.\nFURKAN EMRE ÜNVER\n8.\nGÖKHAN BERKAY YILDIZ\n10.\nENES ÜNAL\n11.\nUTKU TÜRK\n14.\nBERKE YILMAZ\n15.\nÖZKAN GARİP\n24.\nMÜCAHİT HAKTAN KARABULUT\nYedekler\n7.\nDOĞUKAN HASAN DALAY\n16.\nKUBİLAY KANATSIZKUŞ\n17.\nSEDAT DURSUN\n19.\nMELİH ODUNCULAR\n22.\nKENAN MUTLU\nTeknik Sorumlu\nYILMAZ BURUL\nGoller\nENES ÜNAL,8.dk (P)\nENES ÜNAL,13.dk (F)\nENES ÜNAL,43.dk (F)\nENES ÜNAL,73.dk (F)\nDOĞUKAN HASAN DALAY,75.dk (F)\nBERKE YILMAZ,80.dk (F)\nKartlar\nÖZKAN GARİP\n34.dk\nOyundan Çıkanlar\nMUHAMMED ŞENGEZER\n50.dk\nGÖKHAN BERKAY YILDIZ\n48.dk\nÖZKAN GARİP\n55.dk\nOyuna Girenler\nKENAN MUTLU\n50.dk\nDOĞUKAN HASAN DALAY\n48.dk\nSEDAT DURSUN\n55.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nVOLKAN KÖR(Hakem)\nMEHMET ZEKİ UZAR(1. Yardımcı Hakem)\nMEHMET ALİ KAYIKÇI(2. Yardımcı Hakem)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "Goller\nAYBERK AŞKAN,63.dk (H)\n75.dk\n6.dk\nOyundan Çıkanlar\n45.dk\n60.dk\n22.dk\n45.dk\n36.dk\nOyuna Girenler\n45.dk\n60.dk\n45.dk\n22.dk\n36.dk\nGoller\nENES ÜNAL,8.dk (P)\nENES ÜNAL,13.dk (F)\nENES ÜNAL,43.dk (F)\nENES ÜNAL,73.dk (F)\nDOĞUKAN HASAN DALAY,75.dk (F)\nBERKE YILMAZ,80.dk (F)\n34.dk\nOyundan Çıkanlar\n50.dk\n48.dk\n55.dk\nOyuna Girenler\n50.dk\n48.dk\n55.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 5,
+    "substitutesAway": 5,
+    "goals": 7,
+    "cards": 3,
+    "substitutions": 8,
+    "players": 34
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=102233",
+    "retrievedAt": "2026-05-15T14:11:09.633728Z",
+    "sourceType": "official_tff_match_detail"
+  }
+}

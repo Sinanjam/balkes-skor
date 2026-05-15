@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-15T12:05:59.042249Z",
+  "generatedAt": "2026-05-15T15:02:29.558758Z",
   "builderVersion": "standings-builder-v3.1-chain-safe",
   "seasons": [
     {
-      "season": "2017-2018",
-      "generatedAt": "2026-05-15T12:05:58.652333Z",
+      "season": "2013-2014",
+      "generatedAt": "2026-05-15T14:56:38.371141Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
@@ -18,8 +18,37 @@
       ]
     },
     {
-      "season": "2016-2017",
-      "generatedAt": "2026-05-15T12:05:58.747793Z",
+      "season": "2012-2013",
+      "generatedAt": "2026-05-15T14:56:38.460272Z",
+      "builderVersion": "standings-builder-v3.1-chain-safe",
+      "mode": "auto",
+      "maxWeek": 34,
+      "source": "official_tff_weekly_table",
+      "weeksGenerated": 34,
+      "teams": 17,
+      "matchesUsed": 0,
+      "penaltiesApplied": 0,
+      "warnings": [],
+      "balkesFinal": {
+        "rank": 1,
+        "team": "Balıkesirspor",
+        "played": 32,
+        "won": 20,
+        "drawn": 9,
+        "lost": 3,
+        "goalsFor": 46,
+        "goalsAgainst": 20,
+        "goalDifference": 26,
+        "points": 69,
+        "rawPoints": 69,
+        "pointsDeducted": 0,
+        "penaltyNote": "",
+        "isBalkes": true
+      }
+    },
+    {
+      "season": "2011-2012",
+      "generatedAt": "2026-05-15T15:02:29.498515Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
@@ -33,23 +62,8 @@
       ]
     },
     {
-      "season": "2015-2016",
-      "generatedAt": "2026-05-15T12:05:58.854770Z",
-      "builderVersion": "standings-builder-v3.1-chain-safe",
-      "mode": "auto",
-      "maxWeek": 34,
-      "source": "none",
-      "weeksGenerated": 0,
-      "teams": 0,
-      "matchesUsed": 0,
-      "penaltiesApplied": 0,
-      "warnings": [
-        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
-      ]
-    },
-    {
-      "season": "2014-2015",
-      "generatedAt": "2026-05-15T12:05:58.937114Z",
+      "season": "2010-2011",
+      "generatedAt": "2026-05-15T15:02:29.557027Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,

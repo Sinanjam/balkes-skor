@@ -1,0 +1,30 @@
+{
+  "id": "2012-2013",
+  "name": "2012-2013",
+  "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
+  "updatedAt": "2026-05-15T13:31:18.435173Z",
+  "summary": {
+    "matches": 32,
+    "wins": 20,
+    "draws": 9,
+    "losses": 3,
+    "goalsFor": 46,
+    "goalsAgainst": 20,
+    "goalDifference": 26,
+    "matchTypes": {
+      "league": 32
+    },
+    "points": 69,
+    "rawPoints": 69,
+    "pointsDeducted": 0,
+    "finalRank": 1
+  },
+  "files": {
+    "matchesIndex": "seasons/2012-2013/matches_index.json",
+    "standingsByWeek": "seasons/2012-2013/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-15T15:02:29.497921Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "2013-2014",
+  "name": "2013-2014",
+  "competition": "PTT 1.Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
+  "updatedAt": "2026-05-15T13:27:44.427038Z",
+  "summary": {
+    "matches": 191,
+    "wins": 95,
+    "draws": 38,
+    "losses": 58,
+    "goalsFor": 335,
+    "goalsAgainst": 219,
+    "goalDifference": 116,
+    "matchTypes": {
+      "league": 185,
+      "cup": 4,
+      "playoff": 2
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2013-2014/matches_index.json",
+    "standingsByWeek": "seasons/2013-2014/standings_by_week.json"
+  }
+}

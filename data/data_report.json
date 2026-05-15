@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-15T12:05:58.384620Z",
+  "generatedAt": "2026-05-15T14:56:38.099471Z",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v2.9-speed-complete-accuracy",
-  "totalAppMatches": 1342,
+  "totalAppMatches": 1705,
   "seasons": [
     {
       "id": "2025-2026",
@@ -252,10 +252,85 @@
           "cup": 1
         }
       }
+    },
+    {
+      "id": "2013-2014",
+      "name": "2013-2014",
+      "matchCount": 191,
+      "competition": "PTT 1.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 191,
+        "wins": 95,
+        "draws": 38,
+        "losses": 58,
+        "goalsFor": 335,
+        "goalsAgainst": 219,
+        "goalDifference": 116,
+        "matchTypes": {
+          "league": 185,
+          "cup": 4,
+          "playoff": 2
+        }
+      }
+    },
+    {
+      "id": "2012-2013",
+      "name": "2012-2013",
+      "matchCount": 32,
+      "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 32,
+        "wins": 20,
+        "draws": 9,
+        "losses": 3,
+        "goalsFor": 46,
+        "goalsAgainst": 20,
+        "goalDifference": 26,
+        "matchTypes": {
+          "league": 32
+        }
+      }
+    },
+    {
+      "id": "2011-2012",
+      "name": "2011-2012",
+      "matchCount": 138,
+      "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 138,
+        "wins": 38,
+        "draws": 26,
+        "losses": 74,
+        "goalsFor": 201,
+        "goalsAgainst": 326,
+        "goalDifference": -125,
+        "matchTypes": {
+          "league": 137,
+          "playoff": 1
+        }
+      }
+    },
+    {
+      "id": "2010-2011",
+      "name": "2010-2011",
+      "matchCount": 2,
+      "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (1. Kademe)",
+      "summary": {
+        "matches": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "goalDifference": -1,
+        "matchTypes": {
+          "cup": 2
+        }
+      }
     }
   ],
   "playersIndexed": 0,
-  "opponentsIndexed": 191,
+  "opponentsIndexed": 231,
   "notes": [
     "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
     "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."

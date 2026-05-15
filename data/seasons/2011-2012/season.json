@@ -1,0 +1,25 @@
+{
+  "id": "2011-2012",
+  "name": "2011-2012",
+  "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
+  "updatedAt": "2026-05-15T14:15:40.201808Z",
+  "summary": {
+    "matches": 138,
+    "wins": 38,
+    "draws": 26,
+    "losses": 74,
+    "goalsFor": 201,
+    "goalsAgainst": 326,
+    "goalDifference": -125,
+    "matchTypes": {
+      "league": 137,
+      "playoff": 1
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2011-2012/matches_index.json",
+    "standingsByWeek": "seasons/2011-2012/standings_by_week.json"
+  }
+}

@@ -3,7 +3,7 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-15T12:05:58.344847Z",
+  "generatedAt": "2026-05-15T14:56:38.049181Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -254,6 +254,86 @@
           "cup": 1
         }
       }
+    },
+    {
+      "id": "2013-2014",
+      "name": "2013-2014",
+      "matchCount": 191,
+      "competition": "PTT 1.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 191,
+        "wins": 95,
+        "draws": 38,
+        "losses": 58,
+        "goalsFor": 335,
+        "goalsAgainst": 219,
+        "goalDifference": 116,
+        "matchTypes": {
+          "league": 185,
+          "cup": 4,
+          "playoff": 2
+        }
+      }
+    },
+    {
+      "id": "2012-2013",
+      "name": "2012-2013",
+      "matchCount": 32,
+      "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 32,
+        "wins": 20,
+        "draws": 9,
+        "losses": 3,
+        "goalsFor": 46,
+        "goalsAgainst": 20,
+        "goalDifference": 26,
+        "matchTypes": {
+          "league": 32
+        },
+        "points": 69,
+        "rawPoints": 69,
+        "pointsDeducted": 0,
+        "finalRank": 1
+      },
+      "standingsByWeekUrl": "seasons/2012-2013/standings_by_week.json"
+    },
+    {
+      "id": "2011-2012",
+      "name": "2011-2012",
+      "matchCount": 138,
+      "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 138,
+        "wins": 38,
+        "draws": 26,
+        "losses": 74,
+        "goalsFor": 201,
+        "goalsAgainst": 326,
+        "goalDifference": -125,
+        "matchTypes": {
+          "league": 137,
+          "playoff": 1
+        }
+      }
+    },
+    {
+      "id": "2010-2011",
+      "name": "2010-2011",
+      "matchCount": 2,
+      "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (1. Kademe)",
+      "summary": {
+        "matches": 2,
+        "wins": 1,
+        "draws": 0,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "goalDifference": -1,
+        "matchTypes": {
+          "cup": 2
+        }
+      }
     }
   ],
   "global": {
@@ -262,15 +342,17 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778846758,
+  "appDataVersion": 1778856998,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-15T12:05:58.344866Z",
+  "lastUpdated": "2026-05-15T14:56:38.049192Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v2.9-speed-complete-accuracy",
   "processedSeasonsInLastRun": [
-    "2017-2018",
-    "2016-2017",
-    "2015-2016",
-    "2014-2015"
-  ]
+    "2013-2014",
+    "2012-2013",
+    "2011-2012",
+    "2010-2011"
+  ],
+  "standingsUpdatedAt": "2026-05-15T15:02:29.558288Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }
