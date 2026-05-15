@@ -1,26 +1,495 @@
 {
   "season": "2018-2019",
-  "selectedIds": 0,
-  "allDiscoveredIds": 0,
-  "detailCandidates": 2,
-  "candidateMode": "known_match_ids_only",
-  "knownOnly": true,
+  "selectedIds": 378,
+  "allDiscoveredIds": 6637,
+  "detailCandidates": 378,
+  "candidateMode": "legacy_pageid_probe_selected_or_known",
+  "knownOnly": false,
   "plannedTarget": false,
-  "matchesPublished": 2,
-  "detailFiles": 2,
-  "duplicatesDropped": 0,
-  "rejectedReasons": {},
-  "rejectedSamples": {},
+  "legacyPageIdProbe": true,
+  "legacyProbeDiagnostics": [
+    {
+      "kind": "page_hint",
+      "pageID": 1463,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 189,
+      "groups": []
+    },
+    {
+      "kind": "page_week_fast_skip",
+      "pageID": 1463,
+      "error": "http_504",
+      "week": 3,
+      "cumulative": 1
+    },
+    {
+      "kind": "page_week_fast_skip",
+      "pageID": 1463,
+      "error": "http_504",
+      "week": 16,
+      "cumulative": 2
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1469,
+      "baseSelectedDelta": 97,
+      "baseAllDelta": 312,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1472,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 10,
+      "groups": [
+        "1626",
+        "1627"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1472,
+      "grupID": "1626",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1472,
+      "grupID": "1627",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1475,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 18,
+      "groups": [
+        "1632",
+        "1633",
+        "1634",
+        "1635"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1475,
+      "grupID": "1632",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1476,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 18,
+      "groups": [
+        "1636",
+        "1637",
+        "1638",
+        "1639",
+        "1746",
+        "1747"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1476,
+      "grupID": "1636",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1476,
+      "grupID": "1746",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1476,
+      "grupID": "1747",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1477,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 18,
+      "groups": [
+        "1640",
+        "1641",
+        "1642",
+        "1643",
+        "1742",
+        "1743"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1477,
+      "grupID": "1640",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1477,
+      "grupID": "1742",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1477,
+      "grupID": "1743",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1478,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 10,
+      "groups": [
+        "1628",
+        "1629"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1478,
+      "grupID": "1628",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1478,
+      "grupID": "1629",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1479,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 10,
+      "groups": [
+        "1630",
+        "1631"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1479,
+      "grupID": "1630",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1479,
+      "grupID": "1631",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1487,
+      "baseSelectedDelta": 6,
+      "baseAllDelta": 195,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1495,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 3,
+      "groups": [
+        "1880",
+        "1881",
+        "1882",
+        "1883",
+        "1884"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1495,
+      "grupID": "1880",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1502,
+      "baseSelectedDelta": 94,
+      "baseAllDelta": 311,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1503,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": [
+        "1632",
+        "1633",
+        "1634",
+        "1635"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1503,
+      "grupID": "1632",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 1504,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": [
+        "1632",
+        "1633",
+        "1634",
+        "1635"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 1504,
+      "grupID": "1632",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    }
+  ],
+  "matchesPublished": 207,
+  "detailFiles": 207,
+  "duplicatesDropped": 4,
+  "rejectedReasons": {
+    "date_out_of_season:2017-09-19": 1,
+    "balkes_not_found": 122,
+    "date_out_of_season:2019-08-17": 1,
+    "date_out_of_season:2019-08-24": 1,
+    "date_out_of_season:2019-08-31": 1,
+    "date_out_of_season:2019-09-13": 1,
+    "date_out_of_season:2019-09-20": 1,
+    "date_out_of_season:2019-09-29": 1,
+    "date_out_of_season:2019-10-05": 1,
+    "date_out_of_season:2019-10-20": 1,
+    "date_out_of_season:2019-10-26": 1,
+    "date_out_of_season:2019-11-04": 1,
+    "date_out_of_season:2019-11-10": 1,
+    "date_out_of_season:2019-11-24": 1,
+    "date_out_of_season:2019-12-02": 1,
+    "date_out_of_season:2019-12-07": 1,
+    "date_out_of_season:2019-12-15": 1,
+    "date_out_of_season:2019-12-21": 1,
+    "date_out_of_season:2019-12-28": 1,
+    "date_out_of_season:2020-01-20": 1,
+    "date_out_of_season:2020-01-26": 1,
+    "date_out_of_season:2020-02-02": 1,
+    "date_out_of_season:2020-02-09": 1,
+    "date_out_of_season:2020-02-16": 1,
+    "date_out_of_season:2020-02-23": 1,
+    "date_out_of_season:2020-02-27": 1,
+    "date_out_of_season:2020-03-02": 1,
+    "date_out_of_season:2020-03-06": 1,
+    "date_out_of_season:2020-03-10": 1,
+    "date_out_of_season:2020-03-16": 1,
+    "date_out_of_season:2020-06-20": 1,
+    "date_out_of_season:2020-06-28": 1,
+    "date_out_of_season:2020-07-02": 1,
+    "date_out_of_season:2020-07-06": 1,
+    "date_out_of_season:2020-07-11": 1,
+    "date_out_of_season:2020-07-19": 1,
+    "date_out_of_season:2020-03-22": 1,
+    "date_out_of_season:2020-03-29": 1,
+    "date_out_of_season:2020-04-05": 1,
+    "date_out_of_season:2020-04-12": 1,
+    "date_out_of_season:2020-04-19": 1,
+    "date_out_of_season:2020-05-03": 1,
+    "date_out_of_season:2020-05-12": 1,
+    "date_out_of_season:2020-05-17": 1,
+    "date_out_of_season:2020-05-31": 1,
+    "date_out_of_season:2020-06-06": 1
+  },
+  "rejectedSamples": {
+    "date_out_of_season:2017-09-19": [
+      "188729"
+    ],
+    "balkes_not_found": [
+      "194821",
+      "194826",
+      "194837",
+      "194842",
+      "194844",
+      "194846",
+      "194852",
+      "194854",
+      "194861",
+      "194864",
+      "194872",
+      "194878",
+      "194882",
+      "194884",
+      "194892",
+      "194895",
+      "194904",
+      "194906",
+      "194915",
+      "194920"
+    ],
+    "date_out_of_season:2019-08-17": [
+      "207461"
+    ],
+    "date_out_of_season:2019-08-24": [
+      "207469"
+    ],
+    "date_out_of_season:2019-08-31": [
+      "207481"
+    ],
+    "date_out_of_season:2019-09-13": [
+      "207492"
+    ],
+    "date_out_of_season:2019-09-20": [
+      "207497"
+    ],
+    "date_out_of_season:2019-09-29": [
+      "207506"
+    ],
+    "date_out_of_season:2019-10-05": [
+      "207516"
+    ],
+    "date_out_of_season:2019-10-20": [
+      "207527"
+    ],
+    "date_out_of_season:2019-10-26": [
+      "207538"
+    ],
+    "date_out_of_season:2019-11-04": [
+      "207544"
+    ],
+    "date_out_of_season:2019-11-10": [
+      "207551"
+    ],
+    "date_out_of_season:2019-11-24": [
+      "207562"
+    ],
+    "date_out_of_season:2019-12-02": [
+      "207569"
+    ],
+    "date_out_of_season:2019-12-07": [
+      "207584"
+    ],
+    "date_out_of_season:2019-12-15": [
+      "207592"
+    ],
+    "date_out_of_season:2019-12-21": [
+      "207601"
+    ],
+    "date_out_of_season:2019-12-28": [
+      "207610"
+    ],
+    "date_out_of_season:2020-01-20": [
+      "207614"
+    ],
+    "date_out_of_season:2020-01-26": [
+      "207622"
+    ],
+    "date_out_of_season:2020-02-02": [
+      "207634"
+    ],
+    "date_out_of_season:2020-02-09": [
+      "207645"
+    ],
+    "date_out_of_season:2020-02-16": [
+      "207650"
+    ],
+    "date_out_of_season:2020-02-23": [
+      "207659"
+    ],
+    "date_out_of_season:2020-02-27": [
+      "207669"
+    ],
+    "date_out_of_season:2020-03-02": [
+      "207680"
+    ],
+    "date_out_of_season:2020-03-06": [
+      "207691"
+    ],
+    "date_out_of_season:2020-03-10": [
+      "207697"
+    ],
+    "date_out_of_season:2020-03-16": [
+      "207704"
+    ],
+    "date_out_of_season:2020-06-20": [
+      "207715"
+    ],
+    "date_out_of_season:2020-06-28": [
+      "207722"
+    ],
+    "date_out_of_season:2020-07-02": [
+      "207737"
+    ],
+    "date_out_of_season:2020-07-06": [
+      "207745"
+    ],
+    "date_out_of_season:2020-07-11": [
+      "207754"
+    ],
+    "date_out_of_season:2020-07-19": [
+      "207763"
+    ],
+    "date_out_of_season:2020-03-22": [
+      "218668"
+    ],
+    "date_out_of_season:2020-03-29": [
+      "218672"
+    ],
+    "date_out_of_season:2020-04-05": [
+      "218675"
+    ],
+    "date_out_of_season:2020-04-12": [
+      "218677"
+    ],
+    "date_out_of_season:2020-04-19": [
+      "218679"
+    ],
+    "date_out_of_season:2020-05-03": [
+      "218683"
+    ],
+    "date_out_of_season:2020-05-12": [
+      "218687"
+    ],
+    "date_out_of_season:2020-05-17": [
+      "218690"
+    ],
+    "date_out_of_season:2020-05-31": [
+      "218692"
+    ],
+    "date_out_of_season:2020-06-06": [
+      "218694"
+    ]
+  },
   "standingsSkipped": true,
   "standingsSnapshots": 0,
   "balkesTableFound": false,
   "matchTypeCounts": {
-    "cup": 1,
-    "league": 1
+    "league": 201,
+    "cup": 6
   },
   "seasonGuard": {
     "start": "2018-07-01",
     "end": "2019-06-30"
   },
-  "generatedAt": "2026-05-14T23:15:50.945976Z"
+  "generatedAt": "2026-05-15T07:06:04.983409Z"
 }

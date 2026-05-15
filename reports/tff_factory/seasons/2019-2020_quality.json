@@ -4,6 +4,10 @@
   "allDiscoveredIds": 311,
   "detailCandidates": 94,
   "candidateMode": "selected_or_known",
+  "knownOnly": false,
+  "plannedTarget": true,
+  "legacyPageIdProbe": false,
+  "legacyProbeDiagnostics": [],
   "matchesPublished": 30,
   "detailFiles": 30,
   "duplicatesDropped": 0,
@@ -60,5 +64,5 @@
     "start": "2019-07-01",
     "end": "2020-06-30"
   },
-  "generatedAt": "2026-05-14T21:05:38.037957Z"
+  "generatedAt": "2026-05-15T06:50:27.390765Z"
 }

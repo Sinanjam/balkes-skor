@@ -1,7 +1,7 @@
 {
   "season": "2018-2019",
-  "generatedAt": "2026-05-15T02:47:24.935183Z",
-  "builderVersion": "standings-builder-v2-fast-safe",
+  "generatedAt": "2026-05-15T07:14:08.433848Z",
+  "builderVersion": "standings-builder-v3.1-chain-safe",
   "mode": "auto",
   "maxWeek": 34,
   "source": "none",
@@ -10,6 +10,6 @@
   "matchesUsed": 0,
   "penaltiesApplied": 0,
   "warnings": [
-    "Registry içinde targetPageID/targetUrls yok; resmi tablo ve full fikstür çekimi yapılamadı."
+    "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
   ]
 }

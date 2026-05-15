@@ -1,0 +1,30 @@
+{
+  "id": "2020-2021",
+  "name": "2020-2021",
+  "competition": "TFF 1. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v2.9-speed-complete-accuracy",
+  "updatedAt": "2026-05-15T06:48:52.810593Z",
+  "summary": {
+    "matches": 34,
+    "wins": 9,
+    "draws": 8,
+    "losses": 17,
+    "goalsFor": 35,
+    "goalsAgainst": 53,
+    "goalDifference": -18,
+    "matchTypes": {
+      "league": 34
+    },
+    "points": 35,
+    "rawPoints": 35,
+    "pointsDeducted": 0,
+    "finalRank": 13
+  },
+  "files": {
+    "matchesIndex": "seasons/2020-2021/matches_index.json",
+    "standingsByWeek": "seasons/2020-2021/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-15T07:11:52.836903Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}

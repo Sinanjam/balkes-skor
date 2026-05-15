@@ -3,7 +3,7 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-15T06:17:26.443386Z",
+  "generatedAt": "2026-05-15T07:06:05.001271Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -46,8 +46,7 @@
         "rawPoints": 56,
         "pointsDeducted": 0,
         "finalRank": 2
-      },
-      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
+      }
     },
     {
       "id": "2023-2024",
@@ -69,8 +68,7 @@
         "rawPoints": 33,
         "pointsDeducted": 0,
         "finalRank": 8
-      },
-      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
+      }
     },
     {
       "id": "2022-2023",
@@ -92,8 +90,95 @@
         "rawPoints": 25,
         "pointsDeducted": 0,
         "finalRank": 17
+      }
+    },
+    {
+      "id": "2021-2022",
+      "name": "2021-2022",
+      "matchCount": 36,
+      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 36,
+        "wins": 3,
+        "draws": 3,
+        "losses": 30,
+        "goalsFor": 26,
+        "goalsAgainst": 77,
+        "goalDifference": -51,
+        "matchTypes": {
+          "league": 36
+        },
+        "points": 12,
+        "rawPoints": 12,
+        "pointsDeducted": 0,
+        "finalRank": 19
       },
-      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
+      "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
+    },
+    {
+      "id": "2020-2021",
+      "name": "2020-2021",
+      "matchCount": 34,
+      "competition": "TFF 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 34,
+        "wins": 9,
+        "draws": 8,
+        "losses": 17,
+        "goalsFor": 35,
+        "goalsAgainst": 53,
+        "goalDifference": -18,
+        "matchTypes": {
+          "league": 34
+        },
+        "points": 35,
+        "rawPoints": 35,
+        "pointsDeducted": 0,
+        "finalRank": 13
+      },
+      "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
+    },
+    {
+      "id": "2019-2020",
+      "name": "2019-2020",
+      "matchCount": 30,
+      "competition": "TFF 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 30,
+        "wins": 8,
+        "draws": 11,
+        "losses": 11,
+        "goalsFor": 36,
+        "goalsAgainst": 48,
+        "goalDifference": -12,
+        "matchTypes": {
+          "league": 30
+        },
+        "points": 38,
+        "rawPoints": 38,
+        "pointsDeducted": 0,
+        "finalRank": 13
+      },
+      "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
+    },
+    {
+      "id": "2018-2019",
+      "name": "2018-2019",
+      "matchCount": 207,
+      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 207,
+        "wins": 60,
+        "draws": 29,
+        "losses": 117,
+        "goalsFor": 251,
+        "goalsAgainst": 409,
+        "goalDifference": -158,
+        "matchTypes": {
+          "league": 201,
+          "cup": 6
+        }
+      }
     }
   ],
   "global": {
@@ -102,17 +187,17 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778825846,
+  "appDataVersion": 1778828765,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-15T06:17:26.443406Z",
+  "lastUpdated": "2026-05-15T07:06:05.001288Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v2.9-speed-complete-accuracy",
   "processedSeasonsInLastRun": [
-    "2025-2026",
-    "2024-2025",
-    "2023-2024",
-    "2022-2023"
+    "2021-2022",
+    "2020-2021",
+    "2019-2020",
+    "2018-2019"
   ],
-  "standingsUpdatedAt": "2026-05-15T06:39:30.005510Z",
+  "standingsUpdatedAt": "2026-05-15T07:14:08.521527Z",
   "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }
