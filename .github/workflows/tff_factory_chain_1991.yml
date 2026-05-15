@@ -1,0 +1,270 @@
+name: TFF Factory v3.1 Chain to 1991
+
+on:
+  workflow_dispatch:
+    inputs:
+      start_season:
+        description: "Bu zincir grubunun başlangıcı. İlk 4'lü bittiyse öneri: 2021-2022"
+        required: true
+        default: "2021-2022"
+      end_year:
+        description: "En eski sezon başlangıç yılı. 1990 yazarsan 1990-1991 dahil olur."
+        required: true
+        default: "1990"
+      group_size:
+        description: "Her run kaç sezon işlesin?"
+        required: true
+        default: "4"
+      wait_minutes:
+        description: "Bir grup bittikten/failed/timeout olduktan sonra sonraki gruba geçmeden bekleme."
+        required: true
+        default: "10"
+      group_timeout_minutes:
+        description: "Bir 4'lü grubun iç timeout limiti. Timeout olursa zincir sonraki gruba geçer."
+        required: true
+        default: "300"
+      auto_push_main:
+        description: "Üretilen veri/raporları main'e pushla."
+        required: true
+        type: boolean
+        default: true
+      skip_standings:
+        description: "true: sadece maç verisi. false: puan tablolarını da üret."
+        required: true
+        type: boolean
+        default: false
+      standings_mode:
+        description: "Puan tablosu modu: auto, official-only, computed-only"
+        required: true
+        default: "auto"
+      standings_detail_mode:
+        description: "missing dengeli, all daha yavaş/doğrulamalı, none listing-only"
+        required: true
+        default: "missing"
+      standings_workers:
+        description: "Puan tablosu detay çekimi paralel işçi sayısı"
+        required: true
+        default: "6"
+      standings_week_param_mode:
+        description: "Hafta parametre modu: smart, fast, wide"
+        required: true
+        default: "smart"
+      legacy_broad_probe_limit:
+        description: "Legacy geniş aday limiti"
+        required: true
+        default: "350"
+      strict_legacy_targets:
+        description: "Eski sezonlarda kör current-page taramayı kapat"
+        required: true
+        type: boolean
+        default: true
+      chain_label:
+        description: "Raporlarda görünecek zincir etiketi"
+        required: true
+        default: "chain-1991"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: tff-factory-chain-1991
+  cancel-in-progress: false
+
+jobs:
+  chain-group:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml
+
+      - name: Prepare git
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git checkout main
+          git pull --rebase origin main
+
+      - name: Plan current and next group
+        id: plan
+        shell: bash
+        run: |
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import os, re
+          start = "${{ github.event.inputs.start_season }}"
+          end_year = int("${{ github.event.inputs.end_year }}")
+          group_size = int("${{ github.event.inputs.group_size }}")
+          m = re.match(r"^(\d{4})-(\d{4})$", start)
+          if not m:
+              raise SystemExit(f"start_season formatı hatalı: {start}")
+          y = int(m.group(1))
+          seasons = []
+          for yy in range(y, max(end_year, y - group_size + 1) - 1, -1):
+              seasons.append(f"{yy}-{yy+1}")
+          next_y = y - group_size
+          has_next = next_y >= end_year
+          next_start = f"{next_y}-{next_y+1}" if has_next else ""
+          print(f"max_seasons={len(seasons)}")
+          print(f"group_start={seasons[0]}")
+          print(f"group_end={seasons[-1]}")
+          print(f"group_name={seasons[0]}..{seasons[-1]}")
+          print(f"has_next={'true' if has_next else 'false'}")
+          print(f"next_start={next_start}")
+          PY
+          echo "Plan: ${{ steps.plan.outputs.group_name }}"
+
+      - name: Run group without stopping the chain
+        id: rungroup
+        shell: bash
+        env:
+          PYTHONUNBUFFERED: "1"
+          START_SEASON: ${{ steps.plan.outputs.group_start }}
+          MAX_SEASONS: ${{ steps.plan.outputs.max_seasons }}
+          GROUP_NAME: ${{ steps.plan.outputs.group_name }}
+          GROUP_TIMEOUT_MINUTES: ${{ github.event.inputs.group_timeout_minutes }}
+          SKIP_STANDINGS: ${{ github.event.inputs.skip_standings }}
+          STANDINGS_MODE: ${{ github.event.inputs.standings_mode }}
+          STANDINGS_DETAIL_MODE: ${{ github.event.inputs.standings_detail_mode }}
+          STANDINGS_WORKERS: ${{ github.event.inputs.standings_workers }}
+          STANDINGS_WEEK_PARAM_MODE: ${{ github.event.inputs.standings_week_param_mode }}
+          LEGACY_BROAD_PROBE_LIMIT: ${{ github.event.inputs.legacy_broad_probe_limit }}
+          STRICT_LEGACY_TARGETS: ${{ github.event.inputs.strict_legacy_targets }}
+          CHAIN_LABEL: ${{ github.event.inputs.chain_label }}
+        run: |
+          mkdir -p reports/tff_chain
+          set +e
+          timeout --preserve-status --kill-after=60s "${GROUP_TIMEOUT_MINUTES}m" bash -lc '
+            set -e
+            STRICT_ARG="--strict-legacy-targets"
+            if [ "$STRICT_LEGACY_TARGETS" != "true" ]; then STRICT_ARG="--no-strict-legacy-targets"; fi
+            python scripts/tff_factory_v29_speed_complete_accuracy.py \
+              --seed sources/tff/registry/balkes_tff_seed_registry.json \
+              --data-root data \
+              --raw-root sources/tff/raw \
+              --reports-root reports/tff_factory \
+              --start-season "$START_SEASON" \
+              --max-seasons "$MAX_SEASONS" \
+              --sleep "1.0" \
+              --max-discovery-probe "1500" \
+              --legacy-broad-probe-limit "$LEGACY_BROAD_PROBE_LIMIT" \
+              $STRICT_ARG \
+              --skip-standings
+            python scripts/validate_data.py --data-root data --min-seasons 1 --min-matches 1
+            if [ "$SKIP_STANDINGS" = "false" ]; then
+              python scripts/tff_standings_builder_v31.py \
+                --seed sources/tff/registry/balkes_tff_seed_registry.json \
+                --data-root data \
+                --raw-root sources/tff/standings_raw \
+                --reports-root reports/standings \
+                --penalties data/standings_penalties.json \
+                --start-season "$START_SEASON" \
+                --max-seasons "$MAX_SEASONS" \
+                --mode "$STANDINGS_MODE" \
+                --probe-limit "5000" \
+                --workers "$STANDINGS_WORKERS" \
+                --detail-fetch-mode "$STANDINGS_DETAIL_MODE" \
+                --week-param-mode "$STANDINGS_WEEK_PARAM_MODE" \
+                --sleep "0.15"
+            fi
+          '
+          code=$?
+          if [ "$code" = "0" ]; then status="success";
+          elif [ "$code" = "124" ] || [ "$code" = "137" ]; then status="timeout";
+          else status="failed"; fi
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          python - <<PY
+          import json, os
+          from datetime import datetime, timezone
+          p = "reports/tff_chain/${CHAIN_LABEL}_${GROUP_NAME}.json".replace("/", "_").replace(" ", "_")
+          obj = {
+            "chainLabel": os.environ.get("CHAIN_LABEL"),
+            "group": os.environ.get("GROUP_NAME"),
+            "startSeason": os.environ.get("START_SEASON"),
+            "maxSeasons": int(os.environ.get("MAX_SEASONS", "0")),
+            "status": "$status",
+            "exitCode": $code,
+            "skipStandings": os.environ.get("SKIP_STANDINGS"),
+            "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+          }
+          open(p, "w", encoding="utf-8").write(json.dumps(obj, ensure_ascii=False, indent=2))
+          print("chain status file:", p, obj)
+          PY
+          exit 0
+
+      - name: Commit and push group outputs
+        if: ${{ github.event.inputs.auto_push_main == 'true' }}
+        shell: bash
+        run: |
+          git add -A data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state .gitignore
+          git reset -- sources/tff/raw || true
+          git reset -- sources/tff/standings_raw || true
+          git reset -- reports/tff_factory/backups || true
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Chain ${{ steps.plan.outputs.group_name }}: ${{ steps.rungroup.outputs.status }}"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - name: Upload group artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tff-chain-v31-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
+          path: |
+            reports/tff_chain/**/*.json
+            reports/tff_factory/**/*.json
+            reports/standings/**/*.json
+            reports/tff_factory/backups/*.zip
+            sources/tff/raw/**/*.html
+            sources/tff/raw/**/*.txt
+            sources/tff/standings_raw/**/*.html
+            sources/tff/standings_raw/**/*.txt
+          if-no-files-found: ignore
+
+      - name: Wait and dispatch next group
+        if: ${{ always() && steps.plan.outputs.has_next == 'true' }}
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "Group ${{ steps.plan.outputs.group_name }} status: ${{ steps.rungroup.outputs.status }}"
+          echo "${{ github.event.inputs.wait_minutes }} dakika bekleniyor, sonra ${{ steps.plan.outputs.next_start }} başlatılacak."
+          sleep $(( ${{ github.event.inputs.wait_minutes }} * 60 ))
+          gh workflow run tff_factory_chain_1991.yml \
+            -f start_season="${{ steps.plan.outputs.next_start }}" \
+            -f end_year="${{ github.event.inputs.end_year }}" \
+            -f group_size="${{ github.event.inputs.group_size }}" \
+            -f wait_minutes="${{ github.event.inputs.wait_minutes }}" \
+            -f group_timeout_minutes="${{ github.event.inputs.group_timeout_minutes }}" \
+            -f auto_push_main="${{ github.event.inputs.auto_push_main }}" \
+            -f skip_standings="${{ github.event.inputs.skip_standings }}" \
+            -f standings_mode="${{ github.event.inputs.standings_mode }}" \
+            -f standings_detail_mode="${{ github.event.inputs.standings_detail_mode }}" \
+            -f standings_workers="${{ github.event.inputs.standings_workers }}" \
+            -f standings_week_param_mode="${{ github.event.inputs.standings_week_param_mode }}" \
+            -f legacy_broad_probe_limit="${{ github.event.inputs.legacy_broad_probe_limit }}" \
+            -f strict_legacy_targets="${{ github.event.inputs.strict_legacy_targets }}" \
+            -f chain_label="${{ github.event.inputs.chain_label }}"
+
+      - name: Chain complete
+        if: ${{ always() && steps.plan.outputs.has_next != 'true' }}
+        run: |
+          echo "Zincir tamamlandı. Son grup: ${{ steps.plan.outputs.group_name }} status=${{ steps.rungroup.outputs.status }}"
