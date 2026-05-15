@@ -1,24 +1,16 @@
 [
   {
     "id": "205830",
-    "matchCode": "653",
     "season": "2018-2019",
-    "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (5.Tur)",
-    "competitionType": "cup",
-    "competitionLabel": "Ziraat Türkiye Kupası",
-    "stadium": "BALIKESİR ATATÜRK - BALIKESİR",
-    "venue": "BALIKESİR ATATÜRK - BALIKESİR",
-    "stage": "Ziraat Türkiye Kupası",
-    "stageLabel": "Ziraat Türkiye Kupası",
+    "competition": "Ziraat Türkiye Kupası (Professional Team)",
+    "roundType": "cup",
+    "week": null,
+    "stage": "5. Tur",
     "date": "2018-12-18",
     "time": "15:00",
-    "dateDisplay": "2018-12-18 - 15:00",
-    "homeTeam": "Balıkesirspor",
+    "dateDisplay": "18.12.2018 - 15:00",
+    "homeTeam": "Balıkesirspor Baltok",
     "awayTeam": "ÇAYKUR RİZESPOR A.Ş.",
-    "matchType": "cup",
-    "matchTypeLabel": "Ziraat Türkiye Kupası",
-    "type": "cup",
-    "typeLabel": "Ziraat Türkiye Kupası",
     "score": {
       "home": 1,
       "away": 1,
@@ -27,52 +19,29 @@
     },
     "balkes": {
       "isHome": true,
-      "isAway": false,
       "opponent": "ÇAYKUR RİZESPOR A.Ş.",
       "goalsFor": 1,
       "goalsAgainst": 1,
       "result": "D"
     },
-    "quality": "A",
-    "detailCompleteness": {
-      "hasStadium": true,
-      "starting11Home": 11,
-      "starting11Away": 11,
-      "substitutesHome": 7,
-      "substitutesAway": 7,
-      "goals": 2,
-      "cards": 2,
-      "substitutions": 6,
-      "players": 38
-    },
     "detailUrl": "seasons/2018-2019/matches/205830.json",
     "source": {
       "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=205830",
-      "retrievedAt": "2026-05-14T23:15:50.942708Z",
-      "sourceType": "official_tff_match_detail"
+      "url": "https://www.tff.org/Default.aspx?macId=205830&pageID=528"
     }
   },
   {
     "id": "195050",
-    "matchCode": "2231",
     "season": "2018-2019",
-    "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
-    "competitionType": "league",
-    "competitionLabel": "Lig",
-    "stadium": "BOLU ATATÜRK - BOLU",
-    "venue": "BOLU ATATÜRK - BOLU",
+    "competition": "Spor Toto 1. Lig (Professional Team)",
+    "roundType": "league",
+    "week": null,
     "stage": "Lig",
-    "stageLabel": "Lig",
     "date": "2019-03-17",
     "time": "16:00",
-    "dateDisplay": "2019-03-17 - 16:00",
+    "dateDisplay": "17.03.2019 - 16:00",
     "homeTeam": "BOLUSPOR",
-    "awayTeam": "Balıkesirspor",
-    "matchType": "league",
-    "matchTypeLabel": "Lig",
-    "type": "league",
-    "typeLabel": "Lig",
+    "awayTeam": "Balıkesirspor Baltok",
     "score": {
       "home": 1,
       "away": 0,
@@ -81,30 +50,15 @@
     },
     "balkes": {
       "isHome": false,
-      "isAway": true,
       "opponent": "BOLUSPOR",
       "goalsFor": 0,
       "goalsAgainst": 1,
       "result": "L"
     },
-    "quality": "A",
-    "detailCompleteness": {
-      "hasStadium": true,
-      "starting11Home": 11,
-      "starting11Away": 11,
-      "substitutesHome": 7,
-      "substitutesAway": 7,
-      "goals": 1,
-      "cards": 6,
-      "substitutions": 5,
-      "players": 38
-    },
     "detailUrl": "seasons/2018-2019/matches/195050.json",
     "source": {
       "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=195050",
-      "retrievedAt": "2026-05-14T23:15:48.994444Z",
-      "sourceType": "official_tff_match_detail"
+      "url": "https://www.tff.org/Default.aspx?macId=195050&pageID=528"
     }
   }
 ]

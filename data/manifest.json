@@ -1,186 +1,86 @@
 {
   "app": "Balkes Skor",
-  "schemaVersion": 3,
-  "dataVersion": 1,
+  "schemaVersion": 2,
+  "dataVersion": 9,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-14T23:15:50.950012Z",
+  "generatedAt": "2026-05-12T22:06:53.731455Z",
   "team": "Balıkesirspor",
+  "assets": {
+    "logo": "assets/logo_balkes_skor.png"
+  },
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
-      "matchCount": 32,
-      "summary": {
-        "matches": 32,
-        "wins": 18,
-        "draws": 7,
-        "losses": 7,
-        "goalsFor": 61,
-        "goalsAgainst": 28,
-        "goalDifference": 33,
-        "matchTypes": {
-          "league": 30,
-          "playoff": 2
-        }
-      }
+      "matchCount": 33
     },
     {
       "id": "2024-2025",
       "name": "2024-2025",
-      "matchCount": 33,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 33,
-        "wins": 18,
-        "draws": 6,
-        "losses": 9,
-        "goalsFor": 54,
-        "goalsAgainst": 27,
-        "goalDifference": 27,
-        "matchTypes": {
-          "league": 30,
-          "playoff": 3
-        },
-        "points": 56,
-        "rawPoints": 56,
-        "pointsDeducted": 0,
-        "finalRank": 4
-      },
-      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
+      "matchCount": 33
     },
     {
       "id": "2023-2024",
       "name": "2023-2024",
-      "matchCount": 28,
-      "competition": "TFF 3. LİG (Profesyonel Takım)",
-      "summary": {
-        "matches": 28,
-        "wins": 7,
-        "draws": 12,
-        "losses": 9,
-        "goalsFor": 27,
-        "goalsAgainst": 30,
-        "goalDifference": -3,
-        "matchTypes": {
-          "league": 28
-        },
-        "points": 33,
-        "rawPoints": 33,
-        "pointsDeducted": 0,
-        "finalRank": 10
-      },
-      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
+      "matchCount": 29
     },
     {
       "id": "2022-2023",
       "name": "2022-2023",
-      "matchCount": 38,
-      "competition": "TFF 2.Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 38,
-        "wins": 6,
-        "draws": 10,
-        "losses": 22,
-        "goalsFor": 32,
-        "goalsAgainst": 76,
-        "goalDifference": -44,
-        "matchTypes": {
-          "league": 38
-        },
-        "points": 25,
-        "rawPoints": 25,
-        "pointsDeducted": 0,
-        "finalRank": 19
-      },
-      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
+      "matchCount": 37
     },
     {
       "id": "2021-2022",
       "name": "2021-2022",
-      "matchCount": 36,
-      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+      "matchCount": 11,
+      "competition": "TRENDYOL SÜPER LİG",
+      "group": "",
       "summary": {
-        "matches": 36,
-        "wins": 3,
-        "draws": 3,
-        "losses": 30,
-        "goalsFor": 26,
-        "goalsAgainst": 77,
-        "goalDifference": -51,
-        "matchTypes": {
-          "league": 36
-        },
-        "points": 12,
-        "rawPoints": 12,
-        "pointsDeducted": 0,
-        "finalRank": 21
-      },
-      "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
-    },
-    {
-      "id": "2020-2021",
-      "name": "2020-2021",
-      "matchCount": 34,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 34,
-        "wins": 9,
-        "draws": 8,
-        "losses": 17,
-        "goalsFor": 35,
-        "goalsAgainst": 53,
-        "goalDifference": -18,
-        "matchTypes": {
-          "league": 34
-        },
-        "points": 35,
-        "rawPoints": 35,
-        "pointsDeducted": 0,
-        "finalRank": 15
-      },
-      "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
-    },
-    {
-      "id": "2019-2020",
-      "name": "2019-2020",
-      "matchCount": 30,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 30,
-        "wins": 8,
-        "draws": 11,
-        "losses": 11,
-        "goalsFor": 36,
-        "goalsAgainst": 48,
-        "goalDifference": -12,
-        "matchTypes": {
-          "league": 30
-        },
-        "points": 38,
-        "rawPoints": 38,
-        "pointsDeducted": 0,
-        "finalRank": 13
-      },
-      "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
+        "matches": 11,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": null,
+        "finalRank": null
+      }
     },
     {
       "id": "2018-2019",
       "name": "2018-2019",
-      "matchCount": 2,
-      "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (5.Tur)",
-      "summary": {
-        "matches": 2,
-        "wins": 0,
-        "draws": 1,
-        "losses": 1,
-        "goalsFor": 1,
-        "goalsAgainst": 2,
-        "goalDifference": -1,
-        "matchTypes": {
-          "cup": 1,
-          "league": 1
-        }
-      }
+      "matchCount": 2
+    },
+    {
+      "id": "2009-2010",
+      "name": "2009-2010",
+      "matchCount": 1
+    },
+    {
+      "id": "1996-1997",
+      "name": "1996-1997",
+      "matchCount": 1
+    },
+    {
+      "id": "1994-1995",
+      "name": "1994-1995",
+      "matchCount": 1
+    },
+    {
+      "id": "1992-1993",
+      "name": "1992-1993",
+      "matchCount": 1
+    },
+    {
+      "id": "1991-1992",
+      "name": "1991-1992",
+      "matchCount": 1
+    },
+    {
+      "id": "1990-1991",
+      "name": "1990-1991",
+      "matchCount": 2
     }
   ],
   "global": {
@@ -189,14 +89,8 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778800550,
+  "appDataVersion": 10,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T23:15:50.950024Z",
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v2.4-strict-legacy-known-only",
-  "processedSeasonsInLastRun": [
-    "2018-2019"
-  ],
-  "standingsUpdatedAt": "2026-05-15T02:54:01.598857Z",
-  "standingsBuilderVersion": "standings-builder-v2-fast-safe"
+  "lastUpdated": "2026-05-14T05:19:50Z",
+  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor-web/main/docs/data/"
 }

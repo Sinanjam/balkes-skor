@@ -1,160 +1,53 @@
 {
-  "generatedAt": "2026-05-14T23:15:50.959254Z",
-  "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.4-strict-legacy-known-only",
-  "totalAppMatches": 233,
+  "generatedAt": "2026-05-14T05:19:50Z",
+  "sourceZip": "balkes-tff-veri.zip + TFF-Entegrasyon.zip",
+  "uploadedScan": {
+    "generated_at": "2026-05-11T10:54:26",
+    "mode": "max",
+    "visited_pages": 9000,
+    "team_pages_found": 2855,
+    "fixture_pages_found": 2736,
+    "match_details_found": 117,
+    "standings_snapshots_found": 0,
+    "fixture_windows_found": 81332,
+    "errors": 8,
+    "output_dir": "/home/sinanjam/balkes-tff-veri/processed",
+    "notes": [
+      "Bu araç yalnızca açık TFF HTML sayfalarını gezer; login, gizli API veya korumalı veri kullanmaz.",
+      "sections_raw alanı özellikle korunur: parser kaçırsa bile ilk 11/yedek/gol/kart/değişiklik metni ham olarak saklanır.",
+      "Eksik kalan sezonlar için resmi TFF URLlerini tff_urls.txt dosyasına ekleyip scripti tekrar çalıştırabilirsin; cache kaldığı için kaldığı yerden hızlanır."
+    ]
+  },
+  "convertedProfessionalMatchesFromScan": 104,
+  "skippedOrNonProfessionalDetails": 13,
+  "totalAppMatches": 152,
   "seasons": [
-    {
-      "id": "2025-2026",
-      "name": "2025-2026",
-      "matchCount": 32,
-      "summary": {
-        "matches": 32,
-        "wins": 18,
-        "draws": 7,
-        "losses": 7,
-        "goalsFor": 61,
-        "goalsAgainst": 28,
-        "goalDifference": 33,
-        "matchTypes": {
-          "league": 30,
-          "playoff": 2
-        }
-      }
-    },
-    {
-      "id": "2024-2025",
-      "name": "2024-2025",
-      "matchCount": 33,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 33,
-        "wins": 18,
-        "draws": 6,
-        "losses": 9,
-        "goalsFor": 56,
-        "goalsAgainst": 30,
-        "goalDifference": 26,
-        "matchTypes": {
-          "league": 30,
-          "playoff": 3
-        }
-      }
-    },
-    {
-      "id": "2023-2024",
-      "name": "2023-2024",
-      "matchCount": 28,
-      "competition": "TFF 3. LİG (Profesyonel Takım)",
-      "summary": {
-        "matches": 28,
-        "wins": 7,
-        "draws": 12,
-        "losses": 9,
-        "goalsFor": 28,
-        "goalsAgainst": 32,
-        "goalDifference": -4,
-        "matchTypes": {
-          "league": 28
-        }
-      }
-    },
-    {
-      "id": "2022-2023",
-      "name": "2022-2023",
-      "matchCount": 38,
-      "competition": "TFF 2.Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 38,
-        "wins": 6,
-        "draws": 10,
-        "losses": 22,
-        "goalsFor": 32,
-        "goalsAgainst": 76,
-        "goalDifference": -44,
-        "matchTypes": {
-          "league": 38
-        }
-      }
-    },
-    {
-      "id": "2021-2022",
-      "name": "2021-2022",
-      "matchCount": 36,
-      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 36,
-        "wins": 3,
-        "draws": 3,
-        "losses": 30,
-        "goalsFor": 26,
-        "goalsAgainst": 77,
-        "goalDifference": -51,
-        "matchTypes": {
-          "league": 36
-        }
-      }
-    },
-    {
-      "id": "2020-2021",
-      "name": "2020-2021",
-      "matchCount": 34,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 34,
-        "wins": 9,
-        "draws": 8,
-        "losses": 17,
-        "goalsFor": 35,
-        "goalsAgainst": 53,
-        "goalDifference": -18,
-        "matchTypes": {
-          "league": 34
-        }
-      }
-    },
-    {
-      "id": "2019-2020",
-      "name": "2019-2020",
-      "matchCount": 30,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 30,
-        "wins": 8,
-        "draws": 11,
-        "losses": 11,
-        "goalsFor": 30,
-        "goalsAgainst": 36,
-        "goalDifference": -6,
-        "matchTypes": {
-          "league": 30
-        }
-      }
-    },
-    {
-      "id": "2018-2019",
-      "name": "2018-2019",
-      "matchCount": 2,
-      "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (5.Tur)",
-      "summary": {
-        "matches": 2,
-        "wins": 0,
-        "draws": 1,
-        "losses": 1,
-        "goalsFor": 1,
-        "goalsAgainst": 2,
-        "goalDifference": -1,
-        "matchTypes": {
-          "cup": 1,
-          "league": 1
-        }
-      }
-    }
+    "2025-2026",
+    "2024-2025",
+    "2023-2024",
+    "2022-2023",
+    "2021-2022",
+    "2018-2019",
+    "2009-2010",
+    "1996-1997",
+    "1994-1995",
+    "1992-1993",
+    "1991-1992",
+    "1990-1991"
   ],
-  "playersIndexed": 0,
-  "opponentsIndexed": 97,
+  "standingsSeasons": [
+    "2025-2026"
+  ],
+  "playersIndexed": 41,
+  "opponentsIndexed": 35,
   "notes": [
-    "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
-    "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."
-  ]
+    "Uygulama kullanıcıya ham TFF metni, cache/debug veya kaynak içi teknik bilgi göstermez.",
+    "Büyük taramada haftalık puan durumu çıkmadığı için puan durumu yalnızca 2025-2026 sezonunda hazırdır.",
+    "Fixture window kayıtları çok sayıda ham pencere olduğundan uygulamaya doğrudan maç olarak alınmadı; temiz maç ekranlarında yalnızca detay sayfası doğrulanmış maçlar kullanıldı.",
+    "2021-2022 sezonu TFF-Entegrasyon çıktısından mevcut sezonlar silinmeden güvenli şekilde eklendi.",
+    "Data report totalAppMatches manifest.availableSeasons toplamı ile eşitlendi."
+  ],
+  "source": "TFF açık sayfaları ve Balkes Skor season sync",
+  "coverage": {},
+  "validation": {}
 }

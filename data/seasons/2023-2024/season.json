@@ -1,30 +1,33 @@
 {
   "id": "2023-2024",
   "name": "2023-2024",
-  "competition": "TFF 3. LİG (Profesyonel Takım)",
-  "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.3-targeted-perfect-details-appfix",
-  "updatedAt": "2026-05-14T20:22:36.390187Z",
+  "team": {
+    "id": "balikesirspor",
+    "name": "Balıkesirspor",
+    "tffClubId": "135"
+  },
+  "competition": "TFF 3. LEAGUE (Professional Team)",
+  "group": "",
   "summary": {
-    "matches": 28,
+    "matches": 29,
+    "leagueMatches": 28,
+    "playoffMatches": 0,
+    "cupMatches": 1,
     "wins": 7,
     "draws": 12,
-    "losses": 9,
-    "goalsFor": 27,
-    "goalsAgainst": 30,
-    "goalDifference": -3,
-    "matchTypes": {
-      "league": 28
-    },
+    "losses": 10,
+    "goalsFor": 28,
+    "goalsAgainst": 33,
+    "goalDifference": -5,
     "points": 33,
-    "rawPoints": 33,
-    "pointsDeducted": 0,
-    "finalRank": 10
+    "finalRank": null
   },
   "files": {
     "matchesIndex": "seasons/2023-2024/matches_index.json",
     "standingsByWeek": "seasons/2023-2024/standings_by_week.json"
   },
-  "standingsUpdatedAt": "2026-05-15T02:23:16.358369Z",
-  "standingsBuilderVersion": "standings-builder-v2-fast-safe"
+  "source": {
+    "name": "TFF",
+    "note": "Açık TFF sayfalarından dönüştürülmüş veri"
+  }
 }

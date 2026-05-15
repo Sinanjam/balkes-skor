@@ -1,25 +1,33 @@
 {
   "id": "2018-2019",
   "name": "2018-2019",
-  "competition": "Ziraat Türkiye Kupası (Profesyonel Takım) (5.Tur)",
-  "sourcePolicy": "TFF-only",
-  "factoryVersion": "v2.4-strict-legacy-known-only",
-  "updatedAt": "2026-05-14T23:15:50.945625Z",
+  "team": {
+    "id": "balikesirspor",
+    "name": "Balıkesirspor",
+    "tffClubId": "135"
+  },
+  "competition": "Ziraat Türkiye Kupası (Professional Team)",
+  "group": "",
   "summary": {
     "matches": 2,
+    "leagueMatches": 1,
+    "playoffMatches": 0,
+    "cupMatches": 1,
     "wins": 0,
     "draws": 1,
     "losses": 1,
     "goalsFor": 1,
     "goalsAgainst": 2,
     "goalDifference": -1,
-    "matchTypes": {
-      "cup": 1,
-      "league": 1
-    }
+    "points": 1,
+    "finalRank": null
   },
   "files": {
     "matchesIndex": "seasons/2018-2019/matches_index.json",
     "standingsByWeek": "seasons/2018-2019/standings_by_week.json"
+  },
+  "source": {
+    "name": "TFF",
+    "note": "Açık TFF sayfalarından dönüştürülmüş veri"
   }
 }
