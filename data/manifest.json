@@ -1,96 +1,15 @@
 {
   "app": "Balkes Skor",
-  "schemaVersion": 2,
-  "dataVersion": 9,
-  "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-12T22:06:53.731455Z",
+  "schemaVersion": 3,
+  "generatedAt": "2026-05-15T05:33:53.142185Z",
   "team": "Balıkesirspor",
-  "assets": {
-    "logo": "assets/logo_balkes_skor.png"
-  },
-  "availableSeasons": [
-    {
-      "id": "2025-2026",
-      "name": "2025-2026",
-      "matchCount": 33
-    },
-    {
-      "id": "2024-2025",
-      "name": "2024-2025",
-      "matchCount": 33
-    },
-    {
-      "id": "2023-2024",
-      "name": "2023-2024",
-      "matchCount": 29
-    },
-    {
-      "id": "2022-2023",
-      "name": "2022-2023",
-      "matchCount": 37
-    },
-    {
-      "id": "2021-2022",
-      "name": "2021-2022",
-      "matchCount": 11,
-      "competition": "TRENDYOL SÜPER LİG",
-      "group": "",
-      "summary": {
-        "matches": 11,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
-        "points": null,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2018-2019",
-      "name": "2018-2019",
-      "matchCount": 2
-    },
-    {
-      "id": "2009-2010",
-      "name": "2009-2010",
-      "matchCount": 1
-    },
-    {
-      "id": "1996-1997",
-      "name": "1996-1997",
-      "matchCount": 1
-    },
-    {
-      "id": "1994-1995",
-      "name": "1994-1995",
-      "matchCount": 1
-    },
-    {
-      "id": "1992-1993",
-      "name": "1992-1993",
-      "matchCount": 1
-    },
-    {
-      "id": "1991-1992",
-      "name": "1991-1992",
-      "matchCount": 1
-    },
-    {
-      "id": "1990-1991",
-      "name": "1990-1991",
-      "matchCount": 2
-    }
-  ],
+  "availableSeasons": [],
   "global": {
     "playersIndexUrl": "players_index.json",
     "opponentsIndexUrl": "opponents_index.json",
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 10,
-  "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T05:19:50Z",
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor-web/main/docs/data/"
+  "factoryVersion": "v2.2-no-standings-fixed2",
+  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/"
 }
