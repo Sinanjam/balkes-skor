@@ -4,7 +4,7 @@
   "competition": "TFF 2.Lig (Profesyonel Takım)",
   "sourcePolicy": "TFF senior professional only",
   "factoryVersion": "v3.2-senior-professional-guard-cleaner",
-  "updatedAt": "2026-05-15T17:33:48.406374Z",
+  "updatedAt": "2026-05-15T17:44:28.630013Z",
   "summary": {
     "matches": 38,
     "wins": 6,
@@ -15,12 +15,16 @@
     "goalDifference": -44,
     "matchTypes": {
       "league": 38
-    }
+    },
+    "points": 25,
+    "rawPoints": 25,
+    "pointsDeducted": 0,
+    "finalRank": 17
   },
   "files": {
     "matchesIndex": "seasons/2022-2023/matches_index.json",
     "standingsByWeek": "seasons/2022-2023/standings_by_week.json"
   },
-  "standingsUpdatedAt": "2026-05-15T06:39:30.004362Z",
+  "standingsUpdatedAt": "2026-05-15T18:04:38.089163Z",
   "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }

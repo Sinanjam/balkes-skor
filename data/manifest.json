@@ -2,7 +2,7 @@
   "app": "Balkes Skor",
   "schemaVersion": 3,
   "dataVersion": 1,
-  "generatedAt": "2026-05-15T17:33:48.964643Z",
+  "generatedAt": "2026-05-15T17:44:29.300083Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -35,13 +35,17 @@
         "wins": 18,
         "draws": 6,
         "losses": 9,
-        "goalsFor": 56,
-        "goalsAgainst": 30,
-        "goalDifference": 26,
+        "goalsFor": 54,
+        "goalsAgainst": 27,
+        "goalDifference": 27,
         "matchTypes": {
           "league": 30,
           "playoff": 3
-        }
+        },
+        "points": 56,
+        "rawPoints": 56,
+        "pointsDeducted": 0,
+        "finalRank": 2
       },
       "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
     },
@@ -55,12 +59,16 @@
         "wins": 7,
         "draws": 12,
         "losses": 9,
-        "goalsFor": 28,
-        "goalsAgainst": 32,
-        "goalDifference": -4,
+        "goalsFor": 27,
+        "goalsAgainst": 30,
+        "goalDifference": -3,
         "matchTypes": {
           "league": 28
-        }
+        },
+        "points": 33,
+        "rawPoints": 33,
+        "pointsDeducted": 0,
+        "finalRank": 8
       },
       "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
     },
@@ -79,7 +87,11 @@
         "goalDifference": -44,
         "matchTypes": {
           "league": 38
-        }
+        },
+        "points": 25,
+        "rawPoints": 25,
+        "pointsDeducted": 0,
+        "finalRank": 17
       },
       "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
     },
@@ -309,5 +321,7 @@
   },
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v3.2-senior-professional-guard-cleaner",
-  "seniorProfessionalGuard": true
+  "seniorProfessionalGuard": true,
+  "standingsUpdatedAt": "2026-05-15T18:04:38.090138Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }
