@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-05-16T05:08:39.692294Z",
+  "generatedAt": "2026-05-16T05:14:04.760966Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v3.2-senior-professional-guard",
   "processed": [
     {
-      "season": "2005-2006",
+      "season": "2001-2002",
       "skipped": true,
       "skipReason": "amateur_season_no_official_tff_match_detail_no_scan",
       "selectedIds": 0,
@@ -22,15 +22,15 @@
       "balkesTableFound": false,
       "matchTypeCounts": {},
       "seasonGuard": {
-        "start": "2005-07-01",
-        "end": "2006-06-30"
+        "start": "2001-07-01",
+        "end": "2002-06-30"
       },
-      "generatedAt": "2026-05-16T05:08:39.675142Z"
+      "generatedAt": "2026-05-16T05:14:04.749835Z"
     },
     {
-      "season": "2004-2005",
+      "season": "2000-2001",
       "skipped": true,
-      "skipReason": "amateur_season_no_official_tff_match_detail_no_scan",
+      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
       "selectedIds": 0,
       "allDiscoveredIds": 0,
       "detailCandidates": 0,
@@ -45,15 +45,15 @@
       "balkesTableFound": false,
       "matchTypeCounts": {},
       "seasonGuard": {
-        "start": "2004-07-01",
-        "end": "2005-06-30"
+        "start": "2000-07-01",
+        "end": "2001-06-30"
       },
-      "generatedAt": "2026-05-16T05:08:39.675471Z"
+      "generatedAt": "2026-05-16T05:14:04.750192Z"
     },
     {
-      "season": "2003-2004",
+      "season": "1999-2000",
       "skipped": true,
-      "skipReason": "amateur_season_no_official_tff_match_detail_no_scan",
+      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
       "selectedIds": 0,
       "allDiscoveredIds": 0,
       "detailCandidates": 0,
@@ -68,15 +68,15 @@
       "balkesTableFound": false,
       "matchTypeCounts": {},
       "seasonGuard": {
-        "start": "2003-07-01",
-        "end": "2004-06-30"
+        "start": "1999-07-01",
+        "end": "2000-06-30"
       },
-      "generatedAt": "2026-05-16T05:08:39.675719Z"
+      "generatedAt": "2026-05-16T05:14:04.750438Z"
     },
     {
-      "season": "2002-2003",
+      "season": "1998-1999",
       "skipped": true,
-      "skipReason": "amateur_season_no_official_tff_match_detail_no_scan",
+      "skipReason": "legacy_professional_missing_exact_tff_target_no_blind_scan",
       "selectedIds": 0,
       "allDiscoveredIds": 0,
       "detailCandidates": 0,
@@ -91,10 +91,10 @@
       "balkesTableFound": false,
       "matchTypeCounts": {},
       "seasonGuard": {
-        "start": "2002-07-01",
-        "end": "2003-06-30"
+        "start": "1998-07-01",
+        "end": "1999-06-30"
       },
-      "generatedAt": "2026-05-16T05:08:39.675963Z"
+      "generatedAt": "2026-05-16T05:14:04.750662Z"
     }
   ],
   "after": {
