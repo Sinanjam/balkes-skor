@@ -3,7 +3,7 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-16T05:14:04.753523Z",
+  "generatedAt": "2026-05-16T06:08:45.934241Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -147,46 +147,6 @@
       }
     },
     {
-      "id": "1996-1997",
-      "name": "1996-1997",
-      "matchCount": 1,
-      "competition": "Lig B Klasman (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 0,
-        "goalsAgainst": 2,
-        "goalDifference": -2,
-        "points": 0,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "1994-1995",
-      "name": "1994-1995",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 0,
-        "goalsAgainst": 3,
-        "goalDifference": -3,
-        "points": 0,
-        "finalRank": null
-      }
-    },
-    {
       "id": "1992-1993",
       "name": "1992-1993",
       "matchCount": 1,
@@ -253,15 +213,15 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778908444,
+  "appDataVersion": 1778911725,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-16T05:14:04.753534Z",
+  "lastUpdated": "2026-05-16T06:08:45.934251Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v3.2-senior-professional-guard",
   "processedSeasonsInLastRun": [
-    "2001-2002",
-    "2000-2001",
-    "1999-2000",
-    "1998-1999"
+    "1997-1998",
+    "1996-1997",
+    "1995-1996",
+    "1994-1995"
   ]
 }

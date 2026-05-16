@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-16T05:14:04.760539Z",
+  "generatedAt": "2026-05-16T06:08:45.940554Z",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v3.2-senior-professional-guard",
-  "totalAppMatches": 152,
+  "totalAppMatches": 150,
   "seasons": [
     {
       "id": "2025-2026",
@@ -145,46 +145,6 @@
       }
     },
     {
-      "id": "1996-1997",
-      "name": "1996-1997",
-      "matchCount": 1,
-      "competition": "Lig B Klasman (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 0,
-        "goalsAgainst": 2,
-        "goalDifference": -2,
-        "points": 0,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "1994-1995",
-      "name": "1994-1995",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 1,
-        "goalsFor": 0,
-        "goalsAgainst": 3,
-        "goalDifference": -3,
-        "points": 0,
-        "finalRank": null
-      }
-    },
-    {
       "id": "1992-1993",
       "name": "1992-1993",
       "matchCount": 1,
@@ -246,7 +206,7 @@
     }
   ],
   "playersIndexed": 0,
-  "opponentsIndexed": 75,
+  "opponentsIndexed": 74,
   "notes": [
     "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
     "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."

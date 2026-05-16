@@ -1,0 +1,261 @@
+{
+  "season": "1994-1995",
+  "selectedIds": 35,
+  "allDiscoveredIds": 537,
+  "detailCandidates": 35,
+  "candidateMode": "legacy_pageid_probe_selected_or_known",
+  "knownOnly": false,
+  "plannedTarget": false,
+  "legacyPageIdProbe": true,
+  "legacyProbeDiagnostics": [
+    {
+      "kind": "page_fast_skip",
+      "pageID": 315,
+      "error": "timeout"
+    },
+    {
+      "kind": "page_fast_skip",
+      "pageID": 318,
+      "error": "timeout"
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 324,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_week_fast_skip",
+      "pageID": 324,
+      "error": "timeout",
+      "week": 3,
+      "cumulative": 1
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 335,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 371,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 373,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 376,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 410,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 456,
+      "grupID": "1627",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 458,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 138,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 488,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    }
+  ],
+  "matchesPublished": 0,
+  "detailFiles": 1,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "date_out_of_season:2018-08-12": 1,
+    "date_out_of_season:2018-08-19": 1,
+    "date_out_of_season:2018-08-26": 1,
+    "date_out_of_season:2018-09-01": 1,
+    "date_out_of_season:2018-09-17": 1,
+    "date_out_of_season:2018-09-23": 1,
+    "date_out_of_season:2018-09-30": 1,
+    "date_out_of_season:2018-10-07": 1,
+    "date_out_of_season:2018-10-20": 1,
+    "date_out_of_season:2018-10-28": 1,
+    "date_out_of_season:2018-11-05": 1,
+    "date_out_of_season:2018-11-10": 1,
+    "date_out_of_season:2018-11-23": 1,
+    "date_out_of_season:2018-12-01": 1,
+    "date_out_of_season:2018-12-10": 1,
+    "date_out_of_season:2018-12-15": 1,
+    "date_out_of_season:2018-12-23": 1,
+    "date_out_of_season:2019-01-20": 1,
+    "date_out_of_season:2019-01-27": 1,
+    "date_out_of_season:2019-02-01": 1,
+    "date_out_of_season:2019-02-10": 1,
+    "date_out_of_season:2019-02-16": 1,
+    "date_out_of_season:2019-02-22": 1,
+    "date_out_of_season:2019-03-03": 1,
+    "date_out_of_season:2019-03-10": 1,
+    "date_out_of_season:2019-03-17": 1,
+    "date_out_of_season:2019-04-03": 1,
+    "date_out_of_season:2019-04-06": 1,
+    "date_out_of_season:2019-04-14": 1,
+    "date_out_of_season:2019-04-22": 1,
+    "date_out_of_season:2019-04-28": 1,
+    "date_out_of_season:2019-05-05": 1,
+    "date_out_of_season:2019-05-12": 1,
+    "date_out_of_season:2019-05-17": 1,
+    "date_out_of_season:2024-10-08": 1
+  },
+  "rejectedSamples": {
+    "date_out_of_season:2018-08-12": [
+      "195434"
+    ],
+    "date_out_of_season:2018-08-19": [
+      "195448"
+    ],
+    "date_out_of_season:2018-08-26": [
+      "195455"
+    ],
+    "date_out_of_season:2018-09-01": [
+      "195462"
+    ],
+    "date_out_of_season:2018-09-17": [
+      "195474"
+    ],
+    "date_out_of_season:2018-09-23": [
+      "195479"
+    ],
+    "date_out_of_season:2018-09-30": [
+      "195487"
+    ],
+    "date_out_of_season:2018-10-07": [
+      "195502"
+    ],
+    "date_out_of_season:2018-10-20": [
+      "195509"
+    ],
+    "date_out_of_season:2018-10-28": [
+      "195519"
+    ],
+    "date_out_of_season:2018-11-05": [
+      "195524"
+    ],
+    "date_out_of_season:2018-11-10": [
+      "195537"
+    ],
+    "date_out_of_season:2018-11-23": [
+      "195543"
+    ],
+    "date_out_of_season:2018-12-01": [
+      "195550"
+    ],
+    "date_out_of_season:2018-12-10": [
+      "195565"
+    ],
+    "date_out_of_season:2018-12-15": [
+      "195567"
+    ],
+    "date_out_of_season:2018-12-23": [
+      "195582"
+    ],
+    "date_out_of_season:2019-01-20": [
+      "195587"
+    ],
+    "date_out_of_season:2019-01-27": [
+      "195601"
+    ],
+    "date_out_of_season:2019-02-01": [
+      "195608"
+    ],
+    "date_out_of_season:2019-02-10": [
+      "195615"
+    ],
+    "date_out_of_season:2019-02-16": [
+      "195627"
+    ],
+    "date_out_of_season:2019-02-22": [
+      "195632"
+    ],
+    "date_out_of_season:2019-03-03": [
+      "195640"
+    ],
+    "date_out_of_season:2019-03-10": [
+      "195655"
+    ],
+    "date_out_of_season:2019-03-17": [
+      "195662"
+    ],
+    "date_out_of_season:2019-04-03": [
+      "195672"
+    ],
+    "date_out_of_season:2019-04-06": [
+      "195677"
+    ],
+    "date_out_of_season:2019-04-14": [
+      "195690"
+    ],
+    "date_out_of_season:2019-04-22": [
+      "195696"
+    ],
+    "date_out_of_season:2019-04-28": [
+      "195703"
+    ],
+    "date_out_of_season:2019-05-05": [
+      "195718"
+    ],
+    "date_out_of_season:2019-05-12": [
+      "195720"
+    ],
+    "date_out_of_season:2019-05-17": [
+      "195735"
+    ],
+    "date_out_of_season:2024-10-08": [
+      "271250"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {},
+  "seasonGuard": {
+    "start": "1994-07-01",
+    "end": "1995-06-30"
+  },
+  "generatedAt": "2026-05-16T06:08:45.930500Z",
+  "seniorProfessionalGuard": {
+    "total": 0,
+    "league": 0,
+    "played": 0,
+    "badCompetitions": [],
+    "reasons": [
+      "empty_season",
+      "too_few_matches:0",
+      "too_few_league_matches:0"
+    ]
+  },
+  "publicationSuppressed": true,
+  "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+}
