@@ -14,3 +14,6 @@ echo "v3.3 targeted patch hazır."
 echo "Mevcut datayı baştan başlamadan temizlemek için:"
 echo "python3 scripts/clean_bad_professional_data_v33.py --data-root data --reports-root reports/tff_factory --write"
 echo "python3 scripts/validate_target_data_v33.py --data-root data --reports-root reports/tff_factory --strict"
+
+# Local Python cache files are never part of the patch.
+rm -rf scripts/__pycache__ 2>/dev/null; or true

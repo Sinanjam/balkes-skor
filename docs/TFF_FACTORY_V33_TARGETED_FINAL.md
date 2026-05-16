@@ -52,3 +52,10 @@ python3 scripts/validate_target_data_v33.py --data-root data --reports-root repo
 - `reports/tff_factory/professional_guard_v33_summary.json`
 - `reports/tff_factory/target_validation_v33.json`
 - `reports/tff_chain/*.json`
+
+
+## v3.3.1 live-data safety gate
+
+The chain workflow refuses to push `main/data` when a group fails or times out and the generated manifest is empty. It also refuses any empty live manifest even if the process exits cleanly. This prevents a failed clean rebuild from replacing the app's live data with `availableSeasons: []`.
+
+Manual clean runs use the same empty-manifest guard before commit/push.

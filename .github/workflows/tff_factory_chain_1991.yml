@@ -226,6 +226,43 @@ jobs:
         shell: bash
         run: |
           set -e
+          RUN_STATUS="${{ steps.rungroup.outputs.status }}"
+          AVAILABLE_SEASONS=$(python - <<'PY'
+import json
+from pathlib import Path
+p = Path("data/manifest.json")
+try:
+    m = json.loads(p.read_text(encoding="utf-8"))
+    print(len(m.get("availableSeasons") or []))
+except Exception:
+    print(0)
+PY
+          )
+          TOTAL_MATCHES=$(python - <<'PY'
+import json
+from pathlib import Path
+p = Path("data/data_report.json")
+try:
+    r = json.loads(p.read_text(encoding="utf-8"))
+    print(int(r.get("totalAppMatches") or 0))
+except Exception:
+    print(0)
+PY
+          )
+          echo "Safety gate: status=$RUN_STATUS availableSeasons=$AVAILABLE_SEASONS totalAppMatches=$TOTAL_MATCHES"
+          if [ "$RUN_STATUS" != "success" ] && { [ "$AVAILABLE_SEASONS" = "0" ] || [ "$TOTAL_MATCHES" = "0" ]; }; then
+            echo "::warning::Refusing to push empty data from failed/timeout group. Artifact upload will still keep diagnostics."
+            git checkout -- data reports/tff_factory reports/standings sources/tff/registry sources/tff/state .gitignore 2>/dev/null || true
+            git clean -fd data reports/tff_factory reports/standings sources/tff/registry sources/tff/state 2>/dev/null || true
+            exit 0
+          fi
+          if [ "$AVAILABLE_SEASONS" = "0" ] || [ "$TOTAL_MATCHES" = "0" ]; then
+            echo "::warning::Refusing to push an empty live data manifest. This protects the app from blank main/data."
+            git checkout -- data reports/tff_factory reports/standings sources/tff/registry sources/tff/state .gitignore 2>/dev/null || true
+            git clean -fd data reports/tff_factory reports/standings sources/tff/registry sources/tff/state 2>/dev/null || true
+            exit 0
+          fi
+
           git add -A data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state .gitignore
           git reset -- sources/tff/raw || true
           git reset -- sources/tff/standings_raw || true

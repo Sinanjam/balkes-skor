@@ -3,3 +3,6 @@ sources/tff/standings_raw/
 reports/tff_factory/backups/
 reports/standings/*.log
 *.html.error.txt
+
+__pycache__/
+*.pyc
