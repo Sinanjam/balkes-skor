@@ -1,10 +1,10 @@
 {
-  "start_season": "2025-2026",
+  "start_season": "2021-2022",
   "end_year": 1990,
   "group_size": 4,
   "wait_minutes": 5,
   "group_timeout_minutes": 300,
-  "clean_all_before_start": true,
+  "clean_all_before_start": false,
   "auto_push_main": true,
   "skip_standings": false,
   "standings_mode": "auto",
@@ -14,5 +14,7 @@
   "legacy_broad_probe_limit": 350,
   "strict_legacy_targets": true,
   "chain_label": "chain-1991-v34-safe",
-  "updated_at": "2026-05-16T22:28:04.974179Z"
+  "updated_at": "2026-05-16T22:59:56.276996Z",
+  "last_group": "2025-2026..2022-2023",
+  "last_status": "success"
 }
