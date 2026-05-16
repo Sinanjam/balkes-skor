@@ -1,309 +1,223 @@
 {
-  "generatedAt": "2026-05-16T06:29:29.397255Z",
+  "generatedAt": "2026-05-16T22:35:50.011609Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
-  "factoryVersion": "v3.2-senior-professional-guard",
+  "factoryVersion": "v3.4-targeted-safe-chain",
   "processed": [
     {
-      "season": "1993-1994",
-      "selectedIds": 0,
-      "allDiscoveredIds": 336,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
+      "season": "2025-2026",
+      "selectedIds": 86,
+      "allDiscoveredIds": 986,
+      "detailCandidates": 86,
+      "candidateMode": "selected_or_known",
       "knownOnly": false,
       "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 324,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 335,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 371,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 373,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 376,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 410,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 0,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 32,
+      "detailFiles": 32,
       "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
+      "rejectedReasons": {
+        "balkes_not_found": 54
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "285616",
+          "285619",
+          "285624",
+          "285625",
+          "285628",
+          "285639",
+          "285641",
+          "285642",
+          "285648",
+          "285654",
+          "285657",
+          "285659",
+          "285660",
+          "285673",
+          "285675",
+          "285676",
+          "285683",
+          "285690",
+          "285692",
+          "285695"
+        ]
+      },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
-      "matchTypeCounts": {},
+      "matchTypeCounts": {
+        "league": 30,
+        "playoff": 2
+      },
       "seasonGuard": {
-        "start": "1993-07-01",
-        "end": "1994-06-30"
+        "start": "2025-07-01",
+        "end": "2026-06-30"
       },
-      "generatedAt": "2026-05-16T06:18:41.440625Z",
-      "seniorProfessionalGuard": {
-        "total": 0,
-        "league": 0,
-        "played": 0,
-        "badCompetitions": [],
-        "reasons": [
-          "empty_season",
-          "too_few_matches:0",
-          "too_few_league_matches:0"
-        ]
-      },
-      "publicationSuppressed": true,
-      "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+      "generatedAt": "2026-05-16T22:29:33.408656Z"
     },
     {
-      "season": "1992-1993",
-      "selectedIds": 0,
-      "allDiscoveredIds": 710,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
+      "season": "2024-2025",
+      "selectedIds": 81,
+      "allDiscoveredIds": 986,
+      "detailCandidates": 81,
+      "candidateMode": "selected_or_known",
       "knownOnly": false,
-      "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 161,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 174,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 324,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 335,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 371,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 373,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 376,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 1,
+      "plannedTarget": true,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 33,
+      "detailFiles": 33,
       "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
+      "rejectedReasons": {
+        "balkes_not_found": 48
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "265583",
+          "265590",
+          "265592",
+          "265599",
+          "265608",
+          "265613",
+          "265618",
+          "265621",
+          "265622",
+          "265628",
+          "265636",
+          "265638",
+          "265640",
+          "265647",
+          "265661",
+          "265662",
+          "265665",
+          "265670",
+          "265674",
+          "265679"
+        ]
+      },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
-      "matchTypeCounts": {},
+      "matchTypeCounts": {
+        "league": 30,
+        "playoff": 3
+      },
       "seasonGuard": {
-        "start": "1992-07-01",
-        "end": "1993-06-30"
+        "start": "2024-07-01",
+        "end": "2025-06-30"
       },
-      "generatedAt": "2026-05-16T06:23:25.265287Z",
-      "seniorProfessionalGuard": {
-        "total": 0,
-        "league": 0,
-        "played": 0,
-        "badCompetitions": [],
-        "reasons": [
-          "empty_season",
-          "too_few_matches:0",
-          "too_few_league_matches:0"
-        ]
-      },
-      "publicationSuppressed": true,
-      "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+      "generatedAt": "2026-05-16T22:31:30.961552Z"
     },
     {
-      "season": "1991-1992",
-      "selectedIds": 0,
-      "allDiscoveredIds": 710,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
+      "season": "2023-2024",
+      "selectedIds": 78,
+      "allDiscoveredIds": 866,
+      "detailCandidates": 78,
+      "candidateMode": "selected_or_known",
       "knownOnly": false,
-      "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 119,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_week_fast_skip",
-          "pageID": 119,
-          "error": "timeout",
-          "week": 7,
-          "cumulative": 1
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 161,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 174,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 1,
+      "plannedTarget": true,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 28,
+      "detailFiles": 28,
       "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
+      "rejectedReasons": {
+        "balkes_not_found": 50
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "251166",
+          "251167",
+          "251173",
+          "251174",
+          "251181",
+          "251184",
+          "251191",
+          "251193",
+          "251197",
+          "251202",
+          "251206",
+          "251212",
+          "251216",
+          "251218",
+          "251221",
+          "251227",
+          "251230",
+          "251232",
+          "251241",
+          "251245"
+        ]
+      },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
-      "matchTypeCounts": {},
+      "matchTypeCounts": {
+        "league": 28
+      },
       "seasonGuard": {
-        "start": "1991-07-01",
-        "end": "1992-06-30"
+        "start": "2023-07-01",
+        "end": "2024-06-30"
       },
-      "generatedAt": "2026-05-16T06:26:40.533284Z",
-      "seniorProfessionalGuard": {
-        "total": 0,
-        "league": 0,
-        "played": 0,
-        "badCompetitions": [],
-        "reasons": [
-          "empty_season",
-          "too_few_matches:0",
-          "too_few_league_matches:0"
-        ]
-      },
-      "publicationSuppressed": true,
-      "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+      "generatedAt": "2026-05-16T22:33:24.237656Z"
     },
     {
-      "season": "1990-1991",
-      "selectedIds": 0,
-      "allDiscoveredIds": 710,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
+      "season": "2022-2023",
+      "selectedIds": 108,
+      "allDiscoveredIds": 735,
+      "detailCandidates": 108,
+      "candidateMode": "selected_or_known",
       "knownOnly": false,
-      "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 119,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 161,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 174,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 2,
+      "plannedTarget": true,
+      "legacyPageIdProbe": false,
+      "legacyProbeDiagnostics": [],
+      "matchesPublished": 38,
+      "detailFiles": 38,
       "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
+      "rejectedReasons": {
+        "balkes_not_found": 70
+      },
+      "rejectedSamples": {
+        "balkes_not_found": [
+          "235736",
+          "235739",
+          "235743",
+          "235750",
+          "235752",
+          "235766",
+          "235769",
+          "235771",
+          "235772",
+          "235780",
+          "235791",
+          "235795",
+          "235799",
+          "235811",
+          "235815",
+          "235818",
+          "235821",
+          "235831",
+          "235837",
+          "235839"
+        ]
+      },
       "standingsSkipped": true,
       "standingsSnapshots": 0,
       "balkesTableFound": false,
-      "matchTypeCounts": {},
+      "matchTypeCounts": {
+        "league": 38
+      },
       "seasonGuard": {
-        "start": "1990-07-01",
-        "end": "1991-06-30"
+        "start": "2022-07-01",
+        "end": "2023-06-30"
       },
-      "generatedAt": "2026-05-16T06:29:29.388589Z",
-      "seniorProfessionalGuard": {
-        "total": 0,
-        "league": 0,
-        "played": 0,
-        "badCompetitions": [],
-        "reasons": [
-          "empty_season",
-          "too_few_matches:0",
-          "too_few_league_matches:0"
-        ]
-      },
-      "publicationSuppressed": true,
-      "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+      "generatedAt": "2026-05-16T22:35:50.002815Z"
     }
   ],
   "after": {
-    "seasons": 7,
-    "matches": 146
+    "seasons": 4,
+    "matches": 131
   },
   "safeToPush": true
 }

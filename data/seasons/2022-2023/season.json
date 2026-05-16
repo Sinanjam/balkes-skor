@@ -1,0 +1,64 @@
+{
+  "id": "2022-2023",
+  "name": "2022-2023",
+  "competition": "TFF 2.Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.4-summary-standings-reconcile",
+  "updatedAt": "2026-05-16T22:54:45.580366Z",
+  "summary": {
+    "matches": 38,
+    "played": 38,
+    "wins": 6,
+    "draws": 10,
+    "losses": 22,
+    "goalsFor": 32,
+    "goalsAgainst": 76,
+    "goalDifference": -44,
+    "matchTypes": {
+      "league": 38
+    },
+    "leagueMatchStats": {
+      "matches": 38,
+      "played": 38,
+      "wins": 6,
+      "draws": 10,
+      "losses": 22,
+      "goalsFor": 32,
+      "goalsAgainst": 76,
+      "goalDifference": -44,
+      "pointsFromResults": 28,
+      "matchTypes": {
+        "league": 38
+      }
+    },
+    "leagueTable": {
+      "rank": 17,
+      "team": "Balıkesirspor",
+      "played": 38,
+      "won": 6,
+      "drawn": 10,
+      "lost": 22,
+      "goalsFor": 32,
+      "goalsAgainst": 76,
+      "goalDifference": -44,
+      "points": 25,
+      "rawPoints": 28,
+      "pointsDeducted": 3,
+      "penaltyNote": "v3.4 inferred from official table: 3 point deduction",
+      "source": "official_tff_weekly_table"
+    },
+    "points": 25,
+    "rawPoints": 28,
+    "pointsDeducted": 3,
+    "finalRank": 17,
+    "warnings": [
+      "inferred_points_deduction:3"
+    ]
+  },
+  "files": {
+    "matchesIndex": "seasons/2022-2023/matches_index.json",
+    "standingsByWeek": "seasons/2022-2023/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-16T22:54:45.508681Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}

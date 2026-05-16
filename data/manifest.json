@@ -1,12 +1,8 @@
 {
   "app": "Balkes Skor",
   "schemaVersion": 3,
-<<<<<<< HEAD
-  "generatedAt": "2026-05-16T20:30:52.757765Z",
-=======
   "dataVersion": 1,
-  "generatedAt": "2026-05-16T19:17:15.169394Z",
->>>>>>> parent of 6ffd69c (Target chain 2025-2026..2022-2023: failed)
+  "generatedAt": "2026-05-16T22:54:45.580722Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -16,6 +12,7 @@
       "competition": "Nesine 3. Lig (Profesyonel Takım)",
       "summary": {
         "matches": 32,
+        "played": 32,
         "wins": 18,
         "draws": 7,
         "losses": 7,
@@ -23,10 +20,196 @@
         "goalsAgainst": 28,
         "goalDifference": 33,
         "matchTypes": {
-          "league": 32
+          "league": 30,
+          "playoff": 2
+        },
+        "leagueMatchStats": {
+          "matches": 30,
+          "played": 30,
+          "wins": 17,
+          "draws": 7,
+          "losses": 6,
+          "goalsFor": 59,
+          "goalsAgainst": 24,
+          "goalDifference": 35,
+          "pointsFromResults": 58,
+          "matchTypes": {
+            "league": 30,
+            "playoff": 2
+          }
         }
       },
       "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
+    },
+    {
+      "id": "2024-2025",
+      "name": "2024-2025",
+      "matchCount": 33,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 33,
+        "played": 33,
+        "wins": 18,
+        "draws": 6,
+        "losses": 9,
+        "goalsFor": 56,
+        "goalsAgainst": 30,
+        "goalDifference": 26,
+        "matchTypes": {
+          "league": 30,
+          "playoff": 3
+        },
+        "leagueMatchStats": {
+          "matches": 30,
+          "played": 30,
+          "wins": 17,
+          "draws": 5,
+          "losses": 8,
+          "goalsFor": 54,
+          "goalsAgainst": 27,
+          "goalDifference": 27,
+          "pointsFromResults": 56,
+          "matchTypes": {
+            "league": 30,
+            "playoff": 3
+          }
+        },
+        "leagueTable": {
+          "rank": 2,
+          "team": "Balıkesirspor",
+          "played": 30,
+          "won": 17,
+          "drawn": 5,
+          "lost": 8,
+          "goalsFor": 54,
+          "goalsAgainst": 27,
+          "goalDifference": 27,
+          "points": 56,
+          "rawPoints": 56,
+          "pointsDeducted": 0,
+          "penaltyNote": "",
+          "source": "official_tff_weekly_table"
+        },
+        "points": 56,
+        "rawPoints": 56,
+        "pointsDeducted": 0,
+        "finalRank": 2
+      },
+      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
+    },
+    {
+      "id": "2023-2024",
+      "name": "2023-2024",
+      "matchCount": 28,
+      "competition": "TFF 3. LİG (Profesyonel Takım)",
+      "summary": {
+        "matches": 28,
+        "played": 28,
+        "wins": 7,
+        "draws": 12,
+        "losses": 9,
+        "goalsFor": 28,
+        "goalsAgainst": 32,
+        "goalDifference": -4,
+        "matchTypes": {
+          "league": 28
+        },
+        "leagueMatchStats": {
+          "matches": 28,
+          "played": 28,
+          "wins": 7,
+          "draws": 12,
+          "losses": 9,
+          "goalsFor": 28,
+          "goalsAgainst": 32,
+          "goalDifference": -4,
+          "pointsFromResults": 33,
+          "matchTypes": {
+            "league": 28
+          }
+        },
+        "leagueTable": {
+          "rank": 8,
+          "team": "Balıkesirspor",
+          "played": 27,
+          "won": 7,
+          "drawn": 12,
+          "lost": 8,
+          "goalsFor": 27,
+          "goalsAgainst": 30,
+          "goalDifference": -3,
+          "points": 33,
+          "rawPoints": 33,
+          "pointsDeducted": 0,
+          "penaltyNote": "",
+          "source": "official_tff_weekly_table"
+        },
+        "points": 33,
+        "rawPoints": 33,
+        "pointsDeducted": 0,
+        "finalRank": 8,
+        "warnings": [
+          "official_table_differs_from_match_index:played:table=27,matches=28;lost:table=8,matches=9;goalsFor:table=27,matches=28;goalsAgainst:table=30,matches=32;goalDifference:table=-3,matches=-4"
+        ]
+      },
+      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
+    },
+    {
+      "id": "2022-2023",
+      "name": "2022-2023",
+      "matchCount": 38,
+      "competition": "TFF 2.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 38,
+        "played": 38,
+        "wins": 6,
+        "draws": 10,
+        "losses": 22,
+        "goalsFor": 32,
+        "goalsAgainst": 76,
+        "goalDifference": -44,
+        "matchTypes": {
+          "league": 38
+        },
+        "leagueMatchStats": {
+          "matches": 38,
+          "played": 38,
+          "wins": 6,
+          "draws": 10,
+          "losses": 22,
+          "goalsFor": 32,
+          "goalsAgainst": 76,
+          "goalDifference": -44,
+          "pointsFromResults": 28,
+          "matchTypes": {
+            "league": 38
+          }
+        },
+        "leagueTable": {
+          "rank": 17,
+          "team": "Balıkesirspor",
+          "played": 38,
+          "won": 6,
+          "drawn": 10,
+          "lost": 22,
+          "goalsFor": 32,
+          "goalsAgainst": 76,
+          "goalDifference": -44,
+          "points": 25,
+          "rawPoints": 28,
+          "pointsDeducted": 3,
+          "penaltyNote": "v3.4 inferred from official table: 3 point deduction",
+          "source": "official_tff_weekly_table"
+        },
+        "points": 25,
+        "rawPoints": 28,
+        "pointsDeducted": 3,
+        "finalRank": 17,
+        "warnings": [
+          "inferred_points_deduction:3"
+        ]
+      },
+      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
     }
   ],
   "global": {
@@ -36,6 +219,9 @@
     "dataReportUrl": "data_report.json"
   },
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v3.3-targeted-professional-cleaner",
-  "targetedSeniorProfessionalGuard": true
+  "factoryVersion": "v3.4-summary-standings-reconcile",
+  "targetedSeniorProfessionalGuard": true,
+  "standingsUpdatedAt": "2026-05-16T22:54:45.509438Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe",
+  "safeToPush": true
 }

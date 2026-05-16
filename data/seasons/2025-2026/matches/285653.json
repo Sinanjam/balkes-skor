@@ -1,730 +1,29 @@
 {
   "id": "285653",
-  "tff_match_id": "285653",
+  "matchCode": "4764",
   "season": "2025-2026",
   "competition": "Nesine 3. Lig (Profesyonel Takım)",
-  "group": "04. Grup",
-  "roundType": "league",
-  "week": 6,
-  "stage": "6. Hafta",
+  "competitionType": "league",
+  "competitionLabel": "Lig",
+  "stadium": "ALANYA MİLLİ EGEMENLİK STADI - ANTALYA - ALANYA",
+  "venue": "ALANYA MİLLİ EGEMENLİK STADI - ANTALYA - ALANYA",
+  "stage": "Lig",
+  "stageLabel": "Lig",
   "date": "2025-10-12",
   "time": "15:30",
-  "dateDisplay": "12.10.2025 - 15:30",
+  "dateDisplay": "2025-10-12 - 15:30",
   "homeTeam": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
   "awayTeam": "Balıkesirspor",
-  "homeTeamRaw": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-  "awayTeamRaw": "NEV SAĞLIK GRUBU BALIKESİRSPOR",
+  "matchType": "league",
+  "matchTypeLabel": "Lig",
+  "type": "league",
+  "typeLabel": "Lig",
   "score": {
     "home": 0,
     "away": 2,
     "display": "0-2",
     "played": true
   },
-  "source": {
-    "name": "TFF",
-    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285653"
-  },
-  "sourceWeekPage": "https://www.tff.org/Default.aspx?grupID=2786&hafta=6&pageID=971",
-  "match_code": "4764",
-  "venue": "ALANYA MİLLİ EGEMENLİK STADI - ANTALYA - ALANYA",
-  "referees": [
-    {
-      "name": "RAMAZAN DOĞANAY",
-      "role_tr": "Hakem",
-      "raw": "RAMAZAN DOĞANAY(Hakem)",
-      "person_url": "https://www.tff.org/Default.aspx?pageId=72&hakemId=1483868"
-    },
-    {
-      "name": "SELİM GÖKSU",
-      "role_tr": "1. Yardımcı Hakem",
-      "raw": "SELİM GÖKSU(1. Yardımcı Hakem)",
-      "person_url": "https://www.tff.org/Default.aspx?pageId=72&hakemId=2100103"
-    },
-    {
-      "name": "MUSTAFA BAŞOL SORGUNLU",
-      "role_tr": "2. Yardımcı Hakem",
-      "raw": "MUSTAFA BAŞOL SORGUNLU(2. Yardımcı Hakem)",
-      "person_url": "https://www.tff.org/Default.aspx?pageId=72&hakemId=1834455"
-    },
-    {
-      "name": "CENK ULUÇINAR",
-      "role_tr": "Dördüncü Hakem",
-      "raw": "CENK ULUÇINAR(Dördüncü Hakem)",
-      "person_url": "https://www.tff.org/Default.aspx?pageId=72&hakemId=2272324"
-    }
-  ],
-  "lineups": {
-    "home": {
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "team_raw": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "starting11": [
-        {
-          "shirt_no": "53.",
-          "name": "İLKER GÜNAY",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=865359",
-          "tff_person_id": "865359"
-        },
-        {
-          "shirt_no": "5.",
-          "name": "ERDİ BAKIRCI",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=692794",
-          "tff_person_id": "692794"
-        },
-        {
-          "shirt_no": "6.",
-          "name": "İSMAİL ÇARKACI",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1993368",
-          "tff_person_id": "1993368"
-        },
-        {
-          "shirt_no": "9.",
-          "name": "SAMET AYDIN",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1398749",
-          "tff_person_id": "1398749"
-        },
-        {
-          "shirt_no": "10.",
-          "name": "OĞUZHAN SİVRİKAYA",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2552633",
-          "tff_person_id": "2552633"
-        },
-        {
-          "shirt_no": "11.",
-          "name": "UĞURCAN İKİKARDEŞ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1661069",
-          "tff_person_id": "1661069"
-        },
-        {
-          "shirt_no": "14.",
-          "name": "BURAK ÖZDEMİR",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1512365",
-          "tff_person_id": "1512365"
-        },
-        {
-          "shirt_no": "20.",
-          "name": "EMİRHAN MISIR",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1912059",
-          "tff_person_id": "1912059"
-        },
-        {
-          "shirt_no": "22.",
-          "name": "EYÜP OSKAN",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1534756",
-          "tff_person_id": "1534756"
-        },
-        {
-          "shirt_no": "26.",
-          "name": "ALPER DEMİR",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1841303",
-          "tff_person_id": "1841303"
-        },
-        {
-          "shirt_no": "30.",
-          "name": "HASAN YURTSEVEN",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1552003",
-          "tff_person_id": "1552003"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "1.",
-          "name": "MUSA KOÇ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1942792",
-          "tff_person_id": "1942792"
-        },
-        {
-          "shirt_no": "7.",
-          "name": "YUNUS EMRE ÖZDEMİR",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1731171",
-          "tff_person_id": "1731171"
-        },
-        {
-          "shirt_no": "8.",
-          "name": "MAHMUT CELAL YÜCEL",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2227039",
-          "tff_person_id": "2227039"
-        },
-        {
-          "shirt_no": "17.",
-          "name": "BARIN AYDOĞDU",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1965068",
-          "tff_person_id": "1965068"
-        },
-        {
-          "shirt_no": "19.",
-          "name": "MUHAMMET ALİ BABUŞCU",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1911096",
-          "tff_person_id": "1911096"
-        },
-        {
-          "shirt_no": "33.",
-          "name": "BARTU ERMİŞ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1751827",
-          "tff_person_id": "1751827"
-        },
-        {
-          "shirt_no": "42.",
-          "name": "YAŞAR KAVAS",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1809239",
-          "tff_person_id": "1809239"
-        },
-        {
-          "shirt_no": "61.",
-          "name": "YUSUF KADİR ÖLMEZ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1947443",
-          "tff_person_id": "1947443"
-        },
-        {
-          "shirt_no": "65.",
-          "name": "ABDULKADİR AKYÜZ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2195418",
-          "tff_person_id": "2195418"
-        },
-        {
-          "shirt_no": "77.",
-          "name": "ŞÜKRÜ MERT ŞANLI",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2080349",
-          "tff_person_id": "2080349"
-        }
-      ],
-      "coach": "İBRAHİM TOLGAY KERİMOĞLU",
-      "coaches": [
-        {
-          "name": "İBRAHİM TOLGAY KERİMOĞLU",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=219&antId=5505"
-        }
-      ],
-      "goals": [],
-      "cards": [
-        {
-          "name": "ŞÜKRÜ MERT ŞANLI",
-          "minute_text": "61.dk",
-          "minute": 61,
-          "card_type_tr": "Sarı Kart",
-          "type": "yellow_card",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2080349",
-          "tff_person_id": "2080349"
-        }
-      ],
-      "substitutions": [
-        {
-          "minute_text": "66.dk",
-          "minute": 66,
-          "player_in": "MUHAMMET ALİ BABUŞCU",
-          "player_out": "SAMET AYDIN"
-        },
-        {
-          "minute_text": "46.dk",
-          "minute": 46,
-          "player_in": "YUNUS EMRE ÖZDEMİR",
-          "player_out": "BURAK ÖZDEMİR"
-        },
-        {
-          "minute_text": "54.dk",
-          "minute": 54,
-          "player_in": "BARTU ERMİŞ",
-          "player_out": "EMİRHAN MISIR"
-        },
-        {
-          "minute_text": "46.dk",
-          "minute": 46,
-          "player_in": "ŞÜKRÜ MERT ŞANLI",
-          "player_out": "İSMAİL ÇARKACI"
-        },
-        {
-          "minute_text": "54.dk",
-          "minute": 54,
-          "player_in": "MAHMUT CELAL YÜCEL",
-          "player_out": "OĞUZHAN SİVRİKAYA"
-        }
-      ],
-      "players_out": [
-        {
-          "name": "SAMET AYDIN",
-          "minute_text": "66.dk",
-          "minute": 66,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1398749",
-          "tff_person_id": "1398749"
-        },
-        {
-          "name": "BURAK ÖZDEMİR",
-          "minute_text": "46.dk",
-          "minute": 46,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1512365",
-          "tff_person_id": "1512365"
-        },
-        {
-          "name": "EMİRHAN MISIR",
-          "minute_text": "46.dk",
-          "minute": 46,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1912059",
-          "tff_person_id": "1912059"
-        },
-        {
-          "name": "İSMAİL ÇARKACI",
-          "minute_text": "54.dk",
-          "minute": 54,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1993368",
-          "tff_person_id": "1993368"
-        },
-        {
-          "name": "OĞUZHAN SİVRİKAYA",
-          "minute_text": "54.dk",
-          "minute": 54,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2552633",
-          "tff_person_id": "2552633"
-        }
-      ],
-      "players_in": [
-        {
-          "name": "MUHAMMET ALİ BABUŞCU",
-          "minute_text": "66.dk",
-          "minute": 66,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1911096",
-          "tff_person_id": "1911096"
-        },
-        {
-          "name": "YUNUS EMRE ÖZDEMİR",
-          "minute_text": "46.dk",
-          "minute": 46,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1731171",
-          "tff_person_id": "1731171"
-        },
-        {
-          "name": "BARTU ERMİŞ",
-          "minute_text": "54.dk",
-          "minute": 54,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1751827",
-          "tff_person_id": "1751827"
-        },
-        {
-          "name": "ŞÜKRÜ MERT ŞANLI",
-          "minute_text": "46.dk",
-          "minute": 46,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2080349",
-          "tff_person_id": "2080349"
-        },
-        {
-          "name": "MAHMUT CELAL YÜCEL",
-          "minute_text": "54.dk",
-          "minute": 54,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2227039",
-          "tff_person_id": "2227039"
-        }
-      ]
-    },
-    "away": {
-      "team": "Balıkesirspor",
-      "team_raw": "NEV SAĞLIK GRUBU BALIKESİRSPOR",
-      "starting11": [
-        {
-          "shirt_no": "77.",
-          "name": "FURKAN YARDIM",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1429137",
-          "tff_person_id": "1429137"
-        },
-        {
-          "shirt_no": "3.",
-          "name": "AHMET GÜLAY",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1613131",
-          "tff_person_id": "1613131"
-        },
-        {
-          "shirt_no": "5.",
-          "name": "SERHAT VELİOĞLU",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=969678",
-          "tff_person_id": "969678"
-        },
-        {
-          "shirt_no": "6.",
-          "name": "HARUN TOPRAK",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1771562",
-          "tff_person_id": "1771562"
-        },
-        {
-          "shirt_no": "9.",
-          "name": "ARTUN AKÇAKIN",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=652987",
-          "tff_person_id": "652987"
-        },
-        {
-          "shirt_no": "11.",
-          "name": "ALİ SİNAN GAYLA",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1260923",
-          "tff_person_id": "1260923"
-        },
-        {
-          "shirt_no": "17.",
-          "name": "BORA YILMAZ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1629396",
-          "tff_person_id": "1629396"
-        },
-        {
-          "shirt_no": "21.",
-          "name": "HASAN GÜNDOĞDU",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1214605",
-          "tff_person_id": "1214605"
-        },
-        {
-          "shirt_no": "22.",
-          "name": "TAYFUN KIRCA",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1501265",
-          "tff_person_id": "1501265"
-        },
-        {
-          "shirt_no": "44.",
-          "name": "KUBAN ALTUNBUDAK",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1706048",
-          "tff_person_id": "1706048"
-        },
-        {
-          "shirt_no": "78.",
-          "name": "YİĞİT BAYINDIR",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1897526",
-          "tff_person_id": "1897526"
-        }
-      ],
-      "substitutes": [
-        {
-          "shirt_no": "26.",
-          "name": "YASİN YİĞİT BERBER",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1569202",
-          "tff_person_id": "1569202"
-        },
-        {
-          "shirt_no": "7.",
-          "name": "CELAL EMİR DEDE",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1602439",
-          "tff_person_id": "1602439"
-        },
-        {
-          "shirt_no": "8.",
-          "name": "TALHA DOĞUŞ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2022790",
-          "tff_person_id": "2022790"
-        },
-        {
-          "shirt_no": "10.",
-          "name": "SEDAT YİĞİT KURNAZ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1712887",
-          "tff_person_id": "1712887"
-        },
-        {
-          "shirt_no": "20.",
-          "name": "YEKTA SÖNMEZ",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1515022",
-          "tff_person_id": "1515022"
-        },
-        {
-          "shirt_no": "27.",
-          "name": "ERŞAN YAŞA",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1589637",
-          "tff_person_id": "1589637"
-        },
-        {
-          "shirt_no": "29.",
-          "name": "AHMET NECAT AYDIN",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1770316",
-          "tff_person_id": "1770316"
-        },
-        {
-          "shirt_no": "41.",
-          "name": "MİKDAT ÇİL",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2015877",
-          "tff_person_id": "2015877"
-        },
-        {
-          "shirt_no": "66.",
-          "name": "MEHMET BAĞCI",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2552279",
-          "tff_person_id": "2552279"
-        },
-        {
-          "shirt_no": "70.",
-          "name": "ALİ TOPÇU",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2825011",
-          "tff_person_id": "2825011"
-        }
-      ],
-      "coach": "CEM KAVÇAK",
-      "coaches": [
-        {
-          "name": "CEM KAVÇAK",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=219&antId=28597"
-        }
-      ],
-      "goals": [
-        {
-          "name": "HASAN GÜNDOĞDU",
-          "minute_text": "7.dk",
-          "minute": 7,
-          "goal_kind": "H",
-          "raw": "HASAN GÜNDOĞDU,7.dk (H)",
-          "team": "Balıkesirspor",
-          "side": "away",
-          "type": "goal"
-        },
-        {
-          "name": "SERHAT VELİOĞLU",
-          "minute_text": "50.dk",
-          "minute": 50,
-          "goal_kind": "F",
-          "raw": "SERHAT VELİOĞLU,50.dk (F)",
-          "team": "Balıkesirspor",
-          "side": "away",
-          "type": "goal"
-        }
-      ],
-      "cards": [
-        {
-          "name": "ALİ SİNAN GAYLA",
-          "minute_text": "37.dk",
-          "minute": 37,
-          "card_type_tr": "Sarı Kart",
-          "type": "yellow_card",
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1260923",
-          "tff_person_id": "1260923"
-        }
-      ],
-      "substitutions": [
-        {
-          "minute_text": "87.dk",
-          "minute": 87,
-          "player_in": "ALİ TOPÇU",
-          "player_out": "ARTUN AKÇAKIN"
-        },
-        {
-          "minute_text": "70.dk",
-          "minute": 70,
-          "player_in": "CELAL EMİR DEDE",
-          "player_out": "HASAN GÜNDOĞDU"
-        },
-        {
-          "minute_text": "70.dk",
-          "minute": 70,
-          "player_in": "YEKTA SÖNMEZ",
-          "player_out": "ALİ SİNAN GAYLA"
-        },
-        {
-          "minute_text": "80.dk",
-          "minute": 80,
-          "player_in": "ERŞAN YAŞA",
-          "player_out": "TAYFUN KIRCA"
-        },
-        {
-          "minute_text": "80.dk",
-          "minute": 80,
-          "player_in": "SEDAT YİĞİT KURNAZ",
-          "player_out": "BORA YILMAZ"
-        }
-      ],
-      "players_out": [
-        {
-          "name": "ARTUN AKÇAKIN",
-          "minute_text": "87.dk",
-          "minute": 87,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=652987",
-          "tff_person_id": "652987"
-        },
-        {
-          "name": "HASAN GÜNDOĞDU",
-          "minute_text": "70.dk",
-          "minute": 70,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1214605",
-          "tff_person_id": "1214605"
-        },
-        {
-          "name": "ALİ SİNAN GAYLA",
-          "minute_text": "80.dk",
-          "minute": 80,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1260923",
-          "tff_person_id": "1260923"
-        },
-        {
-          "name": "TAYFUN KIRCA",
-          "minute_text": "80.dk",
-          "minute": 80,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1501265",
-          "tff_person_id": "1501265"
-        },
-        {
-          "name": "BORA YILMAZ",
-          "minute_text": "70.dk",
-          "minute": 70,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1629396",
-          "tff_person_id": "1629396"
-        }
-      ],
-      "players_in": [
-        {
-          "name": "ALİ TOPÇU",
-          "minute_text": "87.dk",
-          "minute": 87,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=2825011",
-          "tff_person_id": "2825011"
-        },
-        {
-          "name": "CELAL EMİR DEDE",
-          "minute_text": "70.dk",
-          "minute": 70,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1602439",
-          "tff_person_id": "1602439"
-        },
-        {
-          "name": "YEKTA SÖNMEZ",
-          "minute_text": "70.dk",
-          "minute": 70,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1515022",
-          "tff_person_id": "1515022"
-        },
-        {
-          "name": "ERŞAN YAŞA",
-          "minute_text": "80.dk",
-          "minute": 80,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1589637",
-          "tff_person_id": "1589637"
-        },
-        {
-          "name": "SEDAT YİĞİT KURNAZ",
-          "minute_text": "80.dk",
-          "minute": 80,
-          "person_url": "https://www.tff.org/Default.aspx?pageId=30&kisiId=1712887",
-          "tff_person_id": "1712887"
-        }
-      ]
-    }
-  },
-  "events": [
-    {
-      "type": "goal",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "player": "HASAN GÜNDOĞDU",
-      "minute": 7,
-      "minute_text": "7.dk",
-      "goal_kind": "H",
-      "raw": "HASAN GÜNDOĞDU,7.dk (H)"
-    },
-    {
-      "type": "yellow_card",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "player": "ALİ SİNAN GAYLA",
-      "minute": 37,
-      "minute_text": "37.dk",
-      "card_type_tr": "Sarı Kart"
-    },
-    {
-      "type": "substitution",
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "side": "home",
-      "minute": 46,
-      "minute_text": "46.dk",
-      "player_in": "YUNUS EMRE ÖZDEMİR",
-      "player_out": "BURAK ÖZDEMİR"
-    },
-    {
-      "type": "substitution",
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "side": "home",
-      "minute": 46,
-      "minute_text": "46.dk",
-      "player_in": "ŞÜKRÜ MERT ŞANLI",
-      "player_out": "İSMAİL ÇARKACI"
-    },
-    {
-      "type": "goal",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "player": "SERHAT VELİOĞLU",
-      "minute": 50,
-      "minute_text": "50.dk",
-      "goal_kind": "F",
-      "raw": "SERHAT VELİOĞLU,50.dk (F)"
-    },
-    {
-      "type": "substitution",
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "side": "home",
-      "minute": 54,
-      "minute_text": "54.dk",
-      "player_in": "BARTU ERMİŞ",
-      "player_out": "EMİRHAN MISIR"
-    },
-    {
-      "type": "substitution",
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "side": "home",
-      "minute": 54,
-      "minute_text": "54.dk",
-      "player_in": "MAHMUT CELAL YÜCEL",
-      "player_out": "OĞUZHAN SİVRİKAYA"
-    },
-    {
-      "type": "yellow_card",
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "side": "home",
-      "player": "ŞÜKRÜ MERT ŞANLI",
-      "minute": 61,
-      "minute_text": "61.dk",
-      "card_type_tr": "Sarı Kart"
-    },
-    {
-      "type": "substitution",
-      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-      "side": "home",
-      "minute": 66,
-      "minute_text": "66.dk",
-      "player_in": "MUHAMMET ALİ BABUŞCU",
-      "player_out": "SAMET AYDIN"
-    },
-    {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "minute": 70,
-      "minute_text": "70.dk",
-      "player_in": "CELAL EMİR DEDE",
-      "player_out": "HASAN GÜNDOĞDU"
-    },
-    {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "minute": 70,
-      "minute_text": "70.dk",
-      "player_in": "YEKTA SÖNMEZ",
-      "player_out": "ALİ SİNAN GAYLA"
-    },
-    {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "minute": 80,
-      "minute_text": "80.dk",
-      "player_in": "ERŞAN YAŞA",
-      "player_out": "TAYFUN KIRCA"
-    },
-    {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "minute": 80,
-      "minute_text": "80.dk",
-      "player_in": "SEDAT YİĞİT KURNAZ",
-      "player_out": "BORA YILMAZ"
-    },
-    {
-      "type": "substitution",
-      "team": "Balıkesirspor",
-      "side": "away",
-      "minute": 87,
-      "minute_text": "87.dk",
-      "player_in": "ALİ TOPÇU",
-      "player_out": "ARTUN AKÇAKIN"
-    }
-  ],
-  "source_file": "Default.aspx_macId-285653_pageID-29_c6f59334344b637d.html",
   "balkes": {
     "isHome": false,
     "isAway": true,
@@ -732,6 +31,1268 @@
     "goalsFor": 2,
     "goalsAgainst": 0,
     "result": "W"
+  },
+  "officials": [
+    {
+      "role": "Hakem",
+      "name": "RAMAZAN DOĞANAY"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "SELİM GÖKSU"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "MUSTAFA BAŞOL SORGUNLU"
+    },
+    {
+      "role": "Dördüncü Hakem",
+      "name": "CENK ULUÇINAR"
+    }
+  ],
+  "referees": [
+    {
+      "role": "Hakem",
+      "name": "RAMAZAN DOĞANAY"
+    },
+    {
+      "role": "1. Yardımcı Hakem",
+      "name": "SELİM GÖKSU"
+    },
+    {
+      "role": "2. Yardımcı Hakem",
+      "name": "MUSTAFA BAŞOL SORGUNLU"
+    },
+    {
+      "role": "Dördüncü Hakem",
+      "name": "CENK ULUÇINAR"
+    }
+  ],
+  "lineups": {
+    "home": {
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "starting11": [
+        {
+          "name": "İLKER GÜNAY",
+          "number": 53,
+          "shirt_no": "53",
+          "tffPersonId": "865359"
+        },
+        {
+          "name": "ERDİ BAKIRCI",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "692794"
+        },
+        {
+          "name": "İSMAİL ÇARKACI",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1993368"
+        },
+        {
+          "name": "SAMET AYDIN",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "1398749"
+        },
+        {
+          "name": "OĞUZHAN SİVRİKAYA",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "2552633"
+        },
+        {
+          "name": "UĞURCAN İKİKARDEŞ",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1661069"
+        },
+        {
+          "name": "BURAK ÖZDEMİR",
+          "number": 14,
+          "shirt_no": "14",
+          "tffPersonId": "1512365"
+        },
+        {
+          "name": "EMİRHAN MISIR",
+          "number": 20,
+          "shirt_no": "20",
+          "tffPersonId": "1912059"
+        },
+        {
+          "name": "EYÜP OSKAN",
+          "number": 22,
+          "shirt_no": "22",
+          "tffPersonId": "1534756"
+        },
+        {
+          "name": "ALPER DEMİR",
+          "number": 26,
+          "shirt_no": "26",
+          "tffPersonId": "1841303"
+        },
+        {
+          "name": "HASAN YURTSEVEN",
+          "number": 30,
+          "shirt_no": "30",
+          "tffPersonId": "1552003"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "MUSA KOÇ",
+          "number": 1,
+          "shirt_no": "1",
+          "tffPersonId": "1942792"
+        },
+        {
+          "name": "YUNUS EMRE ÖZDEMİR",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1731171"
+        },
+        {
+          "name": "MAHMUT CELAL YÜCEL",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "2227039"
+        },
+        {
+          "name": "BARIN AYDOĞDU",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1965068"
+        },
+        {
+          "name": "MUHAMMET ALİ BABUŞCU",
+          "number": 19,
+          "shirt_no": "19",
+          "tffPersonId": "1911096"
+        },
+        {
+          "name": "BARTU ERMİŞ",
+          "number": 33,
+          "shirt_no": "33",
+          "tffPersonId": "1751827"
+        },
+        {
+          "name": "YAŞAR KAVAS",
+          "number": 42,
+          "shirt_no": "42",
+          "tffPersonId": "1809239"
+        },
+        {
+          "name": "YUSUF KADİR ÖLMEZ",
+          "number": 61,
+          "shirt_no": "61",
+          "tffPersonId": "1947443"
+        },
+        {
+          "name": "ABDULKADİR AKYÜZ",
+          "number": 65,
+          "shirt_no": "65",
+          "tffPersonId": "2195418"
+        },
+        {
+          "name": "ŞÜKRÜ MERT ŞANLI",
+          "number": 77,
+          "shirt_no": "77",
+          "tffPersonId": "2080349"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "İBRAHİM TOLGAY KERİMOĞLU"
+        }
+      ],
+      "coach": "İBRAHİM TOLGAY KERİMOĞLU",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    },
+    "away": {
+      "team": "Balıkesirspor",
+      "starting11": [
+        {
+          "name": "FURKAN YARDIM",
+          "number": 77,
+          "shirt_no": "77",
+          "tffPersonId": "1429137"
+        },
+        {
+          "name": "AHMET GÜLAY",
+          "number": 3,
+          "shirt_no": "3",
+          "tffPersonId": "1613131"
+        },
+        {
+          "name": "SERHAT VELİOĞLU",
+          "number": 5,
+          "shirt_no": "5",
+          "tffPersonId": "969678"
+        },
+        {
+          "name": "HARUN TOPRAK",
+          "number": 6,
+          "shirt_no": "6",
+          "tffPersonId": "1771562"
+        },
+        {
+          "name": "ARTUN AKÇAKIN",
+          "number": 9,
+          "shirt_no": "9",
+          "tffPersonId": "652987"
+        },
+        {
+          "name": "ALİ SİNAN GAYLA",
+          "number": 11,
+          "shirt_no": "11",
+          "tffPersonId": "1260923"
+        },
+        {
+          "name": "BORA YILMAZ",
+          "number": 17,
+          "shirt_no": "17",
+          "tffPersonId": "1629396"
+        },
+        {
+          "name": "HASAN GÜNDOĞDU",
+          "number": 21,
+          "shirt_no": "21",
+          "tffPersonId": "1214605"
+        },
+        {
+          "name": "TAYFUN KIRCA",
+          "number": 22,
+          "shirt_no": "22",
+          "tffPersonId": "1501265"
+        },
+        {
+          "name": "KUBAN ALTUNBUDAK",
+          "number": 44,
+          "shirt_no": "44",
+          "tffPersonId": "1706048"
+        },
+        {
+          "name": "YİĞİT BAYINDIR",
+          "number": 78,
+          "shirt_no": "78",
+          "tffPersonId": "1897526"
+        }
+      ],
+      "substitutes": [
+        {
+          "name": "YASİN YİĞİT BERBER",
+          "number": 26,
+          "shirt_no": "26",
+          "tffPersonId": "1569202"
+        },
+        {
+          "name": "CELAL EMİR DEDE",
+          "number": 7,
+          "shirt_no": "7",
+          "tffPersonId": "1602439"
+        },
+        {
+          "name": "TALHA DOĞUŞ",
+          "number": 8,
+          "shirt_no": "8",
+          "tffPersonId": "2022790"
+        },
+        {
+          "name": "SEDAT YİĞİT KURNAZ",
+          "number": 10,
+          "shirt_no": "10",
+          "tffPersonId": "1712887"
+        },
+        {
+          "name": "YEKTA SÖNMEZ",
+          "number": 20,
+          "shirt_no": "20",
+          "tffPersonId": "1515022"
+        },
+        {
+          "name": "ERŞAN YAŞA",
+          "number": 27,
+          "shirt_no": "27",
+          "tffPersonId": "1589637"
+        },
+        {
+          "name": "AHMET NECAT AYDIN",
+          "number": 29,
+          "shirt_no": "29",
+          "tffPersonId": "1770316"
+        },
+        {
+          "name": "MİKDAT ÇİL",
+          "number": 41,
+          "shirt_no": "41",
+          "tffPersonId": "2015877"
+        },
+        {
+          "name": "MEHMET BAĞCI",
+          "number": 66,
+          "shirt_no": "66",
+          "tffPersonId": "2552279"
+        },
+        {
+          "name": "ALİ TOPÇU",
+          "number": 70,
+          "shirt_no": "70",
+          "tffPersonId": "2825011"
+        }
+      ],
+      "technicalStaff": [
+        {
+          "name": "CEM KAVÇAK"
+        }
+      ],
+      "coach": "CEM KAVÇAK",
+      "raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu"
+    }
+  },
+  "players": [
+    {
+      "name": "ABDULKADİR AKYÜZ",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 65,
+      "tffPersonId": "2195418"
+    },
+    {
+      "name": "ALPER DEMİR",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 26,
+      "tffPersonId": "1841303"
+    },
+    {
+      "name": "BARIN AYDOĞDU",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 17,
+      "tffPersonId": "1965068"
+    },
+    {
+      "name": "BARTU ERMİŞ",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 33,
+      "tffPersonId": "1751827"
+    },
+    {
+      "name": "BURAK ÖZDEMİR",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 14,
+      "tffPersonId": "1512365"
+    },
+    {
+      "name": "EMİRHAN MISIR",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 20,
+      "tffPersonId": "1912059"
+    },
+    {
+      "name": "ERDİ BAKIRCI",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 5,
+      "tffPersonId": "692794"
+    },
+    {
+      "name": "EYÜP OSKAN",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 22,
+      "tffPersonId": "1534756"
+    },
+    {
+      "name": "HASAN YURTSEVEN",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 30,
+      "tffPersonId": "1552003"
+    },
+    {
+      "name": "İBRAHİM TOLGAY KERİMOĞLU",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "İLKER GÜNAY",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 53,
+      "tffPersonId": "865359"
+    },
+    {
+      "name": "İSMAİL ÇARKACI",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 6,
+      "tffPersonId": "1993368"
+    },
+    {
+      "name": "MAHMUT CELAL YÜCEL",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 8,
+      "tffPersonId": "2227039"
+    },
+    {
+      "name": "MUHAMMET ALİ BABUŞCU",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 19,
+      "tffPersonId": "1911096"
+    },
+    {
+      "name": "MUSA KOÇ",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 1,
+      "tffPersonId": "1942792"
+    },
+    {
+      "name": "OĞUZHAN SİVRİKAYA",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 10,
+      "tffPersonId": "2552633"
+    },
+    {
+      "name": "SAMET AYDIN",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 9,
+      "tffPersonId": "1398749"
+    },
+    {
+      "name": "ŞÜKRÜ MERT ŞANLI",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute",
+        "yellow_card",
+        "substitution_in"
+      ],
+      "number": 77,
+      "tffPersonId": "2080349"
+    },
+    {
+      "name": "UĞURCAN İKİKARDEŞ",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "starting11"
+      ],
+      "number": 11,
+      "tffPersonId": "1661069"
+    },
+    {
+      "name": "YAŞAR KAVAS",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 42,
+      "tffPersonId": "1809239"
+    },
+    {
+      "name": "YUNUS EMRE ÖZDEMİR",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 7,
+      "tffPersonId": "1731171"
+    },
+    {
+      "name": "YUSUF KADİR ÖLMEZ",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "roles": [
+        "substitute"
+      ],
+      "number": 61,
+      "tffPersonId": "1947443"
+    },
+    {
+      "name": "AHMET GÜLAY",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 3,
+      "tffPersonId": "1613131"
+    },
+    {
+      "name": "AHMET NECAT AYDIN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 29,
+      "tffPersonId": "1770316"
+    },
+    {
+      "name": "ALİ SİNAN GAYLA",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "yellow_card",
+        "substitution_out"
+      ],
+      "number": 11,
+      "tffPersonId": "1260923"
+    },
+    {
+      "name": "ALİ TOPÇU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 70,
+      "tffPersonId": "2825011"
+    },
+    {
+      "name": "ARTUN AKÇAKIN",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 9,
+      "tffPersonId": "652987"
+    },
+    {
+      "name": "BORA YILMAZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 17,
+      "tffPersonId": "1629396"
+    },
+    {
+      "name": "CELAL EMİR DEDE",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 7,
+      "tffPersonId": "1602439"
+    },
+    {
+      "name": "CEM KAVÇAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "technical_staff"
+      ]
+    },
+    {
+      "name": "ERŞAN YAŞA",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 27,
+      "tffPersonId": "1589637"
+    },
+    {
+      "name": "FURKAN YARDIM",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 77,
+      "tffPersonId": "1429137"
+    },
+    {
+      "name": "HARUN TOPRAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 6,
+      "tffPersonId": "1771562"
+    },
+    {
+      "name": "HASAN GÜNDOĞDU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal",
+        "substitution_out"
+      ],
+      "number": 21,
+      "tffPersonId": "1214605"
+    },
+    {
+      "name": "KUBAN ALTUNBUDAK",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 44,
+      "tffPersonId": "1706048"
+    },
+    {
+      "name": "MEHMET BAĞCI",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 66,
+      "tffPersonId": "2552279"
+    },
+    {
+      "name": "MİKDAT ÇİL",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 41,
+      "tffPersonId": "2015877"
+    },
+    {
+      "name": "SEDAT YİĞİT KURNAZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 10,
+      "tffPersonId": "1712887"
+    },
+    {
+      "name": "SERHAT VELİOĞLU",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "goal"
+      ],
+      "number": 5,
+      "tffPersonId": "969678"
+    },
+    {
+      "name": "TALHA DOĞUŞ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 8,
+      "tffPersonId": "2022790"
+    },
+    {
+      "name": "TAYFUN KIRCA",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11",
+        "substitution_out"
+      ],
+      "number": 22,
+      "tffPersonId": "1501265"
+    },
+    {
+      "name": "YASİN YİĞİT BERBER",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute"
+      ],
+      "number": 26,
+      "tffPersonId": "1569202"
+    },
+    {
+      "name": "YEKTA SÖNMEZ",
+      "team": "Balıkesirspor",
+      "roles": [
+        "substitute",
+        "substitution_in"
+      ],
+      "number": 20,
+      "tffPersonId": "1515022"
+    },
+    {
+      "name": "YİĞİT BAYINDIR",
+      "team": "Balıkesirspor",
+      "roles": [
+        "starting11"
+      ],
+      "number": 78,
+      "tffPersonId": "1897526"
+    }
+  ],
+  "events": [
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "HASAN GÜNDOĞDU",
+      "scorer": "HASAN GÜNDOĞDU",
+      "raw": "HASAN GÜNDOĞDU,7.dk (H)",
+      "minute": 7,
+      "minuteRaw": "HASAN GÜNDOĞDU,7.dk",
+      "goalType": "H",
+      "tffPersonId": "1214605"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "SERHAT VELİOĞLU",
+      "scorer": "SERHAT VELİOĞLU",
+      "raw": "SERHAT VELİOĞLU,50.dk (F)",
+      "minute": 50,
+      "minuteRaw": "SERHAT VELİOĞLU,50.dk",
+      "goalType": "F",
+      "tffPersonId": "969678"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "ŞÜKRÜ MERT ŞANLI",
+      "minute": 61,
+      "minuteRaw": "61.dk",
+      "tffPersonId": "2080349"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "ALİ SİNAN GAYLA",
+      "minute": 37,
+      "minuteRaw": "37.dk",
+      "tffPersonId": "1260923"
+    },
+    {
+      "type": "substitution",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 1,
+      "player_in": "MUHAMMET ALİ BABUŞCU",
+      "player_out": "SAMET AYDIN",
+      "playerIn": "MUHAMMET ALİ BABUŞCU",
+      "playerOut": "SAMET AYDIN",
+      "minute": 66,
+      "minuteRaw": "66.dk",
+      "minute_text": "66.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "SAMET AYDIN",
+      "order": 1,
+      "minute": 66,
+      "minuteRaw": "66.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "MUHAMMET ALİ BABUŞCU",
+      "order": 1,
+      "minute": 66,
+      "minuteRaw": "66.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 2,
+      "player_in": "YUNUS EMRE ÖZDEMİR",
+      "player_out": "BURAK ÖZDEMİR",
+      "playerIn": "YUNUS EMRE ÖZDEMİR",
+      "playerOut": "BURAK ÖZDEMİR",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "BURAK ÖZDEMİR",
+      "order": 2,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "YUNUS EMRE ÖZDEMİR",
+      "order": 2,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 3,
+      "player_in": "BARTU ERMİŞ",
+      "player_out": "EMİRHAN MISIR",
+      "playerIn": "BARTU ERMİŞ",
+      "playerOut": "EMİRHAN MISIR",
+      "minute": 54,
+      "minuteRaw": "54.dk",
+      "minute_text": "54.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "EMİRHAN MISIR",
+      "order": 3,
+      "minute": 54,
+      "minuteRaw": "54.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "BARTU ERMİŞ",
+      "order": 3,
+      "minute": 54,
+      "minuteRaw": "54.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 4,
+      "player_in": "ŞÜKRÜ MERT ŞANLI",
+      "player_out": "İSMAİL ÇARKACI",
+      "playerIn": "ŞÜKRÜ MERT ŞANLI",
+      "playerOut": "İSMAİL ÇARKACI",
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "minute_text": "46.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "İSMAİL ÇARKACI",
+      "order": 4,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "ŞÜKRÜ MERT ŞANLI",
+      "order": 4,
+      "minute": 46,
+      "minuteRaw": "46.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 5,
+      "player_in": "MAHMUT CELAL YÜCEL",
+      "player_out": "OĞUZHAN SİVRİKAYA",
+      "playerIn": "MAHMUT CELAL YÜCEL",
+      "playerOut": "OĞUZHAN SİVRİKAYA",
+      "minute": 54,
+      "minuteRaw": "54.dk",
+      "minute_text": "54.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "OĞUZHAN SİVRİKAYA",
+      "order": 5,
+      "minute": 54,
+      "minuteRaw": "54.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "MAHMUT CELAL YÜCEL",
+      "order": 5,
+      "minute": 54,
+      "minuteRaw": "54.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 1,
+      "player_in": "ALİ TOPÇU",
+      "player_out": "ARTUN AKÇAKIN",
+      "playerIn": "ALİ TOPÇU",
+      "playerOut": "ARTUN AKÇAKIN",
+      "minute": 87,
+      "minuteRaw": "87.dk",
+      "minute_text": "87.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "ARTUN AKÇAKIN",
+      "order": 1,
+      "minute": 87,
+      "minuteRaw": "87.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "ALİ TOPÇU",
+      "order": 1,
+      "minute": 87,
+      "minuteRaw": "87.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 2,
+      "player_in": "CELAL EMİR DEDE",
+      "player_out": "HASAN GÜNDOĞDU",
+      "playerIn": "CELAL EMİR DEDE",
+      "playerOut": "HASAN GÜNDOĞDU",
+      "minute": 70,
+      "minuteRaw": "70.dk",
+      "minute_text": "70.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "HASAN GÜNDOĞDU",
+      "order": 2,
+      "minute": 70,
+      "minuteRaw": "70.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "CELAL EMİR DEDE",
+      "order": 2,
+      "minute": 70,
+      "minuteRaw": "70.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 3,
+      "player_in": "YEKTA SÖNMEZ",
+      "player_out": "ALİ SİNAN GAYLA",
+      "playerIn": "YEKTA SÖNMEZ",
+      "playerOut": "ALİ SİNAN GAYLA",
+      "minute": 70,
+      "minuteRaw": "70.dk",
+      "minute_text": "70.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "ALİ SİNAN GAYLA",
+      "order": 3,
+      "minute": 70,
+      "minuteRaw": "70.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "YEKTA SÖNMEZ",
+      "order": 3,
+      "minute": 70,
+      "minuteRaw": "70.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 4,
+      "player_in": "ERŞAN YAŞA",
+      "player_out": "TAYFUN KIRCA",
+      "playerIn": "ERŞAN YAŞA",
+      "playerOut": "TAYFUN KIRCA",
+      "minute": 80,
+      "minuteRaw": "80.dk",
+      "minute_text": "80.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "TAYFUN KIRCA",
+      "order": 4,
+      "minute": 80,
+      "minuteRaw": "80.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "ERŞAN YAŞA",
+      "order": 4,
+      "minute": 80,
+      "minuteRaw": "80.dk"
+    },
+    {
+      "type": "substitution",
+      "team": "Balıkesirspor",
+      "order": 5,
+      "player_in": "SEDAT YİĞİT KURNAZ",
+      "player_out": "BORA YILMAZ",
+      "playerIn": "SEDAT YİĞİT KURNAZ",
+      "playerOut": "BORA YILMAZ",
+      "minute": 80,
+      "minuteRaw": "80.dk",
+      "minute_text": "80.dk"
+    },
+    {
+      "type": "substitution_out",
+      "team": "Balıkesirspor",
+      "player": "BORA YILMAZ",
+      "order": 5,
+      "minute": 80,
+      "minuteRaw": "80.dk"
+    },
+    {
+      "type": "substitution_in",
+      "team": "Balıkesirspor",
+      "player": "SEDAT YİĞİT KURNAZ",
+      "order": 5,
+      "minute": 80,
+      "minuteRaw": "80.dk"
+    }
+  ],
+  "goals": [
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "HASAN GÜNDOĞDU",
+      "scorer": "HASAN GÜNDOĞDU",
+      "raw": "HASAN GÜNDOĞDU,7.dk (H)",
+      "minute": 7,
+      "minuteRaw": "HASAN GÜNDOĞDU,7.dk",
+      "goalType": "H",
+      "tffPersonId": "1214605"
+    },
+    {
+      "type": "goal",
+      "team": "Balıkesirspor",
+      "player": "SERHAT VELİOĞLU",
+      "scorer": "SERHAT VELİOĞLU",
+      "raw": "SERHAT VELİOĞLU,50.dk (F)",
+      "minute": 50,
+      "minuteRaw": "SERHAT VELİOĞLU,50.dk",
+      "goalType": "F",
+      "tffPersonId": "969678"
+    }
+  ],
+  "goalScorers": [
+    {
+      "player": "HASAN GÜNDOĞDU",
+      "team": "Balıkesirspor",
+      "minute": 7,
+      "goalType": "H"
+    },
+    {
+      "player": "SERHAT VELİOĞLU",
+      "team": "Balıkesirspor",
+      "minute": 50,
+      "goalType": "F"
+    }
+  ],
+  "cards": [
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "player": "ŞÜKRÜ MERT ŞANLI",
+      "minute": 61,
+      "minuteRaw": "61.dk",
+      "tffPersonId": "2080349"
+    },
+    {
+      "type": "yellow_card",
+      "card": "yellow",
+      "team": "Balıkesirspor",
+      "player": "ALİ SİNAN GAYLA",
+      "minute": 37,
+      "minuteRaw": "37.dk",
+      "tffPersonId": "1260923"
+    }
+  ],
+  "substitutions": [
+    {
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 1,
+      "minute": 66,
+      "minuteRaw": "66.dk",
+      "playerOut": "SAMET AYDIN",
+      "player_out": "SAMET AYDIN",
+      "playerOutTffPersonId": "1398749",
+      "playerIn": "MUHAMMET ALİ BABUŞCU",
+      "player_in": "MUHAMMET ALİ BABUŞCU",
+      "playerInTffPersonId": "1911096"
+    },
+    {
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 2,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "BURAK ÖZDEMİR",
+      "player_out": "BURAK ÖZDEMİR",
+      "playerOutTffPersonId": "1512365",
+      "playerIn": "YUNUS EMRE ÖZDEMİR",
+      "player_in": "YUNUS EMRE ÖZDEMİR",
+      "playerInTffPersonId": "1731171"
+    },
+    {
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 3,
+      "minute": 54,
+      "minuteRaw": "54.dk",
+      "playerOut": "EMİRHAN MISIR",
+      "player_out": "EMİRHAN MISIR",
+      "playerOutTffPersonId": "1912059",
+      "playerIn": "BARTU ERMİŞ",
+      "player_in": "BARTU ERMİŞ",
+      "playerInTffPersonId": "1751827"
+    },
+    {
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 4,
+      "minute": 46,
+      "minuteRaw": "46.dk",
+      "playerOut": "İSMAİL ÇARKACI",
+      "player_out": "İSMAİL ÇARKACI",
+      "playerOutTffPersonId": "1993368",
+      "playerIn": "ŞÜKRÜ MERT ŞANLI",
+      "player_in": "ŞÜKRÜ MERT ŞANLI",
+      "playerInTffPersonId": "2080349"
+    },
+    {
+      "team": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
+      "order": 5,
+      "minute": 54,
+      "minuteRaw": "54.dk",
+      "playerOut": "OĞUZHAN SİVRİKAYA",
+      "player_out": "OĞUZHAN SİVRİKAYA",
+      "playerOutTffPersonId": "2552633",
+      "playerIn": "MAHMUT CELAL YÜCEL",
+      "player_in": "MAHMUT CELAL YÜCEL",
+      "playerInTffPersonId": "2227039"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 1,
+      "minute": 87,
+      "minuteRaw": "87.dk",
+      "playerOut": "ARTUN AKÇAKIN",
+      "player_out": "ARTUN AKÇAKIN",
+      "playerOutTffPersonId": "652987",
+      "playerIn": "ALİ TOPÇU",
+      "player_in": "ALİ TOPÇU",
+      "playerInTffPersonId": "2825011"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 2,
+      "minute": 70,
+      "minuteRaw": "70.dk",
+      "playerOut": "HASAN GÜNDOĞDU",
+      "player_out": "HASAN GÜNDOĞDU",
+      "playerOutTffPersonId": "1214605",
+      "playerIn": "CELAL EMİR DEDE",
+      "player_in": "CELAL EMİR DEDE",
+      "playerInTffPersonId": "1602439"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 3,
+      "minute": 70,
+      "minuteRaw": "70.dk",
+      "playerOut": "ALİ SİNAN GAYLA",
+      "player_out": "ALİ SİNAN GAYLA",
+      "playerOutTffPersonId": "1260923",
+      "playerIn": "YEKTA SÖNMEZ",
+      "player_in": "YEKTA SÖNMEZ",
+      "playerInTffPersonId": "1515022"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 4,
+      "minute": 80,
+      "minuteRaw": "80.dk",
+      "playerOut": "TAYFUN KIRCA",
+      "player_out": "TAYFUN KIRCA",
+      "playerOutTffPersonId": "1501265",
+      "playerIn": "ERŞAN YAŞA",
+      "player_in": "ERŞAN YAŞA",
+      "playerInTffPersonId": "1589637"
+    },
+    {
+      "team": "Balıkesirspor",
+      "order": 5,
+      "minute": 80,
+      "minuteRaw": "80.dk",
+      "playerOut": "BORA YILMAZ",
+      "player_out": "BORA YILMAZ",
+      "playerOutTffPersonId": "1629396",
+      "playerIn": "SEDAT YİĞİT KURNAZ",
+      "player_in": "SEDAT YİĞİT KURNAZ",
+      "playerInTffPersonId": "1712887"
+    }
+  ],
+  "sections_raw": {
+    "full_text_excerpt": "ALANYA 1221 FUTBOL SPOR KULÜBÜ NEV SAĞLIK GRUBU BALIKESİRSPOR - Maç Detayları TFF\nAra\nTR\nEN\nTRENDYOL SÜPER LİG\nZİRAAT TÜRKİYE KUPASI\nE-SHOP\nANA SAYFA\nTFF\nMİLLİ TAKIMLAR\nLİGLER\nKUPALAR\nKADIN FUTBOLU\nFGD\nBİLGİ BANKASI\nPUAN DURUMU\nTRENDYOL SÜPERLIG\nFutbol Bilgi Bankası\nFutbolcular\nTeknik Direktörler\nTüm Maçlar\nMilli Maçlar\nKulüpler\nStadyumlar\nCezalar\nHakemler\nGözlemci ve Temsilciler\nFutbol Menajerleri\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nFormlar ve Sözleşmeler\nStatüler\nTalimatlar\nTFF Kanun ve Statüsü\nOnline Başvurular\nTam Saha içerikleri için tıklayınız\nFikstürler\nLig Seçiniz...\nTrendyol Süper Lig\nTrendyol 1. Lig\nTFF 2. Lig\nTFF 3. Lig\nKadın Ligleri\nZiraat Türkiye Kupası\nBölgesel Amatör Lig\nGelişim Ligleri\nEngelli Futbolu\nFutsal Ligi\nPlaj Futbolu\nFutbol Altyapı Gelişim Ligi\nSezon Planlaması\nPuan Cetvelleri\nLig Seçiniz..\nTrendyol Süper Lig Şamil Ekinci Sezonu\nTrendyol 1.Lig\nTrendyol 1. Lig Play Off Müsabakaları\nNesine 2. Lig Kırmızı\nNesine 2. Lig Beyaz\nNesine 2. Lig Play Off Müsabakaları\nNesine 3. Lig 01\nNesine 3. Lig 02\nNesine 3. Lig 03\nNesine 3. Lig 04\nNesine 3. Lig Play Off Müsabakaları\nZiraat Türkiye Kupası\nZiraat Türkiye Kupası Grup Aşaması A\nZiraat Türkiye Kupası Grup Aşaması B\nZiraat Türkiye Kupası Grup Aşaması C\nZiraat Türkiye Kupası Grup Aşaması D\nTurkcell Kadın Futbol Süper Ligi\nKadınlar 1. Ligi A Grubu\nKadınlar 1. Ligi B Grubu\nTFF Kadınlar 1. Ligi Play Off 3.lük Müsabakaları\nTFF Kadınlar 1. Ligi Play Off Şampiyonluk Grubu\nTFF Kadınlar 1. Ligi Play Off Yükselme Grubu\nKadınlar 2.Ligi Play Off Müsabakaları\nKadınlar 3.Ligi Play Off Müsabakaları\nKadınlar 2. Ligi A Grup\nKadınlar 2. Ligi B Grup\nKadınlar 2. Ligi C Grup\nKadınlar 2. Ligi D Grup\nKadınlar 3. Ligi 1.\nKadınlar 3. Ligi 10.\nKadınlar 3. Ligi 11.\nKadınlar 3. Ligi 12.\nKadınlar 3. Ligi 13.\nKadınlar 3. Ligi 14.\nKadınlar 3. Ligi 15.\nKadınlar 3. Ligi 16.\nKadınlar 3. Ligi 17.\nKadınlar 3. Ligi 18.\nKadınlar 3. Ligi 19.\nKadınlar 3. Ligi 2.\nKadınlar 3. Ligi 20.\nKadınlar 3. Ligi 21.\nKadınlar 3. Ligi 22.\nKadınlar 3. Ligi 23.\nKadınlar 3. Ligi 24.\nKadınlar 3. Ligi 25.\nKadınlar 3. Ligi 26.\nKadınlar 3. Ligi 27.\nKadınlar 3. Ligi 28.\nKadınlar 3. Ligi 29.\nKadınlar 3. Ligi 3.\nKadınlar 3. Ligi 30.\nKadınlar 3. Ligi 31.\nKadınlar 3. Ligi 32.\nKadınlar 3. Ligi 4.\nKadınlar 3. Ligi 5.\nKadınlar 3. Ligi 6.\nKadınlar 3. Ligi 7.\nKadınlar 3. Ligi 8.\nKadınlar 3. Ligi 9.\nBölgesel Amatör Ligi 1. GRUP\nBölgesel Amatör Ligi 10. GRUP\nBölgesel Amatör Ligi 2. GRUP\nBölgesel Amatör Ligi 3. GRUP\nBölgesel Amatör Ligi 4. GRUP\nBölgesel Amatör Ligi 5. GRUP\nBölgesel Amatör Ligi 6. GRUP\nBölgesel Amatör Ligi 7. GRUP\nBölgesel Amatör Ligi 8. GRUP\nBölgesel Amatör Ligi 9. GRUP\nBölgesel Amatör Lig Baraj Maçları\nBölgesel Amatör Lig Play Off\nU17 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU17 Bölgesel Gelişim Ligi 1. Grup\nU17 Bölgesel Gelişim Ligi 2. Grup\nU17 Bölgesel Gelişim Ligi 3. Grup\nU17 Bölgesel Gelişim Ligi 4. Grup\nU17 Bölgesel Gelişim Ligi 5. Grup\nU17 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi 1. Grup\nU19 Bölgesel Gelişim Ligi 2. Grup\nU19 Bölgesel Gelişim Ligi 3. Grup\nU19 Bölgesel Gelişim Ligi 4. Grup\nU19 Bölgesel Gelişim Ligi 5. Grup\nU19 Bölgesel Gelişim Ligi 6. Grup\nU19 Bölgesel Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Grup 1\nU14 Gelişim Ligi Grup 2\nU14 Gelişim Ligi Grup 3\nU14 Gelişim Ligi Grup 4\nU14 Gelişim Ligi Grup 5\nU14 Gelişim Ligi Grup 6\nU14 Gelişim Ligi Grup 7\nU14 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU14 Gelişim Ligi Finalleri\nU15 Gelişim Ligi Grup 1\nU15 Gelişim Ligi Grup 2\nU15 Gelişim Ligi Grup 3\nU15 Gelişim Ligi Grup 4\nU15 Gelişim Ligi Grup 5\nU15 Gelişim Ligi Grup 6\nU15 Gelişim Ligi Grup 7\nU15 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU15 Gelişim Ligi Finalleri\nU16 Gelişim Ligi Grup 1\nU16 Gelişim Ligi Grup 2\nU16 Gelişim Ligi Grup 3\nU16 Gelişim Ligi Grup 4\nU16 Gelişim Ligi Grup 5\nU16 Gelişim Ligi Grup 6\nU16 Gelişim Ligi Grup 7\nU16 Gelişim Ligi Ön Eleme ve Son 16 Turu\nU16 Gelişim Ligi Finalleri\nU17 Elit A Ligi\nU17 Elit B Ligi\nU19 Elit A Ligi\nU19 Elit B Ligi\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP A\nU14 Çeyrek Final Grupları U14 ÇEYREK FİNAL GRUP B\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP A\nU15 Çeyrek Final Grupları U15 ÇEYREK FİNAL GRUP B\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP A\nU16 Çeyrek Final Grupları U16 ÇEYREK FİNAL GRUP B\nU14 Amatör Türkiye Şampiyonası\nU15 Amatör Türkiye Şampiyonası\nU16 Amatör Türkiye Şampiyonası\nU17 Amatör Türkiye Şampiyonası\nU18 Amatör Türkiye Şampiyonası\nHaftalık Maç Görevlileri\nHakem, Gözlemci ve Temsilciler\nMİLLİ TAKIM TARAFTAR KULÜBÜ\nSON DAKIKA..”\nU17 Kiz Milli Takimi'ndan Zafer Bayrami kutlamasi\n'Kuralina Göre' Programi beIN SPORTS'ta basliyor\nU18 Milli Takimimiz, Azerbaycan karsisinda\nU18 Milli Takimimiz, Azerbaycan karsisinda\n”\nALANYA 1221 FUTBOL SPOR KULÜBÜ\n0\nNEV SAĞLIK GRUBU BALIKESİRSPOR\n2\nNesine 3. Lig (Profesyonel Takım)\nMaç Kodu:\n4764\nALANYA MİLLİ EGEMENLİK STADI - ANTALYA - ALANYA\n12.10.2025 - 15:30\nRAMAZAN DOĞANAY(Hakem)\nSELİM GÖKSU(1. Yardımcı Hakem)\nMUSTAFA BAŞOL SORGUNLU(2. Yardımcı Hakem)\nCENK ULUÇINAR(Dördüncü Hakem)\nMEHMET UĞUR ALPTEKİN(Gözlemci)\nMURAT ALİ ARAS(Temsilci)\nAHMET BEYCİOĞLU(Temsilci)\nİlk 11\n53.\nİLKER GÜNAY\n5.\nERDİ BAKIRCI\n6.\nİSMAİL ÇARKACI\n9.\nSAMET AYDIN\n10.\nOĞUZHAN SİVRİKAYA\n11.\nUĞURCAN İKİKARDEŞ\n14.\nBURAK ÖZDEMİR\n20.\nEMİRHAN MISIR\n22.\nEYÜP OSKAN\n26.\nALPER DEMİR\n30.\nHASAN YURTSEVEN\nYedekler\n1.\nMUSA KOÇ\n7.\nYUNUS EMRE ÖZDEMİR\n8.\nMAHMUT CELAL YÜCEL\n17.\nBARIN AYDOĞDU\n19.\nMUHAMMET ALİ BABUŞCU\n33.\nBARTU ERMİŞ\n42.\nYAŞAR KAVAS\n61.\nYUSUF KADİR ÖLMEZ\n65.\nABDULKADİR AKYÜZ\n77.\nŞÜKRÜ MERT ŞANLI\nTeknik Sorumlu\nİBRAHİM TOLGAY KERİMOĞLU\nKartlar\nŞÜKRÜ MERT ŞANLI\n61.dk\nOyundan Çıkanlar\nSAMET AYDIN\n66.dk\nBURAK ÖZDEMİR\n46.dk\nEMİRHAN MISIR\n46.dk\nİSMAİL ÇARKACI\n54.dk\nOĞUZHAN SİVRİKAYA\n54.dk\nOyuna Girenler\nMUHAMMET ALİ BABUŞCU\n66.dk\nYUNUS EMRE ÖZDEMİR\n46.dk\nBARTU ERMİŞ\n54.dk\nŞÜKRÜ MERT ŞANLI\n46.dk\nMAHMUT CELAL YÜCEL\n54.dk\nİlk 11\n77.\nFURKAN YARDIM\n3.\nAHMET GÜLAY\n5.\nSERHAT VELİOĞLU\n6.\nHARUN TOPRAK\n9.\nARTUN AKÇAKIN\n11.\nALİ SİNAN GAYLA\n17.\nBORA YILMAZ\n21.\nHASAN GÜNDOĞDU\n22.\nTAYFUN KIRCA\n44.\nKUBAN ALTUNBUDAK\n78.\nYİĞİT BAYINDIR\nYedekler\n26.\nYASİN YİĞİT BERBER\n7.\nCELAL EMİR DEDE\n8.\nTALHA DOĞUŞ\n10.\nSEDAT YİĞİT KURNAZ\n20.\nYEKTA SÖNMEZ\n27.\nERŞAN YAŞA\n29.\nAHMET NECAT AYDIN\n41.\nMİKDAT ÇİL\n66.\nMEHMET BAĞCI\n70.\nALİ TOPÇU\nTeknik Sorumlu\nCEM KAVÇAK\nGoller\nHASAN GÜNDOĞDU,7.dk (H)\nSERHAT VELİOĞLU,50.dk (F)\nKartlar\nALİ SİNAN GAYLA\n37.dk\nOyundan Çıkanlar\nARTUN AKÇAKIN\n87.dk\nHASAN GÜNDOĞDU\n70.dk\nALİ SİNAN GAYLA\n80.dk\nTAYFUN KIRCA\n80.dk\nBORA YILMAZ\n70.dk\nOyuna Girenler\nALİ TOPÇU\n87.dk\nCELAL EMİR DEDE\n70.dk\nYEKTA SÖNMEZ\n70.dk\nERŞAN YAŞA\n80.dk\nSEDAT YİĞİT KURNAZ\n80.dk\nF:F - Ayak\nH:H - Kafa\nK:K - Kendi Kalesine\nP:P - Penaltı\nS:S - Seri Penaltı\nİletişim\n|\nSite Haritası\n|\nKopya Hakları\n|\nKullanım Şartları\n|\nSponsorlar\nTüm hakları Türkiye Futbol Federasyonu'na aittir.\nBİZİ TAKİP EDİN",
+    "officials_raw": "Hakemler\nGözlemci ve Temsilciler\nHaftalık Hakem, Gözlemci ve Temsilci Bilgileri\nHakem, Gözlemci ve Temsilciler\nRAMAZAN DOĞANAY(Hakem)\nSELİM GÖKSU(1. Yardımcı Hakem)\nMUSTAFA BAŞOL SORGUNLU(2. Yardımcı Hakem)\nCENK ULUÇINAR(Dördüncü Hakem)\nMEHMET UĞUR ALPTEKİN(Gözlemci)\nMURAT ALİ ARAS(Temsilci)\nAHMET BEYCİOĞLU(Temsilci)",
+    "lineups_raw": "İlk 11\nYedekler\nTeknik Sorumlu\nİlk 11\nYedekler\nTeknik Sorumlu",
+    "events_raw": "61.dk\nOyundan Çıkanlar\n66.dk\n46.dk\n46.dk\n54.dk\n54.dk\nOyuna Girenler\n66.dk\n46.dk\n54.dk\n46.dk\n54.dk\nGoller\nHASAN GÜNDOĞDU,7.dk (H)\nSERHAT VELİOĞLU,50.dk (F)\n37.dk\nOyundan Çıkanlar\n87.dk\n70.dk\n80.dk\n80.dk\n70.dk\nOyuna Girenler\n87.dk\n70.dk\n70.dk\n80.dk\n80.dk\nP:P - Penaltı\nS:S - Seri Penaltı"
+  },
+  "detailCompleteness": {
+    "hasStadium": true,
+    "starting11Home": 11,
+    "starting11Away": 11,
+    "substitutesHome": 10,
+    "substitutesAway": 10,
+    "goals": 2,
+    "cards": 2,
+    "substitutions": 10,
+    "players": 44
+  },
+  "quality": "A",
+  "source": {
+    "name": "TFF",
+    "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285653",
+    "retrievedAt": "2026-05-16T22:28:41.333641Z",
+    "sourceType": "official_tff_match_detail"
   },
   "detailUrl": "seasons/2025-2026/matches/285653.json"
 }
