@@ -166,28 +166,8 @@ jobs:
         run: |
           set -e
           RUN_STATUS="${{ steps.rungroup.outputs.status }}"
-          AVAILABLE_SEASONS=$(python - <<'PY'
-import json
-from pathlib import Path
-p = Path("data/manifest.json")
-try:
-    m = json.loads(p.read_text(encoding="utf-8"))
-    print(len(m.get("availableSeasons") or []))
-except Exception:
-    print(0)
-PY
-          )
-          TOTAL_MATCHES=$(python - <<'PY'
-import json
-from pathlib import Path
-p = Path("data/data_report.json")
-try:
-    r = json.loads(p.read_text(encoding="utf-8"))
-    print(int(r.get("totalAppMatches") or 0))
-except Exception:
-    print(0)
-PY
-          )
+          AVAILABLE_SEASONS=$(python scripts/live_data_counts_v33.py --field seasons)
+          TOTAL_MATCHES=$(python scripts/live_data_counts_v33.py --field matches)
           echo "Safety gate: status=$RUN_STATUS availableSeasons=$AVAILABLE_SEASONS totalAppMatches=$TOTAL_MATCHES"
           if [ "$RUN_STATUS" != "success" ] && { [ "$AVAILABLE_SEASONS" = "0" ] || [ "$TOTAL_MATCHES" = "0" ]; }; then
             echo "::warning::Refusing to push empty data from failed/timeout group. Artifact upload will still keep diagnostics."
