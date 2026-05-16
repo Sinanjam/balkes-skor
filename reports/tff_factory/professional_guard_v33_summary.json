@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-05-16T19:17:15.170224Z",
+  "reports": [
+    {
+      "season": "2025-2026",
+      "before": 33,
+      "after": 32,
+      "leagueAfter": 32,
+      "rejected": {
+        "non_senior_competition:Ziraat Turkish Cup (Professional Team)": 1
+      },
+      "suppressed": false,
+      "suppressionReasons": [],
+      "competitionsAfter": {
+        "Nesine 3. Lig (Profesyonel Takım)": 30,
+        "Nesine 3. Lig Play Off Müsabakaları (Profesyonel Takım) (1.Tur)": 2
+      },
+      "changed": true,
+      "standingsCleared": true
+    },
+    {
+      "season": "2024-2025",
+      "before": 33,
+      "after": 1,
+      "leagueAfter": 1,
+      "rejected": {
+        "non_senior_competition:Nesine 3. League (Professional Team)": 29,
+        "non_senior_competition:Nesine 3.league Play Off (Professional Team)": 3
+      },
+      "suppressed": true,
+      "suppressionReasons": [
+        "too_few_matches:1",
+        "too_few_league_matches:1"
+      ],
+      "competitionsAfter": {
+        "Ziraat Türkiye Kupası (Professional Team)": 1
+      },
+      "changed": true
+    },
+    {
+      "season": "2023-2024",
+      "before": 29,
+      "after": 1,
+      "leagueAfter": 1,
+      "rejected": {
+        "non_senior_competition:TFF 3. LEAGUE (Professional Team)": 28
+      },
+      "suppressed": true,
+      "suppressionReasons": [
+        "too_few_matches:1",
+        "too_few_league_matches:1"
+      ],
+      "competitionsAfter": {
+        "Ziraat Türkiye Kupası (Professional Team)": 1
+      },
+      "changed": true
+    },
+    {
+      "season": "2022-2023",
+      "before": 37,
+      "after": 0,
+      "leagueAfter": 0,
+      "rejected": {
+        "non_senior_competition:TFF 2.League (Professional Team)": 37
+      },
+      "suppressed": true,
+      "suppressionReasons": [
+        "empty_after_clean",
+        "too_few_matches:0",
+        "too_few_league_matches:0"
+      ],
+      "competitionsAfter": {},
+      "changed": true
+    },
+    {
+      "season": "2021-2022",
+      "before": 11,
+      "after": 0,
+      "leagueAfter": 0,
+      "rejected": {
+        "balkes_not_found": 11
+      },
+      "suppressed": true,
+      "suppressionReasons": [
+        "empty_after_clean",
+        "too_few_matches:0",
+        "too_few_league_matches:0"
+      ],
+      "competitionsAfter": {},
+      "changed": true
+    },
+    {
+      "season": "2018-2019",
+      "before": 2,
+      "after": 2,
+      "leagueAfter": 2,
+      "rejected": {},
+      "suppressed": true,
+      "suppressionReasons": [
+        "too_few_matches:2",
+        "too_few_league_matches:2"
+      ],
+      "competitionsAfter": {
+        "Ziraat Türkiye Kupası (Professional Team)": 1,
+        "Spor Toto 1. Lig (Professional Team)": 1
+      },
+      "changed": false
+    },
+    {
+      "season": "2009-2010",
+      "before": 1,
+      "after": 0,
+      "leagueAfter": 0,
+      "rejected": {
+        "non_senior_competition:TFF 3. League Phase 1 (Professional Team)": 1
+      },
+      "suppressed": true,
+      "suppressionReasons": [
+        "empty_after_clean",
+        "too_few_matches:0",
+        "too_few_league_matches:0"
+      ],
+      "competitionsAfter": {},
+      "changed": true
+    }
+  ]
+}

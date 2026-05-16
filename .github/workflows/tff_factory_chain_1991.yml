@@ -1,12 +1,12 @@
-name: TFF Factory v3.2 Chain to 1991
+name: TFF Factory v3.3 Target Chain to 1991
 
 on:
   workflow_dispatch:
     inputs:
       start_season:
-        description: "Bu zincir grubunun başlangıcı. İlk 4'lü bittiyse öneri: 2021-2022"
+        description: "Bu zincir grubunun başlangıcı. Baştan için 2025-2026"
         required: true
-        default: "2021-2022"
+        default: "2025-2026"
       end_year:
         description: "En eski sezon başlangıç yılı. 1990 yazarsan 1990-1991 dahil olur."
         required: true
@@ -18,11 +18,16 @@ on:
       wait_minutes:
         description: "Bir grup bittikten/failed/timeout olduktan sonra sonraki gruba geçmeden bekleme."
         required: true
-        default: "10"
+        default: "5"
       group_timeout_minutes:
         description: "Bir 4'lü grubun iç timeout limiti. Timeout olursa zincir sonraki gruba geçer."
         required: true
         default: "300"
+      clean_all_before_start:
+        description: "Sadece ilk run'da true: data'yı yedekle, tamamen temizle, sonra hedefli yeniden kur. Sonraki zincir gruplarına otomatik false geçer."
+        required: true
+        type: boolean
+        default: false
       auto_push_main:
         description: "Üretilen veri/raporları main'e pushla."
         required: true
@@ -61,7 +66,7 @@ on:
       chain_label:
         description: "Raporlarda görünecek zincir etiketi"
         required: true
-        default: "chain-1991"
+        default: "chain-1991-v33"
 
 permissions:
   contents: write
@@ -100,6 +105,13 @@ jobs:
           git checkout main
           git pull --rebase --autostash origin main
 
+      - name: Optional full clean with backup
+        if: ${{ github.event.inputs.clean_all_before_start == 'true' }}
+        shell: bash
+        run: |
+          python scripts/backup_current_data.py --data-root data --reports-root reports/tff_factory
+          python scripts/clean_database.py --data-root data
+
       - name: Plan current and next group
         id: plan
         shell: bash
@@ -128,7 +140,7 @@ jobs:
           PY
           echo "Plan: ${{ steps.plan.outputs.group_name }}"
 
-      - name: Run group without stopping the chain
+      - name: Run target group without stopping the chain
         id: rungroup
         shell: bash
         env:
@@ -152,7 +164,7 @@ jobs:
             set -e
             STRICT_ARG="--strict-legacy-targets"
             if [ "$STRICT_LEGACY_TARGETS" != "true" ]; then STRICT_ARG="--no-strict-legacy-targets"; fi
-            python scripts/tff_factory_v32_senior_professional_guard.py \
+            python scripts/tff_factory_v33_targeted_professional.py \
               --seed sources/tff/registry/balkes_tff_seed_registry.json \
               --data-root data \
               --raw-root sources/tff/raw \
@@ -164,7 +176,7 @@ jobs:
               --legacy-broad-probe-limit "$LEGACY_BROAD_PROBE_LIMIT" \
               $STRICT_ARG \
               --skip-standings
-            python scripts/clean_bad_professional_data_v32.py --data-root data --reports-root reports/tff_factory --write
+            python scripts/clean_bad_professional_data_v33.py --data-root data --reports-root reports/tff_factory --write
             python scripts/validate_data.py --data-root data --min-seasons 1 --min-matches 1
             if [ "$SKIP_STANDINGS" = "false" ]; then
               python scripts/tff_standings_builder_v31.py \
@@ -182,6 +194,7 @@ jobs:
                 --week-param-mode "$STANDINGS_WEEK_PARAM_MODE" \
                 --sleep "0.15"
             fi
+            python scripts/validate_target_data_v33.py --data-root data --reports-root reports/tff_factory --start-season "$START_SEASON" --max-seasons "$MAX_SEASONS" --strict
           '
           code=$?
           if [ "$code" = "0" ]; then status="success";
@@ -223,7 +236,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Chain ${{ steps.plan.outputs.group_name }}: ${{ steps.rungroup.outputs.status }}"
+          git commit -m "Target chain ${{ steps.plan.outputs.group_name }}: ${{ steps.rungroup.outputs.status }}"
           echo "Cleaning unstaged raw/report leftovers before rebase"
           git checkout -- sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
           git clean -fd sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
@@ -235,7 +248,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tff-chain-v32-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
+          name: tff-chain-v33-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
           path: |
             data/**/*.json
             reports/tff_chain/**/*.json
@@ -263,6 +276,7 @@ jobs:
             -f group_size="${{ github.event.inputs.group_size }}" \
             -f wait_minutes="${{ github.event.inputs.wait_minutes }}" \
             -f group_timeout_minutes="${{ github.event.inputs.group_timeout_minutes }}" \
+            -f clean_all_before_start="false" \
             -f auto_push_main="${{ github.event.inputs.auto_push_main }}" \
             -f skip_standings="${{ github.event.inputs.skip_standings }}" \
             -f standings_mode="${{ github.event.inputs.standings_mode }}" \

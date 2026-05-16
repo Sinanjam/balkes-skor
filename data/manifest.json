@@ -2,149 +2,27 @@
   "app": "Balkes Skor",
   "schemaVersion": 3,
   "dataVersion": 1,
-  "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-16T06:29:29.391349Z",
+  "generatedAt": "2026-05-16T19:17:15.169394Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
-      "matchCount": 33,
-      "competition": "Nesine 3. Lig",
+      "matchCount": 32,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 33,
-        "leagueMatches": 30,
-        "playoffMatches": 2,
-        "cupMatches": 1,
+        "matches": 32,
         "wins": 18,
         "draws": 7,
-        "losses": 8,
-        "goalsFor": 62,
-        "goalsAgainst": 30,
-        "goalDifference": 32,
-        "points": 61,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2024-2025",
-      "name": "2024-2025",
-      "matchCount": 33,
-      "competition": "Nesine 3. League (Professional Team)",
-      "summary": {
-        "matches": 33,
-        "leagueMatches": 29,
-        "playoffMatches": 3,
-        "cupMatches": 1,
-        "wins": 17,
-        "draws": 6,
-        "losses": 10,
-        "goalsFor": 53,
-        "goalsAgainst": 32,
-        "goalDifference": 21,
-        "points": 57,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2023-2024",
-      "name": "2023-2024",
-      "matchCount": 29,
-      "competition": "TFF 3. LEAGUE (Professional Team)",
-      "summary": {
-        "matches": 29,
-        "leagueMatches": 28,
-        "playoffMatches": 0,
-        "cupMatches": 1,
-        "wins": 7,
-        "draws": 12,
-        "losses": 10,
-        "goalsFor": 28,
-        "goalsAgainst": 33,
-        "goalDifference": -5,
-        "points": 33,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2022-2023",
-      "name": "2022-2023",
-      "matchCount": 37,
-      "competition": "TFF 2.League (Professional Team)",
-      "summary": {
-        "matches": 37,
-        "leagueMatches": 37,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 5,
-        "draws": 10,
-        "losses": 22,
-        "goalsFor": 29,
-        "goalsAgainst": 76,
-        "goalDifference": -47,
-        "points": 25,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2021-2022",
-      "name": "2021-2022",
-      "matchCount": 11,
-      "competition": "TRENDYOL SÜPER LİG",
-      "summary": {
-        "matches": 11,
-        "leagueMatches": 0,
-        "playoffMatches": 0,
-        "cupMatches": 11,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
-        "points": null,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2018-2019",
-      "name": "2018-2019",
-      "matchCount": 2,
-      "competition": "Ziraat Türkiye Kupası (Professional Team)",
-      "summary": {
-        "matches": 2,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 1,
-        "wins": 0,
-        "draws": 1,
-        "losses": 1,
-        "goalsFor": 1,
-        "goalsAgainst": 2,
-        "goalDifference": -1,
-        "points": 1,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "2009-2010",
-      "name": "2009-2010",
-      "matchCount": 1,
-      "competition": "TFF 3. League Phase 1 (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 1,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 2,
-        "goalsAgainst": 0,
-        "goalDifference": 2,
-        "points": 3,
-        "finalRank": null
-      }
+        "losses": 7,
+        "goalsFor": 61,
+        "goalsAgainst": 28,
+        "goalDifference": 33,
+        "matchTypes": {
+          "league": 32
+        }
+      },
+      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
     }
   ],
   "global": {
@@ -153,15 +31,7 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778912969,
-  "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-16T06:29:29.391360Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v3.2-senior-professional-guard",
-  "processedSeasonsInLastRun": [
-    "1993-1994",
-    "1992-1993",
-    "1991-1992",
-    "1990-1991"
-  ]
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "targetedSeniorProfessionalGuard": true
 }

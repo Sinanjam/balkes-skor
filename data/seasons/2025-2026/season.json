@@ -6,21 +6,19 @@
     "name": "Balıkesirspor",
     "tffClubId": "135"
   },
-  "competition": "Nesine 3. Lig",
+  "competition": "Nesine 3. Lig (Profesyonel Takım)",
   "group": "04. Grup",
   "summary": {
-    "matches": 33,
-    "leagueMatches": 30,
-    "playoffMatches": 2,
-    "cupMatches": 1,
+    "matches": 32,
     "wins": 18,
     "draws": 7,
-    "losses": 8,
-    "goalsFor": 62,
-    "goalsAgainst": 30,
-    "goalDifference": 32,
-    "points": 61,
-    "finalRank": null
+    "losses": 7,
+    "goalsFor": 61,
+    "goalsAgainst": 28,
+    "goalDifference": 33,
+    "matchTypes": {
+      "league": 32
+    }
   },
   "files": {
     "matchesIndex": "seasons/2025-2026/matches_index.json",
@@ -29,5 +27,8 @@
   "source": {
     "name": "TFF",
     "note": "Açık TFF sayfalarından dönüştürülmüş veri"
-  }
+  },
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-16T19:17:15.121937Z"
 }
