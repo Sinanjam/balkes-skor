@@ -45,13 +45,13 @@
       "substitutions": 5,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180647.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180647",
-      "retrievedAt": "2026-05-15T08:23:59.673376Z",
+      "retrievedAt": "2026-05-15T20:13:25.198780Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180647.json"
+    }
   },
   {
     "id": "180651",
@@ -99,13 +99,13 @@
       "substitutions": 5,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180651.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180651",
-      "retrievedAt": "2026-05-15T08:24:01.595063Z",
+      "retrievedAt": "2026-05-15T20:13:27.910324Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180651.json"
+    }
   },
   {
     "id": "180665",
@@ -153,13 +153,67 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180665.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180665",
-      "retrievedAt": "2026-05-15T08:24:06.743233Z",
+      "retrievedAt": "2026-05-15T20:13:32.359798Z",
       "sourceType": "official_tff_match_detail"
+    }
+  },
+  {
+    "id": "180670",
+    "matchCode": "2030",
+    "season": "2017-2018",
+    "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+    "competitionType": "league",
+    "competitionLabel": "Lig",
+    "stadium": "ANKARA 19 MAYIS - ANKARA",
+    "venue": "ANKARA 19 MAYIS - ANKARA",
+    "stage": "Lig",
+    "stageLabel": "Lig",
+    "date": "2017-09-09",
+    "time": "17:00",
+    "dateDisplay": "2017-09-09 - 17:00",
+    "homeTeam": "MKE ANKARAGÜCÜ",
+    "awayTeam": "Balıkesirspor",
+    "matchType": "league",
+    "matchTypeLabel": "Lig",
+    "type": "league",
+    "typeLabel": "Lig",
+    "score": {
+      "home": 1,
+      "away": 2,
+      "display": "1-2",
+      "played": true
     },
-    "detailUrl": "seasons/2017-2018/matches/180665.json"
+    "balkes": {
+      "isHome": false,
+      "isAway": true,
+      "opponent": "MKE ANKARAGÜCÜ",
+      "goalsFor": 2,
+      "goalsAgainst": 1,
+      "result": "W"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 10,
+      "substitutesAway": 9,
+      "goals": 3,
+      "cards": 3,
+      "substitutions": 6,
+      "players": 43
+    },
+    "detailUrl": "seasons/2017-2018/matches/180670.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180670",
+      "retrievedAt": "2026-05-15T20:13:33.744800Z",
+      "sourceType": "official_tff_match_detail"
+    }
   },
   {
     "id": "180680",
@@ -207,13 +261,13 @@
       "substitutions": 6,
       "players": 43
     },
+    "detailUrl": "seasons/2017-2018/matches/180680.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180680",
-      "retrievedAt": "2026-05-15T08:24:11.992564Z",
+      "retrievedAt": "2026-05-15T20:13:38.221707Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180680.json"
+    }
   },
   {
     "id": "188729",
@@ -261,13 +315,13 @@
       "substitutions": 6,
       "players": 48
     },
+    "detailUrl": "seasons/2017-2018/matches/188729.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=188729",
-      "retrievedAt": "2026-05-15T08:28:32.228291Z",
+      "retrievedAt": "2026-05-15T20:18:40.993220Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/188729.json"
+    }
   },
   {
     "id": "180692",
@@ -315,13 +369,13 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180692.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180692",
-      "retrievedAt": "2026-05-15T08:24:17.665342Z",
+      "retrievedAt": "2026-05-15T20:13:43.100530Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180692.json"
+    }
   },
   {
     "id": "180700",
@@ -369,13 +423,13 @@
       "substitutions": 6,
       "players": 43
     },
+    "detailUrl": "seasons/2017-2018/matches/180700.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180700",
-      "retrievedAt": "2026-05-15T08:24:19.719347Z",
+      "retrievedAt": "2026-05-15T20:13:46.065518Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180700.json"
+    }
   },
   {
     "id": "180711",
@@ -423,13 +477,13 @@
       "substitutions": 6,
       "players": 38
     },
+    "detailUrl": "seasons/2017-2018/matches/180711.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180711",
-      "retrievedAt": "2026-05-15T08:24:22.129606Z",
+      "retrievedAt": "2026-05-15T20:13:50.874627Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180711.json"
+    }
   },
   {
     "id": "180713",
@@ -477,13 +531,13 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180713.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180713",
-      "retrievedAt": "2026-05-15T08:24:23.016134Z",
+      "retrievedAt": "2026-05-15T20:13:52.210415Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180713.json"
+    }
   },
   {
     "id": "180722",
@@ -531,13 +585,13 @@
       "substitutions": 6,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180722.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180722",
-      "retrievedAt": "2026-05-15T08:24:25.396036Z",
+      "retrievedAt": "2026-05-15T20:13:54.105678Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180722.json"
+    }
   },
   {
     "id": "180734",
@@ -585,13 +639,13 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180734.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180734",
-      "retrievedAt": "2026-05-15T08:24:31.750863Z",
+      "retrievedAt": "2026-05-15T20:14:00.274737Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180734.json"
+    }
   },
   {
     "id": "180741",
@@ -639,13 +693,13 @@
       "substitutions": 6,
       "players": 39
     },
+    "detailUrl": "seasons/2017-2018/matches/180741.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180741",
-      "retrievedAt": "2026-05-15T08:24:33.811522Z",
+      "retrievedAt": "2026-05-15T20:14:02.510377Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180741.json"
+    }
   },
   {
     "id": "180751",
@@ -693,13 +747,13 @@
       "substitutions": 6,
       "players": 42
     },
+    "detailUrl": "seasons/2017-2018/matches/180751.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180751",
-      "retrievedAt": "2026-05-15T08:24:37.834465Z",
+      "retrievedAt": "2026-05-15T20:14:06.804008Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180751.json"
+    }
   },
   {
     "id": "180765",
@@ -747,13 +801,13 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180765.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180765",
-      "retrievedAt": "2026-05-15T08:24:43.799526Z",
+      "retrievedAt": "2026-05-15T20:14:12.056246Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180765.json"
+    }
   },
   {
     "id": "180772",
@@ -801,13 +855,13 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180772.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180772",
-      "retrievedAt": "2026-05-15T08:24:46.918429Z",
+      "retrievedAt": "2026-05-15T20:14:16.115547Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180772.json"
+    }
   },
   {
     "id": "180777",
@@ -855,13 +909,13 @@
       "substitutions": 6,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180777.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180777",
-      "retrievedAt": "2026-05-15T08:24:48.940589Z",
+      "retrievedAt": "2026-05-15T20:14:19.210421Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180777.json"
+    }
   },
   {
     "id": "180789",
@@ -909,13 +963,13 @@
       "substitutions": 5,
       "players": 38
     },
+    "detailUrl": "seasons/2017-2018/matches/180789.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180789",
-      "retrievedAt": "2026-05-15T08:24:52.302149Z",
+      "retrievedAt": "2026-05-15T20:14:23.971050Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180789.json"
+    }
   },
   {
     "id": "180800",
@@ -963,13 +1017,13 @@
       "substitutions": 5,
       "players": 36
     },
+    "detailUrl": "seasons/2017-2018/matches/180800.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180800",
-      "retrievedAt": "2026-05-15T08:24:55.584567Z",
+      "retrievedAt": "2026-05-15T20:14:26.997829Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180800.json"
+    }
   },
   {
     "id": "180804",
@@ -1017,13 +1071,13 @@
       "substitutions": 6,
       "players": 44
     },
+    "detailUrl": "seasons/2017-2018/matches/180804.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180804",
-      "retrievedAt": "2026-05-15T08:24:56.377104Z",
+      "retrievedAt": "2026-05-15T20:14:27.603489Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180804.json"
+    }
   },
   {
     "id": "180818",
@@ -1071,13 +1125,13 @@
       "substitutions": 6,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180818.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180818",
-      "retrievedAt": "2026-05-15T08:24:58.291060Z",
+      "retrievedAt": "2026-05-15T20:14:29.094312Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180818.json"
+    }
   },
   {
     "id": "180823",
@@ -1125,13 +1179,13 @@
       "substitutions": 6,
       "players": 43
     },
+    "detailUrl": "seasons/2017-2018/matches/180823.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180823",
-      "retrievedAt": "2026-05-15T08:25:01.132847Z",
+      "retrievedAt": "2026-05-15T20:14:32.743667Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180823.json"
+    }
   },
   {
     "id": "180833",
@@ -1179,13 +1233,13 @@
       "substitutions": 6,
       "players": 43
     },
+    "detailUrl": "seasons/2017-2018/matches/180833.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180833",
-      "retrievedAt": "2026-05-15T08:25:04.440237Z",
+      "retrievedAt": "2026-05-15T20:14:36.410617Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180833.json"
+    }
   },
   {
     "id": "180845",
@@ -1233,13 +1287,121 @@
       "substitutions": 6,
       "players": 42
     },
+    "detailUrl": "seasons/2017-2018/matches/180845.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180845",
-      "retrievedAt": "2026-05-15T08:25:09.041635Z",
+      "retrievedAt": "2026-05-15T20:14:43.057703Z",
       "sourceType": "official_tff_match_detail"
+    }
+  },
+  {
+    "id": "180853",
+    "matchCode": "2213",
+    "season": "2017-2018",
+    "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+    "competitionType": "league",
+    "competitionLabel": "Lig",
+    "stadium": "BALIKESİR ATATÜRK - BALIKESİR",
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+    "stage": "Lig",
+    "stageLabel": "Lig",
+    "date": "2018-02-24",
+    "time": "15:30",
+    "dateDisplay": "2018-02-24 - 15:30",
+    "homeTeam": "Balıkesirspor",
+    "awayTeam": "SAMSUNSPOR",
+    "matchType": "league",
+    "matchTypeLabel": "Lig",
+    "type": "league",
+    "typeLabel": "Lig",
+    "score": {
+      "home": 2,
+      "away": 0,
+      "display": "2-0",
+      "played": true
     },
-    "detailUrl": "seasons/2017-2018/matches/180845.json"
+    "balkes": {
+      "isHome": true,
+      "isAway": false,
+      "opponent": "SAMSUNSPOR",
+      "goalsFor": 2,
+      "goalsAgainst": 0,
+      "result": "W"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 9,
+      "substitutesAway": 9,
+      "goals": 2,
+      "cards": 1,
+      "substitutions": 6,
+      "players": 42
+    },
+    "detailUrl": "seasons/2017-2018/matches/180853.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180853",
+      "retrievedAt": "2026-05-15T20:14:45.149246Z",
+      "sourceType": "official_tff_match_detail"
+    }
+  },
+  {
+    "id": "180864",
+    "matchCode": "2224",
+    "season": "2017-2018",
+    "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+    "competitionType": "league",
+    "competitionLabel": "Lig",
+    "stadium": "GAZİANTEP STADYUMU - GAZİANTEP",
+    "venue": "GAZİANTEP STADYUMU - GAZİANTEP",
+    "stage": "Lig",
+    "stageLabel": "Lig",
+    "date": "2018-03-03",
+    "time": "13:00",
+    "dateDisplay": "2018-03-03 - 13:00",
+    "homeTeam": "GAZİANTEPSPOR",
+    "awayTeam": "Balıkesirspor",
+    "matchType": "league",
+    "matchTypeLabel": "Lig",
+    "type": "league",
+    "typeLabel": "Lig",
+    "score": {
+      "home": 1,
+      "away": 3,
+      "display": "1-3",
+      "played": true
+    },
+    "balkes": {
+      "isHome": false,
+      "isAway": true,
+      "opponent": "GAZİANTEPSPOR",
+      "goalsFor": 3,
+      "goalsAgainst": 1,
+      "result": "W"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 9,
+      "substitutesAway": 7,
+      "goals": 4,
+      "cards": 2,
+      "substitutions": 6,
+      "players": 39
+    },
+    "detailUrl": "seasons/2017-2018/matches/180864.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180864",
+      "retrievedAt": "2026-05-15T20:14:49.302561Z",
+      "sourceType": "official_tff_match_detail"
+    }
   },
   {
     "id": "180866",
@@ -1287,13 +1449,13 @@
       "substitutions": 6,
       "players": 41
     },
+    "detailUrl": "seasons/2017-2018/matches/180866.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180866",
-      "retrievedAt": "2026-05-15T08:25:15.022516Z",
+      "retrievedAt": "2026-05-15T20:14:50.801292Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180866.json"
+    }
   },
   {
     "id": "180875",
@@ -1341,13 +1503,13 @@
       "substitutions": 6,
       "players": 39
     },
+    "detailUrl": "seasons/2017-2018/matches/180875.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180875",
-      "retrievedAt": "2026-05-15T08:25:18.157369Z",
+      "retrievedAt": "2026-05-15T20:14:53.656290Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180875.json"
+    }
   },
   {
     "id": "180887",
@@ -1395,13 +1557,13 @@
       "substitutions": 6,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180887.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180887",
-      "retrievedAt": "2026-05-15T08:25:24.879905Z",
+      "retrievedAt": "2026-05-15T20:14:59.363459Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180887.json"
+    }
   },
   {
     "id": "180894",
@@ -1449,13 +1611,13 @@
       "substitutions": 6,
       "players": 42
     },
+    "detailUrl": "seasons/2017-2018/matches/180894.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180894",
-      "retrievedAt": "2026-05-15T08:25:29.096773Z",
+      "retrievedAt": "2026-05-15T20:15:02.905172Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180894.json"
+    }
   },
   {
     "id": "180904",
@@ -1503,13 +1665,13 @@
       "substitutions": 6,
       "players": 42
     },
+    "detailUrl": "seasons/2017-2018/matches/180904.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180904",
-      "retrievedAt": "2026-05-15T08:25:32.142881Z",
+      "retrievedAt": "2026-05-15T20:15:07.248932Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180904.json"
+    }
   },
   {
     "id": "180918",
@@ -1557,13 +1719,13 @@
       "substitutions": 6,
       "players": 42
     },
+    "detailUrl": "seasons/2017-2018/matches/180918.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180918",
-      "retrievedAt": "2026-05-15T08:25:35.919879Z",
+      "retrievedAt": "2026-05-15T20:15:11.254269Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180918.json"
+    }
   },
   {
     "id": "180925",
@@ -1611,13 +1773,13 @@
       "substitutions": 5,
       "players": 40
     },
+    "detailUrl": "seasons/2017-2018/matches/180925.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180925",
-      "retrievedAt": "2026-05-15T08:25:37.776359Z",
+      "retrievedAt": "2026-05-15T20:15:14.435534Z",
       "sourceType": "official_tff_match_detail"
-    },
-    "detailUrl": "seasons/2017-2018/matches/180925.json"
+    }
   },
   {
     "id": "180930",
@@ -1665,12 +1827,66 @@
       "substitutions": 6,
       "players": 38
     },
+    "detailUrl": "seasons/2017-2018/matches/180930.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180930",
-      "retrievedAt": "2026-05-15T08:25:41.171708Z",
+      "retrievedAt": "2026-05-15T20:15:19.074238Z",
       "sourceType": "official_tff_match_detail"
+    }
+  },
+  {
+    "id": "180942",
+    "matchCode": "2302",
+    "season": "2017-2018",
+    "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+    "competitionType": "league",
+    "competitionLabel": "Lig",
+    "stadium": "BALIKESİR ATATÜRK - BALIKESİR",
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR",
+    "stage": "Lig",
+    "stageLabel": "Lig",
+    "date": "2018-05-04",
+    "time": "17:30",
+    "dateDisplay": "2018-05-04 - 17:30",
+    "homeTeam": "Balıkesirspor",
+    "awayTeam": "GRANDMEDICAL MANİSASPOR",
+    "matchType": "league",
+    "matchTypeLabel": "Lig",
+    "type": "league",
+    "typeLabel": "Lig",
+    "score": {
+      "home": 4,
+      "away": 1,
+      "display": "4-1",
+      "played": true
     },
-    "detailUrl": "seasons/2017-2018/matches/180930.json"
+    "balkes": {
+      "isHome": true,
+      "isAway": false,
+      "opponent": "GRANDMEDICAL MANİSASPOR",
+      "goalsFor": 4,
+      "goalsAgainst": 1,
+      "result": "W"
+    },
+    "quality": "A",
+    "detailCompleteness": {
+      "hasStadium": true,
+      "starting11Home": 11,
+      "starting11Away": 11,
+      "substitutesHome": 5,
+      "substitutesAway": 8,
+      "goals": 5,
+      "cards": 1,
+      "substitutions": 6,
+      "players": 37
+    },
+    "detailUrl": "seasons/2017-2018/matches/180942.json",
+    "source": {
+      "name": "TFF",
+      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=180942",
+      "retrievedAt": "2026-05-15T20:15:22.725678Z",
+      "sourceType": "official_tff_match_detail"
+    }
   }
 ]
