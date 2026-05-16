@@ -1,0 +1,17 @@
+{
+  "start_season": "2025-2026",
+  "end_year": 1990,
+  "group_size": 4,
+  "wait_minutes": 5,
+  "group_timeout_minutes": 300,
+  "clean_all_before_start": true,
+  "auto_push_main": true,
+  "skip_standings": false,
+  "standings_mode": "auto",
+  "standings_detail_mode": "missing",
+  "standings_workers": 6,
+  "standings_week_param_mode": "smart",
+  "legacy_broad_probe_limit": 350,
+  "strict_legacy_targets": true,
+  "chain_label": "chain-1991-v35-dispatch"
+}
