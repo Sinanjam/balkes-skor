@@ -1,33 +1,5 @@
 {
-  "generatedAt": "2026-05-16T19:17:15.170128Z",
-  "sourcePolicy": "TFF senior professional target only",
-  "factoryVersion": "v3.3-targeted-professional-cleaner",
-  "totalAppMatches": 32,
-  "seasons": [
-    {
-      "id": "2025-2026",
-      "name": "2025-2026",
-      "matchCount": 32,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 32,
-        "wins": 18,
-        "draws": 7,
-        "losses": 7,
-        "goalsFor": 61,
-        "goalsAgainst": 28,
-        "goalDifference": 33,
-        "matchTypes": {
-          "league": 32
-        }
-      },
-      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
-    }
-  ],
-  "opponentsIndexed": 16,
-  "notes": [
-    "v3.3: youth/PAF/academy/BAL/women contamination removed.",
-    "Partial seasons are suppressed instead of publishing misleading data.",
-    "Standings are cleared for seasons whose match set changed, then rebuilt by the standings builder when enough full-league data exists."
-  ]
+  "generatedAt": "2026-05-16T19:20:10.048129Z",
+  "totalAppMatches": 0,
+  "seasons": []
 }

@@ -1,37 +1,15 @@
 {
   "app": "Balkes Skor",
   "schemaVersion": 3,
-  "dataVersion": 1,
-  "generatedAt": "2026-05-16T19:17:15.169394Z",
+  "generatedAt": "2026-05-16T19:20:10.047697Z",
   "team": "Balıkesirspor",
-  "availableSeasons": [
-    {
-      "id": "2025-2026",
-      "name": "2025-2026",
-      "matchCount": 32,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 32,
-        "wins": 18,
-        "draws": 7,
-        "losses": 7,
-        "goalsFor": 61,
-        "goalsAgainst": 28,
-        "goalDifference": 33,
-        "matchTypes": {
-          "league": 32
-        }
-      },
-      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
-    }
-  ],
+  "availableSeasons": [],
   "global": {
     "playersIndexUrl": "players_index.json",
     "opponentsIndexUrl": "opponents_index.json",
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v3.3-targeted-professional-cleaner",
-  "targetedSeniorProfessionalGuard": true
+  "factoryVersion": "v2.2-no-standings-fixed2",
+  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/"
 }
