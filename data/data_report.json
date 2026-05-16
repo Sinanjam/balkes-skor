@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-05-16T06:08:45.940554Z",
+  "generatedAt": "2026-05-16T06:29:29.396902Z",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v3.2-senior-professional-guard",
-  "totalAppMatches": 150,
+  "totalAppMatches": 146,
   "seasons": [
     {
       "id": "2025-2026",
@@ -143,70 +143,10 @@
         "points": 3,
         "finalRank": null
       }
-    },
-    {
-      "id": "1992-1993",
-      "name": "1992-1993",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 1,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 3,
-        "goalsAgainst": 2,
-        "goalDifference": 1,
-        "points": 3,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "1991-1992",
-      "name": "1991-1992",
-      "matchCount": 1,
-      "competition": "3. League (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 1,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 9,
-        "goalsAgainst": 1,
-        "goalDifference": 8,
-        "points": 3,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "1990-1991",
-      "name": "1990-1991",
-      "matchCount": 2,
-      "competition": "3. League (Professional Team)",
-      "summary": {
-        "matches": 2,
-        "leagueMatches": 2,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 2,
-        "goalsFor": 0,
-        "goalsAgainst": 2,
-        "goalDifference": -2,
-        "points": 0,
-        "finalRank": null
-      }
     }
   ],
   "playersIndexed": 0,
-  "opponentsIndexed": 74,
+  "opponentsIndexed": 70,
   "notes": [
     "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
     "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."

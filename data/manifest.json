@@ -3,7 +3,7 @@
   "schemaVersion": 3,
   "dataVersion": 1,
   "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-16T06:08:45.934241Z",
+  "generatedAt": "2026-05-16T06:29:29.391349Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -145,66 +145,6 @@
         "points": 3,
         "finalRank": null
       }
-    },
-    {
-      "id": "1992-1993",
-      "name": "1992-1993",
-      "matchCount": 1,
-      "competition": "League B Classification (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 1,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 3,
-        "goalsAgainst": 2,
-        "goalDifference": 1,
-        "points": 3,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "1991-1992",
-      "name": "1991-1992",
-      "matchCount": 1,
-      "competition": "3. League (Professional Team)",
-      "summary": {
-        "matches": 1,
-        "leagueMatches": 1,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 1,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 9,
-        "goalsAgainst": 1,
-        "goalDifference": 8,
-        "points": 3,
-        "finalRank": null
-      }
-    },
-    {
-      "id": "1990-1991",
-      "name": "1990-1991",
-      "matchCount": 2,
-      "competition": "3. League (Professional Team)",
-      "summary": {
-        "matches": 2,
-        "leagueMatches": 2,
-        "playoffMatches": 0,
-        "cupMatches": 0,
-        "wins": 0,
-        "draws": 0,
-        "losses": 2,
-        "goalsFor": 0,
-        "goalsAgainst": 2,
-        "goalDifference": -2,
-        "points": 0,
-        "finalRank": null
-      }
     }
   ],
   "global": {
@@ -213,15 +153,15 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 1778911725,
+  "appDataVersion": 1778912969,
   "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-16T06:08:45.934251Z",
+  "lastUpdated": "2026-05-16T06:29:29.391360Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v3.2-senior-professional-guard",
   "processedSeasonsInLastRun": [
-    "1997-1998",
-    "1996-1997",
-    "1995-1996",
-    "1994-1995"
+    "1993-1994",
+    "1992-1993",
+    "1991-1992",
+    "1990-1991"
   ]
 }
