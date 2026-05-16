@@ -1,7 +1,7 @@
 {
   "season": "2010-2011",
   "selectedIds": 220,
-  "allDiscoveredIds": 5006,
+  "allDiscoveredIds": 5155,
   "detailCandidates": 220,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
@@ -210,11 +210,11 @@
       "groupAllDelta": 6
     },
     {
-      "kind": "group_fast_skip",
+      "kind": "group_hint",
       "pageID": 1178,
-      "error": "timeout",
       "grupID": "832",
-      "cumulative": 1
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 6
     },
     {
       "kind": "group_hint",
@@ -222,22 +222,6 @@
       "grupID": "833",
       "groupSelectedDelta": 0,
       "groupAllDelta": 6
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1178,
-      "error": "timeout",
-      "grupID": "833",
-      "week": 1,
-      "cumulative": 1
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1178,
-      "error": "timeout",
-      "grupID": "833",
-      "week": 5,
-      "cumulative": 2
     },
     {
       "kind": "group_hint",
@@ -275,7 +259,7 @@
       "groupAllDelta": 6
     }
   ],
-  "matchesPublished": 2,
+  "matchesPublished": 0,
   "detailFiles": 2,
   "duplicatesDropped": 0,
   "rejectedReasons": {
@@ -718,5 +702,17 @@
     "start": "2010-07-01",
     "end": "2011-06-30"
   },
-  "generatedAt": "2026-05-15T14:56:38.024858Z"
+  "generatedAt": "2026-05-16T02:13:33.588846Z",
+  "seniorProfessionalGuard": {
+    "total": 2,
+    "league": 0,
+    "played": 2,
+    "badCompetitions": [],
+    "reasons": [
+      "too_few_matches:2",
+      "too_few_league_matches:0"
+    ]
+  },
+  "publicationSuppressed": true,
+  "suppressedReason": "too_few_matches:2;too_few_league_matches:0"
 }

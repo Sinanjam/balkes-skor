@@ -2,7 +2,7 @@
   "app": "Balkes Skor",
   "schemaVersion": 3,
   "dataVersion": 1,
-  "generatedAt": "2026-05-15T18:39:44.775103Z",
+  "generatedAt": "2026-05-16T02:13:34.718354Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -98,11 +98,7 @@
         "goalDifference": -51,
         "matchTypes": {
           "league": 36
-        },
-        "points": 12,
-        "rawPoints": 12,
-        "pointsDeducted": 0,
-        "finalRank": 19
+        }
       },
       "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
     },
@@ -121,11 +117,7 @@
         "goalDifference": -18,
         "matchTypes": {
           "league": 34
-        },
-        "points": 35,
-        "rawPoints": 35,
-        "pointsDeducted": 0,
-        "finalRank": 13
+        }
       },
       "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
     },
@@ -139,16 +131,12 @@
         "wins": 8,
         "draws": 11,
         "losses": 11,
-        "goalsFor": 36,
-        "goalsAgainst": 48,
-        "goalDifference": -12,
+        "goalsFor": 30,
+        "goalsAgainst": 36,
+        "goalDifference": -6,
         "matchTypes": {
           "league": 30
-        },
-        "points": 38,
-        "rawPoints": 38,
-        "pointsDeducted": 0,
-        "finalRank": 13
+        }
       },
       "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
     },
@@ -175,18 +163,18 @@
     {
       "id": "2017-2018",
       "name": "2017-2018",
-      "matchCount": 31,
+      "matchCount": 35,
       "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 31,
-        "wins": 12,
+        "matches": 35,
+        "wins": 16,
         "draws": 7,
         "losses": 12,
-        "goalsFor": 51,
-        "goalsAgainst": 50,
-        "goalDifference": 1,
+        "goalsFor": 62,
+        "goalsAgainst": 53,
+        "goalDifference": 9,
         "matchTypes": {
-          "league": 30,
+          "league": 34,
           "cup": 1
         }
       },
@@ -256,18 +244,18 @@
     {
       "id": "2013-2014",
       "name": "2013-2014",
-      "matchCount": 39,
+      "matchCount": 40,
       "competition": "PTT 1.Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 39,
-        "wins": 24,
+        "matches": 40,
+        "wins": 25,
         "draws": 7,
         "losses": 8,
-        "goalsFor": 64,
-        "goalsAgainst": 38,
-        "goalDifference": 26,
+        "goalsFor": 68,
+        "goalsAgainst": 39,
+        "goalDifference": 29,
         "matchTypes": {
-          "league": 35,
+          "league": 36,
           "cup": 4
         }
       },
@@ -288,7 +276,11 @@
         "goalDifference": 26,
         "matchTypes": {
           "league": 32
-        }
+        },
+        "points": 69,
+        "rawPoints": 69,
+        "pointsDeducted": 0,
+        "finalRank": 1
       },
       "standingsByWeekUrl": "seasons/2012-2013/standings_by_week.json"
     },
@@ -322,6 +314,6 @@
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
   "factoryVersion": "v3.2-senior-professional-guard-cleaner",
   "seniorProfessionalGuard": true,
-  "standingsUpdatedAt": "2026-05-15T18:48:38.007623Z",
+  "standingsUpdatedAt": "2026-05-16T02:18:31.080889Z",
   "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }

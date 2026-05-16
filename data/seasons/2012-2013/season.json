@@ -4,7 +4,7 @@
   "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
   "sourcePolicy": "TFF senior professional only",
   "factoryVersion": "v3.2-senior-professional-guard-cleaner",
-  "updatedAt": "2026-05-15T18:39:44.712161Z",
+  "updatedAt": "2026-05-16T02:13:34.647431Z",
   "summary": {
     "matches": 32,
     "wins": 20,
@@ -15,12 +15,16 @@
     "goalDifference": 26,
     "matchTypes": {
       "league": 32
-    }
+    },
+    "points": 69,
+    "rawPoints": 69,
+    "pointsDeducted": 0,
+    "finalRank": 1
   },
   "files": {
     "matchesIndex": "seasons/2012-2013/matches_index.json",
     "standingsByWeek": "seasons/2012-2013/standings_by_week.json"
   },
-  "standingsUpdatedAt": "2026-05-15T15:02:29.497921Z",
+  "standingsUpdatedAt": "2026-05-16T02:18:31.065092Z",
   "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
 }

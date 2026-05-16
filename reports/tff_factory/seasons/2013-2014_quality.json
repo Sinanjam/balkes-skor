@@ -1,8 +1,8 @@
 {
   "season": "2013-2014",
-  "selectedIds": 621,
-  "allDiscoveredIds": 8678,
-  "detailCandidates": 621,
+  "selectedIds": 622,
+  "allDiscoveredIds": 8690,
+  "detailCandidates": 622,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
@@ -48,14 +48,6 @@
       "grupID": "906",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1239,
-      "error": "timeout",
-      "grupID": "906",
-      "week": 35,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -140,14 +132,6 @@
       "grupID": "1761",
       "groupSelectedDelta": 1,
       "groupAllDelta": 9
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1247,
-      "error": "timeout",
-      "grupID": "1761",
-      "week": 8,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -265,14 +249,6 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1279,
-      "error": "timeout",
-      "grupID": "988",
-      "week": 26,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1279,
       "grupID": "989",
@@ -292,14 +268,6 @@
       "grupID": "991",
       "groupSelectedDelta": 0,
       "groupAllDelta": 4
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1279,
-      "error": "timeout",
-      "grupID": "991",
-      "week": 18,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -372,14 +340,6 @@
       "groupAllDelta": 3
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1279,
-      "error": "timeout",
-      "grupID": "1053",
-      "week": 13,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1279,
       "grupID": "1054",
@@ -422,6 +382,14 @@
       "groupAllDelta": 7
     },
     {
+      "kind": "group_week_fast_skip",
+      "pageID": 1287,
+      "error": "timeout",
+      "grupID": "1020",
+      "week": 40,
+      "cumulative": 1
+    },
+    {
       "kind": "group_hint",
       "pageID": 1288,
       "grupID": "1013",
@@ -460,9 +428,9 @@
       "groupAllDelta": 0
     }
   ],
-  "matchesPublished": 191,
-  "detailFiles": 191,
-  "duplicatesDropped": 6,
+  "matchesPublished": 40,
+  "detailFiles": 40,
+  "duplicatesDropped": 0,
   "rejectedReasons": {
     "balkes_not_found": 188,
     "date_out_of_season:2011-09-11": 1,
@@ -549,6 +517,14 @@
     "date_out_of_season:2012-09-27": 1,
     "date_out_of_season:2012-11-01": 1,
     "date_out_of_season:2012-11-27": 1,
+    "not_senior_professional_competition:A2 Ligi Kademe (PAF Takımı)": 12,
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı)": 28,
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)": 28,
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı)": 29,
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı)": 24,
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U19 Ligi (Akademi U19 Takımı)": 24,
+    "not_senior_professional_competition:A2 Ligi Klasman (PAF Takımı)": 10,
+    "not_senior_professional_competition:A2 Ligi Play-Off Müsabakaları (PAF Takımı) (Eleme)": 2,
     "date_out_of_season:2019-09-08": 3,
     "date_out_of_season:2019-09-22": 3,
     "date_out_of_season:2019-09-29": 3,
@@ -580,7 +556,7 @@
     "date_out_of_season:2019-09-21": 2,
     "date_out_of_season:2019-09-28": 2,
     "date_out_of_season:2019-10-05": 2,
-    "date_out_of_season:2019-10-19": 1,
+    "date_out_of_season:2019-10-19": 2,
     "date_out_of_season:2019-10-26": 2,
     "date_out_of_season:2019-11-02": 2,
     "date_out_of_season:2019-11-09": 2,
@@ -898,6 +874,146 @@
     "date_out_of_season:2012-11-27": [
       "116695"
     ],
+    "not_senior_professional_competition:A2 Ligi Kademe (PAF Takımı)": [
+      "120755",
+      "120758",
+      "120760",
+      "120766",
+      "120771",
+      "120774",
+      "120776",
+      "120779",
+      "120781",
+      "120787",
+      "120792",
+      "120795"
+    ],
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı)": [
+      "123623",
+      "123632",
+      "123636",
+      "123641",
+      "123649",
+      "123657",
+      "123662",
+      "123676",
+      "123687",
+      "123691",
+      "123701",
+      "123706",
+      "123715",
+      "123721",
+      "123728",
+      "123737",
+      "123741",
+      "123746",
+      "123754",
+      "123762"
+    ],
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)": [
+      "124365",
+      "124374",
+      "124378",
+      "124383",
+      "124391",
+      "124399",
+      "124404",
+      "124418",
+      "124429",
+      "124433",
+      "124443",
+      "124448",
+      "124457",
+      "124463",
+      "124470",
+      "124479",
+      "124483",
+      "124488",
+      "124496",
+      "124504"
+    ],
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı)": [
+      "125683",
+      "125692",
+      "125696",
+      "125701",
+      "125709",
+      "125717",
+      "125722",
+      "125736",
+      "125747",
+      "125751",
+      "125761",
+      "125766",
+      "125775",
+      "125781",
+      "125788",
+      "125797",
+      "125801",
+      "125806",
+      "125814",
+      "125822"
+    ],
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı)": [
+      "126113",
+      "126118",
+      "126127",
+      "126129",
+      "126135",
+      "126140",
+      "126152",
+      "126161",
+      "126165",
+      "126173",
+      "126178",
+      "126185",
+      "126191",
+      "126196",
+      "126205",
+      "126207",
+      "126213",
+      "126218",
+      "126230",
+      "126239"
+    ],
+    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U19 Ligi (Akademi U19 Takımı)": [
+      "127206",
+      "127211",
+      "127220",
+      "127222",
+      "127228",
+      "127233",
+      "127245",
+      "127254",
+      "127258",
+      "127266",
+      "127271",
+      "127278",
+      "127284",
+      "127289",
+      "127298",
+      "127300",
+      "127306",
+      "127311",
+      "127323",
+      "127332"
+    ],
+    "not_senior_professional_competition:A2 Ligi Klasman (PAF Takımı)": [
+      "129076",
+      "129079",
+      "129081",
+      "129083",
+      "129087",
+      "129091",
+      "129094",
+      "129096",
+      "129098",
+      "129102"
+    ],
+    "not_senior_professional_competition:A2 Ligi Play-Off Müsabakaları (PAF Takımı) (Eleme)": [
+      "129362",
+      "129366"
+    ],
     "date_out_of_season:2019-09-08": [
       "207982",
       "208414",
@@ -1047,7 +1163,8 @@
       "210036"
     ],
     "date_out_of_season:2019-10-19": [
-      "209435"
+      "209435",
+      "210047"
     ],
     "date_out_of_season:2019-10-26": [
       "209446",
@@ -1165,13 +1282,12 @@
   "standingsSnapshots": 0,
   "balkesTableFound": false,
   "matchTypeCounts": {
-    "league": 185,
-    "cup": 4,
-    "playoff": 2
+    "league": 36,
+    "cup": 4
   },
   "seasonGuard": {
     "start": "2013-07-01",
     "end": "2014-06-30"
   },
-  "generatedAt": "2026-05-15T13:27:44.428034Z"
+  "generatedAt": "2026-05-16T01:19:26.466708Z"
 }
