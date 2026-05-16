@@ -1,26 +1,33 @@
 {
   "id": "2022-2023",
   "name": "2022-2023",
-  "competition": "TFF 2.Lig (Profesyonel Takım)",
-  "sourcePolicy": "TFF senior professional only",
-  "factoryVersion": "v3.2-senior-professional-guard-cleaner",
-  "updatedAt": "2026-05-16T02:13:34.034517Z",
+  "team": {
+    "id": "balikesirspor",
+    "name": "Balıkesirspor",
+    "tffClubId": "135"
+  },
+  "competition": "TFF 2.League (Professional Team)",
+  "group": "",
   "summary": {
-    "matches": 38,
-    "wins": 6,
+    "matches": 37,
+    "leagueMatches": 37,
+    "playoffMatches": 0,
+    "cupMatches": 0,
+    "wins": 5,
     "draws": 10,
     "losses": 22,
-    "goalsFor": 32,
+    "goalsFor": 29,
     "goalsAgainst": 76,
-    "goalDifference": -44,
-    "matchTypes": {
-      "league": 38
-    }
+    "goalDifference": -47,
+    "points": 25,
+    "finalRank": null
   },
   "files": {
     "matchesIndex": "seasons/2022-2023/matches_index.json",
     "standingsByWeek": "seasons/2022-2023/standings_by_week.json"
   },
-  "standingsUpdatedAt": "2026-05-15T18:04:38.089163Z",
-  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+  "source": {
+    "name": "TFF",
+    "note": "Açık TFF sayfalarından dönüştürülmüş veri"
+  }
 }

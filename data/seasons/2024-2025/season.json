@@ -1,27 +1,33 @@
 {
   "id": "2024-2025",
   "name": "2024-2025",
-  "competition": "Nesine 3. Lig (Profesyonel Takım)",
-  "sourcePolicy": "TFF senior professional only",
-  "factoryVersion": "v3.2-senior-professional-guard-cleaner",
-  "updatedAt": "2026-05-16T02:13:33.915429Z",
+  "team": {
+    "id": "balikesirspor",
+    "name": "Balıkesirspor",
+    "tffClubId": "135"
+  },
+  "competition": "Nesine 3. League (Professional Team)",
+  "group": "",
   "summary": {
     "matches": 33,
-    "wins": 18,
+    "leagueMatches": 29,
+    "playoffMatches": 3,
+    "cupMatches": 1,
+    "wins": 17,
     "draws": 6,
-    "losses": 9,
-    "goalsFor": 56,
-    "goalsAgainst": 30,
-    "goalDifference": 26,
-    "matchTypes": {
-      "league": 30,
-      "playoff": 3
-    }
+    "losses": 10,
+    "goalsFor": 53,
+    "goalsAgainst": 32,
+    "goalDifference": 21,
+    "points": 57,
+    "finalRank": null
   },
   "files": {
     "matchesIndex": "seasons/2024-2025/matches_index.json",
     "standingsByWeek": "seasons/2024-2025/standings_by_week.json"
   },
-  "standingsUpdatedAt": "2026-05-15T17:50:56.985810Z",
-  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+  "source": {
+    "name": "TFF",
+    "note": "Açık TFF sayfalarından dönüştürülmüş veri"
+  }
 }
