@@ -1,53 +1,254 @@
 {
-  "generatedAt": "2026-05-14T05:19:50Z",
-  "sourceZip": "balkes-tff-veri.zip + TFF-Entegrasyon.zip",
-  "uploadedScan": {
-    "generated_at": "2026-05-11T10:54:26",
-    "mode": "max",
-    "visited_pages": 9000,
-    "team_pages_found": 2855,
-    "fixture_pages_found": 2736,
-    "match_details_found": 117,
-    "standings_snapshots_found": 0,
-    "fixture_windows_found": 81332,
-    "errors": 8,
-    "output_dir": "/home/sinanjam/balkes-tff-veri/processed",
-    "notes": [
-      "Bu araç yalnızca açık TFF HTML sayfalarını gezer; login, gizli API veya korumalı veri kullanmaz.",
-      "sections_raw alanı özellikle korunur: parser kaçırsa bile ilk 11/yedek/gol/kart/değişiklik metni ham olarak saklanır.",
-      "Eksik kalan sezonlar için resmi TFF URLlerini tff_urls.txt dosyasına ekleyip scripti tekrar çalıştırabilirsin; cache kaldığı için kaldığı yerden hızlanır."
-    ]
-  },
-  "convertedProfessionalMatchesFromScan": 104,
-  "skippedOrNonProfessionalDetails": 13,
+  "generatedAt": "2026-05-16T05:08:39.691807Z",
+  "sourcePolicy": "TFF-only",
+  "factoryVersion": "v3.2-senior-professional-guard",
   "totalAppMatches": 152,
   "seasons": [
-    "2025-2026",
-    "2024-2025",
-    "2023-2024",
-    "2022-2023",
-    "2021-2022",
-    "2018-2019",
-    "2009-2010",
-    "1996-1997",
-    "1994-1995",
-    "1992-1993",
-    "1991-1992",
-    "1990-1991"
+    {
+      "id": "2025-2026",
+      "name": "2025-2026",
+      "matchCount": 33,
+      "competition": "Nesine 3. Lig",
+      "summary": {
+        "matches": 33,
+        "leagueMatches": 30,
+        "playoffMatches": 2,
+        "cupMatches": 1,
+        "wins": 18,
+        "draws": 7,
+        "losses": 8,
+        "goalsFor": 62,
+        "goalsAgainst": 30,
+        "goalDifference": 32,
+        "points": 61,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "2024-2025",
+      "name": "2024-2025",
+      "matchCount": 33,
+      "competition": "Nesine 3. League (Professional Team)",
+      "summary": {
+        "matches": 33,
+        "leagueMatches": 29,
+        "playoffMatches": 3,
+        "cupMatches": 1,
+        "wins": 17,
+        "draws": 6,
+        "losses": 10,
+        "goalsFor": 53,
+        "goalsAgainst": 32,
+        "goalDifference": 21,
+        "points": 57,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "2023-2024",
+      "name": "2023-2024",
+      "matchCount": 29,
+      "competition": "TFF 3. LEAGUE (Professional Team)",
+      "summary": {
+        "matches": 29,
+        "leagueMatches": 28,
+        "playoffMatches": 0,
+        "cupMatches": 1,
+        "wins": 7,
+        "draws": 12,
+        "losses": 10,
+        "goalsFor": 28,
+        "goalsAgainst": 33,
+        "goalDifference": -5,
+        "points": 33,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "2022-2023",
+      "name": "2022-2023",
+      "matchCount": 37,
+      "competition": "TFF 2.League (Professional Team)",
+      "summary": {
+        "matches": 37,
+        "leagueMatches": 37,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 5,
+        "draws": 10,
+        "losses": 22,
+        "goalsFor": 29,
+        "goalsAgainst": 76,
+        "goalDifference": -47,
+        "points": 25,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "2021-2022",
+      "name": "2021-2022",
+      "matchCount": 11,
+      "competition": "TRENDYOL SÜPER LİG",
+      "summary": {
+        "matches": 11,
+        "leagueMatches": 0,
+        "playoffMatches": 0,
+        "cupMatches": 11,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": null,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "2018-2019",
+      "name": "2018-2019",
+      "matchCount": 2,
+      "competition": "Ziraat Türkiye Kupası (Professional Team)",
+      "summary": {
+        "matches": 2,
+        "leagueMatches": 1,
+        "playoffMatches": 0,
+        "cupMatches": 1,
+        "wins": 0,
+        "draws": 1,
+        "losses": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "goalDifference": -1,
+        "points": 1,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "2009-2010",
+      "name": "2009-2010",
+      "matchCount": 1,
+      "competition": "TFF 3. League Phase 1 (Professional Team)",
+      "summary": {
+        "matches": 1,
+        "leagueMatches": 1,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 0,
+        "goalDifference": 2,
+        "points": 3,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "1996-1997",
+      "name": "1996-1997",
+      "matchCount": 1,
+      "competition": "Lig B Klasman (Professional Team)",
+      "summary": {
+        "matches": 1,
+        "leagueMatches": 1,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "goalsFor": 0,
+        "goalsAgainst": 2,
+        "goalDifference": -2,
+        "points": 0,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "1994-1995",
+      "name": "1994-1995",
+      "matchCount": 1,
+      "competition": "League B Classification (Professional Team)",
+      "summary": {
+        "matches": 1,
+        "leagueMatches": 1,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 1,
+        "goalsFor": 0,
+        "goalsAgainst": 3,
+        "goalDifference": -3,
+        "points": 0,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "1992-1993",
+      "name": "1992-1993",
+      "matchCount": 1,
+      "competition": "League B Classification (Professional Team)",
+      "summary": {
+        "matches": 1,
+        "leagueMatches": 1,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 3,
+        "goalsAgainst": 2,
+        "goalDifference": 1,
+        "points": 3,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "1991-1992",
+      "name": "1991-1992",
+      "matchCount": 1,
+      "competition": "3. League (Professional Team)",
+      "summary": {
+        "matches": 1,
+        "leagueMatches": 1,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 1,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 9,
+        "goalsAgainst": 1,
+        "goalDifference": 8,
+        "points": 3,
+        "finalRank": null
+      }
+    },
+    {
+      "id": "1990-1991",
+      "name": "1990-1991",
+      "matchCount": 2,
+      "competition": "3. League (Professional Team)",
+      "summary": {
+        "matches": 2,
+        "leagueMatches": 2,
+        "playoffMatches": 0,
+        "cupMatches": 0,
+        "wins": 0,
+        "draws": 0,
+        "losses": 2,
+        "goalsFor": 0,
+        "goalsAgainst": 2,
+        "goalDifference": -2,
+        "points": 0,
+        "finalRank": null
+      }
+    }
   ],
-  "standingsSeasons": [
-    "2025-2026"
-  ],
-  "playersIndexed": 41,
-  "opponentsIndexed": 35,
+  "playersIndexed": 0,
+  "opponentsIndexed": 75,
   "notes": [
-    "Uygulama kullanıcıya ham TFF metni, cache/debug veya kaynak içi teknik bilgi göstermez.",
-    "Büyük taramada haftalık puan durumu çıkmadığı için puan durumu yalnızca 2025-2026 sezonunda hazırdır.",
-    "Fixture window kayıtları çok sayıda ham pencere olduğundan uygulamaya doğrudan maç olarak alınmadı; temiz maç ekranlarında yalnızca detay sayfası doğrulanmış maçlar kullanıldı.",
-    "2021-2022 sezonu TFF-Entegrasyon çıktısından mevcut sezonlar silinmeden güvenli şekilde eklendi.",
-    "Data report totalAppMatches manifest.availableSeasons toplamı ile eşitlendi."
-  ],
-  "source": "TFF açık sayfaları ve Balkes Skor season sync",
-  "coverage": {},
-  "validation": {}
+    "Puan tablosu bu factory içinde çekilmez; Nix standings hattı kullanılacak.",
+    "Raw HTML repo'ya commitlenmez; artifact olarak saklanır."
+  ]
 }
