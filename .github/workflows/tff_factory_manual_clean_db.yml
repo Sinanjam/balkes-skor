@@ -1,4 +1,4 @@
-name: TFF Factory v3.3 Targeted Data + Standings
+name: TFF Factory v3.4 Targeted Manual Data + Standings
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
         required: true
         default: "2025-2026"
       max_seasons:
-        description: "Bu run içinde kaç sezon işlensin? Öneri: 4"
+        description: "Bu run içinde kaç sezon işlensin?"
         required: true
         default: "4"
       clean_database_mode:
@@ -21,13 +21,8 @@ on:
         required: true
         type: boolean
         default: true
-      run_gemini:
-        description: "Sadece diagnostic için Gemini çalıştır."
-        required: true
-        type: boolean
-        default: false
       skip_standings:
-        description: "true: sadece maç verisi. false: maç verisinden sonra puan tablolarını da üret."
+        description: "true: sadece maç verisi. false: puan tablolarını da üret."
         required: true
         type: boolean
         default: false
@@ -36,11 +31,11 @@ on:
         required: true
         default: "auto"
       standings_detail_mode:
-        description: "Tablo hesaplama detay modu: missing, all, none. En doğru: all; dengeli: missing."
+        description: "Tablo hesaplama detay modu: missing, all, none"
         required: true
         default: "missing"
       standings_workers:
-        description: "Puan tablosu detay çekimi paralel işçi sayısı. Öneri: 6"
+        description: "Puan tablosu detay çekimi paralel işçi sayısı"
         required: true
         default: "6"
       standings_week_param_mode:
@@ -48,11 +43,11 @@ on:
         required: true
         default: "smart"
       legacy_broad_probe_limit:
-        description: "Sadece exact target/known macId olan legacy sezonlarda geniş aday limiti. Exact target yoksa kullanılmaz."
+        description: "Legacy geniş aday limiti"
         required: true
         default: "350"
       strict_legacy_targets:
-        description: "Eski sezonlarda kör current-page taramayı kapat; varsa güvenli bounded pageID probe kullan."
+        description: "Eski sezonlarda kör current-page taramayı kapat"
         required: true
         type: boolean
         default: true
@@ -62,7 +57,7 @@ permissions:
   actions: read
 
 concurrency:
-  group: tff-factory-manual-clean-db
+  group: tff-factory-v34-manual
   cancel-in-progress: false
 
 jobs:
@@ -104,12 +99,14 @@ jobs:
         run: |
           python scripts/clean_database.py --data-root data
 
-      - name: Run TFF Factory v3.3 targeted senior professional
+      - name: Run TFF Factory v3.4 targeted senior professional
         env:
           PYTHONUNBUFFERED: "1"
         shell: bash
         run: |
-          python scripts/tff_factory_v33_targeted_professional.py \
+          STRICT_ARG="--strict-legacy-targets"
+          if [ "${{ github.event.inputs.strict_legacy_targets }}" != "true" ]; then STRICT_ARG="--no-strict-legacy-targets"; fi
+          python scripts/tff_factory_v34_targeted_professional.py \
             --seed sources/tff/registry/balkes_tff_seed_registry.json \
             --data-root data \
             --raw-root sources/tff/raw \
@@ -119,7 +116,7 @@ jobs:
             --sleep "1.0" \
             --max-discovery-probe "1500" \
             --legacy-broad-probe-limit "${{ github.event.inputs.legacy_broad_probe_limit }}" \
-            ${{ github.event.inputs.strict_legacy_targets == 'true' && '--strict-legacy-targets' || '--no-strict-legacy-targets' }} \
+            $STRICT_ARG \
             --skip-standings
 
       - name: Clean targeted senior professional data
@@ -129,7 +126,6 @@ jobs:
       - name: Validate produced match data
         run: |
           python scripts/validate_data.py --data-root data --min-seasons 1 --min-matches 1
-          python scripts/validate_target_data_v33.py --data-root data --reports-root reports/tff_factory --start-season "${{ github.event.inputs.start_season }}" --max-seasons "${{ github.event.inputs.max_seasons }}" --strict
 
       - name: Run Standings Builder clean tables
         if: ${{ github.event.inputs.skip_standings == 'false' }}
@@ -153,16 +149,16 @@ jobs:
             --week-param-mode "${{ github.event.inputs.standings_week_param_mode }}" \
             --sleep "0.15"
 
-      - name: Gemini diagnostics
-        if: ${{ always() && github.event.inputs.run_gemini == 'true' }}
+      - name: Reconcile final v3.4 data
         run: |
-          python scripts/gemini_tff_helper.py
+          python scripts/reconcile_data_v34.py --data-root data --reports-root reports/tff_factory --write
+          python scripts/validate_target_data_v34.py --data-root data --reports-root reports/tff_factory --start-season "${{ github.event.inputs.start_season }}" --max-seasons "${{ github.event.inputs.max_seasons }}" --strict
 
       - name: Upload raw/report/backup artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: tff-factory-v33-targeted-${{ github.event.inputs.start_season }}-${{ github.run_id }}
+          name: tff-factory-v34-targeted-${{ github.event.inputs.start_season }}-${{ github.run_id }}
           path: |
             data/**/*.json
             reports/tff_factory/**/*.json
@@ -179,29 +175,22 @@ jobs:
         shell: bash
         run: |
           set -e
-          AVAILABLE_SEASONS=$(python scripts/live_data_counts_v33.py --field seasons)
-          TOTAL_MATCHES=$(python scripts/live_data_counts_v33.py --field matches)
+          AVAILABLE_SEASONS=$(python scripts/live_data_counts_v34.py --field seasons)
+          TOTAL_MATCHES=$(python scripts/live_data_counts_v34.py --field matches)
           echo "Safety gate: availableSeasons=$AVAILABLE_SEASONS totalAppMatches=$TOTAL_MATCHES"
           if [ "$AVAILABLE_SEASONS" = "0" ] || [ "$TOTAL_MATCHES" = "0" ]; then
             echo "::error::Refusing to push empty live data. Check artifacts/reports before retrying."
             exit 1
           fi
-
           git add -A data reports/tff_factory reports/standings sources/tff/registry sources/tff/state .gitignore
           git reset -- sources/tff/raw || true
           git reset -- sources/tff/standings_raw || true
           git reset -- reports/tff_factory/backups || true
-
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-
-          if [ "${{ github.event.inputs.skip_standings }}" = "false" ]; then
-            git commit -m "Build targeted TFF data and standings from ${{ github.event.inputs.start_season }} (${{ github.event.inputs.max_seasons }} seasons)"
-          else
-            git commit -m "Build targeted TFF data from ${{ github.event.inputs.start_season }} (${{ github.event.inputs.max_seasons }} seasons)"
-          fi
+          git commit -m "Build v3.4 targeted data from ${{ github.event.inputs.start_season }} (${{ github.event.inputs.max_seasons }} seasons)"
           git checkout -- sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
           git clean -fd sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
           git pull --rebase --autostash origin main

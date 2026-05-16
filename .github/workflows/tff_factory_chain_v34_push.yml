@@ -1,0 +1,217 @@
+name: TFF Factory v3.4 Push Chain to 1991
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/tff-chain-v34-trigger.json"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: tff-factory-v34-push-chain
+  cancel-in-progress: false
+
+jobs:
+  chain-group:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml
+
+      - name: Prepare git
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git checkout main
+          git pull --rebase --autostash origin main
+
+      - name: Read trigger and plan group
+        id: plan
+        shell: bash
+        run: |
+          python scripts/chain_plan_v34.py --trigger .github/tff-chain-v34-trigger.json >> "$GITHUB_OUTPUT"
+
+      - name: Show plan
+        shell: bash
+        run: |
+          echo "Plan: ${{ steps.plan.outputs.group_name }}"
+          echo "Next: has_next=${{ steps.plan.outputs.has_next }} next_start=${{ steps.plan.outputs.next_start }}"
+          echo "Clean all before start: ${{ steps.plan.outputs.clean_all_before_start }}"
+
+      - name: Optional full clean with backup
+        if: ${{ steps.plan.outputs.clean_all_before_start == 'true' }}
+        shell: bash
+        run: |
+          python scripts/backup_current_data.py --data-root data --reports-root reports/tff_factory
+          python scripts/clean_database.py --data-root data
+
+      - name: Run target group without stopping the chain
+        id: rungroup
+        shell: bash
+        env:
+          PYTHONUNBUFFERED: "1"
+          START_SEASON: ${{ steps.plan.outputs.group_start }}
+          MAX_SEASONS: ${{ steps.plan.outputs.max_seasons }}
+          GROUP_NAME: ${{ steps.plan.outputs.group_name }}
+          GROUP_TIMEOUT_MINUTES: ${{ steps.plan.outputs.group_timeout_minutes }}
+          SKIP_STANDINGS: ${{ steps.plan.outputs.skip_standings }}
+          STANDINGS_MODE: ${{ steps.plan.outputs.standings_mode }}
+          STANDINGS_DETAIL_MODE: ${{ steps.plan.outputs.standings_detail_mode }}
+          STANDINGS_WORKERS: ${{ steps.plan.outputs.standings_workers }}
+          STANDINGS_WEEK_PARAM_MODE: ${{ steps.plan.outputs.standings_week_param_mode }}
+          LEGACY_BROAD_PROBE_LIMIT: ${{ steps.plan.outputs.legacy_broad_probe_limit }}
+          STRICT_LEGACY_TARGETS: ${{ steps.plan.outputs.strict_legacy_targets }}
+          CHAIN_LABEL: ${{ steps.plan.outputs.chain_label }}
+        run: |
+          mkdir -p reports/tff_chain reports/tff_factory reports/standings
+          set +e
+          timeout --preserve-status --kill-after=60s "${GROUP_TIMEOUT_MINUTES}m" bash -lc '
+            set -e
+            STRICT_ARG="--strict-legacy-targets"
+            if [ "$STRICT_LEGACY_TARGETS" != "true" ]; then STRICT_ARG="--no-strict-legacy-targets"; fi
+            python scripts/tff_factory_v34_targeted_professional.py \
+              --seed sources/tff/registry/balkes_tff_seed_registry.json \
+              --data-root data \
+              --raw-root sources/tff/raw \
+              --reports-root reports/tff_factory \
+              --start-season "$START_SEASON" \
+              --max-seasons "$MAX_SEASONS" \
+              --sleep "1.0" \
+              --max-discovery-probe "1500" \
+              --legacy-broad-probe-limit "$LEGACY_BROAD_PROBE_LIMIT" \
+              $STRICT_ARG \
+              --skip-standings
+            python scripts/clean_bad_professional_data_v33.py --data-root data --reports-root reports/tff_factory --write
+            python scripts/validate_data.py --data-root data --min-seasons 1 --min-matches 1
+            if [ "$SKIP_STANDINGS" = "false" ]; then
+              if [ -f scripts/tff_standings_builder_v31.py ]; then STANDINGS_SCRIPT=scripts/tff_standings_builder_v31.py; else STANDINGS_SCRIPT=scripts/tff_standings_builder.py; fi
+              python "$STANDINGS_SCRIPT" \
+                --seed sources/tff/registry/balkes_tff_seed_registry.json \
+                --data-root data \
+                --raw-root sources/tff/standings_raw \
+                --reports-root reports/standings \
+                --penalties data/standings_penalties.json \
+                --start-season "$START_SEASON" \
+                --max-seasons "$MAX_SEASONS" \
+                --mode "$STANDINGS_MODE" \
+                --probe-limit "5000" \
+                --workers "$STANDINGS_WORKERS" \
+                --detail-fetch-mode "$STANDINGS_DETAIL_MODE" \
+                --week-param-mode "$STANDINGS_WEEK_PARAM_MODE" \
+                --sleep "0.15"
+            fi
+            python scripts/reconcile_data_v34.py --data-root data --reports-root reports/tff_factory --write
+            python scripts/validate_target_data_v34.py --data-root data --reports-root reports/tff_factory --start-season "$START_SEASON" --max-seasons "$MAX_SEASONS" --strict
+          '
+          code=$?
+          if [ "$code" = "0" ]; then status="success";
+          elif [ "$code" = "124" ] || [ "$code" = "137" ]; then status="timeout";
+          else status="failed"; fi
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          python scripts/write_chain_status_v34.py \
+            --reports-root reports/tff_chain \
+            --chain-label "$CHAIN_LABEL" \
+            --group-name "$GROUP_NAME" \
+            --start-season "$START_SEASON" \
+            --max-seasons "$MAX_SEASONS" \
+            --status "$status" \
+            --exit-code "$code" \
+            --skip-standings "$SKIP_STANDINGS"
+          exit 0
+
+      - name: Commit and push safe group outputs
+        if: ${{ steps.plan.outputs.auto_push_main == 'true' }}
+        continue-on-error: true
+        shell: bash
+        run: |
+          set -e
+          RUN_STATUS="${{ steps.rungroup.outputs.status }}"
+          AVAILABLE_SEASONS=$(python scripts/live_data_counts_v34.py --field seasons)
+          TOTAL_MATCHES=$(python scripts/live_data_counts_v34.py --field matches)
+          echo "Safety gate: status=$RUN_STATUS availableSeasons=$AVAILABLE_SEASONS totalAppMatches=$TOTAL_MATCHES"
+          if [ "$AVAILABLE_SEASONS" = "0" ] || [ "$TOTAL_MATCHES" = "0" ]; then
+            echo "::warning::Refusing to push an empty live data manifest. This protects the app from blank main/data."
+            git checkout -- data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state .gitignore 2>/dev/null || true
+            git clean -fd data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state 2>/dev/null || true
+            exit 0
+          fi
+          git add -A data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state .gitignore
+          git reset -- sources/tff/raw || true
+          git reset -- sources/tff/standings_raw || true
+          git reset -- reports/tff_factory/backups || true
+          if git diff --cached --quiet; then
+            echo "No safe data changes to commit"
+            exit 0
+          fi
+          git commit -m "Target v3.4 chain ${{ steps.plan.outputs.group_name }}: ${{ steps.rungroup.outputs.status }}"
+          git checkout -- sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
+          git clean -fd sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+
+      - name: Upload group artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tff-chain-v34-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
+          path: |
+            data/**/*.json
+            reports/tff_chain/**/*.json
+            reports/tff_factory/**/*.json
+            reports/standings/**/*.json
+            reports/tff_factory/backups/*.zip
+            sources/tff/raw/**/*.html
+            sources/tff/raw/**/*.txt
+            sources/tff/standings_raw/**/*.html
+            sources/tff/standings_raw/**/*.txt
+          if-no-files-found: ignore
+
+      - name: Wait and trigger next group by push
+        if: ${{ always() && steps.plan.outputs.has_next == 'true' }}
+        shell: bash
+        run: |
+          echo "Group ${{ steps.plan.outputs.group_name }} status: ${{ steps.rungroup.outputs.status }}"
+          echo "${{ steps.plan.outputs.wait_minutes }} dakika bekleniyor, sonra ${{ steps.plan.outputs.next_start }} trigger yazılacak."
+          sleep $(( ${{ steps.plan.outputs.wait_minutes }} * 60 ))
+          git fetch origin main
+          git checkout main
+          git pull --rebase --autostash origin main
+          git checkout -- data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state .gitignore 2>/dev/null || true
+          git clean -fd data reports/tff_factory reports/standings reports/tff_chain sources/tff/registry sources/tff/state 2>/dev/null || true
+          python scripts/write_next_chain_trigger_v34.py \
+            --trigger .github/tff-chain-v34-trigger.json \
+            --next-start "${{ steps.plan.outputs.next_start }}" \
+            --last-group "${{ steps.plan.outputs.group_name }}" \
+            --last-status "${{ steps.rungroup.outputs.status }}"
+          git add .github/tff-chain-v34-trigger.json
+          if git diff --cached --quiet; then
+            echo "No trigger change"
+            exit 0
+          fi
+          git commit -m "Trigger v3.4 chain ${{ steps.plan.outputs.next_start }}"
+          git push origin HEAD:main
+
+      - name: Chain complete
+        if: ${{ always() && steps.plan.outputs.has_next != 'true' }}
+        run: |
+          echo "Zincir tamamlandı. Son grup: ${{ steps.plan.outputs.group_name }} status=${{ steps.rungroup.outputs.status }}"
