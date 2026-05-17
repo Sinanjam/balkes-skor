@@ -2,7 +2,8 @@
   "app": "Balkes Skor",
   "schemaVersion": 3,
   "dataVersion": 1,
-  "generatedAt": "2026-05-17T12:05:49.676452Z",
+  "appVersion": "0.5.0-beta-debug",
+  "generatedAt": "2026-05-17T12:11:47.916387Z",
   "team": "Balıkesirspor",
   "availableSeasons": [
     {
@@ -36,8 +37,7 @@
             "league": 32
           }
         }
-      },
-      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
+      }
     },
     {
       "id": "2013-2014",
@@ -72,8 +72,7 @@
             "cup": 4
           }
         }
-      },
-      "standingsByWeekUrl": "seasons/2013-2014/standings_by_week.json"
+      }
     },
     {
       "id": "2012-2013",
@@ -126,8 +125,7 @@
         "rawPoints": 69,
         "pointsDeducted": 0,
         "finalRank": 1
-      },
-      "standingsByWeekUrl": "seasons/2012-2013/standings_by_week.json"
+      }
     },
     {
       "id": "2011-2012",
@@ -162,8 +160,7 @@
             "playoff": 1
           }
         }
-      },
-      "standingsByWeekUrl": "seasons/2011-2012/standings_by_week.json"
+      }
     },
     {
       "id": "2009-2010",
@@ -196,8 +193,7 @@
             "league": 38
           }
         }
-      },
-      "standingsByWeekUrl": "seasons/2009-2010/standings_by_week.json"
+      }
     },
     {
       "id": "2008-2009",
@@ -232,8 +228,7 @@
             "playoff": 1
           }
         }
-      },
-      "standingsByWeekUrl": "seasons/2008-2009/standings_by_week.json"
+      }
     },
     {
       "id": "2007-2008",
@@ -268,8 +263,7 @@
             "playoff": 1
           }
         }
-      },
-      "standingsByWeekUrl": "seasons/2007-2008/standings_by_week.json"
+      }
     }
   ],
   "global": {
@@ -278,8 +272,15 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
+  "appDataVersion": 1779019907,
+  "appMinVersion": "0.5.0-beta-debug",
+  "lastUpdated": "2026-05-17T12:11:47.916398Z",
   "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v3.6-summary-standings-reconcile",
-  "targetedSeniorProfessionalGuard": true,
-  "safeToPush": true
+  "factoryVersion": "v3.6-targeted-safe-chain",
+  "processedSeasonsInLastRun": [
+    "2005-2006",
+    "2004-2005",
+    "2003-2004",
+    "2002-2003"
+  ]
 }
