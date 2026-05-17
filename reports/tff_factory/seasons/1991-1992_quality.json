@@ -1,7 +1,7 @@
 {
   "season": "1991-1992",
   "selectedIds": 0,
-  "allDiscoveredIds": 710,
+  "allDiscoveredIds": 711,
   "detailCandidates": 0,
   "candidateMode": "legacy_pageid_probe_no_selected_ids",
   "knownOnly": false,
@@ -14,13 +14,6 @@
       "baseSelectedDelta": 0,
       "baseAllDelta": 0,
       "groups": []
-    },
-    {
-      "kind": "page_week_fast_skip",
-      "pageID": 119,
-      "error": "timeout",
-      "week": 7,
-      "cumulative": 1
     },
     {
       "kind": "page_hint",
@@ -38,7 +31,7 @@
     }
   ],
   "matchesPublished": 0,
-  "detailFiles": 1,
+  "detailFiles": 0,
   "duplicatesDropped": 0,
   "rejectedReasons": {},
   "rejectedSamples": {},
@@ -50,18 +43,5 @@
     "start": "1991-07-01",
     "end": "1992-06-30"
   },
-  "generatedAt": "2026-05-16T06:26:40.533284Z",
-  "seniorProfessionalGuard": {
-    "total": 0,
-    "league": 0,
-    "played": 0,
-    "badCompetitions": [],
-    "reasons": [
-      "empty_season",
-      "too_few_matches:0",
-      "too_few_league_matches:0"
-    ]
-  },
-  "publicationSuppressed": true,
-  "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+  "generatedAt": "2026-05-17T13:07:42.409915Z"
 }

@@ -1,7 +1,7 @@
 {
   "season": "1992-1993",
   "selectedIds": 0,
-  "allDiscoveredIds": 710,
+  "allDiscoveredIds": 711,
   "detailCandidates": 0,
   "candidateMode": "legacy_pageid_probe_no_selected_ids",
   "knownOnly": false,
@@ -59,7 +59,7 @@
     }
   ],
   "matchesPublished": 0,
-  "detailFiles": 1,
+  "detailFiles": 0,
   "duplicatesDropped": 0,
   "rejectedReasons": {},
   "rejectedSamples": {},
@@ -71,18 +71,5 @@
     "start": "1992-07-01",
     "end": "1993-06-30"
   },
-  "generatedAt": "2026-05-16T06:23:25.265287Z",
-  "seniorProfessionalGuard": {
-    "total": 0,
-    "league": 0,
-    "played": 0,
-    "badCompetitions": [],
-    "reasons": [
-      "empty_season",
-      "too_few_matches:0",
-      "too_few_league_matches:0"
-    ]
-  },
-  "publicationSuppressed": true,
-  "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+  "generatedAt": "2026-05-17T13:05:19.420150Z"
 }
