@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-05-17T09:30:07.997273Z",
+  "notes": [
+    "Computed standings apply these manual point corrections. Official TFF standings are assumed to already include official corrections.",
+    "Use negative points for deductions, positive points for restorations/awards.",
+    "Set effectiveWeek to the first week where the correction must appear. Omit or set 1 to apply from the start."
+  ],
+  "seasons": {},
+  "reviewedSeasons": {}
+}

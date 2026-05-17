@@ -1,86 +1,169 @@
 {
   "app": "Balkes Skor",
-  "schemaVersion": 2,
-  "dataVersion": 9,
-  "appVersion": "0.5.0-beta-debug",
-  "generatedAt": "2026-05-12T22:06:53.731455Z",
+  "schemaVersion": 3,
+  "dataVersion": 1,
+  "generatedAt": "2026-05-17T09:35:27.495718Z",
   "team": "Balıkesirspor",
-  "assets": {
-    "logo": "assets/logo_balkes_skor.png"
-  },
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
-      "matchCount": 33
-    },
-    {
-      "id": "2024-2025",
-      "name": "2024-2025",
-      "matchCount": 33
-    },
-    {
-      "id": "2023-2024",
-      "name": "2023-2024",
-      "matchCount": 29
-    },
-    {
-      "id": "2022-2023",
-      "name": "2022-2023",
-      "matchCount": 37
-    },
-    {
-      "id": "2021-2022",
-      "name": "2021-2022",
-      "matchCount": 11,
-      "competition": "TRENDYOL SÜPER LİG",
-      "group": "",
+      "matchCount": 32,
+      "competition": "Nesine 3. Lig (Profesyonel Takım)",
       "summary": {
-        "matches": 11,
-        "wins": 0,
-        "draws": 0,
-        "losses": 0,
-        "goalsFor": 0,
-        "goalsAgainst": 0,
-        "goalDifference": 0,
-        "points": null,
-        "finalRank": null
-      }
+        "matches": 32,
+        "played": 32,
+        "wins": 18,
+        "draws": 7,
+        "losses": 7,
+        "goalsFor": 61,
+        "goalsAgainst": 28,
+        "goalDifference": 33,
+        "matchTypes": {
+          "league": 32
+        },
+        "leagueMatchStats": {
+          "matches": 32,
+          "played": 32,
+          "wins": 18,
+          "draws": 7,
+          "losses": 7,
+          "goalsFor": 61,
+          "goalsAgainst": 28,
+          "goalDifference": 33,
+          "pointsFromResults": 61,
+          "matchTypes": {
+            "league": 32
+          }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
     },
     {
-      "id": "2018-2019",
-      "name": "2018-2019",
-      "matchCount": 2
+      "id": "2013-2014",
+      "name": "2013-2014",
+      "matchCount": 40,
+      "competition": "PTT 1.Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 40,
+        "played": 40,
+        "wins": 25,
+        "draws": 7,
+        "losses": 8,
+        "goalsFor": 68,
+        "goalsAgainst": 39,
+        "goalDifference": 29,
+        "matchTypes": {
+          "league": 36,
+          "cup": 4
+        },
+        "leagueMatchStats": {
+          "matches": 36,
+          "played": 36,
+          "wins": 22,
+          "draws": 7,
+          "losses": 7,
+          "goalsFor": 56,
+          "goalsAgainst": 33,
+          "goalDifference": 23,
+          "pointsFromResults": 73,
+          "matchTypes": {
+            "league": 36,
+            "cup": 4
+          }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2013-2014/standings_by_week.json"
     },
     {
-      "id": "2009-2010",
-      "name": "2009-2010",
-      "matchCount": 1
+      "id": "2012-2013",
+      "name": "2012-2013",
+      "matchCount": 32,
+      "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 32,
+        "played": 32,
+        "wins": 20,
+        "draws": 9,
+        "losses": 3,
+        "goalsFor": 46,
+        "goalsAgainst": 20,
+        "goalDifference": 26,
+        "matchTypes": {
+          "league": 32
+        },
+        "leagueMatchStats": {
+          "matches": 32,
+          "played": 32,
+          "wins": 20,
+          "draws": 9,
+          "losses": 3,
+          "goalsFor": 46,
+          "goalsAgainst": 20,
+          "goalDifference": 26,
+          "pointsFromResults": 69,
+          "matchTypes": {
+            "league": 32
+          }
+        },
+        "leagueTable": {
+          "rank": 1,
+          "team": "Balıkesirspor",
+          "played": 32,
+          "won": 20,
+          "drawn": 9,
+          "lost": 3,
+          "goalsFor": 46,
+          "goalsAgainst": 20,
+          "goalDifference": 26,
+          "points": 69,
+          "rawPoints": 69,
+          "pointsDeducted": 0,
+          "penaltyNote": "",
+          "source": "official_tff_weekly_table"
+        },
+        "points": 69,
+        "rawPoints": 69,
+        "pointsDeducted": 0,
+        "finalRank": 1
+      },
+      "standingsByWeekUrl": "seasons/2012-2013/standings_by_week.json"
     },
     {
-      "id": "1996-1997",
-      "name": "1996-1997",
-      "matchCount": 1
-    },
-    {
-      "id": "1994-1995",
-      "name": "1994-1995",
-      "matchCount": 1
-    },
-    {
-      "id": "1992-1993",
-      "name": "1992-1993",
-      "matchCount": 1
-    },
-    {
-      "id": "1991-1992",
-      "name": "1991-1992",
-      "matchCount": 1
-    },
-    {
-      "id": "1990-1991",
-      "name": "1990-1991",
-      "matchCount": 2
+      "id": "2011-2012",
+      "name": "2011-2012",
+      "matchCount": 33,
+      "competition": "Spor Toto 2. Lig (Profesyonel Takım)",
+      "summary": {
+        "matches": 33,
+        "played": 33,
+        "wins": 20,
+        "draws": 8,
+        "losses": 5,
+        "goalsFor": 73,
+        "goalsAgainst": 33,
+        "goalDifference": 40,
+        "matchTypes": {
+          "league": 32,
+          "playoff": 1
+        },
+        "leagueMatchStats": {
+          "matches": 32,
+          "played": 32,
+          "wins": 20,
+          "draws": 8,
+          "losses": 4,
+          "goalsFor": 73,
+          "goalsAgainst": 32,
+          "goalDifference": 41,
+          "pointsFromResults": 68,
+          "matchTypes": {
+            "league": 32,
+            "playoff": 1
+          }
+        }
+      },
+      "standingsByWeekUrl": "seasons/2011-2012/standings_by_week.json"
     }
   ],
   "global": {
@@ -89,8 +172,10 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "appDataVersion": 10,
-  "appMinVersion": "0.5.0-beta-debug",
-  "lastUpdated": "2026-05-14T05:19:50Z",
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor-web/main/docs/data/"
+  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
+  "factoryVersion": "v3.6-summary-standings-reconcile",
+  "targetedSeniorProfessionalGuard": true,
+  "standingsUpdatedAt": "2026-05-17T09:35:27.419357Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe",
+  "safeToPush": true
 }

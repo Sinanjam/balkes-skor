@@ -1,8 +1,8 @@
 {
   "season": "2012-2013",
-  "selectedIds": 91,
+  "selectedIds": 134,
   "allDiscoveredIds": 551,
-  "detailCandidates": 91,
+  "detailCandidates": 134,
   "candidateMode": "selected_or_known",
   "knownOnly": false,
   "plannedTarget": true,
@@ -12,30 +12,30 @@
   "detailFiles": 32,
   "duplicatesDropped": 0,
   "rejectedReasons": {
-    "balkes_not_found": 59
+    "balkes_not_found": 102
   },
   "rejectedSamples": {
     "balkes_not_found": [
       "107245",
+      "107247",
+      "107249",
       "107250",
       "107251",
+      "107253",
       "107256",
       "107262",
+      "107264",
       "107266",
+      "107267",
       "107269",
       "107270",
       "107282",
       "107284",
+      "107286",
       "107291",
       "107295",
-      "107301",
-      "107309",
-      "107311",
-      "107317",
-      "107322",
-      "107323",
-      "107325",
-      "107336"
+      "107296",
+      "107301"
     ]
   },
   "standingsSkipped": true,
@@ -48,5 +48,5 @@
     "start": "2012-07-01",
     "end": "2013-06-30"
   },
-  "generatedAt": "2026-05-16T01:21:20.581075Z"
+  "generatedAt": "2026-05-17T08:22:40.227826Z"
 }

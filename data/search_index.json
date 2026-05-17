@@ -1,2681 +1,1098 @@
 [
   {
     "type": "match",
-    "id": "63715",
-    "season": "1990-1991",
-    "title": "EDREMITSPOR - Balıkesirspor",
-    "homeTeam": "EDREMITSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "1990-11-11",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=63715&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "65773",
-    "season": "1990-1991",
-    "title": "Balıkesirspor - THY",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "THY",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "1991-04-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=65773&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "58121",
-    "season": "1991-1992",
-    "title": "Balıkesirspor - BURHANIYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BURHANIYESPOR",
-    "score": {
-      "home": 9,
-      "away": 1,
-      "display": "9-1",
-      "played": true
-    },
-    "date": "1991-09-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=58121&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "54225",
-    "season": "1992-1993",
-    "title": "Balıkesirspor - MUĞLASPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "MUĞLASPOR",
-    "score": {
-      "home": 3,
-      "away": 2,
-      "display": "3-2",
-      "played": true
-    },
-    "date": "1992-09-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=54225&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "48601",
-    "season": "1994-1995",
-    "title": "Balıkesirspor - MUĞLASPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "MUĞLASPOR",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
-    "date": "1994-11-06",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=48601&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "41478",
-    "season": "1996-1997",
-    "title": "BUCASPOR - Balıkesirspor",
-    "homeTeam": "BUCASPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "1996-10-27",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=41478&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "81237",
-    "season": "2009-2010",
-    "title": "Balıkesirspor - ALİBEYKÖY",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ALİBEYKÖY",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2009-11-25",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=81237&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "195050",
-    "season": "2018-2019",
-    "title": "BOLUSPOR - Balıkesirspor Baltok",
-    "homeTeam": "BOLUSPOR",
-    "awayTeam": "Balıkesirspor Baltok",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2019-03-17",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=195050&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "205830",
-    "season": "2018-2019",
-    "title": "Balıkesirspor Baltok - ÇAYKUR RİZESPOR A.Ş.",
-    "homeTeam": "Balıkesirspor Baltok",
-    "awayTeam": "ÇAYKUR RİZESPOR A.Ş.",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2018-12-18",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=205830&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235732",
-    "season": "2022-2023",
-    "title": "1461 TRABZON FK - Balıkesirspor",
-    "homeTeam": "1461 TRABZON FK",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2022-11-27",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235732&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235749",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - ADIYAMAN FUTBOL KULÜBÜ A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ADIYAMAN FUTBOL KULÜBÜ A.Ş.",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2022-12-04",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235749&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235754",
-    "season": "2022-2023",
-    "title": "ZONGULDAK KÖMÜRSPOR A.Ş - Balıkesirspor",
-    "homeTeam": "ZONGULDAK KÖMÜRSPOR A.Ş",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2022-12-11",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235754&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235768",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - BITEXEN VAN SPOR FK",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BITEXEN VAN SPOR FK",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
-    "date": "2022-12-18",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235768&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235775",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - İSKENDERUNSPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "İSKENDERUNSPOR A.Ş.",
-    "score": {
-      "home": 2,
-      "away": 2,
-      "display": "2-2",
-      "played": true
-    },
-    "date": "2023-01-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235775&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235788",
-    "season": "2022-2023",
-    "title": "DİYARBEKİR SPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "DİYARBEKİR SPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2023-01-22",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235788&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235796",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - TECO KARACABEY BELEDİYE SPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "TECO KARACABEY BELEDİYE SPOR A.Ş.",
-    "score": {
-      "home": 0,
-      "away": 2,
-      "display": "0-2",
-      "played": true
-    },
-    "date": "2023-01-29",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235796&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235808",
-    "season": "2022-2023",
-    "title": "ETİMESGUT BELEDİYESPOR - Balıkesirspor",
-    "homeTeam": "ETİMESGUT BELEDİYESPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2023-02-04",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235808&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235817",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - GMG KASTAMONUSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "GMG KASTAMONUSPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2023-03-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235817&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235828",
-    "season": "2022-2023",
-    "title": "ANKARA DEMİRSPOR - Balıkesirspor",
-    "homeTeam": "ANKARA DEMİRSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 3,
-      "away": 1,
-      "display": "3-1",
-      "played": true
-    },
-    "date": "2023-03-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235828&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235838",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - KOCAELİSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "KOCAELİSPOR",
-    "score": {
-      "home": 1,
-      "away": 6,
-      "display": "1-6",
-      "played": true
-    },
-    "date": "2023-03-11",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235838&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235848",
-    "season": "2022-2023",
-    "title": "KIRŞEHİR FUTBOL SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "KIRŞEHİR FUTBOL SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2023-03-19",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235848&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235859",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - SERİK BELEDİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SERİK BELEDİYESPOR",
-    "score": {
-      "home": 1,
-      "away": 4,
-      "display": "1-4",
-      "played": true
-    },
-    "date": "2023-03-25",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235859&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235868",
-    "season": "2022-2023",
-    "title": "SARIYER - Balıkesirspor",
-    "homeTeam": "SARIYER",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 4,
-      "display": "2-4",
-      "played": true
-    },
-    "date": "2023-03-29",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235868&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235880",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - BUCASPOR 1928",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BUCASPOR 1928",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
-    "date": "2023-04-02",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235880&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235888",
-    "season": "2022-2023",
-    "title": "AFC KABLO KANALLARI UŞAK SPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "AFC KABLO KANALLARI UŞAK SPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2023-04-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235888&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235901",
-    "season": "2022-2023",
-    "title": "WEECOINS KIRKLARELİSPOR - Balıkesirspor",
-    "homeTeam": "WEECOINS KIRKLARELİSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2023-04-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235901&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235909",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - PAZARSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "PAZARSPOR",
-    "score": {
-      "home": 0,
-      "away": 2,
-      "display": "0-2",
-      "played": true
-    },
-    "date": "2023-04-19",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235909&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235920",
-    "season": "2022-2023",
-    "title": "FETHİYESPOR - Balıkesirspor",
-    "homeTeam": "FETHİYESPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 7,
-      "away": 1,
-      "display": "7-1",
-      "played": true
-    },
-    "date": "2023-04-23",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235920&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235922",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - 1461 TRABZON FK",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "1461 TRABZON FK",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2023-04-30",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235922&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235935",
-    "season": "2022-2023",
-    "title": "İSKENDERUNSPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "İSKENDERUNSPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2022-08-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235935&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235948",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - DİYARBEKİR SPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "DİYARBEKİR SPOR A.Ş.",
-    "score": {
-      "home": 4,
-      "away": 2,
-      "display": "4-2",
-      "played": true
-    },
-    "date": "2022-09-04",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235948&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235956",
-    "season": "2022-2023",
-    "title": "TECO KARACABEY BELEDİYE SPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "TECO KARACABEY BELEDİYE SPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2022-09-10",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235956&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235968",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - ETİMESGUT BELEDİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ETİMESGUT BELEDİYESPOR",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
-    "date": "2022-09-14",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235968&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235977",
-    "season": "2022-2023",
-    "title": "GMG KASTAMONUSPOR - Balıkesirspor",
-    "homeTeam": "GMG KASTAMONUSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2022-09-18",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235977&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235988",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - ANKARA DEMİRSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ANKARA DEMİRSPOR",
-    "score": {
-      "home": 0,
-      "away": 2,
-      "display": "0-2",
-      "played": true
-    },
-    "date": "2022-09-24",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235988&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "235998",
-    "season": "2022-2023",
-    "title": "KOCAELİSPOR - Balıkesirspor",
-    "homeTeam": "KOCAELİSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 3,
-      "away": 0,
-      "display": "3-0",
-      "played": true
-    },
-    "date": "2022-10-01",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=235998&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236008",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - KIRŞEHİR FUTBOL SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "KIRŞEHİR FUTBOL SPOR KULÜBÜ",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2022-10-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236008&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236019",
-    "season": "2022-2023",
-    "title": "SERİK BELEDİYESPOR - Balıkesirspor",
-    "homeTeam": "SERİK BELEDİYESPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2022-10-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236019&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236028",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - SARIYER",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SARIYER",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2022-10-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236028&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236040",
-    "season": "2022-2023",
-    "title": "BUCASPOR 1928 - Balıkesirspor",
-    "homeTeam": "BUCASPOR 1928",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2022-10-23",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236040&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236048",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - UŞAK SPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "UŞAK SPOR A.Ş.",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2022-10-30",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236048&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236061",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - WEECOINS KIRKLARELİSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "WEECOINS KIRKLARELİSPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2022-11-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236061&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236069",
-    "season": "2022-2023",
-    "title": "PAZARSPOR - Balıkesirspor",
-    "homeTeam": "PAZARSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2022-11-13",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236069&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236080",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - FETHİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "FETHİYESPOR",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2022-11-20",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236080&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236094",
-    "season": "2022-2023",
-    "title": "Balıkesirspor - ZONGULDAK KÖMÜRSPOR A.Ş",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ZONGULDAK KÖMÜRSPOR A.Ş",
-    "score": {
-      "home": 3,
-      "away": 3,
-      "display": "3-3",
-      "played": true
-    },
-    "date": "2023-05-16",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236094&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "236108",
-    "season": "2022-2023",
-    "title": "BITEXEN VAN SPOR FK - Balıkesirspor",
-    "homeTeam": "BITEXEN VAN SPOR FK",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 8,
-      "away": 0,
-      "display": "8-0",
-      "played": true
-    },
-    "date": "2023-05-20",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=236108&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251165",
-    "season": "2023-2024",
-    "title": "BURSA YILDIRIM SPOR - Balıkesirspor",
-    "homeTeam": "BURSA YILDIRIM SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2023-09-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251165&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251172",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - ÇATALCASPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ÇATALCASPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2023-09-17",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251172&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251180",
-    "season": "2023-2024",
-    "title": "NEVŞEHİR BELEDİYE SPOR - Balıkesirspor",
-    "homeTeam": "NEVŞEHİR BELEDİYE SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2023-09-23",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251180&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251186",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - 23 ELAZIĞ FUTBOL KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "23 ELAZIĞ FUTBOL KULÜBÜ",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2023-10-01",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251186&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251195",
-    "season": "2023-2024",
-    "title": "MUŞ 1984 MUŞSPOR - Balıkesirspor",
-    "homeTeam": "MUŞ 1984 MUŞSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2023-10-08",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251195&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251200",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - ARMONİ ALANYA KESTELSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ARMONİ ALANYA KESTELSPOR",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2023-10-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251200&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251210",
-    "season": "2023-2024",
-    "title": "ORDUSPOR 1967 A.Ş. - Balıkesirspor",
-    "homeTeam": "ORDUSPOR 1967 A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 4,
-      "away": 0,
-      "display": "4-0",
-      "played": true
-    },
-    "date": "2023-10-21",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251210&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251214",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - SİİRT İL ÖZEL İDARESİ SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SİİRT İL ÖZEL İDARESİ SPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2023-10-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251214&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251225",
-    "season": "2023-2024",
-    "title": "SULTANBEYLİ BELEDİYE SPOR - Balıkesirspor",
-    "homeTeam": "SULTANBEYLİ BELEDİYE SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 3,
-      "away": 2,
-      "display": "3-2",
-      "played": true
-    },
-    "date": "2023-11-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251225&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251228",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - GÜNEŞ HOLDİNG ÇANKAYA SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "GÜNEŞ HOLDİNG ÇANKAYA SPOR KULÜBÜ",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2023-11-12",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251228&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251240",
-    "season": "2023-2024",
-    "title": "SEBAT GENÇLİK SPOR - Balıkesirspor",
-    "homeTeam": "SEBAT GENÇLİK SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2023-11-19",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251240&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251242",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - BITEXEN ADANA 1954 FUTBOL KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BITEXEN ADANA 1954 FUTBOL KULÜBÜ",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2023-11-26",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251242&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251255",
-    "season": "2023-2024",
-    "title": "TOKAT BELEDİYE PLEVNE SPOR - Balıkesirspor",
-    "homeTeam": "TOKAT BELEDİYE PLEVNE SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2023-12-02",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251255&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251256",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - BERGAMA SPORTİF FAALİYETLER A.Ş",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BERGAMA SPORTİF FAALİYETLER A.Ş",
-    "score": {
-      "home": 2,
-      "away": 2,
-      "display": "2-2",
-      "played": true
-    },
-    "date": "2023-12-10",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251256&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251270",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - BURSA YILDIRIM SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BURSA YILDIRIM SPOR",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2024-01-21",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251270&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251277",
-    "season": "2023-2024",
-    "title": "İDAŞ ÇATALCASPOR - Balıkesirspor",
-    "homeTeam": "İDAŞ ÇATALCASPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2024-01-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251277&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251285",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - NEVŞEHİR BELEDİYE SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "NEVŞEHİR BELEDİYE SPOR",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2024-02-04",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251285&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251291",
-    "season": "2023-2024",
-    "title": "23 ELAZIĞ FUTBOL KULÜBÜ - Balıkesirspor",
-    "homeTeam": "23 ELAZIĞ FUTBOL KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2024-02-11",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251291&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251300",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - MUŞ 1984 MUŞSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "MUŞ 1984 MUŞSPOR",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2024-02-18",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251300&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251305",
-    "season": "2023-2024",
-    "title": "ARMONİ ALANYA KESTELSPOR - Balıkesirspor",
-    "homeTeam": "ARMONİ ALANYA KESTELSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
-    "date": "2024-02-25",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251305&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251315",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - ORDUSPOR 1967 A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ORDUSPOR 1967 A.Ş.",
-    "score": {
-      "home": 1,
-      "away": 4,
-      "display": "1-4",
-      "played": true
-    },
-    "date": "2024-03-03",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251315&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251319",
-    "season": "2023-2024",
-    "title": "SİİRT İL ÖZEL İDARESİ SPOR - Balıkesirspor",
-    "homeTeam": "SİİRT İL ÖZEL İDARESİ SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2024-03-10",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251319&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251330",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - SULTANBEYLİ BELEDİYE SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SULTANBEYLİ BELEDİYE SPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2024-03-17",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251330&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251333",
-    "season": "2023-2024",
-    "title": "GÜNEŞ HOLDİNG ÇANKAYA SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "GÜNEŞ HOLDİNG ÇANKAYA SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2024-03-24",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251333&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251345",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - SEBAT GENÇLİK SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SEBAT GENÇLİK SPOR",
-    "score": {
-      "home": 4,
-      "away": 1,
-      "display": "4-1",
-      "played": true
-    },
-    "date": "2024-04-03",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251345&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251347",
-    "season": "2023-2024",
-    "title": "BITEXEN ADANA 1954 FUTBOL KULÜBÜ - Balıkesirspor",
-    "homeTeam": "BITEXEN ADANA 1954 FUTBOL KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2024-04-07",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251347&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251360",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - TOKAT BELEDİYE PLEVNE SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "TOKAT BELEDİYE PLEVNE SPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2024-04-14",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251360&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "251361",
-    "season": "2023-2024",
-    "title": "BERGAMA SPORTİF FAALİYETLER A.Ş - Balıkesirspor",
-    "homeTeam": "BERGAMA SPORTİF FAALİYETLER A.Ş",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2024-04-21",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=251361&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "252547",
-    "season": "2023-2024",
-    "title": "Balıkesirspor - BURHANİYE BELEDİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BURHANİYE BELEDİYESPOR",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2023-09-26",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=252547&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265586",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - FATSA BELEDİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "FATSA BELEDİYESPOR",
-    "score": {
-      "home": 4,
-      "away": 1,
-      "display": "4-1",
-      "played": true
-    },
-    "date": "2024-09-08",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265586&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265594",
-    "season": "2024-2025",
-    "title": "UŞAK SPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "UŞAK SPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 2,
-      "display": "0-2",
-      "played": true
-    },
-    "date": "2024-09-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265594&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265601",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - ONUKSPORTS KELKİT HÜRRİYET SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ONUKSPORTS KELKİT HÜRRİYET SPOR KULÜBÜ",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2024-09-21",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265601&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265612",
-    "season": "2024-2025",
-    "title": "SİLİVRİSPOR - Balıkesirspor",
-    "homeTeam": "SİLİVRİSPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2024-09-29",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265612&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265616",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - MUĞLASPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "MUĞLASPOR KULÜBÜ",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2024-10-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265616&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265627",
-    "season": "2024-2025",
-    "title": "NEVŞEHİR BELEDİYE SPOR - Balıkesirspor",
-    "homeTeam": "NEVŞEHİR BELEDİYE SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 5,
-      "display": "0-5",
-      "played": true
-    },
-    "date": "2025-04-06",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265627&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265643",
-    "season": "2024-2025",
-    "title": "İNEGÖL KAFKAS SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "İNEGÖL KAFKAS SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 4,
-      "away": 0,
-      "display": "4-0",
-      "played": true
-    },
-    "date": "2025-04-20",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265643&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265648",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - T.METAL 1963 SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "T.METAL 1963 SPOR",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2025-04-26",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265648&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265655",
-    "season": "2024-2025",
-    "title": "AMASYASPOR FUTBOL KULÜBÜ - Balıkesirspor",
-    "homeTeam": "AMASYASPOR FUTBOL KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2024-10-13",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265655&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265663",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - SMART HOLDİNG A.Ş.ÇAYELİ SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SMART HOLDİNG A.Ş.ÇAYELİ SPOR",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
-    "date": "2024-10-20",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265663&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265673",
-    "season": "2024-2025",
-    "title": "TİRE 2021 FUTBOL KULÜBÜ - Balıkesirspor",
-    "homeTeam": "TİRE 2021 FUTBOL KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2024-10-26",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265673&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265678",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - ETİMESGUT BELEDİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ETİMESGUT BELEDİYESPOR",
-    "score": {
-      "home": 0,
-      "away": 0,
-      "display": "0-0",
-      "played": true
-    },
-    "date": "2024-11-03",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265678&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265693",
-    "season": "2024-2025",
-    "title": "ETİ GÜBRE MAZIDAĞI FOSFAT SPOR - Balıkesirspor",
-    "homeTeam": "ETİ GÜBRE MAZIDAĞI FOSFAT SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
-    "date": "2024-11-10",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265693&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265694",
-    "season": "2024-2025",
-    "title": "BEYKOZ İSHAKLI SPOR FAALİYETLERİ A.Ş. - Balıkesirspor",
-    "homeTeam": "BEYKOZ İSHAKLI SPOR FAALİYETLERİ A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 3,
-      "away": 3,
-      "display": "3-3",
-      "played": true
-    },
-    "date": "2024-11-16",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265694&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265707",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - NEVŞEHİR BELEDİYE SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "NEVŞEHİR BELEDİYE SPOR",
-    "score": {
-      "home": 3,
-      "away": 1,
-      "display": "3-1",
-      "played": true
-    },
-    "date": "2024-11-23",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265707&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265711",
-    "season": "2024-2025",
-    "title": "ADIYAMAN FUTBOL KULÜBÜ A.Ş. - Balıkesirspor",
-    "homeTeam": "ADIYAMAN FUTBOL KULÜBÜ A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 5,
-      "display": "0-5",
-      "played": true
-    },
-    "date": "2024-12-01",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265711&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265723",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - İNEGÖL KAFKAS SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "İNEGÖL KAFKAS SPOR KULÜBÜ",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2024-12-08",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265723&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265728",
-    "season": "2024-2025",
-    "title": "T.METAL 1963 SPOR - Balıkesirspor",
-    "homeTeam": "T.METAL 1963 SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2024-12-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265728&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265738",
-    "season": "2024-2025",
-    "title": "FATSA BELEDİYESPOR - Balıkesirspor",
-    "homeTeam": "FATSA BELEDİYESPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
-    "date": "2025-01-19",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265738&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265746",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - UŞAK SPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "UŞAK SPOR A.Ş.",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2025-01-25",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265746&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265753",
-    "season": "2024-2025",
-    "title": "ONUKSPORTS KELKİT HÜRRİYET SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "ONUKSPORTS KELKİT HÜRRİYET SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2025-02-02",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265753&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265764",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - SİLİVRİSPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SİLİVRİSPOR",
-    "score": {
-      "home": 4,
-      "away": 0,
-      "display": "4-0",
-      "played": true
-    },
-    "date": "2025-02-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265764&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265768",
-    "season": "2024-2025",
-    "title": "MUĞLASPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "MUĞLASPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2025-02-16",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265768&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265775",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - YURT ET AMASYASPOR FK",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "YURT ET AMASYASPOR FK",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2025-04-02",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265775&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265783",
-    "season": "2024-2025",
-    "title": "SMART HOLDİNG A.Ş.ÇAYELİ SPOR - Balıkesirspor",
-    "homeTeam": "SMART HOLDİNG A.Ş.ÇAYELİ SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2025-03-02",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265783&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265793",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - TİRE 2021 FUTBOL KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "TİRE 2021 FUTBOL KULÜBÜ",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2025-03-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265793&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265798",
-    "season": "2024-2025",
-    "title": "ETİMESGUT SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "ETİMESGUT SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2025-03-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265798&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265813",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - ETİ GÜBRE MAZIDAĞI FOSFAT SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ETİ GÜBRE MAZIDAĞI FOSFAT SPOR",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2025-03-22",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265813&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "265814",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - BEYKOZ İSHAKLI SPOR FAALİYETLERİ A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BEYKOZ İSHAKLI SPOR FAALİYETLERİ A.Ş.",
-    "score": {
-      "home": 3,
-      "away": 1,
-      "display": "3-1",
-      "played": true
-    },
-    "date": "2025-03-26",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=265814&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "271250",
-    "season": "2024-2025",
-    "title": "KİLİS BLD.SPOR - Balıkesirspor",
-    "homeTeam": "KİLİS BLD.SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2024-10-08",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=271250&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "283042",
-    "season": "2024-2025",
-    "title": "ETİ GÜBRE MAZIDAĞI FOSFAT SPOR - Balıkesirspor",
-    "homeTeam": "ETİ GÜBRE MAZIDAĞI FOSFAT SPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
-    "date": "2025-05-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=283042&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "283046",
-    "season": "2024-2025",
-    "title": "Balıkesirspor - ETİ GÜBRE MAZIDAĞI FOSFAT SPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ETİ GÜBRE MAZIDAĞI FOSFAT SPOR",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
-    "date": "2025-05-19",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=283046&pageID=528"
-    }
-  },
-  {
-    "type": "match",
-    "id": "283311",
-    "season": "2024-2025",
-    "title": "MUŞ SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "MUŞ SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
-    "date": "2025-05-24",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=283311&pageID=528"
-    }
-  },
-  {
-    "type": "match",
+    "season": "2025-2026",
     "id": "285615",
-    "season": "2025-2026",
-    "title": "SÖKE 1970 SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "SÖKE 1970 SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
+    "title": "SÖKE 1970 SPOR KULÜBÜ 1-1 Balıkesirspor",
     "date": "2025-09-07",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285615"
-    }
+    "url": "seasons/2025-2026/matches/285615.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285620",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - TİRE 2021 FUTBOL KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "TİRE 2021 FUTBOL KULÜBÜ",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
+    "title": "Balıkesirspor 1-2 TİRE 2021 FUTBOL KULÜBÜ",
     "date": "2025-09-13",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285620"
-    }
+    "url": "seasons/2025-2026/matches/285620.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285632",
-    "season": "2025-2026",
-    "title": "KARŞIYAKA - Balıkesirspor",
-    "homeTeam": "KARŞIYAKA",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
+    "title": "KARŞIYAKA 2-1 Balıkesirspor",
     "date": "2025-09-21",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285632"
-    }
+    "url": "seasons/2025-2026/matches/285632.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285636",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - KÜTAHYASPOR FUTBOL SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "KÜTAHYASPOR FUTBOL SPOR KULÜBÜ",
-    "score": {
-      "home": 2,
-      "away": 2,
-      "display": "2-2",
-      "played": true
-    },
+    "title": "Balıkesirspor 2-2 KÜTAHYASPOR FUTBOL SPOR KULÜBÜ",
     "date": "2025-09-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285636"
-    }
+    "url": "seasons/2025-2026/matches/285636.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285649",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - AFYONSPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "AFYONSPOR KULÜBÜ",
-    "score": {
-      "home": 4,
-      "away": 0,
-      "display": "4-0",
-      "played": true
-    },
+    "title": "Balıkesirspor 4-0 AFYONSPOR KULÜBÜ",
     "date": "2025-10-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285649"
-    }
+    "url": "seasons/2025-2026/matches/285649.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285653",
-    "season": "2025-2026",
-    "title": "ALANYA 1221 FUTBOL SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 2,
-      "display": "0-2",
-      "played": true
-    },
+    "title": "ALANYA 1221 FUTBOL SPOR KULÜBÜ 0-2 Balıkesirspor",
     "date": "2025-10-12",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285653"
-    }
+    "url": "seasons/2025-2026/matches/285653.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285664",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş.",
-    "score": {
-      "home": 2,
-      "away": 0,
-      "display": "2-0",
-      "played": true
-    },
+    "title": "Balıkesirspor 2-0 ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş.",
     "date": "2025-10-19",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285664"
-    }
+    "url": "seasons/2025-2026/matches/285664.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285671",
-    "season": "2025-2026",
-    "title": "İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş. - Balıkesirspor",
-    "homeTeam": "İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 2,
-      "display": "2-2",
-      "played": true
-    },
+    "title": "İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş. 2-2 Balıkesirspor",
     "date": "2025-10-26",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285671"
-    }
+    "url": "seasons/2025-2026/matches/285671.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285679",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - NAZİLLİ SPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "NAZİLLİ SPOR A.Ş.",
-    "score": {
-      "home": 3,
-      "away": 0,
-      "display": "3-0",
-      "played": true
-    },
+    "title": "Balıkesirspor 3-0 NAZİLLİ SPOR A.Ş.",
     "date": "2025-11-01",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285679"
-    }
+    "url": "seasons/2025-2026/matches/285679.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285682",
-    "season": "2025-2026",
-    "title": "ALTAY - Balıkesirspor",
-    "homeTeam": "ALTAY",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
+    "title": "ALTAY 0-1 Balıkesirspor",
     "date": "2025-11-09",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285682"
-    }
+    "url": "seasons/2025-2026/matches/285682.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285694",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - OKTAŞ UŞAK SPOR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "OKTAŞ UŞAK SPOR A.Ş.",
-    "score": {
-      "home": 3,
-      "away": 1,
-      "display": "3-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 3-1 OKTAŞ UŞAK SPOR A.Ş.",
     "date": "2025-11-30",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285694"
-    }
+    "url": "seasons/2025-2026/matches/285694.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285700",
-    "season": "2025-2026",
-    "title": "AYVALIKGÜCÜ BELEDİYESPOR - Balıkesirspor",
-    "homeTeam": "AYVALIKGÜCÜ BELEDİYESPOR",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
+    "title": "AYVALIKGÜCÜ BELEDİYESPOR 1-0 Balıkesirspor",
     "date": "2025-12-07",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285700"
-    }
+    "url": "seasons/2025-2026/matches/285700.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285709",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - DENİZLİ İDMANYURDU GÜRELLER SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "DENİZLİ İDMANYURDU GÜRELLER SPOR KULÜBÜ",
-    "score": {
-      "home": 3,
-      "away": 1,
-      "display": "3-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 3-1 DENİZLİ İDMANYURDU GÜRELLER SPOR KULÜBÜ",
     "date": "2025-12-13",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285709"
-    }
+    "url": "seasons/2025-2026/matches/285709.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285718",
-    "season": "2025-2026",
-    "title": "ESKİŞEHİRSPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "ESKİŞEHİRSPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
+    "title": "ESKİŞEHİRSPOR KULÜBÜ 0-3 Balıkesirspor",
     "date": "2025-12-17",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285718"
-    }
+    "url": "seasons/2025-2026/matches/285718.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285724",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 1-1 BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
     "date": "2025-12-21",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285724"
-    }
+    "url": "seasons/2025-2026/matches/285724.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285735",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - SÖKE 1970 SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "SÖKE 1970 SPOR KULÜBÜ",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 2-1 SÖKE 1970 SPOR KULÜBÜ",
     "date": "2026-01-11",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285735"
-    }
+    "url": "seasons/2025-2026/matches/285735.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285740",
-    "season": "2025-2026",
-    "title": "TİRE 2021 FUTBOL KULÜBÜ - Balıkesirspor",
-    "homeTeam": "TİRE 2021 FUTBOL KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
+    "title": "TİRE 2021 FUTBOL KULÜBÜ 1-1 Balıkesirspor",
     "date": "2026-01-18",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285740"
-    }
+    "url": "seasons/2025-2026/matches/285740.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285752",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - KARŞIYAKA",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "KARŞIYAKA",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 2-1 KARŞIYAKA",
     "date": "2026-01-25",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285752"
-    }
+    "url": "seasons/2025-2026/matches/285752.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285756",
-    "season": "2025-2026",
-    "title": "KÜTAHYASPOR FUTBOL SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "KÜTAHYASPOR FUTBOL SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
+    "title": "KÜTAHYASPOR FUTBOL SPOR KULÜBÜ 2-1 Balıkesirspor",
     "date": "2026-02-01",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285756"
-    }
+    "url": "seasons/2025-2026/matches/285756.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285769",
-    "season": "2025-2026",
-    "title": "AFYONSPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "AFYONSPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 3,
-      "display": "0-3",
-      "played": true
-    },
+    "title": "AFYONSPOR KULÜBÜ 0-3 Balıkesirspor",
     "date": "2026-02-08",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285769"
-    }
+    "url": "seasons/2025-2026/matches/285769.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285773",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 0-1 ALANYA 1221 FUTBOL SPOR KULÜBÜ",
     "date": "2026-02-14",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285773"
-    }
+    "url": "seasons/2025-2026/matches/285773.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285784",
-    "season": "2025-2026",
-    "title": "ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş. - Balıkesirspor",
-    "homeTeam": "ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
+    "title": "ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş. 1-1 Balıkesirspor",
     "date": "2026-02-22",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285784"
-    }
+    "url": "seasons/2025-2026/matches/285784.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285791",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş.",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş.",
-    "score": {
-      "home": 1,
-      "away": 0,
-      "display": "1-0",
-      "played": true
-    },
+    "title": "Balıkesirspor 1-0 İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş.",
     "date": "2026-02-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285791"
-    }
+    "url": "seasons/2025-2026/matches/285791.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285799",
-    "season": "2025-2026",
-    "title": "NAZİLLİ SPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "NAZİLLİ SPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 7,
-      "display": "0-7",
-      "played": true
-    },
+    "title": "NAZİLLİ SPOR A.Ş. 0-7 Balıkesirspor",
     "date": "2026-03-08",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285799"
-    }
+    "url": "seasons/2025-2026/matches/285799.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285802",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - ALTAY",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ALTAY",
-    "score": {
-      "home": 3,
-      "away": 0,
-      "display": "3-0",
-      "played": true
-    },
+    "title": "Balıkesirspor 3-0 ALTAY",
     "date": "2026-03-15",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285802"
-    }
+    "url": "seasons/2025-2026/matches/285802.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285814",
-    "season": "2025-2026",
-    "title": "OKTAŞ UŞAK SPOR A.Ş. - Balıkesirspor",
-    "homeTeam": "OKTAŞ UŞAK SPOR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 2,
-      "display": "0-2",
-      "played": true
-    },
+    "title": "OKTAŞ UŞAK SPOR A.Ş. 0-2 Balıkesirspor",
     "date": "2026-03-25",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285814"
-    }
+    "url": "seasons/2025-2026/matches/285814.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285820",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - AYVALIKGÜCÜ BELEDİYESPOR",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "AYVALIKGÜCÜ BELEDİYESPOR",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
+    "title": "Balıkesirspor 1-2 AYVALIKGÜCÜ BELEDİYESPOR",
     "date": "2026-03-29",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285820"
-    }
+    "url": "seasons/2025-2026/matches/285820.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285829",
-    "season": "2025-2026",
-    "title": "DENİZLİ İDMANYURDU 1959 SPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "DENİZLİ İDMANYURDU 1959 SPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 0,
-      "away": 1,
-      "display": "0-1",
-      "played": true
-    },
+    "title": "DENİZLİ İDMANYURDU 1959 SPOR KULÜBÜ 0-1 Balıkesirspor",
     "date": "2026-04-05",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285829"
-    }
+    "url": "seasons/2025-2026/matches/285829.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285838",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - ESKİŞEHİRSPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ESKİŞEHİRSPOR KULÜBÜ",
-    "score": {
-      "home": 1,
-      "away": 1,
-      "display": "1-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 1-1 ESKİŞEHİRSPOR KULÜBÜ",
     "date": "2026-04-12",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285838"
-    }
+    "url": "seasons/2025-2026/matches/285838.json"
   },
   {
     "type": "match",
+    "season": "2025-2026",
     "id": "285844",
-    "season": "2025-2026",
-    "title": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş. - Balıkesirspor",
-    "homeTeam": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 1,
-      "away": 4,
-      "display": "1-4",
-      "played": true
-    },
+    "title": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş. 1-4 Balıkesirspor",
     "date": "2026-04-18",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285844"
-    }
+    "url": "seasons/2025-2026/matches/285844.json"
   },
   {
     "type": "match",
-    "id": "305262",
     "season": "2025-2026",
-    "title": "Balıkesirspor - YALOVA FK 77 SPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "YALOVA FK 77 SPOR KULÜBÜ",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
-    },
-    "date": "2025-09-17",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=305262&pageID=528"
-    }
-  },
-  {
-    "type": "match",
     "id": "316898",
-    "season": "2025-2026",
-    "title": "Balıkesirspor - ESKİŞEHİRSPOR KULÜBÜ",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "ESKİŞEHİRSPOR KULÜBÜ",
-    "score": {
-      "home": 2,
-      "away": 1,
-      "display": "2-1",
-      "played": true
-    },
+    "title": "Balıkesirspor 2-1 ESKİŞEHİRSPOR KULÜBÜ",
     "date": "2026-04-24",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=316898"
-    }
+    "url": "seasons/2025-2026/matches/316898.json"
   },
   {
     "type": "match",
-    "id": "316899",
     "season": "2025-2026",
-    "title": "ESKİŞEHİRSPOR KULÜBÜ - Balıkesirspor",
-    "homeTeam": "ESKİŞEHİRSPOR KULÜBÜ",
-    "awayTeam": "Balıkesirspor",
-    "score": {
-      "home": 3,
-      "away": 0,
-      "display": "3-0",
-      "played": true
-    },
+    "id": "316899",
+    "title": "ESKİŞEHİRSPOR KULÜBÜ 3-0 Balıkesirspor",
     "date": "2026-04-28",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?pageID=29&macId=316899"
-    }
+    "url": "seasons/2025-2026/matches/316899.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118764",
+    "title": "Balıkesirspor 1-0 TKİ TAVŞANLI LİNYİTSPOR",
+    "date": "2013-08-17",
+    "url": "seasons/2013-2014/matches/118764.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118777",
+    "title": "FETHİYESPOR 0-4 Balıkesirspor",
+    "date": "2013-08-25",
+    "url": "seasons/2013-2014/matches/118777.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118781",
+    "title": "Balıkesirspor 3-0 DENİZLİSPOR",
+    "date": "2013-09-01",
+    "url": "seasons/2013-2014/matches/118781.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118788",
+    "title": "ADANA DEMİRSPOR 0-1 Balıkesirspor",
+    "date": "2013-09-14",
+    "url": "seasons/2013-2014/matches/118788.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118798",
+    "title": "Balıkesirspor 1-0 BOLUSPOR",
+    "date": "2013-09-18",
+    "url": "seasons/2013-2014/matches/118798.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118808",
+    "title": "GAZİANTEP B.Ş. BLD.SPOR 2-1 Balıkesirspor",
+    "date": "2013-09-22",
+    "url": "seasons/2013-2014/matches/118808.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118815",
+    "title": "Balıkesirspor 4-0 1461 TRABZON",
+    "date": "2013-09-28",
+    "url": "seasons/2013-2014/matches/118815.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "127623",
+    "title": "BARTINSPOR 1-7 Balıkesirspor",
+    "date": "2013-10-02",
+    "url": "seasons/2013-2014/matches/127623.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118833",
+    "title": "SAMSUNSPOR 3-0 Balıkesirspor",
+    "date": "2013-10-19",
+    "url": "seasons/2013-2014/matches/118833.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118846",
+    "title": "Balıkesirspor 2-0 BUCASPOR",
+    "date": "2013-10-26",
+    "url": "seasons/2013-2014/matches/118846.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "127681",
+    "title": "KONYA ANADOLU SELÇUKLUSPOR 0-2 Balıkesirspor",
+    "date": "2013-10-30",
+    "url": "seasons/2013-2014/matches/127681.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118852",
+    "title": "ANKARASPOR A.Ş. 3-1 Balıkesirspor",
+    "date": "2013-11-02",
+    "url": "seasons/2013-2014/matches/118852.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118864",
+    "title": "Balıkesirspor 1-2 Ş.URFASPOR",
+    "date": "2013-11-06",
+    "url": "seasons/2013-2014/matches/118864.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118871",
+    "title": "ADANASPOR A.Ş. 2-3 Balıkesirspor",
+    "date": "2013-11-11",
+    "url": "seasons/2013-2014/matches/118871.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118882",
+    "title": "Balıkesirspor 1-1 MERSİN İDMANYURDU",
+    "date": "2013-11-24",
+    "url": "seasons/2013-2014/matches/118882.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118890",
+    "title": "ORDUSPOR 0-1 Balıkesirspor",
+    "date": "2013-11-30",
+    "url": "seasons/2013-2014/matches/118890.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "128325",
+    "title": "Balıkesirspor 3-1 TRABZONSPOR A.Ş.",
+    "date": "2013-12-04",
+    "url": "seasons/2013-2014/matches/128325.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118900",
+    "title": "Balıkesirspor 4-1 KARŞIYAKA",
+    "date": "2013-12-08",
+    "url": "seasons/2013-2014/matches/118900.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118909",
+    "title": "MANİSASPOR 3-0 Balıkesirspor",
+    "date": "2013-12-14",
+    "url": "seasons/2013-2014/matches/118909.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "128366",
+    "title": "GALATASARAY A.Ş. 4-0 Balıkesirspor",
+    "date": "2013-12-18",
+    "url": "seasons/2013-2014/matches/128366.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118918",
+    "title": "Balıkesirspor 3-1 KAHRAMANMARAŞSPOR A.Ş.",
+    "date": "2013-12-22",
+    "url": "seasons/2013-2014/matches/118918.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118928",
+    "title": "İSTANBUL BBSK 0-0 Balıkesirspor",
+    "date": "2013-12-28",
+    "url": "seasons/2013-2014/matches/118928.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118935",
+    "title": "TKİ TAVŞANLI LİNYİTSPOR 0-2 Balıkesirspor",
+    "date": "2014-01-12",
+    "url": "seasons/2013-2014/matches/118935.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118948",
+    "title": "Balıkesirspor 1-1 FETHİYESPOR",
+    "date": "2014-01-19",
+    "url": "seasons/2013-2014/matches/118948.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118952",
+    "title": "TEKDEN DENİZLİSPOR 1-0 Balıkesirspor",
+    "date": "2014-01-27",
+    "url": "seasons/2013-2014/matches/118952.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118959",
+    "title": "Balıkesirspor 1-0 ADANA DEMİRSPOR",
+    "date": "2014-02-02",
+    "url": "seasons/2013-2014/matches/118959.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118969",
+    "title": "BOLUSPOR 0-1 Balıkesirspor",
+    "date": "2014-02-09",
+    "url": "seasons/2013-2014/matches/118969.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118979",
+    "title": "Balıkesirspor 1-0 GAZİANTEP B.Ş. BLD.SPOR",
+    "date": "2014-02-16",
+    "url": "seasons/2013-2014/matches/118979.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "118986",
+    "title": "1461 TRABZON 1-2 Balıkesirspor",
+    "date": "2014-02-20",
+    "url": "seasons/2013-2014/matches/118986.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119004",
+    "title": "Balıkesirspor 2-2 SAMSUNSPOR",
+    "date": "2014-03-02",
+    "url": "seasons/2013-2014/matches/119004.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119017",
+    "title": "BUCASPOR 0-2 Balıkesirspor",
+    "date": "2014-03-08",
+    "url": "seasons/2013-2014/matches/119017.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119023",
+    "title": "Balıkesirspor 1-1 ANKARASPOR A.Ş.",
+    "date": "2014-03-15",
+    "url": "seasons/2013-2014/matches/119023.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119035",
+    "title": "Ş.URFASPOR 1-1 Balıkesirspor",
+    "date": "2014-03-24",
+    "url": "seasons/2013-2014/matches/119035.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119042",
+    "title": "Balıkesirspor 2-1 ADANASPOR A.Ş.",
+    "date": "2014-03-29",
+    "url": "seasons/2013-2014/matches/119042.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119053",
+    "title": "MERSİN İDMANYURDU 0-1 Balıkesirspor",
+    "date": "2014-04-02",
+    "url": "seasons/2013-2014/matches/119053.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119061",
+    "title": "Balıkesirspor 2-2 ORDUSPOR",
+    "date": "2014-04-06",
+    "url": "seasons/2013-2014/matches/119061.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119071",
+    "title": "KARŞIYAKA 3-1 Balıkesirspor",
+    "date": "2014-04-13",
+    "url": "seasons/2013-2014/matches/119071.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119080",
+    "title": "Balıkesirspor 1-0 MANİSASPOR",
+    "date": "2014-04-20",
+    "url": "seasons/2013-2014/matches/119080.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119089",
+    "title": "KAHRAMANMARAŞSPOR A.Ş. 1-2 Balıkesirspor",
+    "date": "2014-04-27",
+    "url": "seasons/2013-2014/matches/119089.json"
+  },
+  {
+    "type": "match",
+    "season": "2013-2014",
+    "id": "119099",
+    "title": "Balıkesirspor 2-1 İSTANBUL BBSK",
+    "date": "2014-05-04",
+    "url": "seasons/2013-2014/matches/119099.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107248",
+    "title": "BAYRAMPAŞA 1-2 Balıkesirspor",
+    "date": "2012-09-09",
+    "url": "seasons/2012-2013/matches/107248.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107252",
+    "title": "Balıkesirspor 0-0 ANADOLU SELÇUKLUSPOR",
+    "date": "2012-09-16",
+    "url": "seasons/2012-2013/matches/107252.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107265",
+    "title": "EYÜPSPOR 0-2 Balıkesirspor",
+    "date": "2012-09-23",
+    "url": "seasons/2012-2013/matches/107265.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107268",
+    "title": "Balıkesirspor 2-1 YENİ MALATYASPOR",
+    "date": "2012-09-30",
+    "url": "seasons/2012-2013/matches/107268.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107285",
+    "title": "DENİZLİ BELEDİYESPOR 1-1 Balıkesirspor",
+    "date": "2012-10-14",
+    "url": "seasons/2012-2013/matches/107285.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107297",
+    "title": "Balıkesirspor 1-1 KIZILCAHAMAMSPOR A.Ş.",
+    "date": "2012-10-21",
+    "url": "seasons/2012-2013/matches/107297.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107303",
+    "title": "TOKATSPOR 0-2 Balıkesirspor",
+    "date": "2012-10-28",
+    "url": "seasons/2012-2013/matches/107303.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107312",
+    "title": "Balıkesirspor 2-1 ALTAY",
+    "date": "2012-11-04",
+    "url": "seasons/2012-2013/matches/107312.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107321",
+    "title": "ALANYASPOR 0-0 Balıkesirspor",
+    "date": "2012-11-11",
+    "url": "seasons/2012-2013/matches/107321.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107327",
+    "title": "Balıkesirspor 1-0 GAZİOSMANPAŞA",
+    "date": "2012-11-14",
+    "url": "seasons/2012-2013/matches/107327.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107331",
+    "title": "İSKENDERUN DEMİR ÇELİKSPOR 1-0 Balıkesirspor",
+    "date": "2012-11-18",
+    "url": "seasons/2012-2013/matches/107331.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107342",
+    "title": "Balıkesirspor 2-2 KÖRFEZ FUTBOL KULÜBÜ",
+    "date": "2012-11-24",
+    "url": "seasons/2012-2013/matches/107342.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107349",
+    "title": "OFSPOR 1-2 Balıkesirspor",
+    "date": "2012-12-02",
+    "url": "seasons/2012-2013/matches/107349.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107357",
+    "title": "Balıkesirspor 1-0 İNEGÖLSPOR",
+    "date": "2012-12-09",
+    "url": "seasons/2012-2013/matches/107357.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107367",
+    "title": "ÇAMLIDERE ŞEKERSPOR A.Ş. 1-2 Balıkesirspor",
+    "date": "2012-12-16",
+    "url": "seasons/2012-2013/matches/107367.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107372",
+    "title": "Balıkesirspor 0-1 KIRKLARELİSPOR",
+    "date": "2012-12-23",
+    "url": "seasons/2012-2013/matches/107372.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107384",
+    "title": "Balıkesirspor 0-0 BAYRAMPAŞA",
+    "date": "2013-01-27",
+    "url": "seasons/2012-2013/matches/107384.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107388",
+    "title": "ANADOLU SELÇUKLUSPOR 1-2 Balıkesirspor",
+    "date": "2013-02-03",
+    "url": "seasons/2012-2013/matches/107388.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107401",
+    "title": "Balıkesirspor 2-0 EYÜPSPOR",
+    "date": "2013-02-10",
+    "url": "seasons/2012-2013/matches/107401.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107404",
+    "title": "YENİ MALATYASPOR 0-0 Balıkesirspor",
+    "date": "2013-02-17",
+    "url": "seasons/2012-2013/matches/107404.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107421",
+    "title": "Balıkesirspor 2-0 DENİZLİ BELEDİYESPOR",
+    "date": "2013-03-03",
+    "url": "seasons/2012-2013/matches/107421.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107433",
+    "title": "KIZILCAHAMAMSPOR A.Ş. 0-3 Balıkesirspor",
+    "date": "2013-03-10",
+    "url": "seasons/2012-2013/matches/107433.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107439",
+    "title": "Balıkesirspor 1-0 TOKATSPOR",
+    "date": "2013-03-17",
+    "url": "seasons/2012-2013/matches/107439.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107448",
+    "title": "ALTAY 0-1 Balıkesirspor",
+    "date": "2013-03-23",
+    "url": "seasons/2012-2013/matches/107448.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107457",
+    "title": "Balıkesirspor 2-1 ALANYASPOR",
+    "date": "2013-03-31",
+    "url": "seasons/2012-2013/matches/107457.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107463",
+    "title": "GAZİOSMANPAŞA 1-0 Balıkesirspor",
+    "date": "2013-04-03",
+    "url": "seasons/2012-2013/matches/107463.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107467",
+    "title": "Balıkesirspor 2-0 İSKENDERUN DEMİR ÇELİKSPOR",
+    "date": "2013-04-07",
+    "url": "seasons/2012-2013/matches/107467.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107478",
+    "title": "KÖRFEZ FUTBOL KULÜBÜ 1-1 Balıkesirspor",
+    "date": "2013-04-14",
+    "url": "seasons/2012-2013/matches/107478.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107485",
+    "title": "Balıkesirspor 4-1 OFSPOR",
+    "date": "2013-04-21",
+    "url": "seasons/2012-2013/matches/107485.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107493",
+    "title": "İNEGÖLSPOR 0-1 Balıkesirspor",
+    "date": "2013-04-27",
+    "url": "seasons/2012-2013/matches/107493.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107503",
+    "title": "Balıkesirspor 2-1 ÇAMLIDERE ŞEKERSPOR A.Ş.",
+    "date": "2013-05-03",
+    "url": "seasons/2012-2013/matches/107503.json"
+  },
+  {
+    "type": "match",
+    "season": "2012-2013",
+    "id": "107508",
+    "title": "KIRKLARELİSPOR 3-3 Balıkesirspor",
+    "date": "2013-05-12",
+    "url": "seasons/2012-2013/matches/107508.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98274",
+    "title": "TURGUTLUSPOR 0-1 Balıkesirspor",
+    "date": "2011-09-11",
+    "url": "seasons/2011-2012/matches/98274.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98282",
+    "title": "Balıkesirspor 4-1 TEPECİKSPOR A.Ş.",
+    "date": "2011-09-18",
+    "url": "seasons/2011-2012/matches/98282.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98291",
+    "title": "Ş.URFASPOR 4-1 Balıkesirspor",
+    "date": "2011-09-25",
+    "url": "seasons/2011-2012/matches/98291.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98298",
+    "title": "Balıkesirspor 2-0 ÇORUMSPOR",
+    "date": "2011-10-02",
+    "url": "seasons/2011-2012/matches/98298.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98308",
+    "title": "İSKENDERUN DEMİR ÇELİKSPOR 2-5 Balıkesirspor",
+    "date": "2011-10-09",
+    "url": "seasons/2011-2012/matches/98308.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98314",
+    "title": "Balıkesirspor 7-1 KOCAELİSPOR",
+    "date": "2011-10-16",
+    "url": "seasons/2011-2012/matches/98314.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98325",
+    "title": "ALTAY 1-1 Balıkesirspor",
+    "date": "2011-10-23",
+    "url": "seasons/2011-2012/matches/98325.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98330",
+    "title": "Balıkesirspor 1-1 YENİ MALATYASPOR",
+    "date": "2011-10-30",
+    "url": "seasons/2011-2012/matches/98330.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98347",
+    "title": "DİYARBAKIRSPOR 0-3 Balıkesirspor",
+    "date": "2011-11-20",
+    "url": "seasons/2011-2012/matches/98347.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98357",
+    "title": "Balıkesirspor 1-0 GAZİOSMANPAŞA",
+    "date": "2011-11-27",
+    "url": "seasons/2011-2012/matches/98357.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98365",
+    "title": "TOKATSPOR 0-4 Balıkesirspor",
+    "date": "2011-12-04",
+    "url": "seasons/2011-2012/matches/98365.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98372",
+    "title": "Balıkesirspor 4-0 KONYA TORKU ŞEKERSPOR",
+    "date": "2011-12-11",
+    "url": "seasons/2011-2012/matches/98372.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98375",
+    "title": "OFSPOR 2-2 Balıkesirspor",
+    "date": "2011-12-18",
+    "url": "seasons/2011-2012/matches/98375.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98387",
+    "title": "Balıkesirspor 0-0 PENDİKSPOR",
+    "date": "2011-12-25",
+    "url": "seasons/2011-2012/matches/98387.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98393",
+    "title": "BUGSAŞ SPOR 1-1 Balıkesirspor",
+    "date": "2012-01-15",
+    "url": "seasons/2011-2012/matches/98393.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98402",
+    "title": "Balıkesirspor 2-1 BOZÜYÜKSPOR",
+    "date": "2012-01-22",
+    "url": "seasons/2011-2012/matches/98402.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98410",
+    "title": "Balıkesirspor 1-2 TURGUTLUSPOR",
+    "date": "2012-01-29",
+    "url": "seasons/2011-2012/matches/98410.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98418",
+    "title": "TEPECİKSPOR A.Ş. 1-1 Balıkesirspor",
+    "date": "2012-02-05",
+    "url": "seasons/2011-2012/matches/98418.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98427",
+    "title": "Balıkesirspor 3-1 Ş.URFASPOR",
+    "date": "2012-02-12",
+    "url": "seasons/2011-2012/matches/98427.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98434",
+    "title": "ÇORUMSPOR 0-2 Balıkesirspor",
+    "date": "2012-02-19",
+    "url": "seasons/2011-2012/matches/98434.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98444",
+    "title": "Balıkesirspor 1-0 İSKENDERUN DEMİR ÇELİKSPOR",
+    "date": "2012-02-26",
+    "url": "seasons/2011-2012/matches/98444.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98450",
+    "title": "KOCAELİSPOR 2-3 Balıkesirspor",
+    "date": "2012-03-04",
+    "url": "seasons/2011-2012/matches/98450.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98461",
+    "title": "Balıkesirspor 2-0 ALTAY",
+    "date": "2012-03-11",
+    "url": "seasons/2011-2012/matches/98461.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98466",
+    "title": "YENİ MALATYASPOR 0-2 Balıkesirspor",
+    "date": "2012-03-18",
+    "url": "seasons/2011-2012/matches/98466.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98483",
+    "title": "Balıkesirspor 5-1 DİYARBAKIRSPOR",
+    "date": "2012-03-31",
+    "url": "seasons/2011-2012/matches/98483.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98493",
+    "title": "GAZİOSMANPAŞA 1-3 Balıkesirspor",
+    "date": "2012-04-08",
+    "url": "seasons/2011-2012/matches/98493.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98501",
+    "title": "Balıkesirspor 3-0 TOKATSPOR",
+    "date": "2012-04-15",
+    "url": "seasons/2011-2012/matches/98501.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98508",
+    "title": "KONYA TORKU ŞEKERSPOR 2-1 Balıkesirspor",
+    "date": "2012-04-22",
+    "url": "seasons/2011-2012/matches/98508.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98511",
+    "title": "Balıkesirspor 2-5 OFSPOR",
+    "date": "2012-04-29",
+    "url": "seasons/2011-2012/matches/98511.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98523",
+    "title": "PENDİKSPOR 1-3 Balıkesirspor",
+    "date": "2012-05-06",
+    "url": "seasons/2011-2012/matches/98523.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98529",
+    "title": "Balıkesirspor 0-0 BUGSAŞ SPOR",
+    "date": "2012-05-13",
+    "url": "seasons/2011-2012/matches/98529.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "98538",
+    "title": "BOZÜYÜKSPOR 2-2 Balıkesirspor",
+    "date": "2012-05-20",
+    "url": "seasons/2011-2012/matches/98538.json"
+  },
+  {
+    "type": "match",
+    "season": "2011-2012",
+    "id": "106307",
+    "title": "ADANA DEMİRSPOR 1-0 Balıkesirspor",
+    "date": "2012-05-23",
+    "url": "seasons/2011-2012/matches/106307.json"
   }
 ]

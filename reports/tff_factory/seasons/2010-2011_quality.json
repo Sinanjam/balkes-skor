@@ -1,19 +1,19 @@
 {
   "season": "2010-2011",
-  "selectedIds": 220,
-  "allDiscoveredIds": 5155,
-  "detailCandidates": 220,
+  "selectedIds": 246,
+  "allDiscoveredIds": 5065,
+  "detailCandidates": 246,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
   "legacyPageIdProbe": true,
   "legacyProbeDiagnostics": [
     {
-      "kind": "group_hint",
+      "kind": "group_fast_skip",
       "pageID": 1087,
+      "error": "http_504",
       "grupID": "943",
-      "groupSelectedDelta": 1,
-      "groupAllDelta": 5
+      "cumulative": 1
     },
     {
       "kind": "page_hint",
@@ -35,11 +35,27 @@
       "groupAllDelta": 0
     },
     {
+      "kind": "group_week_fast_skip",
+      "pageID": 1090,
+      "error": "http_502",
+      "grupID": "788",
+      "week": 11,
+      "cumulative": 1
+    },
+    {
       "kind": "group_hint",
       "pageID": 1090,
       "grupID": "789",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
+    },
+    {
+      "kind": "group_week_fast_skip",
+      "pageID": 1090,
+      "error": "http_504",
+      "grupID": "789",
+      "week": 17,
+      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -63,6 +79,13 @@
       "groups": []
     },
     {
+      "kind": "page_week_fast_skip",
+      "pageID": 1111,
+      "error": "http_504",
+      "week": 5,
+      "cumulative": 1
+    },
+    {
       "kind": "page_hint",
       "pageID": 1157,
       "baseSelectedDelta": 91,
@@ -76,7 +99,7 @@
       "kind": "group_hint",
       "pageID": 1157,
       "grupID": "824",
-      "groupSelectedDelta": 0,
+      "groupSelectedDelta": 44,
       "groupAllDelta": 0
     },
     {
@@ -259,11 +282,11 @@
       "groupAllDelta": 6
     }
   ],
-  "matchesPublished": 0,
+  "matchesPublished": 2,
   "detailFiles": 2,
   "duplicatesDropped": 0,
   "rejectedReasons": {
-    "balkes_not_found": 58,
+    "balkes_not_found": 102,
     "date_out_of_season:2011-09-11": 1,
     "date_out_of_season:2011-09-18": 1,
     "date_out_of_season:2011-09-25": 1,
@@ -326,48 +349,30 @@
     "date_out_of_season:2012-01-08": 2,
     "date_out_of_season:2012-04-01": 2,
     "date_out_of_season:2012-04-25": 1,
-    "date_out_of_season:2012-05-23": 1,
-    "date_out_of_season:2012-09-02": 1,
-    "date_out_of_season:2012-09-09": 1,
-    "date_out_of_season:2012-09-16": 1,
-    "date_out_of_season:2012-09-23": 1,
-    "date_out_of_season:2012-09-30": 1,
-    "date_out_of_season:2012-10-07": 1,
-    "date_out_of_season:2012-10-14": 1,
-    "date_out_of_season:2012-10-21": 1,
-    "date_out_of_season:2012-11-04": 1,
-    "date_out_of_season:2012-11-25": 1,
-    "date_out_of_season:2012-12-02": 1,
-    "date_out_of_season:2012-12-09": 1,
-    "date_out_of_season:2012-12-16": 1,
-    "date_out_of_season:2012-12-23": 1,
-    "date_out_of_season:2012-12-30": 1,
-    "date_out_of_season:2013-01-06": 1,
-    "date_out_of_season:2013-01-23": 1,
-    "date_out_of_season:2013-02-03": 1
+    "date_out_of_season:2012-05-23": 1
   },
   "rejectedSamples": {
     "balkes_not_found": [
       "98273",
+      "98275",
       "98277",
+      "98281",
+      "98283",
       "98284",
       "98289",
+      "98290",
+      "98292",
       "98293",
       "98297",
       "98299",
       "98305",
+      "98307",
+      "98309",
       "98310",
       "98311",
-      "98317",
-      "98321",
-      "98324",
-      "98331",
-      "98333",
-      "98342",
-      "98350",
-      "98356",
-      "98360",
-      "98367"
+      "98313",
+      "98315",
+      "98317"
     ],
     "date_out_of_season:2011-09-11": [
       "98274"
@@ -636,60 +641,6 @@
     ],
     "date_out_of_season:2012-05-23": [
       "106307"
-    ],
-    "date_out_of_season:2012-09-02": [
-      "110022"
-    ],
-    "date_out_of_season:2012-09-09": [
-      "110031"
-    ],
-    "date_out_of_season:2012-09-16": [
-      "110032"
-    ],
-    "date_out_of_season:2012-09-23": [
-      "110039"
-    ],
-    "date_out_of_season:2012-09-30": [
-      "110043"
-    ],
-    "date_out_of_season:2012-10-07": [
-      "110049"
-    ],
-    "date_out_of_season:2012-10-14": [
-      "110054"
-    ],
-    "date_out_of_season:2012-10-21": [
-      "110058"
-    ],
-    "date_out_of_season:2012-11-04": [
-      "110062"
-    ],
-    "date_out_of_season:2012-11-25": [
-      "110067"
-    ],
-    "date_out_of_season:2012-12-02": [
-      "110076"
-    ],
-    "date_out_of_season:2012-12-09": [
-      "110077"
-    ],
-    "date_out_of_season:2012-12-16": [
-      "110084"
-    ],
-    "date_out_of_season:2012-12-23": [
-      "110088"
-    ],
-    "date_out_of_season:2012-12-30": [
-      "110094"
-    ],
-    "date_out_of_season:2013-01-06": [
-      "110099"
-    ],
-    "date_out_of_season:2013-01-23": [
-      "110103"
-    ],
-    "date_out_of_season:2013-02-03": [
-      "110107"
     ]
   },
   "standingsSkipped": true,
@@ -702,17 +653,5 @@
     "start": "2010-07-01",
     "end": "2011-06-30"
   },
-  "generatedAt": "2026-05-16T02:13:33.588846Z",
-  "seniorProfessionalGuard": {
-    "total": 2,
-    "league": 0,
-    "played": 2,
-    "badCompetitions": [],
-    "reasons": [
-      "too_few_matches:2",
-      "too_few_league_matches:0"
-    ]
-  },
-  "publicationSuppressed": true,
-  "suppressedReason": "too_few_matches:2;too_few_league_matches:0"
+  "generatedAt": "2026-05-17T09:30:07.247772Z"
 }

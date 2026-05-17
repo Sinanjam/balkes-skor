@@ -1,8 +1,8 @@
 {
   "season": "2013-2014",
-  "selectedIds": 622,
+  "selectedIds": 751,
   "allDiscoveredIds": 8690,
-  "detailCandidates": 622,
+  "detailCandidates": 751,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
@@ -11,7 +11,7 @@
     {
       "kind": "page_hint",
       "pageID": 1238,
-      "baseSelectedDelta": 91,
+      "baseSelectedDelta": 94,
       "baseAllDelta": 536,
       "groups": [
         "824",
@@ -22,7 +22,7 @@
       "kind": "group_hint",
       "pageID": 1238,
       "grupID": "824",
-      "groupSelectedDelta": 0,
+      "groupSelectedDelta": 41,
       "groupAllDelta": 0
     },
     {
@@ -31,6 +31,14 @@
       "grupID": "825",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
+    },
+    {
+      "kind": "group_week_fast_skip",
+      "pageID": 1238,
+      "error": "timeout",
+      "grupID": "825",
+      "week": 37,
+      "cumulative": 1
     },
     {
       "kind": "page_hint",
@@ -46,7 +54,7 @@
       "kind": "group_hint",
       "pageID": 1239,
       "grupID": "906",
-      "groupSelectedDelta": 0,
+      "groupSelectedDelta": 43,
       "groupAllDelta": 0
     },
     {
@@ -382,14 +390,6 @@
       "groupAllDelta": 7
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1287,
-      "error": "timeout",
-      "grupID": "1020",
-      "week": 40,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1288,
       "grupID": "1013",
@@ -432,7 +432,7 @@
   "detailFiles": 40,
   "duplicatesDropped": 0,
   "rejectedReasons": {
-    "balkes_not_found": 188,
+    "balkes_not_found": 317,
     "date_out_of_season:2011-09-11": 1,
     "date_out_of_season:2011-09-18": 1,
     "date_out_of_season:2011-09-25": 1,
@@ -517,14 +517,14 @@
     "date_out_of_season:2012-09-27": 1,
     "date_out_of_season:2012-11-01": 1,
     "date_out_of_season:2012-11-27": 1,
-    "not_senior_professional_competition:A2 Ligi Kademe (PAF Takımı)": 12,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı)": 28,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)": 28,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı)": 29,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı)": 24,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U19 Ligi (Akademi U19 Takımı)": 24,
-    "not_senior_professional_competition:A2 Ligi Klasman (PAF Takımı)": 10,
-    "not_senior_professional_competition:A2 Ligi Play-Off Müsabakaları (PAF Takımı) (Eleme)": 2,
+    "not_target_senior_professional:A2 Ligi Kademe (PAF Takımı) | Lig | Lig | Lig | TFF": 12,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı) | Lig | Lig | Lig | TFF": 28,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı) | Lig | Lig | Lig | TFF": 28,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı) | Lig | Lig | Lig | TFF": 29,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U19 Ligi (Akademi U19 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:A2 Ligi Klasman (PAF Takımı) | Lig | Lig | Lig | TFF": 10,
+    "not_target_senior_professional:A2 Ligi Play-Off Müsabakaları (PAF Takımı) (Eleme) | Play-off | Play-off | Play-off | TFF": 2,
     "date_out_of_season:2019-09-08": 3,
     "date_out_of_season:2019-09-22": 3,
     "date_out_of_season:2019-09-29": 3,
@@ -590,25 +590,25 @@
   "rejectedSamples": {
     "balkes_not_found": [
       "98273",
+      "98275",
       "98277",
+      "98281",
+      "98283",
       "98284",
       "98289",
+      "98290",
+      "98292",
       "98293",
       "98297",
       "98299",
       "98305",
+      "98307",
+      "98309",
       "98310",
       "98311",
-      "98317",
-      "98321",
-      "98324",
-      "98331",
-      "98333",
-      "98342",
-      "98350",
-      "98356",
-      "98360",
-      "98367"
+      "98313",
+      "98315",
+      "98317"
     ],
     "date_out_of_season:2011-09-11": [
       "98274"
@@ -874,7 +874,7 @@
     "date_out_of_season:2012-11-27": [
       "116695"
     ],
-    "not_senior_professional_competition:A2 Ligi Kademe (PAF Takımı)": [
+    "not_target_senior_professional:A2 Ligi Kademe (PAF Takımı) | Lig | Lig | Lig | TFF": [
       "120755",
       "120758",
       "120760",
@@ -888,7 +888,7 @@
       "120792",
       "120795"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı) | Lig | Lig | Lig | TFF": [
       "123623",
       "123632",
       "123636",
@@ -910,7 +910,7 @@
       "123754",
       "123762"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı) | Lig | Lig | Lig | TFF": [
       "124365",
       "124374",
       "124378",
@@ -932,7 +932,7 @@
       "124496",
       "124504"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı) | Lig | Lig | Lig | TFF": [
       "125683",
       "125692",
       "125696",
@@ -954,7 +954,7 @@
       "125814",
       "125822"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı) | Lig | Lig | Lig | TFF": [
       "126113",
       "126118",
       "126127",
@@ -976,7 +976,7 @@
       "126230",
       "126239"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U19 Ligi (Akademi U19 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U19 Ligi (Akademi U19 Takımı) | Lig | Lig | Lig | TFF": [
       "127206",
       "127211",
       "127220",
@@ -998,7 +998,7 @@
       "127323",
       "127332"
     ],
-    "not_senior_professional_competition:A2 Ligi Klasman (PAF Takımı)": [
+    "not_target_senior_professional:A2 Ligi Klasman (PAF Takımı) | Lig | Lig | Lig | TFF": [
       "129076",
       "129079",
       "129081",
@@ -1010,7 +1010,7 @@
       "129098",
       "129102"
     ],
-    "not_senior_professional_competition:A2 Ligi Play-Off Müsabakaları (PAF Takımı) (Eleme)": [
+    "not_target_senior_professional:A2 Ligi Play-Off Müsabakaları (PAF Takımı) (Eleme) | Play-off | Play-off | Play-off | TFF": [
       "129362",
       "129366"
     ],
@@ -1289,5 +1289,5 @@
     "start": "2013-07-01",
     "end": "2014-06-30"
   },
-  "generatedAt": "2026-05-16T01:19:26.466708Z"
+  "generatedAt": "2026-05-17T08:19:10.875214Z"
 }

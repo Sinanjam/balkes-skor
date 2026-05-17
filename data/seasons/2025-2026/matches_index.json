@@ -3,8 +3,7 @@
     "id": "285615",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 1,
+    "venue": "DİDİM ATATÜRK STADI - AYDIN - DİDİM",
     "stage": "1. Hafta",
     "date": "2025-09-07",
     "time": "17:00",
@@ -19,23 +18,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "SÖKE 1970 SPOR KULÜBÜ",
       "goalsFor": 1,
       "goalsAgainst": 1,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285615.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285615"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285615.json"
   },
   {
     "id": "285620",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 2,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "2. Hafta",
     "date": "2025-09-13",
     "time": "19:00",
@@ -50,54 +49,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "TİRE 2021 FUTBOL KULÜBÜ",
       "goalsFor": 1,
       "goalsAgainst": 2,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/285620.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285620"
-    }
-  },
-  {
-    "id": "305262",
-    "season": "2025-2026",
-    "competition": "Ziraat Turkish Cup (Professional Team)",
-    "roundType": "cup",
-    "week": 3,
-    "stage": "3. Maç",
-    "date": "2025-09-17",
-    "time": "19:00",
-    "dateDisplay": "17.09.2025 - 19:00",
-    "homeTeam": "Balıkesirspor",
-    "awayTeam": "YALOVA FK 77 SPOR KULÜBÜ",
-    "score": {
-      "home": 1,
-      "away": 2,
-      "display": "1-2",
-      "played": true
     },
-    "balkes": {
-      "isHome": true,
-      "opponent": "YALOVA FK 77 SPOR KULÜBÜ",
-      "goalsFor": 1,
-      "goalsAgainst": 2,
-      "result": "L"
-    },
-    "detailUrl": "seasons/2025-2026/matches/305262.json",
-    "source": {
-      "name": "TFF",
-      "url": "https://www.tff.org/Default.aspx?macId=305262&pageID=528"
-    }
+    "detailUrl": "seasons/2025-2026/matches/285620.json"
   },
   {
     "id": "285632",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 3,
+    "venue": "ALSANCAK MUSTAFA DENİZLİ STADI - İZMİR - KONAK",
     "stage": "3. Hafta",
     "date": "2025-09-21",
     "time": "19:00",
@@ -112,23 +80,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "KARŞIYAKA",
       "goalsFor": 1,
       "goalsAgainst": 2,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/285632.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285632"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285632.json"
   },
   {
     "id": "285636",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 4,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "4. Hafta",
     "date": "2025-09-28",
     "time": "19:00",
@@ -143,23 +111,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "KÜTAHYASPOR FUTBOL SPOR KULÜBÜ",
       "goalsFor": 2,
       "goalsAgainst": 2,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285636.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285636"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285636.json"
   },
   {
     "id": "285649",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 5,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "5. Hafta",
     "date": "2025-10-05",
     "time": "19:00",
@@ -174,23 +142,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "AFYONSPOR KULÜBÜ",
       "goalsFor": 4,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285649.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285649"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285649.json"
   },
   {
     "id": "285653",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 6,
+    "venue": "ALANYA MİLLİ EGEMENLİK STADI - ANTALYA - ALANYA",
     "stage": "6. Hafta",
     "date": "2025-10-12",
     "time": "15:30",
@@ -205,23 +173,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
       "goalsFor": 2,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285653.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285653"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285653.json"
   },
   {
     "id": "285664",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 7,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "7. Hafta",
     "date": "2025-10-19",
     "time": "19:00",
@@ -236,23 +204,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş.",
       "goalsFor": 2,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285664.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285664"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285664.json"
   },
   {
     "id": "285671",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 8,
+    "venue": "BORNOVA AZİZ KOCAOĞLU STADYUMU - İZMİR - BORNOVA",
     "stage": "8. Hafta",
     "date": "2025-10-26",
     "time": "19:00",
@@ -267,23 +235,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş.",
       "goalsFor": 2,
       "goalsAgainst": 2,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285671.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285671"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285671.json"
   },
   {
     "id": "285679",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 9,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "9. Hafta",
     "date": "2025-11-01",
     "time": "15:00",
@@ -298,23 +266,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "NAZİLLİ SPOR A.Ş.",
       "goalsFor": 3,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285679.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285679"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285679.json"
   },
   {
     "id": "285682",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 10,
+    "venue": "ALSANCAK MUSTAFA DENİZLİ STADI - İZMİR - KONAK",
     "stage": "10. Hafta",
     "date": "2025-11-09",
     "time": "17:00",
@@ -329,23 +297,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "ALTAY",
       "goalsFor": 1,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285682.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285682"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285682.json"
   },
   {
     "id": "285694",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 11,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "11. Hafta",
     "date": "2025-11-30",
     "time": "17:00",
@@ -360,23 +328,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "OKTAŞ UŞAK SPOR A.Ş.",
       "goalsFor": 3,
       "goalsAgainst": 1,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285694.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285694"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285694.json"
   },
   {
     "id": "285700",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 12,
+    "venue": "AYVALIK HÜSNÜ UĞURAL - BALIKESİR - AYVALIK",
     "stage": "12. Hafta",
     "date": "2025-12-07",
     "time": "15:00",
@@ -391,23 +359,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "AYVALIKGÜCÜ BELEDİYESPOR",
       "goalsFor": 0,
       "goalsAgainst": 1,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/285700.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285700"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285700.json"
   },
   {
     "id": "285709",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 13,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "13. Hafta",
     "date": "2025-12-13",
     "time": "17:00",
@@ -422,23 +390,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "DENİZLİ İDMANYURDU GÜRELLER SPOR KULÜBÜ",
       "goalsFor": 3,
       "goalsAgainst": 1,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285709.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285709"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285709.json"
   },
   {
     "id": "285718",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 14,
+    "venue": "PROF. DR. FETHİ HEPER STADYUMU - ESKİŞEHİR - ESKİŞ",
     "stage": "14. Hafta",
     "date": "2025-12-17",
     "time": "17:00",
@@ -453,23 +421,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "ESKİŞEHİRSPOR KULÜBÜ",
       "goalsFor": 3,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285718.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285718"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285718.json"
   },
   {
     "id": "285724",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 15,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "15. Hafta",
     "date": "2025-12-21",
     "time": "17:00",
@@ -484,23 +452,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
       "goalsFor": 1,
       "goalsAgainst": 1,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285724.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285724"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285724.json"
   },
   {
     "id": "285735",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 16,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "16. Hafta",
     "date": "2026-01-11",
     "time": "15:00",
@@ -515,23 +483,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "SÖKE 1970 SPOR KULÜBÜ",
       "goalsFor": 2,
       "goalsAgainst": 1,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285735.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285735"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285735.json"
   },
   {
     "id": "285740",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 17,
+    "venue": "TİRE - GAZİ MUSTAFA KEMAL ATATÜRK STADI - İZMİR -",
     "stage": "17. Hafta",
     "date": "2026-01-18",
     "time": "17:00",
@@ -546,23 +514,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "TİRE 2021 FUTBOL KULÜBÜ",
       "goalsFor": 1,
       "goalsAgainst": 1,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285740.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285740"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285740.json"
   },
   {
     "id": "285752",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 18,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "18. Hafta",
     "date": "2026-01-25",
     "time": "17:00",
@@ -577,23 +545,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "KARŞIYAKA",
       "goalsFor": 2,
       "goalsAgainst": 1,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285752.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285752"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285752.json"
   },
   {
     "id": "285756",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 19,
+    "venue": "DUMLUPINAR STADI - KÜTAHYA - KÜTAHYA MERKEZ",
     "stage": "19. Hafta",
     "date": "2026-02-01",
     "time": "15:00",
@@ -608,23 +576,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "KÜTAHYASPOR FUTBOL SPOR KULÜBÜ",
       "goalsFor": 1,
       "goalsAgainst": 2,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/285756.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285756"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285756.json"
   },
   {
     "id": "285769",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 20,
+    "venue": "ZAFER STADI (KOCATEPE) - AFYONKARAHİSAR - AFYONMER",
     "stage": "20. Hafta",
     "date": "2026-02-08",
     "time": "15:00",
@@ -639,23 +607,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "AFYONSPOR KULÜBÜ",
       "goalsFor": 3,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285769.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285769"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285769.json"
   },
   {
     "id": "285773",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 21,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "21. Hafta",
     "date": "2026-02-14",
     "time": "15:00",
@@ -670,23 +638,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "ALANYA 1221 FUTBOL SPOR KULÜBÜ",
       "goalsFor": 0,
       "goalsAgainst": 1,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/285773.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285773"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285773.json"
   },
   {
     "id": "285784",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 22,
+    "venue": "OSMANGAZİ ÜNİVERSİTESİ FUTBOL SAHASI - ESKİŞEHİR -",
     "stage": "22. Hafta",
     "date": "2026-02-22",
     "time": "15:00",
@@ -701,23 +669,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "ESKİŞEHİR ANADOLU SPOR FAALİYETLERİ A.Ş.",
       "goalsFor": 1,
       "goalsAgainst": 1,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285784.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285784"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285784.json"
   },
   {
     "id": "285791",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 23,
+    "venue": "SPOR TOTO AKHİSAR STADYUMU - MANİSA - AKHİSAR",
     "stage": "23. Hafta",
     "date": "2026-02-28",
     "time": "16:00",
@@ -732,23 +700,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "İZMİR ÇORUHLU FUTBOL KULÜBÜ A.Ş.",
       "goalsFor": 1,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285791.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285791"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285791.json"
   },
   {
     "id": "285799",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 24,
+    "venue": "PAMUKÖREN SAHASI - AYDIN - KUYUCAK",
     "stage": "24. Hafta",
     "date": "2026-03-08",
     "time": "15:30",
@@ -763,23 +731,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "NAZİLLİ SPOR A.Ş.",
       "goalsFor": 7,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285799.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285799"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285799.json"
   },
   {
     "id": "285802",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 25,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "25. Hafta",
     "date": "2026-03-15",
     "time": "15:30",
@@ -794,23 +762,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "ALTAY",
       "goalsFor": 3,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285802.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285802"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285802.json"
   },
   {
     "id": "285814",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 26,
+    "venue": "UŞAK 1 EYLÜL - UŞAK - UŞAK MERKEZ",
     "stage": "26. Hafta",
     "date": "2026-03-25",
     "time": "14:00",
@@ -825,23 +793,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "OKTAŞ UŞAK SPOR A.Ş.",
       "goalsFor": 2,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285814.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285814"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285814.json"
   },
   {
     "id": "285820",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 27,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "27. Hafta",
     "date": "2026-03-29",
     "time": "18:00",
@@ -856,23 +824,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "AYVALIKGÜCÜ BELEDİYESPOR",
       "goalsFor": 1,
       "goalsAgainst": 2,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/285820.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285820"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285820.json"
   },
   {
     "id": "285829",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 28,
+    "venue": "DENİZLİ ATATÜRK STADI - DENİZLİ - DENİZLİ MERKEZ",
     "stage": "28. Hafta",
     "date": "2026-04-05",
     "time": "16:00",
@@ -887,23 +855,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "DENİZLİ İDMANYURDU 1959 SPOR KULÜBÜ",
       "goalsFor": 1,
       "goalsAgainst": 0,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285829.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285829"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285829.json"
   },
   {
     "id": "285838",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 29,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "29. Hafta",
     "date": "2026-04-12",
     "time": "16:00",
@@ -918,23 +886,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "ESKİŞEHİRSPOR KULÜBÜ",
       "goalsFor": 1,
       "goalsAgainst": 1,
       "result": "D"
     },
-    "detailUrl": "seasons/2025-2026/matches/285838.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285838"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285838.json"
   },
   {
     "id": "285844",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig (Profesyonel Takım)",
-    "roundType": "league",
-    "week": 30,
+    "venue": "BORNOVA AZİZ KOCAOĞLU STADYUMU - İZMİR - BORNOVA",
     "stage": "30. Hafta",
     "date": "2026-04-18",
     "time": "16:00",
@@ -949,23 +917,23 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "BORNOVA 1877 SPORTİF YATIRIMLAR A.Ş.",
       "goalsFor": 4,
       "goalsAgainst": 1,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/285844.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=285844"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/285844.json"
   },
   {
     "id": "316898",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig Play Off Müsabakaları (Profesyonel Takım) (1.Tur)",
-    "roundType": "playoff",
-    "week": 32,
+    "venue": "BALIKESİR ATATÜRK - BALIKESİR - BALIKESİR MERKEZ",
     "stage": "1.Tur Maçları",
     "date": "2026-04-24",
     "time": "20:00",
@@ -980,23 +948,23 @@
     },
     "balkes": {
       "isHome": true,
+      "isAway": false,
       "opponent": "ESKİŞEHİRSPOR KULÜBÜ",
       "goalsFor": 2,
       "goalsAgainst": 1,
       "result": "W"
     },
-    "detailUrl": "seasons/2025-2026/matches/316898.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=316898"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/316898.json"
   },
   {
     "id": "316899",
     "season": "2025-2026",
     "competition": "Nesine 3. Lig Play Off Müsabakaları (Profesyonel Takım) (1.Tur)",
-    "roundType": "playoff",
-    "week": 33,
+    "venue": "PROF. DR. FETHİ HEPER STADYUMU - ESKİŞEHİR - ESKİŞ",
     "stage": "1.Tur Maçları",
     "date": "2026-04-28",
     "time": "20:00",
@@ -1011,15 +979,16 @@
     },
     "balkes": {
       "isHome": false,
+      "isAway": true,
       "opponent": "ESKİŞEHİRSPOR KULÜBÜ",
       "goalsFor": 0,
       "goalsAgainst": 3,
       "result": "L"
     },
-    "detailUrl": "seasons/2025-2026/matches/316899.json",
     "source": {
       "name": "TFF",
       "url": "https://www.tff.org/Default.aspx?pageID=29&macId=316899"
-    }
+    },
+    "detailUrl": "seasons/2025-2026/matches/316899.json"
   }
 ]
