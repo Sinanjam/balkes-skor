@@ -1,0 +1,109 @@
+name: TFF Factory v3.7 Exact Season Repair
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/tff-repair-v37-trigger.json"
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: tff-factory-v37-exact-repair
+  cancel-in-progress: false
+
+jobs:
+  exact-repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install beautifulsoup4 lxml
+      - name: Prepare git
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin main
+          git checkout main
+          git pull --rebase --autostash origin main
+      - name: Read exact repair trigger
+        id: plan
+        shell: bash
+        run: |
+          python scripts/repair_plan_v37.py --trigger .github/tff-repair-v37-trigger.json >> "$GITHUB_OUTPUT"
+      - name: Show plan
+        shell: bash
+        run: |
+          echo "Exact repair seasons: ${{ steps.plan.outputs.seasons_csv }}"
+          echo "Count: ${{ steps.plan.outputs.season_count }}"
+          echo "Group name: ${{ steps.plan.outputs.group_name }}"
+      - name: Run exact season repair
+        id: repair
+        shell: bash
+        env:
+          PYTHONUNBUFFERED: "1"
+        run: |
+          set +e
+          python scripts/tff_exact_repair_v37.py \
+            --trigger .github/tff-repair-v37-trigger.json \
+            --data-root data \
+            --raw-root sources/tff/raw \
+            --standings-raw-root sources/tff/standings_raw \
+            --reports-root reports/tff_repair_v37
+          code=$?
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+      - name: Commit and push repair outputs
+        if: ${{ steps.plan.outputs.auto_push_main == 'true' }}
+        shell: bash
+        run: |
+          set -e
+          TOTAL_MATCHES=$(python scripts/live_data_counts_v37.py --field matches)
+          AVAILABLE_SEASONS=$(python scripts/live_data_counts_v37.py --field seasons)
+          REQUESTED_PUBLISHED=$(python -c 'import json; from pathlib import Path; p=Path("reports/tff_repair_v37/summary.json"); o=json.loads(p.read_text(encoding="utf-8")); print(len(o.get("requestedPublished") or [])) if p.exists() else print(0)')
+          echo "Repair safety gate: availableSeasons=$AVAILABLE_SEASONS totalMatches=$TOTAL_MATCHES requestedPublished=$REQUESTED_PUBLISHED"
+          if [ "$AVAILABLE_SEASONS" = "0" ] || [ "$TOTAL_MATCHES" = "0" ] || [ "$REQUESTED_PUBLISHED" = "0" ]; then
+            echo "::error::Repair output is not safe to push."
+            exit 1
+          fi
+          git add -A data reports/tff_repair_v37 reports/tff_factory reports/standings sources/tff/registry sources/tff/state .gitignore
+          git reset -- sources/tff/raw || true
+          git reset -- sources/tff/standings_raw || true
+          git reset -- reports/tff_factory/backups || true
+          if git diff --cached --quiet; then
+            echo "No repair changes to commit"
+            exit 0
+          fi
+          git commit -m "Repair exact seasons v3.7: ${{ steps.plan.outputs.group_name }}"
+          git checkout -- sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
+          git clean -fd sources/tff/raw sources/tff/standings_raw reports/tff_factory/backups 2>/dev/null || true
+          git pull --rebase --autostash origin main
+          git push origin HEAD:main
+      - name: Upload repair artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: tff-repair-v37-${{ steps.plan.outputs.group_name }}-${{ github.run_id }}
+          path: |
+            data/**/*.json
+            reports/tff_repair_v37/**/*.json
+            reports/tff_factory/**/*.json
+            reports/standings/**/*.json
+            sources/tff/raw/**/*.html
+            sources/tff/raw/**/*.txt
+            sources/tff/standings_raw/**/*.html
+            sources/tff/standings_raw/**/*.txt
+          if-no-files-found: ignore

@@ -1,0 +1,16 @@
+{
+  "seasons": [
+    "2024-2025",
+    "2023-2024"
+  ],
+  "auto_push_main": true,
+  "skip_standings": false,
+  "standings_mode": "auto",
+  "standings_detail_mode": "missing",
+  "standings_workers": 6,
+  "standings_week_param_mode": "smart",
+  "legacy_broad_probe_limit": 350,
+  "strict_legacy_targets": true,
+  "allow_partial": true,
+  "chain_label": "repair-v37-exact-seasons"
+}
