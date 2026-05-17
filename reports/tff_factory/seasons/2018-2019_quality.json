@@ -1,7 +1,7 @@
 {
   "season": "2018-2019",
   "selectedIds": 378,
-  "allDiscoveredIds": 5729,
+  "allDiscoveredIds": 6637,
   "detailCandidates": 378,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
@@ -16,30 +16,11 @@
       "groups": []
     },
     {
-      "kind": "page_week_fast_skip",
-      "pageID": 1463,
-      "error": "http_504",
-      "week": 17,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 1469,
       "baseSelectedDelta": 97,
       "baseAllDelta": 312,
       "groups": []
-    },
-    {
-      "kind": "page_week_fast_skip",
-      "pageID": 1469,
-      "error": "timeout",
-      "week": 24,
-      "cumulative": 1
-    },
-    {
-      "kind": "page_fast_skip",
-      "pageID": 1471,
-      "error": "http_504"
     },
     {
       "kind": "page_hint",
@@ -172,14 +153,6 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1478,
-      "error": "timeout",
-      "grupID": "1628",
-      "week": 22,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1478,
       "grupID": "1629",
@@ -245,13 +218,6 @@
       "groups": []
     },
     {
-      "kind": "page_week_fast_skip",
-      "pageID": 1502,
-      "error": "timeout",
-      "week": 37,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 1503,
       "baseSelectedDelta": 0,
@@ -296,12 +262,12 @@
   "rejectedReasons": {
     "date_out_of_season:2017-09-19": 1,
     "balkes_not_found": 122,
-    "not_senior_professional_competition:U21 Ligi (PAF Takımı)": 34,
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U17 Ligi (Elit Akademi U17 Takımı)": 32,
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U19 Ligi (Elit Akademi U19 Takımı)": 32,
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U14 Ligi (Elit Akademi U14 Takımı)": 24,
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U15 Ligi (Elit Akademi U15 Takımı)": 24,
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U16 Ligi (Elit Akademi U16 Takımı)": 24,
+    "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": 34,
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U17 Ligi (Elit Akademi U17 Takımı) | Lig | Lig | Lig | TFF": 32,
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": 32,
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U14 Ligi (Elit Akademi U14 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U15 Ligi (Elit Akademi U15 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U16 Ligi (Elit Akademi U16 Takımı) | Lig | Lig | Lig | TFF": 24,
     "date_out_of_season:2019-08-17": 1,
     "date_out_of_season:2019-08-24": 1,
     "date_out_of_season:2019-08-31": 1,
@@ -373,7 +339,7 @@
       "194915",
       "194920"
     ],
-    "not_senior_professional_competition:U21 Ligi (PAF Takımı)": [
+    "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": [
       "195434",
       "195448",
       "195455",
@@ -395,7 +361,7 @@
       "195601",
       "195608"
     ],
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U17 Ligi (Elit Akademi U17 Takımı)": [
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U17 Ligi (Elit Akademi U17 Takımı) | Lig | Lig | Lig | TFF": [
       "199275",
       "199289",
       "199296",
@@ -417,7 +383,7 @@
       "199449",
       "199456"
     ],
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U19 Ligi (Elit Akademi U19 Takımı)": [
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": [
       "199887",
       "199901",
       "199908",
@@ -439,7 +405,7 @@
       "200061",
       "200068"
     ],
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U14 Ligi (Elit Akademi U14 Takımı)": [
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U14 Ligi (Elit Akademi U14 Takımı) | Lig | Lig | Lig | TFF": [
       "200219",
       "200222",
       "200226",
@@ -461,7 +427,7 @@
       "200298",
       "200300"
     ],
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U15 Ligi (Elit Akademi U15 Takımı)": [
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U15 Ligi (Elit Akademi U15 Takımı) | Lig | Lig | Lig | TFF": [
       "200327",
       "200330",
       "200334",
@@ -483,7 +449,7 @@
       "200406",
       "200408"
     ],
-    "not_senior_professional_competition:Spor-Toto Gelişim Elit U16 Ligi (Elit Akademi U16 Takımı)": [
+    "not_target_senior_professional:Spor-Toto Gelişim Elit U16 Ligi (Elit Akademi U16 Takımı) | Lig | Lig | Lig | TFF": [
       "200435",
       "200438",
       "200442",
@@ -649,5 +615,5 @@
     "start": "2018-07-01",
     "end": "2019-06-30"
   },
-  "generatedAt": "2026-05-15T18:39:43.765223Z"
+  "generatedAt": "2026-05-17T00:13:01.340795Z"
 }

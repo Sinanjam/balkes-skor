@@ -1,0 +1,61 @@
+{
+  "id": "2021-2022",
+  "name": "2021-2022",
+  "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.5-summary-standings-reconcile",
+  "updatedAt": "2026-05-17T00:20:18.154994Z",
+  "summary": {
+    "matches": 36,
+    "played": 36,
+    "wins": 3,
+    "draws": 3,
+    "losses": 30,
+    "goalsFor": 26,
+    "goalsAgainst": 77,
+    "goalDifference": -51,
+    "matchTypes": {
+      "league": 36
+    },
+    "leagueMatchStats": {
+      "matches": 36,
+      "played": 36,
+      "wins": 3,
+      "draws": 3,
+      "losses": 30,
+      "goalsFor": 26,
+      "goalsAgainst": 77,
+      "goalDifference": -51,
+      "pointsFromResults": 12,
+      "matchTypes": {
+        "league": 36
+      }
+    },
+    "leagueTable": {
+      "rank": 19,
+      "team": "Balıkesirspor",
+      "played": 36,
+      "won": 3,
+      "drawn": 3,
+      "lost": 30,
+      "goalsFor": 26,
+      "goalsAgainst": 77,
+      "goalDifference": -51,
+      "points": 12,
+      "rawPoints": 12,
+      "pointsDeducted": 0,
+      "penaltyNote": "",
+      "source": "official_tff_weekly_table"
+    },
+    "points": 12,
+    "rawPoints": 12,
+    "pointsDeducted": 0,
+    "finalRank": 19
+  },
+  "files": {
+    "matchesIndex": "seasons/2021-2022/matches_index.json",
+    "standingsByWeek": "seasons/2021-2022/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-17T00:15:53.418758Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}
