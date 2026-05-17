@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-17T12:05:49.342992Z",
+  "generatedAt": "2026-05-17T12:54:12.518962Z",
   "reports": [
     {
       "season": "2025-2026",
@@ -103,7 +103,39 @@
       "changed": false
     },
     {
-      "season": "2006-2007",
+      "season": "1996-1997",
+      "before": 2,
+      "after": 2,
+      "leagueAfter": 1,
+      "rejected": {},
+      "suppressed": true,
+      "suppressionReasons": [
+        "too_few_matches:2",
+        "too_few_league_matches:1"
+      ],
+      "competitionsAfter": {
+        "Fortis Türkiye Kupası (Profesyonel Takım) (2. Kademe)": 1,
+        "Lig B Klasman (Profesyonel Takım)": 1
+      },
+      "changed": false
+    },
+    {
+      "season": "1995-1996",
+      "before": 0,
+      "after": 0,
+      "leagueAfter": 0,
+      "rejected": {},
+      "suppressed": true,
+      "suppressionReasons": [
+        "empty_after_clean",
+        "too_few_matches:0",
+        "too_few_league_matches:0"
+      ],
+      "competitionsAfter": {},
+      "changed": false
+    },
+    {
+      "season": "1994-1995",
       "before": 0,
       "after": 0,
       "leagueAfter": 0,

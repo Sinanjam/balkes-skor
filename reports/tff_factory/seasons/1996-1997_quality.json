@@ -1,8 +1,8 @@
 {
   "season": "1996-1997",
-  "selectedIds": 149,
+  "selectedIds": 165,
   "allDiscoveredIds": 5950,
-  "detailCandidates": 150,
+  "detailCandidates": 166,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
@@ -72,20 +72,6 @@
       "groups": []
     },
     {
-      "kind": "page_week_fast_skip",
-      "pageID": 523,
-      "error": "timeout",
-      "week": 25,
-      "cumulative": 1
-    },
-    {
-      "kind": "page_week_fast_skip",
-      "pageID": 523,
-      "error": "timeout",
-      "week": 30,
-      "cumulative": 2
-    },
-    {
       "kind": "page_hint",
       "pageID": 524,
       "baseSelectedDelta": 0,
@@ -120,14 +106,6 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 573,
-      "error": "timeout",
-      "grupID": "605",
-      "week": 1,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 573,
       "grupID": "606",
@@ -140,14 +118,6 @@
       "grupID": "607",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 573,
-      "error": "timeout",
-      "grupID": "607",
-      "week": 12,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -271,13 +241,6 @@
       "groups": []
     },
     {
-      "kind": "page_week_fast_skip",
-      "pageID": 613,
-      "error": "timeout",
-      "week": 19,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 619,
       "baseSelectedDelta": 1,
@@ -366,7 +329,7 @@
       "groupAllDelta": 6
     }
   ],
-  "matchesPublished": 0,
+  "matchesPublished": 2,
   "detailFiles": 2,
   "duplicatesDropped": 0,
   "rejectedReasons": {
@@ -430,15 +393,15 @@
     "date_out_of_season:2009-03-28": 1,
     "date_out_of_season:2009-04-04": 1,
     "date_out_of_season:2009-05-20": 1,
+    "balkes_not_found": 48,
     "date_out_of_season:2009-08-30": 1,
-    "balkes_not_found": 32,
     "date_out_of_season:2009-09-06": 1,
     "date_out_of_season:2009-09-13": 1,
     "date_out_of_season:2009-09-16": 1,
     "date_out_of_season:2009-09-19": 1,
     "date_out_of_season:2009-10-04": 1,
     "date_out_of_season:2009-10-07": 1,
-    "date_out_of_season:2009-11-10": 1,
+    "date_out_of_season:2009-10-11": 1,
     "date_out_of_season:2009-10-18": 1,
     "date_out_of_season:2009-10-25": 1,
     "date_out_of_season:2009-11-01": 1,
@@ -669,30 +632,30 @@
     "date_out_of_season:2009-05-20": [
       "79450"
     ],
-    "date_out_of_season:2009-08-30": [
-      "81168"
-    ],
     "balkes_not_found": [
+      "81167",
       "81169",
       "81171",
       "81172",
+      "81174",
       "81176",
+      "81178",
       "81180",
+      "81181",
+      "81183",
       "81184",
+      "81187",
       "81189",
       "81190",
       "81197",
       "81202",
+      "81203",
       "81205",
-      "81208",
-      "81211",
-      "81213",
-      "81219",
-      "81222",
-      "81224",
-      "81227",
-      "81231",
-      "81239"
+      "81206",
+      "81208"
+    ],
+    "date_out_of_season:2009-08-30": [
+      "81168"
     ],
     "date_out_of_season:2009-09-06": [
       "81175"
@@ -712,7 +675,7 @@
     "date_out_of_season:2009-10-07": [
       "81204"
     ],
-    "date_out_of_season:2009-11-10": [
+    "date_out_of_season:2009-10-11": [
       "81207"
     ],
     "date_out_of_season:2009-10-18": [
@@ -871,17 +834,5 @@
     "start": "1996-07-01",
     "end": "1997-06-30"
   },
-  "generatedAt": "2026-05-16T05:50:55.754099Z",
-  "seniorProfessionalGuard": {
-    "total": 2,
-    "league": 1,
-    "played": 2,
-    "badCompetitions": [],
-    "reasons": [
-      "too_few_matches:2",
-      "too_few_league_matches:1"
-    ]
-  },
-  "publicationSuppressed": true,
-  "suppressedReason": "too_few_matches:2;too_few_league_matches:1"
+  "generatedAt": "2026-05-17T12:44:25.813550Z"
 }

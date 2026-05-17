@@ -9,28 +9,11 @@
   "legacyPageIdProbe": true,
   "legacyProbeDiagnostics": [
     {
-      "kind": "page_fast_skip",
-      "pageID": 315,
-      "error": "timeout"
-    },
-    {
-      "kind": "page_fast_skip",
-      "pageID": 318,
-      "error": "timeout"
-    },
-    {
       "kind": "page_hint",
       "pageID": 324,
       "baseSelectedDelta": 0,
       "baseAllDelta": 0,
       "groups": []
-    },
-    {
-      "kind": "page_week_fast_skip",
-      "pageID": 324,
-      "error": "timeout",
-      "week": 3,
-      "cumulative": 1
     },
     {
       "kind": "page_hint",
@@ -38,6 +21,11 @@
       "baseSelectedDelta": 0,
       "baseAllDelta": 0,
       "groups": []
+    },
+    {
+      "kind": "page_fast_skip",
+      "pageID": 344,
+      "error": "timeout"
     },
     {
       "kind": "page_hint",
@@ -90,7 +78,7 @@
     }
   ],
   "matchesPublished": 0,
-  "detailFiles": 1,
+  "detailFiles": 0,
   "duplicatesDropped": 0,
   "rejectedReasons": {
     "date_out_of_season:2018-08-12": 1,
@@ -244,18 +232,5 @@
     "start": "1994-07-01",
     "end": "1995-06-30"
   },
-  "generatedAt": "2026-05-16T06:08:45.930500Z",
-  "seniorProfessionalGuard": {
-    "total": 0,
-    "league": 0,
-    "played": 0,
-    "badCompetitions": [],
-    "reasons": [
-      "empty_season",
-      "too_few_matches:0",
-      "too_few_league_matches:0"
-    ]
-  },
-  "publicationSuppressed": true,
-  "suppressedReason": "empty_season;too_few_matches:0;too_few_league_matches:0"
+  "generatedAt": "2026-05-17T12:54:11.908282Z"
 }
