@@ -1,0 +1,2233 @@
+{
+  "season": "2007-2008",
+  "selectedIds": 500,
+  "allDiscoveredIds": 14231,
+  "detailCandidates": 500,
+  "candidateMode": "legacy_pageid_probe_selected_or_known",
+  "knownOnly": false,
+  "plannedTarget": false,
+  "legacyPageIdProbe": true,
+  "legacyProbeDiagnostics": [
+    {
+      "kind": "page_hint",
+      "pageID": 774,
+      "baseSelectedDelta": 94,
+      "baseAllDelta": 998,
+      "groups": [
+        "412",
+        "413",
+        "414",
+        "415"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 774,
+      "grupID": "412",
+      "groupSelectedDelta": 41,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 774,
+      "grupID": "413",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 774,
+      "grupID": "414",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 774,
+      "grupID": "415",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 781,
+      "grupID": "119",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 783,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 8,
+      "groups": [
+        "163",
+        "164",
+        "165",
+        "166",
+        "167",
+        "168",
+        "169",
+        "170"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "163",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "164",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "165",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "166",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "167",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "168",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 7
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "169",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 783,
+      "grupID": "170",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 784,
+      "grupID": "187",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 785,
+      "grupID": "202",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 8
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 791,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 10,
+      "groups": [
+        "372",
+        "373",
+        "374",
+        "375",
+        "376",
+        "377",
+        "378",
+        "379",
+        "380"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "372",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "373",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "374",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "375",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "376",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "377",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "378",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "379",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 791,
+      "grupID": "380",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 792,
+      "grupID": "398",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 9
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 805,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 6,
+      "groups": [
+        "209",
+        "210",
+        "211",
+        "212",
+        "213",
+        "214",
+        "215",
+        "216",
+        "217",
+        "218",
+        "219"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "209",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "210",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "211",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "212",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "213",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "214",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "215",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "216",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "217",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "218",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 805,
+      "grupID": "219",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 806,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 6,
+      "groups": [
+        "228",
+        "229",
+        "230",
+        "231",
+        "232",
+        "233",
+        "234",
+        "235",
+        "236",
+        "237",
+        "238"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "228",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "229",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "230",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "231",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "232",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "233",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "234",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "235",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "236",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "237",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 806,
+      "grupID": "238",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 807,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 6,
+      "groups": [
+        "251",
+        "252",
+        "253",
+        "254",
+        "255",
+        "256",
+        "257",
+        "258",
+        "259",
+        "260",
+        "261"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "251",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "252",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "253",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "254",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "255",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "256",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "257",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "258",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "259",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "260",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 1
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 807,
+      "grupID": "261",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 808,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 7,
+      "groups": [
+        "275",
+        "276",
+        "277",
+        "278",
+        "279",
+        "280",
+        "281",
+        "282",
+        "283",
+        "284",
+        "285"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "275",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "276",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "277",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "278",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "279",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "280",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "281",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "282",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "283",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 1
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "284",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 1
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 808,
+      "grupID": "285",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 809,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 10,
+      "groups": [
+        "335",
+        "336",
+        "337",
+        "338",
+        "339",
+        "340",
+        "341",
+        "342",
+        "343",
+        "344",
+        "345"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "335",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "336",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "337",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "338",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "339",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "340",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "341",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "342",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "343",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "344",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 809,
+      "grupID": "345",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 824,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 825,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_fast_skip",
+      "pageID": 861,
+      "error": "http_502"
+    }
+  ],
+  "matchesPublished": 33,
+  "detailFiles": 33,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "date_out_of_season:2000-09-03": 1,
+    "date_out_of_season:2000-09-10": 1,
+    "date_out_of_season:2000-09-17": 1,
+    "date_out_of_season:2000-09-24": 1,
+    "date_out_of_season:2000-09-30": 1,
+    "date_out_of_season:2000-10-08": 1,
+    "date_out_of_season:2000-10-15": 1,
+    "date_out_of_season:2000-10-21": 1,
+    "date_out_of_season:2000-10-29": 1,
+    "date_out_of_season:2000-11-05": 1,
+    "date_out_of_season:2000-11-12": 1,
+    "date_out_of_season:2000-11-19": 1,
+    "date_out_of_season:2000-11-26": 1,
+    "date_out_of_season:2000-12-03": 1,
+    "date_out_of_season:2000-12-10": 1,
+    "date_out_of_season:2000-12-24": 1,
+    "date_out_of_season:2001-02-04": 1,
+    "date_out_of_season:2001-02-11": 1,
+    "date_out_of_season:2001-02-18": 1,
+    "date_out_of_season:2001-02-25": 1,
+    "date_out_of_season:2001-03-04": 1,
+    "date_out_of_season:2001-03-11": 1,
+    "date_out_of_season:2001-03-18": 1,
+    "date_out_of_season:2001-03-25": 1,
+    "date_out_of_season:2001-04-01": 1,
+    "date_out_of_season:2001-04-08": 1,
+    "date_out_of_season:2001-04-15": 1,
+    "date_out_of_season:2001-04-22": 1,
+    "date_out_of_season:2001-04-29": 1,
+    "date_out_of_season:2001-05-06": 1,
+    "date_out_of_season:2001-05-13": 1,
+    "date_out_of_season:2001-05-27": 1,
+    "date_out_of_season:1999-09-19": 1,
+    "date_out_of_season:1999-09-26": 1,
+    "date_out_of_season:1999-10-03": 1,
+    "date_out_of_season:1999-10-10": 1,
+    "date_out_of_season:1999-10-17": 1,
+    "date_out_of_season:1999-10-24": 1,
+    "date_out_of_season:1999-10-31": 1,
+    "date_out_of_season:1999-11-07": 1,
+    "date_out_of_season:1999-11-14": 1,
+    "date_out_of_season:1999-11-21": 1,
+    "date_out_of_season:1999-11-28": 1,
+    "date_out_of_season:1999-12-05": 1,
+    "date_out_of_season:1999-12-12": 1,
+    "date_out_of_season:1999-12-19": 1,
+    "date_out_of_season:1999-12-26": 1,
+    "date_out_of_season:2000-01-30": 1,
+    "date_out_of_season:2000-02-13": 1,
+    "date_out_of_season:2000-02-20": 1,
+    "date_out_of_season:2000-02-27": 1,
+    "date_out_of_season:2000-03-05": 1,
+    "date_out_of_season:2000-03-12": 1,
+    "date_out_of_season:2000-03-19": 1,
+    "date_out_of_season:2000-03-26": 1,
+    "date_out_of_season:2000-04-02": 1,
+    "date_out_of_season:2000-04-09": 1,
+    "date_out_of_season:2000-04-16": 1,
+    "date_out_of_season:2000-04-23": 1,
+    "date_out_of_season:2000-04-30": 1,
+    "date_out_of_season:2000-05-03": 1,
+    "date_out_of_season:2000-05-07": 1,
+    "date_out_of_season:2000-05-14": 1,
+    "date_out_of_season:2000-05-17": 1,
+    "date_out_of_season:1998-08-30": 1,
+    "date_out_of_season:1998-09-06": 1,
+    "date_out_of_season:1998-09-13": 1,
+    "date_out_of_season:1998-09-20": 1,
+    "date_out_of_season:1998-09-27": 1,
+    "date_out_of_season:1998-10-04": 1,
+    "date_out_of_season:1998-10-11": 1,
+    "date_out_of_season:1998-10-18": 1,
+    "date_out_of_season:1998-10-25": 1,
+    "date_out_of_season:1998-11-01": 1,
+    "date_out_of_season:1998-11-08": 1,
+    "date_out_of_season:1998-11-15": 1,
+    "date_out_of_season:1998-11-22": 1,
+    "date_out_of_season:1998-11-29": 1,
+    "date_out_of_season:1998-12-06": 1,
+    "date_out_of_season:1998-12-20": 1,
+    "date_out_of_season:1999-01-31": 1,
+    "date_out_of_season:1999-01-17": 1,
+    "date_out_of_season:1999-01-24": 1,
+    "date_out_of_season:1999-02-07": 1,
+    "date_out_of_season:1999-02-14": 1,
+    "date_out_of_season:1999-02-21": 1,
+    "date_out_of_season:1999-02-28": 1,
+    "date_out_of_season:1999-03-07": 1,
+    "date_out_of_season:1999-03-14": 1,
+    "date_out_of_season:1999-03-21": 1,
+    "date_out_of_season:1999-03-27": 1,
+    "date_out_of_season:1999-04-04": 1,
+    "date_out_of_season:1999-04-11": 1,
+    "date_out_of_season:1999-04-17": 1,
+    "date_out_of_season:1999-04-24": 1,
+    "date_out_of_season:1999-05-09": 1,
+    "date_out_of_season:1997-08-17": 1,
+    "date_out_of_season:1997-08-24": 1,
+    "date_out_of_season:1997-08-31": 1,
+    "date_out_of_season:1997-09-06": 1,
+    "date_out_of_season:1997-09-14": 1,
+    "date_out_of_season:1997-09-21": 1,
+    "date_out_of_season:1997-09-28": 1,
+    "date_out_of_season:1997-10-12": 1,
+    "date_out_of_season:1997-10-19": 1,
+    "date_out_of_season:1997-10-26": 1,
+    "date_out_of_season:1997-11-02": 1,
+    "date_out_of_season:1997-11-09": 1,
+    "date_out_of_season:1997-11-16": 1,
+    "date_out_of_season:1997-11-23": 1,
+    "date_out_of_season:1997-11-29": 1,
+    "date_out_of_season:1997-12-07": 1,
+    "date_out_of_season:1998-01-11": 1,
+    "date_out_of_season:1998-01-18": 1,
+    "date_out_of_season:1998-01-25": 1,
+    "date_out_of_season:1998-02-01": 1,
+    "date_out_of_season:1998-02-07": 1,
+    "date_out_of_season:1998-02-15": 1,
+    "date_out_of_season:1998-02-22": 1,
+    "date_out_of_season:1998-03-08": 1,
+    "date_out_of_season:1998-03-15": 1,
+    "date_out_of_season:1998-03-22": 1,
+    "date_out_of_season:1998-03-28": 1,
+    "date_out_of_season:1998-04-05": 1,
+    "date_out_of_season:1998-04-12": 1,
+    "date_out_of_season:1998-04-19": 1,
+    "date_out_of_season:1998-04-26": 1,
+    "date_out_of_season:1998-05-03": 1,
+    "date_out_of_season:1996-08-11": 1,
+    "date_out_of_season:1996-08-18": 1,
+    "date_out_of_season:1996-08-25": 1,
+    "date_out_of_season:1996-09-01": 1,
+    "date_out_of_season:1996-09-08": 1,
+    "date_out_of_season:1996-09-15": 1,
+    "date_out_of_season:1996-09-22": 1,
+    "date_out_of_season:1996-09-29": 1,
+    "date_out_of_season:1996-10-05": 1,
+    "date_out_of_season:1996-10-13": 1,
+    "date_out_of_season:1996-10-20": 1,
+    "date_out_of_season:1996-10-27": 1,
+    "date_out_of_season:1996-11-03": 1,
+    "date_out_of_season:1996-11-10": 1,
+    "date_out_of_season:1996-11-17": 1,
+    "date_out_of_season:1996-11-24": 1,
+    "date_out_of_season:1996-12-01": 1,
+    "date_out_of_season:1996-12-08": 1,
+    "date_out_of_season:1997-01-26": 1,
+    "date_out_of_season:1997-02-01": 1,
+    "date_out_of_season:1997-02-09": 1,
+    "date_out_of_season:1997-02-16": 1,
+    "date_out_of_season:1997-02-23": 1,
+    "date_out_of_season:1997-03-02": 1,
+    "date_out_of_season:1997-03-09": 1,
+    "date_out_of_season:1997-04-13": 1,
+    "date_out_of_season:1997-04-20": 1,
+    "date_out_of_season:1997-04-27": 1,
+    "date_out_of_season:1997-05-04": 1,
+    "date_out_of_season:1997-05-11": 1,
+    "date_out_of_season:1997-05-18": 1,
+    "date_out_of_season:1997-05-24": 1,
+    "date_out_of_season:1995-08-13": 1,
+    "date_out_of_season:1995-08-20": 1,
+    "date_out_of_season:1995-08-27": 1,
+    "date_out_of_season:1995-09-03": 1,
+    "date_out_of_season:1995-09-10": 1,
+    "date_out_of_season:1995-09-17": 1,
+    "date_out_of_season:1995-09-24": 1,
+    "date_out_of_season:1995-10-01": 1,
+    "date_out_of_season:1995-10-08": 1,
+    "date_out_of_season:1995-10-15": 1,
+    "date_out_of_season:1995-10-22": 1,
+    "date_out_of_season:1995-10-29": 1,
+    "date_out_of_season:1995-11-05": 1,
+    "date_out_of_season:1995-11-12": 1,
+    "date_out_of_season:1995-11-19": 1,
+    "date_out_of_season:1995-11-25": 1,
+    "date_out_of_season:1995-12-03": 1,
+    "date_out_of_season:1995-12-10": 1,
+    "date_out_of_season:1996-01-14": 1,
+    "date_out_of_season:1996-01-21": 1,
+    "date_out_of_season:1996-01-28": 1,
+    "date_out_of_season:1996-02-04": 1,
+    "date_out_of_season:1996-02-11": 1,
+    "date_out_of_season:1996-02-18": 1,
+    "date_out_of_season:1996-02-25": 1,
+    "date_out_of_season:1996-03-03": 1,
+    "date_out_of_season:1996-03-10": 1,
+    "date_out_of_season:1996-03-17": 1,
+    "date_out_of_season:1996-03-24": 1,
+    "date_out_of_season:1996-03-31": 1,
+    "date_out_of_season:1996-04-07": 1,
+    "date_out_of_season:1996-04-13": 1,
+    "date_out_of_season:1996-04-21": 1,
+    "date_out_of_season:1996-04-28": 1,
+    "date_out_of_season:1996-05-05": 1,
+    "date_out_of_season:1996-05-12": 1,
+    "date_out_of_season:1996-05-20": 1,
+    "date_out_of_season:1994-08-14": 1,
+    "date_out_of_season:1994-08-21": 1,
+    "date_out_of_season:1994-08-28": 1,
+    "date_out_of_season:1994-09-04": 1,
+    "date_out_of_season:1994-09-11": 1,
+    "date_out_of_season:1994-09-18": 1,
+    "date_out_of_season:1994-09-25": 1,
+    "date_out_of_season:1994-10-02": 1,
+    "date_out_of_season:1994-10-09": 1,
+    "date_out_of_season:1994-10-16": 1,
+    "date_out_of_season:1994-10-23": 1,
+    "date_out_of_season:1994-10-29": 1,
+    "date_out_of_season:1994-11-06": 1,
+    "date_out_of_season:1994-11-13": 1,
+    "date_out_of_season:1994-11-20": 1,
+    "date_out_of_season:1994-11-27": 1,
+    "date_out_of_season:1994-12-04": 1,
+    "date_out_of_season:1994-12-11": 1,
+    "date_out_of_season:1995-01-22": 1,
+    "date_out_of_season:1995-01-29": 1,
+    "date_out_of_season:1995-02-05": 1,
+    "date_out_of_season:1995-02-12": 1,
+    "date_out_of_season:1995-02-19": 1,
+    "date_out_of_season:1995-02-26": 1,
+    "date_out_of_season:1995-03-05": 1,
+    "date_out_of_season:1995-04-02": 1,
+    "date_out_of_season:1995-04-09": 1,
+    "date_out_of_season:1995-04-16": 1,
+    "date_out_of_season:1995-04-23": 1,
+    "date_out_of_season:1995-04-30": 1,
+    "date_out_of_season:1995-05-07": 1,
+    "date_out_of_season:1995-05-14": 1,
+    "date_out_of_season:1993-09-05": 1,
+    "date_out_of_season:1993-08-29": 1,
+    "date_out_of_season:1993-09-12": 1,
+    "date_out_of_season:1993-09-19": 1,
+    "date_out_of_season:1993-09-26": 1,
+    "date_out_of_season:1993-10-03": 1,
+    "date_out_of_season:1993-10-10": 1,
+    "date_out_of_season:1993-10-17": 1,
+    "date_out_of_season:1993-10-24": 1,
+    "date_out_of_season:1993-10-30": 1,
+    "date_out_of_season:1993-11-06": 1,
+    "date_out_of_season:1993-11-14": 1,
+    "date_out_of_season:1993-11-21": 1,
+    "date_out_of_season:1993-11-28": 1,
+    "date_out_of_season:1993-12-05": 1,
+    "date_out_of_season:1993-12-12": 1,
+    "date_out_of_season:1993-12-19": 1,
+    "date_out_of_season:1993-12-26": 1,
+    "date_out_of_season:1994-02-20": 1,
+    "date_out_of_season:1994-02-27": 1,
+    "date_out_of_season:1994-03-06": 1,
+    "date_out_of_season:1994-03-13": 1,
+    "date_out_of_season:1994-03-20": 1,
+    "date_out_of_season:1994-03-26": 1,
+    "date_out_of_season:1994-04-03": 1,
+    "date_out_of_season:1994-04-10": 1,
+    "date_out_of_season:1994-04-16": 1,
+    "date_out_of_season:1994-04-24": 1,
+    "date_out_of_season:1994-05-01": 1,
+    "date_out_of_season:1994-05-08": 1,
+    "date_out_of_season:1994-05-15": 1,
+    "date_out_of_season:1994-05-22": 1,
+    "date_out_of_season:1992-08-23": 1,
+    "date_out_of_season:1992-08-30": 1,
+    "date_out_of_season:1992-09-06": 1,
+    "date_out_of_season:1992-09-09": 1,
+    "date_out_of_season:1992-09-13": 1,
+    "date_out_of_season:1992-09-20": 1,
+    "date_out_of_season:1992-09-27": 1,
+    "date_out_of_season:1992-10-04": 1,
+    "date_out_of_season:1992-10-11": 1,
+    "date_out_of_season:1992-10-18": 1,
+    "date_out_of_season:1992-10-25": 1,
+    "date_out_of_season:1992-11-01": 1,
+    "date_out_of_season:1992-11-08": 1,
+    "date_out_of_season:1992-11-11": 1,
+    "date_out_of_season:1992-11-15": 1,
+    "date_out_of_season:1992-11-22": 1,
+    "date_out_of_season:1992-11-29": 1,
+    "date_out_of_season:1992-12-06": 1,
+    "date_out_of_season:1992-12-20": 1,
+    "date_out_of_season:1992-12-27": 1,
+    "date_out_of_season:1993-01-31": 1,
+    "date_out_of_season:1993-02-07": 1,
+    "date_out_of_season:1993-02-14": 1,
+    "date_out_of_season:1993-02-21": 1,
+    "date_out_of_season:1993-02-28": 1,
+    "date_out_of_season:1993-03-14": 1,
+    "date_out_of_season:1993-03-21": 1,
+    "date_out_of_season:1993-03-28": 1,
+    "date_out_of_season:1993-04-04": 1,
+    "date_out_of_season:1993-04-11": 1,
+    "date_out_of_season:1993-04-25": 1,
+    "date_out_of_season:1993-05-02": 1,
+    "date_out_of_season:1993-05-09": 1,
+    "date_out_of_season:1993-05-23": 1,
+    "date_out_of_season:1993-05-30": 1,
+    "date_out_of_season:1993-06-06": 1,
+    "date_out_of_season:1991-09-08": 1,
+    "date_out_of_season:1991-09-15": 1,
+    "date_out_of_season:1991-09-22": 1,
+    "date_out_of_season:1991-09-29": 1,
+    "date_out_of_season:1991-10-06": 1,
+    "date_out_of_season:1991-10-13": 1,
+    "date_out_of_season:1991-10-19": 1,
+    "date_out_of_season:1991-10-26": 1,
+    "date_out_of_season:1991-11-03": 1,
+    "date_out_of_season:1991-11-10": 1,
+    "date_out_of_season:1991-11-17": 1,
+    "date_out_of_season:1991-11-24": 1,
+    "date_out_of_season:1991-12-01": 1,
+    "date_out_of_season:1991-12-08": 1,
+    "date_out_of_season:1991-12-15": 1,
+    "date_out_of_season:1991-12-22": 1,
+    "date_out_of_season:1991-12-29": 1,
+    "date_out_of_season:1992-02-09": 1,
+    "date_out_of_season:1992-02-16": 1,
+    "date_out_of_season:1992-02-22": 1,
+    "date_out_of_season:1992-03-01": 1,
+    "date_out_of_season:1992-03-08": 1,
+    "date_out_of_season:1992-03-15": 1,
+    "date_out_of_season:1992-03-22": 1,
+    "date_out_of_season:1992-03-29": 1,
+    "date_out_of_season:1992-04-05": 1,
+    "date_out_of_season:1992-04-12": 1,
+    "date_out_of_season:1992-04-19": 1,
+    "date_out_of_season:1992-04-26": 1,
+    "date_out_of_season:1992-05-03": 1,
+    "date_out_of_season:1992-05-10": 1,
+    "date_out_of_season:1992-05-17": 1,
+    "date_out_of_season:1992-05-24": 1,
+    "date_out_of_season:1992-05-31": 1,
+    "date_out_of_season:1990-09-16": 1,
+    "date_out_of_season:1990-09-23": 1,
+    "date_out_of_season:1990-09-30": 1,
+    "date_out_of_season:1990-10-07": 1,
+    "date_out_of_season:1990-10-14": 1,
+    "date_out_of_season:1990-10-20": 1,
+    "date_out_of_season:1990-10-28": 1,
+    "date_out_of_season:1990-11-04": 1,
+    "date_out_of_season:1990-11-11": 1,
+    "date_out_of_season:1990-11-18": 1,
+    "date_out_of_season:1990-11-25": 1,
+    "date_out_of_season:1990-12-02": 1,
+    "date_out_of_season:1990-12-09": 1,
+    "date_out_of_season:1990-12-16": 1,
+    "date_out_of_season:1990-12-23": 1,
+    "date_out_of_season:1990-12-30": 1,
+    "date_out_of_season:1991-01-06": 1,
+    "date_out_of_season:1991-02-03": 1,
+    "date_out_of_season:1991-02-10": 1,
+    "date_out_of_season:1991-02-16": 1,
+    "date_out_of_season:1991-02-24": 1,
+    "date_out_of_season:1991-03-02": 1,
+    "date_out_of_season:1991-03-10": 1,
+    "date_out_of_season:1991-03-17": 1,
+    "date_out_of_season:1991-03-24": 1,
+    "date_out_of_season:1991-03-31": 1,
+    "date_out_of_season:1991-04-06": 1,
+    "date_out_of_season:1991-04-14": 1,
+    "date_out_of_season:1991-04-21": 1,
+    "date_out_of_season:1991-04-28": 1,
+    "date_out_of_season:1991-05-05": 1,
+    "date_out_of_season:1991-05-12": 1,
+    "date_out_of_season:1991-05-18": 1,
+    "date_out_of_season:1991-05-26": 1,
+    "balkes_not_found": 102
+  },
+  "rejectedSamples": {
+    "date_out_of_season:2000-09-03": [
+      "20852"
+    ],
+    "date_out_of_season:2000-09-10": [
+      "20957"
+    ],
+    "date_out_of_season:2000-09-17": [
+      "21073"
+    ],
+    "date_out_of_season:2000-09-24": [
+      "21192"
+    ],
+    "date_out_of_season:2000-09-30": [
+      "21298"
+    ],
+    "date_out_of_season:2000-10-08": [
+      "21429"
+    ],
+    "date_out_of_season:2000-10-15": [
+      "21548"
+    ],
+    "date_out_of_season:2000-10-21": [
+      "21649"
+    ],
+    "date_out_of_season:2000-10-29": [
+      "21782"
+    ],
+    "date_out_of_season:2000-11-05": [
+      "21901"
+    ],
+    "date_out_of_season:2000-11-12": [
+      "22019"
+    ],
+    "date_out_of_season:2000-11-19": [
+      "22131"
+    ],
+    "date_out_of_season:2000-11-26": [
+      "22244"
+    ],
+    "date_out_of_season:2000-12-03": [
+      "22377"
+    ],
+    "date_out_of_season:2000-12-10": [
+      "22483"
+    ],
+    "date_out_of_season:2000-12-24": [
+      "22646"
+    ],
+    "date_out_of_season:2001-02-04": [
+      "22754"
+    ],
+    "date_out_of_season:2001-02-11": [
+      "22828"
+    ],
+    "date_out_of_season:2001-02-18": [
+      "22943"
+    ],
+    "date_out_of_season:2001-02-25": [
+      "23050"
+    ],
+    "date_out_of_season:2001-03-04": [
+      "23157"
+    ],
+    "date_out_of_season:2001-03-11": [
+      "23278"
+    ],
+    "date_out_of_season:2001-03-18": [
+      "23397"
+    ],
+    "date_out_of_season:2001-03-25": [
+      "23490"
+    ],
+    "date_out_of_season:2001-04-01": [
+      "23598"
+    ],
+    "date_out_of_season:2001-04-08": [
+      "23711"
+    ],
+    "date_out_of_season:2001-04-15": [
+      "23825"
+    ],
+    "date_out_of_season:2001-04-22": [
+      "23945"
+    ],
+    "date_out_of_season:2001-04-29": [
+      "24056"
+    ],
+    "date_out_of_season:2001-05-06": [
+      "24175"
+    ],
+    "date_out_of_season:2001-05-13": [
+      "24283"
+    ],
+    "date_out_of_season:2001-05-27": [
+      "24484"
+    ],
+    "date_out_of_season:1999-09-19": [
+      "28617"
+    ],
+    "date_out_of_season:1999-09-26": [
+      "28726"
+    ],
+    "date_out_of_season:1999-10-03": [
+      "28824"
+    ],
+    "date_out_of_season:1999-10-10": [
+      "28920"
+    ],
+    "date_out_of_season:1999-10-17": [
+      "29029"
+    ],
+    "date_out_of_season:1999-10-24": [
+      "29118"
+    ],
+    "date_out_of_season:1999-10-31": [
+      "29274"
+    ],
+    "date_out_of_season:1999-11-07": [
+      "29376"
+    ],
+    "date_out_of_season:1999-11-14": [
+      "29489"
+    ],
+    "date_out_of_season:1999-11-21": [
+      "29588"
+    ],
+    "date_out_of_season:1999-11-28": [
+      "29708"
+    ],
+    "date_out_of_season:1999-12-05": [
+      "29813"
+    ],
+    "date_out_of_season:1999-12-12": [
+      "29912"
+    ],
+    "date_out_of_season:1999-12-19": [
+      "30057"
+    ],
+    "date_out_of_season:1999-12-26": [
+      "30164"
+    ],
+    "date_out_of_season:2000-01-30": [
+      "30335"
+    ],
+    "date_out_of_season:2000-02-13": [
+      "30530"
+    ],
+    "date_out_of_season:2000-02-20": [
+      "30651"
+    ],
+    "date_out_of_season:2000-02-27": [
+      "30757"
+    ],
+    "date_out_of_season:2000-03-05": [
+      "30873"
+    ],
+    "date_out_of_season:2000-03-12": [
+      "31001"
+    ],
+    "date_out_of_season:2000-03-19": [
+      "31113"
+    ],
+    "date_out_of_season:2000-03-26": [
+      "31224"
+    ],
+    "date_out_of_season:2000-04-02": [
+      "31341"
+    ],
+    "date_out_of_season:2000-04-09": [
+      "31454"
+    ],
+    "date_out_of_season:2000-04-16": [
+      "31566"
+    ],
+    "date_out_of_season:2000-04-23": [
+      "31692"
+    ],
+    "date_out_of_season:2000-04-30": [
+      "31796"
+    ],
+    "date_out_of_season:2000-05-03": [
+      "31883"
+    ],
+    "date_out_of_season:2000-05-07": [
+      "31983"
+    ],
+    "date_out_of_season:2000-05-14": [
+      "32101"
+    ],
+    "date_out_of_season:2000-05-17": [
+      "32176"
+    ],
+    "date_out_of_season:1998-08-30": [
+      "32544"
+    ],
+    "date_out_of_season:1998-09-06": [
+      "32644"
+    ],
+    "date_out_of_season:1998-09-13": [
+      "32797"
+    ],
+    "date_out_of_season:1998-09-20": [
+      "32911"
+    ],
+    "date_out_of_season:1998-09-27": [
+      "33028"
+    ],
+    "date_out_of_season:1998-10-04": [
+      "33146"
+    ],
+    "date_out_of_season:1998-10-11": [
+      "33252"
+    ],
+    "date_out_of_season:1998-10-18": [
+      "33360"
+    ],
+    "date_out_of_season:1998-10-25": [
+      "33475"
+    ],
+    "date_out_of_season:1998-11-01": [
+      "33596"
+    ],
+    "date_out_of_season:1998-11-08": [
+      "33713"
+    ],
+    "date_out_of_season:1998-11-15": [
+      "33832"
+    ],
+    "date_out_of_season:1998-11-22": [
+      "33951"
+    ],
+    "date_out_of_season:1998-11-29": [
+      "34066"
+    ],
+    "date_out_of_season:1998-12-06": [
+      "34186"
+    ],
+    "date_out_of_season:1998-12-20": [
+      "34389"
+    ],
+    "date_out_of_season:1999-01-31": [
+      "34490"
+    ],
+    "date_out_of_season:1999-01-17": [
+      "34577"
+    ],
+    "date_out_of_season:1999-01-24": [
+      "34651"
+    ],
+    "date_out_of_season:1999-02-07": [
+      "34749"
+    ],
+    "date_out_of_season:1999-02-14": [
+      "34863"
+    ],
+    "date_out_of_season:1999-02-21": [
+      "34979"
+    ],
+    "date_out_of_season:1999-02-28": [
+      "35094"
+    ],
+    "date_out_of_season:1999-03-07": [
+      "35202"
+    ],
+    "date_out_of_season:1999-03-14": [
+      "35322"
+    ],
+    "date_out_of_season:1999-03-21": [
+      "35433"
+    ],
+    "date_out_of_season:1999-03-27": [
+      "35493"
+    ],
+    "date_out_of_season:1999-04-04": [
+      "35650"
+    ],
+    "date_out_of_season:1999-04-11": [
+      "35759"
+    ],
+    "date_out_of_season:1999-04-17": [
+      "35875"
+    ],
+    "date_out_of_season:1999-04-24": [
+      "35944"
+    ],
+    "date_out_of_season:1999-05-09": [
+      "36222"
+    ],
+    "date_out_of_season:1997-08-17": [
+      "36438"
+    ],
+    "date_out_of_season:1997-08-24": [
+      "36543"
+    ],
+    "date_out_of_season:1997-08-31": [
+      "36680"
+    ],
+    "date_out_of_season:1997-09-06": [
+      "36727"
+    ],
+    "date_out_of_season:1997-09-14": [
+      "36908"
+    ],
+    "date_out_of_season:1997-09-21": [
+      "37022"
+    ],
+    "date_out_of_season:1997-09-28": [
+      "37141"
+    ],
+    "date_out_of_season:1997-10-12": [
+      "37387"
+    ],
+    "date_out_of_season:1997-10-19": [
+      "37515"
+    ],
+    "date_out_of_season:1997-10-26": [
+      "37585"
+    ],
+    "date_out_of_season:1997-11-02": [
+      "37723"
+    ],
+    "date_out_of_season:1997-11-09": [
+      "37862"
+    ],
+    "date_out_of_season:1997-11-16": [
+      "37982"
+    ],
+    "date_out_of_season:1997-11-23": [
+      "38100"
+    ],
+    "date_out_of_season:1997-11-29": [
+      "38171"
+    ],
+    "date_out_of_season:1997-12-07": [
+      "38310"
+    ],
+    "date_out_of_season:1998-01-11": [
+      "38482"
+    ],
+    "date_out_of_season:1998-01-18": [
+      "38569"
+    ],
+    "date_out_of_season:1998-01-25": [
+      "38662"
+    ],
+    "date_out_of_season:1998-02-01": [
+      "38759"
+    ],
+    "date_out_of_season:1998-02-07": [
+      "38806"
+    ],
+    "date_out_of_season:1998-02-15": [
+      "38973"
+    ],
+    "date_out_of_season:1998-02-22": [
+      "39085"
+    ],
+    "date_out_of_season:1998-03-08": [
+      "39313"
+    ],
+    "date_out_of_season:1998-03-15": [
+      "39432"
+    ],
+    "date_out_of_season:1998-03-22": [
+      "39541"
+    ],
+    "date_out_of_season:1998-03-28": [
+      "39629"
+    ],
+    "date_out_of_season:1998-04-05": [
+      "39773"
+    ],
+    "date_out_of_season:1998-04-12": [
+      "39882"
+    ],
+    "date_out_of_season:1998-04-19": [
+      "39968"
+    ],
+    "date_out_of_season:1998-04-26": [
+      "40109"
+    ],
+    "date_out_of_season:1998-05-03": [
+      "40224"
+    ],
+    "date_out_of_season:1996-08-11": [
+      "40351"
+    ],
+    "date_out_of_season:1996-08-18": [
+      "40403"
+    ],
+    "date_out_of_season:1996-08-25": [
+      "40445"
+    ],
+    "date_out_of_season:1996-09-01": [
+      "40486"
+    ],
+    "date_out_of_season:1996-09-08": [
+      "40595"
+    ],
+    "date_out_of_season:1996-09-15": [
+      "40712"
+    ],
+    "date_out_of_season:1996-09-22": [
+      "40837"
+    ],
+    "date_out_of_season:1996-09-29": [
+      "40987"
+    ],
+    "date_out_of_season:1996-10-05": [
+      "41105"
+    ],
+    "date_out_of_season:1996-10-13": [
+      "41244"
+    ],
+    "date_out_of_season:1996-10-20": [
+      "41367"
+    ],
+    "date_out_of_season:1996-10-27": [
+      "41478"
+    ],
+    "date_out_of_season:1996-11-03": [
+      "41602"
+    ],
+    "date_out_of_season:1996-11-10": [
+      "41702"
+    ],
+    "date_out_of_season:1996-11-17": [
+      "41820"
+    ],
+    "date_out_of_season:1996-11-24": [
+      "41933"
+    ],
+    "date_out_of_season:1996-12-01": [
+      "42059"
+    ],
+    "date_out_of_season:1996-12-08": [
+      "42166"
+    ],
+    "date_out_of_season:1997-01-26": [
+      "42474"
+    ],
+    "date_out_of_season:1997-02-01": [
+      "42570"
+    ],
+    "date_out_of_season:1997-02-09": [
+      "42715"
+    ],
+    "date_out_of_season:1997-02-16": [
+      "42820"
+    ],
+    "date_out_of_season:1997-02-23": [
+      "42937"
+    ],
+    "date_out_of_season:1997-03-02": [
+      "43051"
+    ],
+    "date_out_of_season:1997-03-09": [
+      "43178"
+    ],
+    "date_out_of_season:1997-04-13": [
+      "43641"
+    ],
+    "date_out_of_season:1997-04-20": [
+      "43761"
+    ],
+    "date_out_of_season:1997-04-27": [
+      "43851"
+    ],
+    "date_out_of_season:1997-05-04": [
+      "43966"
+    ],
+    "date_out_of_season:1997-05-11": [
+      "44078"
+    ],
+    "date_out_of_season:1997-05-18": [
+      "44192"
+    ],
+    "date_out_of_season:1997-05-24": [
+      "44288"
+    ],
+    "date_out_of_season:1995-08-13": [
+      "44351"
+    ],
+    "date_out_of_season:1995-08-20": [
+      "44389"
+    ],
+    "date_out_of_season:1995-08-27": [
+      "44433"
+    ],
+    "date_out_of_season:1995-09-03": [
+      "44460"
+    ],
+    "date_out_of_season:1995-09-10": [
+      "44523"
+    ],
+    "date_out_of_season:1995-09-17": [
+      "44598"
+    ],
+    "date_out_of_season:1995-09-24": [
+      "44689"
+    ],
+    "date_out_of_season:1995-10-01": [
+      "44821"
+    ],
+    "date_out_of_season:1995-10-08": [
+      "44959"
+    ],
+    "date_out_of_season:1995-10-15": [
+      "45065"
+    ],
+    "date_out_of_season:1995-10-22": [
+      "45177"
+    ],
+    "date_out_of_season:1995-10-29": [
+      "45300"
+    ],
+    "date_out_of_season:1995-11-05": [
+      "45410"
+    ],
+    "date_out_of_season:1995-11-12": [
+      "45513"
+    ],
+    "date_out_of_season:1995-11-19": [
+      "45619"
+    ],
+    "date_out_of_season:1995-11-25": [
+      "45707"
+    ],
+    "date_out_of_season:1995-12-03": [
+      "45835"
+    ],
+    "date_out_of_season:1995-12-10": [
+      "45914"
+    ],
+    "date_out_of_season:1996-01-14": [
+      "46012"
+    ],
+    "date_out_of_season:1996-01-21": [
+      "46035"
+    ],
+    "date_out_of_season:1996-01-28": [
+      "46075"
+    ],
+    "date_out_of_season:1996-02-04": [
+      "46112"
+    ],
+    "date_out_of_season:1996-02-11": [
+      "46146"
+    ],
+    "date_out_of_season:1996-02-18": [
+      "46189"
+    ],
+    "date_out_of_season:1996-02-25": [
+      "46271"
+    ],
+    "date_out_of_season:1996-03-03": [
+      "46363"
+    ],
+    "date_out_of_season:1996-03-10": [
+      "46462"
+    ],
+    "date_out_of_season:1996-03-17": [
+      "46551"
+    ],
+    "date_out_of_season:1996-03-24": [
+      "46642"
+    ],
+    "date_out_of_season:1996-03-31": [
+      "46734"
+    ],
+    "date_out_of_season:1996-04-07": [
+      "46890"
+    ],
+    "date_out_of_season:1996-04-13": [
+      "46935"
+    ],
+    "date_out_of_season:1996-04-21": [
+      "47063"
+    ],
+    "date_out_of_season:1996-04-28": [
+      "47170"
+    ],
+    "date_out_of_season:1996-05-05": [
+      "47277"
+    ],
+    "date_out_of_season:1996-05-12": [
+      "47383"
+    ],
+    "date_out_of_season:1996-05-20": [
+      "47516"
+    ],
+    "date_out_of_season:1994-08-14": [
+      "47561"
+    ],
+    "date_out_of_season:1994-08-21": [
+      "47566"
+    ],
+    "date_out_of_season:1994-08-28": [
+      "47631"
+    ],
+    "date_out_of_season:1994-09-04": [
+      "47658"
+    ],
+    "date_out_of_season:1994-09-11": [
+      "47706"
+    ],
+    "date_out_of_season:1994-09-18": [
+      "47793"
+    ],
+    "date_out_of_season:1994-09-25": [
+      "47900"
+    ],
+    "date_out_of_season:1994-10-02": [
+      "48014"
+    ],
+    "date_out_of_season:1994-10-09": [
+      "48123"
+    ],
+    "date_out_of_season:1994-10-16": [
+      "48268"
+    ],
+    "date_out_of_season:1994-10-23": [
+      "48370"
+    ],
+    "date_out_of_season:1994-10-29": [
+      "48457"
+    ],
+    "date_out_of_season:1994-11-06": [
+      "48601"
+    ],
+    "date_out_of_season:1994-11-13": [
+      "48713"
+    ],
+    "date_out_of_season:1994-11-20": [
+      "48822"
+    ],
+    "date_out_of_season:1994-11-27": [
+      "48930"
+    ],
+    "date_out_of_season:1994-12-04": [
+      "49026"
+    ],
+    "date_out_of_season:1994-12-11": [
+      "49101"
+    ],
+    "date_out_of_season:1995-01-22": [
+      "49202"
+    ],
+    "date_out_of_season:1995-01-29": [
+      "49238"
+    ],
+    "date_out_of_season:1995-02-05": [
+      "49272"
+    ],
+    "date_out_of_season:1995-02-12": [
+      "49310"
+    ],
+    "date_out_of_season:1995-02-19": [
+      "49343"
+    ],
+    "date_out_of_season:1995-02-26": [
+      "49422"
+    ],
+    "date_out_of_season:1995-03-05": [
+      "49526"
+    ],
+    "date_out_of_season:1995-04-02": [
+      "49907"
+    ],
+    "date_out_of_season:1995-04-09": [
+      "50023"
+    ],
+    "date_out_of_season:1995-04-16": [
+      "50130"
+    ],
+    "date_out_of_season:1995-04-23": [
+      "50234"
+    ],
+    "date_out_of_season:1995-04-30": [
+      "50337"
+    ],
+    "date_out_of_season:1995-05-07": [
+      "50452"
+    ],
+    "date_out_of_season:1995-05-14": [
+      "50553"
+    ],
+    "date_out_of_season:1993-09-05": [
+      "50736"
+    ],
+    "date_out_of_season:1993-08-29": [
+      "50765"
+    ],
+    "date_out_of_season:1993-09-12": [
+      "50792"
+    ],
+    "date_out_of_season:1993-09-19": [
+      "50833"
+    ],
+    "date_out_of_season:1993-09-26": [
+      "50889"
+    ],
+    "date_out_of_season:1993-10-03": [
+      "51020"
+    ],
+    "date_out_of_season:1993-10-10": [
+      "51178"
+    ],
+    "date_out_of_season:1993-10-17": [
+      "51313"
+    ],
+    "date_out_of_season:1993-10-24": [
+      "51400"
+    ],
+    "date_out_of_season:1993-10-30": [
+      "51539"
+    ],
+    "date_out_of_season:1993-11-06": [
+      "51665"
+    ],
+    "date_out_of_season:1993-11-14": [
+      "51809"
+    ],
+    "date_out_of_season:1993-11-21": [
+      "51882"
+    ],
+    "date_out_of_season:1993-11-28": [
+      "51999"
+    ],
+    "date_out_of_season:1993-12-05": [
+      "52080"
+    ],
+    "date_out_of_season:1993-12-12": [
+      "52259"
+    ],
+    "date_out_of_season:1993-12-19": [
+      "52337"
+    ],
+    "date_out_of_season:1993-12-26": [
+      "52412"
+    ],
+    "date_out_of_season:1994-02-20": [
+      "52562"
+    ],
+    "date_out_of_season:1994-02-27": [
+      "52676"
+    ],
+    "date_out_of_season:1994-03-06": [
+      "52789"
+    ],
+    "date_out_of_season:1994-03-13": [
+      "52861"
+    ],
+    "date_out_of_season:1994-03-20": [
+      "52975"
+    ],
+    "date_out_of_season:1994-03-26": [
+      "53123"
+    ],
+    "date_out_of_season:1994-04-03": [
+      "53151"
+    ],
+    "date_out_of_season:1994-04-10": [
+      "53263"
+    ],
+    "date_out_of_season:1994-04-16": [
+      "53391"
+    ],
+    "date_out_of_season:1994-04-24": [
+      "53505"
+    ],
+    "date_out_of_season:1994-05-01": [
+      "53596"
+    ],
+    "date_out_of_season:1994-05-08": [
+      "53732"
+    ],
+    "date_out_of_season:1994-05-15": [
+      "53906"
+    ],
+    "date_out_of_season:1994-05-22": [
+      "53950"
+    ],
+    "date_out_of_season:1992-08-23": [
+      "54207"
+    ],
+    "date_out_of_season:1992-08-30": [
+      "54215"
+    ],
+    "date_out_of_season:1992-09-06": [
+      "54218"
+    ],
+    "date_out_of_season:1992-09-09": [
+      "54225"
+    ],
+    "date_out_of_season:1992-09-13": [
+      "54229"
+    ],
+    "date_out_of_season:1992-09-20": [
+      "54235"
+    ],
+    "date_out_of_season:1992-09-27": [
+      "54240"
+    ],
+    "date_out_of_season:1992-10-04": [
+      "54245"
+    ],
+    "date_out_of_season:1992-10-11": [
+      "54251"
+    ],
+    "date_out_of_season:1992-10-18": [
+      "54260"
+    ],
+    "date_out_of_season:1992-10-25": [
+      "54262"
+    ],
+    "date_out_of_season:1992-11-01": [
+      "54270"
+    ],
+    "date_out_of_season:1992-11-08": [
+      "54273"
+    ],
+    "date_out_of_season:1992-11-11": [
+      "54280"
+    ],
+    "date_out_of_season:1992-11-15": [
+      "54284"
+    ],
+    "date_out_of_season:1992-11-22": [
+      "54290"
+    ],
+    "date_out_of_season:1992-11-29": [
+      "54295"
+    ],
+    "date_out_of_season:1992-12-06": [
+      "54300"
+    ],
+    "date_out_of_season:1992-12-20": [
+      "54306"
+    ],
+    "date_out_of_season:1992-12-27": [
+      "54315"
+    ],
+    "date_out_of_season:1993-01-31": [
+      "56100"
+    ],
+    "date_out_of_season:1993-02-07": [
+      "56124"
+    ],
+    "date_out_of_season:1993-02-14": [
+      "56180"
+    ],
+    "date_out_of_season:1993-02-21": [
+      "56289"
+    ],
+    "date_out_of_season:1993-02-28": [
+      "56373"
+    ],
+    "date_out_of_season:1993-03-14": [
+      "56580"
+    ],
+    "date_out_of_season:1993-03-21": [
+      "56700"
+    ],
+    "date_out_of_season:1993-03-28": [
+      "56846"
+    ],
+    "date_out_of_season:1993-04-04": [
+      "56955"
+    ],
+    "date_out_of_season:1993-04-11": [
+      "57077"
+    ],
+    "date_out_of_season:1993-04-25": [
+      "57284"
+    ],
+    "date_out_of_season:1993-05-02": [
+      "57325"
+    ],
+    "date_out_of_season:1993-05-09": [
+      "57435"
+    ],
+    "date_out_of_season:1993-05-23": [
+      "57655"
+    ],
+    "date_out_of_season:1993-05-30": [
+      "57767"
+    ],
+    "date_out_of_season:1993-06-06": [
+      "57891"
+    ],
+    "date_out_of_season:1991-09-08": [
+      "58058"
+    ],
+    "date_out_of_season:1991-09-15": [
+      "58121"
+    ],
+    "date_out_of_season:1991-09-22": [
+      "58307"
+    ],
+    "date_out_of_season:1991-09-29": [
+      "58360"
+    ],
+    "date_out_of_season:1991-10-06": [
+      "58608"
+    ],
+    "date_out_of_season:1991-10-13": [
+      "58668"
+    ],
+    "date_out_of_season:1991-10-19": [
+      "58773"
+    ],
+    "date_out_of_season:1991-10-26": [
+      "58916"
+    ],
+    "date_out_of_season:1991-11-03": [
+      "59043"
+    ],
+    "date_out_of_season:1991-11-10": [
+      "59221"
+    ],
+    "date_out_of_season:1991-11-17": [
+      "59302"
+    ],
+    "date_out_of_season:1991-11-24": [
+      "59454"
+    ],
+    "date_out_of_season:1991-12-01": [
+      "59612"
+    ],
+    "date_out_of_season:1991-12-08": [
+      "59685"
+    ],
+    "date_out_of_season:1991-12-15": [
+      "59870"
+    ],
+    "date_out_of_season:1991-12-22": [
+      "59919"
+    ],
+    "date_out_of_season:1991-12-29": [
+      "60020"
+    ],
+    "date_out_of_season:1992-02-09": [
+      "60208"
+    ],
+    "date_out_of_season:1992-02-16": [
+      "60263"
+    ],
+    "date_out_of_season:1992-02-22": [
+      "60444"
+    ],
+    "date_out_of_season:1992-03-01": [
+      "60539"
+    ],
+    "date_out_of_season:1992-03-08": [
+      "60609"
+    ],
+    "date_out_of_season:1992-03-15": [
+      "60771"
+    ],
+    "date_out_of_season:1992-03-22": [
+      "60897"
+    ],
+    "date_out_of_season:1992-03-29": [
+      "61023"
+    ],
+    "date_out_of_season:1992-04-05": [
+      "61091"
+    ],
+    "date_out_of_season:1992-04-12": [
+      "61307"
+    ],
+    "date_out_of_season:1992-04-19": [
+      "61439"
+    ],
+    "date_out_of_season:1992-04-26": [
+      "61596"
+    ],
+    "date_out_of_season:1992-05-03": [
+      "61697"
+    ],
+    "date_out_of_season:1992-05-10": [
+      "61858"
+    ],
+    "date_out_of_season:1992-05-17": [
+      "61989"
+    ],
+    "date_out_of_season:1992-05-24": [
+      "62073"
+    ],
+    "date_out_of_season:1992-05-31": [
+      "62169"
+    ],
+    "date_out_of_season:1990-09-16": [
+      "63638"
+    ],
+    "date_out_of_season:1990-09-23": [
+      "63650"
+    ],
+    "date_out_of_season:1990-09-30": [
+      "63656"
+    ],
+    "date_out_of_season:1990-10-07": [
+      "63666"
+    ],
+    "date_out_of_season:1990-10-14": [
+      "63674"
+    ],
+    "date_out_of_season:1990-10-20": [
+      "63682"
+    ],
+    "date_out_of_season:1990-10-28": [
+      "63692"
+    ],
+    "date_out_of_season:1990-11-04": [
+      "63699"
+    ],
+    "date_out_of_season:1990-11-11": [
+      "63715"
+    ],
+    "date_out_of_season:1990-11-18": [
+      "63718"
+    ],
+    "date_out_of_season:1990-11-25": [
+      "63731"
+    ],
+    "date_out_of_season:1990-12-02": [
+      "63736"
+    ],
+    "date_out_of_season:1990-12-09": [
+      "63747"
+    ],
+    "date_out_of_season:1990-12-16": [
+      "63754"
+    ],
+    "date_out_of_season:1990-12-23": [
+      "63763"
+    ],
+    "date_out_of_season:1990-12-30": [
+      "63772"
+    ],
+    "date_out_of_season:1991-01-06": [
+      "63781"
+    ],
+    "date_out_of_season:1991-02-03": [
+      "64349"
+    ],
+    "date_out_of_season:1991-02-10": [
+      "64447"
+    ],
+    "date_out_of_season:1991-02-16": [
+      "64579"
+    ],
+    "date_out_of_season:1991-02-24": [
+      "64662"
+    ],
+    "date_out_of_season:1991-03-02": [
+      "64856"
+    ],
+    "date_out_of_season:1991-03-10": [
+      "64965"
+    ],
+    "date_out_of_season:1991-03-17": [
+      "65103"
+    ],
+    "date_out_of_season:1991-03-24": [
+      "65257"
+    ],
+    "date_out_of_season:1991-03-31": [
+      "65303"
+    ],
+    "date_out_of_season:1991-04-06": [
+      "65464"
+    ],
+    "date_out_of_season:1991-04-14": [
+      "65620"
+    ],
+    "date_out_of_season:1991-04-21": [
+      "65689"
+    ],
+    "date_out_of_season:1991-04-28": [
+      "65773"
+    ],
+    "date_out_of_season:1991-05-05": [
+      "65881"
+    ],
+    "date_out_of_season:1991-05-12": [
+      "66010"
+    ],
+    "date_out_of_season:1991-05-18": [
+      "66102"
+    ],
+    "date_out_of_season:1991-05-26": [
+      "66226"
+    ],
+    "balkes_not_found": [
+      "68113",
+      "68114",
+      "68118",
+      "68120",
+      "68122",
+      "68123",
+      "68131",
+      "68133",
+      "68136",
+      "68138",
+      "68139",
+      "68142",
+      "68152",
+      "68153",
+      "68155",
+      "68158",
+      "68160",
+      "68165",
+      "68170",
+      "68171"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {
+    "league": 32,
+    "playoff": 1
+  },
+  "seasonGuard": {
+    "start": "2007-07-01",
+    "end": "2008-06-30"
+  },
+  "generatedAt": "2026-05-17T11:54:58.225965Z"
+}

@@ -1,0 +1,308 @@
+{
+  "season": "2006-2007",
+  "selectedIds": 31,
+  "allDiscoveredIds": 2870,
+  "detailCandidates": 31,
+  "candidateMode": "legacy_pageid_probe_selected_or_known",
+  "knownOnly": false,
+  "plannedTarget": false,
+  "legacyPageIdProbe": true,
+  "legacyProbeDiagnostics": [
+    {
+      "kind": "page_hint",
+      "pageID": 607,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 63,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 609,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 105,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 611,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 93,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 612,
+      "baseSelectedDelta": 2,
+      "baseAllDelta": 94,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 613,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 83,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 619,
+      "baseSelectedDelta": 1,
+      "baseAllDelta": 37,
+      "groups": [
+        "525",
+        "526",
+        "527",
+        "528",
+        "529",
+        "530",
+        "531",
+        "532",
+        "533",
+        "534"
+      ]
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "525",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 0
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "526",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 7
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "527",
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 6
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "528",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 7
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "529",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 7
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "530",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 4
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "531",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "532",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "533",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 5
+    },
+    {
+      "kind": "group_hint",
+      "pageID": 619,
+      "grupID": "534",
+      "groupSelectedDelta": 0,
+      "groupAllDelta": 6
+    },
+    {
+      "kind": "group_fast_skip",
+      "pageID": 635,
+      "error": "timeout",
+      "grupID": "1",
+      "cumulative": 1
+    },
+    {
+      "kind": "group_fast_skip",
+      "pageID": 635,
+      "error": "timeout",
+      "grupID": "4",
+      "cumulative": 2
+    },
+    {
+      "kind": "page_fast_skip",
+      "pageID": 661,
+      "error": "timeout"
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 706,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    },
+    {
+      "kind": "page_hint",
+      "pageID": 707,
+      "baseSelectedDelta": 0,
+      "baseAllDelta": 0,
+      "groups": []
+    }
+  ],
+  "matchesPublished": 0,
+  "detailFiles": 0,
+  "duplicatesDropped": 0,
+  "rejectedReasons": {
+    "date_out_of_season:2000-10-04": 1,
+    "date_out_of_season:1998-09-02": 1,
+    "date_out_of_season:1996-10-02": 1,
+    "date_out_of_season:1995-10-04": 1,
+    "date_out_of_season:1995-10-25": 1,
+    "date_out_of_season:1994-10-05": 1,
+    "date_out_of_season:2008-09-20": 1,
+    "date_out_of_season:2008-09-27": 1,
+    "date_out_of_season:2008-10-04": 1,
+    "date_out_of_season:2008-10-11": 1,
+    "date_out_of_season:2008-10-18": 1,
+    "date_out_of_season:2008-10-25": 1,
+    "date_out_of_season:2008-11-01": 1,
+    "date_out_of_season:2008-11-08": 1,
+    "date_out_of_season:2008-11-15": 1,
+    "date_out_of_season:2008-11-22": 1,
+    "date_out_of_season:2008-12-06": 1,
+    "date_out_of_season:2008-12-13": 1,
+    "date_out_of_season:2009-01-10": 1,
+    "date_out_of_season:2009-01-17": 1,
+    "date_out_of_season:2009-01-24": 1,
+    "date_out_of_season:2009-01-31": 1,
+    "date_out_of_season:2009-02-07": 1,
+    "date_out_of_season:2009-02-14": 1,
+    "date_out_of_season:2009-02-21": 1,
+    "date_out_of_season:2009-03-18": 1,
+    "date_out_of_season:2009-03-07": 1,
+    "date_out_of_season:2009-03-14": 1,
+    "date_out_of_season:2009-03-28": 1,
+    "date_out_of_season:2009-04-04": 1,
+    "date_out_of_season:2009-05-20": 1
+  },
+  "rejectedSamples": {
+    "date_out_of_season:2000-10-04": [
+      "21342"
+    ],
+    "date_out_of_season:1998-09-02": [
+      "32669"
+    ],
+    "date_out_of_season:1996-10-02": [
+      "41089"
+    ],
+    "date_out_of_season:1995-10-04": [
+      "44932"
+    ],
+    "date_out_of_season:1995-10-25": [
+      "45262"
+    ],
+    "date_out_of_season:1994-10-05": [
+      "48223"
+    ],
+    "date_out_of_season:2008-09-20": [
+      "76205"
+    ],
+    "date_out_of_season:2008-09-27": [
+      "76214"
+    ],
+    "date_out_of_season:2008-10-04": [
+      "76219"
+    ],
+    "date_out_of_season:2008-10-11": [
+      "76225"
+    ],
+    "date_out_of_season:2008-10-18": [
+      "76233"
+    ],
+    "date_out_of_season:2008-10-25": [
+      "76236"
+    ],
+    "date_out_of_season:2008-11-01": [
+      "76241"
+    ],
+    "date_out_of_season:2008-11-08": [
+      "76247"
+    ],
+    "date_out_of_season:2008-11-15": [
+      "76255"
+    ],
+    "date_out_of_season:2008-11-22": [
+      "76258"
+    ],
+    "date_out_of_season:2008-12-06": [
+      "76270"
+    ],
+    "date_out_of_season:2008-12-13": [
+      "76281"
+    ],
+    "date_out_of_season:2009-01-10": [
+      "76283"
+    ],
+    "date_out_of_season:2009-01-17": [
+      "76292"
+    ],
+    "date_out_of_season:2009-01-24": [
+      "76297"
+    ],
+    "date_out_of_season:2009-01-31": [
+      "76303"
+    ],
+    "date_out_of_season:2009-02-07": [
+      "76311"
+    ],
+    "date_out_of_season:2009-02-14": [
+      "76314"
+    ],
+    "date_out_of_season:2009-02-21": [
+      "76319"
+    ],
+    "date_out_of_season:2009-03-18": [
+      "76325"
+    ],
+    "date_out_of_season:2009-03-07": [
+      "76333"
+    ],
+    "date_out_of_season:2009-03-14": [
+      "76336"
+    ],
+    "date_out_of_season:2009-03-28": [
+      "76348"
+    ],
+    "date_out_of_season:2009-04-04": [
+      "76359"
+    ],
+    "date_out_of_season:2009-05-20": [
+      "79450"
+    ]
+  },
+  "standingsSkipped": true,
+  "standingsSnapshots": 0,
+  "balkesTableFound": false,
+  "matchTypeCounts": {},
+  "seasonGuard": {
+    "start": "2006-07-01",
+    "end": "2007-06-30"
+  },
+  "generatedAt": "2026-05-17T12:05:48.739298Z"
+}

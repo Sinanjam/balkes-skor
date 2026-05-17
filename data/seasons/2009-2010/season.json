@@ -1,0 +1,39 @@
+{
+  "id": "2009-2010",
+  "name": "2009-2010",
+  "competition": "TFF 3.Lig Kademe (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.6-summary-standings-reconcile",
+  "updatedAt": "2026-05-17T12:05:49.674571Z",
+  "summary": {
+    "matches": 38,
+    "played": 38,
+    "wins": 23,
+    "draws": 8,
+    "losses": 7,
+    "goalsFor": 70,
+    "goalsAgainst": 29,
+    "goalDifference": 41,
+    "matchTypes": {
+      "league": 38
+    },
+    "leagueMatchStats": {
+      "matches": 38,
+      "played": 38,
+      "wins": 23,
+      "draws": 8,
+      "losses": 7,
+      "goalsFor": 70,
+      "goalsAgainst": 29,
+      "goalDifference": 41,
+      "pointsFromResults": 77,
+      "matchTypes": {
+        "league": 38
+      }
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2009-2010/matches_index.json",
+    "standingsByWeek": "seasons/2009-2010/standings_by_week.json"
+  }
+}

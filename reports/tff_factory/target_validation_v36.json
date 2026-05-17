@@ -1,6 +1,6 @@
 {
   "status": "ok",
-  "publishedSeasons": 4,
+  "publishedSeasons": 7,
   "problemSeasons": [],
   "seasons": [
     {
@@ -55,6 +55,49 @@
       "competitions": [
         "Spor Toto 2. Lig (Profesyonel Takım)",
         "Spor Toto 2. Lig Play Off Müsabakaları (Profesyonel Takım) (Çeyrek Final)"
+      ],
+      "badCompetitions": [],
+      "duplicateMatchIds": [],
+      "status": "ok",
+      "problems": []
+    },
+    {
+      "season": "2009-2010",
+      "matches": 38,
+      "leagueMatches": 38,
+      "standingsWeeks": 0,
+      "competitions": [
+        "TFF 3.Lig Kademe (Profesyonel Takım)",
+        "TFF 3.Lig Yükselme (Profesyonel Takım)"
+      ],
+      "badCompetitions": [],
+      "duplicateMatchIds": [],
+      "status": "ok",
+      "problems": []
+    },
+    {
+      "season": "2008-2009",
+      "matches": 33,
+      "leagueMatches": 32,
+      "standingsWeeks": 0,
+      "competitions": [
+        "TFF 3.Lig Kademe (Profesyonel Takım)",
+        "TFF 3.Lig Klasman (Profesyonel Takım)",
+        "TFF 3.Lig Play Off Müsabakaları (Profesyonel Takım) (Grup Eleme)"
+      ],
+      "badCompetitions": [],
+      "duplicateMatchIds": [],
+      "status": "ok",
+      "problems": []
+    },
+    {
+      "season": "2007-2008",
+      "matches": 33,
+      "leagueMatches": 32,
+      "standingsWeeks": 0,
+      "competitions": [
+        "TFF 3. Lig (Profesyonel Takım)",
+        "TFF 3.Lig Play Off Müsabakaları (Profesyonel Takım)"
       ],
       "badCompetitions": [],
       "duplicateMatchIds": [],

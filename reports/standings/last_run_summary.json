@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-17T09:35:27.419631Z",
+  "generatedAt": "2026-05-17T12:05:49.615933Z",
   "builderVersion": "standings-builder-v3.1-chain-safe",
   "seasons": [
     {
-      "season": "2013-2014",
-      "generatedAt": "2026-05-17T09:30:07.997540Z",
+      "season": "2009-2010",
+      "generatedAt": "2026-05-17T12:05:49.569660Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
@@ -18,37 +18,8 @@
       ]
     },
     {
-      "season": "2012-2013",
-      "generatedAt": "2026-05-17T09:30:08.016511Z",
-      "builderVersion": "standings-builder-v3.1-chain-safe",
-      "mode": "auto",
-      "maxWeek": 34,
-      "source": "official_tff_weekly_table",
-      "weeksGenerated": 34,
-      "teams": 17,
-      "matchesUsed": 0,
-      "penaltiesApplied": 0,
-      "warnings": [],
-      "balkesFinal": {
-        "rank": 1,
-        "team": "Balıkesirspor",
-        "played": 32,
-        "won": 20,
-        "drawn": 9,
-        "lost": 3,
-        "goalsFor": 46,
-        "goalsAgainst": 20,
-        "goalDifference": 26,
-        "points": 69,
-        "rawPoints": 69,
-        "pointsDeducted": 0,
-        "penaltyNote": "",
-        "isBalkes": true
-      }
-    },
-    {
-      "season": "2011-2012",
-      "generatedAt": "2026-05-17T09:35:27.404304Z",
+      "season": "2008-2009",
+      "generatedAt": "2026-05-17T12:05:49.588462Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
@@ -62,8 +33,23 @@
       ]
     },
     {
-      "season": "2010-2011",
-      "generatedAt": "2026-05-17T09:35:27.418852Z",
+      "season": "2007-2008",
+      "generatedAt": "2026-05-17T12:05:49.602204Z",
+      "builderVersion": "standings-builder-v3.1-chain-safe",
+      "mode": "auto",
+      "maxWeek": 34,
+      "source": "none",
+      "weeksGenerated": 0,
+      "teams": 0,
+      "matchesUsed": 0,
+      "penaltiesApplied": 0,
+      "warnings": [
+        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
+      ]
+    },
+    {
+      "season": "2006-2007",
+      "generatedAt": "2026-05-17T12:05:49.615610Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,
