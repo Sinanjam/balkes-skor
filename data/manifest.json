@@ -1,416 +1,86 @@
 {
   "app": "Balkes Skor",
-  "schemaVersion": 3,
-  "dataVersion": 1,
-  "generatedAt": "2026-05-17T00:20:18.161871Z",
+  "schemaVersion": 2,
+  "dataVersion": 9,
+  "appVersion": "0.5.0-beta-debug",
+  "generatedAt": "2026-05-12T22:06:53.731455Z",
   "team": "Balıkesirspor",
+  "assets": {
+    "logo": "assets/logo_balkes_skor.png"
+  },
   "availableSeasons": [
     {
       "id": "2025-2026",
       "name": "2025-2026",
-      "matchCount": 32,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 32,
-        "played": 32,
-        "wins": 18,
-        "draws": 7,
-        "losses": 7,
-        "goalsFor": 61,
-        "goalsAgainst": 28,
-        "goalDifference": 33,
-        "matchTypes": {
-          "league": 30,
-          "playoff": 2
-        },
-        "leagueMatchStats": {
-          "matches": 30,
-          "played": 30,
-          "wins": 17,
-          "draws": 7,
-          "losses": 6,
-          "goalsFor": 59,
-          "goalsAgainst": 24,
-          "goalDifference": 35,
-          "pointsFromResults": 58,
-          "matchTypes": {
-            "league": 30,
-            "playoff": 2
-          }
-        }
-      },
-      "standingsByWeekUrl": "seasons/2025-2026/standings_by_week.json"
+      "matchCount": 33
     },
     {
       "id": "2024-2025",
       "name": "2024-2025",
-      "matchCount": 33,
-      "competition": "Nesine 3. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 33,
-        "played": 33,
-        "wins": 18,
-        "draws": 6,
-        "losses": 9,
-        "goalsFor": 56,
-        "goalsAgainst": 30,
-        "goalDifference": 26,
-        "matchTypes": {
-          "league": 30,
-          "playoff": 3
-        },
-        "leagueMatchStats": {
-          "matches": 30,
-          "played": 30,
-          "wins": 17,
-          "draws": 5,
-          "losses": 8,
-          "goalsFor": 54,
-          "goalsAgainst": 27,
-          "goalDifference": 27,
-          "pointsFromResults": 56,
-          "matchTypes": {
-            "league": 30,
-            "playoff": 3
-          }
-        },
-        "leagueTable": {
-          "rank": 2,
-          "team": "Balıkesirspor",
-          "played": 30,
-          "won": 17,
-          "drawn": 5,
-          "lost": 8,
-          "goalsFor": 54,
-          "goalsAgainst": 27,
-          "goalDifference": 27,
-          "points": 56,
-          "rawPoints": 56,
-          "pointsDeducted": 0,
-          "penaltyNote": "",
-          "source": "official_tff_weekly_table"
-        },
-        "points": 56,
-        "rawPoints": 56,
-        "pointsDeducted": 0,
-        "finalRank": 2
-      },
-      "standingsByWeekUrl": "seasons/2024-2025/standings_by_week.json"
+      "matchCount": 33
     },
     {
       "id": "2023-2024",
       "name": "2023-2024",
-      "matchCount": 28,
-      "competition": "TFF 3. LİG (Profesyonel Takım)",
-      "summary": {
-        "matches": 28,
-        "played": 28,
-        "wins": 7,
-        "draws": 12,
-        "losses": 9,
-        "goalsFor": 28,
-        "goalsAgainst": 32,
-        "goalDifference": -4,
-        "matchTypes": {
-          "league": 28
-        },
-        "leagueMatchStats": {
-          "matches": 28,
-          "played": 28,
-          "wins": 7,
-          "draws": 12,
-          "losses": 9,
-          "goalsFor": 28,
-          "goalsAgainst": 32,
-          "goalDifference": -4,
-          "pointsFromResults": 33,
-          "matchTypes": {
-            "league": 28
-          }
-        },
-        "leagueTable": {
-          "rank": 8,
-          "team": "Balıkesirspor",
-          "played": 27,
-          "won": 7,
-          "drawn": 12,
-          "lost": 8,
-          "goalsFor": 27,
-          "goalsAgainst": 30,
-          "goalDifference": -3,
-          "points": 33,
-          "rawPoints": 33,
-          "pointsDeducted": 0,
-          "penaltyNote": "",
-          "source": "official_tff_weekly_table"
-        },
-        "points": 33,
-        "rawPoints": 33,
-        "pointsDeducted": 0,
-        "finalRank": 8,
-        "warnings": [
-          "official_table_differs_from_match_index:played:table=27,matches=28;lost:table=8,matches=9;goalsFor:table=27,matches=28;goalsAgainst:table=30,matches=32;goalDifference:table=-3,matches=-4"
-        ]
-      },
-      "standingsByWeekUrl": "seasons/2023-2024/standings_by_week.json"
+      "matchCount": 29
     },
     {
       "id": "2022-2023",
       "name": "2022-2023",
-      "matchCount": 38,
-      "competition": "TFF 2.Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 38,
-        "played": 38,
-        "wins": 6,
-        "draws": 10,
-        "losses": 22,
-        "goalsFor": 32,
-        "goalsAgainst": 76,
-        "goalDifference": -44,
-        "matchTypes": {
-          "league": 38
-        },
-        "leagueMatchStats": {
-          "matches": 38,
-          "played": 38,
-          "wins": 6,
-          "draws": 10,
-          "losses": 22,
-          "goalsFor": 32,
-          "goalsAgainst": 76,
-          "goalDifference": -44,
-          "pointsFromResults": 28,
-          "matchTypes": {
-            "league": 38
-          }
-        },
-        "leagueTable": {
-          "rank": 17,
-          "team": "Balıkesirspor",
-          "played": 38,
-          "won": 6,
-          "drawn": 10,
-          "lost": 22,
-          "goalsFor": 32,
-          "goalsAgainst": 76,
-          "goalDifference": -44,
-          "points": 25,
-          "rawPoints": 28,
-          "pointsDeducted": 3,
-          "penaltyNote": "v3.5 inferred from official table: 3 point deduction",
-          "source": "official_tff_weekly_table"
-        },
-        "points": 25,
-        "rawPoints": 28,
-        "pointsDeducted": 3,
-        "finalRank": 17,
-        "warnings": [
-          "inferred_points_deduction:3"
-        ]
-      },
-      "standingsByWeekUrl": "seasons/2022-2023/standings_by_week.json"
+      "matchCount": 37
     },
     {
       "id": "2021-2022",
       "name": "2021-2022",
-      "matchCount": 36,
-      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+      "matchCount": 11,
+      "competition": "TRENDYOL SÜPER LİG",
+      "group": "",
       "summary": {
-        "matches": 36,
-        "played": 36,
-        "wins": 3,
-        "draws": 3,
-        "losses": 30,
-        "goalsFor": 26,
-        "goalsAgainst": 77,
-        "goalDifference": -51,
-        "matchTypes": {
-          "league": 36
-        },
-        "leagueMatchStats": {
-          "matches": 36,
-          "played": 36,
-          "wins": 3,
-          "draws": 3,
-          "losses": 30,
-          "goalsFor": 26,
-          "goalsAgainst": 77,
-          "goalDifference": -51,
-          "pointsFromResults": 12,
-          "matchTypes": {
-            "league": 36
-          }
-        },
-        "leagueTable": {
-          "rank": 19,
-          "team": "Balıkesirspor",
-          "played": 36,
-          "won": 3,
-          "drawn": 3,
-          "lost": 30,
-          "goalsFor": 26,
-          "goalsAgainst": 77,
-          "goalDifference": -51,
-          "points": 12,
-          "rawPoints": 12,
-          "pointsDeducted": 0,
-          "penaltyNote": "",
-          "source": "official_tff_weekly_table"
-        },
-        "points": 12,
-        "rawPoints": 12,
-        "pointsDeducted": 0,
-        "finalRank": 19
-      },
-      "standingsByWeekUrl": "seasons/2021-2022/standings_by_week.json"
-    },
-    {
-      "id": "2020-2021",
-      "name": "2020-2021",
-      "matchCount": 34,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 34,
-        "played": 34,
-        "wins": 9,
-        "draws": 8,
-        "losses": 17,
-        "goalsFor": 35,
-        "goalsAgainst": 53,
-        "goalDifference": -18,
-        "matchTypes": {
-          "league": 34
-        },
-        "leagueMatchStats": {
-          "matches": 34,
-          "played": 34,
-          "wins": 9,
-          "draws": 8,
-          "losses": 17,
-          "goalsFor": 35,
-          "goalsAgainst": 53,
-          "goalDifference": -18,
-          "pointsFromResults": 35,
-          "matchTypes": {
-            "league": 34
-          }
-        },
-        "leagueTable": {
-          "rank": 13,
-          "team": "Balıkesirspor",
-          "played": 34,
-          "won": 9,
-          "drawn": 8,
-          "lost": 17,
-          "goalsFor": 35,
-          "goalsAgainst": 53,
-          "goalDifference": -18,
-          "points": 35,
-          "rawPoints": 35,
-          "pointsDeducted": 0,
-          "penaltyNote": "",
-          "source": "official_tff_weekly_table"
-        },
-        "points": 35,
-        "rawPoints": 35,
-        "pointsDeducted": 0,
-        "finalRank": 13
-      },
-      "standingsByWeekUrl": "seasons/2020-2021/standings_by_week.json"
-    },
-    {
-      "id": "2019-2020",
-      "name": "2019-2020",
-      "matchCount": 30,
-      "competition": "TFF 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 30,
-        "played": 30,
-        "wins": 8,
-        "draws": 11,
-        "losses": 11,
-        "goalsFor": 30,
-        "goalsAgainst": 36,
-        "goalDifference": -6,
-        "matchTypes": {
-          "league": 30
-        },
-        "leagueMatchStats": {
-          "matches": 30,
-          "played": 30,
-          "wins": 8,
-          "draws": 11,
-          "losses": 11,
-          "goalsFor": 30,
-          "goalsAgainst": 36,
-          "goalDifference": -6,
-          "pointsFromResults": 35,
-          "matchTypes": {
-            "league": 30
-          }
-        },
-        "leagueTable": {
-          "rank": 13,
-          "team": "Balıkesirspor",
-          "played": 34,
-          "won": 9,
-          "drawn": 11,
-          "lost": 14,
-          "goalsFor": 36,
-          "goalsAgainst": 48,
-          "goalDifference": -12,
-          "points": 38,
-          "rawPoints": 38,
-          "pointsDeducted": 0,
-          "penaltyNote": "",
-          "source": "official_tff_weekly_table"
-        },
-        "points": 38,
-        "rawPoints": 38,
-        "pointsDeducted": 0,
-        "finalRank": 13,
-        "warnings": [
-          "official_table_differs_from_match_index:played:table=34,matches=30;won:table=9,matches=8;lost:table=14,matches=11;goalsFor:table=36,matches=30;goalsAgainst:table=48,matches=36;goalDifference:table=-12,matches=-6"
-        ]
-      },
-      "standingsByWeekUrl": "seasons/2019-2020/standings_by_week.json"
+        "matches": 11,
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "goalDifference": 0,
+        "points": null,
+        "finalRank": null
+      }
     },
     {
       "id": "2018-2019",
       "name": "2018-2019",
-      "matchCount": 41,
-      "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
-      "summary": {
-        "matches": 41,
-        "played": 40,
-        "wins": 14,
-        "draws": 8,
-        "losses": 18,
-        "goalsFor": 49,
-        "goalsAgainst": 52,
-        "goalDifference": -3,
-        "matchTypes": {
-          "league": 35,
-          "cup": 6
-        },
-        "leagueMatchStats": {
-          "matches": 35,
-          "played": 34,
-          "wins": 11,
-          "draws": 7,
-          "losses": 16,
-          "goalsFor": 36,
-          "goalsAgainst": 45,
-          "goalDifference": -9,
-          "pointsFromResults": 40,
-          "matchTypes": {
-            "league": 35,
-            "cup": 6
-          }
-        }
-      },
-      "standingsByWeekUrl": "seasons/2018-2019/standings_by_week.json"
+      "matchCount": 2
+    },
+    {
+      "id": "2009-2010",
+      "name": "2009-2010",
+      "matchCount": 1
+    },
+    {
+      "id": "1996-1997",
+      "name": "1996-1997",
+      "matchCount": 1
+    },
+    {
+      "id": "1994-1995",
+      "name": "1994-1995",
+      "matchCount": 1
+    },
+    {
+      "id": "1992-1993",
+      "name": "1992-1993",
+      "matchCount": 1
+    },
+    {
+      "id": "1991-1992",
+      "name": "1991-1992",
+      "matchCount": 1
+    },
+    {
+      "id": "1990-1991",
+      "name": "1990-1991",
+      "matchCount": 2
     }
   ],
   "global": {
@@ -419,10 +89,8 @@
     "searchIndexUrl": "search_index.json",
     "dataReportUrl": "data_report.json"
   },
-  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor/main/data/",
-  "factoryVersion": "v3.5-summary-standings-reconcile",
-  "targetedSeniorProfessionalGuard": true,
-  "standingsUpdatedAt": "2026-05-17T00:20:18.066883Z",
-  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe",
-  "safeToPush": true
+  "appDataVersion": 10,
+  "appMinVersion": "0.5.0-beta-debug",
+  "lastUpdated": "2026-05-14T05:19:50Z",
+  "dataBaseUrl": "https://raw.githubusercontent.com/Sinanjam/balkes-skor-web/main/docs/data/"
 }

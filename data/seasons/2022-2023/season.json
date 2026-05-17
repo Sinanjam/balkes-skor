@@ -1,64 +1,33 @@
 {
   "id": "2022-2023",
   "name": "2022-2023",
-  "competition": "TFF 2.Lig (Profesyonel Takım)",
-  "sourcePolicy": "TFF senior professional target only",
-  "factoryVersion": "v3.5-summary-standings-reconcile",
-  "updatedAt": "2026-05-17T00:20:18.151555Z",
+  "team": {
+    "id": "balikesirspor",
+    "name": "Balıkesirspor",
+    "tffClubId": "135"
+  },
+  "competition": "TFF 2.League (Professional Team)",
+  "group": "",
   "summary": {
-    "matches": 38,
-    "played": 38,
-    "wins": 6,
+    "matches": 37,
+    "leagueMatches": 37,
+    "playoffMatches": 0,
+    "cupMatches": 0,
+    "wins": 5,
     "draws": 10,
     "losses": 22,
-    "goalsFor": 32,
+    "goalsFor": 29,
     "goalsAgainst": 76,
-    "goalDifference": -44,
-    "matchTypes": {
-      "league": 38
-    },
-    "leagueMatchStats": {
-      "matches": 38,
-      "played": 38,
-      "wins": 6,
-      "draws": 10,
-      "losses": 22,
-      "goalsFor": 32,
-      "goalsAgainst": 76,
-      "goalDifference": -44,
-      "pointsFromResults": 28,
-      "matchTypes": {
-        "league": 38
-      }
-    },
-    "leagueTable": {
-      "rank": 17,
-      "team": "Balıkesirspor",
-      "played": 38,
-      "won": 6,
-      "drawn": 10,
-      "lost": 22,
-      "goalsFor": 32,
-      "goalsAgainst": 76,
-      "goalDifference": -44,
-      "points": 25,
-      "rawPoints": 28,
-      "pointsDeducted": 3,
-      "penaltyNote": "v3.5 inferred from official table: 3 point deduction",
-      "source": "official_tff_weekly_table"
-    },
+    "goalDifference": -47,
     "points": 25,
-    "rawPoints": 28,
-    "pointsDeducted": 3,
-    "finalRank": 17,
-    "warnings": [
-      "inferred_points_deduction:3"
-    ]
+    "finalRank": null
   },
   "files": {
     "matchesIndex": "seasons/2022-2023/matches_index.json",
     "standingsByWeek": "seasons/2022-2023/standings_by_week.json"
   },
-  "standingsUpdatedAt": "2026-05-16T22:54:45.508681Z",
-  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+  "source": {
+    "name": "TFF",
+    "note": "Açık TFF sayfalarından dönüştürülmüş veri"
+  }
 }
