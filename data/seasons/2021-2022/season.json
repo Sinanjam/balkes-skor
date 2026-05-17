@@ -1,0 +1,30 @@
+{
+  "id": "2021-2022",
+  "name": "2021-2022",
+  "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-17T13:50:14.186240Z",
+  "summary": {
+    "matches": 36,
+    "wins": 3,
+    "draws": 3,
+    "losses": 30,
+    "goalsFor": 26,
+    "goalsAgainst": 77,
+    "goalDifference": -51,
+    "matchTypes": {
+      "league": 36
+    },
+    "points": 12,
+    "rawPoints": 12,
+    "pointsDeducted": 0,
+    "finalRank": 19
+  },
+  "files": {
+    "matchesIndex": "seasons/2021-2022/matches_index.json",
+    "standingsByWeek": "seasons/2021-2022/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-17T13:53:05.440316Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}

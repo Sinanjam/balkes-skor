@@ -1,0 +1,25 @@
+{
+  "id": "2017-2018",
+  "name": "2017-2018",
+  "competition": "Spor Toto 1. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-17T14:56:06.633356Z",
+  "summary": {
+    "matches": 35,
+    "wins": 16,
+    "draws": 7,
+    "losses": 12,
+    "goalsFor": 62,
+    "goalsAgainst": 53,
+    "goalDifference": 9,
+    "matchTypes": {
+      "league": 34,
+      "cup": 1
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2017-2018/matches_index.json",
+    "standingsByWeek": "seasons/2017-2018/standings_by_week.json"
+  }
+}

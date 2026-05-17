@@ -1,8 +1,8 @@
 {
   "season": "2018-2019",
-  "selectedIds": 378,
-  "allDiscoveredIds": 6637,
-  "detailCandidates": 378,
+  "selectedIds": 453,
+  "allDiscoveredIds": 6633,
+  "detailCandidates": 453,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
@@ -184,6 +184,13 @@
       "groupAllDelta": 8
     },
     {
+      "kind": "group_fast_skip",
+      "pageID": 1481,
+      "error": "timeout",
+      "grupID": "1652",
+      "cumulative": 1
+    },
+    {
       "kind": "page_hint",
       "pageID": 1487,
       "baseSelectedDelta": 6,
@@ -213,7 +220,7 @@
     {
       "kind": "page_hint",
       "pageID": 1502,
-      "baseSelectedDelta": 94,
+      "baseSelectedDelta": 96,
       "baseAllDelta": 311,
       "groups": []
     },
@@ -261,7 +268,7 @@
   "duplicatesDropped": 0,
   "rejectedReasons": {
     "date_out_of_season:2017-09-19": 1,
-    "balkes_not_found": 122,
+    "balkes_not_found": 197,
     "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": 34,
     "not_target_senior_professional:Spor-Toto Gelişim Elit U17 Ligi (Elit Akademi U17 Takımı) | Lig | Lig | Lig | TFF": 32,
     "not_target_senior_professional:Spor-Toto Gelişim Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": 32,
@@ -320,24 +327,24 @@
     "balkes_not_found": [
       "194821",
       "194826",
+      "194828",
+      "194835",
       "194837",
       "194842",
       "194844",
       "194846",
+      "194849",
+      "194851",
       "194852",
       "194854",
       "194861",
       "194864",
+      "194868",
       "194872",
+      "194874",
       "194878",
-      "194882",
-      "194884",
-      "194892",
-      "194895",
-      "194904",
-      "194906",
-      "194915",
-      "194920"
+      "194880",
+      "194882"
     ],
     "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": [
       "195434",
@@ -615,5 +622,5 @@
     "start": "2018-07-01",
     "end": "2019-06-30"
   },
-  "generatedAt": "2026-05-17T00:13:01.340795Z"
+  "generatedAt": "2026-05-17T14:12:34.189923Z"
 }

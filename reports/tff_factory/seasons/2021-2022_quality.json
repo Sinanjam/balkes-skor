@@ -1,8 +1,8 @@
 {
   "season": "2021-2022",
-  "selectedIds": 103,
+  "selectedIds": 142,
   "allDiscoveredIds": 347,
-  "detailCandidates": 103,
+  "detailCandidates": 142,
   "candidateMode": "selected_or_known",
   "knownOnly": false,
   "plannedTarget": true,
@@ -12,30 +12,30 @@
   "detailFiles": 36,
   "duplicatesDropped": 0,
   "rejectedReasons": {
-    "balkes_not_found": 67
+    "balkes_not_found": 106
   },
   "rejectedSamples": {
     "balkes_not_found": [
+      "223294",
       "223299",
       "223300",
       "223305",
       "223320",
+      "223329",
       "223335",
       "223338",
       "223341",
       "223344",
+      "223347",
+      "223352",
       "223354",
       "223355",
+      "223358",
       "223359",
       "223360",
+      "223363",
       "223368",
-      "223371",
-      "223377",
-      "223385",
-      "223386",
-      "223395",
-      "223396",
-      "223403"
+      "223370"
     ]
   },
   "standingsSkipped": true,
@@ -48,5 +48,5 @@
     "start": "2021-07-01",
     "end": "2022-06-30"
   },
-  "generatedAt": "2026-05-16T23:59:08.212015Z"
+  "generatedAt": "2026-05-17T13:50:13.679664Z"
 }

@@ -1,0 +1,26 @@
+{
+  "id": "2015-2016",
+  "name": "2015-2016",
+  "competition": "PTT 1.Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-17T16:27:38.359889Z",
+  "summary": {
+    "matches": 38,
+    "wins": 14,
+    "draws": 14,
+    "losses": 10,
+    "goalsFor": 45,
+    "goalsAgainst": 36,
+    "goalDifference": 9,
+    "matchTypes": {
+      "league": 34,
+      "cup": 2,
+      "playoff": 2
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2015-2016/matches_index.json",
+    "standingsByWeek": "seasons/2015-2016/standings_by_week.json"
+  }
+}

@@ -132,22 +132,8 @@
       "groupAllDelta": 6
     },
     {
-      "kind": "group_fast_skip",
-      "pageID": 635,
-      "error": "timeout",
-      "grupID": "1",
-      "cumulative": 1
-    },
-    {
-      "kind": "group_fast_skip",
-      "pageID": 635,
-      "error": "timeout",
-      "grupID": "4",
-      "cumulative": 2
-    },
-    {
       "kind": "page_fast_skip",
-      "pageID": 661,
+      "pageID": 671,
       "error": "timeout"
     },
     {
@@ -304,5 +290,5 @@
     "start": "2006-07-01",
     "end": "2007-06-30"
   },
-  "generatedAt": "2026-05-17T12:05:48.739298Z"
+  "generatedAt": "2026-05-17T17:19:55.396078Z"
 }

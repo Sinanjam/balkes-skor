@@ -1,0 +1,30 @@
+{
+  "id": "2022-2023",
+  "name": "2022-2023",
+  "competition": "TFF 2.Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-17T13:41:04.775611Z",
+  "summary": {
+    "matches": 38,
+    "wins": 6,
+    "draws": 10,
+    "losses": 22,
+    "goalsFor": 32,
+    "goalsAgainst": 76,
+    "goalDifference": -44,
+    "matchTypes": {
+      "league": 38
+    },
+    "points": 25,
+    "rawPoints": 25,
+    "pointsDeducted": 0,
+    "finalRank": 17
+  },
+  "files": {
+    "matchesIndex": "seasons/2022-2023/matches_index.json",
+    "standingsByWeek": "seasons/2022-2023/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-17T13:48:11.752766Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}

@@ -1,8 +1,8 @@
 {
   "season": "2015-2016",
-  "selectedIds": 485,
-  "allDiscoveredIds": 12694,
-  "detailCandidates": 485,
+  "selectedIds": 522,
+  "allDiscoveredIds": 12688,
+  "detailCandidates": 522,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
@@ -500,14 +500,6 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1384,
-      "error": "timeout",
-      "grupID": "1147",
-      "week": 17,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 1385,
       "baseSelectedDelta": 102,
@@ -547,6 +539,14 @@
       "grupID": "1191",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
+    },
+    {
+      "kind": "group_week_fast_skip",
+      "pageID": 1389,
+      "error": "timeout",
+      "grupID": "1191",
+      "week": 3,
+      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -925,16 +925,16 @@
     "date_out_of_season:2015-05-19": 1,
     "date_out_of_season:2015-05-20": 1,
     "date_out_of_season:2015-05-22": 1,
-    "balkes_not_found": 66,
-    "not_senior_professional_competition:U21 Ligi (PAF Takımı)": 34,
-    "not_senior_professional_competition:Elit U19 Ligi (Elit Akademi U19 Takımı)": 34,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı)": 24,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı)": 26,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)": 26,
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı)": 26,
-    "not_senior_professional_competition:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı) (Ön Eleme)": 1,
-    "not_senior_professional_competition:Bölgesel Amatör Lig Baraj Maçları (BAL Takımı) (Baraj)": 1,
-    "not_senior_professional_competition:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı)": 3
+    "balkes_not_found": 103,
+    "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": 34,
+    "not_target_senior_professional:Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": 34,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı) | Lig | Lig | Lig | TFF": 26,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı) | Lig | Lig | Lig | TFF": 26,
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı) | Lig | Lig | Lig | TFF": 26,
+    "not_target_senior_professional:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı) (Ön Eleme) | Lig | Lig | Lig | TFF": 1,
+    "not_target_senior_professional:Bölgesel Amatör Lig Baraj Maçları (BAL Takımı) (Baraj) | Lig | Lig | Lig | TFF": 1,
+    "not_target_senior_professional:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı) | Lig | Lig | Lig | TFF": 3
   },
   "rejectedSamples": {
     "date_out_of_season:2014-08-31": [
@@ -1324,28 +1324,28 @@
       "139927"
     ],
     "balkes_not_found": [
+      "140284",
+      "140285",
       "140287",
       "140288",
       "140289",
       "140292",
+      "140293",
+      "140295",
       "140296",
       "140300",
+      "140301",
+      "140306",
       "140307",
       "140309",
       "140312",
+      "140315",
       "140320",
       "140326",
       "140327",
-      "140331",
-      "140344",
-      "140349",
-      "140353",
-      "140355",
-      "140358",
-      "140365",
-      "140367"
+      "140331"
     ],
-    "not_senior_professional_competition:U21 Ligi (PAF Takımı)": [
+    "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": [
       "142537",
       "142545",
       "142553",
@@ -1367,7 +1367,7 @@
       "142698",
       "142706"
     ],
-    "not_senior_professional_competition:Elit U19 Ligi (Elit Akademi U19 Takımı)": [
+    "not_target_senior_professional:Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": [
       "143149",
       "143157",
       "143165",
@@ -1389,7 +1389,7 @@
       "143310",
       "143318"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U17 Ligi (Akademi U17 Takımı) | Lig | Lig | Lig | TFF": [
       "151199",
       "151205",
       "151208",
@@ -1411,7 +1411,7 @@
       "151280",
       "151285"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U14 Ligi (Akademi U14 Takımı) | Lig | Lig | Lig | TFF": [
       "152065",
       "152072",
       "152079",
@@ -1433,7 +1433,7 @@
       "152191",
       "152198"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U15 Ligi (Akademi U15 Takımı) | Lig | Lig | Lig | TFF": [
       "153122",
       "153129",
       "153136",
@@ -1455,7 +1455,7 @@
       "153248",
       "153255"
     ],
-    "not_senior_professional_competition:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı)": [
+    "not_target_senior_professional:Coca-Cola Bölgesel Gelişim U16 Ligi (Akademi U16 Takımı) | Lig | Lig | Lig | TFF": [
       "154314",
       "154321",
       "154328",
@@ -1477,13 +1477,13 @@
       "154440",
       "154447"
     ],
-    "not_senior_professional_competition:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı) (Ön Eleme)": [
+    "not_target_senior_professional:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı) (Ön Eleme) | Lig | Lig | Lig | TFF": [
       "156694"
     ],
-    "not_senior_professional_competition:Bölgesel Amatör Lig Baraj Maçları (BAL Takımı) (Baraj)": [
+    "not_target_senior_professional:Bölgesel Amatör Lig Baraj Maçları (BAL Takımı) (Baraj) | Lig | Lig | Lig | TFF": [
       "156717"
     ],
-    "not_senior_professional_competition:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı)": [
+    "not_target_senior_professional:Coca Cola Bölgesel Gelişim U16 Ligi Türkiye Finalleri (Akademi U16 Takımı) | Lig | Lig | Lig | TFF": [
       "156860",
       "156863",
       "156864"
@@ -1501,5 +1501,5 @@
     "start": "2015-07-01",
     "end": "2016-06-30"
   },
-  "generatedAt": "2026-05-15T23:40:06.719012Z"
+  "generatedAt": "2026-05-17T16:27:37.457407Z"
 }

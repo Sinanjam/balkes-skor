@@ -1,18 +1,13 @@
 {
   "season": "2017-2018",
-  "selectedIds": 723,
-  "allDiscoveredIds": 17742,
-  "detailCandidates": 723,
+  "selectedIds": 968,
+  "allDiscoveredIds": 18350,
+  "detailCandidates": 968,
   "candidateMode": "legacy_pageid_probe_selected_or_known",
   "knownOnly": false,
   "plannedTarget": false,
   "legacyPageIdProbe": true,
   "legacyProbeDiagnostics": [
-    {
-      "kind": "page_fast_skip",
-      "pageID": 1411,
-      "error": "timeout"
-    },
     {
       "kind": "page_hint",
       "pageID": 1414,
@@ -37,22 +32,6 @@
       "grupID": "1356",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1416,
-      "error": "timeout",
-      "grupID": "1356",
-      "week": 30,
-      "cumulative": 1
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1416,
-      "error": "timeout",
-      "grupID": "1356",
-      "week": 31,
-      "cumulative": 2
     },
     {
       "kind": "group_hint",
@@ -94,6 +73,13 @@
     },
     {
       "kind": "group_fast_skip",
+      "pageID": 1418,
+      "error": "http_504",
+      "grupID": "1454",
+      "cumulative": 1
+    },
+    {
+      "kind": "group_fast_skip",
       "pageID": 1419,
       "error": "http_504",
       "grupID": "1404",
@@ -111,7 +97,7 @@
       "pageID": 1419,
       "error": "http_504",
       "grupID": "1520",
-      "week": 2,
+      "week": 7,
       "cumulative": 1
     },
     {
@@ -151,14 +137,6 @@
       "groupAllDelta": 8
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1420,
-      "error": "timeout",
-      "grupID": "1383",
-      "week": 8,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1420,
       "grupID": "1384",
@@ -192,14 +170,6 @@
       "grupID": "1377",
       "groupSelectedDelta": 1,
       "groupAllDelta": 8
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1421,
-      "error": "timeout",
-      "grupID": "1377",
-      "week": 25,
-      "cumulative": 1
     },
     {
       "kind": "page_hint",
@@ -243,14 +213,6 @@
       "grupID": "1371",
       "groupSelectedDelta": 0,
       "groupAllDelta": 5
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1422,
-      "error": "timeout",
-      "grupID": "1371",
-      "week": 38,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -303,14 +265,6 @@
       "groupAllDelta": 5
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1423,
-      "error": "timeout",
-      "grupID": "1396",
-      "week": 15,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1423,
       "grupID": "1397",
@@ -330,14 +284,6 @@
       "grupID": "1399",
       "groupSelectedDelta": 0,
       "groupAllDelta": 3
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1423,
-      "error": "timeout",
-      "grupID": "1399",
-      "week": 34,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -375,14 +321,6 @@
       "grupID": "1457",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1425,
-      "error": "timeout",
-      "grupID": "1457",
-      "week": 17,
-      "cumulative": 1
     },
     {
       "kind": "group_hint",
@@ -508,7 +446,7 @@
     {
       "kind": "page_hint",
       "pageID": 1441,
-      "baseSelectedDelta": 97,
+      "baseSelectedDelta": 99,
       "baseAllDelta": 311,
       "groups": []
     },
@@ -584,14 +522,6 @@
       "groupAllDelta": 4
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1451,
-      "error": "timeout",
-      "grupID": "1532",
-      "week": 35,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 1452,
       "baseSelectedDelta": 1,
@@ -611,38 +541,6 @@
       "grupID": "1533",
       "groupSelectedDelta": 0,
       "groupAllDelta": 0
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1452,
-      "error": "timeout",
-      "grupID": "1533",
-      "week": 4,
-      "cumulative": 1
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1452,
-      "error": "timeout",
-      "grupID": "1533",
-      "week": 23,
-      "cumulative": 2
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1452,
-      "error": "timeout",
-      "grupID": "1533",
-      "week": 35,
-      "cumulative": 3
-    },
-    {
-      "kind": "group_week_branch_abandoned",
-      "pageID": 1452,
-      "error": "cumulative_unreachable_errors",
-      "grupID": "1533",
-      "gatewayErrors": 3,
-      "remainingWeeksSkipped": true
     },
     {
       "kind": "group_hint",
@@ -694,14 +592,6 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1453,
-      "error": "timeout",
-      "grupID": "1616",
-      "week": 19,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 1454,
       "baseSelectedDelta": 0,
@@ -719,11 +609,11 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_fast_skip",
+      "kind": "group_hint",
       "pageID": 1454,
-      "error": "timeout",
       "grupID": "1518",
-      "cumulative": 1
+      "groupSelectedDelta": 1,
+      "groupAllDelta": 7
     },
     {
       "kind": "group_hint",
@@ -740,6 +630,20 @@
       "groupAllDelta": 7
     },
     {
+      "kind": "group_fast_skip",
+      "pageID": 1460,
+      "error": "http_504",
+      "grupID": "1591",
+      "cumulative": 1
+    },
+    {
+      "kind": "group_fast_skip",
+      "pageID": 1461,
+      "error": "http_504",
+      "grupID": "1594",
+      "cumulative": 1
+    },
+    {
       "kind": "page_hint",
       "pageID": 1463,
       "baseSelectedDelta": 1,
@@ -747,9 +651,11 @@
       "groups": []
     },
     {
-      "kind": "page_fast_skip",
+      "kind": "page_hint",
       "pageID": 1469,
-      "error": "timeout"
+      "baseSelectedDelta": 97,
+      "baseAllDelta": 312,
+      "groups": []
     },
     {
       "kind": "page_hint",
@@ -858,14 +764,6 @@
       "groupAllDelta": 0
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1477,
-      "error": "timeout",
-      "grupID": "1742",
-      "week": 1,
-      "cumulative": 1
-    },
-    {
       "kind": "group_hint",
       "pageID": 1477,
       "grupID": "1743",
@@ -897,14 +795,6 @@
       "groupAllDelta": 8
     },
     {
-      "kind": "group_week_fast_skip",
-      "pageID": 1478,
-      "error": "timeout",
-      "grupID": "1629",
-      "week": 21,
-      "cumulative": 1
-    },
-    {
       "kind": "page_hint",
       "pageID": 1479,
       "baseSelectedDelta": 0,
@@ -927,14 +817,6 @@
       "grupID": "1631",
       "groupSelectedDelta": 1,
       "groupAllDelta": 8
-    },
-    {
-      "kind": "group_week_fast_skip",
-      "pageID": 1479,
-      "error": "timeout",
-      "grupID": "1631",
-      "week": 2,
-      "cumulative": 1
     }
   ],
   "matchesPublished": 35,
@@ -968,7 +850,7 @@
     "date_out_of_season:2016-04-02": 1,
     "date_out_of_season:2016-04-09": 1,
     "date_out_of_season:2016-08-22": 2,
-    "balkes_not_found": 128,
+    "balkes_not_found": 300,
     "date_out_of_season:2016-08-28": 2,
     "date_out_of_season:2016-09-11": 2,
     "date_out_of_season:2016-09-18": 2,
@@ -976,7 +858,7 @@
     "date_out_of_season:2016-10-02": 4,
     "date_out_of_season:2016-10-15": 4,
     "date_out_of_season:2016-10-23": 4,
-    "date_out_of_season:2016-10-30": 3,
+    "date_out_of_season:2016-10-30": 4,
     "date_out_of_season:2016-11-05": 4,
     "date_out_of_season:2016-11-19": 4,
     "date_out_of_season:2016-11-27": 3,
@@ -1044,10 +926,10 @@
     "date_out_of_season:2017-01-05": 2,
     "date_out_of_season:2017-01-26": 2,
     "date_out_of_season:2017-01-22": 3,
+    "date_out_of_season:2017-02-26": 3,
     "date_out_of_season:2017-03-12": 2,
     "date_out_of_season:2017-03-19": 3,
     "date_out_of_season:2017-03-26": 4,
-    "date_out_of_season:2017-02-26": 2,
     "date_out_of_season:2016-09-21": 1,
     "date_out_of_season:2016-10-26": 1,
     "date_out_of_season:2016-11-13": 1,
@@ -1057,49 +939,51 @@
     "date_out_of_season:2017-05-02": 1,
     "date_out_of_season:2017-05-06": 1,
     "date_out_of_season:2017-06-14": 1,
-    "not_senior_professional_competition:U21 Ligi (PAF Takımı)": 32,
-    "not_senior_professional_competition:Elit U19 Ligi (Elit Akademi U19 Takımı)": 32,
-    "not_senior_professional_competition:Elit U14 Ligi (Elit Akademi U14 Takımı)": 24,
-    "not_senior_professional_competition:Elit U15 Ligi (Elit Akademi U15 Takımı)": 22,
-    "not_senior_professional_competition:Elit U16 Ligi (Elit Akademi U16 Takımı)": 24,
-    "not_senior_professional_competition:Kadınlar 3.Ligi (Kadın Takımı)": 10,
-    "not_senior_professional_competition:U21 Ligi Süper Kupa Finali (PAF Takımı) (Final)": 1,
-    "date_out_of_season:2018-08-12": 1,
-    "date_out_of_season:2018-08-19": 1,
-    "date_out_of_season:2018-08-26": 1,
-    "date_out_of_season:2018-09-01": 3,
-    "date_out_of_season:2018-09-17": 1,
-    "date_out_of_season:2018-09-23": 4,
-    "date_out_of_season:2018-09-30": 4,
-    "date_out_of_season:2018-10-07": 4,
-    "date_out_of_season:2018-10-20": 3,
-    "date_out_of_season:2018-10-28": 1,
-    "date_out_of_season:2018-11-05": 1,
-    "date_out_of_season:2018-11-10": 3,
-    "date_out_of_season:2018-11-23": 1,
-    "date_out_of_season:2018-12-01": 3,
-    "date_out_of_season:2018-12-10": 1,
-    "date_out_of_season:2018-12-15": 3,
-    "date_out_of_season:2018-12-23": 4,
-    "date_out_of_season:2019-01-20": 4,
-    "date_out_of_season:2019-01-27": 1,
-    "date_out_of_season:2019-02-01": 1,
-    "date_out_of_season:2019-02-10": 3,
-    "date_out_of_season:2019-02-16": 3,
-    "date_out_of_season:2019-02-22": 1,
+    "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": 32,
+    "not_target_senior_professional:Elit U17 Ligi (Elit Akademi U17 Takımı) | Lig | Lig | Lig | TFF": 32,
+    "not_target_senior_professional:Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": 32,
+    "not_target_senior_professional:Elit U14 Ligi (Elit Akademi U14 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Elit U15 Ligi (Elit Akademi U15 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Elit U16 Ligi (Elit Akademi U16 Takımı) | Lig | Lig | Lig | TFF": 24,
+    "not_target_senior_professional:Kadınlar 3.Ligi (Kadın Takımı) | Lig | Lig | Lig | TFF": 10,
+    "not_target_senior_professional:U21 Ligi Süper Kupa Finali (PAF Takımı) (Final) | Ziraat Türkiye Kupası | Ziraat Türkiye Kupası | Ziraat Türkiye Kupası | TFF": 1,
+    "date_out_of_season:2018-08-12": 2,
+    "date_out_of_season:2018-08-19": 2,
+    "date_out_of_season:2018-08-26": 2,
+    "date_out_of_season:2018-09-01": 4,
+    "date_out_of_season:2018-09-17": 2,
+    "date_out_of_season:2018-09-23": 5,
+    "date_out_of_season:2018-09-30": 5,
+    "date_out_of_season:2018-10-07": 5,
+    "date_out_of_season:2018-10-20": 4,
+    "date_out_of_season:2018-10-28": 2,
+    "date_out_of_season:2018-11-05": 2,
+    "date_out_of_season:2018-11-10": 4,
+    "date_out_of_season:2018-11-23": 2,
+    "date_out_of_season:2018-12-01": 4,
+    "date_out_of_season:2018-12-10": 2,
+    "date_out_of_season:2018-12-15": 4,
+    "date_out_of_season:2018-12-23": 5,
+    "date_out_of_season:2019-01-20": 5,
+    "date_out_of_season:2019-01-27": 2,
+    "date_out_of_season:2019-02-01": 2,
+    "date_out_of_season:2019-02-10": 4,
+    "date_out_of_season:2019-02-16": 4,
+    "date_out_of_season:2019-02-22": 2,
+    "date_out_of_season:2019-03-04": 1,
+    "date_out_of_season:2019-03-10": 4,
+    "date_out_of_season:2019-03-17": 3,
+    "date_out_of_season:2019-04-03": 4,
+    "date_out_of_season:2019-04-06": 2,
+    "date_out_of_season:2019-04-14": 2,
+    "date_out_of_season:2019-04-22": 2,
+    "date_out_of_season:2019-04-28": 2,
+    "date_out_of_season:2019-05-05": 2,
+    "date_out_of_season:2019-05-12": 2,
+    "date_out_of_season:2019-05-17": 2,
     "date_out_of_season:2019-03-03": 3,
-    "date_out_of_season:2019-03-10": 3,
-    "date_out_of_season:2019-03-17": 2,
-    "date_out_of_season:2019-04-03": 3,
-    "date_out_of_season:2019-04-06": 1,
-    "date_out_of_season:2019-04-14": 1,
-    "date_out_of_season:2019-04-22": 1,
-    "date_out_of_season:2019-04-28": 1,
-    "date_out_of_season:2019-05-05": 1,
-    "date_out_of_season:2019-05-12": 1,
-    "date_out_of_season:2019-05-17": 1,
     "date_out_of_season:2018-09-26": 2,
-    "date_out_of_season:2018-08-18": 1,
+    "date_out_of_season:2018-08-18": 2,
     "date_out_of_season:2018-08-25": 2,
     "date_out_of_season:2018-09-15": 2,
     "date_out_of_season:2018-09-22": 2,
@@ -1112,6 +996,7 @@
     "date_out_of_season:2019-01-19": 2,
     "date_out_of_season:2019-01-26": 2,
     "date_out_of_season:2019-02-02": 2,
+    "date_out_of_season:2019-03-23": 3,
     "date_out_of_season:2019-02-23": 2,
     "date_out_of_season:2019-03-02": 2,
     "date_out_of_season:2019-03-16": 4,
@@ -1122,7 +1007,6 @@
     "date_out_of_season:2019-05-04": 2,
     "date_out_of_season:2019-05-11": 2,
     "date_out_of_season:2019-05-18": 2,
-    "date_out_of_season:2019-03-23": 2,
     "date_out_of_season:2018-09-09": 3,
     "date_out_of_season:2018-09-16": 3,
     "date_out_of_season:2018-10-14": 3,
@@ -1139,7 +1023,8 @@
     "date_out_of_season:2019-03-24": 2,
     "date_out_of_season:2019-02-20": 1,
     "date_out_of_season:2019-03-13": 1,
-    "date_out_of_season:2019-03-09": 1
+    "date_out_of_season:2019-03-09": 1,
+    "date_out_of_season:2018-11-28": 1
   },
   "rejectedSamples": {
     "date_out_of_season:2015-10-10": [
@@ -1227,24 +1112,24 @@
     "balkes_not_found": [
       "157844",
       "157848",
+      "157855",
       "157858",
       "157859",
+      "157861",
       "157862",
       "157864",
       "157873",
+      "157875",
       "157877",
       "157878",
       "157880",
+      "157882",
+      "157884",
       "157886",
+      "157890",
       "157893",
-      "157899",
-      "157908",
-      "157914",
-      "157917",
-      "157918",
-      "157920",
-      "157922",
-      "157934"
+      "157898",
+      "157899"
     ],
     "date_out_of_season:2016-08-28": [
       "157851",
@@ -1285,7 +1170,8 @@
     "date_out_of_season:2016-10-30": [
       "157910",
       "158522",
-      "163226"
+      "163226",
+      "164293"
     ],
     "date_out_of_season:2016-11-05": [
       "157926",
@@ -1595,6 +1481,11 @@
       "164394",
       "177711"
     ],
+    "date_out_of_season:2017-02-26": [
+      "163362",
+      "164429",
+      "177737"
+    ],
     "date_out_of_season:2017-03-12": [
       "163380",
       "164447"
@@ -1609,10 +1500,6 @@
       "164457",
       "177757",
       "178959"
-    ],
-    "date_out_of_season:2017-02-26": [
-      "164429",
-      "177737"
     ],
     "date_out_of_season:2016-09-21": [
       "177193"
@@ -1641,7 +1528,7 @@
     "date_out_of_season:2017-06-14": [
       "180127"
     ],
-    "not_senior_professional_competition:U21 Ligi (PAF Takımı)": [
+    "not_target_senior_professional:U21 Ligi (PAF Takımı) | Lig | Lig | Lig | TFF": [
       "181259",
       "181263",
       "181282",
@@ -1663,7 +1550,29 @@
       "181435",
       "181445"
     ],
-    "not_senior_professional_competition:Elit U19 Ligi (Elit Akademi U19 Takımı)": [
+    "not_target_senior_professional:Elit U17 Ligi (Elit Akademi U17 Takımı) | Lig | Lig | Lig | TFF": [
+      "184698",
+      "184702",
+      "184716",
+      "184721",
+      "184731",
+      "184743",
+      "184751",
+      "184762",
+      "184764",
+      "184785",
+      "184792",
+      "184802",
+      "184816",
+      "184823",
+      "184828",
+      "184840",
+      "184851",
+      "184855",
+      "184869",
+      "184874"
+    ],
+    "not_target_senior_professional:Elit U19 Ligi (Elit Akademi U19 Takımı) | Lig | Lig | Lig | TFF": [
       "185310",
       "185314",
       "185328",
@@ -1685,7 +1594,7 @@
       "185481",
       "185486"
     ],
-    "not_senior_professional_competition:Elit U14 Ligi (Elit Akademi U14 Takımı)": [
+    "not_target_senior_professional:Elit U14 Ligi (Elit Akademi U14 Takımı) | Lig | Lig | Lig | TFF": [
       "187398",
       "187404",
       "187407",
@@ -1707,10 +1616,11 @@
       "187479",
       "187484"
     ],
-    "not_senior_professional_competition:Elit U15 Ligi (Elit Akademi U15 Takımı)": [
+    "not_target_senior_professional:Elit U15 Ligi (Elit Akademi U15 Takımı) | Lig | Lig | Lig | TFF": [
       "187830",
       "187836",
       "187839",
+      "187844",
       "187848",
       "187852",
       "187857",
@@ -1726,10 +1636,9 @@
       "187902",
       "187908",
       "187911",
-      "187916",
-      "187924"
+      "187916"
     ],
-    "not_senior_professional_competition:Elit U16 Ligi (Elit Akademi U16 Takımı)": [
+    "not_target_senior_professional:Elit U16 Ligi (Elit Akademi U16 Takımı) | Lig | Lig | Lig | TFF": [
       "188262",
       "188268",
       "188271",
@@ -1751,7 +1660,7 @@
       "188343",
       "188348"
     ],
-    "not_senior_professional_competition:Kadınlar 3.Ligi (Kadın Takımı)": [
+    "not_target_senior_professional:Kadınlar 3.Ligi (Kadın Takımı) | Lig | Lig | Lig | TFF": [
       "192840",
       "192843",
       "192846",
@@ -1763,153 +1672,190 @@
       "192864",
       "192867"
     ],
-    "not_senior_professional_competition:U21 Ligi Süper Kupa Finali (PAF Takımı) (Final)": [
+    "not_target_senior_professional:U21 Ligi Süper Kupa Finali (PAF Takımı) (Final) | Ziraat Türkiye Kupası | Ziraat Türkiye Kupası | Ziraat Türkiye Kupası | TFF": [
       "194201"
     ],
     "date_out_of_season:2018-08-12": [
+      "194822",
       "195434"
     ],
     "date_out_of_season:2018-08-19": [
+      "194836",
       "195448"
     ],
     "date_out_of_season:2018-08-26": [
+      "194843",
       "195455"
     ],
     "date_out_of_season:2018-09-01": [
+      "194850",
       "195462",
       "199303",
       "199915"
     ],
     "date_out_of_season:2018-09-17": [
+      "194862",
       "195474"
     ],
     "date_out_of_season:2018-09-23": [
+      "194867",
       "195479",
       "200226",
       "200334",
       "200442"
     ],
     "date_out_of_season:2018-09-30": [
+      "194875",
       "195487",
       "200228",
       "200336",
       "200444"
     ],
     "date_out_of_season:2018-10-07": [
+      "194890",
       "195502",
       "200233",
       "200341",
       "200449"
     ],
     "date_out_of_season:2018-10-20": [
+      "194897",
       "195509",
       "199350",
       "199962"
     ],
     "date_out_of_season:2018-10-28": [
+      "194907",
       "195519"
     ],
     "date_out_of_season:2018-11-05": [
+      "194912",
       "195524"
     ],
     "date_out_of_season:2018-11-10": [
+      "194925",
       "195537",
       "199378",
       "199990"
     ],
     "date_out_of_season:2018-11-23": [
+      "194931",
       "195543"
     ],
     "date_out_of_season:2018-12-01": [
+      "194938",
       "195550",
       "199391",
       "200003"
     ],
     "date_out_of_season:2018-12-10": [
+      "194953",
       "195565"
     ],
     "date_out_of_season:2018-12-15": [
+      "194955",
       "195567",
       "199408",
       "200020"
     ],
     "date_out_of_season:2018-12-23": [
+      "194970",
       "195582",
       "200269",
       "200377",
       "200485"
     ],
     "date_out_of_season:2019-01-20": [
+      "194975",
       "195587",
       "200284",
       "200392",
       "200500"
     ],
     "date_out_of_season:2019-01-27": [
+      "194989",
       "195601"
     ],
     "date_out_of_season:2019-02-01": [
+      "194996",
       "195608"
     ],
     "date_out_of_season:2019-02-10": [
+      "195003",
       "195615",
       "200291",
       "200399"
     ],
     "date_out_of_season:2019-02-16": [
+      "195015",
       "195627",
       "199468",
       "200080"
     ],
     "date_out_of_season:2019-02-22": [
+      "195020",
       "195632"
+    ],
+    "date_out_of_season:2019-03-04": [
+      "195028"
+    ],
+    "date_out_of_season:2019-03-10": [
+      "195043",
+      "195655",
+      "200305",
+      "200413"
+    ],
+    "date_out_of_season:2019-03-17": [
+      "195050",
+      "195662",
+      "200526"
+    ],
+    "date_out_of_season:2019-04-03": [
+      "195060",
+      "195672",
+      "199513",
+      "200125"
+    ],
+    "date_out_of_season:2019-04-06": [
+      "195065",
+      "195677"
+    ],
+    "date_out_of_season:2019-04-14": [
+      "195078",
+      "195690"
+    ],
+    "date_out_of_season:2019-04-22": [
+      "195084",
+      "195696"
+    ],
+    "date_out_of_season:2019-04-28": [
+      "195091",
+      "195703"
+    ],
+    "date_out_of_season:2019-05-05": [
+      "195106",
+      "195718"
+    ],
+    "date_out_of_season:2019-05-12": [
+      "195108",
+      "195720"
+    ],
+    "date_out_of_season:2019-05-17": [
+      "195123",
+      "195735"
     ],
     "date_out_of_season:2019-03-03": [
       "195640",
       "200300",
       "200408"
     ],
-    "date_out_of_season:2019-03-10": [
-      "195655",
-      "200305",
-      "200413"
-    ],
-    "date_out_of_season:2019-03-17": [
-      "195662",
-      "200526"
-    ],
-    "date_out_of_season:2019-04-03": [
-      "195672",
-      "199513",
-      "200125"
-    ],
-    "date_out_of_season:2019-04-06": [
-      "195677"
-    ],
-    "date_out_of_season:2019-04-14": [
-      "195690"
-    ],
-    "date_out_of_season:2019-04-22": [
-      "195696"
-    ],
-    "date_out_of_season:2019-04-28": [
-      "195703"
-    ],
-    "date_out_of_season:2019-05-05": [
-      "195718"
-    ],
-    "date_out_of_season:2019-05-12": [
-      "195720"
-    ],
-    "date_out_of_season:2019-05-17": [
-      "195735"
-    ],
     "date_out_of_season:2018-09-26": [
       "199275",
       "199887"
     ],
     "date_out_of_season:2018-08-18": [
-      "199289"
+      "199289",
+      "199901"
     ],
     "date_out_of_season:2018-08-25": [
       "199296",
@@ -1959,6 +1905,11 @@
       "199449",
       "200061"
     ],
+    "date_out_of_season:2019-03-23": [
+      "199456",
+      "200068",
+      "200312"
+    ],
     "date_out_of_season:2019-02-23": [
       "199473",
       "200085"
@@ -2003,10 +1954,6 @@
     "date_out_of_season:2019-05-18": [
       "199576",
       "200188"
-    ],
-    "date_out_of_season:2019-03-23": [
-      "200068",
-      "200312"
     ],
     "date_out_of_season:2018-09-09": [
       "200219",
@@ -2085,6 +2032,9 @@
     ],
     "date_out_of_season:2019-03-09": [
       "200521"
+    ],
+    "date_out_of_season:2018-11-28": [
+      "205802"
     ]
   },
   "standingsSkipped": true,
@@ -2098,5 +2048,5 @@
     "start": "2017-07-01",
     "end": "2018-06-30"
   },
-  "generatedAt": "2026-05-15T20:21:59.243566Z"
+  "generatedAt": "2026-05-17T14:56:05.878605Z"
 }

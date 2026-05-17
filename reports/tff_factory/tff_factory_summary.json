@@ -1,199 +1,9 @@
 {
-  "generatedAt": "2026-05-17T13:10:12.234861Z",
+  "generatedAt": "2026-05-17T17:54:50.295206Z",
   "status": "ok",
   "sourcePolicy": "TFF-only",
   "factoryVersion": "v3.6-targeted-safe-chain",
   "processed": [
-    {
-      "season": "1993-1994",
-      "selectedIds": 0,
-      "allDiscoveredIds": 336,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
-      "knownOnly": false,
-      "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 324,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 335,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 371,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 373,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 376,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 410,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "1993-07-01",
-        "end": "1994-06-30"
-      },
-      "generatedAt": "2026-05-17T13:02:23.886889Z"
-    },
-    {
-      "season": "1992-1993",
-      "selectedIds": 0,
-      "allDiscoveredIds": 711,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
-      "knownOnly": false,
-      "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 161,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 174,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 324,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 335,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 371,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 373,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 376,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "1992-07-01",
-        "end": "1993-06-30"
-      },
-      "generatedAt": "2026-05-17T13:05:19.420150Z"
-    },
-    {
-      "season": "1991-1992",
-      "selectedIds": 0,
-      "allDiscoveredIds": 711,
-      "detailCandidates": 0,
-      "candidateMode": "legacy_pageid_probe_no_selected_ids",
-      "knownOnly": false,
-      "plannedTarget": false,
-      "legacyPageIdProbe": true,
-      "legacyProbeDiagnostics": [
-        {
-          "kind": "page_hint",
-          "pageID": 119,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 161,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        },
-        {
-          "kind": "page_hint",
-          "pageID": 174,
-          "baseSelectedDelta": 0,
-          "baseAllDelta": 0,
-          "groups": []
-        }
-      ],
-      "matchesPublished": 0,
-      "detailFiles": 0,
-      "duplicatesDropped": 0,
-      "rejectedReasons": {},
-      "rejectedSamples": {},
-      "standingsSkipped": true,
-      "standingsSnapshots": 0,
-      "balkesTableFound": false,
-      "matchTypeCounts": {},
-      "seasonGuard": {
-        "start": "1991-07-01",
-        "end": "1992-06-30"
-      },
-      "generatedAt": "2026-05-17T13:07:42.409915Z"
-    },
     {
       "season": "1990-1991",
       "selectedIds": 0,
@@ -239,12 +49,12 @@
         "start": "1990-07-01",
         "end": "1991-06-30"
       },
-      "generatedAt": "2026-05-17T13:10:12.220997Z"
+      "generatedAt": "2026-05-17T17:54:50.263852Z"
     }
   ],
   "after": {
-    "seasons": 7,
-    "matches": 241
+    "seasons": 18,
+    "matches": 625
   },
   "safeToPush": true
 }

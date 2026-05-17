@@ -1,0 +1,25 @@
+{
+  "id": "2014-2015",
+  "name": "2014-2015",
+  "competition": "Spor Toto Süper Lig Süleyman Seba Sezonu (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-17T16:52:57.207090Z",
+  "summary": {
+    "matches": 35,
+    "wins": 6,
+    "draws": 9,
+    "losses": 20,
+    "goalsFor": 50,
+    "goalsAgainst": 73,
+    "goalDifference": -23,
+    "matchTypes": {
+      "league": 34,
+      "cup": 1
+    }
+  },
+  "files": {
+    "matchesIndex": "seasons/2014-2015/matches_index.json",
+    "standingsByWeek": "seasons/2014-2015/standings_by_week.json"
+  }
+}

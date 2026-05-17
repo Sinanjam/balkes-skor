@@ -1,55 +1,10 @@
 {
-  "generatedAt": "2026-05-17T12:54:12.771748Z",
+  "generatedAt": "2026-05-17T17:38:29.495755Z",
   "builderVersion": "standings-builder-v3.1-chain-safe",
   "seasons": [
     {
-      "season": "1997-1998",
-      "generatedAt": "2026-05-17T12:54:12.770525Z",
-      "builderVersion": "standings-builder-v3.1-chain-safe",
-      "mode": "auto",
-      "maxWeek": 34,
-      "source": "skipped_amateur_or_no_tff",
-      "weeksGenerated": 0,
-      "teams": 0,
-      "matchesUsed": 0,
-      "penaltiesApplied": 0,
-      "warnings": [
-        "legacy_professional_missing_exact_tff_target_no_blind_scan"
-      ]
-    },
-    {
       "season": "1996-1997",
-      "generatedAt": "2026-05-17T12:54:12.770821Z",
-      "builderVersion": "standings-builder-v3.1-chain-safe",
-      "mode": "auto",
-      "maxWeek": 34,
-      "source": "none",
-      "weeksGenerated": 0,
-      "teams": 0,
-      "matchesUsed": 0,
-      "penaltiesApplied": 0,
-      "warnings": [
-        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
-      ]
-    },
-    {
-      "season": "1995-1996",
-      "generatedAt": "2026-05-17T12:54:12.771142Z",
-      "builderVersion": "standings-builder-v3.1-chain-safe",
-      "mode": "auto",
-      "maxWeek": 34,
-      "source": "none",
-      "weeksGenerated": 0,
-      "teams": 0,
-      "matchesUsed": 0,
-      "penaltiesApplied": 0,
-      "warnings": [
-        "Registry içinde targetPageID/targetUrls yok ve mevcut maç JSON'u da hesaplama için yeterli değil."
-      ]
-    },
-    {
-      "season": "1994-1995",
-      "generatedAt": "2026-05-17T12:54:12.771472Z",
+      "generatedAt": "2026-05-17T17:38:29.495330Z",
       "builderVersion": "standings-builder-v3.1-chain-safe",
       "mode": "auto",
       "maxWeek": 34,

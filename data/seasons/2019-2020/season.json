@@ -1,0 +1,30 @@
+{
+  "id": "2019-2020",
+  "name": "2019-2020",
+  "competition": "TFF 1. Lig (Profesyonel Takım)",
+  "sourcePolicy": "TFF senior professional target only",
+  "factoryVersion": "v3.3-targeted-professional-cleaner",
+  "updatedAt": "2026-05-17T13:58:55.699276Z",
+  "summary": {
+    "matches": 30,
+    "wins": 8,
+    "draws": 11,
+    "losses": 11,
+    "goalsFor": 36,
+    "goalsAgainst": 48,
+    "goalDifference": -12,
+    "matchTypes": {
+      "league": 30
+    },
+    "points": 38,
+    "rawPoints": 38,
+    "pointsDeducted": 0,
+    "finalRank": 13
+  },
+  "files": {
+    "matchesIndex": "seasons/2019-2020/matches_index.json",
+    "standingsByWeek": "seasons/2019-2020/standings_by_week.json"
+  },
+  "standingsUpdatedAt": "2026-05-17T14:00:58.999509Z",
+  "standingsBuilderVersion": "standings-builder-v3.1-chain-safe"
+}
